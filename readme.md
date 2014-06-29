@@ -1,6 +1,6 @@
 # Append Text #
 - Authors: Noelia.
-- Download: [Version 2.0-dev][1]
+- Download: [Version 1.0-dev][1]
 
 This add-on is used to append text to the clipboard, what can be useful when you want to join and paste strings of text from different places.
 It also allows to delete the clipboard content.
@@ -14,7 +14,7 @@ It also allows to delete the clipboard content.
 - Delete appended text: Removes the clipboard content.
 - Append Text separator: Allows to set a separator which can be used to find the different strings after pasting the appended text.
 
-## Changes for 2.0 ##
+## Changes for 1.0 ##
 - Initial version.
 
 [1]: http://addons.nvda-project.org/files/get.php?file=atxt
