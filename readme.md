@@ -1,4 +1,4 @@
-# Append Text #
+# Clip Text Manager #
 - Authors: Noelia.
 - Download [stable version][1]
 - Download [stable version][2]
