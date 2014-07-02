@@ -18,5 +18,5 @@ It also allows to delete the clipboard content.
 ## Changes for 1.0 ##
 - Initial version.
 
-[1]: http://addons.nvda-project.org/files/get.php?file=at
-[2]: http://addons.nvda-project.org/files/get.php?file=at-dev
+[1]: http://addons.nvda-project.org/files/get.php?file=ctm
+[2]: http://addons.nvda-project.org/files/get.php?file=ctm-dev
