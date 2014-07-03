@@ -50,24 +50,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
-		self.menu = gui.mainFrame.sysTrayIcon.menu
-		self.appendTextMenu = wx.Menu()
-		self.mainItem = self.menu.AppendSubMenu(self.appendTextMenu,
-		# Translators: name of a menu item.
-		_("&Clip Text Manager"),
-		# Translators: tooltip for a menu item.
-		_("Clip Text Manager menu"))
-		self.clearItem = self.appendTextMenu.Append(wx.ID_ANY,
-		# Translators: name of a menu item.
-		_("D&elete appended text"),
-		# Translators: tooltip for a menu item.
-		_("Clear clipboard and delete appended text"))
-		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onClearAddedText, self.clearItem)
-		self.settingsItem = self.appendTextMenu.Append(wx.ID_ANY,
-		# Translators: name of a menu item.
-		_("Append Text &separator..."),
-		# Translators: tooltip for a menu item.
-		_("Set the separator for appended strings"))
+		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
+		self.settingsItem = self.prefsMenu.Append(wx.ID_ANY,
+			# Translators: name of the option in the menu.
+			_("&Clip Contents Designer settings..."),
+			# Translators: tooltip text for the menu item.
+			_("Type the string to be used as a separator between contents appended to the clipboard."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self.text = ""
@@ -77,7 +65,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def terminate(self):
 		try:
-			self.menu.RemoveItem(self.mainItem)
+			self.prefsMenu.RemoveItem(self.settingsItem)
 		except wx.PyDeadObjectError:
 			pass
 
