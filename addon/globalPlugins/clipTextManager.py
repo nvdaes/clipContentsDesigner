@@ -1,5 +1,10 @@
 # -*- coding: UTF-8 -*-
 
+# clipTextManager: a global plugin for managing clipboard text
+# Version: 1.0
+# Changed menu labels according to the new add-on name
+# Date: 3/07/2014
+
 # Append text: a global plugin for appending text to the clipboard
 
 # Version: 1.1
@@ -49,9 +54,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.appendTextMenu = wx.Menu()
 		self.mainItem = self.menu.AppendSubMenu(self.appendTextMenu,
 		# Translators: name of a menu item.
-		_("&Append text"),
+		_("&Clip Text Manager"),
 		# Translators: tooltip for a menu item.
-		_("Append Text menu"))
+		_("Clip Text Manager menu"))
 		self.clearItem = self.appendTextMenu.Append(wx.ID_ANY,
 		# Translators: name of a menu item.
 		_("D&elete appended text"),
