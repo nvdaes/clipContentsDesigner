@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# clipTextManager: a global plugin for managing clipboard text
+# clipContentsDesigner: a global plugin for managing clipboard text
 # Version: 1.0
 # Changed menu labels according to the new add-on name
 # Date: 3/07/2014

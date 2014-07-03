@@ -11,10 +11,10 @@ addon_info = {
 	# for previously unpublished addons, please follow the community guidelines at:
 	# https://bitbucket.org/nvdaaddonteam/todo/src/56140dbec531e4d7591338e1dbc6192f3dd422a8/guideLines.txt
 	# add-on Name, internal for nvda
-	"addon-name" : "clipTextManager",
+	"addon-name" : "clipContentsDesigner",
 	# Add-on summary, usually the user visible name of the addon.
 	# TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-	"addon-summary" : _("Clip Text Manager"),
+	"addon-summary" : _("Clip Contents Designer"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon-description" : _("""Add-on for managing clipboard text."""),
