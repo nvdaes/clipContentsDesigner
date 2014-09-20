@@ -132,7 +132,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				pass
 		return info.text
 
-	def script_review_markStartForAppend(self, gesture):
+	def script_setSelectionStartMarker(self, gesture):
 		self._copyStartMarker = api.getReviewPosition().copy()
 		# Translators: message presented when the start marker for Append Text has been set using the review cursor.
 		ui.message(_("Start marked for Append Text"))
@@ -193,5 +193,5 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	__gestures = {
 		"kb:control+NVDA+shift+c": "append",
 		"kb:control+NVDA+shift+x": "clear",
-		"kb:control+NVDA+f9": "review_markStartForAppend",
+		"kb:control+NVDA+f9": "setSelectionStartMarker",
 	}
