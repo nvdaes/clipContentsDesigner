@@ -58,9 +58,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Type the string to be used as a separator between contents appended to the clipboard."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
-		self.text = ""
-		self.baseText = ""
-		self.newText = ""
 		self.separator = "\r\n"+bookmark+"\r\n"
 
 	def terminate(self):
@@ -142,9 +139,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_review_markStartForAppend.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended.")
 
 	def script_append(self, gesture):
-		if self.getSelectedText() is not None:
-			self.newText = self.getSelectedText()
-		else:
+		newText = self.getSelectedText()
+		if not newText:
 			if not getattr(self, "_copyStartMarker", None):
 				# Translators: message presented when it's not possible to append text, since no text has been selected or marked.
 				ui.message(_("No selection. No start marker set"))
@@ -160,7 +156,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when review cursor has been used to append text and there is no text to append.
 				ui.message(_("No text to append"))
 				return
-			self.newText = textInfos.convertToCrlf(pos.text)
+			newText = textInfos.convertToCrlf(pos.text)
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
@@ -168,14 +164,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			clipData = ""
 			# Translators: message presented when adding text to the clipboard and it's empty.
 			ui.message(_("Adding text to empty clipboard"))
-		try:
-			self.baseText = clipData+self.separator
-			self.text = self.baseText+self.newText
-		except Exception, e:
-			# Translators: message presented when the text to append cannot be retrieved.
-			ui.message(_("Can not get the text to append"))
-			raise e
-		if api.copyToClip(self.text):
+		text = clipData + self.separator + newText
+		if api.copyToClip(text):
 			# Translators: message presented when the text has been appended to the clipboard.
 			ui.message(_("Appended"))
 		else:
@@ -187,9 +177,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def onClearAddedText(self):
 		# Translators: message presented when deleting the clipboard content.
 		ui.message(_("Clearing added text..."))
-		self.text = ""
-		self.baseText = ""
-		self.newText = ""
 		self.clearClipboard()
 		try:
 			api.getClipData()
