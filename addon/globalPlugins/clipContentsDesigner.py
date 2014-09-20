@@ -58,7 +58,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Type the string to be used as a separator between contents appended to the clipboard."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
-		self.separator = "\r\n"+bookmark+"\r\n"
+		self.separator = "\r\n%s\r\n" % bookmark
 		self._copyStartMarker = None
 
 	def terminate(self):
@@ -82,7 +82,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.postPopup()
 		if result == wx.ID_OK:
 			bookmark = d.GetValue()
-			self.separator = "\r\n"+bookmark+"\r\n"
+			self.separator = "\r\n%s\r\n" % bookmark
 			conf["separator"]["bookmarkSeparator"] = bookmark
 			try:
 				conf.validate(val, copy=True)
