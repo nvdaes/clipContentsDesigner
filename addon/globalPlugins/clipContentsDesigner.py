@@ -59,6 +59,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self.separator = "\r\n"+bookmark+"\r\n"
+		self._copyStartMarker = None
 
 	def terminate(self):
 		try:
@@ -141,7 +142,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_append(self, gesture):
 		newText = self.getSelectedText()
 		if not newText:
-			if not getattr(self, "_copyStartMarker", None):
+			if not self._copyStartMarker:
 				# Translators: message presented when it's not possible to append text, since no text has been selected or marked.
 				ui.message(_("No selection. No start marker set"))
 				return
