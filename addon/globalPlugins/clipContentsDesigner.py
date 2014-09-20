@@ -184,7 +184,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_append.__doc__ = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and appends it to the clipboard.")
 
-	def onClearAddedText(self, evt):
+	def onClearAddedText(self):
 		# Translators: message presented when deleting the clipboard content.
 		ui.message(_("Clearing added text..."))
 		self.text = ""
@@ -198,7 +198,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Clipboard is empty"))
 
 	def script_clear(self, gesture):
-		self.onClearAddedText(None)
+		self.onClearAddedText()
 	# Translators: message presented in input mode.
 	script_clear.__doc__ = _("Deletes the appended text and the content of the clipboard.")
 
