@@ -7,6 +7,7 @@
 # Revision and improvements: Mesar Hameed
 # Date: 20/09/2014
 # Added scriptCategory
+# Added msg plugin, developed by Alberto Buffolino
 # Date: 21/09/2014
 
 # Append text: a global plugin for appending text to the clipboard
@@ -22,6 +23,7 @@ import globalPluginHandler
 import api
 import textInfos
 import ui
+import msg # Developed by Alberto Bufolino
 import win32clipboard
 import wx
 import gui
@@ -156,8 +158,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				return
 			pos = api.getReviewPosition().copy()
 			if self._copyStartMarker.obj != pos.obj:
-				# Translators: message presented when trying to append text, but the start marker doesn't reside in the current object.
-				ui.message(_("The start marker must reside within the same object"))
+				msg.message("The start marker must reside within the same object")
 				return
 			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
 			pos.setEndPoint(self._copyStartMarker, "startToStart")

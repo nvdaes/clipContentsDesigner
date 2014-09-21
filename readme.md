@@ -1,7 +1,7 @@
 # Clip Contents Designer #
-- Authors: Noelia.
+- Authors: Noelia Ruiz Martínez.
 - Download [stable version][1]
-- Download [stable version][2]
+- Download [development version][2]
 
 This add-on is used to append text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
 The clipboard content can also be cleared.

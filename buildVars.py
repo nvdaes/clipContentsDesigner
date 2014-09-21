@@ -9,21 +9,23 @@ _ = lambda x : x
 # Add-on information variables
 addon_info = {
 	# for previously unpublished addons, please follow the community guidelines at:
-	# https://bitbucket.org/nvdaaddonteam/todo/src/56140dbec531e4d7591338e1dbc6192f3dd422a8/guideLines.txt
+	# https://bitbucket.org/nvdaaddonteam/todo/raw/master/guideLines.txt
 	# add-on Name, internal for nvda
-	"addon-name" : "clipContentsDesigner",
+	"addon_name" : "clipContentsDesigner",
 	# Add-on summary, usually the user visible name of the addon.
-	# TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-	"addon-summary" : _("Clip Contents Designer"),
+	# Translators: Summary for this add-on to be shown on installation and add-on information.
+	"addon_summary" : _("Clip Contents Designer"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon-description" : _("""Add-on for managing clipboard text."""),
+	"addon_description" : _("""Add-on for managing clipboard text."""),
 	# version
-	"addon-version" : "1.0-dev",
+	"addon_version" : "1.0-dev",
 	# Author(s)
-	"addon-author" : "Noelia <nrm1977@gmail.com>",
+	"addon_author" : u"Noelia Ruiz Martínez <nrm1977@gmail.com>",
 	# URL for the add-on documentation support
-	"addon-url" : "http://addons.nvda-project.org"
+	"addon_url" : "http://addons.nvda-project.org",
+	# Documentation file name
+	"addon_docFileName" : "readme.html",
 }
 
 
