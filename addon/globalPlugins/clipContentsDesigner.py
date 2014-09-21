@@ -4,6 +4,10 @@
 # Version: 1.0
 # Changed menu labels according to the new add-on name
 # Date: 3/07/2014
+# Revision and improvements: Mesar Hameed
+# Date: 20/09/2014
+# Added scriptCategory
+# Date: 21/09/2014
 
 # Append text: a global plugin for appending text to the clipboard
 
@@ -12,7 +16,6 @@
 # Date: 30/01/2013
 # Version: 1.0
 # Date: 28/12/2012
-
 
 import addonHandler
 import globalPluginHandler
@@ -29,24 +32,29 @@ from cStringIO import StringIO
 from configobj import ConfigObj
 from validate import Validator
 
+addonHandler.initTranslation()
 
-iniFileName = os.path.join(os.path.dirname(__file__), "appendText.ini")
+try:
+	from globalCommands import SCRCAT_TEXTREVIEW
+except:
+	SCRCAT_TEXTREVIEW = None
+
+iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini")
 
 confspec = ConfigObj(StringIO("""#Configuration file
 
 [separator]
 	bookmarkSeparator = string(default="")
-"""), encoding="UTF-8", list_values=False)
+"""), encoding="UTF-8")
 confspec.newlines = "\r\n"
 conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
 val = Validator()
 conf.validate(val)
 bookmark = conf["separator"]["bookmarkSeparator"]
 
-
-addonHandler.initTranslation()
-
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+
+	scriptCategory = SCRCAT_TEXTREVIEW
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
@@ -88,7 +96,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				conf.validate(val, copy=True)
 				conf.write()
 				log.info("AppendText add-on configuration saved")
-			except Exception, e:
+			except Exception as e:
 				log.warning("Could not save AppendText add-on configuration")
 				log.debugWarning("", exc_info=True)
 				raise e
@@ -137,7 +145,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented when the start marker for Append Text has been set using the review cursor.
 		ui.message(_("Start marked for Append Text"))
 	# Translators: message presented in input mode.
-	script_review_markStartForAppend.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended.")
+	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended.")
 
 	def script_append(self, gesture):
 		newText = self.getSelectedText()
