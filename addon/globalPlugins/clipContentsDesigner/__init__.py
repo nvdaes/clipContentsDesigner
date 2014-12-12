@@ -97,9 +97,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			try:
 				conf.validate(val, copy=True)
 				conf.write()
-				log.info("AppendText add-on configuration saved")
+				log.info("clipContentsDesigner add-on configuration saved")
 			except Exception as e:
-				log.warning("Could not save AppendText add-on configuration")
+				log.warning("Could not save clipContentsDesigner add-on configuration")
 				log.debugWarning("", exc_info=True)
 				raise e
 
@@ -144,10 +144,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_setSelectionStartMarker(self, gesture):
 		self._copyStartMarker = api.getReviewPosition().copy()
-		# Translators: message presented when the start marker for Append Text has been set using the review cursor.
-		ui.message(_("Start marked for Append Text"))
+		# Translators: message presented when the start marker for appending text has been set using the review cursor.
+		ui.message(_("Start marked for appending text"))
 	# Translators: message presented in input mode.
-	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended.")
+	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended to the clipboard.")
 
 	def script_append(self, gesture):
 		newText = self.getSelectedText()
