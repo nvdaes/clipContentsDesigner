@@ -7,9 +7,11 @@ This add-on is used to append text to the clipboard, which can be useful when yo
 The clipboard content can also be cleared.
 
 ## Keyboard commands ##
-- NVDA+control+shift+c: Append selected text, or the string which has been marked with the review cursor, to the clipboard.
-- NVDA+control+shift+x: Clear clipboard contents.
-- NVDA+control+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text couldn't be appended.
+- NVDA+windows+c: Append selected text, or the string which has been marked with the review cursor, to the clipboard.
+- NVDA+windows+x: Clear clipboard contents.
+- NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text couldn't be appended.
+
+Note: The above commands can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Text review category.
 
 ## Preferences Menu ##
 - Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire appended text is pasted.

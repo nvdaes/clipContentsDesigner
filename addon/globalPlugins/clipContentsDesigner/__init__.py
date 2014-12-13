@@ -187,7 +187,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_clear.__doc__ = _("Deletes the appended text and the content of the clipboard.")
 
 	__gestures = {
-		"kb:control+NVDA+shift+c": "append",
-		"kb:control+NVDA+shift+x": "clear",
-		"kb:control+NVDA+f9": "setSelectionStartMarker",
+		"kb:NVDA+windows+c": "append",
+		"kb:NVDA+windows+x": "clear",
+		"kb:NVDA+windows+f9": "setSelectionStartMarker",
 	}
