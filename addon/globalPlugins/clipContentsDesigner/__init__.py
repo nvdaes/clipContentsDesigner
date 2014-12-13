@@ -127,21 +127,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			info=None
 		if not info or info.isCollapsed:
 			return None
-		#if obj == treeInterceptor:
-			#try:
-				#clipData = api.getClipData()
-			#except TypeError:
-				#clipData = None
-			#try:
-				#info.copyToClipboard()
-				#selectedText = api.getClipData()
-				#if clipData is not None:
-					#api.copyToClip(clipData)
-				#else:
-					#self.clearClipboard()
-				#return selectedText
-			#except:
-				#pass
 		return info.clipboardText
 
 	def script_setSelectionStartMarker(self, gesture):
