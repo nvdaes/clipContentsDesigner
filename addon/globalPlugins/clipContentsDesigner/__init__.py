@@ -9,6 +9,8 @@
 # Added scriptCategory
 # Added msg plugin, developed by Alberto Buffolino
 # Date: 21/09/2014
+# Minor changes in messages according to new add-on name
+# Date: 12, 13/12/2014
 
 # Append text: a global plugin for appending text to the clipboard
 
@@ -81,7 +83,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: label of a dialog.
 		message = _("Type the text you wish to use as separator between the strings appended to clipboard")
 		# Translators: title of a dialog.
-		title = _("Append Text settings")
+		title = _("Clip Contents Designer settings")
 		global bookmark
 		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=bookmark)
 		gui.mainFrame.prePopup()
