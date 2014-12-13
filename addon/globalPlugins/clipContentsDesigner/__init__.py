@@ -127,22 +127,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			info=None
 		if not info or info.isCollapsed:
 			return None
-		if obj == treeInterceptor:
-			try:
-				clipData = api.getClipData()
-			except TypeError:
-				clipData = None
-			try:
-				info.copyToClipboard()
-				selectedText = api.getClipData()
-				if clipData is not None:
-					api.copyToClip(clipData)
-				else:
-					self.clearClipboard()
-				return selectedText
-			except:
-				pass
-		return info.text
+		#if obj == treeInterceptor:
+			#try:
+				#clipData = api.getClipData()
+			#except TypeError:
+				#clipData = None
+			#try:
+				#info.copyToClipboard()
+				#selectedText = api.getClipData()
+				#if clipData is not None:
+					#api.copyToClip(clipData)
+				#else:
+					#self.clearClipboard()
+				#return selectedText
+			#except:
+				#pass
+		return info.clipboardText
 
 	def script_setSelectionStartMarker(self, gesture):
 		self._copyStartMarker = api.getReviewPosition().copy()
@@ -168,7 +168,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when review cursor has been used to append text and there is no text to append.
 				ui.message(_("No text to append"))
 				return
-			newText = textInfos.convertToCrlf(pos.text)
+			newText = pos.clipboardText
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
