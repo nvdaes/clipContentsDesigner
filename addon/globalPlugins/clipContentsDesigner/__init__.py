@@ -70,8 +70,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.settingsItem = self.prefsMenu.Append(wx.ID_ANY,
 			# Translators: name of the option in the menu.
 			_("&Clip Contents Designer settings..."),
-			# Translators: tooltip text for the menu item.
-			_("Type the string to be used as a separator between contents appended to the clipboard."))
+			"")
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
@@ -84,7 +83,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def onSettings(self, evt):
 		# Translators: label of a dialog.
-		message = _("Type the text you wish to use as separator between the strings appended to clipboard")
+		message = _("Type the string to be used as a separator between contents appended to the clipboard.")
 		# Translators: title of a dialog.
 		title = _("Clip Contents Designer settings")
 		global bookmark
@@ -112,10 +111,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			win32clipboard.OpenClipboard()
 			win32clipboard.EmptyClipboard()
 			# Translators: message presented when the clipboard content has been deleted.
-			ui.message(_("Clipboard is empty"))
+			ui.message(_("Clipboard cleared"))
 		except win32clipboard.error:
-			# Translators: message presented when cannot delete the clipboard content.
-			ui.message(_("Cannot clear the clipboard"))
+			# Translators: message presented when the clipboard content cannot be deleted.
+			ui.message(_("Clipboard not cleared"))
 		finally:
 			win32clipboard.CloseClipboard()
 
@@ -135,7 +134,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_setSelectionStartMarker(self, gesture):
 		self._copyStartMarker = api.getReviewPosition().copy()
 		# Translators: message presented when the start marker for appending text has been set using the review cursor.
-		ui.message(_("Start marked for appending text"))
+		ui.message(_("Start marker set"))
 	# Translators: message presented in input mode.
 	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended to the clipboard.")
 
@@ -148,7 +147,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				return
 			pos = api.getReviewPosition().copy()
 			if self._copyStartMarker.obj != pos.obj:
-				msg.message("The start marker must reside within the same object")
+				# Translators: message presented when user tries to select text across object boundaries
+				msg.message(_("The start marker must reside within the same object"))
 				return
 			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
 			pos.setEndPoint(self._copyStartMarker, "startToStart")
@@ -167,8 +167,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message presented when the text has been appended to the clipboard.
 			ui.message(_("Appended"))
 		else:
-			# Translators: message presented when the text cannot be apended to the clipboard.
-			ui.message(_("Cannot append text to the clipboard"))
+			# Translators: message presented when the text cannot be appended to the clipboard.
+			ui.message(_("Cannot append"))
 	# Translators: message presented in input mode.
 	script_append.__doc__ = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and appends it to the clipboard.")
 
