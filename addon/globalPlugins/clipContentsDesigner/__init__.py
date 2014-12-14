@@ -160,8 +160,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
-			separator = "\r\n%s\r\n" % bookmark
-			#text = clipData + separator + newText
 			text = clipData+bookmark+newText
 		except TypeError:
 			text = newText
