@@ -11,6 +11,10 @@
 # Date: 21/09/2014
 # Minor changes in messages according to new add-on name
 # Date: 12, 13/12/2014
+# Changed keyboard commands according to Bhavya's suggestions
+# Date: 13/12/2014
+# Implemented several suggestions from "Alberto Buffolino
+# Date: 14/12/2014
 
 # Append text: a global plugin for appending text to the clipboard
 
@@ -54,7 +58,7 @@ confspec.newlines = "\r\n"
 conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
 val = Validator()
 conf.validate(val)
-bookmark = conf["separator"]["bookmarkSeparator"]
+bookmark = conf["separator"]["bookmarkSeparator"].decode("string-escape")
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -70,7 +74,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Type the string to be used as a separator between contents appended to the clipboard."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
-		self.separator = "\r\n%s\r\n" % bookmark
 		self._copyStartMarker = None
 
 	def terminate(self):
@@ -85,7 +88,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: title of a dialog.
 		title = _("Clip Contents Designer settings")
 		global bookmark
-		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=bookmark)
+		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=bookmark.encode("string-escape"))
 		gui.mainFrame.prePopup()
 		try:
 			result = d.ShowModal()
@@ -93,9 +96,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 		gui.mainFrame.postPopup()
 		if result == wx.ID_OK:
-			bookmark = d.GetValue()
-			self.separator = "\r\n%s\r\n" % bookmark
-			conf["separator"]["bookmarkSeparator"] = bookmark
+			bookmark = d.GetValue().decode("string-escape")
+			conf["separator"]["bookmarkSeparator"] = bookmark.encode("string-escape")
 			try:
 				conf.validate(val, copy=True)
 				conf.write()
@@ -109,7 +111,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			win32clipboard.OpenClipboard()
 			win32clipboard.EmptyClipboard()
-			# ui.message(_("Clipboard is empty"))
+			# Translators: message presented when the clipboard content has been deleted.
+			ui.message(_("Clipboard is empty"))
 		except win32clipboard.error:
 			# Translators: message presented when cannot delete the clipboard content.
 			ui.message(_("Cannot clear the clipboard"))
@@ -157,11 +160,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
+			separator = "\r\n%s\r\n" % bookmark
+			text = clipData + separator + newText
 		except TypeError:
-			clipData = ""
-			# Translators: message presented when adding text to the clipboard and it's empty.
-			ui.message(_("Adding text to empty clipboard"))
-		text = clipData + self.separator + newText
+			text = newText
 		if api.copyToClip(text):
 			# Translators: message presented when the text has been appended to the clipboard.
 			ui.message(_("Appended"))
@@ -171,18 +173,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_append.__doc__ = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and appends it to the clipboard.")
 
-	def onClearAddedText(self):
-		# Translators: message presented when deleting the clipboard content.
-		ui.message(_("Clearing added text..."))
-		self.clearClipboard()
-		try:
-			api.getClipData()
-		except TypeError:
-			# Translators: message presented when the clipboard content has been deleted.
-			ui.message(_("Clipboard is empty"))
-
 	def script_clear(self, gesture):
-		self.onClearAddedText()
+		self.clearClipboard()
 	# Translators: message presented in input mode.
 	script_clear.__doc__ = _("Deletes the appended text and the content of the clipboard.")
 
