@@ -52,7 +52,7 @@ iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini"
 confspec = ConfigObj(StringIO("""#Configuration file
 
 [separator]
-	bookmarkSeparator = string(default="")
+	bookmarkSeparator = string(default="\\r\\n\\r\\n")
 """), encoding="UTF-8")
 confspec.newlines = "\r\n"
 conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
@@ -161,7 +161,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			clipData = api.getClipData()
 			separator = "\r\n%s\r\n" % bookmark
-			text = clipData + separator + newText
+			#text = clipData + separator + newText
+			text = clipData+bookmark+newText
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
