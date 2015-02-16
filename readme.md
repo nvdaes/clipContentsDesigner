@@ -18,6 +18,9 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 *   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire appended text is pasted.
 
 
+## Changes for 2.0 ##
+*   Used an UTF-8 text file instead of a dialog for setting the separator between appended segments of text.
+
 ## Changes for 1.0 ##
 *   Initial version.
 

@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
 # clipContentsDesigner: a global plugin for managing clipboard text
+# Using a text file instead of .ini to write a wide variety of characters
+# Date: 17/02/2015
 # Version: 1.0
 # Changed menu labels according to the new add-on name
 # Date: 3/07/2014
@@ -34,11 +36,8 @@ import win32clipboard
 import wx
 import gui
 import os
-import languageHandler
+import codecs
 from logHandler import log
-from cStringIO import StringIO
-from configobj import ConfigObj
-from validate import Validator
 
 addonHandler.initTranslation()
 
@@ -46,19 +45,6 @@ try:
 	from globalCommands import SCRCAT_TEXTREVIEW
 except:
 	SCRCAT_TEXTREVIEW = None
-
-iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini")
-
-confspec = ConfigObj(StringIO("""#Configuration file
-
-[separator]
-	bookmarkSeparator = string(default="\\r\\n\\r\\n")
-"""), encoding="UTF-8")
-confspec.newlines = "\r\n"
-conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
-val = Validator()
-conf.validate(val)
-bookmark = conf["separator"]["bookmarkSeparator"].decode("string-escape")
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -69,11 +55,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
 		self.settingsItem = self.prefsMenu.Append(wx.ID_ANY,
 			# Translators: name of the option in the menu.
-			_("&Clip Contents Designer settings..."),
+			_("Set &Clip Contents Designer separator"),
 			"")
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
+		self.separatorFile = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.txt")
 
 	def terminate(self):
 		try:
@@ -81,30 +68,26 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except wx.PyDeadObjectError:
 			pass
 
-	def onSettings(self, evt):
-		# Translators: label of a dialog.
-		message = _("Type the string to be used as a separator between contents appended to the clipboard.")
-		# Translators: title of a dialog.
-		title = _("Clip Contents Designer settings")
-		global bookmark
-		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=bookmark.encode("string-escape"))
-		gui.mainFrame.prePopup()
+	def getSeparator(self):
 		try:
-			result = d.ShowModal()
-		except AttributeError:
-			pass
-		gui.mainFrame.postPopup()
-		if result == wx.ID_OK:
-			bookmark = d.GetValue().decode("string-escape")
-			conf["separator"]["bookmarkSeparator"] = bookmark.encode("string-escape")
+			with codecs.open(self.separatorFile, "r", "utf-8") as f:
+				bookmark = f.read()
+		except:
+			bookmark = "\r\n\r\n"
+		return bookmark
+
+	def onSettings(self, evt):
+		if not os.path.isfile(self.separatorFile):
 			try:
-				conf.validate(val, copy=True)
-				conf.write()
-				log.info("clipContentsDesigner add-on configuration saved")
-			except Exception as e:
-				log.warning("Could not save clipContentsDesigner add-on configuration")
-				log.debugWarning("", exc_info=True)
+				with codecs.open(self.separatorFile, "w", "utf-8") as f:
+					f.write("\r\n\r\n")
+			except Exception, e:
+				log.debugWarning("Error writing separator for clipContentsDesigner", exc_info=True)
 				raise e
+		try:
+			os.startfile(self.separatorFile)
+		except:
+			pass
 
 	def clearClipboard(self):
 		try:
@@ -160,7 +143,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
-			text = clipData+bookmark+newText
+			text = clipData+self.getSeparator()+newText
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
