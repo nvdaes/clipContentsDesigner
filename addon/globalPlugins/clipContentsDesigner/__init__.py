@@ -47,8 +47,6 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = None
 
-<<<<<<< HEAD
-=======
 iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini")
 
 confspec = ConfigObj(StringIO("""#Configuration file
@@ -61,8 +59,6 @@ conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encodin
 val = Validator()
 conf.validate(val)
 
-
->>>>>>> hindi
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
@@ -72,16 +68,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
 		self.settingsItem = self.prefsMenu.Append(wx.ID_ANY,
 			# Translators: name of the option in the menu.
-			_("Set &Clip Contents Designer separator"),
+			_("&Clip Contents Designer settings..."),
 			"")
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
-<<<<<<< HEAD
-		self.separatorFile = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.txt")
-=======
 		self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
->>>>>>> hindi
 
 	def terminate(self):
 		try:
@@ -89,18 +81,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except wx.PyDeadObjectError:
 			pass
 
-<<<<<<< HEAD
-	def getSeparator(self):
-		try:
-			with codecs.open(self.separatorFile, "r", "utf-8") as f:
-				bookmark = f.read()
-		except:
-			bookmark = "\r\n\r\n"
-		return bookmark
-
-	def onSettings(self, evt):
-		if not os.path.isfile(self.separatorFile):
-=======
 	def onSettings(self, evt):
 		# Translators: label of a dialog.
 		message = _("Type the string to be used as a separator between contents appended to the clipboard.")
@@ -116,17 +96,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if result == wx.ID_OK:
 			conf["separator"]["bookmarkSeparator"] = d.GetValue()
 			self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
->>>>>>> hindi
 			try:
-				with codecs.open(self.separatorFile, "w", "utf-8") as f:
-					f.write("\r\n\r\n")
-			except Exception, e:
-				log.debugWarning("Error writing separator for clipContentsDesigner", exc_info=True)
+				conf.validate(val, copy=True)
+				conf.write()
+				log.info("clipContentsDesigner add-on configuration saved")
+			except Exception as e:
+				log.warning("Could not save clipContentsDesigner add-on configuration")
+				log.debugWarning("", exc_info=True)
 				raise e
-		try:
-			os.startfile(self.separatorFile)
-		except:
-			pass
 
 	def clearClipboard(self):
 		try:
@@ -182,11 +159,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
-<<<<<<< HEAD
-			text = clipData+self.getSeparator()+newText
-=======
 			text = clipData+self.bookmark+newText
->>>>>>> hindi
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
