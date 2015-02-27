@@ -1,6 +1,9 @@
 # -*- coding: UTF-8 -*-
 
 # clipContentsDesigner: a global plugin for managing clipboard text
+# Version: 2.0
+# Hindi characters can be writen as a separator
+# Date: 26/02/2015
 # Version: 1.0
 # Changed menu labels according to the new add-on name
 # Date: 3/07/2014
@@ -52,13 +55,13 @@ iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini"
 confspec = ConfigObj(StringIO("""#Configuration file
 
 [separator]
-	bookmarkSeparator = string(default="\\r\\n\\r\\n")
+	bookmarkSeparator = string(default="")
 """), encoding="UTF-8")
 confspec.newlines = "\r\n"
 conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
 val = Validator()
 conf.validate(val)
-bookmark = conf["separator"]["bookmarkSeparator"].decode("string-escape")
+
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -74,6 +77,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
+		self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
 
 	def terminate(self):
 		try:
@@ -86,8 +90,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		message = _("Type the string to be used as a separator between contents appended to the clipboard.")
 		# Translators: title of a dialog.
 		title = _("Clip Contents Designer settings")
-		global bookmark
-		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=bookmark.encode("string-escape"))
+		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=conf["separator"]["bookmarkSeparator"])
 		gui.mainFrame.prePopup()
 		try:
 			result = d.ShowModal()
@@ -95,8 +98,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 		gui.mainFrame.postPopup()
 		if result == wx.ID_OK:
-			bookmark = d.GetValue().decode("string-escape")
-			conf["separator"]["bookmarkSeparator"] = bookmark.encode("string-escape")
+			conf["separator"]["bookmarkSeparator"] = d.GetValue()
+			self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
 			try:
 				conf.validate(val, copy=True)
 				conf.write()
@@ -160,7 +163,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
-			text = clipData+bookmark+newText
+			text = clipData+self.bookmark+newText
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
