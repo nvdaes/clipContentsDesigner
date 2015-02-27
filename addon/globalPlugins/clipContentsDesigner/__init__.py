@@ -37,8 +37,10 @@ import win32clipboard
 import wx
 import gui
 import os
-import codecs
 from logHandler import log
+from cStringIO import StringIO
+from configobj import ConfigObj
+from validate import Validator
 
 addonHandler.initTranslation()
 
