@@ -1,8 +1,9 @@
 # -*- coding: UTF-8 -*-
 
 # clipContentsDesigner: a global plugin for managing clipboard text
-# Using a text file instead of .ini to write a wide variety of characters
-# Date: 17/02/2015
+# Version: 2.0
+# Hindi characters can be writen as a separator
+# Date: 27/02/2015
 # Version: 1.0
 # Changed menu labels according to the new add-on name
 # Date: 3/07/2014
@@ -46,6 +47,22 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = None
 
+<<<<<<< HEAD
+=======
+iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini")
+
+confspec = ConfigObj(StringIO("""#Configuration file
+
+[separator]
+	bookmarkSeparator = string(default="")
+"""), encoding="UTF-8")
+confspec.newlines = "\r\n"
+conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
+val = Validator()
+conf.validate(val)
+
+
+>>>>>>> hindi
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
@@ -60,7 +77,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
+<<<<<<< HEAD
 		self.separatorFile = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.txt")
+=======
+		self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+>>>>>>> hindi
 
 	def terminate(self):
 		try:
@@ -68,6 +89,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except wx.PyDeadObjectError:
 			pass
 
+<<<<<<< HEAD
 	def getSeparator(self):
 		try:
 			with codecs.open(self.separatorFile, "r", "utf-8") as f:
@@ -78,6 +100,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def onSettings(self, evt):
 		if not os.path.isfile(self.separatorFile):
+=======
+	def onSettings(self, evt):
+		# Translators: label of a dialog.
+		message = _("Type the string to be used as a separator between contents appended to the clipboard.")
+		# Translators: title of a dialog.
+		title = _("Clip Contents Designer settings")
+		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=conf["separator"]["bookmarkSeparator"])
+		gui.mainFrame.prePopup()
+		try:
+			result = d.ShowModal()
+		except AttributeError:
+			pass
+		gui.mainFrame.postPopup()
+		if result == wx.ID_OK:
+			conf["separator"]["bookmarkSeparator"] = d.GetValue()
+			self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+>>>>>>> hindi
 			try:
 				with codecs.open(self.separatorFile, "w", "utf-8") as f:
 					f.write("\r\n\r\n")
@@ -143,7 +182,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
+<<<<<<< HEAD
 			text = clipData+self.getSeparator()+newText
+=======
+			text = clipData+self.bookmark+newText
+>>>>>>> hindi
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
