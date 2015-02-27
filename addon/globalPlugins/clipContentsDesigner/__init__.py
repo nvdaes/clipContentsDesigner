@@ -3,7 +3,7 @@
 # clipContentsDesigner: a global plugin for managing clipboard text
 # Version: 2.0
 # Hindi characters can be writen as a separator
-# Date: 26/02/2015
+# Date: 27/02/2015
 # Version: 1.0
 # Changed menu labels according to the new add-on name
 # Date: 3/07/2014
