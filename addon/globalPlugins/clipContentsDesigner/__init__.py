@@ -141,7 +141,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			mathMl = obj.mathMl
 		except (AttributeError, NotImplementedError, LookupError):
 			return None
-		import mathPres
+		try:
+			import mathPres
+		except ImportError:
+			return None
 		mathPres.ensureInit()
 		if mathPres.brailleProvider:
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
