@@ -1,6 +1,9 @@
 # -*- coding: UTF-8 -*-
 
 # clipContentsDesigner: a global plugin for managing clipboard text
+# Version: 3.0
+# Braille representation for math can be appended to the clipboard
+# Date: 03/06/2015
 # Version: 2.0
 # Hindi characters can be writen as a separator
 # Date: 27/02/2015
@@ -132,6 +135,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return None
 		return info.clipboardText
 
+	def getMath(self):
+		try:
+			obj = api.getNavigatorObject()
+			mathMl = obj.mathMl
+		except (AttributeError, NotImplementedError, LookupError):
+			return None
+		import mathPres
+		mathPres.ensureInit()
+		if mathPres.brailleProvider:
+			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
+			return text
+
 	def script_setSelectionStartMarker(self, gesture):
 		self._copyStartMarker = api.getReviewPosition().copy()
 		# Translators: message presented when the start marker for appending text has been set using the review cursor.
@@ -140,7 +155,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended to the clipboard.")
 
 	def script_append(self, gesture):
-		newText = self.getSelectedText()
+		newText = self.getSelectedText() or self.getMath()
 		if not newText:
 			if not self._copyStartMarker:
 				# Translators: message presented when it's not possible to append text, since no text has been selected or marked.
