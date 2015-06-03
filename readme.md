@@ -7,7 +7,7 @@ This add-on is used to append text to the clipboard, which can be useful when yo
 The clipboard content can also be cleared.
 
 ## Keyboard commands ##
-*   NVDA+windows+c: Append selected text, or the string which has been marked with the review cursor, to the clipboard.
+*   NVDA+windows+c: Append selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
 *   NVDA+windows+x: Clear clipboard contents.
 *   NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
     If you use nvda+F9, the text will not be appended.
@@ -17,6 +17,8 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 ## Preferences Menu ##
 *   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire appended text is pasted.
 
+## Changes for 3.0 ##
+*   Braille representation of MathML objects can be appended to the clipboard if MathPlayed is installed.
 
 ## Changes for 2.0 ##
 *   Hindi characters can be used as the separator between appended contents.
