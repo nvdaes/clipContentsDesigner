@@ -18,7 +18,7 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 *   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire appended text is pasted.
 
 ## Changes for 3.0 ##
-*   Braille representation of MathML objects can be appended to the clipboard if MathPlayed is installed.
+*   Braille representation of MathML objects can be appended to the clipboard if MathPlayer is installed.
 
 ## Changes for 2.0 ##
 *   Hindi characters can be used as the separator between appended contents.
