@@ -2,8 +2,11 @@
 
 # clipContentsDesigner: a global plugin for managing clipboard text
 # Version: 3.0
+# Just use a single new line to separate appended strings when no separator is set, suggested by Bhavya
+# Date: 05/06/2015
 # Braille representation for math can be appended to the clipboard
 # Date: 03/06/2015
+
 # Version: 2.0
 # Hindi characters can be writen as a separator
 # Date: 27/02/2015
@@ -78,7 +81,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
-		self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+		self.bookmark = self.getBookmark()
+
+	def getBookmark(self):
+		if conf["separator"]["bookmarkSeparator"] == "":
+			bookmark = "\r\n"
+		else:
+			bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+		return bookmark
 
 	def terminate(self):
 		try:
@@ -100,7 +110,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.postPopup()
 		if result == wx.ID_OK:
 			conf["separator"]["bookmarkSeparator"] = d.GetValue()
-			self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+			self.bookmark = self.getBookmark()
 			try:
 				conf.validate(val, copy=True)
 				conf.write()
