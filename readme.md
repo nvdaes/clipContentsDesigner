@@ -19,6 +19,7 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 
 ## Changes for 3.0 ##
 *   Braille representation of MathML objects can be appended to the clipboard if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the appended text segments.
 
 ## Changes for 2.0 ##
 *   Hindi characters can be used as the separator between appended contents.
