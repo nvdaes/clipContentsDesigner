@@ -108,7 +108,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
 	script_settings.category = SCRCAT_CONFIG
-	script_settings.__doc__ = _("Shows the Clip Contents Designer settings dialog")
+	script_settings.__doc__ = _("Shows the Clip Contents Designer settings dialog.")
 
 	def clearClipboard(self):
 		try:
