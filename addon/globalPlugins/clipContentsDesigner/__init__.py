@@ -106,7 +106,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame._popupSettingsDialog(AddonSettingsDialog)
 
 	def script_settings(self, gesture):
-		wx.CallAfter(gui.mainFrame.onSettings, None)
+		wx.CallAfter(self.onSettings, None)
 	script_settings.category = SCRCAT_CONFIG
 	script_settings.__doc__ = _("Shows the Clip Contents Designer settings dialog")
 
