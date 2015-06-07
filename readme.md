@@ -22,7 +22,7 @@ Note: The above command can be changed from NVDA menu, Preferences submenu, Inpu
 ## Changes for 3.0 ##
 *   Braille representation of MathML objects can be appended to the clipboard if MathPlayer is installed.
 *   If no separator is set, just a single line will be placed between the appended text segments.
-*   A shortcut can be assigned tho open the Clip Contents Designer settings dialog.
+*   A shortcut can be assigned to open the Clip Contents Designer settings dialog.
 *   Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
 
 ## Changes for 2.0 ##
