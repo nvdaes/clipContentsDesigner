@@ -1,6 +1,14 @@
 # -*- coding: UTF-8 -*-
 
 # clipContentsDesigner: a global plugin for managing clipboard text
+# Version: 3.0
+# Added option of copying the separator to import when reinstalling the add-on, suggested by Joseph Lee
+# Date: 07/06/2015
+# Just use a single new line to separate appended strings when no separator is set, suggested by Bhavya
+# Date: 05/06/2015
+# Braille representation for math can be appended to the clipboard
+# Date: 03/06/2015
+
 # Version: 2.0
 # Hindi characters can be writen as a separator
 # Date: 27/02/2015
@@ -34,9 +42,12 @@ import textInfos
 import ui
 import msg # Developed by Alberto Bufolino
 import win32clipboard
+import os
+import shutil
+import globalVars
 import wx
 import gui
-import os
+from gui import SettingsDialog
 from logHandler import log
 from cStringIO import StringIO
 from configobj import ConfigObj
@@ -45,9 +56,9 @@ from validate import Validator
 addonHandler.initTranslation()
 
 try:
-	from globalCommands import SCRCAT_TEXTREVIEW
+	from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 except:
-	SCRCAT_TEXTREVIEW = None
+	SCRCAT_TEXTREVIEW = SCRCAT_CONFIG = None
 
 iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini")
 
@@ -60,6 +71,15 @@ confspec.newlines = "\r\n"
 conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
 val = Validator()
 conf.validate(val)
+
+def getBookmark():
+	if conf["separator"]["bookmarkSeparator"] == "":
+		bookmark = "\r\n"
+	else:
+		bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+	return bookmark
+
+bookmark = getBookmark()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -75,7 +95,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
 
 		self._copyStartMarker = None
-		self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
 
 	def terminate(self):
 		try:
@@ -84,28 +103,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 
 	def onSettings(self, evt):
-		# Translators: label of a dialog.
-		message = _("Type the string to be used as a separator between contents appended to the clipboard.")
-		# Translators: title of a dialog.
-		title = _("Clip Contents Designer settings")
-		d = wx.TextEntryDialog(gui.mainFrame, message, title, defaultValue=conf["separator"]["bookmarkSeparator"])
-		gui.mainFrame.prePopup()
-		try:
-			result = d.ShowModal()
-		except AttributeError:
-			pass
-		gui.mainFrame.postPopup()
-		if result == wx.ID_OK:
-			conf["separator"]["bookmarkSeparator"] = d.GetValue()
-			self.bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
-			try:
-				conf.validate(val, copy=True)
-				conf.write()
-				log.info("clipContentsDesigner add-on configuration saved")
-			except Exception as e:
-				log.warning("Could not save clipContentsDesigner add-on configuration")
-				log.debugWarning("", exc_info=True)
-				raise e
+		gui.mainFrame._popupSettingsDialog(AddonSettingsDialog)
+
+	def script_settings(self, gesture):
+		wx.CallAfter(self.onSettings, None)
+	script_settings.category = SCRCAT_CONFIG
+	script_settings.__doc__ = _("Shows the Clip Contents Designer settings dialog.")
 
 	def clearClipboard(self):
 		try:
@@ -132,6 +135,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return None
 		return info.clipboardText
 
+	def getMath(self):
+		try:
+			obj = api.getNavigatorObject()
+			mathMl = obj.mathMl
+		except (AttributeError, NotImplementedError, LookupError):
+			return None
+		try:
+			import mathPres
+		except ImportError:
+			return None
+		mathPres.ensureInit()
+		if mathPres.brailleProvider:
+			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
+			return text
+
 	def script_setSelectionStartMarker(self, gesture):
 		self._copyStartMarker = api.getReviewPosition().copy()
 		# Translators: message presented when the start marker for appending text has been set using the review cursor.
@@ -140,7 +158,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended to the clipboard.")
 
 	def script_append(self, gesture):
-		newText = self.getSelectedText()
+		newText = self.getSelectedText() or self.getMath()
 		if not newText:
 			if not self._copyStartMarker:
 				# Translators: message presented when it's not possible to append text, since no text has been selected or marked.
@@ -161,7 +179,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
-			text = clipData+self.bookmark+newText
+			text = clipData+bookmark+newText
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
@@ -183,3 +201,42 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:NVDA+windows+x": "clear",
 		"kb:NVDA+windows+f9": "setSelectionStartMarker",
 	}
+
+class AddonSettingsDialog(SettingsDialog):
+
+	# Translators: title of a dialog.
+	title = _("Clip Contents Designer settings")
+
+	def makeSettings(self, settingsSizer):
+		# Translators: label of a dialog.
+		setSeparatorLabel=wx.StaticText(self, -1, label=_("Type the string to be used as a &separator between contents appended to the clipboard."))
+		settingsSizer.Add(setSeparatorLabel)
+		self.setSeparatorEdit=wx.TextCtrl(self, wx.NewId())
+		self.setSeparatorEdit.SetValue(conf["separator"]["bookmarkSeparator"])
+		settingsSizer.Add(self.setSeparatorEdit, border=10, flag=wx.BOTTOM)
+		# Translators: label of a dialog.
+		self.copySettingsCheckBox=wx.CheckBox(self, wx.NewId(), label=_("&Copy settings"))
+		self.copySettingsCheckBox.SetValue(False)
+		settingsSizer.Add(self.copySettingsCheckBox,border=10, flag=wx.BOTTOM)
+
+	def postInit(self):
+		self.setSeparatorEdit.SetFocus()
+
+	def onOk(self,evt):
+		super(AddonSettingsDialog, self).onOk(evt)
+		conf["separator"]["bookmarkSeparator"] = self.setSeparatorEdit.GetValue()
+		global bookmark
+		bookmark = getBookmark()
+		try:
+			conf.validate(val, copy=True)
+			conf.write()
+			log.info("clipContentsDesigner add-on configuration saved")
+		except Exception as e:
+			log.warning("Could not save clipContentsDesigner add-on configuration")
+			log.debugWarning("", exc_info=True)
+			raise e
+		if self.copySettingsCheckBox.GetValue():
+			try:
+				shutil.copy(iniFileName, globalVars.appArgs.configPath)
+			except:
+				pass
