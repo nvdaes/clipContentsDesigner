@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AppendText.nvda-addon version 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-30 13:20+0100\n"
+"PO-Revision-Date: 2015-06-27 13:02+0100\n"
+"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You have installed the AppendText add-on, probably an old and incompatible "
+"version with this one. Do you want to uninstall the old version?"
+msgstr ""
+"Vous avez installé le module AppendText dans une version ancienne et "
+"incompatible avec la version actuelle. Voulez-vous désinstaller l'ancienne "
+"version ?"
+
+#. Translators: the title of a message box dialog.
+msgid "Uninstall incompatible add-on"
+msgstr "Désinstaller le module complémentaire incompatible"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You seem to have previous settings saved for this add-on. Do you want to "
+"import them?"
+msgstr ""
+"Vous semblez avoir des précédents paramètres enregistrés pour ce module "
+"complémentaire. Vous voulez les importer ?"
+
+#. Translators: the title of a message box dialog.
+msgid "Import ClipContentsDesigner add-on settings"
+msgstr ""
+"Importer les paramètres du module complémentaire Clip Contents Designer"
+
+#. Translators: name of the option in the menu.
+msgid "&Clip Contents Designer settings..."
+msgstr "Paramètres de &Clip Contents Designer..."
+
+msgid "Shows the Clip Contents Designer settings dialog."
+msgstr "Afficher la boîte de dialogue paramètres de Clip Contents Designer."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Presse-papiers vidé"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Presse-papier non vidé"
+
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "Marqueur de début défini"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr ""
+"Marque la position actuelle du curseur de revue comme début du texte à "
+"ajouter au presse-papiers."
+
+#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "Pas de sélection. pas de marqueur de début"
+
+#. Translators: message presented when user tries to select text across object boundaries
+msgid "The start marker must reside within the same object"
+msgstr "Le marqueur de début doit résider dans le même objet"
+
+#. Translators: message presented when review cursor has been used to append text and there is no text to append.
+msgid "No text to append"
+msgstr "Pas de texte à ajouter"
+
+#. Translators: message presented when the text has been appended to the clipboard.
+msgid "Appended"
+msgstr "Ajouté"
+
+#. Translators: message presented when the text cannot be appended to the clipboard.
+msgid "Cannot append"
+msgstr "Impossible d'ajouter"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"appends it to the clipboard."
+msgstr ""
+"Récupérer la chaîne sélectionnée ou le texte depuis le marqueur de début "
+"précédemment défini jusqu'à et y compris la position actuelle du curseur de "
+"revue, et l'ajouter au presse-papiers."
+
+#. Translators: message presented in input mode.
+msgid "Deletes the appended text and the content of the clipboard."
+msgstr "Supprimer le texte ajouté et le contenu du presse-papiers."
+
+#. Translators: title of a dialog.
+msgid "Clip Contents Designer settings"
+msgstr "Paramètres de Clip Contents Designer"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents appended to the "
+"clipboard."
+msgstr ""
+"Tapez la chaîne qui sera utilisé comme &séparateur entre les contenu "
+"ajoutées au presse-papiers."
+
+#. Translators: label of a dialog.
+msgid "&Copy settings"
+msgstr "&Copier les paramètres"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "Add-on for managing clipboard text."
+msgstr "Module complémentaire pour gérer le contenu du presse-papiers."
+
+#~ msgid "&Append text"
+#~ msgstr "&Ajouter texte"
+
+#~ msgid "Append Text menu"
+#~ msgstr "Menu Append Text"
+
+#~ msgid "D&elete appended text"
+#~ msgstr "S&upprimer le texte ajouté"
+
+#~ msgid "Clear clipboard and delete appended text"
+#~ msgstr "Effacer le presse-papiers et supprimer le texte ajouté"
+
+#~ msgid "Append Text &separator..."
+#~ msgstr "&Séparateur Append Text..."
+
+#~ msgid "Set the separator for appended strings"
+#~ msgstr "Définir le séparateur pour les chaînes ajoutées"
+
+#~ msgid "Open &documentation"
+#~ msgstr "Ouvrir  la &documentation"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Ouvrir la documentation pour la langue actuel"
+
+#~ msgid "Append Text settings"
+#~ msgstr "Configurations Append Text"
+
+#~ msgid "Can not clear the clipboard"
+#~ msgstr "Vous Ne pouvez pas effacer le presse-papiers"
+
+#~ msgid "Adding text to empty clipboard"
+#~ msgstr "Ajout de texte en cours dans le presse-papiers vide"
+
+#~ msgid "Can not append text to the clipboard"
+#~ msgstr "Vous Ne pouvez pas ajouter du texte dans le presse-papiers"
+
+#~ msgid "Clearing added text..."
+#~ msgstr "Suppression en cours du texte ajouté..."

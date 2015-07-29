@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2014-12-27 13:01+0300\n"
+"Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
+"Language-Team: Translators <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You have installed the AppendText add-on, probably an old and incompatible "
+"version with this one. Do you want to uninstall the old version?"
+msgstr ""
+"Скорее всего, у вас установлена старая и несовместимая версия дополнения "
+"AppendText. Хотите удалить старую версию?"
+
+#. Translators: the title of a message box dialog.
+msgid "Uninstall incompatible add-on"
+msgstr "Удаление несовместимого дополнения"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You seem to have previous settings saved for this add-on. Do you want to "
+"import them?"
+msgstr ""
+
+#. Translators: the title of a message box dialog.
+#, fuzzy
+msgid "Import ClipContentsDesigner add-on settings"
+msgstr "Настройки Clip Contents Designer"
+
+#. Translators: name of the option in the menu.
+msgid "&Clip Contents Designer settings..."
+msgstr "Настройки &Clip Contents Designer..."
+
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings dialog."
+msgstr "Настройки Clip Contents Designer"
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Буфер обмена очищен"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Буфер обмена не очищен"
+
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "Начальная метка выбрана"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr ""
+"Отмечает текущее положение курсора обзора как начало текста, который будет "
+"добавлен в буфер обмена."
+
+#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "Нет выделения. Начальная метка не выбрана"
+
+#. Translators: message presented when user tries to select text across object boundaries
+msgid "The start marker must reside within the same object"
+msgstr "Начальная метка должна находиться в пределах того же объекта"
+
+#. Translators: message presented when review cursor has been used to append text and there is no text to append.
+msgid "No text to append"
+msgstr "Нет текста для добавления"
+
+#. Translators: message presented when the text has been appended to the clipboard.
+msgid "Appended"
+msgstr "Добавлен"
+
+#. Translators: message presented when the text cannot be appended to the clipboard.
+msgid "Cannot append"
+msgstr "Невозможно добавить"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"appends it to the clipboard."
+msgstr ""
+"Восстанавливает выбранную строку или текст от ранее установленной начальной "
+"метки, вплоть до текущей позиции курсора обзора, и добавляет его в буфер "
+"обмена."
+
+#. Translators: message presented in input mode.
+msgid "Deletes the appended text and the content of the clipboard."
+msgstr "Удаляет добавленный текст и содержимое буфера обмена."
+
+#. Translators: title of a dialog.
+msgid "Clip Contents Designer settings"
+msgstr "Настройки Clip Contents Designer"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid ""
+"Type the string to be used as a &separator between contents appended to the "
+"clipboard."
+msgstr ""
+"Введите строку для использования в качестве разделителя между складывающимся "
+"содержимым буфера обмена."
+
+#. Translators: label of a dialog.
+msgid "&Copy settings"
+msgstr ""
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "Add-on for managing clipboard text."
+msgstr "Дополнение для управления текстом буфера обмена."
