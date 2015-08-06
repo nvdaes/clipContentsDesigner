@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2015-01-12 10:41+0545\n"
-"Last-Translator: Him Prasad Gautam <drishtibachak@gmail.com>\n"
+"PO-Revision-Date: 2015-07-04 07:13+0545\n"
+"Last-Translator: drishtibachak@gmail.com\n"
 "Language-Team: Nepali\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.1\n"
+"X-Generator: Poedit 1.7.6\n"
 
 #. Translators: the label of a message box dialog.
 msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
+"You have installed the AppendText add-on, probably an old and incompatible version with "
+"this one. Do you want to uninstall the old version?"
 msgstr ""
-"तपाइले AppendText नामको उप-कर्मीलाई स्थापना गरेको हुनु पर्छ, सम्भवत यो नयाँ संस्करण सित "
-"न मिल्दो छ ।Do you want to uninstall the old version?"
+"तपाइले AppendText नामको उप-कर्मीलाई स्थापना गरेको हुनु पर्छ, सम्भवत यो नयाँ संस्करण सित न मिल्दो छ ।"
+"Do you want to uninstall the old version?"
 
 #. Translators: the title of a message box dialog.
 msgid "Uninstall incompatible add-on"
@@ -31,22 +31,21 @@ msgstr "न मिल्दो उप-कर्मीलाई हटाउ ।
 
 #. Translators: the label of a message box dialog.
 msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
+"You seem to have previous settings saved for this add-on. Do you want to import them?"
 msgstr ""
+"यो उप-कर्मीका लागि तपाइले पहिले नै अनुकूलता बचत गरेको देखिन्छ । के तपाइ यिनिहरुलाई आयात गर्न चाहनु "
+"हुन्छ?"
 
 #. Translators: the title of a message box dialog.
-#, fuzzy
 msgid "Import ClipContentsDesigner add-on settings"
-msgstr "क्लिप सामाग्री नमुनाकारको अनुकूलन ।"
+msgstr "क्लिप सामाग्री नमुनाकार उप-कर्मीको अनुकूलन आयात गर ।"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "&क्लिप सामाग्री नमुनाकारको अनुकूलन ।"
 
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "क्लिप सामाग्री नमुनाकारको अनुकूलन ।"
+msgstr "क्लिप सामाग्री नमुनाकार उपकर्मीको अनुकूलन पातो देखाउने छ।"
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -62,8 +61,8 @@ msgstr "सुरुवात निसाना कायम"
 
 #. Translators: message presented in input mode.
 msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
+"Marks the current position of the review cursor as the start of text to be appended to "
+"the clipboard."
 msgstr "क्लीपपाटीमा थपिने पाठसुरु हुने समीक्षा क्रसरको चालु स्थानलाई सिमाङ्कन गर्छ ।"
 
 #. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
@@ -88,12 +87,12 @@ msgstr "थप गर्न सकिएन ।"
 
 #. Translators: message presented in input mode.
 msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"Retrieves the selected string or the text from the previously set start marker up to "
+"and including the current position of the review cursor, and appends it to the "
+"clipboard."
 msgstr ""
-"चयन गरिएको पदावलीलाई अथवा पहिले कायम गरिएको पाठ सुरु सिमाङ्कन देखि चालू समीक्षा "
-"क्रसरको स्थान सम्मको पाठलाइ प्राप्त गरी क्लिपपाटीमा यसलाई थप गर्छ ।, "
+"चयन गरिएको पदावलीलाई अथवा पहिले कायम गरिएको पाठ सुरु सिमाङ्कन देखि चालू समीक्षा क्रसरको स्थान "
+"सम्मको पाठलाइ प्राप्त गरी क्लिपपाटीमा यसलाई थप गर्छ ।, "
 
 #. Translators: message presented in input mode.
 msgid "Deletes the appended text and the content of the clipboard."
@@ -104,17 +103,13 @@ msgid "Clip Contents Designer settings"
 msgstr "क्लिप सामाग्री नमुनाकारको अनुकूलन ।"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
-"clipboard."
-msgstr ""
-"क्लिपपाटीमा जोडिने सामाग्रीहरूको सिमाना जनाउने पदावली टङ्कण गर्नु होस्, between "
-"contents appended to the clipboard."
+"Type the string to be used as a &separator between contents appended to the clipboard."
+msgstr "क्लिपपाटीमा जोडिने सामाग्रीहरूको & विभाजक जनाउने पदावली टङ्कण गर्नु होस् ।"
 
 #. Translators: label of a dialog.
 msgid "&Copy settings"
-msgstr ""
+msgstr "&अनुकूलताको प्रतिलिपी"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
