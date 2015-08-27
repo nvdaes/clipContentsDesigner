@@ -7,9 +7,9 @@
 النصوص معا ولصقها. كما يمكن أيضا مسح محتوى الحافظة.
 
 ## مفاتيح الاختصار ##
-*   NVDA+windows+c: Append selected text, Unicode braille characters which
-    represent MathML objects, or the string which has been marked with the
-    review cursor, to the clipboard.
+*   NVDA+windows+c: إلحاق النص المحدد, أو أحرف التشفير الموحد التي تمثل
+    الكائنات الرياضية المكتوبة بالخط البارز أو النص الذي قمت بتحديده بمؤشر
+    الاستعراض, إلى الحافظة.
 *   NVDA+windows+x: لمسح محتوى الحافظة
 *   NVDA+windows+f9: تحديد الموضع الحالي لمؤشر الاستعراض كبداية للنص الذي
     سيتم إلحاقه بالحافظة. إذا استخدمت NVDA+f9, فإن النص لم يلحق بالحافظة.
@@ -18,24 +18,21 @@
 الرئيسية, ثم قائمة التفضيلات, ثم تخصيص اختصارات NVDA, ثم فئة استعراض النص.
 
 ## قائمة التفضيلات ##
-*   Clip Contents Designer settings: Allows to set a separator which can be
-    used to find the text segments once the entire appended text is
-    pasted. You can also choose if the separator should be copied to your
-    personal NVDA's configuration folder, so that it can be imported when
-    reinstalling the add-on.
+*   إعدادات Clip Contents Designer: تتيح وضع فاصل يمكن استخدامه للعثور على
+    قطع النص عند لصق كل النص الذي قمت بدمجه وتخزينه في الحافظة. يمكنك أيضا
+    اختيار ما إذا كان ينبغي نسخ الفاصل إلى مجلد إعدادات NVDA الخاص بك, حتى
+    يمكن استيراده عند إعادة تنصيب الإضافة.
 
-Note: The above command can be changed from NVDA menu, Preferences submenu,
-Input gestures dialog, Configuration category.
+ملحوظة: يمكنك تغيير الاختصار المذكور أعلاه من خلال الذهاب إلى قائمة NVDA
+الرئيسية, ثم قائمة التفضيلات, ثم تخصيص اختصارات NVDA, ثم فئة الإعدادات.
 
-## Changes for 3.0 ##
-*   Braille representation of MathML objects can be appended to the
-    clipboard if MathPlayer is installed.
-*   If no separator is set, just a single line will be placed between the
-    appended text segments.
-*   A shortcut can be assigned to open the Clip Contents Designer settings
-    dialog.
-*   Added a check box in the settings dialog, for choosing if the separator
-    should be copied to be imported when reinstalling the add-on.
+## مستجدات الإصدار 3.0 ##
+*   يمكن إلحاق الأحرف التي تمثل الكائنات الرياضية بالبرايل بالحافظة إذا كان
+    تطبيق mathplayer مثبت على الحاسوب.
+*   إذا لم يتم تعيين أي فاصل, سيتم وضع سطر بين كل قطعة نصية ملحقة بالحافظة.
+*   يمكن تعيين اختصار لفتح محاورة إعدادات الإضافة.
+*   إضافة مربع تحديد لإعدادات الإضافة, للاختيار ما إذا كان ينبغي نسخ الفاصل
+    بين القطع النصية لاستيراده عند إعادة تثبيت الإضافة
 
 ## مستجدات الإصدار 2.0 ##
 *   يمكن استخدام الأحرف الهندية كفواصل بين قطع النصوص المختلفة الملحقة
