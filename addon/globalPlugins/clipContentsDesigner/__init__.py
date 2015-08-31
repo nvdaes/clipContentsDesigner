@@ -108,6 +108,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
 	script_settings.category = SCRCAT_CONFIG
+	# Translators: message presented in input mode.
 	script_settings.__doc__ = _("Shows the Clip Contents Designer settings dialog.")
 
 	def clearClipboard(self):
@@ -167,7 +168,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pos = api.getReviewPosition().copy()
 			if self._copyStartMarker.obj != pos.obj:
 				# Translators: message presented when user tries to select text across object boundaries
-				msg.message(_("The start marker must reside within the same object"))
+				msg.message("The start marker must reside within the same object")
 				return
 			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
 			pos.setEndPoint(self._copyStartMarker, "startToStart")
