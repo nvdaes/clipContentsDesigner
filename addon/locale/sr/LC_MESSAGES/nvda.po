@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 2.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2015-03-20 03:00+1000\n"
+"PO-Revision-Date: 2015-10-08 11:12+0200\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Janko Valenćik <jankoval@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.5\n"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You have installed the AppendText add-on, probably an old and incompatible "
+"version with this one. Do you want to uninstall the old version?"
+msgstr ""
+"Instalirali ste AppendText dodatak, verovatno staru i nekompatibilnu "
+"verziju zajedno sa ovom. Želite li da uklonite staru verziju?"
+
+#. Translators: the title of a message box dialog.
+msgid "Uninstall incompatible add-on"
+msgstr "Ukloni nekomptaibilne dodatke"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You seem to have previous settings saved for this add-on. Do you want to "
+"import them?"
+msgstr ""
+"Imate sačuvana prethodna podešavanja za ovaj dodatak. Želite li da ih "
+"uvezete?"
+
+#. Translators: the title of a message box dialog.
+msgid "Import ClipContentsDesigner add-on settings"
+msgstr "Uvezi podešavanja za ClipContentDesigner dodatak"
+
+#. Translators: name of the option in the menu.
+msgid "&Clip Contents Designer settings..."
+msgstr "&Clip Contnets Designer podešavanja..."
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings dialog."
+msgstr "Prikazuje Clip Contents Designer dijalog za podešavanja."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Ispražnjena privremena memorija"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Nije ispražnjena privremena memorija"
+
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "Postavljen početni marker"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr ""
+"Označava trenutnu poziciju revizionog kursora kao početak teksta koji treba "
+"da se doda u privremenu memoriju."
+
+#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "Ništa nije označeno. Nije postavljen početni marker"
+
+#. Translators: message presented when review cursor has been used to append text and there is no text to append.
+msgid "No text to append"
+msgstr "Nema teksta za dodavanje"
+
+#. Translators: message presented when the text has been appended to the clipboard.
+msgid "Appended"
+msgstr "Dodato"
+
+#. Translators: message presented when the text cannot be appended to the clipboard.
+msgid "Cannot append"
+msgstr "Nije moguće dodavanje"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"appends it to the clipboard."
+msgstr ""
+"Vraća odabrane znakove ili tekst od prethodno postavljenog početnog markera "
+"sve do trenutne pozicije revizionog kursora uključujući i nju, i dodaje ih "
+"u privremenu memoriju."
+
+#. Translators: message presented in input mode.
+msgid "Deletes the appended text and the content of the clipboard."
+msgstr "Briše dodati tekst i sadržaj privremene memorije."
+
+#. Translators: title of a dialog.
+msgid "Clip Contents Designer settings"
+msgstr "Podešavanja za Clip Contents Designer"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents appended to the "
+"clipboard."
+msgstr ""
+"Unesi znakove koji će se koristiti kao &separator između sadržaja dodatih u "
+"privremenu memoriju."
+
+#. Translators: label of a dialog.
+msgid "&Copy settings"
+msgstr "&Kopiraj podešavanja"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "Add-on for managing clipboard text."
+msgstr "Dodatak "
