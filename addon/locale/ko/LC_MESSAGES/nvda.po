@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2016-01-26 08:34+0100\n"
+"Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You have installed the AppendText add-on, probably an old and incompatible "
+"version with this one. Do you want to uninstall the old version?"
+msgstr ""
+"AppendText 추가 기능이 설치되어 ㅣㅇㅆ습니다. 본 추가 기능은 이전 추가 기능"
+"과 호환이 되지 않을 수 있습니다. 이전 추가 기능을 삭제하시겠습니까?"
+
+#. Translators: the title of a message box dialog.
+msgid "Uninstall incompatible add-on"
+msgstr "이전 추가 기능 삭제"
+
+#. Translators: the label of a message box dialog.
+msgid ""
+"You seem to have previous settings saved for this add-on. Do you want to "
+"import them?"
+msgstr ""
+"본 추가 기능 설정이 존재합니다. 이전에 저장된 설정값을 불러오시겠습니까?"
+
+#. Translators: the title of a message box dialog.
+msgid "Import ClipContentsDesigner add-on settings"
+msgstr "ClipContentsDesigner 설정 불러오기"
+
+#. Translators: name of the option in the menu.
+msgid "&Clip Contents Designer settings..."
+msgstr "Clip Contents Designer 설정... (&C)"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings dialog."
+msgstr "Clip Contents Designer 설정을 보여줍니다"
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "클립보드 텍스트 삭제됨"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "클립보드 텍스트 삭제 실패"
+
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr ""
+
+#. Translators: message presented in input mode.
+msgid ""
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr ""
+
+#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr ""
+
+#. Translators: message presented when review cursor has been used to append text and there is no text to append.
+msgid "No text to append"
+msgstr ""
+
+#. Translators: message presented when the text has been appended to the clipboard.
+msgid "Appended"
+msgstr ""
+
+#. Translators: message presented when the text cannot be appended to the clipboard.
+msgid "Cannot append"
+msgstr ""
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"appends it to the clipboard."
+msgstr ""
+
+#. Translators: message presented in input mode.
+msgid "Deletes the appended text and the content of the clipboard."
+msgstr ""
+
+#. Translators: title of a dialog.
+msgid "Clip Contents Designer settings"
+msgstr "Clip Contents Designer 설정"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents appended to the "
+"clipboard."
+msgstr ""
+
+#. Translators: label of a dialog.
+msgid "&Copy settings"
+msgstr "설정 복사 (&C)"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "Add-on for managing clipboard text."
+msgstr "클립보드 텍스트 관리용 추가 기능"
