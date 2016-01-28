@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2014-12-29 05:53+0100\n"
+"PO-Revision-Date: 2016-01-27 21:58+0100\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc[@]guest.arnes.si\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: the label of a message box dialog.
 msgid ""
 "You have installed the AppendText add-on, probably an old and incompatible "
 "version with this one. Do you want to uninstall the old version?"
 msgstr ""
-"Nameščen imate dodatek za upravljanje, katerega trenutna različica ni "
-"združljiva s to različico. Jo želite odstraniti?"
+"Nameščen imate dodatek AppendText, katerega trenutna različica ni združljiva "
+"s to različico. Jo želite odstraniti?"
 
 #. Translators: the title of a message box dialog.
 msgid "Uninstall incompatible add-on"
@@ -34,19 +34,19 @@ msgid ""
 "You seem to have previous settings saved for this add-on. Do you want to "
 "import them?"
 msgstr ""
+"Izgleda, da imate shranjene prejšnje nastavitve tega dodatka. Jih želite "
+"uvoziti?"
 
 #. Translators: the title of a message box dialog.
-#, fuzzy
 msgid "Import ClipContentsDesigner add-on settings"
-msgstr "nastavitve Clip Contents Designer"
+msgstr "Uvozi nastavitve dodatka ClipContentsDesigner"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
-msgstr "nastavitve &Clip Contents Designer..."
+msgstr "Nastavitve &Clip Contents Designer..."
 
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "nastavitve Clip Contents Designer"
+msgstr "Prikazuje pogovorno okno nastavitev Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -103,18 +103,17 @@ msgstr "Izbriše tako dodano, kot osnovno vsebino odložišča."
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
-msgstr "nastavitve Clip Contents Designer"
+msgstr "Nastavitve Clip Contents Designer"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "Type the string to be used as a &separator between contents appended to the "
 "clipboard."
-msgstr "Vnesite niz, ki bo ločnica med besedilom, ki ga dodajate v odložišče."
+msgstr "Vnesi niz, ki bo &ločnica med besedilom, ki ga dodajate v odložišče."
 
 #. Translators: label of a dialog.
 msgid "&Copy settings"
-msgstr ""
+msgstr "&Preslikaj nastavitve"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
