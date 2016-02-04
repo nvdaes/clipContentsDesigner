@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-01-26 08:06+0100\n"
-"Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
+"PO-Revision-Date: 2016-01-29 13:14+0330\n"
+"Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation <nvda-translations@freelists.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. Translators: the label of a message box dialog.
 msgid ""
@@ -34,19 +34,19 @@ msgid ""
 "You seem to have previous settings saved for this add-on. Do you want to "
 "import them?"
 msgstr ""
+"به نظر میرسد که شما پیش از این تنظیماتی را برای این افزونه ذخیره کرده اید. "
+"آیا میخواهید آن‌ها را برای استفاده از این افزونه وارد کنید؟"
 
 #. Translators: the title of a message box dialog.
-#, fuzzy
 msgid "Import ClipContentsDesigner add-on settings"
-msgstr "تنظیماتِ طراحِ محتوای کلیپ‌برد"
+msgstr "وارد کردنِ تنظیماتِ طراحِ محتوای کلیپ‌برد"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "تنظیماتِ طراحِ محتوای &کلیپ‌برد"
 
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "تنظیماتِ طراحِ محتوای کلیپ‌برد"
+msgstr "پنجره‌ی تنظیماتِ طراحِ محتوای کلیپ‌برد را نمایش میدهد."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -106,17 +106,16 @@ msgid "Clip Contents Designer settings"
 msgstr "تنظیماتِ طراحِ محتوای کلیپ‌برد"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "Type the string to be used as a &separator between contents appended to the "
 "clipboard."
 msgstr ""
-"رشته‌ای را که باید به عنوانِ جداساز میانِ محتواهایی که به کلیپ‌برد اضافه میشوند "
+"رشته‌ای را که باید به عنوانِ &جداساز میانِ محتواهایی که به کلیپ‌برد اضافه میشوند "
 "استفاده شود تایپ کنید."
 
 #. Translators: label of a dialog.
 msgid "&Copy settings"
-msgstr ""
+msgstr "&کپیِ تنظیمات"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
