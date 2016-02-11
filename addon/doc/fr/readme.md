@@ -38,14 +38,14 @@ la catégorie Configuration.
     presse-papiers si MathPlayer est installé.
 *   Si aucun séparateur n'est définie, juste une seule ligne sera placée
     entre les segments du texte ajouté.
-*   Vous pouvez assigner un raccourci pour ouvrir la boîte de dialogue
-    paramètres Clip Contents Designer.
+*   Un raccourci peut être assigné pour ouvrir le dialogue paramètres Clip
+    Contents Designer.
 *   Ajouté une case à cocher dans la boîte de dialogue paramètres, afin de
     choisir si le séparateur doit être copié pour être importé lors de la
     réinstallation du module complémentaire.
 
 ## Changements pour la version 2.0 ##
-*   Les caractères Hindi peuvent être utilisés comme séparateur entre les
+*   Les caractères Hindous peuvent être utilisés comme séparateur entre les
     contenus concaténés.
 
 ## Changements pour la version 1.0 ##
