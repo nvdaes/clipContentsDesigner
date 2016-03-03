@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: appendText\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-31 08:59+0100\n"
-"PO-Revision-Date: 2015-07-27 11:19+0100\n"
+"PO-Revision-Date: 2016-02-26 02:09-0800\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Translators <llajta@gmx.us>\n"
 "Language: it_IT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
 "X-Poedit-Basepath: C:\\Users\\user\\Downloads\\AppendText\\globalPlugins\\\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -127,66 +127,3 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Componente aggiuntivo per la gestione del testo negli appunti"
-
-#~ msgid "&Append text"
-#~ msgstr "Appe&nd text"
-
-#~ msgid "Append Text menu"
-#~ msgstr "AppentText Menù"
-
-#~ msgid "D&elete appended text"
-#~ msgstr "Cancella il t&esto aggiunto negli appunti. NVDA+Shift+control+X"
-
-#~ msgid "Clear clipboard and delete appended text"
-#~ msgstr "Cancella il testo aggiunto negli appunti."
-
-#~ msgid "Append Text &separator..."
-#~ msgstr "Inserisci &separatore."
-
-#~ msgid "Set the separator for appended strings"
-#~ msgstr "Inserisci un separatore per le stringhe accodate."
-
-#~ msgid "Open &documentation"
-#~ msgstr "&Documentazione"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "Apri la documentazione per la lingua selezionata"
-
-#~ msgid "Append Text settings"
-#~ msgstr "Impostazioni AppentText "
-
-#~ msgid "Can not clear the clipboard"
-#~ msgstr "Impossibile cancellare gli appunti!"
-
-#~ msgid "Adding text to empty clipboard"
-#~ msgstr "Gli appunti non contenevano testo, stai aggiungendo..."
-
-#~ msgid "Can not append text to the clipboard"
-#~ msgstr "Impossibile aggiungere testo negli appunti..."
-
-#~ msgid "Clearing added text..."
-#~ msgstr "Testo cancellato..."
-
-#~ msgid "Text added"
-#~ msgstr "Testo Aggiunto."
-
-#~ msgid "No selection"
-#~ msgstr "Nessun testo selezionato."
-
-#~ msgid "Appends text that can be copied to clipboard and pasted to documents"
-#~ msgstr "Aggiunge il testo selezionato in appendText."
-
-#~ msgid "Copied added text. Pasting..."
-#~ msgstr "Incollato e Copiato negli appunti."
-
-#~ msgid "Copies and pastes the appended text"
-#~ msgstr "Copia negli appunti e incolla il testo aggiunto."
-
-#~ msgid "No added text"
-#~ msgstr "Nessun testo in AppendText."
-
-#~ msgid "The Added text is %d characters long."
-#~ msgstr "Ci sono %d caratteri in AppendText."
-
-#~ msgid "Reports the appended text"
-#~ msgstr "Legge il testo aggiunto in AppendText."
