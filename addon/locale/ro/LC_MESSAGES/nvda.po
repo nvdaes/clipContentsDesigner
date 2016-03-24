@@ -5,85 +5,85 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 2.0\n"
+"Project-Id-Version: clipContentsDesigner 3.4\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2016-03-18 12:08+0100\n"
-"Language: sr\n"
+"POT-Creation-Date: 2016-02-12 03:00+1000\n"
+"PO-Revision-Date: 2016-03-22 19:39+0200\n"
+"Last-Translator: DanP <dan.punga@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Janko Valenćik <jankoval@gmail.com>\n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #. Translators: the label of a message box dialog.
 msgid ""
 "You have installed the AppendText add-on, probably an old and incompatible "
 "version with this one. Do you want to uninstall the old version?"
 msgstr ""
-"Instalirali ste AppendText dodatak, verovatno staru i nekompatibilnu verziju "
-"zajedno sa ovom. Želite li da uklonite staru verziju?"
+"Ați instalat add-onul AppendText, probabil o versiune veche și incompatibilă "
+"cu aceasta. Doriți să dezinstalați vechea versiune?"
 
 #. Translators: the title of a message box dialog.
 msgid "Uninstall incompatible add-on"
-msgstr "ukloni nekompatibilan dodatak "
+msgstr "Dezinstalare add-on incompatibil"
 
 #. Translators: the label of a message box dialog.
 msgid ""
 "You seem to have previous settings saved for this add-on. Do you want to "
 "import them?"
 msgstr ""
-"Imate sačuvana prethodna podešavanja za ovaj dodatak. Želite li da ih "
-"uvezete?"
+"Se pare că aveți configurări anterioare salvate pentru aces add-on. Doriți "
+"să le importați?"
 
 #. Translators: the title of a message box dialog.
 msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Uvezi podešavanja za ClipContentDesigner dodatak"
+msgstr "Import configurare a add-onului ClipContentsDesigner"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
-msgstr "&Clip contentsDesigner podešavanja..."
+msgstr "Opțiuni &Clip Contents Designer"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Prikazuje Clip Contents Designer dijalog za podešavanja."
+msgstr "Arată fereastra dialog cu setările Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
-msgstr "Ispražnjena privremena memorija"
+msgstr "Planșetă golită"
 
 #. Translators: message presented when the clipboard content cannot be deleted.
 msgid "Clipboard not cleared"
-msgstr "Nije ispražnjena privremena memorija"
+msgstr "Planșetă negolită"
 
 #. Translators: message presented when the start marker for appending text has been set using the review cursor.
 msgid "Start marker set"
-msgstr "Postavljen početni marker"
+msgstr "Marcaj de început stabilit"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Marks the current position of the review cursor as the start of text to be "
 "appended to the clipboard."
 msgstr ""
-"Označava trenutnu poziciju revizionog kursora kao početak teksta koji treba "
-"da se doda u privremenu memoriju."
+"Marchează poziția curentă a cursorului de examinare ca începutul textului ce "
+"va fi adăugat în planșetă."
 
 #. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
-msgstr "Ništa nije označeno. Nije postavljen početni marker"
+msgstr "Fără selecție. Niciun marcaj de început stabilit"
 
 #. Translators: message presented when review cursor has been used to append text and there is no text to append.
 msgid "No text to append"
-msgstr "Nema teksta za dodavanje"
+msgstr "Fără text de adăugat"
 
 #. Translators: message presented when the text has been appended to the clipboard.
 msgid "Appended"
-msgstr "Dodato"
+msgstr "Adăugat"
 
 #. Translators: message presented when the text cannot be appended to the clipboard.
 msgid "Cannot append"
-msgstr "Nije moguće dodavanje"
+msgstr "Nu se poate adăuga"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -91,36 +91,36 @@ msgid ""
 "marker up to and including the current position of the review cursor, and "
 "appends it to the clipboard."
 msgstr ""
-"Vraća odabrane znakove ili tekst od prethodno postavljenog početnog markera "
-"sve do trenutne pozicije revizionog kursora uključujući i nju, i dodaje ih u "
-"privremenu memoriju."
+"Recuperează șirul selectat sau textul de la marcajul de început stabilit "
+"anterior și până la poziția curentă a cursorului de examinare, inclusiv, și "
+"îl adaugă la sfârșit în planșetă."
 
 #. Translators: message presented in input mode.
 msgid "Deletes the appended text and the content of the clipboard."
-msgstr "Briše dodati tekst i sadržaj privremene memorije."
+msgstr "Șterge textul adăugat și conținutul planșetei."
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
-msgstr "Podešavanja za Clip Contents Designer"
+msgstr "Configurare Clip Contents Designer"
 
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents appended to the "
 "clipboard."
 msgstr ""
-"Unesi znakove koji će se koristiti kao &separator između sadržaja dodatih u "
-"privremenu memoriju."
+"Tastați șirul de caractere ce va fi folosit ca &separator între "
+"conținuturile adăugate în planșetă."
 
 #. Translators: label of a dialog.
 msgid "&Copy settings"
-msgstr "&Kopiraj podešavanja"
+msgstr "&Copiere opțiuni"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgstr "Clip Contents Designer (Proiectantul conținutului planșetei)"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
-msgstr "Dodatak za upravljanje tekstualnog sadržaja privremene memorije"
+msgstr "Extensie add-on pentru gestionarea textului din planșetă."
