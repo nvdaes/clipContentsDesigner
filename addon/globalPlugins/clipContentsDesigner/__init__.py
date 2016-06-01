@@ -42,16 +42,10 @@ import textInfos
 import ui
 import msg # Developed by Alberto Bufolino
 import win32clipboard
-import os
-import shutil
-import globalVars
+import config
 import wx
 import gui
 from gui import SettingsDialog
-from logHandler import log
-from cStringIO import StringIO
-from configobj import ConfigObj
-from validate import Validator
 
 addonHandler.initTranslation()
 
@@ -60,26 +54,16 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = SCRCAT_CONFIG = None
 
-iniFileName = os.path.join(os.path.dirname(__file__), "clipContentsDesigner.ini")
-
-confspec = ConfigObj(StringIO("""#Configuration file
-
-[separator]
-	bookmarkSeparator = string(default="")
-"""), encoding="UTF-8")
-confspec.newlines = "\r\n"
-conf = ConfigObj(iniFileName, configspec = confspec, indent_type = "\t", encoding="UTF-8")
-val = Validator()
-conf.validate(val)
-
 def getBookmark():
-	if conf["separator"]["bookmarkSeparator"] == "":
+	try:
+		separator = config.conf["clipContentsDesigner"]["separator"]
+	except KeyError:
+		separator = ""
+	if separator == "":
 		bookmark = "\r\n"
 	else:
-		bookmark = "\r\n%s\r\n" % conf["separator"]["bookmarkSeparator"]
+		bookmark = "\r\n%s\r\n" % separator
 	return bookmark
-
-bookmark = getBookmark()
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -180,7 +164,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._copyStartMarker = None
 		try:
 			clipData = api.getClipData()
-			text = clipData+bookmark+newText
+			text = clipData+getBookmark()+newText
 		except TypeError:
 			text = newText
 		if api.copyToClip(text):
@@ -213,31 +197,15 @@ class AddonSettingsDialog(SettingsDialog):
 		setSeparatorLabel=wx.StaticText(self, -1, label=_("Type the string to be used as a &separator between contents appended to the clipboard."))
 		settingsSizer.Add(setSeparatorLabel)
 		self.setSeparatorEdit=wx.TextCtrl(self, wx.NewId())
-		self.setSeparatorEdit.SetValue(conf["separator"]["bookmarkSeparator"])
+		try:
+			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
+		except KeyError:
+			pass
 		settingsSizer.Add(self.setSeparatorEdit, border=10, flag=wx.BOTTOM)
-		# Translators: label of a dialog.
-		self.copySettingsCheckBox=wx.CheckBox(self, wx.NewId(), label=_("&Copy settings"))
-		self.copySettingsCheckBox.SetValue(False)
-		settingsSizer.Add(self.copySettingsCheckBox,border=10, flag=wx.BOTTOM)
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
 
 	def onOk(self,evt):
 		super(AddonSettingsDialog, self).onOk(evt)
-		conf["separator"]["bookmarkSeparator"] = self.setSeparatorEdit.GetValue()
-		global bookmark
-		bookmark = getBookmark()
-		try:
-			conf.validate(val, copy=True)
-			conf.write()
-			log.info("clipContentsDesigner add-on configuration saved")
-		except Exception as e:
-			log.warning("Could not save clipContentsDesigner add-on configuration")
-			log.debugWarning("", exc_info=True)
-			raise e
-		if self.copySettingsCheckBox.GetValue():
-			try:
-				shutil.copy(iniFileName, globalVars.appArgs.configPath)
-			except:
-				pass
+		config.conf["clipContentsDesigner"] = {"separator": self.setSeparatorEdit.GetValue()}
