@@ -58,8 +58,8 @@ def getBookmark():
 	try:
 		separator = config.conf["clipContentsDesigner"]["separator"]
 	except KeyError:
-		separator = ""
-	if separator == "":
+		separator = None
+	if not separator:
 		bookmark = "\r\n"
 	else:
 		bookmark = "\r\n%s\r\n" % separator
