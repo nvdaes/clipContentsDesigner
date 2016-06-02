@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2014-12-27 13:01+0300\n"
+"PO-Revision-Date: 2016-05-28 10:08+0400\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: Translators <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. Translators: the label of a message box dialog.
 msgid ""
@@ -34,19 +34,19 @@ msgid ""
 "You seem to have previous settings saved for this add-on. Do you want to "
 "import them?"
 msgstr ""
+"Возможно, увас есть предыдущие настройки этого дополнения. Действительно "
+"хотите их импортировать?"
 
 #. Translators: the title of a message box dialog.
-#, fuzzy
 msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Настройки Clip Contents Designer"
+msgstr "Импортировать Настройки Clip Contents Designer"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "Настройки &Clip Contents Designer..."
 
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Настройки Clip Contents Designer"
+msgstr "Показывает диалог настроек Clip Contents Designer"
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -107,17 +107,16 @@ msgid "Clip Contents Designer settings"
 msgstr "Настройки Clip Contents Designer"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "Type the string to be used as a &separator between contents appended to the "
 "clipboard."
 msgstr ""
-"Введите строку для использования в качестве разделителя между складывающимся "
-"содержимым буфера обмена."
+"Введите строку для использования в качестве &разделителя между "
+"складывающимся содержимым буфера обмена."
 
 #. Translators: label of a dialog.
 msgid "&Copy settings"
-msgstr ""
+msgstr "&Копировать настройки"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
