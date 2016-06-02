@@ -1,6 +1,7 @@
-# -*- coding: UTF-8 -*-
-
 # clipContentsDesigner: a global plugin for managing clipboard text
+# Version: 4.0
+# Settings managed from config.conf of NVDA core
+# Date: 02/06/2016
 # Version: 3.0
 # Added option of copying the separator to import when reinstalling the add-on, suggested by Joseph Lee
 # Date: 07/06/2015
@@ -8,7 +9,6 @@
 # Date: 05/06/2015
 # Braille representation for math can be appended to the clipboard
 # Date: 03/06/2015
-
 # Version: 2.0
 # Hindi characters can be writen as a separator
 # Date: 27/02/2015
@@ -28,7 +28,6 @@
 # Date: 14/12/2014
 
 # Append text: a global plugin for appending text to the clipboard
-
 # Version: 1.1
 # Bug fixed: added control in gestures. Now NVDA+shift+c can be used in Excel tables
 # Date: 30/01/2013
