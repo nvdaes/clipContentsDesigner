@@ -19,6 +19,9 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 
 Note: The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators.
+
 ## Changes for 3.0 ##
 *   Braille representation of MathML objects can be appended to the clipboard if MathPlayer is installed.
 *   If no separator is set, just a single line will be placed between the appended text segments.
