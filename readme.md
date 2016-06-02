@@ -15,7 +15,7 @@ The clipboard content can also be cleared.
 Note: The above commands can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Text review category.
 
 ## Preferences Menu ##
-*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire appended text is pasted. You can also choose if the separator should be copied to your personal NVDA's configuration folder, so that it can be imported when reinstalling the add-on.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire appended text is pasted.
 
 Note: The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
 
