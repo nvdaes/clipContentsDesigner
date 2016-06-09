@@ -1,5 +1,7 @@
 # clipContentsDesigner: a global plugin for managing clipboard text
 # Version: 4.0
+# Added configspec
+# Date: 09/06/2016
 # Settings managed from config.conf of NVDA core
 # Date: 02/06/2016
 # Version: 3.0
@@ -45,6 +47,8 @@ import config
 import wx
 import gui
 from gui import SettingsDialog
+from configobj import ConfigObj
+from cStringIO import StringIO
 
 addonHandler.initTranslation()
 
@@ -53,11 +57,13 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = SCRCAT_CONFIG = None
 
+confspec = ConfigObj(StringIO("""
+separator = string(default="")
+"""))
+config.conf.spec["clipContentsDesigner"] = confspec
+
 def getBookmark():
-	try:
-		separator = config.conf["clipContentsDesigner"]["separator"]
-	except KeyError:
-		separator = None
+	separator = config.conf["clipContentsDesigner"]["separator"]
 	if not separator:
 		bookmark = "\r\n"
 	else:
@@ -194,12 +200,9 @@ class AddonSettingsDialog(SettingsDialog):
 	def makeSettings(self, settingsSizer):
 		# Translators: label of a dialog.
 		setSeparatorLabel=wx.StaticText(self, -1, label=_("Type the string to be used as a &separator between contents appended to the clipboard."))
-		settingsSizer.Add(setSeparatorLabel)
 		self.setSeparatorEdit=wx.TextCtrl(self, wx.NewId())
-		try:
-			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
-		except KeyError:
-			pass
+		settingsSizer.Add(setSeparatorLabel)
+		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
 		settingsSizer.Add(self.setSeparatorEdit, border=10, flag=wx.BOTTOM)
 
 	def postInit(self):
@@ -207,4 +210,4 @@ class AddonSettingsDialog(SettingsDialog):
 
 	def onOk(self,evt):
 		super(AddonSettingsDialog, self).onOk(evt)
-		config.conf["clipContentsDesigner"] = {"separator": self.setSeparatorEdit.GetValue()}
+		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
