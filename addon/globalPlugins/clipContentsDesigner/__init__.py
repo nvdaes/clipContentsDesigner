@@ -47,8 +47,6 @@ import config
 import wx
 import gui
 from gui import SettingsDialog
-from configobj import ConfigObj
-from cStringIO import StringIO
 
 addonHandler.initTranslation()
 
@@ -57,9 +55,7 @@ try:
 except:
 	SCRCAT_TEXTREVIEW = SCRCAT_CONFIG = None
 
-confspec = ConfigObj(StringIO("""
-separator = string(default="")
-"""))
+confspec = {"separator": "string(default="")"}
 config.conf.spec["clipContentsDesigner"] = confspec
 
 def getBookmark():
