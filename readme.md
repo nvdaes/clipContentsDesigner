@@ -22,7 +22,7 @@ Note: The above command can be changed from NVDA menu, Preferences submenu, Inpu
 
 ## Changes for 4.0 ##
 *   Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
-*   Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data checkbox from the Clip Contents Designer settings dialog.
+*   Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
 
 ## Changes for 3.0 ##
 *   Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.

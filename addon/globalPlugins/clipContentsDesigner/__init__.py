@@ -3,6 +3,8 @@
 # Added configspec
 # Added checkbox for prepending
 # Date: 09/06/2016
+# Fixed key errors in add-on settings, reported by Derek Riemer
+# Date: 10/06/2016
 # Settings managed from config.conf of NVDA core
 # Date: 02/06/2016
 # Version: 3.0
@@ -63,7 +65,10 @@ confspec = {
 config.conf.spec["clipContentsDesigner"] = confspec
 
 def getBookmark():
-	separator = config.conf["clipContentsDesigner"]["separator"]
+	try:
+		separator = config.conf["clipContentsDesigner"]["separator"]
+	except KeyError:
+		separator = None
 	if not separator:
 		bookmark = "\r\n"
 	else:
@@ -205,11 +210,17 @@ class AddonSettingsDialog(SettingsDialog):
 		setSeparatorLabel=wx.StaticText(self, -1, label=_("Type the string to be used as a &separator between contents added to the clipboard."))
 		self.setSeparatorEdit=wx.TextCtrl(self, wx.NewId())
 		settingsSizer.Add(setSeparatorLabel)
-		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
+		try:
+			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
+		except KeyError:
+			pass
 		settingsSizer.Add(self.setSeparatorEdit, border=10, flag=wx.BOTTOM)
 # Translators: label of a dialog.
 		self.addTextBeforeCheckBox=wx.CheckBox(self, wx.NewId(), label=_("&Add text before clip data"))
-		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
+		try:
+			self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
+		except KeyError:
+			pass
 		settingsSizer.Add(self.addTextBeforeCheckBox,border=10, flag=wx.BOTTOM)
 
 	def postInit(self):
