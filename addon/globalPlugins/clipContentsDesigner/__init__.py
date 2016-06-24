@@ -215,12 +215,9 @@ class AddonSettingsDialog(SettingsDialog):
 		except KeyError:
 			pass
 		settingsSizer.Add(self.setSeparatorEdit, border=10, flag=wx.BOTTOM)
-# Translators: label of a dialog.
+		# Translators: label of a dialog.
 		self.addTextBeforeCheckBox=wx.CheckBox(self, wx.NewId(), label=_("&Add text before clip data"))
-		try:
-			self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
-		except KeyError:
-			pass
+		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
 		settingsSizer.Add(self.addTextBeforeCheckBox,border=10, flag=wx.BOTTOM)
 
 	def postInit(self):
