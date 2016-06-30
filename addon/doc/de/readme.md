@@ -3,48 +3,50 @@
 *   [stabile Version herunterladen][1]
 *   [Entwicklerversion herunterladen][2]
 
-Diese Erweiterung kann verwendet werden, um mehrere Textteile
-zusammenzufügen und in der Zwischenablage zu speichern. Das Löschen der
-Zwischenablage ist ebenfalls möglich.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## Tastenkombinationen ##
-*   NVDA+windows+c: Append selected text, Unicode braille characters which
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
     represent MathML objects, or the string which has been marked with the
     review cursor, to the clipboard.
 *   NVDA+windows+x: löscht die Zwischenablage
-*   NVDA+windows+f9: Setzt eine Startmarke an der aktuellen Position des
-    NVDA-Cursors. Wenn Sie nvda+f9 zum Setzen der Startmarke verwenden, wird
-    kein Text an die Zwischenablage angefügt.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 Anmerkung: die obigen Befehle können im NVDA-Menü unter
 Einstellungen/eingaben in der Kategorie Befehle zum Betrachten von Text
 geändert werden.
 
 ## Einstellungen ##
-*   Einstellungen für den Designer des Zwischenablagen-Inhaltes: Hier können
-    Sie ein Trennzeichen einstellen, das verwendet wird, um die einzelnen
-    Segmente voneinander zu trennen, wenn Sie den Inhalt der Zwischenablage
-    in ein Dokument einfügen. Sie können auch festlegen, dass das
-    Trennzeichen in Ihre persönlichen Einstellungsverzeichnis von NVDA
-    kopiert werden soll, so dass es wieder importiert werden kann, wenn die
-    Erweiterung neu installiert wird.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Anmerkung: der obige Befehl kann im NVDA-Menü unter Einstellungen/eingaben
 in der Kategorie Konfiguration geändert werden.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## Änderungen in Version 3.0 ##
-*   Braille representation of MathML objects can be appended to the
-    clipboard if MathPlayer is installed.
-*   Wenn kein Trennzeichen gesetzt ist, wird nur eine einzige Linie zwischen
-    den angehängten Textsegmente platziert werden.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the
+    added text segments.
 *   A shortcut can be assigned to open the Clip Contents Designer settings
     dialog.
 *   Added a check box in the settings dialog, for choosing if the separator
     should be copied to be imported when reinstalling the add-on.
 
 ## Änderungen in Version 2.0 ##
-*   Indische Zeichen können nun als Trennzeichen zwischen kopierten Inhalten
-    verwendet werden.
+*   Hindi characters can be used as the separator between added contents.
 
 ## Änderungen in Version 1.0 ##
 *   anfängliche Version

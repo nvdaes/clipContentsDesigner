@@ -3,35 +3,42 @@
 *   Descargar [versión estable][1]
 *   Descargar [versión de desenvolvemento][2]
 
-Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
-cando queras unir seccións de texto listas para pegarse xuntas.  O contido
-do portapapeis tamén pode limparse.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## Ordes de teclado ##
-*   NVDA+windows+c: Anexa o texto seleccionado, carácteres braille Unicode
-    que representan obxectos MathML, ou a cadea que se marcou co cursor de
-    revisión, ó portapapeis.
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
+    represent MathML objects, or the string which has been marked with the
+    review cursor, to the clipboard.
 *   NVDA+windows+x: Limpa o contido do portapapeis.
-*   NVDA+windows+f9: Marca a posición actual do cursor de revisión como o
-    comezo do texto a engadir ó portapapeis.  Se utilizas NVDA+F9, o texto
-    non se anexará.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 Nota: as ordes anteriores poden cambiarse dende o menú NVDA, submenú
 Preferencias, diálogo Xestos de Entrada, categoría Revisión de Texto.
 
 ## Menú Preferencias ##
-*   Opcións de Clip Contents Designer: permiten configurar un separador que
-    se pode utilizar para atopar os segmentos de texto unha vez se pegou
-    todo o texto anexado.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Nota: A orde anterior pódese cambiar dende o menú NVDA, submenú
 Preferencias, diálogo Xestos de Entrada, categoría Configuración.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## Cambios para 3.0 ##
-*   Pódese engadir a representación braille de obxectos MathML ó portapapeis
-    se MathPlayer está instalado.
-*   Se non se puxo un separador, porase una soa liña entre os segmentos de
-    texto engadido.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the
+    added text segments.
 *   Pódese asignar un atallo de teclado para abrir o diálogo de opcións do
     Clip Contents Designer .
 *   Engadida unha caixa de verificación no diálogo de opcións, para escoller
@@ -39,7 +46,7 @@ Preferencias, diálogo Xestos de Entrada, categoría Configuración.
     o complemento.
 
 ## Cambios para 2.0 ##
-*   Pódense usar caracteres Hindi como o separador entre contidos anexados.
+*   Hindi characters can be used as the separator between added contents.
 
 ## Cambios para 1.0 ##
 *   Versión inicial.

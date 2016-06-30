@@ -5,7 +5,7 @@
 
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
-kopioidaksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
+liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
 
 ## Näppäinkomennot ##
 *   NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti
@@ -21,19 +21,25 @@ NVDA-valikko -> Asetukset -> Syöte-eleet ja valitsemalla Tekstin tarkastelu
 -kategoria.
 
 ## Asetukset-valikko ##
-*   Leikepöydän sisällön käsittelijä: Tästä on mahdollista määrittää erotin,
-    jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty
-    tekstikokonaisuus on ensin kopioitu jonnekin. Voit myös valita,
-    kopioidaanko erotin henkilökohtaisten NVDA-asetusten kansioon, jotta se
-    voidaan tuoda asennettaessa lisäosaa uudelleen.
+Leikepöydän sisällön käsittelijä: Tästä on mahdollista määrittää erotin, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
+On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai ennen sitä.
 
 Huomaa, että edellä mainittua komentoa on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syöte-eleet ja valitsemalla
 Asetukset-kategoria.
 
+## Muutokset versiossa 4.0 ##
+*   NVDA hallitsee nyt lisäosan asetuksia, jotta profiilien käyttäminen eri
+    erottimien tallentamiseen olisi mahdollista, eikä asetusten kopiointia
+    tarvita niiden tuomiseksi asennettaessa lisäosaa uudelleen.
+*   Nyt on mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä
+    olevan tekstin loppuun vai ennen sitä Leikepöydän sisällön käsittelijän
+    asetusvalintaikkunan Lisää teksti ennen leikepöydällä olevaa sisältöä
+    -valintaruutua käyttäen.
+
 ## Muutokset versiossa 3.0 ##
-*   MathML-objekteja kuvaavia pistekirjoitusmerkkejä voidaan lisätä
-    leikepöydälle, mikäli MathPlayer on asennettuna.
+*   MathML-objekteja kuvaavat pistekirjoitusmerkit voidaan lisätä
+    leikepöydälle, mikäli MathPlayer on asennettu.
 *   Mikäli erotinta ei ole määritetty, tekstiosuuksien väliin lisätään yksi
     tyhjä rivi.
 *   Leikepöydän sisällön käsittelijän asetusvalintaikkunan avaamista varten

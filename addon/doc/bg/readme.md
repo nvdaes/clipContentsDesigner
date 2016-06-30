@@ -3,39 +3,43 @@
 *   Изтегляне [стабилна версия][1]
 *   Изтегляне [работна версия][2]
 
-Тази добавка служи за прибавяне на текст към клипборда, което може да бъде
-полезно когато искате да обедините в едно отделни части от текст, готов за
-поставяне.  Съдържанието на клипборда може и да се изчиства.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## Клавиатурни команди ##
-*   NVDA+Windows+C: Прибавяне към клипборда на избрания текст, уникод
-    брайлови символи представящи обекти на MathML, или низа маркиран с
-    курсора за преглед.
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
+    represent MathML objects, or the string which has been marked with the
+    review cursor, to the clipboard.
 *   NVDA+Windows+X: Изчистване на съдържанието на клипборда.
-*   NVDA+Windows+F9: Маркиране на текущата позиция на курсора за преглед
-    като начало на текста, който да се прибави към клипборда.  Ако
-    използвате NVDA+F9, текстът няма да бъде прибавен.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 Забележка: Командите от по-горе може да бъдат променени от менюто на NVDA
 подменю Настройки, диалога Жестове на въвеждане, категория Преглед на
 текста.
 
 ## Меню с настройките ##
-*   Настройки на Дизайнера за Съдържанието на Клипборда: Позволява
-    указването на разделител, който може да се използва за намирането на
-    текстовите сегменти след поставянето на целия текст. Можете също да
-    изберете дали разделителят да бъде копиран в папката с вашите лични
-    настройки за NVDA, така че да може да се импортира когато преинсталирате
-    добавката.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Забележка: Командата от по-горе може да бъде променена от менюто на NVDA,
 подменю Настройки, диалога Жестове на въвеждане, категория Настройки.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## Промени във версия 3.0 ##
-*   Ако е инсталиран MathPlayer, в клипборда могат да се добавят брайлови
-    представяния на обекти на MathML,.
-*   Ако няма зададен разделител, ще бъде поставен един празен ред между
-    прибавените текстови сегменти.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the
+    added text segments.
 *   Може да бъде зададен бърз клавиш за отваряне на прозореца с настройките
     на Clip Contents Designer.
 *   В диалоговия прозорец с настройките е добавено поле за отметка за избор
@@ -43,8 +47,7 @@
     добавката.
 
 ## Промени във версия 2.0 ##
-*   Знаци от хинди  може да  се  използват  като  разделител  между
-    добавеното съдържание.
+*   Hindi characters can be used as the separator between added contents.
 
 ## Промени във версия 1.0 ##
 *   Първоначално издание.

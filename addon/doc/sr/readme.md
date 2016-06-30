@@ -3,44 +3,49 @@
 *   preuzmi [stabilnu verziju][1]
 *   preuzmi [verziju u razvoju][2]
 
-Ovaj dodatak se koristi za dodavanje odvojenih delova teksta u privremenu
-memoriju, a može i da ukloni sadržaj privremene memorije.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## Prečice ##
-*   NVDA+windows+c: Append selected text, Unicode braille characters which
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
     represent MathML objects, or the string which has been marked with the
     review cursor, to the clipboard.
 *   NVDA+Windows+x: Uklanja sadržaj privremene memorije.
-*   NVDA+Windows+F9: Označava trenutnu poziciju preglednog kursora kao
-    početak teksta za kopiranje u privremenu memoriju.  Ako upotrebite
-    NVDA+F9, tekst neće biti dodat.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju Pregled teksta.
 
 ## Podešavanja ##
-*   Clip Contents Designer settings: Allows to set a separator which can be
-    used to find the text segments once the entire appended text is
-    pasted. You can also choose if the separator should be copied to your
-    personal NVDA's configuration folder, so that it can be imported when
-    reinstalling the add-on.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Note: The above command can be changed from NVDA menu, Preferences submenu,
 Input gestures dialog, Configuration category.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## Changes for 3.0 ##
-*   Braille representation of MathML objects can be appended to the
-    clipboard if MathPlayer is installed.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
 *   If no separator is set, just a single line will be placed between the
-    appended text segments.
+    added text segments.
 *   A shortcut can be assigned to open the Clip Contents Designer settings
     dialog.
 *   Added a check box in the settings dialog, for choosing if the separator
     should be copied to be imported when reinstalling the add-on.
 
 ## Promene u 2.0 ##
-*   Hindi karakteri mogu da se koriste kao odvajanje između dodatih delova
-    teksta.
+*   Hindi characters can be used as the separator between added contents.
 
 ## Promene u 1.0 ##
 *   Prva verzija.

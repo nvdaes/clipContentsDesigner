@@ -3,40 +3,48 @@
 *   تحميل [الإصدار النهائي] [1]
 *   تحميل [الإصدار التجريبي] [2]
 
-تستخدم هذه الإضافة لإلحاق نص بالحافظة, يفيد عندما تريد دمج أكثر من قطعة من
-النصوص معا ولصقها. كما يمكن أيضا مسح محتوى الحافظة.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## مفاتيح الاختصار ##
-*   NVDA+windows+c: إلحاق النص المحدد, أو أحرف التشفير الموحد التي تمثل
-    الكائنات الرياضية المكتوبة بالخط البارز أو النص الذي قمت بتحديده بمؤشر
-    الاستعراض, إلى الحافظة.
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
+    represent MathML objects, or the string which has been marked with the
+    review cursor, to the clipboard.
 *   NVDA+windows+x: لمسح محتوى الحافظة
-*   NVDA+windows+f9: تحديد الموضع الحالي لمؤشر الاستعراض كبداية للنص الذي
-    سيتم إلحاقه بالحافظة. إذا استخدمت NVDA+f9, فإن النص لم يلحق بالحافظة.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 ملحوظة: يمكنك تغيير الاختصارات المذكورة أعلاه من خلال الذهاب إلى قائمة NVDA
 الرئيسية, ثم قائمة التفضيلات, ثم تخصيص اختصارات NVDA, ثم فئة استعراض النص.
 
 ## قائمة التفضيلات ##
-*   إعدادات Clip Contents Designer: تتيح وضع فاصل يمكن استخدامه للعثور على
-    قطع النص عند لصق كل النص الذي قمت بدمجه وتخزينه في الحافظة. يمكنك أيضا
-    اختيار ما إذا كان ينبغي نسخ الفاصل إلى مجلد إعدادات NVDA الخاص بك, حتى
-    يمكن استيراده عند إعادة تنصيب الإضافة.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 ملحوظة: يمكنك تغيير الاختصار المذكور أعلاه من خلال الذهاب إلى قائمة NVDA
 الرئيسية, ثم قائمة التفضيلات, ثم تخصيص اختصارات NVDA, ثم فئة الإعدادات.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## مستجدات الإصدار 3.0 ##
-*   يمكن إلحاق الأحرف التي تمثل الكائنات الرياضية بالبرايل بالحافظة إذا كان
-    تطبيق mathplayer مثبت على الحاسوب.
-*   إذا لم يتم تعيين أي فاصل, سيتم وضع سطر بين كل قطعة نصية ملحقة بالحافظة.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the
+    added text segments.
 *   يمكن تعيين اختصار لفتح محاورة إعدادات الإضافة.
 *   إضافة مربع تحديد لإعدادات الإضافة, للاختيار ما إذا كان ينبغي نسخ الفاصل
     بين القطع النصية لاستيراده عند إعادة تثبيت الإضافة
 
 ## مستجدات الإصدار 2.0 ##
-*   يمكن استخدام الأحرف الهندية كفواصل بين قطع النصوص المختلفة الملحقة
-    بالحافظة.
+*   Hindi characters can be used as the separator between added contents.
 
 ## مستجدات الإصدار 1.0 ##
 *   إصدار أولي

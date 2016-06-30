@@ -3,41 +3,44 @@
 *   Télécharger [version stable][1]
 *   Télécharger [version de développement][2]
 
-Ce module complémentaire est utilisé pour ajouter du texte dans le
-presse-papiers, ce qui peut être utile lorsque vous souhaitez joindre des
-portions de texte ensemble prêt pour le collage. Le contenu du
-presse-papiers peut aussi être effacé.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## Commandes clavier ##
-*   NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
-    Unicode qui représentent les objets MathML ou la chaîne qui a été
-    marquée avec le curseur de revue, dans le presse-papiers.
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
+    represent MathML objects, or the string which has been marked with the
+    review cursor, to the clipboard.
 *   NVDA+windows+x : Efface le contenu du presse-papiers.
-*   NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme
-    le début du texte à ajouter au presse-papiers. Si vous utilisez nvda+F9,
-    le texte ne sera pas ajouté.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
 la catégorie Revue de texte.
 
 ## Menu Préférences ##
-*   Paramètres Clip Contents Designer : Permet de définir un séparateur qui
-    peut être utilisé pour trouver les segments de texte une fois que tout
-    le texte ajouté est collé. Vous pouvez également choisir si le
-    séparateur doit être copié dans votre dossier de configuration personnel
-    de NVDA, afin qu'il puisse être importé lors de la réinstallation du
-    module complémentaire.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
 la catégorie Configuration.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## Changements pour la version 3.0 ##
-*   La représentation en braille des objets MathML peut être ajoutée dans le
-    presse-papiers si MathPlayer est installé.
-*   Si aucun séparateur n'est définie, juste une seule ligne sera placée
-    entre les segments du texte ajouté.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the
+    added text segments.
 *   Un raccourci peut être assigné pour ouvrir le dialogue paramètres Clip
     Contents Designer.
 *   Ajouté une case à cocher dans la boîte de dialogue paramètres, afin de
@@ -45,8 +48,7 @@ la catégorie Configuration.
     réinstallation du module complémentaire.
 
 ## Changements pour la version 2.0 ##
-*   Les caractères Hindous peuvent être utilisés comme séparateur entre les
-    contenus concaténés.
+*   Hindi characters can be used as the separator between added contents.
 
 ## Changements pour la version 1.0 ##
 *   Première version.

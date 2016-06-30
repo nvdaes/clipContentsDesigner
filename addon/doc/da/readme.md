@@ -3,39 +3,42 @@
 *   Download [stabil version][1]
 *   Download [udviklingsversion][2]
 
-Dette tilføjelsesprogram bruges til at tilføje tekst til
-udklipsholderen. Det kan være nyttigt, hvis du vil sammenklippe forskellige
-tekstafsnit, så de er parat til at indsætte på en gang.  Indholdet i
-udklipsholderen kan også ryddes.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
 ## Tastaturkommandoer ##
-*   NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
-    MathML-objekter, eller den tekststreng, som er blevet markeret med
-    læsemarkøren, til udklipsholderen.
+*   NVDA+windows+c: Add selected text, Unicode braille characters which
+    represent MathML objects, or the string which has been marked with the
+    review cursor, to the clipboard.
 *   NVDA+Windows+x: Ryd udklipsholderen.
-*   NVDA+Windows+F9: Marker læsemarkørens aktuelle position som starten af
-    den tekst, der skal tilføjes til udklipsholderen. Hvis du bruger
-    NVDA+F9, vil teksten ikke blive tilføjet.
+*   NVDA+windows+f9: Mark the current position of the review cursor as the
+    start of the text to be added to the clipboard.  If you use nvda+F9, the
+    text will not be added.
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Indstillinger /
 Inputbevægelser / kategorien tekstlæsning.
 
 ## Indstillinger-menuen ##
-*   Indstillinger for Clip Contents Designer: Her kan du indstille en
-    separator, som kan bruge til at finde de enkelte tekstsegmenter, når
-    først hele den tilføjede tekst er blevet indsat. Du kan også vælge, om
-    denne separator skal kopieres til mappen med dine personlige
-    NVDA-indstillinger, så den kan importeres, når du geninstallerer
-    tilføjelsesprogrammet.
+*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Bemærk: Denne kommando kan ændres under NVDA-menu / Indstillinger /
 Inputbevægelser / kategorien Indstillinger.
 
+## Changes for 4.0 ##
+*   Add-on settings are managed from NVDA configuration, so that standard
+    profiles can be used to save different separators, and it's not needed
+    to copy the settings for importing at reinstallation.
+*   Now it's possible to choose if the added text will be appended or
+    prepended, using the Add text before clip data check box from the Clip
+    Contents Designer settings dialog.
+
 ## Ændringer i 3.0 ##
-*   Punktskriftrepræsentation af MathML-objekter kan tilføjes til
-    udklipsholderen, hvis MathPlayer er installeret.
-*   Hvis der ikke er indstillet nogen separator, vil der blot blive indsat
-    en enkelt linje mellem de tilføjede tekstsegmenter.
+*   Braille representation of MathML objects can be added to the clipboard
+    if MathPlayer is installed.
+*   If no separator is set, just a single line will be placed between the
+    added text segments.
 *   Der kan knyttes en genvejstast til at åbne dialogen Indstillinger for
     Clip Contents Designer.
 *   Tilføjede en checkboks i Indstillinger-dialogen til at vælge, om
@@ -43,7 +46,7 @@ Inputbevægelser / kategorien Indstillinger.
     tilføjelsesprogrammet bliver geninstalleret.
 
 ## Ændringer i 2.0 ##
-*   Hindi-tegn kan nu bruges som separator mellem tilføjet indhold.
+*   Hindi characters can be used as the separator between added contents.
 
 ## Ændringer i 1.0 ##
 *   Første version.
