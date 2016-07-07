@@ -8,44 +8,20 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2015-06-25 20:30+0200\n"
+"PO-Revision-Date: 2016-06-30 20:13+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"Имате инсталирана добавката AppendText (Прибавяне на текст), вероятно стара "
-"и несъвместима с текущата версия. Желаете ли да деинсталирате старата версия?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "Деинсталиране на несъвместима добавка"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr ""
-"Изглежда имате запазени предишни настройки за тази добавка. Желаете ли да ги "
-"импортирате?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr ""
-"Импортиране на настройките за добавката Дизайнер на съдържанието на клипборда"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "&Дизайнер на съдържанието на клипборда..."
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr ""
 "Извежда диалоговия прозорец с настройките за Дизайнера на съдържанието на "
@@ -71,38 +47,34 @@ msgstr ""
 "Маркира текущата позиция на курсора за преглед като начало на текста, който "
 "ще бъде прибавен в клипборда."
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Не е избрано нищо. Няма зададен маркер за начало."
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "Маркерът за начало трябва да се намира в същия обект"
-
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
 msgstr "Няма текст за прибавяне"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
 msgstr "Прибавено"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
 msgstr "Не може да се прибави"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
 "Извлича избрания низ или текст от предварително зададения начален маркер до "
 "и включително текущата позиция на курсора за преглед и го прибавя в "
 "клипборда."
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
+msgid "Deletes the added text and the content of the clipboard."
 msgstr "Изтрива прибавения текст и съдържанието на клипборда."
 
 #. Translators: title of a dialog.
@@ -111,15 +83,15 @@ msgstr "Настройки на Дизайнера на съдържанието
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
 "Въведете низът, който ще се използва като &разделител между отделните части "
-"на прибавения в клипборда текст."
+"на прибавеното в клипборда съдържание."
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "&Копиране на настройките"
+msgid "&Add text before clip data"
+msgstr "&Прибави текста преди данните в клипборда"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -130,3 +102,36 @@ msgstr "Clip Contents Designer (Дизайнер на съдържанието �
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Добавка за управление на текста от клипборда"
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "Имате инсталирана добавката AppendText (Прибавяне на текст), вероятно "
+#~ "стара и несъвместима с текущата версия. Желаете ли да деинсталирате "
+#~ "старата версия?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Деинсталиране на несъвместима добавка"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "Изглежда имате запазени предишни настройки за тази добавка. Желаете ли да "
+#~ "ги импортирате?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr ""
+#~ "Импортиране на настройките за добавката Дизайнер на съдържанието на "
+#~ "клипборда"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Маркерът за начало трябва да се намира в същия обект"
+
+#~ msgid "Appended"
+#~ msgstr "Прибавено"
+
+#~ msgid "&Copy settings"
+#~ msgstr "&Копиране на настройките"
