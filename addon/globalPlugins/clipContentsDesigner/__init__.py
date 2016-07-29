@@ -1,4 +1,8 @@
+# -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
+#Copyright (C) 2012-2016 Noelia Ruiz Martínez, other contributors
+# Released under GPL 2
+
 # Version: 4.0
 # Added configspec
 # Added checkbox for prepending
