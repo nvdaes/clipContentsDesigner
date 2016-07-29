@@ -8,9 +8,10 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2015-06-25 20:53-0300\n"
+"PO-Revision-Date: 2016-07-01 11:30-0300\n"
 "Last-Translator: Cleverson Casarin Uliana <clcaul@live.com>\n"
-"Language-Team: pt_BR <clcaul@live.com>\n"
+"Language-Team: Equipe de tradução do NVDA para Português do Brasil "
+"<clever97@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,34 +19,11 @@ msgstr ""
 "X-Generator: Poedit 1.6.10\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"Você tem instalado o complemento AppendText, provavelmente uma versão antiga "
-"e iincompatível com esta. Deseja desinstalar a versão antiga?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "Desinstalar complemento incompatível"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr ""
-"Aparentemente você tem opções anteriormente salvas para este complemento. "
-"Quer importá-las?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Importar opções do complemento Gestor do conteúdo de transferência"
-
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "Opções do Gestor do &conteúdo de transferência"
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr "Exibe o diálogo de opções do Gestor do conteúdo de transferência."
 
@@ -69,38 +47,34 @@ msgstr ""
 "Marca a posição atual do cursor de exploração como o início do texto a ser "
 "acrescentado à área de transferência."
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Sem seleção. Nenhum marcador inicial definido"
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "Marcador inicial deve estar dentro do mesmo objeto"
-
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
 msgstr "Nenhum texto a acrescentar"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
 msgstr "Acrescentado"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
 msgstr "Não consegui acrescentar"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
 "Captura a cadeia selecionada, ou o texto desde o marcador inicial definido "
 "até e incluindo a posição atual do cursor de exploração, e o acrescenta à "
 "área de transferência."
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
+msgid "Deletes the added text and the content of the clipboard."
 msgstr "Apaga o texto acrescentado e o conteúdo da área de transferência."
 
 #. Translators: title of a dialog.
@@ -109,15 +83,15 @@ msgstr "Opções do Gestor do conteúdo de transferência"
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
 "Digite a cadeia a ser usada como &separador entre conteúdos acrescentados à "
 "área de transferência."
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "&Copiar opções"
+msgid "&Add text before clip data"
+msgstr "&Acrescentar texto antes dos dados"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -128,3 +102,33 @@ msgstr "Gestor do Conteúdo de Transferência"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para gerir o texto da área de transferência."
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "Você tem instalado o complemento AppendText, provavelmente uma versão "
+#~ "antiga e iincompatível com esta. Deseja desinstalar a versão antiga?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Desinstalar complemento incompatível"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "Aparentemente você tem opções anteriormente salvas para este complemento. "
+#~ "Quer importá-las?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr "Importar opções do complemento Gestor do conteúdo de transferência"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Marcador inicial deve estar dentro do mesmo objeto"
+
+#~ msgid "Appended"
+#~ msgstr "Acrescentado"
+
+#~ msgid "&Copy settings"
+#~ msgstr "&Copiar opções"

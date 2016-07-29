@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-01-27 19:44+0530\n"
+"PO-Revision-Date: 2016-07-07 13:31+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ta\n"
@@ -17,34 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"தற்போதைய பதிப்பிற்கு பொருத்தமில்லாத பழைய AppendText கூட்டுறுப்பினை நிறுவியுள்ளீர்கள். "
-"அதை நிறுவுநீக்கம் செய்ய விரும்புகிறீர்களா?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "பொருத்தமில்லாத பழைய கூட்டுறுப்பு நிறுவுநீக்கம் செய்யப்படுகிறது"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr ""
-"இக்கூட்டுறுப்பின் முந்தைய அமைப்புகளைத் தாங்கள் சேமித்திருப்பதாகத் தோன்றுகிறது. அவைகளை "
-"உள்ளிறக்க வேண்டுமா?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் கூட்டுறுப்பின் அமைப்புகளை உள்ளிறக்கவும்"
-
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "கிளிப் கண்டெண்ட்ஸ் டிசைனர் அமைப்புகள்... (&C)"
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகள் உரையாடலைக் காட்டுகிறது"
 
@@ -65,41 +42,37 @@ msgid ""
 "Marks the current position of the review cursor as the start of text to be "
 "appended to the clipboard."
 msgstr ""
-"மறுபரிசீலனைச் சுட்டியின் தற்போதைய நிலையை, பிடிப்புப்பலகையில் பின்சேர்க்கப்பட வேண்டிய "
-"உரையின் துவக்கமாகக் குறிக்கிறது. "
+"சீராய்வுச் சுட்டியின் தற்போதைய நிலையை, பிடிப்புப்பலகையில் பின்னிணைக்க வேண்டிய உரையின் "
+"துவக்கமாகக் குறிக்கிறது. "
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "தெரிவு ஏதுமில்லை, அல்லது துவக்கம் குறிக்கப்படவில்லை."
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "துவக்கக் குறி, அதே பொருளின் உள்ளாக அமைந்திருக்க வேண்டும். "
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
+msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
 
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
-msgstr "பின்சேர்ப்பதற்கு உரை ஏதுமில்லை"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "பின்னிணைக்கப்பட்டது"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
-msgstr "பின்சேர்க்கப்பட்டது"
-
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
-msgstr "பின்சேர்க்க இயலாது"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "பின்னிணைக்க இயலாது"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
-"துவக்கக் குறியிலிருந்து தற்போதைய நிலை வரையிலான உரையை தெரிவுச் செய்து "
-"பிடிப்புப்பலகையில் பின்சேர்க்கிறது. "
+"துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச் சுட்டியின் நிலை "
+"வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
-msgstr "பின்சேர்க்கப்பட்ட உரையையும், பிடிப்புப்பலகையின் உள்ளடக்கங்களையும் அழிக்கிறது."
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்ட உரையையும், உள்ளடக்கங்களையும் அழிக்கிறது."
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -107,15 +80,15 @@ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர�
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"பிடிப்புப்பலகையில் பின்சேர்க்கப்பட்டிருக்கும் உரையைப் பிரித்துக் காட்டுவதற்குப் பயன்படுத்தப்பட "
+"பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்டிருக்கும் உரையைப் பிரித்துக் காட்டுவதற்குப் பயன்படுத்தப்பட "
 "வேண்டிய சரத்தை தட்டச்சிடவும். (&S)"
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "அமைப்புகளை படியெடுக்கவும் (&C)"
+msgid "&Add text before clip data"
+msgstr "உரையை பிடிப்புப்பலகையின் உரைக்கு முன்னிணைக்கவும். (&A)"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -125,4 +98,34 @@ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர�
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுறுப்பு."
+msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "தற்போதைய பதிப்பிற்கு பொருத்தமில்லாத பழைய AppendText கூட்டுறுப்பினை "
+#~ "நிறுவியுள்ளீர்கள். அதை நிறுவுநீக்கம் செய்ய விரும்புகிறீர்களா?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "பொருத்தமில்லாத பழைய கூட்டுறுப்பு நிறுவுநீக்கம் செய்யப்படுகிறது"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "இக்கூட்டுறுப்பின் முந்தைய அமைப்புகளைத் தாங்கள் சேமித்திருப்பதாகத் தோன்றுகிறது. அவைகளை "
+#~ "உள்ளிறக்க வேண்டுமா?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் கூட்டுறுப்பின் அமைப்புகளை உள்ளிறக்கவும்"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "துவக்கக் குறி, அதே பொருளின் உள்ளாக அமைந்திருக்க வேண்டும். "
+
+#~ msgid "Appended"
+#~ msgstr "பின்சேர்க்கப்பட்டது"
+
+#~ msgid "&Copy settings"
+#~ msgstr "அமைப்புகளை படியெடுக்கவும் (&C)"

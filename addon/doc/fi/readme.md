@@ -32,9 +32,9 @@ Asetukset-kategoria.
 *   NVDA hallitsee nyt lisäosan asetuksia, jotta profiilien käyttäminen eri
     erottimien tallentamiseen olisi mahdollista, eikä asetusten kopiointia
     tarvita niiden tuomiseksi asennettaessa lisäosaa uudelleen.
-*   Nyt on mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä
+*   Nyt on mahdollista valita, liitetäänkö lisätty teksti leikepöydällä jo
     olevan tekstin loppuun vai ennen sitä Leikepöydän sisällön käsittelijän
-    asetusvalintaikkunan Lisää teksti ennen leikepöydällä olevaa sisältöä
+    asetusvalintaikkunan Lisää teksti ennen leikepöydän nykyistä sisältöä
     -valintaruutua käyttäen.
 
 ## Muutokset versiossa 3.0 ##
