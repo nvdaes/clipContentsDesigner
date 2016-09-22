@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: appendText\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-31 08:59+0100\n"
-"PO-Revision-Date: 2016-02-26 02:09-0800\n"
+"PO-Revision-Date: 2016-09-21 11:56+0200\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Translators <llajta@gmx.us>\n"
 "Language: it_IT\n"
@@ -11,41 +11,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
-"X-Poedit-Basepath: C:\\Users\\user\\Downloads\\AppendText\\globalPlugins\\\n"
+"X-Poedit-Basepath: C:/Users/user/Downloads/AppendText/globalPlugins\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"è stato installato il componente aggiuntivo AppendText, probabilmente una "
-"vecchia versione non più compatibile. Si desidera disinstallare la vecchia "
-"versione?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "Disinstallazione componente aggiuntivo non compatibile"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr ""
-"Sembra che siano presenti impostazioni precedenti salvate per questo "
-"componente aggiuntivo. Si desidera importarle?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Importa Impostazioni Clip Contents Designer"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "Impostazioni &Clip Contents Designer"
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr "Visualizza la finestra di dialogo Impostazioni Clip Contents Designer"
 
@@ -69,37 +45,33 @@ msgstr ""
 "Marca la posizione corrente del cursore di controllo come punto di inizio "
 "del testo da aggiungere."
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Nessuna selezione. Nessun marcatore di inizio."
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "Il marcatore di inizio deve stare all'interno dello stesso oggetto..."
-
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
 msgstr "Nessun testo aggiunto."
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
-msgstr "Testo aggiunto."
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Aggiunto"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
 msgstr "Impossibile aggiungere testo"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
 "Recupera il testo selezionato, o il testo dal marcatore d'inizio al cursore "
 "di controllo, e lo copia negli apunti."
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
+msgid "Deletes the added text and the content of the clipboard."
 msgstr "Elimina il testo aggiunto e il contenuto degli appunti."
 
 #. Translators: title of a dialog.
@@ -108,15 +80,15 @@ msgstr "Impostazioni Clip Contents Designer"
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
 "Digitare il testo da usare come &separatore tra i contenuti aggiunti negli "
 "appunti."
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "&Copia impostazioni"
+msgid "&Add text before clip data"
+msgstr "&Aggiungi testo prima degli appunti"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -127,3 +99,35 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Componente aggiuntivo per la gestione del testo negli appunti"
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "è stato installato il componente aggiuntivo AppendText, probabilmente una "
+#~ "vecchia versione non più compatibile. Si desidera disinstallare la "
+#~ "vecchia versione?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Disinstallazione componente aggiuntivo non compatibile"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "Sembra che siano presenti impostazioni precedenti salvate per questo "
+#~ "componente aggiuntivo. Si desidera importarle?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr "Importa Impostazioni Clip Contents Designer"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr ""
+#~ "Il marcatore di inizio deve stare all'interno dello stesso oggetto..."
+
+#~ msgid "Appended"
+#~ msgstr "Testo aggiunto."
+
+#~ msgid "&Copy settings"
+#~ msgstr "&Copia impostazioni"
