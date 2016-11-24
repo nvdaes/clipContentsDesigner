@@ -20,6 +20,10 @@ It's also possible to choose if the added text will be appended or prepended.
 
 Note: The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
 
+## Changes for 5.0 ##
+*	Requires NVDA 2016.4 or later.
+*	The visual presentation of the dialogs has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
+
 ## Changes for 4.0 ##
 *   Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
 *   Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
