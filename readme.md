@@ -1,5 +1,5 @@
 # Clip Contents Designer #
-*   Authors: Noelia Ruiz Martínez.
+*	Authors: Noelia Ruiz Martínez.
 *	Download [stable version][1]
 *	Download [development version][2]
 
