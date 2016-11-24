@@ -3,52 +3,12 @@
 #Copyright (C) 2012-2016 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
-# Version: 4.0
-# Added configspec
-# Added checkbox for prepending
-# Date: 09/06/2016
-# Fixed key errors in add-on settings, reported by Derek Riemer
-# Date: 10/06/2016
-# Settings managed from config.conf of NVDA core
-# Date: 02/06/2016
-# Version: 3.0
-# Added option of copying the separator to import when reinstalling the add-on, suggested by Joseph Lee
-# Date: 07/06/2015
-# Just use a single new line to separate appended strings when no separator is set, suggested by Bhavya
-# Date: 05/06/2015
-# Braille representation for math can be appended to the clipboard
-# Date: 03/06/2015
-# Version: 2.0
-# Hindi characters can be writen as a separator
-# Date: 27/02/2015
-# Version: 1.0
-# Changed menu labels according to the new add-on name
-# Date: 3/07/2014
-# Revision and improvements: Mesar Hameed
-# Date: 20/09/2014
-# Added scriptCategory
-# Added msg plugin, developed by Alberto Buffolino
-# Date: 21/09/2014
-# Minor changes in messages according to new add-on name
-# Date: 12, 13/12/2014
-# Changed keyboard commands according to Bhavya's suggestions
-# Date: 13/12/2014
-# Implemented several suggestions from "Alberto Buffolino
-# Date: 14/12/2014
-
-# Append text: a global plugin for appending text to the clipboard
-# Version: 1.1
-# Bug fixed: added control in gestures. Now NVDA+shift+c can be used in Excel tables
-# Date: 30/01/2013
-# Version: 1.0
-# Date: 28/12/2012
-
 import addonHandler
 import globalPluginHandler
 import api
 import textInfos
 import ui
-import msg # Developed by Alberto Bufolino
+import msg # Developed by Alberto Buffolino
 import win32clipboard
 import config
 import wx
@@ -161,7 +121,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				return
 			pos = api.getReviewPosition().copy()
 			if self._copyStartMarker.obj != pos.obj:
-				# Translators: message presented when user tries to select text across object boundaries
 				msg.message("The start marker must reside within the same object")
 				return
 			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
