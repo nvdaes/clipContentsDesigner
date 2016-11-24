@@ -53,14 +53,10 @@ import win32clipboard
 import config
 import wx
 import gui
-from gui import SettingsDialog
+from gui import SettingsDialog, guiHelper
+from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 
 addonHandler.initTranslation()
-
-try:
-	from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
-except:
-	SCRCAT_TEXTREVIEW = SCRCAT_CONFIG = None
 
 confspec = {
 	"separator": "string(default="")",
@@ -210,19 +206,18 @@ class AddonSettingsDialog(SettingsDialog):
 	title = _("Clip Contents Designer settings")
 
 	def makeSettings(self, settingsSizer):
+		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: label of a dialog.
-		setSeparatorLabel=wx.StaticText(self, -1, label=_("Type the string to be used as a &separator between contents added to the clipboard."))
-		self.setSeparatorEdit=wx.TextCtrl(self, wx.NewId())
-		settingsSizer.Add(setSeparatorLabel)
+		setSeparatorLabel = _("Type the string to be used as a &separator between contents added to the clipboard.")
+		setSeparatorLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, setSeparatorLabel, wx.TextCtrl)
+		self.setSeparatorEdit = setSeparatorLabeledCtrl.control
 		try:
 			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
 		except KeyError:
 			pass
-		settingsSizer.Add(self.setSeparatorEdit, border=10, flag=wx.BOTTOM)
 		# Translators: label of a dialog.
-		self.addTextBeforeCheckBox=wx.CheckBox(self, wx.NewId(), label=_("&Add text before clip data"))
+		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
-		settingsSizer.Add(self.addTextBeforeCheckBox,border=10, flag=wx.BOTTOM)
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
