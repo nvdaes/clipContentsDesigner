@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2015-08-01 15:21+0100\n"
+"PO-Revision-Date: 2016-11-20 00:02+0100\n"
 "Last-Translator: zvonimir stanečić <zvonimirek222@yandex.com>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -17,32 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
 
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"Instalirali ste dodatak appendTekst, možda staru i nekompatibilnu inačicu. "
-"Želite li deinstalirati staru inačicu?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "Deinstaliraj nekompatibilan dodatak"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr "Činise kao da postoje postavke za ovaj dodatak. Želite li ih uvesti?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Uvezi ClipContentsDesigner postavke"
-
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "&Clip Contents Designer postavke..."
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr ""
 "Prikazuje postavke clip contents designeraShows the Clip Contents Designer "
@@ -68,37 +47,33 @@ msgstr ""
 "Označava trenutnu poziciju preglednog kursora kao početak teksta koji će "
 "biti kopiran u međuspremnik."
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Nema oznake. Nema postavljene početne oznake"
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "početna oznaka se mora nalaziti unutar istog objekta"
-
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
 msgstr "nema teksta za dodavanje"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
-msgstr "dodano"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Dodano"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
 msgstr "Nemoguće dodati"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
-"Izvlači označeni niz znakova ili tekst od pozicije početne oznake sve do "
+"Izvlači označeni niz znakova ili tekst od pozicije početne oznake "
 "uključujući trenutnu poziciju preglednog kursora, i dodaje ga u međuspremnik."
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
+msgid "Deletes the added text and the content of the clipboard."
 msgstr "Briše kopirani tekst i sadržaj međuspremnika."
 
 #. Translators: title of a dialog.
@@ -107,15 +82,15 @@ msgstr "Clip Contents Designer postavke"
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
 "upišite niz znakova koji će se koristiti kao  &rastavljač između sadržaja "
 "dodanog u međuspremnik."
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "&Kopiraj postavke"
+msgid "&Add text before clip data"
+msgstr "Dodaj tekst prije podataka međuspremnika"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -126,3 +101,32 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatak za upravljanje tekstom iz međuspremnika."
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "Instalirali ste dodatak appendTekst, možda staru i nekompatibilnu "
+#~ "inačicu. Želite li deinstalirati staru inačicu?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Deinstaliraj nekompatibilan dodatak"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "Činise kao da postoje postavke za ovaj dodatak. Želite li ih uvesti?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr "Uvezi ClipContentsDesigner postavke"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "početna oznaka se mora nalaziti unutar istog objekta"
+
+#~ msgid "Appended"
+#~ msgstr "dodano"
+
+#~ msgid "&Copy settings"
+#~ msgstr "&Kopiraj postavke"

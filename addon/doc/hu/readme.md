@@ -1,8 +1,8 @@
 # Vágólap tartalomtervező #
 *   - Készítők: Noelia Ruiz Martínez.  - Letöltés [Stabil verzió][1] -
     Letöltés [Fejlesztői verzió][2]
-*   Letöltés [stabil verzió][1]
-*   Letöltés [fejlesztői verzió][2]
+*   [Stabil verzió][1] letöltése
+*   [Fejlesztői verzió][2] letöltése
 
 A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
 szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
