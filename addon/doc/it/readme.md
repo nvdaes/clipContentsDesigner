@@ -3,30 +3,31 @@
 *   Download [stable version][1]
 *   Download [development version][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Questo componente aggiuntivo viene utilizzato per aggiungere il testo agli
+appunti, il che può essere utile quando si desidera unire sezioni di testo
+insieme per poi incollarlo. Il contenuto degli appunti può essere
+cancellato.
 
 ## Comandi rapidi ##
-*   NVDA+windows+c: Add selected text, Unicode braille characters which
-    represent MathML objects, or the string which has been marked with the
-    review cursor, to the clipboard.
+*   NVDA + Windows + C: Aggiunge e copia negli appunti il testo selezionato,
+    o i caratteri braille unicode che rappresentano oggetti MathMl, o la
+    stringa che è stata contrassegnata con il cursore di controllo.
 *   NVDA + Windows + x: Cancella contenuto degli appunti.
-*   NVDA+windows+f9: Mark the current position of the review cursor as the
-    start of the text to be added to the clipboard.  If you use nvda+F9, the
-    text will not be added.
+*   NVDA + Windows + f9: Marca la posizione corrente del cursore di
+    controllo come l'inizio del testo da aggiungere negli Appunti. Se si
+    utilizza NVDA + F9, il testo non verrà aggiunto.
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
 
 ## Menu preferenze ##
-*   Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*    Impostazioni Clip Contents Designer: Permette di impostare un separatore che può essere utilizzato per trovare i segmenti di testo quando l'intero testo aggiunto viene incollato.
+è anche possibile stabilire se il testo aggiunto debba essere accodato o anteposto.
 
 Nota: Il comando di cui sopra può essere modificato dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria Configurazione
 
-## Changes for 4.0 ##
+## Cambiamenti per 4.0 ##
 *   Add-on settings are managed from NVDA configuration, so that standard
     profiles can be used to save different separators, and it's not needed
     to copy the settings for importing at reinstallation.
@@ -35,10 +36,10 @@ sottomenu Preferenze, gesti di immissione, categoria Configurazione
     Contents Designer settings dialog.
 
 ## Cambiamenti per 3.0 ##
-*   Braille representation of MathML objects can be added to the clipboard
-    if MathPlayer is installed.
-*   If no separator is set, just a single line will be placed between the
-    added text segments.
+*   Una rappresentazione Braille di oggetti MathMl può essere accodata agli
+    appunti se MathPlayer è installato
+*   Se non è stato impostato alcun separatore, verrà inserita soltanto una
+    riga vuota tra i segmenti di testo accodato.
 *   Può essere assegnato un tasto caldo per aprire la finestra impostazioni
     di Clip Contents Designer 
 *   Aggiunta una casella di controllo nella finestra di dialogo, per
@@ -46,7 +47,8 @@ sottomenu Preferenze, gesti di immissione, categoria Configurazione
     importato in caso di nuova installazione del componente aggiuntivo.
 
 ## Cambiamenti per 2.0 ##
-*   Hindi characters can be used as the separator between added contents.
+*   Possono essere usati caratteri Hindi come separatori per il testo
+    aggiunto .
 
 ## Cambiamenti per 1.0 ##
 *   Versione iniziale
