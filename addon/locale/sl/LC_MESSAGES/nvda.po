@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-07-07 14:11+0100\n"
+"PO-Revision-Date: 2016-12-29 15:58-0800\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -97,33 +97,3 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatek namenjen upravljanju z vsebino odložišča"
-
-#~ msgid ""
-#~ "You have installed the AppendText add-on, probably an old and "
-#~ "incompatible version with this one. Do you want to uninstall the old "
-#~ "version?"
-#~ msgstr ""
-#~ "Nameščen imate dodatek AppendText, katerega trenutna različica ni "
-#~ "združljiva s to različico. Jo želite odstraniti?"
-
-#~ msgid "Uninstall incompatible add-on"
-#~ msgstr "Odstrani nezdružljiv dodatek"
-
-#~ msgid ""
-#~ "You seem to have previous settings saved for this add-on. Do you want to "
-#~ "import them?"
-#~ msgstr ""
-#~ "Izgleda, da imate shranjene prejšnje nastavitve tega dodatka. Jih želite "
-#~ "uvoziti?"
-
-#~ msgid "Import ClipContentsDesigner add-on settings"
-#~ msgstr "Uvozi nastavitve dodatka ClipContentsDesigner"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "Točka začetka se mora nahajati znotraj istega predmeta"
-
-#~ msgid "Appended"
-#~ msgstr "Dodano"
-
-#~ msgid "&Copy settings"
-#~ msgstr "&Preslikaj nastavitve"

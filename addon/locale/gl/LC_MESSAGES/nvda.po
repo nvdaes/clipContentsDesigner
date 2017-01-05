@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-07-05 20:41+0100\n"
+"PO-Revision-Date: 2016-12-29 16:17-0800\n"
 "Last-Translator: Juan C. Buño <oprisniki@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: name of the option in the menu.
@@ -101,33 +101,3 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para administrar o texto do portapapeis."
-
-#~ msgid ""
-#~ "You have installed the AppendText add-on, probably an old and "
-#~ "incompatible version with this one. Do you want to uninstall the old "
-#~ "version?"
-#~ msgstr ""
-#~ "Tes instalado o complemento AppendText, probablemente unha versión vella "
-#~ "e incompatible con esta. ¿Queres desinstalar a versión vella?"
-
-#~ msgid "Uninstall incompatible add-on"
-#~ msgstr "Desinstalando complemento incompatible"
-
-#~ msgid ""
-#~ "You seem to have previous settings saved for this add-on. Do you want to "
-#~ "import them?"
-#~ msgstr ""
-#~ "Parece que tes opcións anteriores gardadas para este complemento. ¿Queres "
-#~ "importalas?"
-
-#~ msgid "Import ClipContentsDesigner add-on settings"
-#~ msgstr "Importar opcións do complemento ClipContentsDesigner"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "A marca de comezo debe residir dentro do mesmo obxecto"
-
-#~ msgid "Appended"
-#~ msgstr "Anexado"
-
-#~ msgid "&Copy settings"
-#~ msgstr "&Copiar opcións"

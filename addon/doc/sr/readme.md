@@ -1,53 +1,58 @@
 # Dizajner sadržaja privremene memorije #
-*   Autor: Noelia Ruiz Martínez.
-*   preuzmi [stabilnu verziju][1]
-*   preuzmi [verziju u razvoju][2]
+
+*	Autor: Noelia Ruiz Martínez.
+*	preuzmi [stabilnu verziju][1]
+*	preuzmi [verziju u razvoju][2]
 
 Ovaj dodatak se koristi za dodavanje odvojenih delova teksta u privremenu
 memoriju, što može biti korisno kada želite da pridružite više delova
 teksta. a može i da ukloni sadržaj privremene memorije.
 
 ## Prečice ##
-*   NVDA+Windows+c: Dodaje označeni tekst, brajevo predstavljanje MathML
-    objekata ili tekst označen preglednim kursorom u privremenu memoriju.
-*   NVDA+Windows+x: Uklanja sadržaj privremene memorije.
-*   NVDA+Windows+F9: Označava trenutnu poziciju preglednog kursora kao
-    početak teksta za kopiranje u privremenu memoriju.  Ako upotrebite
-    NVDA+F9, tekst neće biti dodat.
+*	NVDA+Windows+c: Dodaje označeni tekst, brajevo predstavljanje MathML
+  objekata ili tekst označen preglednim kursorom u privremenu memoriju.
+*	NVDA+Windows+x: Uklanja sadržaj privremene memorije.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
+    If you use nvda+F9, the text will not be added.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju Pregled teksta.
 
 ## Podešavanja ##
-Podešavanja: Odaberite kako će biti odvojeni delovi teksta koje dodajete u privremenu memoriju, što će olakšati njihovo uočavanje kada nalepite ceo tekst.
-Takođe je moguće odabrati da li će označen tekst biti spojen ili prespojen postojećem tekstu.
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju konfiguracije.
 
+## Changes for 5.0 ##
+
+*	The visual presentation of the dialog has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Requires NVDA 2016.4 or later.
+
 ## Promene u 4.0 ##
-*   Podešavanja dodatka upravljaju NVDA konfiguracijom, tako da možete
-    koristiti standardne profile za čuvanje podešavanja, i ne morate da
-    kopirate podešavanja nakon reinstalacije.
-*   Sada je moguće izabrati da li će dodat tekst biti spojen ili prespojen,
-    koristeći dodaj deo teksta pre podataka izborno polje u podešavanjima
-    dodatka.
+*	Podešavanja dodatka upravljaju NVDA konfiguracijom, tako da možete
+  koristiti standardne profile za čuvanje podešavanja, i ne morate da
+  kopirate podešavanja nakon reinstalacije.
+*	Sada je moguće izabrati da li će dodat tekst biti spojen ili prespojen,
+  koristeći dodaj deo teksta pre podataka izborno polje u podešavanjima
+  dodatka.
 
 ## Promene u 3.0 ##
-*   Brajevo predstavljanje MathML objekata se može dodati u privremenu
-    memoriju ako je MathPlayer instaliran.
-*   Ako nema udvajača, samo jedan red će biti između dodatih segmenata.
-*   ‚Prečica može biti podešena za otvaranje dijaloga za podešavanja
-    dodatka.
-*   Dodat izborni okvir u dijalogu sa podešavanjima, za izbor da li će
-    udvajač biti kopiran za ponovni uvoz nakon reinstalacije dodatka.
+*	Brajevo predstavljanje MathML objekata se može dodati u privremenu
+  memoriju ako je MathPlayer instaliran.
+*	Ako nema udvajača, samo jedan red će biti između dodatih segmenata.
+*	‚Prečica može biti podešena za otvaranje dijaloga za podešavanja dodatka.
+*	Dodat izborni okvir u dijalogu sa podešavanjima, za izbor da li će udvajač
+  biti kopiran za ponovni uvoz nakon reinstalacije dodatka.
 
 ## Promene u 2.0 ##
-*   Indijski karakteri mogu da se koriste kao odvajanje između dodatih
-    delova teksta.
+*	Indijski karakteri mogu da se koriste kao odvajanje između dodatih delova
+  teksta.
 
 ## Promene u 1.0 ##
-*   Prva verzija.
+*	Prva verzija.
 
 [[!tag dev stable]]
 
