@@ -13,24 +13,24 @@ juntas.  El contenido del portapapeles también puede limpiarse.
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
 *	NVDA+windows+x: Limpia el contenido del portapapeles.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+windows+f9: Marca la posición actual del cursor de revisión como el comienzo del texto a añadir al portapapeles.
+    Si utilizas NVDA+F9, el texto no se añadirá.
 
 Nota: Las órdenes anteriores se pueden cambiar desde el menú NVDA, submenú
 Preferencias, Diálogo Gestos de Entrada, Categoría Revisión de Texto.
 
 ## Menú Preferencias ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Opciones de Clip Contents Designer: te permite poner un separador que se pueda  utilizar para encontrar los segmentos de texto una vez todo el texto añadido sea pegado.
+También es posible elegir si el texto añadido se anexará o se antepondrá.
 
 Nota: La orden anterior puede cambiarse desde el menú NVDA, submenú
 Preferencias, diálogo Gestos de Entrada, Categoría Configuración.
 
-## Changes for 5.0 ##
+## Cambios para 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	La presentación visual del diálogo se ha mejorado, adhiriéndose a la
+  apariencia de los diálogos mostrados por NVDA.
+*	Se requiere de NVDA 2016.4 o posterior.
 
 ## Cambios para 4.0 ##
 *	Ahora las opciones del complemento se gestionan desde la configuración de
