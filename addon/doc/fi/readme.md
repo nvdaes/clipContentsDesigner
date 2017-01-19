@@ -12,35 +12,34 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
 *	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin aloituskohdaksi.
+    Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syöte-eleet ja valitsemalla Tekstin tarkastelu
 -kategoria.
 
 ## Asetukset-valikko ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Leikepöydän sisällön käsittelijä: Tästä voidaan määrittää erotin, jota käytetään tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
+On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun.
 
 Huomaa, että edellä mainittua komentoa on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syöte-eleet ja valitsemalla
 Asetukset-kategoria.
 
-## Changes for 5.0 ##
+## Muutokset versiossa 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Valintaikkunan visuaalista esitystä on parannettu noudattamaan NVDA:n
+  ikkunoiden ulkoasua.
+*	Edellyttää NVDA:n 2016.4-versiota tai uudempaa.
 
 ## Muutokset versiossa 4.0 ##
 *	NVDA hallitsee nyt lisäosan asetuksia, jotta profiilien käyttäminen eri
   erottimien tallentamiseen olisi mahdollista, eikä asetusten kopiointia
   tarvita niiden tuomiseksi asennettaessa lisäosaa uudelleen.
-*	Nyt on mahdollista valita, liitetäänkö lisätty teksti leikepöydällä jo
-  olevan tekstin loppuun vai ennen sitä Leikepöydän sisällön käsittelijän
-  asetusvalintaikkunan Lisää teksti ennen leikepöydän nykyistä sisältöä
-  -valintaruutua käyttäen.
+*	Lisäosan asetusvalintaikkunan Lisää teksti leikepöydän nykyisen sisällön
+  alkuun -valintaruutua käyttäen on nyt mahdollista valita, liitetäänkö
+  lisätty teksti leikepöydällä jo olevan tekstin loppuun vai alkuun.
 
 ## Muutokset versiossa 3.0 ##
 *	MathML-objekteja kuvaavat pistekirjoitusmerkit voidaan lisätä
