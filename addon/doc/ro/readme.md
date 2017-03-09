@@ -4,9 +4,9 @@
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 
-Acest add-on este utilizat pentru a adăuga text pe planșetă, care poate fi
-folositor când dorești să accesezi secțiuni de text împreună gata pentru a
-fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățit.
+Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
+fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
+a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățit.
 
 ## Comenzi de taste ##
 *	NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
@@ -33,9 +33,9 @@ Gesturi de intrare, Categoria de configurare.
 *	Necesită NVDA 2016.4 sau mai nou.
 
 ## Modificări din 4.0 ##
-*	Setările add-on-ului sunt gestionate din configurarea NVDA, deci
+*	Setările suplimentului sunt gestionate din configurarea NVDA, deci
   profilurile implicite pot fi folosite pentru a salva diferite separatoare,
-  și nu este nevoie să copii setările pentru a le importa la reinstalare.
+  și nu este nevoie să copiezi setările pentru a le importa la reinstalare.
 *	Acum este posibilă selectarea dacă textul adăugat va fi anexat sau
   prefixat, utilizând căsuța Adăugare text din dialogul de setări al Clip
   Contents Designer-ului.
@@ -52,7 +52,7 @@ Gesturi de intrare, Categoria de configurare.
   add-on-ul.
 
 ## Modificări din 2.0 ##
-*	Caracterele Hindi pot fi folosite ca separator între content-ul adăugat.
+*	Caracterele indiene pot fi folosite ca separator între content-ul adăugat.
 
 ## Modificări din 1.0 ##
 *	Versiunea inițială.

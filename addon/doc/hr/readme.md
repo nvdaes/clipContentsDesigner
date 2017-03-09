@@ -26,13 +26,13 @@ It's also possible to choose if the added text will be appended or prepended.
 Note: The above command can be changed from NVDA menu, Preferences submenu,
 Input gestures dialog, Configuration category.
 
-## Changes for 5.0 ##
+## izmjene u inačici 5.0 ##
 
 *	The visual presentation of the dialog has been enhanced, adhering to the
   appearance of the dialogs shown in NVDA.
 *	Requires NVDA 2016.4 or later.
 
-## Changes for 4.0 ##
+## izmjene u inačici 4.0 ##
 *	Add-on settings are managed from NVDA configuration, so that standard
   profiles can be used to save different separators, and it's not needed to
   copy the settings for importing at reinstallation.
@@ -40,7 +40,7 @@ Input gestures dialog, Configuration category.
   prepended, using the Add text before clip data check box from the Clip
   Contents Designer settings dialog.
 
-## Changes for 3.0 ##
+## izmjene u inačici 3.0 ##
 *	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
 *	If no separator is set, just a single line will be placed between the
