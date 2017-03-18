@@ -146,7 +146,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message presented when the text cannot be added to the clipboard.
 			ui.message(_("Cannot add"))
 	# Translators: message presented in input mode.
-	script_add.__doc = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard.")
+	script_add.__doc__ = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard.")
 
 	def script_clear(self, gesture):
 		self.clearClipboard()
