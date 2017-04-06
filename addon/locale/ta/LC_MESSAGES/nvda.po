@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-01-22 12:05+0530\n"
+"PO-Revision-Date: 2017-04-02 18:46+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ta\n"
@@ -35,7 +35,7 @@ msgstr "பிடிப்புப்பலகை துடைக்கப்�
 
 #. Translators: message presented when the start marker for appending text has been set using the review cursor.
 msgid "Start marker set"
-msgstr "துவக்கம் குறிக்கப்பட்டது"
+msgstr "துவக்கக் குறி இடப்பட்டது"
 
 #. Translators: message presented in input mode.
 msgid ""
