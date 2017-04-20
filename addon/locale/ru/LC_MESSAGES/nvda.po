@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-05-28 10:08+0400\n"
+"PO-Revision-Date: 2017-04-15 19:16+0400\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: Translators <LL@li.org>\n"
 "Language: ru\n"
@@ -17,34 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
 
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"Скорее всего, у вас установлена старая и несовместимая версия дополнения "
-"AppendText. Хотите удалить старую версию?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "Удаление несовместимого дополнения"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr ""
-"Возможно, увас есть предыдущие настройки этого дополнения. Действительно "
-"хотите их импортировать?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Импортировать Настройки Clip Contents Designer"
-
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "Настройки &Clip Contents Designer..."
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr "Показывает диалог настроек Clip Contents Designer"
 
@@ -68,38 +45,34 @@ msgstr ""
 "Отмечает текущее положение курсора обзора как начало текста, который будет "
 "добавлен в буфер обмена."
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Нет выделения. Начальная метка не выбрана"
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "Начальная метка должна находиться в пределах того же объекта"
-
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
 msgstr "Нет текста для добавления"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
 msgstr "Добавлен"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
 msgstr "Невозможно добавить"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
 "Восстанавливает выбранную строку или текст от ранее установленной начальной "
 "метки, вплоть до текущей позиции курсора обзора, и добавляет его в буфер "
 "обмена."
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
+msgid "Deletes the added text and the content of the clipboard."
 msgstr "Удаляет добавленный текст и содержимое буфера обмена."
 
 #. Translators: title of a dialog.
@@ -108,15 +81,15 @@ msgstr "Настройки Clip Contents Designer"
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"Введите строку для использования в качестве &разделителя между "
-"складывающимся содержимым буфера обмена."
+"Введите строку для использования в качестве &разделителя между добавляемым "
+"содержимым буфера обмена."
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "&Копировать настройки"
+msgid "&Add text before clip data"
+msgstr "&Добавить текст перед данными клипа"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
