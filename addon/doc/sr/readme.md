@@ -12,24 +12,24 @@ teksta. a može i da ukloni sadržaj privremene memorije.
 *	NVDA+Windows+c: Dodaje označeni tekst, brajevo predstavljanje MathML
   objekata ili tekst označen preglednim kursorom u privremenu memoriju.
 *	NVDA+Windows+x: Uklanja sadržaj privremene memorije.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+Windows+F9: Označava trenutnu poziciju preglednog kursora kao početak teksta za kopiranje u privremenu memoriju.
+  Ako upotrebite NVDA+F9, tekst neće biti dodat.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju Pregled teksta.
 
 ## Podešavanja ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Podešavanja: Odaberite kako će biti odvojeni delovi teksta koje dodajete u privremenu memoriju, što će olakšati njihovo uočavanje kada nalepite ceo tekst.
+Takođe je moguće odabrati da li će označen tekst biti spojen ili prespojen postojećem tekstu.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju konfiguracije.
 
-## Changes for 5.0 ##
+## Promene u 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Vizuelno predstavljanje dijaloga je poboljšano, slično dijalozima koji su
+  prikazani u programu NVDA.
+*	Zahteva NVDA 2016.4 ili noviji.
 
 ## Promene u 4.0 ##
 *	Podešavanja dodatka upravljaju NVDA konfiguracijom, tako da možete
