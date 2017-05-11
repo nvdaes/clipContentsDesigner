@@ -4,51 +4,51 @@
 *	Pobierz [wersja stabilna][1]
 *	Pobierz [wersja rozwojowa][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Ten dodatek pozwala dodawać tekst do schowka, co może być użyteczne, jeśli
+chcesz połączyć razem kilka części tekstu w całość gotową do wklejenia.
+Zawartość schowka może również być wyczyszczona.
 
 ## Skróty klawiszowe ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which
-  represent MathML objects, or the string which has been marked with the
-  review cursor, to the clipboard.
+*	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
+  Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
+  pomocą kursora przeglądu do schowka.
 *	NVDA+windows+x: wyczyść zawartość schowka.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+NVDA+windows+f9: oznacz bieżącą pozycję kursora przeglądu jako początek tekstu, który zostanie dodany do schowka.  Jeśli użyjesz nvda+F9, tekst nie zostanie dodany.    Jeśli użyjesz nvda+F9, tekst nie będzie dodany.
 
 Uwaga: powyższe polecenia mogą zostać zmienione z menu NVDA, Podmenu
 Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
 ## Menu ustawienia ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Ustawienia projektanta zawartości schowka: pozwala ustawić separator, umożliwiający znalezienie segmentów tekstu, gdy cały tekst zostanie wklejony.
+Jest także możliwe ustalenie, czy dany tekstb ędzie dodany na początku bub na końcu.
 
-Note: The above command can be changed from NVDA menu, Preferences submenu,
-Input gestures dialog, Configuration category.
+Uwaga: powyższe polecenie może zostać zmienione z menu NVDA, Podmenu
+Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
-## Changes for 5.0 ##
+## Zmiany w wersji 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Wizualna prezentacja dialogów zostałą ulepszona, aby ona była zgodna z
+  wyświetlanymi dialogami w NVDA.
+*	Wymaga NVDA 2016.4 lub nowszą wersje.
 
-## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard
-  profiles can be used to save different separators, and it's not needed to
-  copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or
-  prepended, using the Add text before clip data check box from the Clip
-  Contents Designer settings dialog.
+## Zmiany w wersji 4.0 ##
+*	Ustawieniami dodatku teraz można zarządzać z samej konfiguracji NVDA, i z
+  tego powodu teraz profile konfiguracyjne mogą być użyte do zachowywania
+  różnych separatorów, a właściwie, teraz staje się niepotrzebnym kopiowanie
+  ustawień separatora podczas reinstalacji.
+*	Teraz można wybrać, czy tekst kopiowany ma być dodawany na końcu lub na
+  początku, używając pola wyboru Dodaj tekst przed danymi Clip z dialogu
+  ustawień projektanta zawartości schowka.
 
-## Changes for 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if
-  MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings
-  dialog.
-*	Added a check box in the settings dialog, for choosing if the separator
-  should be copied to be imported when reinstalling the add-on.
+## Zmiany w wersji 3.0 ##
+*	Wyświetlony brajl z MathML mogą być dodany do schowka, jeżeli MathPlayer
+  jest zainstalowany.
+*	Jeżeli separator nie jest ustawiony, będzie pojedyńcza linia pomiędzy
+  odcinkami dodanego tekstu.
+*	Teraz można przydzielić skrót do otwierania dialogu ustawień Projektanta
+  zawartości schowka.
+*	Dodane pole do wyboru, dla wybierania czy separator musi być importowany
+  podczas reinstalacji dodatku.
 
 ## Zmiany w wersji 2.0 ##
 *	Hindi characters can be used as the separator between added contents.
