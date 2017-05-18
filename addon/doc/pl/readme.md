@@ -20,14 +20,14 @@ Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
 ## Menu ustawienia ##
 *	Ustawienia projektanta zawartości schowka: pozwala ustawić separator, umożliwiający znalezienie segmentów tekstu, gdy cały tekst zostanie wklejony.
-Jest także możliwe ustalenie, czy dany tekstb ędzie dodany na początku bub na końcu.
+Jest także możliwe ustalenie, czy dany tekst będzie dodany na początku lub na końcu.
 
 Uwaga: powyższe polecenie może zostać zmienione z menu NVDA, Podmenu
 Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
 ## Zmiany w wersji 5.0 ##
 
-*	Wizualna prezentacja dialogów zostałą ulepszona, aby ona była zgodna z
+*	Wizualna prezentacja dialogów została ulepszona, aby była zgodna z
   wyświetlanymi dialogami w NVDA.
 *	Wymaga NVDA 2016.4 lub nowszą wersje.
 
@@ -43,15 +43,15 @@ Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 ## Zmiany w wersji 3.0 ##
 *	Wyświetlony brajl z MathML mogą być dodany do schowka, jeżeli MathPlayer
   jest zainstalowany.
-*	Jeżeli separator nie jest ustawiony, będzie pojedyńcza linia pomiędzy
-  odcinkami dodanego tekstu.
+*	Jeżeli separator nie jest ustawiony, będzie wstawiona pojedyńcza linia
+  pomiędzy odcinkami dodanego tekstu.
 *	Teraz można przydzielić skrót do otwierania dialogu ustawień Projektanta
   zawartości schowka.
-*	Dodane pole do wyboru, dla wybierania czy separator musi być importowany
+*	Dodane pole wyboru, dla wybierania czy separator musi być importowany
   podczas reinstalacji dodatku.
 
 ## Zmiany w wersji 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+*	Znaki Dewanagari mogą być używane jako separator dodawanej treści.
 
 ## Zmiany dla 1.0 ##
 *	Pierwsze wydanie.
