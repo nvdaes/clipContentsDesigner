@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: AppendText.nvda-addon version 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-30 13:20+0100\n"
-"PO-Revision-Date: 2016-12-29 16:18-0800\n"
+"PO-Revision-Date: 2017-06-07 09:34+0100\n"
 "Last-Translator: Bachir BENANOU <ben_bach@yahoo.fr>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.6\n"
 "X-Poedit-Bookmarks: -1,14,-1,-1,-1,-1,-1,-1,-1,-1\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -27,11 +27,11 @@ msgstr "Afficher le dialogue paramètres de Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
-msgstr "Presse-papiers vidé"
+msgstr "Presse-papiers effacé"
 
 #. Translators: message presented when the clipboard content cannot be deleted.
 msgid "Clipboard not cleared"
-msgstr "Presse-papier non vidé"
+msgstr "Presse-papiers non effacé"
 
 #. Translators: message presented when the start marker for appending text has been set using the review cursor.
 msgid "Start marker set"
@@ -42,16 +42,16 @@ msgid ""
 "Marks the current position of the review cursor as the start of text to be "
 "appended to the clipboard."
 msgstr ""
-"Marquer la position actuelle du curseur de revue comme début du texte à "
+"Définir la position actuelle du curseur de revue comme début du texte à "
 "ajouter au presse-papiers."
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
-msgstr "Pas de sélection. pas de marqueur de début"
+msgstr "Aucune sélection. Pas de marqueur de début"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
-msgstr "Pas de texte à ajouter"
+msgstr "Aucun texte à ajouter"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -84,8 +84,8 @@ msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"Tapez la chaîne qui sera utilisé comme un &séparateur entre les contenu "
-"ajoutées au presse-papiers."
+"Tapez la chaîne qui sera utilisé comme un &séparateur entre les contenus "
+"ajoutés au presse-papiers."
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
