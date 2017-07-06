@@ -27,13 +27,13 @@ It's also possible to choose if the added text will be appended or prepended.
 Anmerkung: der obige Befehl kann im NVDA-Menü unter Einstellungen/eingaben
 in der Kategorie Konfiguration geändert werden.
 
-## Changes for 5.0 ##
+## Änderungen in Version 5.0 ##
 
 *	The visual presentation of the dialog has been enhanced, adhering to the
   appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Benötigt NVDA 2016.4 oder neuer.
 
-## Changes for 4.0 ##
+## Änderungen in Version 4.0 ##
 *	Add-on settings are managed from NVDA configuration, so that standard
   profiles can be used to save different separators, and it's not needed to
   copy the settings for importing at reinstallation.
@@ -59,6 +59,6 @@ in der Kategorie Konfiguration geändert werden.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

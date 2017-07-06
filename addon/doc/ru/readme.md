@@ -26,13 +26,13 @@ It's also possible to choose if the added text will be appended or prepended.
 Note: The above command can be changed from NVDA menu, Preferences submenu,
 Input gestures dialog, Configuration category.
 
-## Changes for 5.0 ##
+## Изменения для 5.0 ##
 
 *	The visual presentation of the dialog has been enhanced, adhering to the
   appearance of the dialogs shown in NVDA.
 *	Requires NVDA 2016.4 or later.
 
-## Changes for 4.0 ##
+## Изменения для 4.0 ##
 *	Add-on settings are managed from NVDA configuration, so that standard
   profiles can be used to save different separators, and it's not needed to
   copy the settings for importing at reinstallation.
@@ -40,7 +40,7 @@ Input gestures dialog, Configuration category.
   prepended, using the Add text before clip data check box from the Clip
   Contents Designer settings dialog.
 
-## Changes for 3.0 ##
+## Изменения для 3.0 ##
 *	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
 *	If no separator is set, just a single line will be placed between the
@@ -50,7 +50,7 @@ Input gestures dialog, Configuration category.
 *	Added a check box in the settings dialog, for choosing if the separator
   should be copied to be imported when reinstalling the add-on.
 
-## Changes for 2.0 ##
+## Изменения для 2.0 ##
 *	Hindi characters can be used as the separator between added contents.
 
 ## Изменения для 1.0 ##
@@ -58,6 +58,6 @@ Input gestures dialog, Configuration category.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[1]: https://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
