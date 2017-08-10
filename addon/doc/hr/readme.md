@@ -4,54 +4,52 @@
 *	Preuzmi [stabilnu inačicu][1]
 *	Preuzmi [razvojnu inačicu][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Ovaj se dodatak koristi kako bi se tekst mogao dodati u međuspremnik, što
+može biti korisno kada želite zajedno spojiti dijelove teksta koji su
+spremni za lijepljenje. Sadržaj međuspremnika također se može izbrisati.
 
 ## Tipkovnički prečaci ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which
-  represent MathML objects, or the string which has been marked with the
-  review cursor, to the clipboard.
+*	NVDA+windows+c: dodaj označeni tekst, ili niz označen uz pomoć preglednog
+  kursora, u međuspremnik.
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+windows+f9: Označi trenutnu poziciju preglednog kursora kao početak teksta koji treba biti dodan u međuspremnik.
+     Ako koristite NVDA+F9, tekst neće biti dodan.
 
 Napomena: Prečaci iznad mogu se promijeniti iz NVDA izbornika, podizbornika
 postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
 
 ## Podizbornik postavke ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Postavke Clip contents designer dodatka: Omogućuju vam podešavanje rastavljača Koji se može koristiti za traženje segmenata teksta jednom kada je označeni tekst zalijepljen.
 
-Note: The above command can be changed from NVDA menu, Preferences submenu,
-Input gestures dialog, Configuration category.
+Napomena: Prečaci iznad mogu se promijeniti iz NVDA izbornika, podizbornika
+postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
 
 ## izmjene u inačici 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Vizualno predstavljanje dijaloških okvira je poboljašno, slično dijaloškim
+  okvirima koji su prikazani u programu NVDA.
+*	Zahtjeva NVDA inačicu 2016.4 ili noviju.
 
 ## izmjene u inačici 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard
-  profiles can be used to save different separators, and it's not needed to
-  copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or
-  prepended, using the Add text before clip data check box from the Clip
-  Contents Designer settings dialog.
+*	Podešavanja dodatka upravljaju NVDA konfiguracijom, tako da možete
+  koristiti standardne profile za čuvanje podešavanja i ne morate kopirati
+  podešavanja nakon reinstalacije.
+*	Sada je moguće izabrati hoće li dodani tekst biti spojen ili prespojen,
+  koristeći izborno polje dodaj dio teksta prije podataka u postavkama
+  dodatka.
 
 ## izmjene u inačici 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if
-  MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings
-  dialog.
-*	Added a check box in the settings dialog, for choosing if the separator
-  should be copied to be imported when reinstalling the add-on.
+*	Brajev prikaz MathML objekata se može dodati u privremenu memoriju ako je
+  MathPlayer instaliran.
+*	Ako nema razdvajača, bit će samo jedan red između dodanih segmenata.
+*	Prečica može biti podešena za otvaranje dijaloškog okvira postavki
+  dodatka.
+*	Dodan izborni okvir u postavkama za izbor da li če razdvajač biti kopiran
+  za ponovni uvoz nakon reinstalacije dodatka.
 
 ## izmjene u inačici 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+*	znakovi devanagari pisma mogu se koristiti kao rastavljači između dodanog
+  sadržaja.
 
 ## Promjene u inačici1.0 ##
 *	Prva inačica.
