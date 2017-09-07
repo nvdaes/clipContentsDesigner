@@ -1,6 +1,6 @@
 # Clip Contents Designer #
 
-*	Forfattere: Noelia Ruiz Martínez.
+*	Forfatter: Noelia Ruiz Martínez.
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
@@ -13,32 +13,33 @@ content can also be cleared.
   represent MathML objects, or the string which has been marked with the
   review cursor, to the clipboard.
 *	NVDA+Windows+x: Ryd udklipsholderen.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+Windows+F9: Marker læsemarkørens aktuelle position som starten af den tekst, der skal tilføjes til udklipsholderen.
+Hvis du bruger NVDA+F9, vil teksten ikke blive tilføjet.
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Indstillinger /
 Inputbevægelser / kategorien tekstlæsning.
 
 ## Indstillinger-menuen ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+Indstillinger for Udklipsdesigner: Her kan du indstille en separator, som kan bruge til at finde de enkelte tekstsegmenter, når først hele den tilføjede tekst er blevet indsat.
+Her kan du også vælge om den tilføjede tekst skal indsættes før eller efter eksisterende tekst.
 
 Bemærk: Denne kommando kan ændres under NVDA-menu / Indstillinger /
 Inputbevægelser / kategorien Indstillinger.
 
-## Changes for 5.0 ##
+## Ændringer i 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Dialogens visuelle præsentation er blevet forbedret og overholder
+  udseendet af de dialoger, der vises i NVDA.
+*	Kræver NVDA 2016.4 eller nyere.
 
-## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard
-  profiles can be used to save different separators, and it's not needed to
-  copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or
-  prepended, using the Add text before clip data check box from the Clip
-  Contents Designer settings dialog.
+## Ændringer for 4.0 ##
+*	Tilføjelsesindstillinger administreres fra NVDA-konfiguration, så
+  standardprofiler kan bruges til at gemme forskellige separatorer, og det
+  er ikke nødvendigt at kopiere indstillingerne til import ved
+  geninstallation.
+*	Nu er det muligt at vælge, om den tilføjede tekst vil blive tilføjet til
+  begyndelsen eller slutningen, ved at markere checkboksen "Tilføj tekst før
+  data i udklipsholder" i dialogen Indstillinger for udklipsdesigner.
 
 ## Ændringer i 3.0 ##
 *	Braille representation of MathML objects can be added to the clipboard if
