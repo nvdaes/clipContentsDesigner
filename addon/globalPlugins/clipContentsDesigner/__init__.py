@@ -22,7 +22,7 @@ confspec = {
 	"separator": "string(default="")",
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
-	"confirmToClean": "boolean(default=False)",
+	"confirmToClear": "boolean(default=False)",
 	"confirmToCopy": "boolean(default=False)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
@@ -152,7 +152,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if gui.messageBox(_("Please, confirm if you want to add text to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Adding text to clipboard"), wx.OK|wx.CANCEL) == wx.OK:
-				api.copyToClip(text)
+				if api.copyToClip(text):
+					# Translators: message presented when the text has been added to the clipboard.
+					wx.CallLater(200, ui.message, _("Added"))
+				else:
+					# Translators: message presented when the text cannot be added to the clipboard.
+					wx.CallLater(200, ui.message, _("Cannot add"))
 
 	def performAdd(self):
 		text = self.getTextToAdd()
@@ -171,8 +176,28 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_add.__doc__ = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard.")
 
+	def confirmClear(self):
+		# Translators: Label of a dialog.
+		if gui.messageBox(_("Please, confirm if you want to clear the clipboard"),
+			# Translators: Title of a dialog.
+			_("Clearing clipboard"), wx.OK|wx.CANCEL) != wx.OK:
+				return
+		try:
+			win32clipboard.OpenClipboard()
+			win32clipboard.EmptyClipboard()
+			# Translators: message presented when the clipboard content has been deleted.
+			wx.CallLater(200, ui.message, _("Clipboard cleared"))
+		except win32clipboard.error:
+			# Translators: message presented when the clipboard content cannot be deleted.
+			wx.CallLater(200, ui.message, _("Clipboard not cleared"))
+		finally:
+			win32clipboard.CloseClipboard()
+
 	def script_clear(self, gesture):
-		self.clearClipboard()
+		if config.conf["clipContentsDesigner"]["confirmToClear"]:
+			wx.CallAfter(self.confirmClear)
+		else:
+			self.clearClipboard()
 	# Translators: message presented in input mode.
 	script_clear.__doc__ = _("Deletes the added text and the content of the clipboard.")
 
@@ -204,8 +229,8 @@ class AddonSettingsDialog(SettingsDialog):
 		self.confirmAddCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to &add text")))
 		self.confirmAddCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToAdd"])
 		# Translators: label of a dialog.
-		self.confirmCleanCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to c&leanup clipboard")))
-		self.confirmCleanCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToClean"])
+		self.confirmClearCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to c&lear clipboard")))
+		self.confirmClearCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToClear"])
 		# Translators: label of a dialog.
 		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to copy text")))
 		self.confirmCopyCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCopy"])
@@ -218,6 +243,6 @@ class AddonSettingsDialog(SettingsDialog):
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
 		config.conf["clipContentsDesigner"]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToClean"] = self.confirmCleanCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmClearCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmCopyCheckBox.GetValue()
 
