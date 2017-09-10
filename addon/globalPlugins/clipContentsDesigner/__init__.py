@@ -164,7 +164,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Cannot add"))
 
 	def script_add(self, gesture):
-		if config.conf["clipContentsDesigner"]["confirmToAdd"]:
+		if config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox:
 			wx.CallAfter(self.confirmAdd)
 		else:
 			self.performAdd()
