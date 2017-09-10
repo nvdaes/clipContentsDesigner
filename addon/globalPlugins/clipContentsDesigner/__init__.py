@@ -21,6 +21,9 @@ addonHandler.initTranslation()
 confspec = {
 	"separator": "string(default="")",
 	"addTextBefore": "boolean(default=False)",
+	"confirmToAdd": "boolean(default=False)",
+	"confirmToClean": "boolean(default=False)",
+	"confirmToCopy": "boolean(default=False)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
@@ -112,7 +115,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_setSelectionStartMarker.__doc__ = _("Marks the current position of the review cursor as the start of text to be appended to the clipboard.")
 
-	def script_add(self, gesture):
+	def getTextToAdd(self):
 		newText = self.getSelectedText() or self.getMath()
 		if not newText:
 			if not self._copyStartMarker:
@@ -139,12 +142,32 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				text = clipData+getBookmark()+newText
 		except TypeError:
 			text = newText
+		return text
+
+	def confirmAdd(self):
+		text = self.getTextToAdd()
+		if not text:
+			return
+		# Translators: Label of a dialog.
+		if gui.messageBox(_("Please, confirm if you want to add text to the clipboard"),
+			# Translators: Title of a dialog.
+			_("Adding text to clipboard"), wx.OK|wx.CANCEL) == wx.OK:
+				api.copyToClip(text)
+
+	def performAdd(self):
+		text = self.getTextToAdd()
 		if api.copyToClip(text):
 			# Translators: message presented when the text has been added to the clipboard.
 			ui.message(_("Added"))
 		else:
 			# Translators: message presented when the text cannot be added to the clipboard.
 			ui.message(_("Cannot add"))
+
+	def script_add(self, gesture):
+		if config.conf["clipContentsDesigner"]["confirmToAdd"]:
+			wx.CallAfter(self.confirmAdd)
+		else:
+			self.performAdd()
 	# Translators: message presented in input mode.
 	script_add.__doc__ = _("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard.")
 
@@ -177,6 +200,15 @@ class AddonSettingsDialog(SettingsDialog):
 		# Translators: label of a dialog.
 		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
+		# Translators: label of a dialog.
+		self.confirmAddCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to &add text")))
+		self.confirmAddCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToAdd"])
+		# Translators: label of a dialog.
+		self.confirmCleanCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to c&leanup clipboard")))
+		self.confirmCleanCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToClean"])
+		# Translators: label of a dialog.
+		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to copy text")))
+		self.confirmCopyCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCopy"])
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
@@ -185,3 +217,7 @@ class AddonSettingsDialog(SettingsDialog):
 		super(AddonSettingsDialog, self).onOk(evt)
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
 		config.conf["clipContentsDesigner"]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["confirmToClean"] = self.confirmCleanCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmCopyCheckBox.GetValue()
+
