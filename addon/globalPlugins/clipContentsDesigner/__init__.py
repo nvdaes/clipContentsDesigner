@@ -10,10 +10,12 @@ import textInfos
 import ui
 import msg # Developed by Alberto Buffolino
 import win32clipboard
+import treeInterceptorHandler
 import config
 import wx
 import gui
 from gui import SettingsDialog, guiHelper
+from keyboardHandler import KeyboardInputGesture
 from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 
 addonHandler.initTranslation()
@@ -201,6 +203,30 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_clear.__doc__ = _("Deletes the added text and the content of the clipboard.")
 
+	def copy(self):
+		obj=api.getFocusObject()
+		treeInterceptor=obj.treeInterceptor
+		if isinstance(treeInterceptor,treeInterceptorHandler.DocumentTreeInterceptor) and not treeInterceptor.passThrough:
+			treeInterceptor.script_copyToClipboard(None)
+		else:
+			KeyboardInputGesture.fromName("control+c").send()
+
+	def confirmCopy(self):
+		# Translators: Label of a dialog.
+		if gui.messageBox(_("Please, confirm if you want to copy to the clipboard"),
+			# Translators: Title of a dialog.
+			_("Copying to clipboard"), wx.OK|wx.CANCEL) != wx.OK:
+				return
+		wx.CallLater(200, self.copy)
+
+	def script_copy(self, gesture):
+		if config.conf["clipContentsDesigner"]["confirmToCopy"]:
+			wx.CallAfter(self.confirmCopy)
+		else:
+			self.copy()
+	# Translators: message presented in input mode.
+	script_copy.__doc__ = _("Copies to the clipboard, with the possibility of being asked for a previous confirmation")
+
 	__gestures = {
 		"kb:NVDA+windows+c": "add",
 		"kb:NVDA+windows+x": "clear",
@@ -245,4 +271,3 @@ class AddonSettingsDialog(SettingsDialog):
 		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmClearCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmCopyCheckBox.GetValue()
-
