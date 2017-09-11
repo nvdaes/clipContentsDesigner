@@ -9,16 +9,25 @@ The clipboard content can also be cleared.
 ## Keyboard commands ##
 *	NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
 *	NVDA+windows+x: Clear clipboard contents.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
 
 Note: The above commands can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Text review category.
 
 ## Preferences Menu ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+It's also possible to choose if the added text will be appended or prepended, and if available actions (add, clear clipboard and emulate copy) should be performed inmediately of after confirmation.
 
-Note: The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
+Notes:
+
+*	The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
+*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed
+
+## Changes for 6.0
+
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added an Emulate copy command, which could be associated with gestures from the Input gestures dialog.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Changes for 5.0 ##
 

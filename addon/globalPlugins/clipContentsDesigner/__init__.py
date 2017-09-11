@@ -196,7 +196,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			win32clipboard.CloseClipboard()
 
 	def script_clear(self, gesture):
-		if config.conf["clipContentsDesigner"]["confirmToClear"]:
+		if config.conf["clipContentsDesigner"]["confirmToClear"] and not gui.isInMessageBox:
 			wx.CallAfter(self.confirmClear)
 		else:
 			self.clearClipboard()
@@ -220,7 +220,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		wx.CallLater(200, self.copy)
 
 	def script_copy(self, gesture):
-		if config.conf["clipContentsDesigner"]["confirmToCopy"]:
+		if config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox:
 			wx.CallAfter(self.confirmCopy)
 		else:
 			self.copy()
@@ -258,7 +258,7 @@ class AddonSettingsDialog(SettingsDialog):
 		self.confirmClearCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to c&lear clipboard")))
 		self.confirmClearCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToClear"])
 		# Translators: label of a dialog.
-		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to copy text")))
+		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to emulate copy")))
 		self.confirmCopyCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCopy"])
 
 	def postInit(self):
