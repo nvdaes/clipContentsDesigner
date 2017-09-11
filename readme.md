@@ -26,7 +26,7 @@ Notes:
 ## Changes for 6.0
 
 *	 Added options to choose if available actions should be performed after confirmation.
-*	Added an Emulate copy command, which could be associated with gestures from the Input gestures dialog.
+*	Added an Emulate copy command, which could be assigned from the Input gestures dialog.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Changes for 5.0 ##
