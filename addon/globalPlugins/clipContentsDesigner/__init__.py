@@ -26,6 +26,7 @@ confspec = {
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
 	"confirmToCopy": "boolean(default=False)",
+	"requireTextForConfirmation": "boolean(default=False)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
@@ -146,6 +147,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			text = newText
 		return text
 
+	def requiredFormatInClip(self):
+		if not config.conf["clipContentsDesigner"]["requireTextForConfirmation"]:
+			return True
+		try:
+			text = api.getClipData()
+			return True
+		except:
+			return False
+
 	def confirmAdd(self):
 		text = self.getTextToAdd()
 		if not text:
@@ -171,8 +181,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Cannot add"))
 
 	def script_add(self, gesture):
-		if config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox:
-			wx.CallAfter(self.confirmAdd)
+		if (config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox
+			and self.requiredFormatInClip()):
+				wx.CallAfter(self.confirmAdd)
 		else:
 			self.performAdd()
 	# Translators: message presented in input mode.
@@ -196,7 +207,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			win32clipboard.CloseClipboard()
 
 	def script_clear(self, gesture):
-		if config.conf["clipContentsDesigner"]["confirmToClear"] and not gui.isInMessageBox:
+		if (config.conf["clipContentsDesigner"]["confirmToClear"] and not gui.isInMessageBox
+			and self.requiredFormatInClip()):
 			wx.CallAfter(self.confirmClear)
 		else:
 			self.clearClipboard()
@@ -220,8 +232,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		wx.CallLater(200, self.copy)
 
 	def script_copy(self, gesture):
-		if config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox:
-			wx.CallAfter(self.confirmCopy)
+		if (config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox
+			and self.requiredFormatInClip()):
+				wx.CallAfter(self.confirmCopy)
 		else:
 			self.copy()
 	# Translators: message presented in input mode.
@@ -252,7 +265,7 @@ class AddonSettingsDialog(SettingsDialog):
 		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
 		# Translators: label of a dialog.
-		self.confirmAddCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to &add text")))
+		self.confirmAddCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to a&dd text")))
 		self.confirmAddCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToAdd"])
 		# Translators: label of a dialog.
 		self.confirmClearCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to c&lear clipboard")))
@@ -260,6 +273,9 @@ class AddonSettingsDialog(SettingsDialog):
 		# Translators: label of a dialog.
 		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to emulate copy")))
 		self.confirmCopyCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCopy"])
+		# Translators: label of a dialog.
+		self.requireTextCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Text in clipboard to confirm")))
+		self.requireTextCheckBox.SetValue(config.conf["clipContentsDesigner"]["requireTextForConfirmation"])
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
@@ -271,3 +287,4 @@ class AddonSettingsDialog(SettingsDialog):
 		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmClearCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmCopyCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["requireTextForConfirmation"] = self.requireTextCheckBox.GetValue()
