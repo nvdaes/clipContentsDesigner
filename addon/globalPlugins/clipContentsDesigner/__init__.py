@@ -26,7 +26,7 @@ confspec = {
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
 	"confirmToCopy": "boolean(default=False)",
-	"requireTextForConfirmation": "boolean(default=False)",
+	"requireTextForConfirmation": "boolean(default=True)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
