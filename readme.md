@@ -27,6 +27,7 @@ Notes:
 
 *	 Added options to choose if available actions should be performed after confirmation.
 *	Added an Emulate copy command, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy functionality at installation. This allows to add the control+c command for copying to clipboard, and be asked if you want to replace the clipboard contents when pressing this keystroke.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Changes for 5.0 ##
