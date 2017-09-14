@@ -29,5 +29,9 @@ def onInstall():
 				inputCore.manager.userGestureMap.remove(gesture, module, className, None)
 			except ValueError:
 				pass
+			try:
+				inputCore.manager.userGestureMap.remove(gesture, module, className, scriptName)
+			except ValueError:
+				pass
 			inputCore.manager.userGestureMap.add(gesture, module, className, scriptName)
 			inputCore.manager.userGestureMap.save()
