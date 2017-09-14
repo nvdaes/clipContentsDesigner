@@ -24,11 +24,7 @@ def onInstall():
 			module = "globalPlugins.clipContentsDesigner"
 			className = "GlobalPlugin"
 			scriptName = "copy"
-			# Borrowed from NVDA's core.
-			try:
-				inputCore.manager.userGestureMap.remove(gesture, module, className, None)
-			except ValueError:
-				pass
+			# Adapted from NVDA's core.
 			try:
 				inputCore.manager.userGestureMap.remove(gesture, module, className, scriptName)
 			except ValueError:
