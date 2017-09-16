@@ -11,6 +11,15 @@ import inputCore
 
 addonHandler.initTranslation()
 
+confspec = {
+	"separator": "string(default="")",
+	"addTextBefore": "boolean(default=False)",
+	"confirmToAdd": "boolean(default=False)",
+	"confirmToClear": "boolean(default=False)",
+	"confirmToCopy": "boolean(default=False)",
+	"requireTextForConfirmation": "boolean(default=True)",
+}
+
 def onInstall():
 	if gui.messageBox(
 		# Translators: label of a dialog.
@@ -18,6 +27,7 @@ def onInstall():
 		# Translators: title of a dialog.
 		_("Configure Emulate copy"),
 		wx.YES|wx.NO|wx.ICON_WARNING)==wx.YES:
+			config.conf.spec["clipContentsDesigner"] = confspec
 			config.conf["clipContentsDesigner"]["confirmToCopy"] = True
 			config.conf.save()
 			gesture = "kb:control+c"
