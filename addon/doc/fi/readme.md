@@ -16,16 +16,16 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
     Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
-NVDA-valikko -> Asetukset -> Syöte-eleet ja valitsemalla Tekstin tarkastelu
--kategoria.
+NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
+valintaikkunasta Tekstin tarkastelu -kategoria.
 
 ## Asetukset-valikko ##
 *	Leikepöydän sisällön käsittelijä: Tästä voidaan määrittää erotin, jota käytetään tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
 On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun.
 
 Huomaa, että edellä mainittua komentoa on mahdollista muuttaa kohdasta
-NVDA-valikko -> Asetukset -> Syöte-eleet ja valitsemalla
-Asetukset-kategoria.
+NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
+valintaikkunasta Asetukset-kategoria.
 
 ## Muutokset versiossa 5.0 ##
 
