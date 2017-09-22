@@ -1,0 +1,25 @@
+version: '{branch}-{build}'
+environment:
+  PY_PYTHON: 2.7-32
+install:
+- cmd: >-
+    py -m pip install --egg scons
+
+    py -m pip install markdown
+build_script:
+- cmd: scons
+artifacts:
+- path: '*.nvda-addon'
+  name: addon
+  type: WebDeployPackage
+deploy:
+- provider: GitHub
+  tag: ${APPVEYOR_REPO_TAG_NAME}
+  release: Release ${APPVEYOR_REPO_TAG_NAME}
+  description: Development version with Emulate cut command, requested by Norberto Sousa.
+  auth_token:
+    secure: a5e8a7fcaba5701088f32c3c9ea682507a9393fe
+  artifact: addon
+  prerelease: true
+  on:
+    appveyor_repo_tag: true
