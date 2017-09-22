@@ -18,7 +18,7 @@ deploy:
   release: Release ${APPVEYOR_REPO_TAG_NAME}
   description: Development version with Emulate cut command, requested by Norberto Sousa.
   auth_token:
-    secure: a5e8a7fcaba5701088f32c3c9ea682507a9393fe
+    secure: 1a76da42901601a74e5a997a2a00af669d8af696
   artifact: addon
   prerelease: true
   on:
