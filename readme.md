@@ -16,7 +16,7 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 
 ## Preferences Menu ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard and emulate copy) should be performed inmediately of after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately of after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
 Notes:
 
@@ -26,8 +26,8 @@ Notes:
 ## Changes for 6.0
 
 *	 Added options to choose if available actions should be performed after confirmation.
-*	Added an Emulate copy command, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy functionality at installation. This allows to add the control+c command for copying to clipboard, and be asked if you want to replace the clipboard contents when pressing this keystroke.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Changes for 5.0 ##

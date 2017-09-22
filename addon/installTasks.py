@@ -17,27 +17,33 @@ confspec = {
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
 	"confirmToCopy": "boolean(default=False)",
+	"confirmToCut": "boolean(default=False)",
 	"requireTextForConfirmation": "boolean(default=True)",
 }
 
 def onInstall():
 	if gui.messageBox(
 		# Translators: label of a dialog.
-		_("This add-on allows to confirm if you want to copy to the clipboard when pressing control+c. This is named Emulate copy, and by default it works just when clipboard contains text. Do you want to configure Emulate copy now? You may do or change this later."),
+		_("This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents, when pressing control+c and control+x. This is named Emulate copy and cut, and by default it works just when clipboard contains text. Do you want to configure Emulate copy and cut now? You may do or change this later."),
 		# Translators: title of a dialog.
-		_("Configure Emulate copy"),
+		_("Configure Emulate copy and cut"),
 		wx.YES|wx.NO|wx.ICON_WARNING)==wx.YES:
 			config.conf.spec["clipContentsDesigner"] = confspec
 			config.conf["clipContentsDesigner"]["confirmToCopy"] = True
+			config.conf["clipContentsDesigner"]["confirmToCut"] = True
 			config.conf.save()
-			gesture = "kb:control+c"
 			module = "globalPlugins.clipContentsDesigner"
 			className = "GlobalPlugin"
-			scriptName = "copy"
+			copyGesture = "kb:control+c"
+			copyScriptName = "copy"
+			cutGesture = "kb:control+x"
+			cutScriptName = "cut"
 			# Adapted from NVDA's core.
 			try:
-				inputCore.manager.userGestureMap.remove(gesture, module, className, scriptName)
+				inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)
+				inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
 			except ValueError:
 				pass
-			inputCore.manager.userGestureMap.add(gesture, module, className, scriptName)
+			inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)
+			inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)
 			inputCore.manager.userGestureMap.save()

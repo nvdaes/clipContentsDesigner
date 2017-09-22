@@ -26,6 +26,7 @@ confspec = {
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
 	"confirmToCopy": "boolean(default=False)",
+	"confirmToCut": "boolean(default=False)",
 	"requireTextForConfirmation": "boolean(default=True)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
@@ -240,6 +241,26 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_copy.__doc__ = _("Copies to the clipboard, with the possibility of being asked for a previous confirmation")
 
+	def cut(self):
+		KeyboardInputGesture.fromName("control+x").send()
+
+	def confirmCut(self):
+		# Translators: Label of a dialog.
+		if gui.messageBox(_("Please, confirm if you want to cut from the clipboard"),
+			# Translators: Title of a dialog.
+			_("Cutting from clipboard"), wx.OK|wx.CANCEL) != wx.OK:
+				return
+		wx.CallLater(200, self.cut)
+
+	def script_cut(self, gesture):
+		if (config.conf["clipContentsDesigner"]["confirmToCut"] and not gui.isInMessageBox
+			and self.requiredFormatInClip()):
+				wx.CallAfter(self.confirmCut)
+		else:
+			self.cut()
+	# Translators: message presented in input mode.
+	script_cut.__doc__ = _("Cuts from the clipboard, with the possibility of being asked for a previous confirmation")
+
 	__gestures = {
 		"kb:NVDA+windows+c": "add",
 		"kb:NVDA+windows+x": "clear",
@@ -274,6 +295,9 @@ class AddonSettingsDialog(SettingsDialog):
 		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to emulate copy")))
 		self.confirmCopyCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCopy"])
 		# Translators: label of a dialog.
+		self.confirmCutCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to emulate cut")))
+		self.confirmCutCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCut"])
+		# Translators: label of a dialog.
 		self.requireTextCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Text in clipboard to confirm")))
 		self.requireTextCheckBox.SetValue(config.conf["clipContentsDesigner"]["requireTextForConfirmation"])
 
@@ -287,4 +311,5 @@ class AddonSettingsDialog(SettingsDialog):
 		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmClearCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmCopyCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmCutCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["requireTextForConfirmation"] = self.requireTextCheckBox.GetValue()
