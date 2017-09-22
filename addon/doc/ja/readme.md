@@ -4,17 +4,14 @@
 *	ダウンロード [安定版][1]
 *	ダウンロード [開発版][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+このアドオンは、クリップボードにテキストを追加するのに使用します。貼り付け前に複数のテキスト部分を結合したい時に便利です。クリップボードの内容を消去することもできます。
 
 ## キー操作: ##
 *	NVDA+windows+c: Add selected text, Unicode braille characters which
   represent MathML objects, or the string which has been marked with the
   review cursor, to the clipboard.
 *	NVDA+Windows+x: クリップボードの内容を消去します。
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+NVDA+Windows+F9: レビューカーソルの現在の位置を、クリップボードに追加するテキストの開始位置として記録します。NVDA+F9を使用すると、テキストは追加されません。
 
 注: 上記のコマンドは、NVDAメニュー、設定サブメニュー、入力ジェスチャーダイアログ、テキストレビューカテゴリから変更できます。
 
