@@ -3,6 +3,8 @@ environment:
   PY_PYTHON: 2.7-32
 install:
 - cmd: >-
+    python -m pip install wheel
+
     py -m pip install scons
 
     py -m pip install markdown
