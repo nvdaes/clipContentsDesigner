@@ -5,63 +5,34 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: 5.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-02-26 02:43-0800\n"
+"PO-Revision-Date: 2017-09-27 14:33+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: Turkish <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-0: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-1: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-2: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-3: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-4: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-5: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-"X-Poedit-SearchPath-6: C:/Users/cagri.dogan/AppData/Roaming/nvda/addons/"
-"AppendText/globalPlugins/clipContentsDesigner\n"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
-msgstr ""
-"Pano metin düzenleyicisinin eski ve uyumsuz bir sürümü kurulu. Eski sürümü "
-"kaldırmak istiyor musunuz?"
-
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "Uyumsuz eklenti kaldırılıyor"
-
-#. Translators: the label of a message box dialog.
-msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr ""
-"Bu eklenti için önceden bir ayarlama yapmış gibi gözüküyorsunuz. İçe "
-"aktarmak ister misiniz?"
-
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Pano İçerik Düzenleme eklentisinin ayarlarını içe aktar"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-1: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-2: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-3: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-4: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-5: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-6: clipContentsDesigner/globalPlugins\n"
+"X-Poedit-SearchPath-7: clipContentsDesigner/globalPlugins/"
+"clipContentsDesigner\n"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
 msgstr "&Pano İçerik Düzenleme ayarları..."
 
+#. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
 msgstr "Pano İçerik Düzenleme ayarlarını görüntüler."
 
@@ -84,37 +55,33 @@ msgid ""
 msgstr ""
 "Inceleme imlecinin mevcut konumu eklenecek metnin başlangıcı olarak ayarlanır"
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Seçim yok. Başlangıç noktası belirlenmemiş"
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "Başlangıç işareti aynı nesne içinde olmalı"
-
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
 msgstr "Eklenecek metin yok"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
 msgstr "Eklendi"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
 msgstr "Eklenecek metin alınamadı"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
+"adds it to the clipboard."
 msgstr ""
 "Seçili olan metin ya da daha önce başlangıç işareti konan noktayla inceleme "
 "imlecinin mevcut konumu arasındaki metin panoya eklenir."
 
 #. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
+msgid "Deletes the added text and the content of the clipboard."
 msgstr "Eklenmiş metin ve pano içeriği silinir"
 
 #. Translators: title of a dialog.
@@ -123,14 +90,14 @@ msgstr "Pano İçerik Düzenleme ayarları"
 
 #. Translators: label of a dialog.
 msgid ""
-"Type the string to be used as a &separator between contents appended to the "
+"Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
 "Panoya eklenen metinler arasında &ayraç olarak kullanılacak metni girin."
 
 #. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "Ayarları &kopyala"
+msgid "&Add text before clip data"
+msgstr "Metni panodaki veriden önce ekle"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -141,3 +108,33 @@ msgstr "Pano İçerik Düzenleyicisi"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Panodaki metnin yönetimi için eklenti."
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "Pano metin düzenleyicisinin eski ve uyumsuz bir sürümü kurulu. Eski "
+#~ "sürümü kaldırmak istiyor musunuz?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Uyumsuz eklenti kaldırılıyor"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "Bu eklenti için önceden bir ayarlama yapmış gibi gözüküyorsunuz. İçe "
+#~ "aktarmak ister misiniz?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr "Pano İçerik Düzenleme eklentisinin ayarlarını içe aktar"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Başlangıç işareti aynı nesne içinde olmalı"
+
+#~ msgid "Appended"
+#~ msgstr "Eklendi"
+
+#~ msgid "&Copy settings"
+#~ msgstr "Ayarları &kopyala"

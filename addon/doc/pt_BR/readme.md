@@ -13,26 +13,26 @@ para colar.  O conteúdo da área de transferência pode também ser apagado.
   braile que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+windows+f9: Marca a posição atual do cursor de exploração como o início do texto a ser acrescentado à área de transferência.
+    Se você usar nvda+F9, o texto não será acrescentado.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo de Gestos para Entrada, categoria Exploração
 de texto.
 
 ## Menu Preferências ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Opções do Gestor do conteúdo de transferência: Possibilita definir um separador que se pode usar para localizar os segmentos de texto uma vez que o texto inteiro seja colado.
+Pode-se também escolher se o texto acrescentado virá por último ou primeiro.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo de Gestos para Entrada, categoria
 configuração.
 
-## Changes for 5.0 ##
+## Mudanças na 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	A apresentação visual do diálogo foi aprimorada, aderindo à aparência dos
+  diálogos mostrados no NVDA.
+*	Requer NVDA 2016.4 ou posterior.
 
 ## Mudanças na 4.0 ##
 *	As opções do complemento são agora geridas pela configuração do NVDA, de
