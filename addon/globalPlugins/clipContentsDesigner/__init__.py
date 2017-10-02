@@ -225,12 +225,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			KeyboardInputGesture.fromName("control+c").send()
 
 	def confirmCopy(self):
+		text = self.getSelectedText()
 		# Translators: Label of a dialog.
 		if gui.messageBox(_("Please, confirm if you want to copy to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Copying to clipboard"), wx.OK|wx.CANCEL) != wx.OK:
 				return
-		wx.CallLater(200, self.copy)
+		if text:
+			api.copyToClip(text)
+		else:
+			wx.CallLater(200, self.copy)
 
 	def script_copy(self, gesture):
 		if (config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox
