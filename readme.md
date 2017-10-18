@@ -16,7 +16,7 @@ Note: The above commands can be changed from NVDA menu, Preferences submenu, Inp
 
 ## Preferences Menu ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately of after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
 Notes:
 
