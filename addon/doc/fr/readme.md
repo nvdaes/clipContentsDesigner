@@ -14,8 +14,8 @@ presse-papiers peut aussi être effacé.
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
 *	NVDA+windows+x : Efface le contenu du presse-papiers.
-*	NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme le début du texte à ajouter au presse-papiers.
-    Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
+*	NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme le début du texte à ajouter au presse-papiers. Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
+*	 Non affecté : Copie dans le presse-papiers, avec la possibilité de demander une confirmation préalable.
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
@@ -23,11 +23,23 @@ la catégorie Revue de texte.
 
 ## Menu Préférences ##
 *	Paramètres Clip Contents Designer : Permet de définir un séparateur qui peut être utilisé pour trouver les segments de texte une fois que tout le texte ajouté est collé.
-Vous pouvez également choisir si l’ajout de texte sera ajouté à la fin ou ajouté au début.
+Vous pouvez également choisir si l’ajout de texte sera ajouté à la fin ou ajouté au début, si les actions disponibles (ajouter, effacer le presse-papiers, émuler copier et émuler couper) doivent être effectuées immédiatement ou après confirmation, et si des confirmations seront demandées juste si le texte est contenu dans le presse-papiers.
 
-Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
-sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
-la catégorie Configuration.
+Notes :
+
+*	La commande ci-dessus peut être changé depuis le menu NVDA, sous-menu
+  Préférences, dans la boîte de dialogue Gestes de commandes, dans la
+  catégorie Configuration.
+*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
+  NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées
+  immédiatement
+
+## Changements pour la version 6.0
+
+*	 Ajout d'options pour choisir si les actions disponibles doivent être effectuées après confirmation.
+*	Ajout des commandes Émuler copier et Émuler couper, qui peuvent être affectées  à partir de la boîte de dialogue Gestes de commandes.
+*	 Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler copier et Émuler couper lors de l'installation. Cela permet d'ajouter les commandes contrôle+c et contrôle+x pour copier et couper et de demander si vous voulez remplacer le contenu du presse-papiers en appuyant sur ces combinaisons de touches.
+*	Correction de la documentation pour le script_add (Windows+NVDA+c).
 
 ## Changements pour la version 5.0 ##
 
@@ -65,6 +77,6 @@ la catégorie Configuration.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

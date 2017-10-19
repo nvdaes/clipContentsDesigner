@@ -13,8 +13,8 @@ content can also be cleared.
   represent MathML objects, or the string which has been marked with the
   review cursor, to the clipboard.
 *	NVDA+windows+x: löscht die Zwischenablage
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
 
 Anmerkung: die obigen Befehle können im NVDA-Menü unter
 Einstellungen/eingaben in der Kategorie Befehle zum Betrachten von Text
@@ -22,10 +22,21 @@ geändert werden.
 
 ## Einstellungen ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Anmerkung: der obige Befehl kann im NVDA-Menü unter Einstellungen/eingaben
-in der Kategorie Konfiguration geändert werden.
+Notes:
+
+*	The above command can be changed from NVDA menu, Preferences submenu,
+  Input gestures dialog, Configuration category.
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed
+
+## Changes for 6.0
+
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Änderungen in Version 5.0 ##
 

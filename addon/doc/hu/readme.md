@@ -14,8 +14,8 @@ tartalma törölhető.
   kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
   reprezentáló karaktereket is.
 *	NVDA+windows+x: Vágólap tartalom törlése.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
 
 - NVDA+control+shift+c: A kijelölt vagy az áttekintő kurzorral megjelölt
 szöveg hozzáfűzése a vágólaphoz.  - NVDA+control+shift+x: A vágólap
@@ -24,11 +24,21 @@ aktuális pontját kijelölés kezdetének.
 
 ## Beállítások menü ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Megjegyzés: A fenti parancsok megváltoztathatóak az NVDA
-menü->Beállítások->Beviteli parancsok ablakában a konfiguráció kategóriát
-választva.
+Notes:
+
+*	The above command can be changed from NVDA menu, Preferences submenu,
+  Input gestures dialog, Configuration category.
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed
+
+## Changes for 6.0
+
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Changes for 5.0 ##
 
@@ -65,6 +75,6 @@ választva.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

@@ -14,18 +14,30 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
 *	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin aloituskohdaksi.
     Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
+*	Ei määritetty: Kopioi leikepöydälle sekä kysyy vaihtoehtoisesti vahvistuksen aiemman sisällön korvaamiselle.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
 valintaikkunasta Tekstin tarkastelu -kategoria.
 
 ## Asetukset-valikko ##
-*	Leikepöydän sisällön käsittelijä: Tästä voidaan määrittää erotin, jota käytetään tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
-On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun.
+*	Leikepöydän sisällön käsittelijä: Mahdollistaa erottimen määrittämisen, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
+On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, emuloi Kopioi-komentoa ja emuloi Leikkaa-komentoa) heti vai vahvistuksen pyytämisen jälkeen, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä.
 
-Huomaa, että edellä mainittua komentoa on mahdollista muuttaa kohdasta
-NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
-valintaikkunasta Asetukset-kategoria.
+Huomautuksia:
+
+*	Edellä mainittua komentoa on mahdollista muuttaa kohdasta NVDA-valikko ->
+  Asetukset -> Syötekomennot ja valitsemalla avautuvasta valintaikkunasta
+  Asetukset-kategoria.
+*	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
+  toiminnot suoritetaan heti.
+
+## Muutokset versiossa 6.0
+
+*	 Lisätty vaihtoehtoja, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
+*	Lisätty Emuloi Kopioi-komentoa- ja Emuloi Leikkaa-komentoa -komennot, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
+*	Lisätty valintaikkuna Emuloi Kopioi-komentoa- ja Emuloi Leikkaa-komentoa -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Tämä mahdollistaa kopioimisen ja leikkaamisen Ctrl+C- ja Ctrl+X-komennoilla sekä sen kysymisen, haluatko korvata leikepöydän sisällön näitä komentoja painettaessa.
+*	Korjattu Windows+NVDA+C-komennon ohje.
 
 ## Muutokset versiossa 5.0 ##
 
@@ -61,6 +73,6 @@ valintaikkunasta Asetukset-kategoria.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
