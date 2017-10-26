@@ -7,13 +7,13 @@
 Ce module complémentaire est utilisé pour ajouter du texte dans le
 presse-papiers, ce qui peut être utile lorsque vous souhaitez relier des
 portions de texte ensemble prêt pour le collage. Le contenu du
-presse-papiers peut aussi être effacé.
+presse-papiers peut aussi être vidé.
 
 ## Commandes clavier ##
 *	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
-*	NVDA+windows+x : Efface le contenu du presse-papiers.
+*	NVDA+windows+x : Vide le contenu du presse-papiers.
 *	NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme le début du texte à ajouter au presse-papiers. Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
 *	 Non affecté : Copie dans le presse-papiers, avec la possibilité de demander une confirmation préalable.
 
@@ -23,7 +23,7 @@ la catégorie Revue de texte.
 
 ## Menu Préférences ##
 *	Paramètres Clip Contents Designer : Permet de définir un séparateur qui peut être utilisé pour trouver les segments de texte une fois que tout le texte ajouté est collé.
-Vous pouvez également choisir si l’ajout de texte sera ajouté à la fin ou ajouté au début, si les actions disponibles (ajouter, effacer le presse-papiers, émuler copier et émuler couper) doivent être effectuées immédiatement ou après confirmation, et si des confirmations seront demandées juste si le texte est contenu dans le presse-papiers.
+Vous pouvez également choisir si l’ajout de texte sera ajouté à la fin ou ajouté au début, si les actions disponibles (ajouter, vider le presse-papiers, émuler copier et émuler couper) doivent être effectuées immédiatement ou après confirmation, et si des confirmations seront demandées juste si le texte est contenu dans le presse-papiers.
 
 Notes :
 
@@ -38,7 +38,7 @@ Notes :
 
 *	 Ajout d'options pour choisir si les actions disponibles doivent être effectuées après confirmation.
 *	Ajout des commandes Émuler copier et Émuler couper, qui peuvent être affectées  à partir de la boîte de dialogue Gestes de commandes.
-*	 Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler copier et Émuler couper lors de l'installation. Cela permet d'ajouter les commandes contrôle+c et contrôle+x pour copier et couper et de demander si vous voulez remplacer le contenu du presse-papiers en appuyant sur ces combinaisons de touches.
+*	 Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler copier et Émuler couper lors de l'installation. Cela permet d'ajouter les commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si vous voulez remplacer le contenu du presse-papiers en appuyant sur ces combinaisons de touches.
 *	Correction de la documentation pour le script_add (Windows+NVDA+c).
 
 ## Changements pour la version 5.0 ##

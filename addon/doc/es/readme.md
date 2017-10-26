@@ -13,29 +13,29 @@ juntas.  El contenido del portapapeles también puede limpiarse.
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
 *	NVDA+windows+x: Limpia el contenido del portapapeles.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+windows+f9: Marca la posición actual del cursor de revisión como el comienzo del texto a añadir al portapapeles. Si utilizas NVDA+F9, el texto no se añadirá.
+*	 No asignado: Copia al portapapeles, con la posibilidad de ser preguntado por una confirmación previa.
 
 Nota: Las órdenes anteriores se pueden cambiar desde el menú NVDA, submenú
 Preferencias, Diálogo Gestos de Entrada, Categoría Revisión de Texto.
 
 ## Menú Preferencias ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+*	Opciones de Clip Contents Designer: te permite poner un separador que se pueda  utilizar para encontrar los segmentos de texto una vez todo el texto añadido sea pegado.
+También es posible elegir si el texto añadido se anexará o se antepondrá, si hay acciones disponibles (añadir, vaciar portapapeles, emular copiar y emular cortar) deberían realizarse inmediatamente o después de una confirmación, y si hay confirmaciones se preguntará sólo si el texto está contenido en el portapapeles.
 
-Notes:
+Notas:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	La orden anterior puede cambiarse desde el menú NVDA, submenú
+  Preferencias, diálogo Gestos de Entrada, Categoría Configuración.
+*	No se deberían solicitar confirmaciones cuando siga abierto un cuadro de
+  mensaje de NVDA. En esos casos, las acciones se realizarán inmediatamente
 
-## Changes for 6.0
+## Cambios para 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Añadidas opciones para elegir si las acciones disponibles se deberían llevar a cabo después de la confirmación.
+*	Se han añadido órdenes Emular copiar y Emular cortar, qué podrían asignarse desde el diálogo Gestos de Entrada.
+*	 Añadido un diálogo para configurar las funcionalidades Emular copiar y Emular copiar en la instalación. Esto permite añadir las órdenes control+c y control+x para copiar y cortar, y ser preguntado si quieres reemplazar los contenidos del portapapeles al pulsar estos atajos de teclado.
+*	Corregida la documentación para script_add (Windows+NVDA+c).
 
 ## Cambios para 5.0 ##
 

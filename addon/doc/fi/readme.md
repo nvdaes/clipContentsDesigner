@@ -12,9 +12,8 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
 *	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-*	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin aloituskohdaksi.
-    Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
-*	Ei määritetty: Kopioi leikepöydälle sekä kysyy vaihtoehtoisesti vahvistuksen aiemman sisällön korvaamiselle.
+*	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin alkukohdaksi. Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
+*	Ei määritetty: Kopioi leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon suorittamiselle.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
@@ -22,7 +21,7 @@ valintaikkunasta Tekstin tarkastelu -kategoria.
 
 ## Asetukset-valikko ##
 *	Leikepöydän sisällön käsittelijä: Mahdollistaa erottimen määrittämisen, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
-On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, emuloi Kopioi-komentoa ja emuloi Leikkaa-komentoa) heti vai vahvistuksen pyytämisen jälkeen, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä.
+On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioi ja leikkaa) heti vai vahvistuksen pyytämisen jälkeen, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä.
 
 Huomautuksia:
 
@@ -35,9 +34,9 @@ Huomautuksia:
 ## Muutokset versiossa 6.0
 
 *	 Lisätty vaihtoehtoja, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Emuloi Kopioi-komentoa- ja Emuloi Leikkaa-komentoa -komennot, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
-*	Lisätty valintaikkuna Emuloi Kopioi-komentoa- ja Emuloi Leikkaa-komentoa -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Tämä mahdollistaa kopioimisen ja leikkaamisen Ctrl+C- ja Ctrl+X-komennoilla sekä sen kysymisen, haluatko korvata leikepöydän sisällön näitä komentoja painettaessa.
-*	Korjattu Windows+NVDA+C-komennon ohje.
+*	Lisätty Vahvista kopiointi- ja Vahvista leikkaaminen -asetukset, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
+*	Lisätty valintaikkuna Vahvista kopiointi- ja Vahvista leikkaaminen -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
+*	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
 
 ## Muutokset versiossa 5.0 ##
 

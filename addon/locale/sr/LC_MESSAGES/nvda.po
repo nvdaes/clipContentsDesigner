@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2017-05-03 10:42+0100\n"
+"PO-Revision-Date: 2017-10-20 21:45+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -16,6 +16,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Ovaj dodatak vam dozvoljava da potvrdite akcije kopiranja i isecanja, u "
+"slučajevima kada to menja već postojeći sadržaj privremene memorije, Kada "
+"pritisnete control+c i control+x. Ovaj deo dodatka se zove Emulate copy and "
+"cut, i po podrazumevanim podešavanjima radi samo kada privremena memorija "
+"sadrži tekst. Da li želite da podesite Emulate copy and cut sada? Ovo "
+"kasnije možete promeniti."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Podesite Emulate copy and cut"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
@@ -53,6 +72,14 @@ msgstr "Ništa nije označeno. Nije postavljen početni marker"
 msgid "No text to add"
 msgstr "Nema teksta za dodavanje"
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Molimo, podvrdite da želite da dodate tekst u privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Dodavanje teksta u privremenu memoriju"
+
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
 msgstr "Dodato"
@@ -71,9 +98,45 @@ msgstr ""
 "sve do trenutne pozicije preglednog kursora uključujući i nju, i dodaje ih u "
 "privremenu memoriju."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Molimo, potvrdite da želite da obrišete privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Brisanje privremene memorije"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Briše dodati tekst i sadržaj privremene memorije."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Molimo, potvrdite da želite da kopirate u privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Kopiranje u privremenu memoriju"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Kopira u privremenu memoriju, uz mogućnost da vas pita za potvrdu"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Molimo, potvrdite da želite da isečete u privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Isečeno u privremenu memoriju"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Seče u privremenu memoriju, uz mogućnost potvrde"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -90,6 +153,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "&Dodaj tekst pre dela podataka"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Potvrdite dod&avanje teksta"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Potvrdite &brisanje iz privremene memorije"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "Potvrdite &kopiranje"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "Potvrdite &isecanje"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "Potvrda za &tekst u privremenoj memoriji"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

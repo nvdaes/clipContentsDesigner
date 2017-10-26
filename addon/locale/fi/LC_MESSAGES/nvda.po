@@ -8,15 +8,32 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-01-04 16:31+0200\n"
+"PO-Revision-Date: 2017-10-20 08:39+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.6.11\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopioinnin (Ctrl+C) ja "
+"leikkaamisen (Ctrl+X) suorittamiseen, jotka korvaavat leikepöydän sisällön. "
+"Vahvistus pyydetään vain, kun leikepöydällä on tekstiä. Haluatko määrittää "
+"kopioinnin ja leikkaamisen vahvistuskyselyn nyt? Voit muuttaa tätä myöhemmin."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Määritä kopioinnin ja leikkaamisen vahvistuskysely"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
@@ -54,6 +71,14 @@ msgstr "Ei valintaa. Alkumerkkiä ei ole asetettu."
 msgid "No text to add"
 msgstr "Ei lisättävää tekstiä"
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Vahvista, haluatko lisätä tekstiä leikepöydälle"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Lisätään teksti leikepöydälle"
+
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
 msgstr "Lisätty"
@@ -72,9 +97,49 @@ msgstr ""
 "tarkastelukohdistimen nykyisen kohdan välisen tekstin ja lisää sen "
 "leikepöydälle."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Vahvista, haluatko tyhjentää leikepöydän"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Tyhjennetään leikepöytä"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Poistaa lisätyn tekstin ja leikepöydän sisällön."
+msgstr "Tyhjentää leikepöydän."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Vahvista, haluatko kopioida leikepöydälle"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Kopioidaan leikepöydälle"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Kopioi leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
+"suorittamiselle"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Vahvista, haluatko leikata leikepöydälle"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Leikataan leikepöydälle"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Leikkaa leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
+"suorittamiselle"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -91,6 +156,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "&Lisää teksti leikepöydän nykyisen sisällön alkuun"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Vahvista tekstin &lisääminen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Vahvista leikepöydän t&yhjentäminen"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "&Vahvista kopiointi"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "V&ahvista leikkaaminen"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "Va&hvista leikepöydällä oleva teksti"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

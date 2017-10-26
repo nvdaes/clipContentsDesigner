@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-04-02 18:46+0530\n"
+"PO-Revision-Date: 2017-10-21 21:19+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ta\n"
@@ -16,6 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"ஏற்கெனவே பிடிப்புப் பலகையில் உரை இருந்து, கண்ட்ரோல்+c, கண்ட்ரோல்+x விசைகளைக் கொண்டு "
+"உரையைப் பிடிப்புப் பலகைக்குச் சேர்க்க முயலும்பொழுது, அச்செயல்களைச் செய்ய வேண்டுமா என்று "
+"உறுதிச் செய்ய இக்கூட்டுக் கூறு கேட்கும். இவ்வசதியை இப்பொழுதே அமைவடிவமாக்க "
+"விரும்புகிறீர்களா? பிறகும் கூட அமைவடிவமாக்கலாம், அல்லது மாற்றங்களை மேற்கொள்ளலாம். "
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "படியெடுக்கும் மற்றும் வெட்டும் செயலை அமைவடிவமாக்குக"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
@@ -53,6 +70,15 @@ msgstr "தெரிவு ஏதுமில்லை, அல்லது த�
 msgid "No text to add"
 msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr ""
+"பிடிப்புப் பலகையில் உரை பின்னிணைக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "பிடிப்புப்பலகையில் உரையைப்  பின்னிணைக்கிறது "
+
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
 msgstr "பின்னிணைக்கப்பட்டது"
@@ -70,9 +96,45 @@ msgstr ""
 "துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச் சுட்டியின் நிலை "
 "வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "பிடிப்புப் பலகை துடைக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "பிடிப்புப் பலகை துடைக்கப்படுகிறது"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்ட உரையையும், உள்ளடக்கங்களையும் அழிக்கிறது."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "பிடிப்புப் பலகைக்கு படியெடுக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "பிடிப்புப் பலகைக்குப் படியெடுக்கிறது"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "பிடிப்புப் பலகைக்கு வெட்டப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "பிடிப்புப் பலகைக்கு வெட்டப்படுகிறது"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு வெட்டுகிறது"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -89,6 +151,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "உரையை பிடிப்புப்பலகையின் உரைக்கு முன்னிணைக்கவும். (&A)"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "உரை பின்னிணைக்கப்படுவதை உறுதிச் செய்க (&D)"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "பிடிப்புப் பலகை துடைக்கப்படுவதை உறுதிச் செய்க (&L)"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "படியெடுக்கும் செயலை உறுதிச் செய்க (&C)"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "வெட்டும் செயலை உறுதிச் செய்க (&C)"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "பிடிப்புப்பலகையில் இருக்கும் உறுதிச் செய்யப்பட வேண்டிய உரை (&T)"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
