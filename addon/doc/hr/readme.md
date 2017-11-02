@@ -12,17 +12,29 @@ spremni za lijepljenje. Sadržaj međuspremnika također se može izbrisati.
 *	NVDA+windows+c: dodaj označeni tekst, ili niz označen uz pomoć preglednog
   kursora, u međuspremnik.
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
-*	NVDA+windows+f9: Označi trenutnu poziciju preglednog kursora kao početak teksta koji treba biti dodan u međuspremnik.
-     Ako koristite NVDA+F9, tekst neće biti dodan.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
 
 Napomena: Prečaci iznad mogu se promijeniti iz NVDA izbornika, podizbornika
 postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
 
 ## Podizbornik postavke ##
-*	Postavke Clip contents designer dodatka: Omogućuju vam podešavanje rastavljača Koji se može koristiti za traženje segmenata teksta jednom kada je označeni tekst zalijepljen.
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Napomena: Prečaci iznad mogu se promijeniti iz NVDA izbornika, podizbornika
-postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
+Notes:
+
+*	The above command can be changed from NVDA menu, Preferences submenu,
+  Input gestures dialog, Configuration category.
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed
+
+## Changes for 6.0
+
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## izmjene u inačici 5.0 ##
 
@@ -56,6 +68,6 @@ postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
