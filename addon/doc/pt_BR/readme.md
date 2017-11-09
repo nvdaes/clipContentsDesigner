@@ -13,30 +13,31 @@ para colar.  O conteúdo da área de transferência pode também ser apagado.
   braile que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+windows+f9: Marca a posição atual do cursor de exploração como o início do texto a ser acrescentado à área de transferência.
+    Se você usar nvda+F9, o texto não será acrescentado.
+*	 Não atribuído: Copia para a área de transferência com possibilidade de ser previamente consultado para confirmar.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo de Gestos para Entrada, categoria Exploração
 de texto.
 
 ## Menu Preferências ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+*	Opções do Gestor do conteúdo de transferência: Possibilita definir um separador que se pode usar para localizar os segmentos de texto uma vez que o texto inteiro seja colado.
+Pode-se também escolher se o texto acrescentado virá por último ou primeiro, se as ações disponíveis (acrescentar, limpar área de transferência, emulação de copiar e emulação de cortar) devem ser executadas de imediato ou após confirmação e se a confirmação será solicitada apenas se a área de transferência já contiver texto.
 
-Notes:
+Notas:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	Os comandos acima podem ser alterados a partir do menu do NVDA, submenu
+  Preferências, diálogo de Gestos para Entrada, categoria configuração.
+*	Confirmação não será solicitada quando um diálogo do NVDA ainda estiver
+  aberto. Nesses casos, as ações serão executadas de imediato
 
-## Changes for 6.0
+## Mudanças na 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Adicionadas opções para escolher se as ações disponíveis devem ser executadas após confirmação.
+*	Adicionados comandos emulação de copiar e emulação de cortar, que podem ser atribuídos no diálogo de gestos para entrada.
+*	 Adicionado um diálogo para configurar as funções emulação de copiar e de cortar na instalação. Isso possibilita adicionar os comandos control+c e control+x para copiar e cortar e ser indagado se deseja substituir o conteúdo da área de transferência ao pressionar essas teclas.
+*	Corrigida documentação para script_add (Windows+NVDA+c).
 
 ## Mudanças na 5.0 ##
 
