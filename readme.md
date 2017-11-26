@@ -10,7 +10,7 @@ The clipboard content can also be cleared.
 *	NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
 *	NVDA+windows+x: Clear clipboard contents.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Note: The above commands can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Text review category.
 
