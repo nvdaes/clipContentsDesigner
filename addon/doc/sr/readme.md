@@ -13,7 +13,7 @@ teksta. a može i da ukloni sadržaj privremene memorije.
   objekata ili tekst označen preglednim kursorom u privremenu memoriju.
 *	NVDA+Windows+x: Uklanja sadržaj privremene memorije.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju Pregled teksta.

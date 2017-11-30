@@ -13,7 +13,7 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
 *	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin alkukohdaksi. Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
-*	Ei määritetty: Kopioi leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon suorittamiselle.
+*	Ei määritetty: Kopioi tai leikkaa leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon suorittamiselle.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta

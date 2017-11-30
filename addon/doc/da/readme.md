@@ -14,7 +14,7 @@ content can also be cleared.
   review cursor, to the clipboard.
 *	NVDA+Windows+x: Ryd udklipsholderen.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Indstillinger /
 Inputbevægelser / kategorien tekstlæsning.

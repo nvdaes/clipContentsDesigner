@@ -13,8 +13,8 @@ do portapapeis tamén pode limparse.
   que representan obxectos MathML, ou a cadea que se marcou co cursor de
   revisión, ao portapapeis.
 *	NVDA+windows+x: Limpa o contido do portapapeis.
-*	NVDA+windows+f9: Marca a posición actual do cursor de revisión como o comezo do texto a engadir ó portapapeis. Se utilizas NVDA+F9, o texto non se engadirá.
-*	 Non asignado: Copia ao portapapeis, coa posibilidade de seren preguntado por unha confirmación anterior.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Nota: as ordes anteriores poden cambiarse dende o menú NVDA, submenú
 Preferencias, diálogo Xestos de Entrada, categoría Revisión de Texto.

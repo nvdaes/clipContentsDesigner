@@ -14,7 +14,7 @@ content can also be cleared.
   review cursor, to the clipboard.
 *	NVDA+windows+x: لمسح محتوى الحافظة
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 ملحوظة: يمكنك تغيير الاختصارات المذكورة أعلاه من خلال الذهاب إلى قائمة NVDA
 الرئيسية, ثم قائمة التفضيلات, ثم تخصيص اختصارات NVDA, ثم فئة استعراض النص.

@@ -13,9 +13,8 @@ para colar.  O conteúdo da área de transferência pode também ser apagado.
   braile que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	NVDA+windows+f9: Marca a posição atual do cursor de exploração como o início do texto a ser acrescentado à área de transferência.
-    Se você usar nvda+F9, o texto não será acrescentado.
-*	 Não atribuído: Copia para a área de transferência com possibilidade de ser previamente consultado para confirmar.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo de Gestos para Entrada, categoria Exploração

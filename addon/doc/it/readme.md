@@ -15,7 +15,7 @@ cancellato.
   che è stata contrassegnata con il cursore di controllo.
 *	NVDA + Windows + x: Cancella contenuto degli appunti.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.

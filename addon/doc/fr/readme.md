@@ -15,7 +15,7 @@ presse-papiers peut aussi être vidé.
   avec le curseur de revue, dans le presse-papiers.
 *	NVDA+windows+x : Vide le contenu du presse-papiers.
 *	NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme le début du texte à ajouter au presse-papiers. Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
-*	 Non affecté : Copie dans le presse-papiers, avec la possibilité de demander une confirmation préalable.
+*	 Non affecté : Copie dans (ou coupe depuis) le presse-papiers, avec la possibilité de demander une confirmation préalable.
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans

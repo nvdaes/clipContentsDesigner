@@ -15,7 +15,7 @@ tartalma törölhető.
   reprezentáló karaktereket is.
 *	NVDA+windows+x: Vágólap tartalom törlése.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 - NVDA+control+shift+c: A kijelölt vagy az áttekintő kurzorral megjelölt
 szöveg hozzáfűzése a vágólaphoz.  - NVDA+control+shift+x: A vágólap

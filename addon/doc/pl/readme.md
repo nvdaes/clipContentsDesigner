@@ -14,7 +14,7 @@ Zawartość schowka może również być wyczyszczona.
   pomocą kursora przeglądu do schowka.
 *	NVDA+windows+x: wyczyść zawartość schowka.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
 
 Uwaga: powyższe polecenia mogą zostać zmienione z menu NVDA, Podmenu
 Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
