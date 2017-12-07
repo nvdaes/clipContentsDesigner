@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-11-13 14:57+0900\n"
+"PO-Revision-Date: 2017-12-06 09:35+0900\n"
 "Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgstr "Clip Contents Designer 설정... (&C)"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Clip Contents Designer 설정을 보여줍니다"
+msgstr "Clip Contents Designer 설정을 보여줍니다."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -54,7 +54,7 @@ msgstr "시작 마크 설정됨"
 msgid ""
 "Marks the current position of the review cursor as the start of text to be "
 "appended to the clipboard."
-msgstr "현재 리뷰커서 위치를 클립보드에 추가할 텍스트의 시작으로 표시합니다"
+msgstr "현재 리뷰커서 위치를 클립보드에 추가할 텍스트의 시작으로 표시합니다."
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
@@ -66,7 +66,7 @@ msgstr "추가할 텍스트 없음"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
-msgstr "클립보드에 텍스트 추가하려면 확인하세요."
+msgstr "클립보드에 텍스트 추가하려면 확인하세요"
 
 #. Translators: Title of a dialog.
 msgid "Adding text to clipboard"
@@ -89,7 +89,7 @@ msgstr ""
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "클립보드를 초기화하려면 확인하세요."
+msgstr "클립보드를 초기화하려면 확인하세요"
 
 #. Translators: Title of a dialog.
 msgid "Clearing clipboard"
@@ -101,7 +101,7 @@ msgstr ""
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "클립보드에 복사하려면 확인하세요."
+msgstr "클립보드에 복사하려면 확인하세요"
 
 #. Translators: Title of a dialog.
 msgid "Copying to clipboard"
@@ -115,7 +115,7 @@ msgstr ""
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "클립보드에서 자르려면 확인하세요."
+msgstr "클립보드에서 자르려면 확인하세요"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
@@ -159,7 +159,7 @@ msgstr "Emulate Cut 확인(&C)"
 
 #. Translators: label of a dialog.
 msgid "&Text in clipboard to confirm"
-msgstr ""
+msgstr "클립보드 내 텍스트 확인(&T)"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

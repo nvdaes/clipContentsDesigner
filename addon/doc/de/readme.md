@@ -4,66 +4,69 @@
 *	[stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
+hinzuzufügen. Dies kann beispielsweise nützlich sein, wenn Sie
+Textabschnitte zusammenfügen möchten.  Der Inhalt der Zwischenablage kann
+auch gelöscht werden.
 
 ## Tastenkombinationen ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which
-  represent MathML objects, or the string which has been marked with the
-  review cursor, to the clipboard.
+*	NVDA+Windows+c: Fügt den ausgewählten Text, MathML-Objekte als
+  Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem Lese-Cursor
+  markiert wurde, in die Zwischenablage ein.
 *	NVDA+windows+x: löscht die Zwischenablage
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+Windows+f9: Markiert die aktuelle Position des Lese-Cursors als Anfang des Textes, der in die Zwischenablage eingefügt werden soll. Wenn Sie nvda+F9 verwenden, wird der Text nicht hinzugefügt. 
+*	 Nicht zugeordnet: Kopien in die Zwischenablage (oder Ausschnitte aus der Zwischenablage) mit einer Bestätigungsabfrage. 
 
 Anmerkung: die obigen Befehle können im NVDA-Menü unter
 Einstellungen/eingaben in der Kategorie Befehle zum Betrachten von Text
 geändert werden.
 
 ## Einstellungen ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+*	 Einstellungen des Designers für den inhalt der Zwischenablage: Erlaubt es, ein Trennzeichen zu setzen, mit dem die Textsegmente gefunden werden können, sobald der gesamte hinzugefügte Text eingefügt wurde.Es ist auch möglich zu wählen, ob der hinzugefügte Text angehängt oder vorangestellt wird, ob verfügbare Aktionen (Hinzufügen, Löschen der Zwischenablage, Kopieren und Ausschneiden emulieren) sofort oder nach Bestätigung ausgeführt werden sollen und ob Bestätigungen angefordert werden sollen, nur wenn Text in der Zwischenablage enthalten ist. 
 
-Notes:
+Anmerkungen:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	Der obige Befehl kann im NVDA-Menü unter Einstellungen/eingaben in der
+  Kategorie Konfiguration geändert werden.
+*	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
+  noch geöffnet ist. In diesen Fällen werden die Aktionen sofort ausgeführt
 
-## Changes for 6.0
+## Änderungen in Version 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Es wurden Optionen hinzugefügt, um zu wählen, ob verfügbare Aktionen nach der Bestätigung ausgeführt werden sollen. 
+*	 Befehle für das Kopieren und Ausschneiden emulieren wurden hinzugefügt. Diese können im NVDA-Menü im Bereich Eingaben angepasst werden. 
+*	 Es wurde ein Dialog hinzugefügt, um die Funktionen Kopieren und Ausschneiden emulieren bei der Installation anzupassen. Dies erlaubt es, die Befehle control+c und control+x zum Kopieren und Ausschneiden hinzuzufügen. Die Bestätigungsmeldung, ob Sie den Inhalt der Zwischenablage ersetzen möchten, kann hier aus und eingeschaltet werden. 
+*	 Die Dokumentation für script_add (Windows+NVDA+c) wurde korrigiert. 
 
 ## Änderungen in Version 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
+*	Die visuelle Darstellung des Dialogs wurde verbessert und entspricht dem
+  Erscheinungsbild der Dialoge in NVDA.
 *	Benötigt NVDA 2016.4 oder neuer.
 
 ## Änderungen in Version 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard
-  profiles can be used to save different separators, and it's not needed to
-  copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or
-  prepended, using the Add text before clip data check box from the Clip
-  Contents Designer settings dialog.
+*	Erweiterungseinstellungen werden von der NVDA-Konfiguration verwaltet, so
+  dass Standardprofile verwendet werden können, um verschiedene Separatoren
+  zu speichern. Es ist nicht erforderlich, die Einstellungen für den Import
+  bei der Neuinstallation zu kopieren.
+*	Es kann nun gewählt werden, ob der hinzugefügte Text angehängt oder
+  vorangestellt wird, indem Sie das Kontrollkästchen Text vor den Daten der
+  Zwischenablage hinzufügen im Einstellungsdialog des Clip Contents Designer
+  verwenden.
 
 ## Änderungen in Version 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if
-  MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings
-  dialog.
-*	Added a check box in the settings dialog, for choosing if the separator
-  should be copied to be imported when reinstalling the add-on.
+*	Brailledarstellung von MathML-Objekten können bei installiertem MathPlayer
+  zur Zwischenablage kopiert oder ausgeschnitten werden.
+*	Wenn kein Trennzeichen gesetzt ist, wird nur eine einzige Linie zwischen
+  den angehängten Textsegmente platziert werden.
+*	Sie können eine Tastenkürzel zum Öffnen des Einstellungsdialogs zuweisen.
+*	Es wurde ein Kontrollkästchen im Einstellungsdialog hinzugefügt, mit dem
+  festgelegt werden kann, ob der Separator beim erneuten Installieren der
+  Erweiterung für den Import kopiert werden soll.
 
 ## Änderungen in Version 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+*	Indische Zeichen können nun als Trennzeichen zwischen kopierten Inhalten
+  verwendet werden.
 
 ## Änderungen in Version 1.0 ##
 *	anfängliche Version

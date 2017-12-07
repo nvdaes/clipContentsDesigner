@@ -13,8 +13,8 @@ juntas.  El contenido del portapapeles también puede limpiarse.
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
 *	NVDA+windows+x: Limpia el contenido del portapapeles.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+windows+f9: Marca la posición actual del cursor de revisión como el comienzo del texto a añadir al portapapeles. Si utilizas NVDA+F9, el texto no se añadirá.
+*	 No asignado: Copia (o corta) al/del portapapeles, con la posibilidad de ser preguntado por una confirmación previa.
 
 Nota: Las órdenes anteriores se pueden cambiar desde el menú NVDA, submenú
 Preferencias, Diálogo Gestos de Entrada, Categoría Revisión de Texto.

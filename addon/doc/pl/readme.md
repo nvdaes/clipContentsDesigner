@@ -30,7 +30,7 @@ Notes:
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
 
-## Changes for 6.0
+## Zmiany w wersji 6.0
 
 *	 Added options to choose if available actions should be performed after confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
