@@ -128,7 +128,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pos = api.getReviewPosition().copy()
 			if self._copyStartMarker.obj != pos.obj:
 				# Translators: Message presented when a start marked has been placed, but not in the current object.
-				ui.message("The start marker must reside within the same object")
+				ui.message(_("The start marker must reside within the same object"))
 				return
 			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
 			pos.setEndPoint(self._copyStartMarker, "startToStart")
