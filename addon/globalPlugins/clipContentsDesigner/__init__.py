@@ -8,7 +8,6 @@ import globalPluginHandler
 import api
 import textInfos
 import ui
-import msg # Developed by Alberto Buffolino
 import win32clipboard
 import treeInterceptorHandler
 import config
@@ -128,7 +127,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				return
 			pos = api.getReviewPosition().copy()
 			if self._copyStartMarker.obj != pos.obj:
-				msg.message("The start marker must reside within the same object")
+				# Translators: Message presented when a start marked has been placed, but not in the current object.
+				ui.message("The start marker must reside within the same object")
 				return
 			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
 			pos.setEndPoint(self._copyStartMarker, "startToStart")
