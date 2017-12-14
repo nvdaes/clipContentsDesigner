@@ -22,19 +22,19 @@ postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Notes:
+Napomene: 
 
 *	The above command can be changed from NVDA menu, Preferences submenu,
   Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	Potvrde neće biti zatražene ako se neka poruka u vezi NVDA još uvijek
+  prikazuje. U tim slučajevima, akcije će se odmah izvršavati
 
 ## Changes for 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Dodane mogućnosti izbora hoće li se dostupne akcije izvršavati nakon potvrde.
+*	Dodane komande Kopiraj i Izreži, koje možete odabrati u dijaloškom okviru Ulazne geste.
+*	 Dodane komande Kopiraj i Izreži, koje možete odabrati u dijaloškom okviru Ulazne geste*	Dodan dijaloški okvir za podešavanje naredbi Kopiraj i Izreži pri instalaciji. Ovo dozvoljava dodavanje kratica control+c i control+x za naredbe kopiraj i izreži, te pitanje želite li zamijeniti sadržaj međuspremnika dok koristite ove tipkovničke kratice.
+*	Riješena dokumentacija za script_add (Windows+NVDA+c).
 
 ## izmjene u inačici 5.0 ##
 

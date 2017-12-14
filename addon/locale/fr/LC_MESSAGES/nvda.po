@@ -27,10 +27,10 @@ msgid ""
 msgstr ""
 "Ce module complémentaire permet de confirmer si vous voulez copier et "
 "couper, en remplaçant le contenu du presse-papiers, en appuyant sur Contrôle"
-"+c et Contrôle+x. Cela s'appelle émuler copier et couper, et par défaut "
-"cela fonctionne juste quand le presse-papiers contient du texte. Voulez-"
-"vous configurer Émuler copier et couper maintenant ? Vous pouvez faire ou "
-"changer cela plus tard."
+"+c et Contrôle+x. Cela s'appelle émuler copier et couper, et par défaut cela "
+"fonctionne juste quand le presse-papiers contient du texte. Voulez-vous "
+"configurer Émuler copier et couper maintenant ? Vous pouvez faire ou changer "
+"cela plus tard."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -67,6 +67,10 @@ msgstr ""
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Aucune sélection. Pas de marqueur de début"
+
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr ""
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
@@ -129,8 +133,7 @@ msgstr ""
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr ""
-"Veuillez confirmer si vous souhaitez couper à partir du presse-papiers"
+msgstr "Veuillez confirmer si vous souhaitez couper à partir du presse-papiers"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"

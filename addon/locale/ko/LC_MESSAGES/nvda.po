@@ -10,12 +10,12 @@ msgstr ""
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
 "PO-Revision-Date: 2017-12-06 09:35+0900\n"
 "Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
+"Language-Team: \n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.3\n"
-"Language-Team: \n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -59,6 +59,10 @@ msgstr "현재 리뷰커서 위치를 클립보드에 추가할 텍스트의 시
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "텍스트 선택되지 않음, 시작 마크 설정 불가"
+
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr ""
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"

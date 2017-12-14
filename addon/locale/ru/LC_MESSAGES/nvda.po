@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-04-15 19:16+0400\n"
+"PO-Revision-Date: 2017-12-10 14:32+0400\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: Translators <LL@li.org>\n"
 "Language: ru\n"
@@ -16,6 +16,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Это дополнение позволяет подтверждать, если вы хотите копировать и вырезать, "
+"заменив содержимое буфера обмена, при нажатии control+c и control+x. Это "
+"называется эмуляция копирования и вырезания, и по умолчанию оно работает "
+"только тогда, когда буфер обмена содержит текст. Вы хотите настроить "
+"эмуляции копирования и вырезания сейчас? Вы можете сделать  это позже."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Сконфигурировать эмуляцию копирования и вырезания"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
@@ -49,9 +67,21 @@ msgstr ""
 msgid "No selection. No start marker set"
 msgstr "Нет выделения. Начальная метка не выбрана"
 
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr ""
+
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
 msgstr "Нет текста для добавления"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Пожалуйста, подтвердите, что вы хотите добавить текст в буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Добавление текста в буфер обмена"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -71,9 +101,49 @@ msgstr ""
 "метки, вплоть до текущей позиции курсора обзора, и добавляет его в буфер "
 "обмена."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Пожалуйста, подтвердите, что вы хотите очистить буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Очистка буфера обмена"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Удаляет добавленный текст и содержимое буфера обмена."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Пожалуйста, подтвердите, что вы хотите скопировать в буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Копирование в буфер обмена"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Копирует в буфер обмена, с возможностью предварительного запроса "
+"подтверждения"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Пожалуйста, подтвердите, что вы хотите вырезать в буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Вырезание в буфер обмена"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Вырезает в буфер обмена, с возможностью предварительного запроса "
+"подтверждения"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -90,6 +160,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "&Добавить текст перед данными клипа"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Подтвердить &добавление текста"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Подтвердить о&чистку буфера обмена"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "&Подтвердить эмуляцию копировать"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "&Подтвердить эмуляцию вырезать"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "&Текст в буфере обмена для подтверждения"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

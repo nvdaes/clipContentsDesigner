@@ -69,6 +69,10 @@ msgstr ""
 msgid "No selection. No start marker set"
 msgstr "Sem seleção. Nenhum marcador inicial definido"
 
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr ""
+
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
 msgstr "Nenhum texto a acrescentar"
