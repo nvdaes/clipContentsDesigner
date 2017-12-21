@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-01 18:33+0100\n"
+"PO-Revision-Date: 2017-12-16 22:07+0100\n"
 "Last-Translator: Adriani Botez <adriani.botez@gmail.com>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -67,7 +67,7 @@ msgid ""
 "appended to the clipboard."
 msgstr ""
 "Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
-"Anfügen von Text an den Inhalt der Zwischenablage."
+"Anfügen von Text zum Inhalt der Zwischenablage."
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
@@ -75,7 +75,7 @@ msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
 
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
-msgstr ""
+msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 3.4\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2016-02-12 03:00+1000\n"
-"PO-Revision-Date: 2017-10-19 20:22+0200\n"
+"PO-Revision-Date: 2017-12-15 16:32+0200\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
@@ -70,6 +70,7 @@ msgstr "Fără selecție. Niciun marcaj de început stabilit"
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
 msgstr ""
+"Marcatorul de pornire trebuie să se afle în interiorul obiectului curent"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"

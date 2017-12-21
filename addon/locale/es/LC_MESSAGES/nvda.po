@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-10-23 16:32+0100\n"
+"PO-Revision-Date: 2017-12-15 17:14+0100\n"
 "Last-Translator: Juan C. Buño <oprisniki@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
@@ -69,7 +69,7 @@ msgstr "No hay selección. No se colocó la marca de inicio"
 
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
-msgstr ""
+msgstr "La marca de comienzo debe residir dentro del mismo objeto"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"

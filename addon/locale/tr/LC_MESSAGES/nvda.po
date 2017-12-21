@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 5.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-09-27 14:33+0300\n"
+"PO-Revision-Date: 2017-12-17 20:22+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: Turkish <cagrid@hotmail.com>\n"
 "Language: tr\n"
@@ -28,9 +28,28 @@ msgstr ""
 "X-Poedit-SearchPath-7: clipContentsDesigner/globalPlugins/"
 "clipContentsDesigner\n"
 
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Bu eklenti, kontrol+c ya da kontrol+x tuşlarına bastığınızda pano içeriğinin "
+"değiştirilmesiyle ilgili kopyalama ve kesme işlemlerini onaylamanıza olanak "
+"tanır. bu kopyalama ve kesme taklidi olarak adlandırılır, ve varsayılan "
+"olarak panoda metin varsa çalışır. kopyalama, kesme taklidini şimdi "
+"yapılandırmak istiyor musunuz? bunu daha sonra yapabilir ya da "
+"değiştirebilirsiniz."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Kopyalama ve kesme taklidini yapılandır"
+
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
-msgstr "&Pano İçerik Düzenleme ayarları..."
+msgstr "&Pano içerik tasarım ayarları..."
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
@@ -63,6 +82,14 @@ msgstr "Seçim yok. Başlangıç noktası belirlenmemiş"
 msgid "No text to add"
 msgstr "Eklenecek metin yok"
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Panoya metin ekleme işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Metin panoya ekleniyor"
+
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
 msgstr "Eklendi"
@@ -80,9 +107,49 @@ msgstr ""
 "Seçili olan metin ya da daha önce başlangıç işareti konan noktayla inceleme "
 "imlecinin mevcut konumu arasındaki metin panoya eklenir."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Panoyu temizleme işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Pano temizleniyor"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Eklenmiş metin ve pano içeriği silinir"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Panoya kopyalama işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Panoya kopyalanıyor"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Önceki metnin yerine eklenmesinin onayının sorulması olasılığıyla, panoya "
+"kopyalar"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Kesme işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Panodan kesiliyor"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Önceki metnin yerine eklenmesinin onayının sorulması olasılığıyla, panodan "
+"keser"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -98,6 +165,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "Metni panodaki veriden önce ekle"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Metin eklemek için onayl&ayın"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Panoyu temiz&lemek için onaylayın"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "&Kopyalama işlemi için onay iste"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "&Kesme işlemi için onay iste"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "&Text in clipboard to confirm"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

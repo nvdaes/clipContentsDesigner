@@ -5,9 +5,9 @@
 *	[Entwicklerversion herunterladen][2]
 
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
-hinzuzufügen. Dies kann beispielsweise nützlich sein, wenn Sie
-Textabschnitte zusammenfügen möchten.  Der Inhalt der Zwischenablage kann
-auch gelöscht werden.
+hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
+Textabschnitten nützlich sein.  Der Inhalt der Zwischenablage kann auch
+gelöscht werden.
 
 ## Tastenkombinationen ##
 *	NVDA+Windows+c: Fügt den ausgewählten Text, MathML-Objekte als
@@ -15,14 +15,14 @@ auch gelöscht werden.
   markiert wurde, in die Zwischenablage ein.
 *	NVDA+windows+x: löscht die Zwischenablage
 *	NVDA+Windows+f9: Markiert die aktuelle Position des Lese-Cursors als Anfang des Textes, der in die Zwischenablage eingefügt werden soll. Wenn Sie nvda+F9 verwenden, wird der Text nicht hinzugefügt. 
-*	 Nicht zugeordnet: Kopien in die Zwischenablage (oder Ausschnitte aus der Zwischenablage) mit einer Bestätigungsabfrage. 
+*	 Nicht zugeordnet: Kopien in die Zwischenablage (oder Ausschnitte aus der Zwischenablage) mit einer Bestätigungsabfrage einfügen oder entfernen. 
 
 Anmerkung: die obigen Befehle können im NVDA-Menü unter
 Einstellungen/eingaben in der Kategorie Befehle zum Betrachten von Text
 geändert werden.
 
 ## Einstellungen ##
-*	 Einstellungen des Designers für den inhalt der Zwischenablage: Erlaubt es, ein Trennzeichen zu setzen, mit dem die Textsegmente gefunden werden können, sobald der gesamte hinzugefügte Text eingefügt wurde.Es ist auch möglich zu wählen, ob der hinzugefügte Text angehängt oder vorangestellt wird, ob verfügbare Aktionen (Hinzufügen, Löschen der Zwischenablage, Kopieren und Ausschneiden emulieren) sofort oder nach Bestätigung ausgeführt werden sollen und ob Bestätigungen angefordert werden sollen, nur wenn Text in der Zwischenablage enthalten ist. 
+*	 Einstellungen des Designers für den inhalt der Zwischenablage: hier kann ein Trennzeichen zum leichteren Auffinden von Textsegmenten gesetzt werden, sobald der gesamte Text zur Zwischenablage eingefügt wurde. Es kann auch gewählt werden, ob der hinzugefügte Text angehängt oder vorangestellt wird, ob verfügbare Aktionen (Hinzufügen, Löschen der Zwischenablage, Kopieren und Ausschneiden emulieren) sofort oder nach Bestätigung ausgeführt werden sollen und ob Bestätigungen nur bei vorhandenem Text in der Zwischenablage ausgegeben werden. 
 
 Anmerkungen:
 
@@ -33,8 +33,8 @@ Anmerkungen:
 
 ## Änderungen in Version 6.0
 
-*	 Es wurden Optionen hinzugefügt, um zu wählen, ob verfügbare Aktionen nach der Bestätigung ausgeführt werden sollen. 
-*	 Befehle für das Kopieren und Ausschneiden emulieren wurden hinzugefügt. Diese können im NVDA-Menü im Bereich Eingaben angepasst werden. 
+*	 Optionen für verfügbare Aktionen nach der Ausführung einer Bestätigung  wurden hinzugefügt. 
+*	 Befehle für das Kopieren und Ausschneiden emulieren sind nun vorhanden. Diese können im NVDA-Menü im Bereich Eingaben angepasst werden. 
 *	 Es wurde ein Dialog hinzugefügt, um die Funktionen Kopieren und Ausschneiden emulieren bei der Installation anzupassen. Dies erlaubt es, die Befehle control+c und control+x zum Kopieren und Ausschneiden hinzuzufügen. Die Bestätigungsmeldung, ob Sie den Inhalt der Zwischenablage ersetzen möchten, kann hier aus und eingeschaltet werden. 
 *	 Die Dokumentation für script_add (Windows+NVDA+c) wurde korrigiert. 
 
@@ -42,7 +42,7 @@ Anmerkungen:
 
 *	Die visuelle Darstellung des Dialogs wurde verbessert und entspricht dem
   Erscheinungsbild der Dialoge in NVDA.
-*	Benötigt NVDA 2016.4 oder neuer.
+*	Benötigt NVDA 2016.4 oder höher.
 
 ## Änderungen in Version 4.0 ##
 *	Erweiterungseinstellungen werden von der NVDA-Konfiguration verwaltet, so
@@ -58,7 +58,7 @@ Anmerkungen:
 *	Brailledarstellung von MathML-Objekten können bei installiertem MathPlayer
   zur Zwischenablage kopiert oder ausgeschnitten werden.
 *	Wenn kein Trennzeichen gesetzt ist, wird nur eine einzige Linie zwischen
-  den angehängten Textsegmente platziert werden.
+  den angehängten Textsegmenten platziert werden.
 *	Sie können eine Tastenkürzel zum Öffnen des Einstellungsdialogs zuweisen.
 *	Es wurde ein Kontrollkästchen im Einstellungsdialog hinzugefügt, mit dem
   festgelegt werden kann, ob der Separator beim erneuten Installieren der

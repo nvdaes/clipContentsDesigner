@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner-addon version 6.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-30 13:20+0100\n"
-"PO-Revision-Date: 2017-10-21 06:22+0200\n"
+"PO-Revision-Date: 2017-12-14 19:32+0100\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
@@ -70,7 +70,7 @@ msgstr "Aucune sélection. Pas de marqueur de début"
 
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
-msgstr ""
+msgstr "Le marqueur de début doit résider dans le même objet"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"

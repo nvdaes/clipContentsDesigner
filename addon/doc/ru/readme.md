@@ -4,14 +4,14 @@
 *	Загрузить [стабильную версию][1]
 *	Загрузить [разрабатываемую версию][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Это дополнение используется для соединения текста в буфере обмена, которое
+может быть полезно, если вы хотите объединить разделы вставляемого текста.
+Содержимое буфера обмена также можно очищать.
 
 ## Команды клавиш ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which
-  represent MathML objects, or the string which has been marked with the
-  review cursor, to the clipboard.
+*	NVDA+windows+c: Добавить выделенный текст, символы юникода брайля,
+  представляющие объекты в MathML, или строку, которая была отмечена
+  просмотровым курсором в буфер обмена.
 *	NVDA+windows+x: Очистить содержимое буфера обмена.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
 *	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
@@ -23,14 +23,14 @@ content can also be cleared.
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Notes:
+Примечания:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
+*	Приведенная выше команда может быть изменена из меню NVDA, подменю
+  параметры, диалог жесты ввода, категория конфигурация.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
 
-## Changes for 6.0
+## Изменения для 6.0
 
 *	 Added options to choose if available actions should be performed after confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
@@ -39,9 +39,9 @@ Notes:
 
 ## Изменения для 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Визуальное представление диалогов было модифицировано, придерживаясь
+  внешнего вида диалогов, отображаемых в NVDA.
+*	Требуется NVDA 2016.4 или позднее.
 
 ## Изменения для 4.0 ##
 *	Add-on settings are managed from NVDA configuration, so that standard
@@ -54,15 +54,16 @@ Notes:
 ## Изменения для 3.0 ##
 *	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
+*	Если разделитель не выбран, между фрагментами текста будет добавляться
+  одна пустая строка.
 *	A shortcut can be assigned to open the Clip Contents Designer settings
   dialog.
 *	Added a check box in the settings dialog, for choosing if the separator
   should be copied to be imported when reinstalling the add-on.
 
 ## Изменения для 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+*	Символы хинди могут использоваться в качестве разделителя между
+  добавляемым содержимым.
 
 ## Изменения для 1.0 ##
 *	Первоначальная версия.
