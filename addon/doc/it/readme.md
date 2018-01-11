@@ -24,14 +24,14 @@ sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Notes:
+Note:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
+*	Il comando di cui sopra può essere modificato dal menu di NVDA, sottomenu
+  Preferenze, gesti di immissione, categoria Configurazione
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
 
-## Changes for 6.0
+## Cambiamenti per 6.0
 
 *	 Added options to choose if available actions should be performed after confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
