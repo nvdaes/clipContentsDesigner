@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-16 22:07+0100\n"
-"Last-Translator: Adriani Botez <adriani.botez@gmail.com>\n"
+"PO-Revision-Date: 2018-01-14 10:28+0100\n"
+"Last-Translator: Bernd Dorer <bdorer@mailbox.org>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 2.0.5\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -27,9 +27,9 @@ msgid ""
 msgstr ""
 "Mit dieser Erweiterung erhalten Sie eine Meldung, womit Sie bestätigen "
 "können, ob Sie den Inhalt aus der Zwischenablage durch einen neuen Inhalt "
-"ersetzen möchten. Dies kommt vor, wenn sie etwas mit strg + c kopieren bzw. "
-"mit strg + x ausschneiden und danach einen anderen inhalt kopieren bzw. "
-"ausschneiden, bevor der früheren inhalt mit strg + v eingefügt wurde. Dies "
+"ersetzen möchten. Dies kommt vor, wenn sie etwas mit strg+c kopieren bzw. "
+"mit strg+x ausschneiden und danach einen anderen inhalt kopieren bzw. "
+"ausschneiden, bevor der frühere inhalt mit strg + v eingefügt wurde. Dies "
 "heißt \"Kopieren und Ausschneiden emulieren\" und funktioniert standardmäßig "
 "nur, wenn die Zwischenablage Text enthält. Möchten Sie Kopieren und "
 "Ausschneiden emulieren jetzt konfigurieren? Sie können die Einstellungen "
@@ -41,13 +41,11 @@ msgstr "Einstellungen für Kopieren und Ausschneiden emulieren anpassen"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
-msgstr "&Clip Contents Designer-Einstellungen..."
+msgstr "&Zwischenablagen-Designer-Einstellungen..."
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings dialog."
-msgstr ""
-"Zeigt die Einstellungen für den Designer für den Inhalt der Zwischenablage "
-"an."
+msgstr "Zeigt die Einstellungen für den Zwischenablagen-Designer an."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -84,11 +82,11 @@ msgstr "Kein Text zum Anfügen vorhanden."
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr ""
-"Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage einfügen möchten"
+"Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage hinzufügen möchten"
 
 #. Translators: Title of a dialog.
 msgid "Adding text to clipboard"
-msgstr "Text wird zur Zwischenablage eingefügt"
+msgstr "Text wird zur Zwischenablage hinzugefügt"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -104,12 +102,12 @@ msgid ""
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
-"Fügt den Text zwischen der zuvor gesetzten Startmarke un der aktuellen "
+"Fügt den Text zwischen der zuvor gesetzten Startmarke und der aktuellen "
 "Position des NVDA-Cursors in die Zwischenablage."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Bitte bestetigen Sie, dass Sie die Zwischenablage leeren möchten."
+msgstr "Bitte bestätigen Sie, dass Sie die Zwischenablage leeren möchten."
 
 #. Translators: Title of a dialog.
 msgid "Clearing clipboard"
@@ -157,7 +155,7 @@ msgstr ""
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
-msgstr "Clip Contents Designer-Einstellungen"
+msgstr "Zwischenablagen-Designer-Einstellungen"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -194,7 +192,7 @@ msgstr "&Text in der Zwischenablage bestätigen"
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgstr "Designer für den  Inhalt der Zwischenablage"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
