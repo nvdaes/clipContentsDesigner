@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2018-01-14 10:28+0100\n"
+"Last-Translator: Bernd Dorer <bdorer@mailbox.org>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Mit dieser Erweiterung erhalten Sie eine Meldung, womit Sie bestätigen "
+"können, ob Sie den Inhalt aus der Zwischenablage durch einen neuen Inhalt "
+"ersetzen möchten. Dies kommt vor, wenn sie etwas mit strg+c kopieren bzw. "
+"mit strg+x ausschneiden und danach einen anderen inhalt kopieren bzw. "
+"ausschneiden, bevor der frühere inhalt mit strg + v eingefügt wurde. Dies "
+"heißt \"Kopieren und Ausschneiden emulieren\" und funktioniert standardmäßig "
+"nur, wenn die Zwischenablage Text enthält. Möchten Sie Kopieren und "
+"Ausschneiden emulieren jetzt konfigurieren? Sie können die Einstellungen "
+"auch zu einem späteren Zeitpunkt anpassen."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Einstellungen für Kopieren und Ausschneiden emulieren anpassen"
+
+#. Translators: name of the option in the menu.
+msgid "&Clip Contents Designer settings..."
+msgstr "&Zwischenablagen-Designer-Einstellungen..."
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings dialog."
+msgstr "Zeigt die Einstellungen für den Zwischenablagen-Designer an."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Zwischenablage geleert"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Zwischenablage ist nicht leer"
+
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "Startmarke gesetzt"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr ""
+"Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
+"Anfügen von Text zum Inhalt der Zwischenablage."
+
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
+
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
+
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
+msgstr "Kein Text zum Anfügen vorhanden."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr ""
+"Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage hinzufügen möchten"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Text wird zur Zwischenablage hinzugefügt"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Hinzugefügt"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Text konnte nicht hinzugefügt werden."
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Fügt den Text zwischen der zuvor gesetzten Startmarke und der aktuellen "
+"Position des NVDA-Cursors in die Zwischenablage."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Bitte bestätigen Sie, dass Sie die Zwischenablage leeren möchten."
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Der Inhalt aus der Zwischenablage wird entfernt"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Löscht den Inhalt der Zwischenablage."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr ""
+"Bitte bestätigen Sie, dass sie den Inhalt in die Zwischenablage kopieren "
+"möchten"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Der Inhalt wird in die Zwischenablage kopiert"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Kopiert Inhalt in die Zwischenablage, nachdem ggf. eine Bestätigung erfolgt "
+"ist"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr ""
+"Bitte bestätigen Sie, dass Sie den Inhalt aus der zwischenablage "
+"ausschneiden möchten"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Inhalt wird aus der Zwischenablage ausgeschnitten"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Schneidet Inhalt aus der Zwischenablage aus, nachdem ggf. eine Bestätigung "
+"erfolgt ist"
+
+#. Translators: title of a dialog.
+msgid "Clip Contents Designer settings"
+msgstr "Zwischenablagen-Designer-Einstellungen"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Geben Sie die Zeichenfolge ein, die verwendet werden soll, um mehrere "
+"Textfragmente in der Zwischenablage voneinander zu trennen."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "Text an erster Stelle der Daten in der Zwischenablage &hinzufügen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Text e&infügen bestätigen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Bestätigung für das L&eeren der Zwischenablage"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "&Kopieren bestätigen"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "&Ausschneiden bestätigen"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "&Text in der Zwischenablage bestätigen"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Designer für den  Inhalt der Zwischenablage"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "Add-on for managing clipboard text."
+msgstr "Erweiterung zum Umgang mit der Windows-Zwischenablage."
