@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: appendText\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-31 08:59+0100\n"
-"PO-Revision-Date: 2016-12-29 16:06-0800\n"
+"PO-Revision-Date: 2018-02-21 15:31+0100\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Translators <llajta@gmx.us>\n"
 "Language: it_IT\n"
@@ -13,9 +13,28 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
 "X-Poedit-Basepath: C:/Users/user/Downloads/AppendText/globalPlugins\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Questo componente aggiuntivo consente di richiedere una conferma quando si "
+"vuole copiare o tagliare il testo, premendo le combinazioni control-c o "
+"control-x. L'operazione viene chiamata simulazione copia e simulazione "
+"taglia e da impostazioni predefinite funziona solo quando negli appunti è "
+"già presente del testo. Vuoi configurare simulazione copia/taglia adesso? "
+"Puoi farlo anche in un secondo momento."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Configurazione simulazione taglia/copia"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
@@ -49,9 +68,21 @@ msgstr ""
 msgid "No selection. No start marker set"
 msgstr "Nessuna selezione. Nessun marcatore di inizio."
 
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "Il marcatore di inizio deve appartenere allo stesso oggetto"
+
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
 msgstr "Nessun testo aggiunto."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Per favore, confermare di voler aggiungere testo negli appunti"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Aggiunta di testo agli appunti"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -70,9 +101,47 @@ msgstr ""
 "Recupera il testo selezionato, o il testo dal marcatore d'inizio al cursore "
 "di controllo, e lo copia negli apunti."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Per favore, confermare di voler eliminare gli appunti"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Eliminazione appunti"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Elimina il testo aggiunto e il contenuto degli appunti."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Per favore, confermare di voler copiare il contenuto negli appunti"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Copia negli appunti "
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Copia negli appunti, con possibilità di ricevere una richiesta di conferma"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Per favore, confermare la volontà di tagliare dagli appunti"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Taglio dagli appunti"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Taglia dagli appunti, con possibilità di ricevere una richiesta di conferma"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -89,6 +158,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "&Aggiungi testo prima degli appunti"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Conferma &aggiunta testo"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Conferma e&liminazione appunti"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "&Conferma simulazione copia"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "&Conferma simulazione taglia"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "Testo negli appunti da confermare"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
