@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # installTasks for clipContentsDesigner add-on
-#Copyright (C) 2017 Noelia Ruiz Martínez
+#Copyright (C) 2017-2018 Noelia Ruiz Martínez
 # Released under GPL 2
 
 import addonHandler
@@ -22,6 +22,17 @@ confspec = {
 }
 
 def onInstall():
+	module = "globalPlugins.clipContentsDesigner"
+	className = "GlobalPlugin"
+	copyGesture = "kb:control+c"
+	copyScriptName = "copy"
+	cutGesture = "kb:control+x"
+	cutScriptName = "cut"
+	try:
+		inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)
+		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
+	except ValueError:
+		pass
 	if gui.messageBox(
 		# Translators: label of a dialog.
 		_("This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents, when pressing control+c and control+x. This is named Emulate copy and cut, and by default it works just when clipboard contains text. Do you want to configure Emulate copy and cut now? You may do or change this later."),
@@ -32,18 +43,7 @@ def onInstall():
 			config.conf["clipContentsDesigner"]["confirmToCopy"] = True
 			config.conf["clipContentsDesigner"]["confirmToCut"] = True
 			config.conf.save()
-			module = "globalPlugins.clipContentsDesigner"
-			className = "GlobalPlugin"
-			copyGesture = "kb:control+c"
-			copyScriptName = "copy"
-			cutGesture = "kb:control+x"
-			cutScriptName = "cut"
 			# Adapted from NVDA's core.
-			try:
-				inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)
-				inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
-			except ValueError:
-				pass
 			inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)
 			inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)
-			inputCore.manager.userGestureMap.save()
+	inputCore.manager.userGestureMap.save()
