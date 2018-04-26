@@ -13,8 +13,9 @@ para colar.  O conteúdo da área de transferência pode também ser apagado.
   Braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: limpa o conteúdo da área de transferência.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+windows+f9: Marca a posição actual do cursor de exploração como o início do texto a ser adicionado à área de transferência.
+    Se usar nvda+F9, o texto não será adicionado.
+*	 Não atribuído: Faz cópia para a área de transferência com possibilidade de ser previamente consultado para confirmar a cópia.
 
 Nota: Os comandos anteriores podem ser alterados a partir do menu do NVDA,
 submenu Preferências, comandos, categoria Revisão de texto.
@@ -29,6 +30,13 @@ Notas:
   submenu Preferências, comandos, configuração.
 *	As confirmações não serão pedidas quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as acções serão executadas de imediato
+
+## Alterações para a versão 7.0
+
+* Na caixa de diálogo da instalação para configurar as funcionalidades
+  Emular cópia e Emular corte, se escolher não, os comandos para esses
+  recursos serão removidos, para que possa restaurar o comportamento normal
+  para controle + c e controle + x.
 
 ## Alterações para a versão 6.0
 

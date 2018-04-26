@@ -31,6 +31,13 @@ Notas:
 *	Confirmação não será solicitada quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as ações serão executadas de imediato
 
+## Changes for 7.0
+
+* In the dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation, if you choose no, the commands for these
+  features will be removed, so that you can restore the normal behavior for
+  control+c and control+x.
+
 ## Mudanças na 6.0
 
 *	 Adicionadas opções para escolher se as ações disponíveis devem ser executadas após confirmação.

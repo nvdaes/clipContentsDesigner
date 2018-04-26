@@ -31,9 +31,16 @@ Huomautuksia:
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
 
+## Muutokset versiossa 7.0
+
+* Jos valitset Ei Määritä kopioinnin ja leikkaamisen vahvistuskysely
+  -valintaikkunassa, joka tulee näkyviin lisäosaa asennettaessa, näiden
+  ominaisuuksien komennot poistetaan käytöstä, mikä palauttaa normaalin
+  Ctrl+C- ja Ctrl+X-toiminnallisuuden.
+
 ## Muutokset versiossa 6.0
 
-*	 Lisätty vaihtoehtoja, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
+*	 Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
 *	Lisätty Vahvista kopiointi- ja Vahvista leikkaaminen -asetukset, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
 *	Lisätty valintaikkuna Vahvista kopiointi- ja Vahvista leikkaaminen -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
 *	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
