@@ -34,6 +34,13 @@ Notes :
   NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées
   immédiatement
 
+## Changements pour la version 7.0
+
+* Dans la boîte de dialogue pour configurer les fonctionnalités Émuler
+  copier et Émuler couper à l'installation, si vous choisissez non, les
+  commandes pour ces fonctionnalités seront supprimées, de sorte que vous
+  pouvez restaurer le comportement normal pour contrôle+c et contrôle+x.
+
 ## Changements pour la version 6.0
 
 *	 Ajout d'options pour choisir si les actions disponibles doivent être effectuées après confirmation.

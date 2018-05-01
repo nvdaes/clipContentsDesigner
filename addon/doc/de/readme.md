@@ -31,6 +31,13 @@ Anmerkungen:
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesen Fällen werden die Aktionen sofort ausgeführt
 
+## Changes for 7.0
+
+* In the dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation, if you choose no, the commands for these
+  features will be removed, so that you can restore the normal behavior for
+  control+c and control+x.
+
 ## Änderungen in Version 6.0
 
 *	 Optionen für verfügbare Aktionen nach der Ausführung einer Bestätigung  wurden hinzugefügt. 

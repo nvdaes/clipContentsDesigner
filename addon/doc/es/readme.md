@@ -30,6 +30,13 @@ Notas:
 *	No se deberían solicitar confirmaciones cuando siga abierto un cuadro de
   mensaje de NVDA. En esos casos, las acciones se realizarán inmediatamente
 
+## Cambios para 7.0
+
+* En el diálogo para configurar las funciones Emular copiar y Emular cortar
+  en la instalación, si eliges no, los comandos para estas características
+  se eliminarán, de manera que puedas restaurar el comportamiento anterior
+  de ctrl+c y ctrl+x.
+
 ## Cambios para 6.0
 
 *	 Añadidas opciones para elegir si las acciones disponibles se deberían llevar a cabo después de la confirmación.

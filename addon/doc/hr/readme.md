@@ -29,6 +29,13 @@ Napomene:
 *	Potvrde neće biti zatražene ako se neka poruka u vezi NVDA još uvijek
   prikazuje. U tim slučajevima, akcije će se odmah izvršavati
 
+## Changes for 7.0
+
+* In the dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation, if you choose no, the commands for these
+  features will be removed, so that you can restore the normal behavior for
+  control+c and control+x.
+
 ## Changes for 6.0
 
 *	 Dodane mogućnosti izbora hoće li se dostupne akcije izvršavati nakon potvrde.

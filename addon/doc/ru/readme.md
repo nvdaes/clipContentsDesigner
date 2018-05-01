@@ -30,6 +30,13 @@ It's also possible to choose if the added text will be appended or prepended, if
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
 
+## Changes for 7.0
+
+* In the dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation, if you choose no, the commands for these
+  features will be removed, so that you can restore the normal behavior for
+  control+c and control+x.
+
 ## Изменения для 6.0
 
 *	 Added options to choose if available actions should be performed after confirmation.
