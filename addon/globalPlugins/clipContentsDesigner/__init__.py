@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
-#Copyright (C) 2012-2016 Noelia Ruiz Martínez, other contributors
+#Copyright (C) 2012-2018 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import addonHandler
@@ -13,7 +13,7 @@ import treeInterceptorHandler
 import config
 import wx
 import gui
-from gui import SettingsDialog, guiHelper
+from gui import SettingsPanel, NVDASettingsDialog, guiHelper
 from keyboardHandler import KeyboardInputGesture
 from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 
@@ -47,23 +47,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
-		self.prefsMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
-		self.settingsItem = self.prefsMenu.Append(wx.ID_ANY,
-			# Translators: name of the option in the menu.
-			_("&Clip Contents Designer settings..."),
-			"")
-		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSettings, self.settingsItem)
+		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
 
 		self._copyStartMarker = None
 
 	def terminate(self):
-		try:
-			self.prefsMenu.RemoveItem(self.settingsItem)
-		except wx.PyDeadObjectError:
-			pass
+		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
 
 	def onSettings(self, evt):
-		gui.mainFrame._popupSettingsDialog(AddonSettingsDialog)
+		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog,AddonSettingsPanel)
 
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
@@ -271,7 +263,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:NVDA+windows+f9": "setSelectionStartMarker",
 	}
 
-class AddonSettingsDialog(SettingsDialog):
+class AddonSettingsPanel(SettingsPanel):
 
 	# Translators: title of a dialog.
 	title = _("Clip Contents Designer settings")
@@ -308,8 +300,7 @@ class AddonSettingsDialog(SettingsDialog):
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
 
-	def onOk(self,evt):
-		super(AddonSettingsDialog, self).onOk(evt)
+	def onSave(self):
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
 		config.conf["clipContentsDesigner"]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
 		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
