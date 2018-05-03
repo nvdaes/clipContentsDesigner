@@ -30,12 +30,12 @@ Note:
 *	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
   încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
 
-## Changes for 7.0
+## Modificări în 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+* În dialogul pentru configurarea copierii și tăierii simulate la instalare,
+  dacă alegeți nu, comenzile pentru aceste caracteristici vor fi șterse,
+  astfel încât să puteți restaura comportamentul normal pentru control+c și
+  control+x.
 
 ## Modificări în 6.0
 
