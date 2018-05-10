@@ -31,12 +31,12 @@ Anmerkungen:
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesen Fällen werden die Aktionen sofort ausgeführt
 
-## Changes for 7.0
+## Änderungen in Version 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+* Die Befehle im Dialog zum Konfigurieren der Funktionen für das Emulieren
+  der Kopier- und Ausschneide-Funktion  werden bei der Installation
+  entfernt, so dass das normale Verhalten von STRG+c und STRG+x
+  wiederhergestellt werden kann.
 
 ## Änderungen in Version 6.0
 
