@@ -19,6 +19,12 @@ from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 
 addonHandler.initTranslation()
 
+ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
+try:
+	ADDON_PANEL_TITLE = unicode(ADDON_SUMMARY)
+except NameError:
+	ADDON_PANEL_TITLE = str(ADDON_SUMMARY)
+	
 confspec = {
 	"separator": "string(default="")",
 	"addTextBefore": "boolean(default=False)",
@@ -265,8 +271,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 class AddonSettingsPanel(SettingsPanel):
 
-	# Translators: title of a dialog.
-	title = _("Clip Contents Designer settings")
+	title = ADDON_PANEL_TITLE
 
 	def makeSettings(self, settingsSizer):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)

@@ -26,6 +26,8 @@ Notes:
 ## Changes for 8.0 ##
 
 * The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
+* Requires NVDA 2018.2 or later.
+
 ## Changes for 7.0
 
 * In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.
