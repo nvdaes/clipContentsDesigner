@@ -61,13 +61,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
 
 	def onSettings(self, evt):
-		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog,AddonSettingsPanel)
+		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
 
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
 	script_settings.category = SCRCAT_CONFIG
 	# Translators: message presented in input mode.
-	script_settings.__doc__ = _("Shows the Clip Contents Designer settings dialog.")
+	script_settings.__doc__ = _("Shows the Clip Contents Designer settings.")
 
 	def clearClipboard(self):
 		try:
