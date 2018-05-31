@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-06-26 03:00+1000\n"
-"PO-Revision-Date: 2017-05-11 11:24+0100\n"
+"PO-Revision-Date: 2018-05-20 12:00+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: pl <LL@li.org>\n"
 "Language: pl\n"
@@ -16,6 +16,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Ten dodatek umożliwia potwierdzenie kopiowania i wklejania, Zamieniając "
+"treść schowka, gdy naciśnięte są skróty ctrl+c oraz ctrl+x. Taka akcja "
+"nazywa się emulowanie kopiowania i wklejania, i działa ona gdy w schowku "
+"znajduje się tekst. Czy chcesz skonfigurować emulowanie kopiowania i "
+"wklejania? Można to zmienić, oraz zrobić to później."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Konfigurowanie emulacji kopiowania i wklejaniacut"
 
 #. Translators: name of the option in the menu.
 msgid "&Clip Contents Designer settings..."
@@ -49,9 +67,21 @@ msgstr ""
 msgid "No selection. No start marker set"
 msgstr "Nic nie jest oznaczone. Znacznik początkowy nie jest ustawiony"
 
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "Znacznik początkowy powinien znajdować się na początku obiektu"
+
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
 msgstr "Nie ma tekstu do dodania"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Proszę potwierdzić dodawanie tekstu do schowka"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Dodawanie tekstu do schowka"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -71,9 +101,45 @@ msgstr ""
 "początkowego wyłącznie z pozycją teraźniejszą kursora przeglądu, i dodaje ją "
 "do schowka."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Proszę potwierdzić kasowanie schowka"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Kasowanie schowka"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Usuwa dodany tekst i treść ze schowka."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Proszę potwierdzić kopiowanie do schowka"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Kopiuję do schowka"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "kopiuje z schowka, uprzednio pytając o zgodeconfirmation"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Proszę potwierdzić wycinanie ze schorka"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Wycinam ze schowka"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "wycina z schowka, uprzednio pytając o zgode"
 
 #. Translators: title of a dialog.
 msgid "Clip Contents Designer settings"
@@ -90,6 +156,26 @@ msgstr ""
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
 msgstr "&Dodaj tekst przed danymi Clip"
+
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Potwierdzenie dodawania &tekstu"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Potwierdzenie &kasowania schowka"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "&Potwierdzenie emulowania kopiowania"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "&Potwierdzenie emulowania wcięcia"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "&tekst do potwierdzenia w schowku"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
