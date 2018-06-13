@@ -19,8 +19,8 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""Add-on for managing clipboard text."""),
 	# version
-	"addon_version" : "8.1-dev",
-	# Author(s)
+	"addon_version" : "8.0",
+		# Author(s)
 	"addon_author" : u"Noelia Ruiz Martínez <nrm1977@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "http://addons.nvda-project.org",

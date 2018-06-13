@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDREss>, YEAR.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
 "PO-Revision-Date: 2018-01-14 10:28+0100\n"
-"Last-Translator: Robert Hänggi, <aarjay.robert@gmail.com\n"
+"Last-Translator: Bernd Dorer <bdorer@mailbox.org>\n"
 "Language-Team: \n"
 "Language: de_CH\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr ""
 "ersetzen möchten. Dies kommt vor, wenn sie etwas mit strg+c kopieren bzw. "
 "mit strg+x ausschneiden und danach einen anderen inhalt kopieren bzw. "
 "ausschneiden, bevor der frühere inhalt mit strg + v eingefügt wurde. Dies "
-"heißt \"Kopieren und Ausschneiden emulieren\" und funktioniert standardmäßig "
+"heisst \"Kopieren und Ausschneiden emulieren\" und funktioniert standardmässig "
 "nur, wenn die Zwischenablage Text enthält. Möchten Sie Kopieren und "
 "Ausschneiden emulieren jetzt konfigurieren? Sie können die Einstellungen "
 "auch zu einem späteren Zeitpunkt anpassen."

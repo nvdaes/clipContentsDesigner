@@ -31,10 +31,9 @@ Napomene:
 
 ## Changes for 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+* U dijaloškom okviru za konfiguriranje funkcionalnosti Simulirano kopiranje
+  i Simulirano rezanje, ako odaberete ne, naredbe za ove značajke će se
+  ukloniti, te ćete za iste naredbe koristiti naredbe control+c I control+x.
 
 ## Changes for 6.0
 
