@@ -34,6 +34,14 @@ Notes :
   NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées
   immédiatement
 
+## Changements pour la version 8.0 ##
+
+* Les paramètres du module complémentaire sont affichés dans la catégorie
+  correspondante au dialogue Paramètres NVDA.
+* Nécessite NVDA 2018.2 ou ultérieur.
+* Si nécessaire, vous pouvez télécharger la [dernière version compatible
+  avec NVDA 2017.3][3].
+
 ## Changements pour la version 7.0
 
 * Dans la boîte de dialogue pour configurer les fonctionnalités Émuler
@@ -82,8 +90,12 @@ Notes :
 ## Changements pour la version 1.0 ##
 *	Première version.
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

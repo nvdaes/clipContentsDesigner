@@ -29,6 +29,14 @@ Napomene:
 *	Potvrde neće biti zatražene ako se neka poruka u vezi NVDA još uvijek
   prikazuje. U tim slučajevima, akcije će se odmah izvršavati
 
+## Changes for 8.0 ##
+
+* The add-on settings are shown in the corresponding category of the NVDA
+  Settings dialog.
+* Requires NVDA 2018.2 or later.
+* If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Changes for 7.0
 
 * U dijaloškom okviru za konfiguriranje funkcionalnosti Simulirano kopiranje
@@ -72,8 +80,12 @@ Napomene:
 ## Promjene u inačici1.0 ##
 *	Prva inačica.
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

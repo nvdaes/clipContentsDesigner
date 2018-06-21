@@ -31,6 +31,14 @@ Notas:
 *	Confirmação não será solicitada quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as ações serão executadas de imediato
 
+## Changes for 8.0 ##
+
+* The add-on settings are shown in the corresponding category of the NVDA
+  Settings dialog.
+* Requires NVDA 2018.2 or later.
+* If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Changes for 7.0
 
 * In the dialog to configure the Emulate copy and Emulate cut
@@ -77,8 +85,12 @@ Notas:
 ## Mudanças na 1.0 ##
 *	Versão inicial.
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

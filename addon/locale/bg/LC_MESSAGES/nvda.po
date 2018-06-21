@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-14 20:29+0200\n"
+"PO-Revision-Date: 2018-06-14 20:16+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bg\n"
@@ -36,15 +36,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Конфигуриране на емулирането на копиране и изрязване"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Дизайнер на съдържанието на клипборда..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr ""
-"Извежда диалоговия прозорец с настройките за Дизайнера на съдържанието на "
-"клипборда."
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Извежда настройките за Дизайнера на съдържанието на клипборда."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -148,10 +142,6 @@ msgstr ""
 "Изрязва от клипборда, с възможност за запитване за потвърждение преди "
 "извършване на операцията"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Настройки на Дизайнера на съдържанието на клипборда"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -193,3 +183,9 @@ msgstr "Clip Contents Designer (Дизайнер на съдържанието �
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Добавка за управление на текста от клипборда"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Дизайнер на съдържанието на клипборда..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Настройки на Дизайнера на съдържанието на клипборда"

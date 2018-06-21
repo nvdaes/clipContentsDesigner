@@ -35,12 +35,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "הגדר את האפשרות להעתיק ולחתוך"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "הגדרות &עורך הזכרון הזמני..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "מציג את תיבת הדו-שיח של הגדרות עורך הזכרון הזמני."
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -138,10 +135,6 @@ msgid ""
 "confirmation"
 msgstr "גזירה מהלוח, עם אפשרות של בקשה לאישור הקודם"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "הגדרות עורך הזכרון הזמני"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -181,3 +174,9 @@ msgstr "הגדרות עורך הזכרון הזמני"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "תוסף מיועד לעריכת תוכן הזכרון הזמני."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "הגדרות &עורך הזכרון הזמני..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "הגדרות עורך הזכרון הזמני"

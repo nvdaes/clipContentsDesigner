@@ -31,6 +31,14 @@ Huomautuksia:
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
 
+## Muutokset versiossa 8.0 ##
+
+* Lisäosan asetukset näkyvät omassa kategoriassaan NVDA:n
+  Asetukset-valintaikkunassa.
+* Edellyttää NVDA 2018.2:ta tai uudempaa.
+* Tarvittaessa voit ladata [viimeisimmän version, joka on yhteensopiva NVDA
+  2017.3:n kanssa.][3]
+
 ## Muutokset versiossa 7.0
 
 * Jos valitset Ei Määritä kopioinnin ja leikkaamisen vahvistuskysely
@@ -77,8 +85,12 @@ Huomautuksia:
 ## Muutokset versiossa 1.0 ##
 *	Ensimmäinen versio.
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

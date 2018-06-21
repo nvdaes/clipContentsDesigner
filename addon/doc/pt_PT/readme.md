@@ -31,6 +31,14 @@ Notas:
 *	As confirmações não serão pedidas quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as acções serão executadas de imediato
 
+## Alterações para a versão 8.0 ##
+
+* As configurações adicionais são mostradas na categoria correspondente da
+  caixa de diálogo Configurações do NVDA.
+* Requer o NVDA 2018.2 ou posterior.
+* Se for necessário, pode fazer o download da [última versão compatível com
+  o NVDA 2017.3] [3].
+
 ## Alterações para a versão 7.0
 
 * Na caixa de diálogo da instalação para configurar as funcionalidades
@@ -78,8 +86,12 @@ Notas:
 ## Alterações para a versão 1.0 ##
 *	Versão inicial.
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

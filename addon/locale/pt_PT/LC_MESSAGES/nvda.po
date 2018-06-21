@@ -37,12 +37,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Configurar emulação de copiar e cortar."
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Configurações do gestor do conteúdo da área de transferência..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "Mostra as configurações do gestor da área de transferência. "
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -147,10 +144,6 @@ msgstr ""
 "Retira da área de transferência, com a possibilidade de lhe ser pedida uma "
 "confirmação."
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Configuração do gestor da área de transferência."
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -192,3 +185,9 @@ msgstr "Gestor de conteúdos da área de transferência."
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Extra para gerir o texto da área de transferência"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Configurações do gestor do conteúdo da área de transferência..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Configuração do gestor da área de transferência."

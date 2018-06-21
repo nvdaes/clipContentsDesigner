@@ -47,12 +47,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Kopyalama ve kesme taklidini yapılandır"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Pano içerik tasarım ayarları..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "Pano İçerik Düzenleme ayarlarını görüntüler."
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -77,6 +74,10 @@ msgstr ""
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
 msgstr "Seçim yok. Başlangıç noktası belirlenmemiş"
+
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "Başlangıç işareti aynı nesne içinde olmalı"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
@@ -151,10 +152,6 @@ msgstr ""
 "Önceki metnin yerine eklenmesinin onayının sorulması olasılığıyla, panodan "
 "keser"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Pano İçerik Düzenleme ayarları"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -196,6 +193,12 @@ msgstr "Pano İçerik Düzenleyicisi"
 msgid "Add-on for managing clipboard text."
 msgstr "Panodaki metnin yönetimi için eklenti."
 
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Pano içerik tasarım ayarları..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Pano İçerik Düzenleme ayarları"
+
 #~ msgid ""
 #~ "You have installed the AppendText add-on, probably an old and "
 #~ "incompatible version with this one. Do you want to uninstall the old "
@@ -216,9 +219,6 @@ msgstr "Panodaki metnin yönetimi için eklenti."
 
 #~ msgid "Import ClipContentsDesigner add-on settings"
 #~ msgstr "Pano İçerik Düzenleme eklentisinin ayarlarını içe aktar"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "Başlangıç işareti aynı nesne içinde olmalı"
 
 #~ msgid "Appended"
 #~ msgstr "Eklendi"

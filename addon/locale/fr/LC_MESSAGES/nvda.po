@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner-addon version 6.0\n"
+"Project-Id-Version: clipContentsDesigner-addon version 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-30 13:20+0100\n"
-"PO-Revision-Date: 2017-12-14 19:32+0100\n"
+"PO-Revision-Date: 2018-06-15 19:37+0200\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
@@ -36,13 +36,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Configurer Émuler copier et couper"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "Paramètres de &Clip Contents Designer..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Afficher le dialogue paramètres de Clip Contents Designer."
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Afficher les Paramètres Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -147,10 +143,6 @@ msgstr ""
 "Couper à partir du presse-papiers, avec la possibilité de demander une "
 "confirmation préalable"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Paramètres de Clip Contents Designer"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -192,3 +184,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Module complémentaire pour gérer le contenu du presse-papiers."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "Paramètres de &Clip Contents Designer..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Paramètres de Clip Contents Designer"

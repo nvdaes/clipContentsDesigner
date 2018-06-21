@@ -39,12 +39,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Einstellungen für Kopieren und Ausschneiden emulieren anpassen"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Zwischenablagen-Designer-Einstellungen..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "Zeigt die Einstellungen für den Zwischenablagen-Designer an."
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -153,10 +150,6 @@ msgstr ""
 "Schneidet Inhalt aus der Zwischenablage aus, nachdem ggf. eine Bestätigung "
 "erfolgt ist"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Zwischenablagen-Designer-Einstellungen"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -198,3 +191,9 @@ msgstr "Designer für den  Inhalt der Zwischenablage"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Erweiterung zum Umgang mit der Windows-Zwischenablage."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Zwischenablagen-Designer-Einstellungen..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Zwischenablagen-Designer-Einstellungen"

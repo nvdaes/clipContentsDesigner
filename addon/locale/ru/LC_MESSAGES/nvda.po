@@ -35,12 +35,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Сконфигурировать эмуляцию копирования и вырезания"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "Настройки &Clip Contents Designer..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "Показывает диалог настроек Clip Contents Designer"
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -145,10 +142,6 @@ msgstr ""
 "Вырезает в буфер обмена, с возможностью предварительного запроса "
 "подтверждения"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Настройки Clip Contents Designer"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -190,3 +183,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Дополнение для управления текстом буфера обмена."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "Настройки &Clip Contents Designer..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Настройки Clip Contents Designer"

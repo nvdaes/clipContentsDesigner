@@ -35,12 +35,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Configurar Emular copiar y cortar"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "Opciones de &Clip Contents Designer..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "Muestra el diálogo de opciones de Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -145,10 +142,6 @@ msgstr ""
 "Corta desde el portapapeles, con la posibilidad de que se te pregunte por "
 "una confirmación previa"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Opciones de Clip Contents Designer"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -190,3 +183,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para manejar texto en el portapapeles."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "Opciones de &Clip Contents Designer..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Opciones de Clip Contents Designer"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-15 09:23+0200\n"
+"PO-Revision-Date: 2018-06-15 08:42+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -35,13 +35,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Määritä kopioinnin ja leikkaamisen vahvistuskysely"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Leikepöydän sisällön käsittelijä..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Näyttää Leikepöydän sisällön käsittelijän asetusvalintaikkunan."
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Näyttää Leikepöydän sisällön käsittelijän asetukset."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -145,10 +141,6 @@ msgstr ""
 "Leikkaa leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
 "suorittamiselle"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Leikepöydän sisällön käsittelijän asetukset"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -190,3 +182,9 @@ msgstr "Leikepöydän sisällön käsittelijä"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Lisäosa leikepöydällä olevan tekstin hallintaan."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Leikepöydän sisällön käsittelijä..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Leikepöydän sisällön käsittelijän asetukset"

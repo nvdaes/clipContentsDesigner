@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-26 10:47+0100\n"
+"PO-Revision-Date: 2018-06-15 16:28+0200\n"
 "Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
 "Language-Team: Danish <LL@li.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -35,13 +35,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Indstil emulering af kopier og klip"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Indstillinger for Udklipsdesigner"
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Viser dialogen Indstillinger for Udklipsdesigner"
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Viser dialogen Indstillinger for Udklipsdesigner."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -145,10 +141,6 @@ msgstr ""
 "Klipper fra udklipsholderen med mulighed for at blive bedt om en forudgående "
 "bekræftelse"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Indstillinger for Udklipsdesigner"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -190,3 +182,9 @@ msgstr "Udklipsdesigner"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Tilføjelsesprogram til styring af tekst i udklipsholderen."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Indstillinger for Udklipsdesigner"
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Indstillinger for Udklipsdesigner"

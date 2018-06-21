@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2017-10-20 21:45+0100\n"
+"PO-Revision-Date: 2018-06-16 16:18+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -36,12 +36,9 @@ msgstr ""
 msgid "Configure Emulate copy and cut"
 msgstr "Podesite Emulate copy and cut"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Clip contentsDesigner podešavanja..."
-
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
+#, fuzzy
+msgid "Shows the Clip Contents Designer settings."
 msgstr "Prikazuje Clip Contents Designer dijalog za podešavanja."
 
 #. Translators: message presented when the clipboard content has been deleted.
@@ -70,7 +67,7 @@ msgstr "Ništa nije označeno. Nije postavljen početni marker"
 
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
-msgstr ""
+msgstr "Početni marker mora ostati u istom objektu"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
@@ -142,10 +139,6 @@ msgid ""
 "confirmation"
 msgstr "Seče u privremenu memoriju, uz mogućnost potvrde"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Podešavanja za Clip Contents Designer"
-
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -187,3 +180,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatak za upravljanje tekstualnog sadržaja privremene memorije"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Clip contentsDesigner podešavanja..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Podešavanja za Clip Contents Designer"

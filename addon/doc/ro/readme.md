@@ -30,6 +30,14 @@ Note:
 *	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
   încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
 
+## Changes for 8.0 ##
+
+* The add-on settings are shown in the corresponding category of the NVDA
+  Settings dialog.
+* Requires NVDA 2018.2 or later.
+* If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Modificări în 7.0
 
 * În dialogul pentru configurarea copierii și tăierii simulate la instalare,
@@ -75,8 +83,12 @@ Note:
 ## Modificări din 1.0 ##
 *	Versiunea inițială.
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

@@ -14,15 +14,17 @@ cancellato.
   i caratteri braille unicode che rappresentano oggetti MathMl, o la stringa
   che è stata contrassegnata con il cursore di controllo.
 *	NVDA + Windows + x: Cancella contenuto degli appunti.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA + Windows + f9: Marca la posizione corrente del cursore di controllo come l'inizio del testo da aggiungere negli Appunti. Se si utilizza NVDA + F9, il testo non verrà aggiunto.
+ Non assegnato: copia o taglia dagli appunti, con possibilità di essere avvisati tramite una conferma prima che l'azione sia eseguita.
+
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
 
 ## Menu preferenze ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+*	Impostazioni Clip Contents Designer: Permette di impostare un separatore che può essere utilizzato per trovare i segmenti di testo quando l'intero testo aggiunto viene incollato.
+è anche possibile stabilire se il testo aggiunto debba essere accodato o anteposto, se le azioni disponibili (aggiungi, svuota appunti, simula copia e simula taglia) debbano essere eseguite immediatamente o previa conferma, e se tale conferma verrà richiesta solo se vi è testo contenuto negli appunti.
+
 
 Note:
 
@@ -31,7 +33,15 @@ Note:
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
 
-## Changes for 7.0
+## Cambiamenti per 8.0 ##
+
+* The add-on settings are shown in the corresponding category of the NVDA
+  Settings dialog.
+* Richiede NVDA 2018.2 o successive.
+* If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
+## Cambiamenti per 7.0
 
 * In the dialog to configure the Emulate copy and Emulate cut
   functionalities at installation, if you choose no, the commands for these
@@ -78,8 +88,12 @@ Note:
 ## Cambiamenti per 1.0 ##
 *	Versione iniziale
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon

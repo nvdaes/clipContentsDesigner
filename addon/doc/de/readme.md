@@ -31,6 +31,14 @@ Anmerkungen:
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesen Fällen werden die Aktionen sofort ausgeführt
 
+## Changes for 8.0 ##
+
+* The add-on settings are shown in the corresponding category of the NVDA
+  Settings dialog.
+* Requires NVDA 2018.2 or later.
+* If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Änderungen in Version 7.0
 
 * Die Befehle im Dialog zum Konfigurieren der Funktionen für das Emulieren
@@ -78,8 +86,12 @@ Anmerkungen:
 ## Änderungen in Version 1.0 ##
 *	anfängliche Version
 
+
 [[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]:
+https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon
