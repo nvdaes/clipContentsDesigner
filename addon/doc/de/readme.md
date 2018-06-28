@@ -1,6 +1,6 @@
-# Designer für den Inhalt der Zwischenablage  #
+# Clip Contents Designer #
 
-*	Autoren: Noelia Ruiz Martínez.
+*	Autor: Noelia Ruiz Martínez.
 *	[stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
@@ -31,13 +31,13 @@ Anmerkungen:
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesen Fällen werden die Aktionen sofort ausgeführt
 
-## Changes for 8.0 ##
+## Änderungen für 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+* Die Einstellungen für die Erweiterung werden in der entsprechenden
+  Kategorie des NVDA-Einstellungensdialog angezeigt.
+* Benötigt NVDA 2018.2 oder höher.
+* Bei Bedarf können Sie die [letzte Version, die mit NVDA 2017.3 kompatibel
+  ist][3] herunterladen.
 
 ## Änderungen in Version 7.0
 

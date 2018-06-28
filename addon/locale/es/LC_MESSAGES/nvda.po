@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-15 17:14+0100\n"
+"PO-Revision-Date: 2018-06-26 17:37+0100\n"
 "Last-Translator: Juan C. Buño <oprisniki@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
@@ -36,9 +36,8 @@ msgid "Configure Emulate copy and cut"
 msgstr "Configurar Emular copiar y cortar"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Muestra el diálogo de opciones de Clip Contents Designer."
+msgstr "Muestra la configuración de Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"

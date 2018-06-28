@@ -30,12 +30,12 @@ Note:
 *	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
   încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
 
-## Changes for 8.0 ##
+## Modificări în 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
+* Setările suplimentului sunt afișate în categoria corespunzătoare a
+  dialogului setărilor NVDA..
+* Necesită NVDA 2018.2 sau mai nou.
+* Dacă e musai, puteți să descărcați [ultima versiune compatibilă cu NVDA
   2017.3][3].
 
 ## Modificări în 7.0

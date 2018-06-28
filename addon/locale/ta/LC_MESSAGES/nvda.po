@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-16 11:20+0530\n"
+"PO-Revision-Date: 2018-06-23 11:07+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ta\n"
@@ -35,9 +35,8 @@ msgid "Configure Emulate copy and cut"
 msgstr "படியெடுக்கும் மற்றும் வெட்டும் செயலை அமைவடிவமாக்குக"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings."
-msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகள் உரையாடலைக் காட்டுகிறது"
+msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகளைக் காட்டுகிறது"
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"

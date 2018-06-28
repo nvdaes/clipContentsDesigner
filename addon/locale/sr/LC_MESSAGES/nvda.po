@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2018-06-16 16:18+0100\n"
+"PO-Revision-Date: 2018-06-21 21:49+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -37,9 +37,8 @@ msgid "Configure Emulate copy and cut"
 msgstr "Podesite Emulate copy and cut"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Prikazuje Clip Contents Designer dijalog za podešavanja."
+msgstr "Prikazuje Clip Contents Designer podešavanja."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"

@@ -30,13 +30,13 @@ Notas:
 *	Non se deberían de solicitar confirmacións cando siga aberto unha Caixa de
   mensaxe do NVDA. Nesos casos, as accións realizaranse inmediatamente
 
-## Changes for 8.0 ##
+## Cambios para 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+* A configuración do complemento amósase na categoría correspondente do
+  diálogo Opcións do NVDA.
+* Requírese do NVDA 2018.2 ou posterior.
+* Se fora necesario, podes descargar a [derradeira versión compatible co
+  NVDA 2017.3][3].
 
 ## Cambios para 7.0
 

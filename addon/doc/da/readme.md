@@ -1,64 +1,65 @@
-# Clip Contents Designer #
+# Clip Contents Designer (Udklipsdesigner) #
 
-*	Forfatter: Noelia Ruiz Martínez.
+*	Authors: Noelia Ruiz Martínez.
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Dette tilføjelsesprogram bruges til at tilføje tekst til
+udklipsholderen. Det kan være nyttigt, hvis du vil sammenklippe forskellige
+tekstafsnit, så de er parat til at indsætte på en gang.  Indholdet i
+udklipsholderen kan også ryddes.
 
 ## Tastaturkommandoer ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which
-  represent MathML objects, or the string which has been marked with the
-  review cursor, to the clipboard.
+*	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
+  MathML-objekter, eller den tekststreng, som er blevet markeret med
+  læsemarkøren, til udklipsholderen.
 *	NVDA+Windows+x: Ryd udklipsholderen.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+Windows+F9: Marker læsemarkørens aktuelle position som starten af den tekst, der skal tilføjes til udklipsholderen. Hvis du bruger NVDA+F9, vil teksten ikke blive tilføjet.
+*	 Ikke tildelt; Tilføjede mulighed for at kopiere test til eller klippe tekst fra udklipsholderen, med mulighed for at få dette bekræftet.
 
-Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Indstillinger /
+Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Præferencer/
 Inputbevægelser / kategorien tekstlæsning.
 
 ## Indstillinger-menuen ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+Indstillinger for Udklipsdesigner: Her kan du indstille en separator, som kan bruge til at finde de enkelte tekstsegmenter, når først hele den tilføjede tekst er blevet indsat.
+Her kan du også vælge om den tilføjede tekst skal indsættes før eller efter eksisterende tekst, om tilgængelige handlinger (tilføj, ryd udklipsholder, emuler kopi og emuler klip) skal udføres straks eller efter handlingen bekræftes, og om der kun skal anmodes om bekræftelse, hvis udklipsholderen indeholder tekst.
 
-Notes:
+Bemærkninger:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	Ovennævnte kommando kan ændres fra NVDAs menu, under Præferencer. Herunder
+  gå til Inputbevægelser og vælg kategorien "Configuration".
+*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
+  stadig er åben. I disse situationer vil handlingen straks udføres.
 
-## Changes for 8.0 ##
+## ændringer i 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
+* Tilføjelsens indstillinger vises i den tilsvarende kategori NVDA
+  indstillinger i dialogboksen.
+* Kræver NVDA 2018.2 eller nyere.
+* Hvis nødvendigt, kan du hente [sidste version kompatibel med NVDA
   2017.3][3].
 
-## Changes for 7.0
+## ændringer i 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+* Hvis du vælger "nej" i dialogen, hvor du kan konfigurere funktionaliteten
+  til at emulere kopi og klip under installationen, vil kommandoerne for
+  disse funktioner blive deaktiveret. Dette gendanner den sædvanlige adfærd
+  for Ctrl+C og Ctrl+X.
 
-## Changes for 6.0
+## ændringer i 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Tilføjede indstilling der lader dig vælge, om tilgængelige handlinger skal bekræftes, før de udføres.
+*	 Tilføjede tastetryk for emuler kopi og emuler klip, der kan tildeles under dialogen "Inputbevægelser".
+*	 Tilføjede en dialog, der lader dig konfigure emuler klip og emuler klip under installationen. Dette tilføjer handlingerne Kopi og Klip til kommandoerne Ctrl+C og Ctrl+X, og spørger om du vil erstatte udklipsholderens indhold, når du benytter disse taster.
+*	 rettede dokumentation for script_add (Windows+NVDA+c).
 
-## Ændringer i 5.0 ##
+## ændringer i 5.0 ##
 
 *	Dialogens visuelle præsentation er blevet forbedret og overholder
   udseendet af de dialoger, der vises i NVDA.
 *	Kræver NVDA 2016.4 eller nyere.
 
-## Ændringer for 4.0 ##
+## ændringer for 4.0 ##
 *	Tilføjelsesindstillinger administreres fra NVDA-konfiguration, så
   standardprofiler kan bruges til at gemme forskellige separatorer, og det
   er ikke nødvendigt at kopiere indstillingerne til import ved
@@ -67,21 +68,21 @@ Notes:
   begyndelsen eller slutningen, ved at markere checkboksen "Tilføj tekst før
   data i udklipsholder" i dialogen Indstillinger for udklipsdesigner.
 
-## Ændringer i 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if
-  MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
-*	Der kan knyttes en genvejstast til at åbne dialogen Indstillinger for Clip
-  Contents Designer.
-*	Tilføjede en checkboks i Indstillinger-dialogen til at vælge, om
+## ændringer i 3.0 ##
+*	Punktskriftrepræsentation af MathML-objekter kan tilføjes til
+  udklipsholderen, hvis MathPlayer er installeret.
+*	Hvis der ikke er indstillet nogen separator, vil der blot blive indsat en
+  enkelt linje mellem de tilføjede tekstsegmenter.
+*	Der kan knyttes en genvejstast til at åbne dialogen Indstillinger for
+  Udklipsdesigner.
+*	Tilføjede en checkboks i dialogen Indstillinger til at vælge, om
   separatoren skal kopieres, så den kan importeres, når
   tilføjelsesprogrammet bliver geninstalleret.
 
-## Ændringer i 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+## ændringer i 2.0 ##
+*	Hindi-tegn kan nu bruges som separator mellem tilføjet indhold.
 
-## Ændringer i 1.0 ##
+## ændringer i 1.0 ##
 *	Første version.
 
 

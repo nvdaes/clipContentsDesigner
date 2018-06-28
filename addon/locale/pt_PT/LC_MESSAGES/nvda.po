@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-12-14 18:01+0000\n"
+"PO-Revision-Date: 2018-06-21 22:15+0100\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -38,9 +38,8 @@ msgid "Configure Emulate copy and cut"
 msgstr "Configurar emulação de copiar e cortar."
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Mostra as configurações do gestor da área de transferência. "
+msgstr "Mostra as configurações do gestor da área de transferência."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
