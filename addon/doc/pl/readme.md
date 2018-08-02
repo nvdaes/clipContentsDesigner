@@ -1,4 +1,4 @@
-# Projektant zawartości schowka / Clip Contents Designer #
+# Clip Contents Designer #
 
 *	Autorzy: Noelia Ruiz Martínez.
 *	Pobierz [wersja stabilna][1]
@@ -23,7 +23,7 @@ Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
 
-Notes:
+Uwagi:
 
 *	The above command can be changed from NVDA menu, Preferences submenu,
   Input gestures dialog, Configuration category.

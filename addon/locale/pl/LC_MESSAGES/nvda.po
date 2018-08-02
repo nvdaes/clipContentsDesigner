@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-06-26 03:00+1000\n"
-"PO-Revision-Date: 2018-05-20 12:00+0100\n"
+"PO-Revision-Date: 2018-07-28 18:21+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: pl <LL@li.org>\n"
 "Language: pl\n"
@@ -33,12 +33,11 @@ msgstr ""
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Konfigurowanie emulacji kopiowania i wklejaniacut"
+msgstr "Konfigurowanie emulacji kopiowania i wklejania"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Wyświetla dialog ustawień projektanta zawartości schowka."
+msgstr "Wyświetla dialog ustawień dodatku Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -122,11 +121,11 @@ msgstr "Kopiuję do schowka"
 msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "kopiuje z schowka, uprzednio pytając o zgodeconfirmation"
+msgstr "kopiuje ze schowka, uprzednio pytając o zgodeconfirmation"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Proszę potwierdzić wycinanie ze schorka"
+msgstr "Proszę potwierdzić wycinanie ze schowka"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
@@ -136,7 +135,7 @@ msgstr "Wycinam ze schowka"
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "wycina z schowka, uprzednio pytając o zgode"
+msgstr "wycina ze schowka, uprzednio pytając o zgode"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -164,7 +163,7 @@ msgstr "&Potwierdzenie emulowania kopiowania"
 
 #. Translators: label of a dialog.
 msgid "&Confirm to emulate cut"
-msgstr "&Potwierdzenie emulowania wcięcia"
+msgstr "&Potwierdzenie emulowania wycięcia"
 
 #. Translators: label of a dialog.
 msgid "&Text in clipboard to confirm"
