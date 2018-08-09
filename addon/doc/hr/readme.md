@@ -31,10 +31,9 @@ Napomene:
 
 ## Changes for 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
+* Postavke dodatka prikazane su u odgovarajućoj kategoriji postavki NVDA.
 * Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
+* Ako je potrebno, možete preuzeti [zadnju inačicu kompatibilnu sa NVDA
   2017.3][3].
 
 ## Changes for 7.0

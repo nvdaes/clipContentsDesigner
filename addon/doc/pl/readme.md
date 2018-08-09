@@ -13,32 +13,31 @@ Zawartość schowka może również być wyczyszczona.
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
 *	NVDA+windows+x: wyczyść zawartość schowka.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+windows+f9: Zaznacza obecne położenie kursora przeglądu, kiedy początek tekstu ma być dodany do schowka. Po naciśnięciu nvda+F9, tekst nie zostanie dodany do schowka.
+*	 Nieprzypisano: Kopiuje do schowka lub wycina z niego, może wystąpić zapytanie o potwierdzenie.
 
 Uwaga: powyższe polecenia mogą zostać zmienione z menu NVDA, Podmenu
 Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
 ## Menu ustawienia ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+*	Ustawienia Clip Contents Designer: Można ustawić specjalny separator, który pomaga znaleźć fragmenty tekstu gdy cała zawartość schowka została już wklejona.
+Można tam też określić, czy dodany tekst będzie czymś poprzedzony, czy nowy tekst znajdzie się za nim. Oprócz tego, można zdecydować, czy dostępne opcje (dodawanie, wyczyszczenie schowka, emulowanie kopiowania i emulowanie wycinania) mają być wykonane od razu, czy po potwierdzeniu oraz czy dodatek będzie prosił o potwierdzenia wtedy, gdy tekst jest w schowku.
 
 Uwagi:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	Powyższy skrót można zmienić w menu NVDA, podmenu Ustawienia, Zdarzenia
+  wejścia, Panel Konfiguracji.
+*	Jeśli okno dialogowe NVDA jest nadal otwarte, dodatek nie będzie prosił o
+  potwierdzenie. W takim wypadku, czynności zostaną natychmiastowo wykonane.
 
-## Changes for 8.0 ##
+## Zmiany w wersji 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+* Ustawienia dodatku są wyświetlane w odpowiedniej kategorii dialogu
+  ustawień NVDA.
+* Wymaga NVDA 2018.2 lub nowszej.
+* W razie potrzeby, można pobrać [najnowszą wersję zgodną z NVDA 2017.3][3].
 
-## Changes for 7.0
+## Zmiany w wersji 7.0
 
 * In the dialog to configure the Emulate copy and Emulate cut
   functionalities at installation, if you choose no, the commands for these
@@ -47,10 +46,10 @@ Uwagi:
 
 ## Zmiany w wersji 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Dodano opcje pozwalające wybrać, czy dostępne czynności mają być wykonane dopiero po ich potwierdzeniu.
+*	Dodano skróty emulowania kopiowania i emulowania wycinania, które można przypisać w oknie dialogowym Zdarzeń wejścia.
+*	 Dodano okno dialogowe służące do ustawiania funkcji emulowania kopiowania i emulowania wycinania podczas instalacji dodatku. Pozwala to na dodawanie skrótów control+c i control+x do kopiowania i wycinania, oraz wywołania pytania, czy zawartość schowka ma zostać zastąpiona po naciśnięciu tych skrótów.
+*	Poprawiono dokumentację dla skryptu_add (Windows+NVDA+c).
 
 ## Zmiany w wersji 5.0 ##
 
