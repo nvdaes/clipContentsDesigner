@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2016-12-29 15:58-0800\n"
+"PO-Revision-Date: 2018-08-22 16:11+0100\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -17,13 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "Nastavitve &Clip Contents Designer..."
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"Ta dodatek vam dovoljuje potrditi, če želite preslikati in izrezati, z "
+"zamenjavo vsebine odložišča, ko pritisnete control+c in control+x. To se "
+"imenuje Oponašanje preslikave in izreza in privzeto to deluje samo, ko "
+"odložišče vsebuje besedilo. Želite nastaviti Oponašanje preslikave in izreza "
+"zdaj? To lahko storite ali spremenite tudi kasneje."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Nastavi Oponašanje preslikave in izreza"
 
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Prikazuje pogovorno okno nastavitev Clip Contents Designer."
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Prikazuje nastavitve Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -49,9 +63,21 @@ msgstr ""
 msgid "No selection. No start marker set"
 msgstr "Brez izbora. Točka začetka ni postavljena."
 
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "Točka začetka mora obstajati znotraj istega predmeta"
+
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
 msgstr "Ni besedila za dodati"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Prosimo, potrdite, če želite dodati besedilo v odložišče"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Dodajanje besedila v odložišče"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -70,13 +96,45 @@ msgstr ""
 "Izbran niz ali vsebino od predhodno postavljene točke začetka do vključno "
 "trenutnega položaja pregledne utripalke obdela in doda v odložišče."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Prosimo, potrdite, če želite počistiti odložišče"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Čiščenje odložišča"
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Izbriše tako dodano, kot osnovno vsebino odložišča."
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Nastavitve Clip Contents Designer"
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Prosimo, potrdite, če želite preslikati v odložišče"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Preslikava v odložišče"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Preslika v odložišče z možnostjo zaprosila po predhodni odobritvi"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Prosimo, potrdite, če želite izrezati iz odložišča"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Izrezovanje iz odložišča"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Izreže iz odložišča z možnostjo zaprosila po predhodni odobritvi"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -88,6 +146,26 @@ msgstr "Vnesi niz, ki bo &ločnica med besedilom, ki ga dodajate v odložišče.
 msgid "&Add text before clip data"
 msgstr "&Dodaj besedilo pred izrezkom podatkov"
 
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "Potrdi &dodajanje besedila"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "Potrdi &čiščenje odložišča"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "Potrdi oponašanje &preslikave"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "Potrdi oponašanje &izreza"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "Potrjevanje &besedila v odložišču"
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -97,3 +175,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatek namenjen upravljanju z vsebino odložišča"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "Nastavitve &Clip Contents Designer..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Nastavitve Clip Contents Designer"
