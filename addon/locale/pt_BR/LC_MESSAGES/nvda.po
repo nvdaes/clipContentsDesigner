@@ -1,22 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Brazilian Portuguese translation of Clip Contents Designer.
+# Copyright (C) 2014-2018 NVDA Contributors.
+# This file is distributed under the same license as the NVDA package.
+# Cleverson Casarin Uliana <clever97@gmail.com>, 2014, 2015, 2016, 2017.
+# Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-11-05 10:29-0300\n"
-"Last-Translator: Cleverson Casarin Uliana <clever97@gmail.com>\n"
+"PO-Revision-Date: 2018-08-29 19:24-0300\n"
+"Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
 "Language-Team: Equipe de tradução do NVDA para Português do Brasil "
 "<clever97@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.6.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: label of a dialog.
@@ -38,9 +38,9 @@ msgid "Configure Emulate copy and cut"
 msgstr "Configurar emulação de copiar e cortar"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Exibe o diálogo de opções do Gestor do conteúdo de transferência."
+msgstr ""
+"Mostra o diálogo de configurações do Gestor do conteúdo de transferência."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -68,7 +68,7 @@ msgstr "Sem seleção. Nenhum marcador inicial definido"
 
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
-msgstr ""
+msgstr "O marcador de início deve residir no mesmo objeto"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"

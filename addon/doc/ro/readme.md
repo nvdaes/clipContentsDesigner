@@ -1,6 +1,6 @@
 # Clip Contents Designer #
 
-*	Autori: Noelia Ruiz Martinez.
+*	Autori: Noelia Ruiz Martínez.
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 

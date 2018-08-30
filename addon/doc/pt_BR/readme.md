@@ -6,15 +6,15 @@
 
 Este complemento é usado para acrescentar texto à área de transferência, o
 que pode ser útil quando você quiser juntar seções de texto num só, pronto
-para colar.  O conteúdo da área de transferência pode também ser apagado.
+para colar. O conteúdo da área de transferência pode também ser apagado.
 
 ## Comandos de tecla ##
 *	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres unicode em
   braile que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	NVDA+windows+f9: Marca a posição atual do cursor de exploração como o início do texto a ser acrescentado à área de transferência. Se você usar nvda+F9, o texto não será acrescentado.
+*	 Não atribuído: Copia para (ou corta) a área de transferência com possibilidade de ser previamente consultado para confirmar.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo de Gestos para Entrada, categoria Exploração
@@ -31,20 +31,20 @@ Notas:
 *	Confirmação não será solicitada quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as ações serão executadas de imediato
 
-## Changes for 8.0 ##
+## Mudanças na 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+* As configurações do complemento são mostradas na categoria correspondente
+  da caixa de diálogo Configurações do NVDA.
+* Requer NVDA 2018.2 ou posterior.
+* Se necessário, você pode fazer o download da [última versão compatível com
+  o NVDA 2017.3][3].
 
-## Changes for 7.0
+## Mudanças na 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+* Na caixa de diálogo da instalação para configurar as funcionalidades
+  Emular cópia e Emular corte, se você escolher não, os comandos para esses
+  recursos serão removidos, para que você possa restaurar o comportamento
+  normal para control+c e control+x.
 
 ## Mudanças na 6.0
 
