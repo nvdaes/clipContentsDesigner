@@ -64,4 +64,5 @@ Notes:
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
-[3]: https://github.com/nvdaes/clipContentsDesigner/releases/download/7.2/clipContentsDesigner-7.2.nvda-addon
+
+[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o
