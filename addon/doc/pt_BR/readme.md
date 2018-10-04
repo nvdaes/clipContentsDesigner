@@ -9,8 +9,8 @@ que pode ser útil quando você quiser juntar seções de texto num só, pronto
 para colar. O conteúdo da área de transferência pode também ser apagado.
 
 ## Comandos de tecla ##
-*	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres unicode em
-  braile que representem objetos MathML, ou a cadeia que foi marcada com o
+*	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres unicode
+  braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: Apaga o conteúdo da área de transferência.
 *	NVDA+windows+f9: Marca a posição atual do cursor de exploração como o início do texto a ser acrescentado à área de transferência. Se você usar nvda+F9, o texto não será acrescentado.
@@ -69,7 +69,7 @@ Notas:
   transferência.
 
 ## Mudanças na 3.0 ##
-*	Representações braile de objetos MathML podem ser acrescentadas à área de
+*	Representações braille de objetos MathML podem ser acrescentadas à área de
   transferência se o MathPlayer estiver instalado.
 *	Caso nenhum separador seja configurado, apenas uma linha será colocada
   entre os segmentos de texto acrescentados.

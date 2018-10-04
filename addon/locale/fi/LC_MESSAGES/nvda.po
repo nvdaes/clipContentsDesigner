@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-06-15 08:42+0200\n"
+"PO-Revision-Date: 2018-09-28 07:54+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -26,8 +26,8 @@ msgid ""
 "text. Do you want to configure Emulate copy and cut now? You may do or "
 "change this later."
 msgstr ""
-"Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopioinnin (Ctrl+C) ja "
-"leikkaamisen (Ctrl+X) suorittamiseen, jotka korvaavat leikepöydän sisällön. "
+"Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopiointia (Ctrl+C) ja "
+"leikkaamista (Ctrl+X) suoritettaessa, jolloin leikepöydän sisältö korvataan. "
 "Vahvistus pyydetään vain, kun leikepöydällä on tekstiä. Haluatko määrittää "
 "kopioinnin ja leikkaamisen vahvistuskyselyn nyt? Voit muuttaa tätä myöhemmin."
 
@@ -77,7 +77,7 @@ msgstr "Vahvista, haluatko lisätä tekstiä leikepöydälle"
 
 #. Translators: Title of a dialog.
 msgid "Adding text to clipboard"
-msgstr "Lisätään teksti leikepöydälle"
+msgstr "Tekstin lisääminen leikepöydälle"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -103,7 +103,7 @@ msgstr "Vahvista, haluatko tyhjentää leikepöydän"
 
 #. Translators: Title of a dialog.
 msgid "Clearing clipboard"
-msgstr "Tyhjennetään leikepöytä"
+msgstr "Leikepöydän tyhjentäminen"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
@@ -115,7 +115,7 @@ msgstr "Vahvista, haluatko kopioida leikepöydälle"
 
 #. Translators: Title of a dialog.
 msgid "Copying to clipboard"
-msgstr "Kopioidaan leikepöydälle"
+msgstr "Leikepöydälle kopioiminen"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -131,7 +131,7 @@ msgstr "Vahvista, haluatko leikata leikepöydälle"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
-msgstr "Leikataan leikepöydälle"
+msgstr "Leikepöydälle leikkaaminen"
 
 #. Translators: message presented in input mode.
 msgid ""
