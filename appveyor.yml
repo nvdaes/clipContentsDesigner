@@ -30,3 +30,9 @@ deploy:
   artifact: addon
   on:
     appveyor_repo_tag: true
+    
+notifications:
+  - provider: Email
+    to:
+      - nrm1977@gmail.com
+      
