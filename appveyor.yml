@@ -34,5 +34,5 @@ deploy:
 notifications:
   - provider: Email
     to:
-      - nrm1977@gmail.com
+      - NVDAADDONSCOMMITS+int+237+3535027023199974847@nvdaes.groups.io
       
