@@ -30,9 +30,3 @@ deploy:
   artifact: addon
   on:
     appveyor_repo_tag: true
-    
-notifications:
-  - provider: Email
-    to:
-      - NVDAADDONSCOMMITS+int+237+3535027023199974847@nvdaes.groups.io
-      
