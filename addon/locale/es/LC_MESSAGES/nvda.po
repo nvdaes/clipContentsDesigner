@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-06-26 17:37+0100\n"
-"Last-Translator: Juan C. Buño <oprisniki@gmail.com>\n"
+"PO-Revision-Date: 2018-11-21 08:54+0100\n"
+"Last-Translator: Iván Novegil <ivan.novegil.cancelas@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 2.2\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -25,11 +25,11 @@ msgid ""
 "text. Do you want to configure Emulate copy and cut now? You may do or "
 "change this later."
 msgstr ""
-"Este complemento permite confirmar si quieres copiar y cortar, reemplazar "
-"los contenidos del portapapeles, al pulsar control+c y control+x. Esto se "
-"llama emular copiar y cortar, y por omisión funciona sólo cuando el "
-"portapapeles contenga texto. ¿Quieres configurar Emular copiar y cortar "
-"ahora? Podrás hacer esto o cambiarlo más tarde."
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -41,7 +41,7 @@ msgstr "Muestra la configuración de Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
-msgstr "Porpatapeles limpiado"
+msgstr "Portapapeles limpiado"
 
 #. Translators: message presented when the clipboard content cannot be deleted.
 msgid "Clipboard not cleared"

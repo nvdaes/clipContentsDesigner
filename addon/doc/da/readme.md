@@ -1,6 +1,6 @@
 # Clip Contents Designer (Udklipsdesigner) #
 
-*	Authors: Noelia Ruiz Martínez.
+*	Forfatter: Noelia Ruiz Martinez.
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
@@ -92,4 +92,5 @@ Bemærkninger:
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
+[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o[1]:
+https://addons.nvda-project.org/files/get.php?file=ccd
