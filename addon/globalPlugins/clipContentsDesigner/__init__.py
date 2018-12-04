@@ -11,6 +11,7 @@ import ui
 import win32clipboard
 import treeInterceptorHandler
 import config
+import core
 import wx
 import gui
 from gui import SettingsPanel, NVDASettingsDialog, guiHelper
@@ -165,10 +166,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Adding text to clipboard"), wx.OK|wx.CANCEL) == wx.OK:
 				if api.copyToClip(text):
 					# Translators: message presented when the text has been added to the clipboard.
-					wx.CallLater(200, ui.message, _("Added"))
+					core.callLater(200, ui.message, _("Added"))
 				else:
 					# Translators: message presented when the text cannot be added to the clipboard.
-					wx.CallLater(200, ui.message, _("Cannot add"))
+					core.callLater(200, ui.message, _("Cannot add"))
 
 	def performAdd(self):
 		text = self.getTextToAdd()
@@ -198,10 +199,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			win32clipboard.OpenClipboard()
 			win32clipboard.EmptyClipboard()
 			# Translators: message presented when the clipboard content has been deleted.
-			wx.CallLater(200, ui.message, _("Clipboard cleared"))
+			core.callLater(200, ui.message, _("Clipboard cleared"))
 		except win32clipboard.error:
 			# Translators: message presented when the clipboard content cannot be deleted.
-			wx.CallLater(200, ui.message, _("Clipboard not cleared"))
+			core.callLater(200, ui.message, _("Clipboard not cleared"))
 		finally:
 			win32clipboard.CloseClipboard()
 
@@ -232,7 +233,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if text:
 			api.copyToClip(text)
 		else:
-			wx.CallLater(200, self.copy)
+			core.callLater(200, self.copy)
 
 	def script_copy(self, gesture):
 		if (config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox
@@ -252,7 +253,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: Title of a dialog.
 			_("Cutting from clipboard"), wx.OK|wx.CANCEL) != wx.OK:
 				return
-		wx.CallLater(200, self.cut)
+		core.callLater(200, self.cut)
 
 	def script_cut(self, gesture):
 		if (config.conf["clipContentsDesigner"]["confirmToCut"] and not gui.isInMessageBox
