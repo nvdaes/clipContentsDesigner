@@ -1,6 +1,7 @@
 # Leikepöydän sisällön käsittelijä #
 
 *	Tekijä: Noelia Ruiz Martínez
+*	NVDA-yhteensopivuus: 2018.2-2019.1.
 *	Lataa [vakaa versio][1]
 *	Lataa [kehitysversio][2]
 

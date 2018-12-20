@@ -1,6 +1,7 @@
 # Clip Contents Designer #
 
 *	Autor: Noelia Ruiz Martínez
+*	NVDA compatibility: 2018.2 to 2019.1.
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 

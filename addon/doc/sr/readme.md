@@ -1,6 +1,7 @@
 # Dizajner sadržaja privremene memorije #
 
 *	Autor: Noelia Ruiz Martínez.
+*	NVDA compatibility: 2018.2 to 2019.1.
 *	preuzmi [stabilnu verziju][1]
 *	preuzmi [verziju u razvoju][2]
 

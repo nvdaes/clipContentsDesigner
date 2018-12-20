@@ -2,6 +2,7 @@
 
 *	- Készítők: Noelia Ruiz Martínez.  - Letöltés [Stabil verzió][1] -
   Letöltés [Fejlesztői verzió][2]
+*	NVDA compatibility: 2018.2 to 2019.1.
 *	[Stabil verzió][1] letöltése
 *	[Fejlesztői verzió][2] letöltése
 

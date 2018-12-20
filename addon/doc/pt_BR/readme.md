@@ -1,6 +1,7 @@
 # Gestor do conteúdo de transferência #
 
 *	Autores: Noelia Ruiz Martínez.
+*	NVDA compatibility: 2018.2 to 2019.1.
 *	Baixe a [versão estável][1]
 *	Baixe a [versão de desenvolvimento][2]
 

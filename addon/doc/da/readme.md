@@ -1,6 +1,7 @@
 # Clip Contents Designer (Udklipsdesigner) #
 
 *	Forfatter: Noelia Ruiz Martinez.
+*	NVDA compatibility: 2018.2 to 2019.1.
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
