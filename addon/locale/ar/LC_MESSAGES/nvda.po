@@ -8,22 +8,35 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2017-04-20 13:12+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2018-12-24 10:33+0200\n"
+"Last-Translator: wafiqtaher <wafiqtaher@gmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.11\n"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "أعدادات &Clip Contents Designer"
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
+msgstr ""
+"تسمح هذه الإضافة بتأكيد ما إذا كنت تريد النسخ والقص ، واستبدال محتويات "
+"الحافظة ، عند الضغط على control + c و control + x. يستدعى مربع الحوار هذا "
+"للتأكيد على النسخة و القص ، وبشكل افتراضي يعمل فقط عندما تحتوي الحافظة على "
+"نص. هل تريد التأكيد"
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "تكوين محاكاة القص و النسخ"
 
 #. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "يظهر إعدادات Clip Contents Designer"
+msgid "Shows the Clip Contents Designer settings."
+msgstr "يظهر إعدادات Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -47,9 +60,21 @@ msgstr "تحديد الموضع الحالي لمؤشر الاستعراض كب�
 msgid "No selection. No start marker set"
 msgstr "لا يوجد نص محدد. لم توضع علامة لبداية التحديد"
 
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "علامة البداية يجب أن تتواجد في نفس الكائن "
+
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
 msgstr "لا يوجد نص لإلحاقه بالحافظة"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت ترغب في إضافة نص إلى الحافظة "
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "إضافة النص الى الحافظة"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -68,13 +93,45 @@ msgstr ""
 "استرجاع النص المحدد بداية من علامة التحديد التي تم تعيينها مسبقاويشمل ذلك "
 "استرجاع الموضع الحالي لمؤشر الاستعراض وإلحاقه بالحافظة."
 
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت ترغب في مسح الحافظة "
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "مسح الحافظة "
+
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "حذف النص المضاف للحافظة ومحتواها."
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "إعدادات Clip Contents Designer"
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت تريد نسخ إلى الحافظة "
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "نسخ إلى الحافظة "
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "نسخ إلى الحافظة ، مع إمكانية التأكيد على ذلك مسبقاً"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت ترغب في القص من الحافظة "
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "قص من الحافظة "
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "التأكيد على القص من الحافظة"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -86,10 +143,30 @@ msgstr "اكتب الرمز الذي سيستخدم ك&فاصل بين النص�
 msgid "&Add text before clip data"
 msgstr "إ&لحاق نص قبل البيانات الموجودة بالحافظة"
 
+#. Translators: label of a dialog.
+msgid "Confirm to a&dd text"
+msgstr "التأكيد على إ&ضافة النص"
+
+#. Translators: label of a dialog.
+msgid "Confirm to c&lear clipboard"
+msgstr "التأكيد على مس&ح الحافظة"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate copy"
+msgstr "التأكيد على الن&سخ"
+
+#. Translators: label of a dialog.
+msgid "&Confirm to emulate cut"
+msgstr "التأكيد على الق&ص"
+
+#. Translators: label of a dialog.
+msgid "&Text in clipboard to confirm"
+msgstr "التأ&كيد عند وجود نص في الحافظة"
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgstr "التحكم في محتوى الحافظة"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
