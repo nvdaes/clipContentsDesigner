@@ -1,14 +1,13 @@
 # Clip Contents Designer #
 
 *	Autori: Noelia Ruiz Martínez.
-*	NVDA compatibility: 2018.2 to 2019.1.
-*	Download [stable version][1]
-*	Download [development version][2]
+*	Compatibile con NVDA  2018.2 a 2019.1.
+*	Scarica la [versione stabile][1]
+*	Scarica la [versione in sviluppo][2]
 
-Questo componente aggiuntivo viene utilizzato per aggiungere il testo agli
-appunti, il che può essere utile quando si desidera unire sezioni di testo
-insieme per poi incollarlo. Il contenuto degli appunti può essere
-cancellato.
+Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
+appunti, operazione utile quando si desidera unire sezioni di testo insieme
+per poi incollarlo. Il contenuto degli appunti può anche essere cancellato.
 
 ## Comandi rapidi ##
 *	NVDA + Windows + C: Aggiunge e copia negli appunti il testo selezionato, o
@@ -16,8 +15,7 @@ cancellato.
   che è stata contrassegnata con il cursore di controllo.
 *	NVDA + Windows + x: Cancella contenuto degli appunti.
 *	NVDA + Windows + f9: Marca la posizione corrente del cursore di controllo come l'inizio del testo da aggiungere negli Appunti. Se si utilizza NVDA + F9, il testo non verrà aggiunto.
- Non assegnato: copia o taglia dagli appunti, con possibilità di essere avvisati tramite una conferma prima che l'azione sia eseguita.
-
+*	 Non assegnato: copia o taglia dagli appunti, con possibilità di essere avvisati tramite una conferma prima che l'azione sia eseguita.
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
@@ -26,28 +24,25 @@ sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
 *	Impostazioni Clip Contents Designer: Permette di impostare un separatore che può essere utilizzato per trovare i segmenti di testo quando l'intero testo aggiunto viene incollato.
 è anche possibile stabilire se il testo aggiunto debba essere accodato o anteposto, se le azioni disponibili (aggiungi, svuota appunti, simula copia e simula taglia) debbano essere eseguite immediatamente o previa conferma, e se tale conferma verrà richiesta solo se vi è testo contenuto negli appunti.
 
+Nota:
 
-Note:
-
-*	Il comando di cui sopra può essere modificato dal menu di NVDA, sottomenu
+*	Il comando sopra citato può essere modificato dal menu di NVDA, sottomenu
   Preferenze, gesti di immissione, categoria Configurazione
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	Quando è aperta una finestra di NVDA non verrà visualizzato il messaggio
+  di conferma. In questa situazione lazione verrà eseguita direttamente.
 
 ## Cambiamenti per 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
+* Le impostazioni del componente aggiuntivo verranno visualizzate sulla
+  corrispondente categoria della finestra  impostazioni di NVDA.
 * Richiede NVDA 2018.2 o successive.
-* If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+* E' possibile scaricare [l'ultima versione compatibile con NVDA 2017.3][3].
 
 ## Cambiamenti per 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+* Se durante l'installazione si sceglie di non usare  la simulazione copia e
+  la simulazione taglia, questi comandi verranno rimossi, in questo modo si
+  possono  utilizare control+C e control+x normalmente.
 
 ## Cambiamenti per 6.0
 
