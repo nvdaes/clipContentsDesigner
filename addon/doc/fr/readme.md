@@ -5,10 +5,10 @@
 *	Télécharger [version stable][1]
 *	Télécharger [version de développement][2]
 
-Ce module complémentaire est utilisé pour ajouter du texte dans le
-presse-papiers, ce qui peut être utile lorsque vous souhaitez relier des
-portions de texte ensemble prêt pour le collage. Le contenu du
-presse-papiers peut aussi être vidé.
+Cette extension est utilisée pour ajouter du texte dans le presse-papiers,
+ce qui peut être utile lorsque vous souhaitez relier des portions de texte
+ensemble prêt pour le collage. Le contenu du presse-papiers peut aussi être
+vidé.
 
 ## Commandes clavier ##
 *	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
@@ -37,7 +37,7 @@ Notes :
 
 ## Changements pour la version 8.0 ##
 
-* Les paramètres du module complémentaire sont affichés dans la catégorie
+* Les paramètres de l'extension sont affichés dans la catégorie
   correspondante au dialogue Paramètres NVDA.
 * Nécessite NVDA 2018.2 ou ultérieur.
 * Si nécessaire, vous pouvez télécharger la [dernière version compatible
@@ -45,10 +45,10 @@ Notes :
 
 ## Changements pour la version 7.0
 
-* Dans la boîte de dialogue pour configurer les fonctionnalités Émuler
-  copier et Émuler couper à l'installation, si vous choisissez non, les
-  commandes pour ces fonctionnalités seront supprimées, de sorte que vous
-  pouvez restaurer le comportement normal pour contrôle+c et contrôle+x.
+* Dans le dialogue pour configurer les fonctionnalités Émuler copier et
+  Émuler couper à l'installation, si vous choisissez non, les commandes pour
+  ces fonctionnalités seront supprimées, de sorte que vous pouvez restaurer
+  le comportement normal pour contrôle+c et contrôle+x.
 
 ## Changements pour la version 6.0
 
@@ -64,10 +64,10 @@ Notes :
 *	Nécessite NVDA 2016.4 ou ultérieur.
 
 ## Changements pour la version 4.0 ##
-*	Les paramètres du module complémentaire sont gérés à partir de la
-  configuration NVDA, afin que les profils standard puisse être utilisés
-  pour enregistrer des séparateurs différents, et il n’a pas besoin d'être
-  copier les paramètres lors de l'importation pendant la réinstallation.
+*	Les paramètres de l'extension sont gérés à partir de la configuration
+  NVDA, afin que les profils standard puisse être utilisés pour enregistrer
+  des séparateurs différents, et les paramètres n'ont pas besoin d'être
+  copiés lors de l'importation pendant la réinstallation.
 *	Il est maintenant possible de choisir si l’ajout de texte sera ajouté à la
   fin ou ajouté au début, en utilisant la case à cocher Ajouter du texte
   avant l'insertion des données à partir de la boîte de dialogue Paramètres
