@@ -34,6 +34,7 @@ confspec = {
 	"confirmToCopy": "boolean(default=False)",
 	"confirmToCut": "boolean(default=False)",
 	"confirmationRequirement": "integer(default=0)",
+	"maxLengthForBrowseableText": "integer(default=100000)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
@@ -277,11 +278,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except:
 			text = None
 		if not text or not isinstance(text,basestring) or text.isspace():
-			# Translators: Presented when there is no text on the clipboard.
-			ui.message(_("There is no text on the clipboard"))
-			return
-		# Translators: a message presented in browse mode.
-		ui.browseableMessage(text, _("Clipboard text"))
+			win32clipboard.OpenClipboard()
+			clipFormat = win32clipboard.EnumClipboardFormats()
+			win32clipboard.CloseClipboard()
+			if clipFormat:
+				# Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+				ui.message(_("Clipboard is not empty, but there is no text to show"))
+			else:
+				# Translators: presented when clipboard is empty.
+				ui.message(_("Clipboard is empty"))
+		else:
+			maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] if config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text) else len(text)
+			browseableText = "<pre>%s</pre>" % text[:maxLength]
+			# Translators: title of a browseable message.
+			ui.browseableMessage(browseableText, _("Clipboard text (%d/%d)" % (maxLength, len(text))), True)
 	script_showClipboardText.__doc__ = _("Shows the clipboard text in browse mode")
 
 	__gestures = {
@@ -332,7 +342,7 @@ class AddonSettingsPanel(SettingsPanel):
 		self.confirmList.CheckedItems = checkedItems
 		self.confirmList.Select(0)
 		# Translators: label of a dialog.
-		confirmRequirementsLabel = _("Request confirmation before performing the selected actions when:")
+		confirmRequirementsLabel = _("&Request confirmation before performing the selected actions when:")
 		requirementChoices = [
 			# Translators: label of a dialog.
 			_("Always"),
@@ -343,6 +353,9 @@ class AddonSettingsPanel(SettingsPanel):
 		]
 		self.confirmRequirementChoices = sHelper.addLabeledControl(confirmRequirementsLabel, wx.Choice, choices=requirementChoices)
 		self.confirmRequirementChoices.SetSelection(config.conf["clipContentsDesigner"]["confirmationRequirement"])
+		# Translators: label of a dialog.
+		maxLengthLabel=wx.StaticText(self,-1,label=_("&Maximum number of characters when showing clipboard text in browse mode"))
+		self.maxLengthEdit=gui.nvdaControls.SelectOnFocusSpinCtrl(self, min=1, max=1000000, initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"])
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
@@ -355,3 +368,4 @@ class AddonSettingsPanel(SettingsPanel):
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmList.IsChecked(2)
 		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmList.IsChecked(3)
 		config.conf["clipContentsDesigner"]["confirmationRequirement"] = self.confirmRequirementChoices.GetSelection()
+		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = self.maxLengthEdit.GetValue()
