@@ -33,7 +33,7 @@ confspec = {
 	"confirmToClear": "boolean(default=False)",
 	"confirmToCopy": "boolean(default=False)",
 	"confirmToCut": "boolean(default=False)",
-	"requireTextForConfirmation": "boolean(default=True)",
+	"confirmationRequirement": "integer(default=0)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
@@ -148,13 +148,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		return text
 
 	def requiredFormatInClip(self):
-		if not config.conf["clipContentsDesigner"]["requireTextForConfirmation"]:
+		if config.conf["clipContentsDesigner"]["confirmationRequirement"] == 0:
 			return True
-		try:
-			text = api.getClipData()
+		if config.conf["clipContentsDesigner"]["confirmationRequirement"] == 1:
+			try:
+				clipData = api.getClipData()
+				return True
+			except TypeError:
+				return False
+		win32clipboard.OpenClipboard()
+		clipFormat = win32clipboard.EnumClipboardFormats()
+		win32clipboard.CloseClipboard()
+		if clipFormat:
 			return True
-		except:
-			return False
+		return False
 
 	def confirmAdd(self):
 		text = self.getTextToAdd()
@@ -264,6 +271,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Translators: message presented in input mode.
 	script_cut.__doc__ = _("Cuts from the clipboard, with the possibility of being asked for a previous confirmation")
 
+	def script_showClipboardText(self, gesture):
+		try:
+			text = api.getClipData()
+		except:
+			text = None
+		if not text or not isinstance(text,basestring) or text.isspace():
+			# Translators: Presented when there is no text on the clipboard.
+			ui.message(_("There is no text on the clipboard"))
+			return
+		# Translators: a message presented in browse mode.
+		ui.browseableMessage(text, _("Clipboard text"))
+	script_showClipboardText.__doc__ = _("Shows the clipboard text in browse mode")
+
 	__gestures = {
 		"kb:NVDA+windows+c": "add",
 		"kb:NVDA+windows+x": "clear",
@@ -288,20 +308,41 @@ class AddonSettingsPanel(SettingsPanel):
 		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
 		# Translators: label of a dialog.
-		self.confirmAddCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to a&dd text")))
-		self.confirmAddCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToAdd"])
+		confirmBoxLabel = _("Sele&ct the actions which require previous confirmation")
+		confirmChoices = [
+			# Translators: label of a dialog.
+			_("Confirm to add text"),
+			# Translators: label of a dialog.
+			_("Confirm to clear clipboard"),
+			# Translators: label of a dialog.
+			_("Confirm to emulate copy"),
+			# Translators: label of a dialog.
+			_("Confirm to emulate cut"),
+		]
+		self.confirmList=sHelper.addLabeledControl(confirmBoxLabel, gui.nvdaControls.CustomCheckListBox, choices=confirmChoices)
+		checkedItems = []
+		if config.conf["clipContentsDesigner"]["confirmToAdd"]:
+			checkedItems.append(0)
+		if config.conf["clipContentsDesigner"]["confirmToClear"]:
+			checkedItems.append(1)
+		if config.conf["clipContentsDesigner"]["confirmToCopy"]:
+			checkedItems.append(2)
+		if config.conf["clipContentsDesigner"]["confirmToCut"]:
+			checkedItems.append(3)
+		self.confirmList.CheckedItems = checkedItems
+		self.confirmList.Select(0)
 		# Translators: label of a dialog.
-		self.confirmClearCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("Confirm to c&lear clipboard")))
-		self.confirmClearCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToClear"])
-		# Translators: label of a dialog.
-		self.confirmCopyCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to emulate copy")))
-		self.confirmCopyCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCopy"])
-		# Translators: label of a dialog.
-		self.confirmCutCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Confirm to emulate cut")))
-		self.confirmCutCheckBox.SetValue(config.conf["clipContentsDesigner"]["confirmToCut"])
-		# Translators: label of a dialog.
-		self.requireTextCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Text in clipboard to confirm")))
-		self.requireTextCheckBox.SetValue(config.conf["clipContentsDesigner"]["requireTextForConfirmation"])
+		confirmRequirementsLabel = _("Request confirmation before performing the selected actions when:")
+		requirementChoices = [
+			# Translators: label of a dialog.
+			_("Always"),
+			# Translators: label of a dialog.
+			_("If the clipboard contains text"),
+			# Translators: label of a dialog.
+			_("If the clipboard is not empty"),
+		]
+		self.confirmRequirementChoices = sHelper.addLabeledControl(confirmRequirementsLabel, wx.Choice, choices=requirementChoices)
+		self.confirmRequirementChoices.SetSelection(config.conf["clipContentsDesigner"]["confirmationRequirement"])
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
@@ -309,8 +350,8 @@ class AddonSettingsPanel(SettingsPanel):
 	def onSave(self):
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
 		config.conf["clipContentsDesigner"]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmAddCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmClearCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmCopyCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmCutCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["requireTextForConfirmation"] = self.requireTextCheckBox.GetValue()
+		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmList.IsChecked(0)
+		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmList.IsChecked(1)
+		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmList.IsChecked(2)
+		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmList.IsChecked(3)
+		config.conf["clipContentsDesigner"]["confirmationRequirement"] = self.confirmRequirementChoices.GetSelection()
