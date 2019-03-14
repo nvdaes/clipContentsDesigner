@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-06-14 20:16+0200\n"
+"PO-Revision-Date: 2019-03-08 12:09+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 2.2.1\n"
+"Language-Team: \n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -28,7 +28,7 @@ msgstr ""
 "Тази добавка позволява да потвърдите дали искате да копирате и изрязвате, "
 "като замените съдържанието на клипборда, когато натиснете Control+C и Control"
 "+X. Това се нарича емулиране на копиране и изрязване и по подразбиране "
-"работи само когато клипборда съдържа текст. Искате ли да конфигурирате "
+"работи само когато клипбордът съдържа текст. Искате ли да конфигурирате "
 "емулирането на копиране и изрязване сега? Можете да направите или промените "
 "това по-късно."
 
@@ -58,7 +58,7 @@ msgid ""
 "appended to the clipboard."
 msgstr ""
 "Маркира текущата позиция на курсора за преглед като начало на текста, който "
-"ще бъде прибавен в клипборда."
+"ще бъде добавен в клипборда."
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
@@ -70,7 +70,7 @@ msgstr "Началният маркер трябва да се намира в �
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
-msgstr "Няма текст за прибавяне"
+msgstr "Няма текст за добавяне"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
@@ -82,11 +82,11 @@ msgstr "Добавяне на текст към клипборда"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
-msgstr "Прибавено"
+msgstr "Добавено"
 
 #. Translators: message presented when the text cannot be added to the clipboard.
 msgid "Cannot add"
-msgstr "Не може да се прибави"
+msgstr "Не може да се добави"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -95,8 +95,7 @@ msgid ""
 "adds it to the clipboard."
 msgstr ""
 "Извлича избрания низ или текст от предварително зададения начален маркер до "
-"и включително текущата позиция на курсора за преглед и го прибавя в "
-"клипборда."
+"и включително текущата позиция на курсора за преглед и го добавя в клипборда."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -108,7 +107,7 @@ msgstr "Изчистване на клипборда"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Изтрива прибавения текст и съдържанието на клипборда."
+msgstr "Изтрива добавения текст и съдържанието на клипборда."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
@@ -123,7 +122,7 @@ msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
 msgstr ""
-"Копира в клипборда, с възможност за запитване за потвърждение преди "
+"Копира в клипборда с възможност за запитване за потвърждение преди "
 "извършване на операцията"
 
 #. Translators: Label of a dialog.
@@ -139,7 +138,7 @@ msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
 msgstr ""
-"Изрязва от клипборда, с възможност за запитване за потвърждение преди "
+"Изрязва от клипборда с възможност за запитване за потвърждение преди "
 "извършване на операцията"
 
 #. Translators: label of a dialog.
@@ -147,12 +146,12 @@ msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"Въведете низът, който ще се използва като &разделител между отделните части "
-"на прибавеното в клипборда съдържание."
+"Въведете низа, който ще се използва като &разделител между отделните части "
+"на добавеното в клипборда съдържание."
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
-msgstr "&Прибави текста преди данните в клипборда"
+msgstr "&Добави текста преди данните в клипборда"
 
 #. Translators: label of a dialog.
 msgid "Confirm to a&dd text"
