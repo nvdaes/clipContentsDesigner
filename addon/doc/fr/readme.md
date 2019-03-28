@@ -5,26 +5,27 @@
 *	Télécharger [version stable][1]
 *	Télécharger [version de développement][2]
 
-Cette extension est utilisée pour ajouter du texte dans le presse-papiers,
-ce qui peut être utile lorsque vous souhaitez relier des portions de texte
-ensemble prêt pour le collage. Le contenu du presse-papiers peut aussi être
-vidé.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared an shown in browse mode.
 
 ## Commandes clavier ##
 *	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
 *	NVDA+windows+x : Vide le contenu du presse-papiers.
-*	NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme le début du texte à ajouter au presse-papiers. Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
-*	 Non affecté : Copie dans (ou coupe depuis) le presse-papiers, avec la possibilité de demander une confirmation préalable.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
 la catégorie Revue de texte.
 
 ## Menu Préférences ##
-*	Paramètres Clip Contents Designer : Permet de définir un séparateur qui peut être utilisé pour trouver les segments de texte une fois que tout le texte ajouté est collé.
-Vous pouvez également choisir si l’ajout de texte sera ajouté à la fin ou ajouté au début, si les actions disponibles (ajouter, vider le presse-papiers, émuler copier et émuler couper) doivent être effectuées immédiatement ou après confirmation, et si des confirmations seront demandées juste si le texte est contenu dans le presse-papiers.
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
+Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
 Notes :
 
@@ -34,6 +35,13 @@ Notes :
 *	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
   NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées
   immédiatement
+
+## Changes for 9.0
+
+* Added the possibility of showing the clipboard text in browse mode.
+* Added an option to choose if confirmations will be required if clipboard
+  is not empty, for instance, if files or folders are been copied.
+* Requires NVDA 2018.4 or later.
 
 ## Changements pour la version 8.0 ##
 
@@ -90,6 +98,7 @@ Notes :
 
 ## Changements pour la version 1.0 ##
 *	Première version.
+
 
 
 [[!tag dev stable]]

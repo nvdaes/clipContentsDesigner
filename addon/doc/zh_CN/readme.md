@@ -5,24 +5,35 @@
 *	下载 [稳定版][1]
 *	下载 [开发板][2]
 
-此插件用于向剪贴板添加文本，当您希望将文本部分连接在一起以准备粘贴时，这可能很有用。剪贴板内容也可以清除。
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared an shown in browse mode.
 
 ## 键盘快捷键 ##
 *	NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
 *	NVDA+windows+x: 清除剪贴板内容.
-*	NVDA+windows+f9: 将浏览光标的当前位置标记为要添加到剪贴板的文本的开头。如果您使用nvda + F9，则不会添加文本.
-*	 未分配快捷键：复制到（或剪切）剪贴板，可能会被要求提供先前的确认.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
 
 注意：可以从NVDA菜单，“首选项”子菜单，“输入手势”对话框，“文本审阅”类别更改上述快捷键。
 
 ## 首选项菜单 ##
-*	剪辑内容设计器设置：允许设置一个分隔符，可以在粘贴整个添加的文本后用于查找文本片段.
-如果可以执行的操作（添加，清除剪贴板，模拟副本和模拟剪切）应该立即执行或在确认后执行，并且如果文本包含在文本中，则还可以选择确认，也可以选择是添加还是添加文本。剪贴板.
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
+Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
 注意:
 
 *	可以从NVDA菜单，“首选项”子菜单，“输入手势”对话框，“配置”类别更改上述快捷键。
 *	当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作
+
+## Changes for 9.0
+
+* Added the possibility of showing the clipboard text in browse mode.
+* Added an option to choose if confirmations will be required if clipboard
+  is not empty, for instance, if files or folders are been copied.
+* Requires NVDA 2018.4 or later.
 
 ## 版本8.0 ##
 
@@ -62,6 +73,7 @@
 
 ## 版本1.0 ##
 *	发布初始版本。
+
 
 
 [[!tag dev stable]]

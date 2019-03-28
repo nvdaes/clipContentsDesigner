@@ -5,24 +5,26 @@
 *	Scarica la [versione stabile][1]
 *	Scarica la [versione in sviluppo][2]
 
-Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
-appunti, operazione utile quando si desidera unire sezioni di testo insieme
-per poi incollarlo. Il contenuto degli appunti può anche essere cancellato.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared an shown in browse mode.
 
 ## Comandi rapidi ##
 *	NVDA + Windows + C: Aggiunge e copia negli appunti il testo selezionato, o
   i caratteri braille unicode che rappresentano oggetti MathMl, o la stringa
   che è stata contrassegnata con il cursore di controllo.
 *	NVDA + Windows + x: Cancella contenuto degli appunti.
-*	NVDA + Windows + f9: Marca la posizione corrente del cursore di controllo come l'inizio del testo da aggiungere negli Appunti. Se si utilizza NVDA + F9, il testo non verrà aggiunto.
-*	 Non assegnato: copia o taglia dagli appunti, con possibilità di essere avvisati tramite una conferma prima che l'azione sia eseguita.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
 
 ## Menu preferenze ##
-*	Impostazioni Clip Contents Designer: Permette di impostare un separatore che può essere utilizzato per trovare i segmenti di testo quando l'intero testo aggiunto viene incollato.
-è anche possibile stabilire se il testo aggiunto debba essere accodato o anteposto, se le azioni disponibili (aggiungi, svuota appunti, simula copia e simula taglia) debbano essere eseguite immediatamente o previa conferma, e se tale conferma verrà richiesta solo se vi è testo contenuto negli appunti.
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
+Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
 Nota:
 
@@ -30,6 +32,13 @@ Nota:
   Preferenze, gesti di immissione, categoria Configurazione
 *	Quando è aperta una finestra di NVDA non verrà visualizzato il messaggio
   di conferma. In questa situazione lazione verrà eseguita direttamente.
+
+## Changes for 9.0
+
+* Added the possibility of showing the clipboard text in browse mode.
+* Added an option to choose if confirmations will be required if clipboard
+  is not empty, for instance, if files or folders are been copied.
+* Requires NVDA 2018.4 or later.
 
 ## Cambiamenti per 8.0 ##
 
@@ -83,6 +92,7 @@ Nota:
 
 ## Cambiamenti per 1.0 ##
 *	Versione iniziale
+
 
 
 [[!tag dev stable]]

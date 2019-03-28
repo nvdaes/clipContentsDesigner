@@ -5,9 +5,9 @@
 *	Загрузить [стабильную версию][1]
 *	Загрузить [разрабатываемую версию][2]
 
-Это дополнение используется для соединения текста в буфере обмена, которое
-может быть полезно, если вы хотите объединить разделы вставляемого текста.
-Содержимое буфера обмена также можно очищать.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared an shown in browse mode.
 
 ## Команды клавиш ##
 *	NVDA+windows+c: Добавить выделенный текст, символы юникода брайля,
@@ -16,13 +16,15 @@
 *	NVDA+windows+x: Очистить содержимое буфера обмена.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
 *	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
 
 Примечание: Эти команды могут быть изменены в меню NVDA, подменю Параметры,
 диалог Жесты ввода, категория просмотр текста.
 
 ## Меню Настроек ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
+Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
 Примечания:
 
@@ -30,6 +32,13 @@ It's also possible to choose if the added text will be appended or prepended, if
   параметры, диалог жесты ввода, категория конфигурация.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
+
+## Changes for 9.0
+
+* Added the possibility of showing the clipboard text in browse mode.
+* Added an option to choose if confirmations will be required if clipboard
+  is not empty, for instance, if files or folders are been copied.
+* Requires NVDA 2018.4 or later.
 
 ## Changes for 8.0 ##
 
@@ -83,6 +92,7 @@ It's also possible to choose if the added text will be appended or prepended, if
 
 ## Изменения для 1.0 ##
 *	Первоначальная версия.
+
 
 
 [[!tag dev stable]]

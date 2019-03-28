@@ -7,7 +7,8 @@
 
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
-liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
+liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
+näyttää selaustilassa.
 
 ## Näppäinkomennot ##
 *	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
@@ -15,6 +16,7 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
 *	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin alkukohdaksi. Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
 *	Ei määritetty: Kopioi tai leikkaa leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon suorittamiselle.
+*	Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos siinä on sisältöä, jota ei voida näyttää selaustilassa, esim. Resurssienhallinnasta kopioituja tiedostoja tai kansioita.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
@@ -22,7 +24,8 @@ valintaikkunasta Tekstin tarkastelu -kategoria.
 
 ## Asetukset-valikko ##
 *	Leikepöydän sisällön käsittelijä: Mahdollistaa erottimen määrittämisen, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
-On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioi ja leikkaa) heti vai vahvistuksen pyytämisen jälkeen, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä.
+On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioi ja leikkaa) heti vai vahvistuksen pyytämisen jälkeen, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä tai jos se ei ole tyhjä.
+Lisäksi on mahdollista muuttaa leikepöydällä olevan tekstin muotoa ja merkkien enimmäismäärää, joka näytetään selaustilassa. Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, jos leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
 
 Huomautuksia:
 
@@ -31,6 +34,13 @@ Huomautuksia:
   Asetukset-kategoria.
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
+
+## Muutokset versiossa 9.0
+
+* Lisätty mahdollisuus leikepöydän tekstin näyttämiseen selaustilassa.
+* Lisätty asetus, jolla voidaan valita, kysytäänkö vahvistus, jos leikepöytä
+  ei ole tyhjä esim. tiedostoja tai kansioita kopioitaessa.
+* Edellyttää NVDA 2018.4:ää tai uudempaa.
 
 ## Muutokset versiossa 8.0 ##
 
@@ -85,6 +95,7 @@ Huomautuksia:
 
 ## Muutokset versiossa 1.0 ##
 *	Ensimmäinen versio.
+
 
 
 [[!tag dev stable]]

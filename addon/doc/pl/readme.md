@@ -5,24 +5,26 @@
 *	Pobierz [wersja stabilna][1]
 *	Pobierz [wersja rozwojowa][2]
 
-Ten dodatek pozwala dodawać tekst do schowka, co może być użyteczne, jeśli
-chcesz połączyć razem kilka części tekstu w całość gotową do wklejenia.
-Zawartość schowka może również być wyczyszczona.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared an shown in browse mode.
 
 ## Skróty klawiszowe ##
 *	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
 *	NVDA+windows+x: wyczyść zawartość schowka.
-*	NVDA+windows+f9: Zaznacza obecne położenie kursora przeglądu, kiedy początek tekstu ma być dodany do schowka. Po naciśnięciu nvda+F9, tekst nie zostanie dodany do schowka.
-*	 Nieprzypisano: Kopiuje do schowka lub wycina z niego, może wystąpić zapytanie o potwierdzenie.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
 
 Uwaga: powyższe polecenia mogą zostać zmienione z menu NVDA, Podmenu
 Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
 ## Menu ustawienia ##
-*	Ustawienia Clip Contents Designer: Można ustawić specjalny separator, który pomaga znaleźć fragmenty tekstu gdy cała zawartość schowka została już wklejona.
-Można tam też określić, czy dodany tekst będzie czymś poprzedzony, czy nowy tekst znajdzie się za nim. Oprócz tego, można zdecydować, czy dostępne opcje (dodawanie, wyczyszczenie schowka, emulowanie kopiowania i emulowanie wycinania) mają być wykonane od razu, czy po potwierdzeniu oraz czy dodatek będzie prosił o potwierdzenia wtedy, gdy tekst jest w schowku.
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
+Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
 Uwagi:
 
@@ -30,6 +32,13 @@ Uwagi:
   wejścia, Panel Konfiguracji.
 *	Jeśli okno dialogowe NVDA jest nadal otwarte, dodatek nie będzie prosił o
   potwierdzenie. W takim wypadku, czynności zostaną natychmiastowo wykonane.
+
+## Changes for 9.0
+
+* Added the possibility of showing the clipboard text in browse mode.
+* Added an option to choose if confirmations will be required if clipboard
+  is not empty, for instance, if files or folders are been copied.
+* Requires NVDA 2018.4 or later.
 
 ## Zmiany w wersji 8.0 ##
 
@@ -82,6 +91,7 @@ Uwagi:
 
 ## Zmiany dla 1.0 ##
 *	Pierwsze wydanie.
+
 
 
 [[!tag dev stable]]

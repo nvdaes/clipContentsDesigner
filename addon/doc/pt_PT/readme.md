@@ -7,23 +7,25 @@
 
 Este extra é usado para adicionar texto à área de transferência, o que lhe
 pode ser útil quando quiser juntar várias partes de textos num só, pronto
-para colar.  O conteúdo da área de transferência pode também ser apagado.
+para colar.  O conteúdo da área de transferência também pode ser visto no
+modo de navegação.
 
 ## Comandos de teclado ##
 *	NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
   Braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: limpa o conteúdo da área de transferência.
-*	NVDA+windows+f9: Marca a posição actual do cursor de exploração como o início do texto a ser adicionado à área de transferência.
-    Se usar nvda+F9, o texto não será adicionado.
-*	 Não atribuído: Faz cópia para a área de transferência com possibilidade de ser previamente consultado para confirmar a cópia.
+* NVDA+windows+f9: Marca a posição actual do cursor de revisão como o início do texto a ser adicionado à área de transferência. Se usar nvda+F9, o texto não será adicionado.
+*	 Não atribuído: copia para (ou corta) a área de transferência, com a possibilidade de ser solicitada uma confirmação anterior.
+*	 Não atribuído: mostra o texto da área de transferência no modo de navegação ou anuncia se a área de transferência está vazia ou tem conteúdo que não pode ser apresentado numa mensagem navegável, por exemplo, se arquivos ou pastas foram copiados do Windows Explorer.
 
 Nota: Os comandos anteriores podem ser alterados a partir do menu do NVDA,
 submenu Preferências, comandos, categoria Revisão de texto.
 
 ## Menu Preferências ##
-*	Opções do Gestor do conteúdo da área de transferência: Permite definir um separador que se pode usar para localizar os fragmentos de texto, uma vez que o texto inteiro seja colado.
-Pode também escolher-se se o texto adicionado surgirá no final ou no início, se as acções disponíveis (acrescentar, limpar área de transferência, emulação de copiar e emulação de cortar) devem ser executadas de imediato ou apenas após confirmação e se a confirmação será solicitada somente se a área de transferência já contiver texto.
+*	 Configurações do conteúdo do extra: Permite definir um separador que pode ser usado para procurar os segmentos de texto logo que todo o texto adicionado seja colado.
+Também é possível escolher se o texto adicionado será acrescentado ou prefixado, se as ações disponíveis (adicionar, limpar área de transferência, emular cópia e emular recortar) devem ser executadas imediatamente ou após a confirmação e se as confirmações serão solicitadas sempre, apenas se o texto estiver já contido na área de transferência ou se a área de transferência não estiver vazia.
+Além disso, é possível alterar o formato e o número máximo de caracteres do texto da área de transferência, que será mostrado no modo de navegação. Por favor, esteja ciente de que aumentar este limite pode produzir problemas se a área de transferência contiver grandes cadeias de texto. O limite padrão é de 100.000 caracteres.
 
 Notas:
 
@@ -31,6 +33,15 @@ Notas:
   submenu Preferências, comandos, configuração.
 *	As confirmações não serão pedidas quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as acções serão executadas de imediato
+
+## Alterações para a versão 9.0
+
+* Adicionada a possibilidade de mostrar o texto da área de transferência no
+  modo de navegação.
+* Adicionada uma opção para escolher se as confirmações serão necessárias se
+  a área de transferência não estiver vazia, por exemplo, se os arquivos ou
+  pastas forem copiados.
+* Requer o NVDA 2018.4 ou posterior.
 
 ## Alterações para a versão 8.0 ##
 
@@ -86,6 +97,7 @@ Notas:
 
 ## Alterações para a versão 1.0 ##
 *	Versão inicial.
+
 
 
 [[!tag dev stable]]

@@ -5,9 +5,9 @@
 *	preuzmi [stabilnu verziju][1]
 *	preuzmi [verziju u razvoju][2]
 
-Ovaj dodatak se koristi za dodavanje odvojenih delova teksta u privremenu
-memoriju, što može biti korisno kada želite da pridružite više delova
-teksta. a može i da ukloni sadržaj privremene memorije.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared an shown in browse mode.
 
 ## Prečice ##
 *	NVDA+Windows+c: Dodaje označeni tekst, brajevo predstavljanje MathML
@@ -15,13 +15,15 @@ teksta. a može i da ukloni sadržaj privremene memorije.
 *	NVDA+Windows+x: Uklanja sadržaj privremene memorije.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
 *	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju Pregled teksta.
 
 ## Podešavanja ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested just if text is contained in the clipboard.
+It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
+Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
 Notes:
 
@@ -29,6 +31,13 @@ Notes:
   Input gestures dialog, Configuration category.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
+
+## Changes for 9.0
+
+* Added the possibility of showing the clipboard text in browse mode.
+* Added an option to choose if confirmations will be required if clipboard
+  is not empty, for instance, if files or folders are been copied.
+* Requires NVDA 2018.4 or later.
 
 ## Changes for 8.0 ##
 
@@ -80,6 +89,7 @@ Notes:
 
 ## Promene u 1.0 ##
 *	Prva verzija.
+
 
 
 [[!tag dev stable]]

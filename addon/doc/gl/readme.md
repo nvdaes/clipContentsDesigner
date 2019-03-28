@@ -7,7 +7,7 @@
 
 Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
 cando queras unir seccións de texto listas para pegarse xuntas.  O contido
-do portapapeis tamén pode limparse.
+do portapapeis tamén pode limparse e amosarse en modo exploración.
 
 ## Ordes de teclado ##
 *	NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
@@ -16,13 +16,15 @@ do portapapeis tamén pode limparse.
 *	NVDA+windows+x: Limpa o contido do portapapeis.
 *	NVDA+windows+f9: Marca a posición actual do cursor de revisión como o comezo do texto a engadir ó portapapeis. Se utilizas NVDA+F9, o texto non se engadirá.
 *	 Non asignado: Copia (ou curta) ao/do portapapeis, coa posibilidade de seren preguntado por unha confirmación anterior.
+*	 Non asignada: Amosa o texto do portapapeis en modo exploración, ou anuncia se o portapapeis está vacío ou se ten contidos que non se poden presentar nunha mensaxe de modo exploración, por exemplo, en caso de estarse copiando arquivos ou cartafoles dende o Explorador de Windows..
 
 Nota: as ordes anteriores poden cambiarse dende o menú NVDA, submenú
 Preferencias, diálogo Xestos de Entrada, categoría Revisión de Texto.
 
 ## Menú Preferencias ##
-**	Opcións do Clip Contents Designer: permite poñer un separador que poda usarse para atopar os segmentos de texto una vez que todo o texto sexa pegado.
-Tamén é posible escoller se o texto engadido se anexará ou se anteporá, se hai accións dispoñibles (engadir, valdeirar portapapeis, emular copiar e emular cortar) deberían realizarse inmediatamente ou despois dunha confirmación, e se hai confirmacións se preguntará só se o texto está contido no portapapeis.
+*	Opcións do Clip Contents Designer: permite poñer un separador que poda usarse para atopar os segmentos de texto una vez que todo o texto sexa pegado.
+Tamén é posible escoller se o texto engadido se anexará ou se anteporá, se hai accións dispoñibles (engadir, valdeirar portapapeis, emular copiar e emular cortar) deberían realizarse inmediatamente ou despois dunha confirmación, e se se requerirá confirmanción sempre, só se o portapapeis contén texto, ou se o portapapeis non está baleiro.
+Ademais, é posible cambiar o formato e o número máximo de caracteres do texto do portapapeis que se amosará en modo exploración. Por favor, ten en conta que incrementar este límite pode causar problemas se o portapapeis contén longas cadeas de texto. O límite por defecto é de 100000 caracteres.
 
 Notas:
 
@@ -30,6 +32,15 @@ Notas:
   diálogo Xestos de Entrada, categoría Configuración.
 *	Non se deberían de solicitar confirmacións cando siga aberto unha Caixa de
   mensaxe do NVDA. Nesos casos, as accións realizaranse inmediatamente
+
+## Cambios para 9.0
+
+* Engadida a posibilidade de amosar o texto do portapapeis en modo
+  exploración.
+* Engadida unha opción para elixir se se requerirán confirmacións se o
+  portapapeis non está vacío; por xemplo, se se están a copiar arquivos ou
+  cartafoles.
+* Requírese do NVDA 2018.4 ou posterior.
 
 ## Cambios para 8.0 ##
 
@@ -83,6 +94,7 @@ Notas:
 
 ## Cambios para 1.0 ##
 *	Versión inicial.
+
 
 
 [[!tag dev stable]]
