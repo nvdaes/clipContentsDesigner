@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 7.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2018-05-04 03:00+1000\n"
-"PO-Revision-Date: 2019-01-09 07:46+0800\n"
+"PO-Revision-Date: 2019-04-04 12:27+0800\n"
+"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
+"Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
+"2010-2019>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
-"Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
-"2010-2019>\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -33,6 +33,18 @@ msgstr ""
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "配置模拟复制和剪切"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "HTML 中的预格式化文本"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "网页浏览器中显示的 HTML"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "原始文本"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -133,42 +145,86 @@ msgid ""
 "confirmation"
 msgstr "从剪贴板中剪切，可能会被要求提供先前的确认"
 
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "剪贴板不是空的, 但没有要显示的文本"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "剪贴板为空"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "剪贴板文本 ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "在浏览模式下显示剪贴板文本"
+
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
-msgstr "&输入要用作添加到剪贴板的内容之间的分隔符的字符串。"
+msgstr "输入要用作添加到剪贴板的内容之间的分隔符的字符串。(&A)"
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
-msgstr "&在剪辑数据之前添加文本"
+msgstr "在剪贴板现有内容之前添加文本(&A)"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "&确认添加文本"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "追加内容时需要事先确认(&C)"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "&确认清除剪贴板"
+msgid "Confirm to add text"
+msgstr "确认添加文本"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "&确认模拟副本"
+msgid "Confirm to clear clipboard"
+msgstr "确认清除剪贴板"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "&确认模拟剪切"
+msgid "Confirm to emulate copy"
+msgstr "确认模拟副本"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "&确认剪贴板中的文本"
+msgid "Confirm to emulate cut"
+msgstr "确认模拟剪切"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "在执行以下的操作之前请求确认(&R)"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "总是"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "如果剪贴板包含文本"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "如果剪贴板不是空的"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "在浏览模式下格式化剪贴板文本(&F)"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "在浏览模式下显示剪贴板文本时的最大字符数(&M)"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "剪辑内容设计器"
+msgstr "剪贴板内容编辑器"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "一款用于管理剪贴板文本的插件。"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&确认剪贴板中的文本"

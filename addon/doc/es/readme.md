@@ -5,26 +5,27 @@
 *	Descargar [versión estable][1]
 *	Descargar [versión de desarrollo][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+Este complemento se utiliza para agregar texto al portapapeles, el cual
+puede ser útil cuando quieras unir secciones de texto listas para pegar
+juntas.  El contenido del portapapeles también puede limpiarse y mostrarse
+en modo exploración.
 
 ## Órdenes de teclado ##
 *	NVDA+windows+c: añade el texto seleccionado, los caracteres braille
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
 *	NVDA+windows+x: Limpia el contenido del portapapeles.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+*	NVDA+windows+f9: Marca la posición actual del cursor de revisión como el comienzo del texto a añadir al portapapeles. Si utilizas NVDA+F9, el texto no se añadirá.
+*	 No asignado: Copia (o corta) al/del portapapeles, con la posibilidad de ser preguntado por una confirmación previa.
+*	 Sin asignar: Muesra el texto de portapapeles en modo exploración, o lo anuncia si el portapapeles está vacío o si tiene contenidos que no se pueden presentar en un mensaje navegable, por ejemplo si se están copiando archivos o carpetas desde el Explorador de Windows..
 
 Nota: Las órdenes anteriores se pueden cambiar desde el menú NVDA, submenú
 Preferencias, Diálogo Gestos de Entrada, Categoría Revisión de Texto.
 
 ## Menú Preferencias ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+*	Opciones de Clip Contents Designer: te permite poner un separador que se pueda  utilizar para encontrar los segmentos de texto una vez todo el texto añadido sea pegado.
+También es posible elegir si el texto añadido se anexará o se antepondrá, si hay acciones disponibles (añadir, vaciar portapapeles, emular copiar y emular cortar) deberían realizarse inmediatamente o después de una confirmación, y de haber confirmaciones si se preguntará siempre, sólo si hay texto en el portapapeles o si el portapapeles no está vacío.
+Adicionalmente, es posible cambiar el formato y el número máximo de caracteres del texto del portapapeles que se mostrará en modo exploración. Por favor, ten en cuenta que incrementar este límite podría causar problemas cuando el portapapeles contenga largas cadenas de texto. El límite por defecto es 100000 caracteres.
 
 Notas:
 
@@ -33,12 +34,14 @@ Notas:
 *	No se deberían solicitar confirmaciones cuando siga abierto un cuadro de
   mensaje de NVDA. En esos casos, las acciones se realizarán inmediatamente
 
-## Changes for 9.0
+## Cambios para 9.0
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* Añadida la posibilidad de mostrar el texto del portapapeles en modo
+  exploración.
+* Añadida una opción para elegir si se requerirá confirmación si el
+  portapapeles no está vacío, por ejemplo, si se están copiando archivos o
+  carpetas.
+* Se requiere de NVDA 2018.4 o posterior.
 
 ## Cambios para 8.0 ##
 

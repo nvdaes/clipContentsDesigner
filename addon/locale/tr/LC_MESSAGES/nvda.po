@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 5.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-09-21 09:05+0300\n"
+"PO-Revision-Date: 2019-04-03 16:23+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: Turkish <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../../..\n"
 "X-Poedit-SearchPath-0: AppendText/globalPlugins/clipContentsDesigner\n"
@@ -46,6 +46,18 @@ msgstr ""
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "Kopyalama ve kesme taklidini yapılandır"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "HTML’de önceden biçimlendirilmiş metin"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "Bir web tarayıcısında gösterildiği gibi HTML"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Ham metin"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -151,6 +163,22 @@ msgstr ""
 "Önceki metnin yerine eklenmesinin onayının sorulması olasılığıyla, panodan "
 "keser"
 
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Pano boş değil, ancak gösterilecek metin yok."
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Pano boş"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Pano metni ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "Pano metnini tarama kipinde gösterir"
+
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -163,24 +191,49 @@ msgid "&Add text before clip data"
 msgstr "Metni panodaki veriden önce ekle"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "Metin eklemek için on&ay iste"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Önceden onay gerektiren işlemleri se&çin"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "Panoyu temiz&lemek için onaylayın"
+msgid "Confirm to add text"
+msgstr "Metin eklemek için onay iste"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "&Kopyalama işlemi için onay iste"
+msgid "Confirm to clear clipboard"
+msgstr "Panoyu silmek için onay iste"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "&Kesme işlemi için onay iste"
+msgid "Confirm to emulate copy"
+msgstr "Kopya taklidi için onay iste"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "Onaylanacak panodaki me&tin"
+msgid "Confirm to emulate cut"
+msgstr "Kesme taklidi için onay iste"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Seçili işlemleri gerçekleştirmeden önce onay iste:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Her zaman"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Panoda metin varsa"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Pano boş değilse"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&Pano metnini tarama kipinde göstermeden önce biçimlendir:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "Pano metnini tarama kipinde gösterirken &maksimum karakter sayısı"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -191,6 +244,9 @@ msgstr "Pano İçerik Düzenleyicisi"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Panodaki metnin yönetimi için eklenti."
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Onaylanacak panodaki me&tin"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "&Pano içerik tasarım ayarları..."

@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: appendText\n"
+"Project-Id-Version: clipContentsDesigner 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-31 08:59+0100\n"
-"PO-Revision-Date: 2018-06-15 15:55+0200\n"
-"Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
+"PO-Revision-Date: 2019-04-01 15:34+0100\n"
+"Last-Translator: Chris Leo Mameli <llajta2012@gmail.com>\n"
 "Language-Team: Translators <llajta@gmx.us>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
@@ -12,8 +12,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
 "X-Poedit-Basepath: C:/Users/user/Downloads/AppendText/globalPlugins\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.3\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -25,16 +25,28 @@ msgid ""
 "text. Do you want to configure Emulate copy and cut now? You may do or "
 "change this later."
 msgstr ""
-"Questo componente aggiuntivo consente di richiedere una conferma quando si "
-"vuole copiare o tagliare il testo, premendo le combinazioni control-c o "
-"control-x. L'operazione viene chiamata simulazione copia e simulazione "
-"taglia e da impostazioni predefinite funziona solo quando negli appunti è "
-"già presente del testo. Vuoi configurare simulazione copia/taglia adesso? "
-"Puoi farlo anche in un secondo momento."
+"Questo componente aggiuntivo consente di richiedere una conferma prima di "
+"modificare il contenuto degli appunti eseguendo Copia o Taglia, al premere "
+"control-c o control-x. L'operazione viene chiamata simulazione copia e "
+"simulazione taglia e da impostazioni predefinite funziona solo quando negli "
+"appunti è già presente del testo. Vuoi configurare simulazione copia/taglia "
+"adesso? Puoi farlo anche in un secondo momento."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "Configurazione simulazione taglia/copia"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Html preformattato"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "Html semplice"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Testo semplice"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -78,7 +90,7 @@ msgstr "Per favore, confermare di voler aggiungere testo negli appunti"
 
 #. Translators: Title of a dialog.
 msgid "Adding text to clipboard"
-msgstr "Aggiunta di testo agli appunti"
+msgstr "Aggiungi testo"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -130,7 +142,7 @@ msgstr "Per favore, confermare la volontà di tagliare dagli appunti"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
-msgstr "Taglio dagli appunti"
+msgstr "Taglia negli appunti"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -138,6 +150,22 @@ msgid ""
 "confirmation"
 msgstr ""
 "Taglia dagli appunti, con possibilità di ricevere una richiesta di conferma"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Gli appunti non contengono testo."
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Nessun contenuto negli appunti"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Contenuto degli appunti ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "Visualizza il contenuto degli appunti in modalità navigazione"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -152,24 +180,49 @@ msgid "&Add text before clip data"
 msgstr "&Aggiungi testo prima degli appunti"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "Conferma &aggiunta testo"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Seleziona le azioni che richiedono una &conferma: "
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "Conferma e&liminazione appunti"
+msgid "Confirm to add text"
+msgstr "Quando si aggiunge testo negli appunti"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "&Conferma simulazione copia"
+msgid "Confirm to clear clipboard"
+msgstr "Quando si elimina contenuto dagli appunti"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "&Conferma simulazione taglia"
+msgid "Confirm to emulate copy"
+msgstr "Quando si esegue Copia"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "Testo negli appunti da confermare"
+msgid "Confirm to emulate cut"
+msgstr "Quando si esegue Taglia"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Richiedi conferma per le azioni selezionate: "
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Sempre"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Solo Se è presente testo negli appunti"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Se è presente qualsiasi contenuto negli appunti"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&Formato di visualizzazione degli appunti in Modalità Navigazione:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "&Numero massimo di caratteri per la visualizzazione degli appunti:"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -179,7 +232,10 @@ msgstr "Clip Contents Designer"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
-msgstr "Componente aggiuntivo per la gestione del testo negli appunti"
+msgstr "Componente aggiuntivo per la gestione del testo negli appunti."
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Testo negli appunti da confermare"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Impostazioni &Clip Contents Designer"

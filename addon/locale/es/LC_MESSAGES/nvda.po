@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-11-21 08:54+0100\n"
+"PO-Revision-Date: 2019-03-28 18:42+0100\n"
 "Last-Translator: Iván Novegil <ivan.novegil.cancelas@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -34,6 +34,18 @@ msgstr ""
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "Configurar Emular copiar y cortar"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Texto preformateado en HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML como se mostraría en un navegador web"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Texto plano"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -141,6 +153,22 @@ msgstr ""
 "Corta desde el portapapeles, con la posibilidad de que se te pregunte por "
 "una confirmación previa"
 
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "El portapapeles no está vacío, pero no hay texto que mostrar"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "El portapapeles está vacío"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Texto del portapapeles ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "Muestra el texto del portapapeles en modo exploración"
+
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -154,24 +182,52 @@ msgid "&Add text before clip data"
 msgstr "&Añadir texto antes de clip data"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "Confirmar a&ñadir texto"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Sele&ccionar las acciones que requerirán confirmación previa"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "Confirmar &vaciar portapapeles"
+msgid "Confirm to add text"
+msgstr "Confirmar añadir texto"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "&Confirmar emular copiar"
+msgid "Confirm to clear clipboard"
+msgstr "Confirmar vaciar portapapeles"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "&Confirmar emular cortar"
+msgid "Confirm to emulate copy"
+msgstr "Confirmar emular copiar"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "&Texto en portapapeles a confirmar"
+msgid "Confirm to emulate cut"
+msgstr "Confirmar emular cortar"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr ""
+"Solicitar confi&rmación antes de realizar las acciones seleccionadas cuando:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Siempre"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Si el portapapeles contiene texto"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Si el portapapeles no está vacío"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&Formato para mostrar texto en modo exploración:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"Número &máximo de caracteres al mostrar el texto del portapapeles en modo "
+"exploración"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -182,6 +238,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para manejar texto en el portapapeles."
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&Texto en portapapeles a confirmar"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Opciones de &Clip Contents Designer..."
