@@ -5,26 +5,27 @@
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
+kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
+indsætning. Udklipsholderens indhold kan også ryddes og vises i
+gennemsynstilstand.
 
 ## Tastaturkommandoer ##
 *	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
   MathML-objekter, eller den tekststreng, som er blevet markeret med
   læsemarkøren, til udklipsholderen.
 *	NVDA+Windows+x: Ryd udklipsholderen.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+*	NVDA+Windows+F9: Marker læsemarkørens aktuelle position som starten af den tekst, der skal tilføjes til udklipsholderen. Hvis du bruger NVDA+F9, vil teksten ikke blive tilføjet.
+*	 Ikke tildelt; Tilføjede mulighed for at kopiere test til eller klippe tekst fra udklipsholderen, med mulighed for at få dette bekræftet.
+*	 Ikke tildelt: Viser teksten i udklipsholderen i gennemsynstilstand, eller meddeler hvis udklipsholderen er tom eller indeholder tekst, der ikke kan vises i gennemsynstilstand. Dette kan f.eks. være, hvis filer eller mapper er blevet kopieret fra Windows Stifinder..
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Præferencer/
 Inputbevægelser / kategorien tekstlæsning.
 
 ## Indstillinger-menuen ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+Indstillinger for Udklipsdesigner: Her kan du indstille en separator, som kan bruge til at finde de enkelte tekstsegmenter, når først hele den tilføjede tekst er blevet indsat.
+Her kan du også vælge om den tilføjede tekst skal indsættes før eller efter eksisterende tekst, om tilgængelige handlinger (tilføj, ryd udklipsholder, emuler kopi og emuler klip) skal udføres straks eller efter handlingen bekræftes, og om der kun skal anmodes om bekræftelse, hvis udklipsholderen indeholder tekst.
+Yderligere kan du ændre formatet og max antal af tegn, der skal vises i gennemsynstilstand, når du får udklipsholderens indhold vist i gennemsynstilstand. Det højeste tal er 100000 tegn.
 
 Bemærkninger:
 
@@ -33,12 +34,14 @@ Bemærkninger:
 *	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
   stadig er åben. I disse situationer vil handlingen straks udføres.
 
-## Changes for 9.0
+## Ændringer for 9.0
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* Tilføjet mulighed for at vise udklipsholderens aktuelle tekstindhold i
+  gennemsynstilstand.
+* Tilføjet en mulighed for at vælge, om der skal kræves bekræftelse, hvis
+  udklipsholderen ikke er tom, hvis der f.eks. Er kopieret filer eller
+  mapper.
+* Kræver NVDA 2018.4 eller nyere.
 
 ## ændringer i 8.0 ##
 
