@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-08-22 16:11+0100\n"
-"Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
+"PO-Revision-Date: 2019-05-23 21:59+0100\n"
+"Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -34,6 +34,18 @@ msgstr ""
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "Nastavi Oponašanje preslikave in izreza"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Predoblikovano besedilo v HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML kot se prikaže v spletnem brskalniku"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Surovo besedilo"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -136,6 +148,21 @@ msgid ""
 "confirmation"
 msgstr "Izreže iz odložišča z možnostjo zaprosila po predhodni odobritvi"
 
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Odložišče ni prazno, toda tam ni besedila za prikaz"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Odložišče je prazno"
+
+#. Translators: title of a browseable message.
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Besedilo v odložišču ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
+
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -147,24 +174,51 @@ msgid "&Add text before clip data"
 msgstr "&Dodaj besedilo pred izrezkom podatkov"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "Potrdi &dodajanje besedila"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "I&zberi dejanja, ki potrebujejo predhodno odobritev"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "Potrdi &čiščenje odložišča"
+msgid "Confirm to add text"
+msgstr "Potrdi dodajanje besedila"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "Potrdi oponašanje &preslikave"
+msgid "Confirm to clear clipboard"
+msgstr "Potrdi čiščenje odložišča"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "Potrdi oponašanje &izreza"
+msgid "Confirm to emulate copy"
+msgstr "Potrdi oponašanje preslikave"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "Potrjevanje &besedila v odložišču"
+msgid "Confirm to emulate cut"
+msgstr "Potrdi oponašanje izreza"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Zahtevaj potrditev pred izvedbo izbranih dejanj, ko:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Vedno"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Če odložišče vsebuje besedilo"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Če odložišče ni prazno"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&Oblika prikaza besedila iz odložišča v brskalniškem delovanju:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"&Največje število znakov, ko se prikazuje besedilo iz odložišča v "
+"brskalniškem delovanju"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -175,6 +229,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatek namenjen upravljanju z vsebino odložišča"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Potrjevanje &besedila v odložišču"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Nastavitve &Clip Contents Designer..."
