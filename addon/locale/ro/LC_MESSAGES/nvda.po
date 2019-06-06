@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 3.4\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2016-02-12 03:00+1000\n"
-"PO-Revision-Date: 2018-06-30 13:17+0300\n"
+"PO-Revision-Date: 2019-06-05 10:06+0300\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -34,6 +34,18 @@ msgstr ""
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "Configurați copia sau tăierea simulată"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Text preformat în HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "Ca și cum HTML ar fi afișat într-un browser web"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Text brut"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -142,6 +154,22 @@ msgstr ""
 "Se taie de pe planșetă, cu posibilitatea de a fi întrebat pentru o "
 "confirmare anterioară"
 
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Planșeta nu este goală, însă nu există niciun text de afișat"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Planșeta este goală"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Text planșetă ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "Afișează textul planșetei în modul de navigare"
+
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -155,24 +183,50 @@ msgid "&Add text before clip data"
 msgstr "&Adaugă text înainte de clip data"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "&Selectează acțiunea care necesită o confirmare precedentă"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
 msgstr "Confirma&ți pentru a adăuga text"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "C&onfirmați pentru a curăța planșeta"
+msgid "Confirm to clear clipboard"
+msgstr "Confirmați pentru a curăța planșeta"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "&Confirmați pentru a simula copia"
+msgid "Confirm to emulate copy"
+msgstr "Confirmați pentru a simula copia"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "Confirmați pentru a &emula tăierea"
+msgid "Confirm to emulate cut"
+msgstr "Confirmați pentru a simula tăierea"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "Te&xt pe planșetă pentru confirmare"
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "S&olicită o confirmare înainte de a efectua acțiunile selectate:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Mereu"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Dacă planșeta conține text"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Dacă planșeta nu este goală"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "Format de afișare a textului planșetei în modul de navigare:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"&Număr maxim de caractere la afișarea textului planșetei în modul de navigare"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -183,6 +237,9 @@ msgstr "Clip Contents Designer (Proiectantul conținutului planșetei)"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Supliment pentru gestionarea textului din planșetă."
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Te&xt pe planșetă pentru confirmare"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Opțiuni &Clip Contents Designer..."
