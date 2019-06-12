@@ -28,7 +28,7 @@ Notes:
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
-* Fixed a bug when using the emulate cut feature with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
+* Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
 ## Changes for 9.0
 
