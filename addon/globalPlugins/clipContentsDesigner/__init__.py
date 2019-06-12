@@ -330,7 +330,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				browseableText = text[:maxLength]
 				html = False
 			# Translators: title of a browseable message.
-			ui.browseableMessage(browseableText, _("Clipboard text ({max}/{current} - {formatForTitle})".format(max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format])), html)
+			ui.browseableMessage(browseableText, _(u"Clipboard text ({max}/{current} - {formatForTitle})".format(max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format])), html)
 	script_showClipboardText.__doc__ = _("Shows the clipboard text in browse mode")
 
 	__gestures = {
