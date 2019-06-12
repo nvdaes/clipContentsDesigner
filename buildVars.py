@@ -21,7 +21,7 @@ addon_info = {
 	# version
 	"addon_version" : "10.0-dev",
 	# Author(s)
-	"addon_author" : u"Noelia Ruiz Martínez <nrm1977@gmail.com>",
+	"addon_author" : u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com",
 	# URL for the add-on documentation support
 	"addon_url" : "https://addons.nvda-project.org/addons/clipContentsDesigner",
 	# Documentation file name
