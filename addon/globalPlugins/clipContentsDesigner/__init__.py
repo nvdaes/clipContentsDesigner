@@ -259,7 +259,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(treeInterceptor,treeInterceptorHandler.DocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			treeInterceptor.script_copyToClipboard(None)
 		else:
-			KeyboardInputGesture.fromName("control+c").send()
+			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
+			KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCopy(self):
 		text = self.getSelectedText()
