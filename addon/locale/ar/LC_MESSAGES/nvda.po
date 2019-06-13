@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2018-12-24 10:33+0200\n"
+"PO-Revision-Date: 2019-06-10 18:17+0200\n"
 "Last-Translator: wafiqtaher <wafiqtaher@gmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -33,6 +33,18 @@ msgstr ""
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
 msgstr "تكوين محاكاة القص و النسخ"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "التنسيق المسبق للنص في HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML كما هو موضح في متصفح الويب"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "النص الأصلي"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -121,17 +133,33 @@ msgstr "نسخ إلى الحافظة ، مع إمكانية التأكيد عل�
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "يرجى تأكيد ما إذا كنت ترغب في القص من الحافظة "
+msgstr "يرجى تأكيد ما إذا كنت ترغب في القص إلى الحافظة "
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
-msgstr "قص من الحافظة "
+msgstr "قص إلى الحافظة "
 
 #. Translators: message presented in input mode.
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "التأكيد على القص من الحافظة"
+msgstr "التأكيد على القص الى الحافظة"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "الحافظة ليست فارغة ، لكن لا يوجد نص لإظهاره"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "الحافظة فارغة"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "نص الحافظة ({max} / {current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "لأظهار نص الحافظة في وضع الإستعراض"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -144,24 +172,49 @@ msgid "&Add text before clip data"
 msgstr "إ&لحاق نص قبل البيانات الموجودة بالحافظة"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "التأكيد على إ&ضافة النص"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "حدد الإجراءات التي تتطلب التأكيد المسبق"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "التأكيد على مس&ح الحافظة"
+msgid "Confirm to add text"
+msgstr "التأكيد على إضافة النص"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "التأكيد على الن&سخ"
+msgid "Confirm to clear clipboard"
+msgstr "التأكيد على مسح الحافظة"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "التأكيد على الق&ص"
+msgid "Confirm to emulate copy"
+msgstr "التأكيد على النسخ"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "التأ&كيد عند وجود نص في الحافظة"
+msgid "Confirm to emulate cut"
+msgstr "التأكيد على القص"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "طلب التأكيد قبل تنفيذ الإجراءات المحددة عندما :"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "دائما"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "إذا كانت الحافظة تحتوي على نص"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "إذا كانت  الحافظة ليست فارغة"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&تنسيق لإظهار نص الحافظة في وضع الإستعراض:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "الحد الأقصى لعدد الأحرف عند عرض نص الحافظة في وضع التصفح"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -172,3 +225,6 @@ msgstr "التحكم في محتوى الحافظة"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "إضافة لإدارة النص الموجود بالحافظة"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "التأ&كيد عند وجود نص في الحافظة"
