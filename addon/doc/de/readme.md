@@ -33,12 +33,12 @@ Anmerkungen:
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
 
-## Changes for 9.0
+## Änderungen in 9.0
 
 * Added the possibility of showing the clipboard text in browse mode.
 * Added an option to choose if confirmations will be required if clipboard
   is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* Benötigt NVDA 2018.4 oder höher.
 
 ## Änderungen in 8.0 ##
 
