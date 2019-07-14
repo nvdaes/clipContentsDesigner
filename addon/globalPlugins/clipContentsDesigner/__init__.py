@@ -61,6 +61,24 @@ def getBookmark():
 		bookmark = "\r\n%s\r\n" % separator
 	return bookmark
 
+def isArabicKeyboardLayout():
+	"""
+	Test if the keyboard layout is Arabic to avoid an error reported by a user.
+	"""
+	import winUser
+	import locale
+	curWindow = winUser.getForegroundWindow()
+	threadID = winUser.getWindowThreadProcessID(curWindow)[1]
+	klID = winUser.getKeyboardLayout(threadID)
+	lID = klID & (2**16 - 1)
+	try:
+		localeName = locale.windows_locale[lID]
+	except KeyError:
+		localeName = None
+	if localeName and localeName.startswith("ar_"):
+		return True
+	return False
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
@@ -265,7 +283,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_copy.__doc__ = _("Copies to the clipboard, with the possibility of being asked for a previous confirmation")
 
 	def cut(self):
-		KeyboardInputGesture.fromName("control+x").send()
+		keyName = "control+x" if not isArabicKeyboardLayout() else u"control+ء"
+		KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCut(self):
 		# Translators: Label of a dialog.
