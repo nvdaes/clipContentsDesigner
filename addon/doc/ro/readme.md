@@ -5,26 +5,27 @@
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
+fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
+a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățat și
+afișat în modul de navigare.
 
 ## Comenzi de taste ##
 *	NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
   reprezintă obiectele MathML, sau string-ul care a fost marcat cu cursorul
   de vizualizare, pe planșetă.
 *	NVDA+Windows+X: Curăță contentul de pe planșetă.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+*	NVDA+Windows+F9: Marchează poziția de vizualizare curentă din examinarea cursorului ca începutul textului pentru a fi adăugat pe planșetă. Dacă utilizați NVDA+F9, textul nu va fi adăugat.
+*	 Neatribuită: Copiază, cu posibilitatea de a fi întrebat pentru o confirmare anterioară.
+*	 Neatribuită: Afișează textul de pe planșetă în modul de navigare sau anunță dacă planșeta este goală ori are conținut care nu poate fi prezentat într-un mesaj de navigare, un bun exemplu fiind copierea fișierelor sau a folderelor din Windows Explorer..
 
 Notă: Comenzile de mai sus pot fi modificate din meniul NVDA, Preferințe,
 Gesturi de intrare, Categoria de vizualizare a textului.
 
 ## Meniul de preferințe ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+*\TSetări Contents Clip Designer: Permite setarea unui separator care poate fi utilizat pentru a găsi segmente de text odată ce întregul text adăugat este lipit.
+Este de asemenea posibil să se aleagă dacă textul adăugat va fi anexat sau prefixat, dacă există opțiuni disponibile (adaugă, curăță planșeta, simulează copia și simulează tăierea) ar trebui să fie efectuate imediat sau după confirmare și dacă confirmările vor fi solicitate doar dacă textul este conținut pe planșetă.
+În plus, puteți modifica formatul și numărul maxim de caractere pe care textul de pe planșetă care va fi afișat în modul de navigare trebuie să îl aibă. Vă rugăm să aveți în vedere faptul că, cu cât e mai mare limita, cu atât mai mult sunt șanse să apară probleme. Limita implicită este de 100000 de caractere.
 
 Note:
 
@@ -33,12 +34,14 @@ Note:
 *	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
   încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
 
-## Changes for 9.0
+## Modificări în 9.0
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* Acum, este posibilă afișarea textului aflat pe planșetă în modul de
+  navigare.
+* S-a adăugat o opțiune care vă permite să alegeți dacă vor fi sau nu
+  necesare confirmările îb cazul în care planșeta nu este goală, un bun
+  exemplu fiind copierea fișierelor sau a folderelor.
+* Necesită NVDA 2018.4 sau mai nou.
 
 ## Modificări în 8.0 ##
 

@@ -1,30 +1,28 @@
 # Zwischenablagendesigner #
 
-*	Autor: Noelia Ruiz Martínez
-*	NVDA-Kompatibilität: 2018.2 bis 2019.1
+*	Autor: Noelia Ruiz Martínez.
+*	NVDA-Kompatibilität: 2018.2 bis 2019.1.
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
+hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
+Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
+gelöscht werden.
 
 ## Tastenkombinationen ##
 *	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem Lese-Cursor
   markiert wurde, in die Zwischenablage hinzu.
 *	NVDA+windows+X: Löscht die Zwischenablage.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+*	NVDA+Windows+F9: Markiert die aktuelle Position des Lese-Cursors als Anfang des Textes, der in die Zwischenablage eingefügt werden soll. Wenn Sie nvda+F9 verwenden, wird der Text nicht hinzugefügt.
+*	Nicht zugeordnet: Kopien in die Zwischenablage (oder Ausschnitte aus der Zwischenablage) mit einer Bestätigungsabfrage einfügen oder entfernen.
 
 Anmerkung: Die obigen Befehle können im NVDA-Menü unter Einstellungen /
 Eingaben... in der Kategorie "Befehle zum Text betrachten" geändert werden.
 
 ## Einstellungen ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+*	Einstellungen des Designers für den inhalt der Zwischenablage: hier kann ein Trennzeichen zum leichteren Auffinden von Textsegmenten gesetzt werden, sobald der gesamte Text zur Zwischenablage eingefügt wurde. Es kann auch gewählt werden, ob der hinzugefügte Text angehängt oder vorangestellt wird, ob verfügbare Aktionen (Hinzufügen, Löschen der Zwischenablage, Kopieren und Ausschneiden emulieren) sofort oder nach Bestätigung ausgeführt werden sollen und ob Bestätigungen nur bei vorhandenem Text in der Zwischenablage ausgegeben werden.
 
 Anmerkungen:
 
@@ -35,9 +33,11 @@ Anmerkungen:
 
 ## Änderungen in 9.0
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
+* Es wurde die Möglichkeit hinzugefügt, den Text der Zwischenablage im
+  Lesemodus anzuzeigen.
+* Es wurde eine Option hinzugefügt, um zu wählen, ob Bestätigungen
+  erforderlich sind, wenn die Zwischenablage nicht leer ist, z.B. wenn
+  Dateien oder Ordner kopiert wurden.
 * Benötigt NVDA 2018.4 oder höher.
 
 ## Änderungen in 8.0 ##
@@ -93,7 +93,7 @@ Anmerkungen:
   verwendet werden.
 
 ## Änderungen in 1.0 ##
-*	Erstveröffentlichung
+*	Erstveröffentlichung.
 
 
 
