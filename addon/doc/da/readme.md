@@ -1,7 +1,7 @@
 # Udklipsdesigner #
 
-*	Forfatter: Noelia Ruiz Martinez.
-*	NVDA-kompatibilitet: 2018.2 til 2019.1
+*	Authors: Noelia, Abdel.
+*	NVDA compatibility: 2018.4 to 2019.2.
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
@@ -33,6 +33,12 @@ Bemærkninger:
   gå til Inputbevægelser og vælg kategorien "Configuration".
 *	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
   stadig er åben. I disse situationer vil handlingen straks udføres.
+
+## Changes for 10.0
+* Fixed a bug in the dialog used to show the clipboard text, when its title
+  contains non latin characters.
+* Fixed a bug when using the emulate cut and copy features with an Arabic
+  keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
 ## Ændringer for 9.0
 
@@ -96,7 +102,6 @@ Bemærkninger:
 
 ## ændringer i 1.0 ##
 *	Første version.
-
 
 
 [[!tag dev stable]]

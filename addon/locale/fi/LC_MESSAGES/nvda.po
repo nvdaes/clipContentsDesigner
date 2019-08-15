@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-03-29 07:57+0200\n"
-"Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
+"PO-Revision-Date: 2019-08-12 10:07+0200\n"
+"Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -26,14 +26,16 @@ msgid ""
 "text. Do you want to configure Emulate copy and cut now? You may do or "
 "change this later."
 msgstr ""
-"Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopiointia (Ctrl+C) ja "
-"leikkaamista (Ctrl+X) suoritettaessa, jolloin leikepöydän sisältö korvataan. "
-"Vahvistus pyydetään vain, kun leikepöydällä on tekstiä. Haluatko määrittää "
-"kopioinnin ja leikkaamisen vahvistuskyselyn nyt? Voit muuttaa tätä myöhemmin."
+"Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopioinnille (Ctrl+C) ja "
+"leikkaamiselle (Ctrl+X), jolloin leikepöydän sisältö korvataan. Näitä "
+"toimintoja kutsutaan kopioinnin ja leikkaamisen emuloinniksi, ja "
+"oletusarvoisesti ne toimivat vain, kun leikepöydällä on tekstiä. Haluatko "
+"määrittää kopioinnin ja leikkaamisen emuloinnin nyt? Voit muuttaa tätä "
+"myöhemmin."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Määritä kopioinnin ja leikkaamisen vahvistuskysely"
+msgstr "Määritä kopioinnin ja leikkaamisen emulointi"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
@@ -139,18 +141,18 @@ msgstr ""
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Vahvista, haluatko leikata leikepöydälle"
+msgstr "Vahvista, haluatko leikata leikepöydältä"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
-msgstr "Leikepöydälle leikkaaminen"
+msgstr "Leikepöydältä leikkaaminen"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
 msgstr ""
-"Leikkaa leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
+"Leikkaa leikepöydältä sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
 "suorittamiselle"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -195,11 +197,11 @@ msgstr "Vahvista leikepöydän tyhjentäminen"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate copy"
-msgstr "Vahvista kopiointi"
+msgstr "Vahvista kopioinnin emulointi"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate cut"
-msgstr "Vahvista leikkaaminen"
+msgstr "Vahvista leikkaamisen emulointi"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"
