@@ -1,6 +1,6 @@
 # Clip Contents Designer #
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	Download [stable version][1]
 *	Download [development version][2]
 
@@ -25,6 +25,9 @@ Notes:
 
 *	The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed
+
+## Changes for 11.0
+* Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
