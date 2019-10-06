@@ -1,7 +1,7 @@
 # Clip Contents Designer dodaj tekst u međuspremnik #
 
-*	Autor: Noelia Ruiz Martínez.
-*	NVDA compatibility: 2018.2 to 2019.1.
+*	Authors: Noelia, Abdel.
+*	NVDA compatibility: 2018.4 to 2019.2.
 *	Preuzmi [stabilnu inačicu][1]
 *	Preuzmi [razvojnu inačicu][2]
 
@@ -31,6 +31,12 @@ Napomene:
   Input gestures dialog, Configuration category.
 *	Potvrde neće biti zatražene ako se neka poruka u vezi NVDA još uvijek
   prikazuje. U tim slučajevima, akcije će se odmah izvršavati
+
+## Changes for 10.0
+* Fixed a bug in the dialog used to show the clipboard text, when its title
+  contains non latin characters.
+* Fixed a bug when using the emulate cut and copy features with an Arabic
+  keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
 ## Changes for 9.0
 
@@ -88,7 +94,6 @@ Napomene:
 
 ## Promjene u inačici1.0 ##
 *	Prva inačica.
-
 
 
 [[!tag dev stable]]

@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
-*	Autori: Noelia Ruiz Martínez.
-*	Compatibile con NVDA  2018.2 a 2019.1.
+*	Authors: Noelia, Abdel.
+*	NVDA compatibility: 2018.4 to 2019.2.
 *	Scarica la [versione stabile][1]
 *	Scarica la [versione in sviluppo][2]
 
@@ -33,6 +33,12 @@ Nota:
   Preferenze, gesti di immissione, categoria Configurazione
 *	Quando è aperta una finestra di NVDA non verrà visualizzato il messaggio
   di conferma. In questa situazione lazione verrà eseguita direttamente.
+
+## Changes for 10.0
+* Fixed a bug in the dialog used to show the clipboard text, when its title
+  contains non latin characters.
+* Fixed a bug when using the emulate cut and copy features with an Arabic
+  keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
 ## Changes for 9.0
 
@@ -94,7 +100,6 @@ Nota:
 
 ## Cambiamenti per 1.0 ##
 *	Versione iniziale
-
 
 
 [[!tag dev stable]]

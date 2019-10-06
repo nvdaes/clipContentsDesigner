@@ -1,7 +1,7 @@
 # Leikepöydän sisällön käsittelijä #
 
-*	Tekijä: Noelia Ruiz Martínez
-*	NVDA-yhteensopivuus: 2018.2-2019.1.
+*	Tekijät: Noelia, Abdel.
+*	Yhteensopivuus: NVDA 2018.4-2019.2.
 *	Lataa [vakaa versio][1]
 *	Lataa [kehitysversio][2]
 
@@ -24,8 +24,8 @@ valintaikkunasta Tekstin tarkastelu -kategoria.
 
 ## Asetukset-valikko ##
 *	Leikepöydän sisällön käsittelijä: Mahdollistaa erottimen määrittämisen, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
-On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioi ja leikkaa) heti vai vahvistuksen pyytämisen jälkeen, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä tai jos se ei ole tyhjä.
-Lisäksi on mahdollista muuttaa leikepöydällä olevan tekstin muotoa ja merkkien enimmäismäärää, joka näytetään selaustilassa. Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, jos leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
+On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioinnin ja leikkaamisen emulointi) heti vai pyydetäänkö ensin vahvistus, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä tai jos se ei ole tyhjä.
+Lisäksi on mahdollista muuttaa leikepöydällä olevan tekstin muotoa ja selaustilassa näytettävien merkkien enimmäismäärää. Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, jos leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
 
 Huomautuksia:
 
@@ -34,6 +34,14 @@ Huomautuksia:
   Asetukset-kategoria.
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
+
+## Muutokset versiossa 10.0
+* Korjattu ohjelmavirhe leikepöydän sisältämän tekstin näyttämiseen
+  käytettävässä valintaikkunassa, kun sen nimi sisälsi ei-latinalaisia
+  merkkejä.
+* Korjattu ohjelmavirhe leikkaamisen ja kopioinnin emulointitoiminnoissa
+  arabialaista näppäimistöasettelua käytettäessä. Tämän korjasi Abdel, joka
+  on lisätty lisäosan tekijäksi.
 
 ## Muutokset versiossa 9.0
 
@@ -52,16 +60,16 @@ Huomautuksia:
 
 ## Muutokset versiossa 7.0
 
-* Jos valitset Ei Määritä kopioinnin ja leikkaamisen vahvistuskysely
-  -valintaikkunassa, joka tulee näkyviin lisäosaa asennettaessa, näiden
-  ominaisuuksien komennot poistetaan käytöstä, mikä palauttaa normaalin
-  Ctrl+C- ja Ctrl+X-toiminnallisuuden.
+* Jos valitset Ei Määritä kopioinnin ja leikkaamisen emuloinnin
+  märitysvalintaikkunassa, joka tulee näkyviin lisäosaa asennettaessa,
+  näiden ominaisuuksien komennot poistetaan käytöstä, mikä palauttaa
+  normaalin Ctrl+C- ja Ctrl+X-toiminnallisuuden.
 
 ## Muutokset versiossa 6.0
 
 *	 Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Vahvista kopiointi- ja Vahvista leikkaaminen -asetukset, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
-*	Lisätty valintaikkuna Vahvista kopiointi- ja Vahvista leikkaaminen -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
+*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -asetukset, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
+*	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
 *	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
 
 ## Muutokset versiossa 5.0 ##
@@ -95,7 +103,6 @@ Huomautuksia:
 
 ## Muutokset versiossa 1.0 ##
 *	Ensimmäinen versio.
-
 
 
 [[!tag dev stable]]

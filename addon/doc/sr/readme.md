@@ -1,7 +1,7 @@
 # Dizajner sadržaja privremene memorije #
 
-*	Autor: Noelia Ruiz Martínez.
-*	NVDA compatibility: 2018.2 to 2019.1.
+*	Authors: Noelia, Abdel.
+*	NVDA compatibility: 2018.4 to 2019.2.
 *	preuzmi [stabilnu verziju][1]
 *	preuzmi [verziju u razvoju][2]
 
@@ -31,6 +31,12 @@ Notes:
   Input gestures dialog, Configuration category.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed
+
+## Changes for 10.0
+* Fixed a bug in the dialog used to show the clipboard text, when its title
+  contains non latin characters.
+* Fixed a bug when using the emulate cut and copy features with an Arabic
+  keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
 ## Changes for 9.0
 
@@ -89,7 +95,6 @@ Notes:
 
 ## Promene u 1.0 ##
 *	Prva verzija.
-
 
 
 [[!tag dev stable]]

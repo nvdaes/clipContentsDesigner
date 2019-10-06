@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
-*	Autores: Noelia Ruiz Martínez.
-*	Compatibilidad con NVDA: de 2018.2 a 2019.1.
+*	Autores: Noelia, Abdel.
+*	Compatibilidad con NVDA: de 2018.4 a 2019.2.
 *	Descargar [versión estable][1]
 *	Descargar [versión de desarrollo][2]
 
@@ -33,6 +33,13 @@ Notas:
   Preferencias, diálogo Gestos de Entrada, Categoría Configuración.
 *	No se deberían solicitar confirmaciones cuando siga abierto un cuadro de
   mensaje de NVDA. En esos casos, las acciones se realizarán inmediatamente
+
+## Cambios para 10.0
+* Corregido un problema en el diálogo usado para mostrar el texto del
+  portapapeles, cuando su título contiene caracteres no latinos.
+* Corregido un problema al usar las funciones de emular cortar y copiar con
+  la distribución de teclado árabe. Esto ha sido corregido por Abdel, que se
+  ha añadido como autor del complemento.
 
 ## Cambios para 9.0
 
@@ -97,7 +104,6 @@ Notas:
 
 ## Cambios para 1.0 ##
 *	Versión inicial.
-
 
 
 [[!tag dev stable]]
