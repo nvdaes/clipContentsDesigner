@@ -27,13 +27,13 @@ addonHandler.initTranslation()
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 ADDON_PANEL_TITLE = ADDON_SUMMARY
 BROWSEABLETEXT_FORMATS = [
-			# Translators: label of a dialog.
-			_("Preformatted text in HTML"),
-			# Translators: label of a dialog.
-			_("HTML as shown in a web browser"),
-			# Translators: label of a dialog.
-			_("Raw text"),
-		]
+	# Translators: label of a dialog.
+	_("Preformatted text in HTML"),
+	# Translators: label of a dialog.
+	_("HTML as shown in a web browser"),
+	# Translators: label of a dialog.
+	_("Raw text"),
+]
 
 confspec = {
 	"separator": "string(default="")",
