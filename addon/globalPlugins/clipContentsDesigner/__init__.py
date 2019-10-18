@@ -84,11 +84,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
 
-		self._copyStartMarker = None
-
 	def terminate(self):
 		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
-		self._copyStartMarker = None
 
 	def onSettings(self, evt):
 		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
@@ -142,36 +139,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
 
-	@script(
-		# Translators: message presented in input mode.
-		description=_("Marks the current position of the review cursor as the start of text to be added to the clipboard."),
-		gesture="kb:NVDA+windows+f9"
-	)
-	def script_setSelectionStartMarker(self, gesture):
-		self._copyStartMarker = api.getReviewPosition().copy()
-		# Translators: message presented when the start marker for adding text has been set using the review cursor.
-		ui.message(_("Start marker set"))
-
 	def getTextToAdd(self):
 		newText = self.getSelectedText() or self.getMath()
 		if not newText:
-			if not self._copyStartMarker:
+			if not getattr(api.getReviewPosition().obj, "_selectThenCopyRange", None) or not api.getReviewPosition().obj._selectThenCopyRange:
 				# Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-				ui.message(_("No selection. No start marker set"))
-				return
-			pos = api.getReviewPosition().copy()
-			if self._copyStartMarker.obj != pos.obj:
-				# Translators: Message presented when a start marked has been placed, but not in the current object.
-				ui.message(_("The start marker must reside within the same object"))
-				return
-			pos.move(textInfos.UNIT_CHARACTER, 1, endPoint="end")
-			pos.setEndPoint(self._copyStartMarker, "startToStart")
-			if pos.compareEndPoints(pos, "startToEnd") == 0:
-				# Translators: message presented when review cursor has been used to add text and there is no text to add.
 				ui.message(_("No text to add"))
 				return
-			newText = pos.clipboardText
-			self._copyStartMarker = None
+			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText
 		try:
 			clipData = api.getClipData()
 		except:
