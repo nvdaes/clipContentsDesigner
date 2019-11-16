@@ -329,7 +329,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.browseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
-				_(u"Clipboard text ({max}/{current} - {formatForTitle})".format(max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format])),
+				_("Clipboard text ({max}/{current} - {formatForTitle})".format(max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format])),
 				html
 			)
 
