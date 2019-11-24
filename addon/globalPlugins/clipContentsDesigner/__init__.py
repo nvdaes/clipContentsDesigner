@@ -341,8 +341,7 @@ class AddonSettingsPanel(SettingsPanel):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: label of a dialog.
 		setSeparatorLabel = _("Type the string to be used as a &separator between contents added to the clipboard.")
-		setSeparatorLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, setSeparatorLabel, wx.TextCtrl)
-		self.setSeparatorEdit = setSeparatorLabeledCtrl.control
+		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
 		try:
 			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
 		except KeyError:
