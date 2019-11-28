@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	Autori: Noelia și Abdel.
+*	Compatibilitate NVDA: 2018.4 - 2019.2.
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 
@@ -34,11 +34,12 @@ Note:
 *	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
   încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Modificări în 10.0
+* S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
+  planșetă când titlul său conținea caractere nelatine.
+* S-a rezolvat o problemă întâmpinată la utilizarea copierii și a tăierii
+  simulate cu o tastatură arabă. A fost rezolvată de Abdel, care acum are
+  statutul de autor al suplimentului.
 
 ## Modificări în 9.0
 
