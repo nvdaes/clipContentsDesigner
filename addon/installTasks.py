@@ -25,7 +25,6 @@ confspec = {
 config.conf.spec["clipContentsDesigner"] = confspec
 
 def onInstall():
-	from gui import SettingsPanel, NVDASettingsDialog
 	module = "globalPlugins.clipContentsDesigner"
 	className = "GlobalPlugin"
 	copyGesture = "kb:control+c"
