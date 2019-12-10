@@ -1,7 +1,7 @@
-# Zwischenablagendesigner #
+# Designer für die Zwischenablage #
 
-*	Autor: Noelia Ruiz Martínez.
-*	NVDA-Kompatibilität: 2018.2 bis 2019.1.
+*	Autoren: Noelia Ruiz Martínez, Abdel.
+*	NVDA-Kompatibilität: 2018.4 bis 2019.2.
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
@@ -29,7 +29,16 @@ Anmerkungen:
 *	Der obige Befehl kann im NVDA-Menü unter Einstellungen / Eingaben in der
   Kategorie "Konfiguration" geändert werden.
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
-  noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
+  noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt
+
+## Änderungen in 10.0
+* Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
+  Text der Zwischenablage anzuzeigen, wenn sein Titel nicht-lateinische
+  Zeichen enthält.
+* Ein Fehler wurde behoben, der bei der Verwendung der emulierten Funktionen
+  zum Ausschneiden und Kopieren mit einem arabischen Tastaturlayout
+  auftrat. Dies wurde von Abdel behoben, der als zusätzlichen Autor dieser
+  Erweiterung nun hinzugefügt wurde.
 
 ## Änderungen in 9.0
 
@@ -94,7 +103,6 @@ Anmerkungen:
 
 ## Änderungen in 1.0 ##
 *	Erstveröffentlichung.
-
 
 
 [[!tag dev stable]]

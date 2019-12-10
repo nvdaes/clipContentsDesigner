@@ -1,94 +1,107 @@
-# Clip Contents Designer dodaj tekst u međuspremnik #
+# Upravljanje sadržajem međuspremnika (Clip Contents Designer) #
 
-*	Autor: Noelia Ruiz Martínez.
-*	NVDA compatibility: 2018.2 to 2019.1.
-*	Preuzmi [stabilnu inačicu][1]
-*	Preuzmi [razvojnu inačicu][2]
+*	Authors: Noelia, Abdel.
+*	NVDA kompatibilnost: 2018.4 do 2019.2.
+*	Preuzmi [stabilnu verziju][1]
+*	Preuzmi [razvojnu verziju][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
+korisno kad se žele spojiti dijelovi teksta, koji su spremni za
+lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
+za čitanje.
 
 ## Tipkovnički prečaci ##
-*	NVDA+windows+c: dodaj označeni tekst, ili niz označen uz pomoć preglednog
-  kursora, u međuspremnik.
+*	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
+  unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
+  pomoću preglednog kursora.
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+*	NVDA+windows+f9: Označi trenutačni položaj pokazivača kao početak teksta koji se dodaje u međuspremnik. Ako koristiš NVDA+F9, tekst se neće dodati.
+*	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s mogućnošću da se prethodno od korisnika traži potvrda.
+*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape kopirane iz Windows Explorer.
 
-Napomena: Prečaci iznad mogu se promijeniti iz NVDA izbornika, podizbornika
-postavke, dijaloškog okvira ulazne geste kategoria pregled teksta.
+Napomena: Gore navedeni prečaci se mogu promijeniti u NVDA izborniku,
+podizbornik Postavke, dijaloški okvir Ulazne geste, kategorija Pregled
+teksta.
 
-## Podizbornik postavke ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+## Izbornik za Postavke ##
+*	Postavke za „Upravljanje sadržajem međuspremnika”: Omogućuje postavljanje rastavljača koji se može koristiti za traženje segmenata teksta, nakon što je cjelokupni tekst zalijepljen.
+Također je moguće odabrati hoće li se tekst dodati ispred ili iza postojećeg teksta, ako se raspoložive radnje (dodaj, izbriši međuspremnik, simuliraj kopiranje i simuliraj izrezivanje) trebaju izvesti odmah ili nakon potvrde, a ako će se potvrde uvijek tražiti, samo ako se u međuspremniku nalazi tekst ili ako međuspremnik nije prazan.
+Nadalje je moguće promijeniti format i maksimalni broj znakova teksta u međuspremniku, koji će biti prikazan u modusu pregledavanja. Povećanje ograničenja može stvoriti probleme, ako međuspremnik sadrži veliki broj tekstualnih nizova. Zadana granica je 100000 znakova.
 
-Napomene: 
+Napomene:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Potvrde neće biti zatražene ako se neka poruka u vezi NVDA još uvijek
-  prikazuje. U tim slučajevima, akcije će se odmah izvršavati
+*	Gore navedeni prečaci se mogu promijeniti u NVDA izborniku, podizbornik
+  Postavke, dijaloški okvir Ulazne geste, kategorija Konfiguracija.
+*	Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
+  prikazuje. U tim slučajevima će se radnje izvršavati odmah
 
-## Changes for 9.0
+## Promjene u verziji 10.0
+* Ispravljana je greška u dijaloškom okviru za prikaz teksta međuspremnika,
+  kad naslov sadrži ne-latinične znakove.
+* Ispravljena je greška kad se koriste funkcije simuliranja izrezivanja i
+  kopiranja s arapskim rasporedom tipkovnice. To je ispravio Abdel, dodan je
+  kao autor dodatka.
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+## Promjene u verziji 9.0
 
-## Changes for 8.0 ##
+* Dodana je mogućnost prikazivanja teksta međuspremnika u modusu čitanja.
+* Dodana je opcija za potrebu potvrđivanja ako međuspremnik nije prazan, na
+  primjer, ako su kopirane datoteke ili mape.
+* Zahtijeva NVDA verziju 2018.4 ili noviju.
 
-* Postavke dodatka prikazane su u odgovarajućoj kategoriji postavki NVDA.
-* Requires NVDA 2018.2 or later.
-* Ako je potrebno, možete preuzeti [zadnju inačicu kompatibilnu sa NVDA
+## Promjene u verziji 8.0 ##
+
+* Postavke dodatka se prikazuju u odgovarajućoj kategoriji dijaloškog okvira
+  za NVDA Postavke.
+* Zahtijeva NVDA verziju 2018.2 ili noviju.
+* Ako treba, moguće je preuzeti [zadnju verziju kompatibilnu s NVDA
   2017.3][3].
 
-## Changes for 7.0
+## Promjene u verziji 7.0
 
-* U dijaloškom okviru za konfiguriranje funkcionalnosti Simulirano kopiranje
-  i Simulirano rezanje, ako odaberete ne, naredbe za ove značajke će se
-  ukloniti, te ćete za iste naredbe koristiti naredbe control+c I control+x.
+* U dijaloškom okviru za konfiguriranje funkcionalnosti Simuliraj kopiranje
+  i Simuliraj izrezivanje, ako se odabere „ne”, uklonit će se naredbe za ove
+  funkcije, tako da će biti moguće koristiti normalni način rada za
+  control+c i control+x.
 
-## Changes for 6.0
+## Promjene u verziji 6.0
 
-*	 Dodane mogućnosti izbora hoće li se dostupne akcije izvršavati nakon potvrde.
-*	Dodane komande Kopiraj i Izreži, koje možete odabrati u dijaloškom okviru Ulazne geste.
-*	 Dodane komande Kopiraj i Izreži, koje možete odabrati u dijaloškom okviru Ulazne geste*	Dodan dijaloški okvir za podešavanje naredbi Kopiraj i Izreži pri instalaciji. Ovo dozvoljava dodavanje kratica control+c i control+x za naredbe kopiraj i izreži, te pitanje želite li zamijeniti sadržaj međuspremnika dok koristite ove tipkovničke kratice.
+*	Dodana je mogućnost za odluku o izvršavanju dostupnih radnji nakon potvrde.
+*	Dodane su naredbe Simuliraj kopiranje i Simuliraj izrezivanje, koje je moguće dodijeliti u dijaloškom okviru Ulazne geste.
+*	Dodan je dijaloški okvir za podešavanje naredbi Simuliraj kopiranje i Simuliraj izrezivanje, tijekom instaliranja. Ovo dozvoljava dodavanje naredbi control+c i control+x za kopiranje i izrezivanje, te postavljanjem pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih tipkovničkih prečaca.
 *	Riješena dokumentacija za script_add (Windows+NVDA+c).
 
-## izmjene u inačici 5.0 ##
+## Promjene u verziji 5.0 ##
 
-*	Vizualno predstavljanje dijaloških okvira je poboljašno, slično dijaloškim
-  okvirima koji su prikazani u programu NVDA.
-*	Zahtjeva NVDA inačicu 2016.4 ili noviju.
+*	Vizualni prikaz dijaloških okvira je poboljašn, slično dijaloškim okvirima
+  koji su prikazani u programu NVDA.
+*	Zahtijeva NVDA verziju 2016.4 ili noviju.
 
-## izmjene u inačici 4.0 ##
-*	Podešavanja dodatka upravljaju NVDA konfiguracijom, tako da možete
-  koristiti standardne profile za čuvanje podešavanja i ne morate kopirati
-  podešavanja nakon reinstalacije.
-*	Sada je moguće izabrati hoće li dodani tekst biti spojen ili prespojen,
-  koristeći izborno polje dodaj dio teksta prije podataka u postavkama
+## Promjene u verziji 4.0 ##
+*	Postavkama dodatka se upravlja NVDA konfiguracijom, tako da je moguće
+  koristiti standardne profile za spremanje raznih rastavljača te nije
+  potrebno kopirati postavke nakon reinstalacije.
+*	Sad je moguće izabrati, hoće li dodani tekst biti dodan ispred ili iza
+  postojećeg teksta, koristeći izborno polje „Dodaj tekst ispred podataka
+  međuspremnika” u postavkama dodatka.
+
+## Promjene u verziji 3.0 ##
+*	Brajičin prikaz MathML objekata se može dodati u privremenu memoriju, ako
+  je MathPlayer instaliran.
+*	Ako nema razdvajača, dodat će se samo jedan redak između dodanih segmenata
+  teksta.
+*	Moguće je odrediti prečac za otvaranje dijaloškog okvira za postavke
+  dodatka.
+*	U dijaloškom okviru za postavke je dodan potvrdni okvir, kojim se odlučuje
+  o tome, treba li razdvajač kopirati za uvoz nakon ponovnog instaliranja
   dodatka.
 
-## izmjene u inačici 3.0 ##
-*	Brajev prikaz MathML objekata se može dodati u privremenu memoriju ako je
-  MathPlayer instaliran.
-*	Ako nema razdvajača, bit će samo jedan red između dodanih segmenata.
-*	Prečica može biti podešena za otvaranje dijaloškog okvira postavki
-  dodatka.
-*	Dodan izborni okvir u postavkama za izbor da li če razdvajač biti kopiran
-  za ponovni uvoz nakon reinstalacije dodatka.
-
-## izmjene u inačici 2.0 ##
-*	znakovi devanagari pisma mogu se koristiti kao rastavljači između dodanog
+## Promjene u verziji 2.0 ##
+*	Znakovi devanagari pisma se mogu koristiti kao rastavljači između dodanog
   sadržaja.
 
-## Promjene u inačici1.0 ##
-*	Prva inačica.
-
+## Promjene u verziji 1.0 ##
+*	Prva verzija.
 
 
 [[!tag dev stable]]

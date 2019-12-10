@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
-*	Autori: Noelia Ruiz Martínez.
-*	Compatibilitate NVDA: 2018.2 - 2019.1.
+*	Autori: Noelia și Abdel.
+*	Compatibilitate NVDA: 2018.4 - 2019.2.
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 
@@ -33,6 +33,13 @@ Note:
   Gesturi de intrare, Categoria de configurare.
 *	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
   încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
+
+## Modificări în 10.0
+* S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
+  planșetă când titlul său conținea caractere nelatine.
+* S-a rezolvat o problemă întâmpinată la utilizarea copierii și a tăierii
+  simulate cu o tastatură arabă. A fost rezolvată de Abdel, care acum are
+  statutul de autor al suplimentului.
 
 ## Modificări în 9.0
 
@@ -95,7 +102,6 @@ Note:
 
 ## Modificări din 1.0 ##
 *	Versiunea inițială.
-
 
 
 [[!tag dev stable]]

@@ -1,7 +1,7 @@
 # Gestor do conteúdo de transferência #
 
-*	Autores: Noelia Ruiz Martínez.
-*	NVDA compatibility: 2018.2 to 2019.1.
+*	Authors: Noelia, Abdel.
+*	NVDA compatibility: 2018.4 to 2019.2.
 *	Baixe a [versão estável][1]
 *	Baixe a [versão de desenvolvimento][2]
 
@@ -33,6 +33,12 @@ Notas:
   Preferências, diálogo de Gestos para Entrada, categoria configuração.
 *	Confirmação não será solicitada quando um diálogo do NVDA ainda estiver
   aberto. Nesses casos, as ações serão executadas de imediato
+
+## Changes for 10.0
+* Fixed a bug in the dialog used to show the clipboard text, when its title
+  contains non latin characters.
+* Fixed a bug when using the emulate cut and copy features with an Arabic
+  keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
 ## Changes for 9.0
 
@@ -94,7 +100,6 @@ Notas:
 
 ## Mudanças na 1.0 ##
 *	Versão inicial.
-
 
 
 [[!tag dev stable]]
