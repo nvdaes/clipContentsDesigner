@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""Add-on for managing clipboard text."""),
 	# version
-	"addon_version" : "10.0",
+	"addon_version" : "11.1-dev", 
 	# Author(s)
 	"addon_author" : u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com",
 	# URL for the add-on documentation support
@@ -27,9 +27,9 @@ addon_info = {
 	# Documentation file name
 	"addon_docFileName" : "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3")
-	"addon_minimumNVDAVersion" : "2018.4.0",
+	"addon_minimumNVDAVersion" : "2019.3",
 	# Last NVDA version supported/tested (e.g. "2018.4", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : "2019.2.0",
+	"addon_lastTestedNVDAVersion" : "2019.3",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel" : None,
 }
