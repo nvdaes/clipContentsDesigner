@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-05-28 01:12+0200\n"
+"PO-Revision-Date: 2019-12-20 15:20+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 1.8.5\n"
 "Language-Team: \n"
 
 #. Translators: label of a dialog.
@@ -43,7 +43,7 @@ msgstr "HTML, ako je zobrazené vo webovom prehliadači"
 
 #. Translators: label of a dialog.
 msgid "Raw text"
-msgstr ""
+msgstr "Nespracovaný text"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -78,9 +78,8 @@ msgid "The start marker must reside within the same object"
 msgstr "Označený začiatok sa musí nachádzať v rovnakom objekte"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
-#, fuzzy
 msgid "No text to add"
-msgstr "Žiadny text na pripojenie"
+msgstr "Žiadny text na pridanie"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
@@ -99,7 +98,6 @@ msgid "Cannot add"
 msgstr "Nie je možné pripojiť"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
@@ -133,6 +131,7 @@ msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
 msgstr ""
+"Kopírovať do schránky s možnosťou požiadať o predchádzajúce potvrdenie"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
@@ -147,26 +146,25 @@ msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
 msgstr ""
+"Vystrihnúť zo schránky, s možnosťou požiadať o predchádzajúce potvrdenie"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Schránka nie je prázdna, ale nezobrazuje sa žiadny text"
 
 #. Translators: presented when clipboard is empty.
-#, fuzzy
 msgid "Clipboard is empty"
 msgstr "Schránka je prázdna"
 
 #. Translators: title of a browseable message.
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr ""
+msgstr "Text schránky ({max}/{current} - {formatForTitle})"
 
 msgid "Shows the clipboard text in browse mode"
 msgstr "Zobrazí text schránky v režime prehliadania"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
