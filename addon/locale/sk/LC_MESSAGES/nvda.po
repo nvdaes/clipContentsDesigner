@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-12-20 15:20+0100\n"
+"PO-Revision-Date: 2020-01-12 13:01+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.6.11\n"
 "Language-Team: \n"
 
 #. Translators: label of a dialog.
@@ -25,29 +25,29 @@ msgid ""
 "text. Do you want to configure Emulate copy and cut now? You may do or "
 "change this later."
 msgstr ""
-"Tento doplnok vám umožňuje potvrďiť, či chcete kopýrovať a vystrihovať, "
-"nahraďiť obsah schránky windows stlačeným kláves CTRL+C a CTRL+X. Toto sa "
-"nazýva emulate copy a cup"
+"Teraz môžete nastaviť, aby sa pred skopírovaním a vystrihnutím do schránky "
+"zobrazilo varovanie. Predvolene sa toto varovanie objaví len vtedy, ak je v "
+"schránke text. Chcete aktivovať varovanie?"
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Konfiguruje enulate copy and Cut"
+msgstr "Varovania pri práci so schránkou"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
-msgstr "Predformátovaný text v HTML"
+msgstr "Formátovaný html text"
 
 #. Translators: label of a dialog.
 msgid "HTML as shown in a web browser"
-msgstr "HTML, ako je zobrazené vo webovom prehliadači"
+msgstr "HTML zobrazené vo webovom prehliadači"
 
 #. Translators: label of a dialog.
 msgid "Raw text"
-msgstr "Nespracovaný text"
+msgstr "čistý text"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
-msgstr " Zobrazí nastavenia Clip Contents Designer."
+msgstr "Zobrazí nastavenia pokročilej schránky."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -71,11 +71,11 @@ msgstr ""
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 msgid "No selection. No start marker set"
-msgstr "Nie je označený začiatok."
+msgstr "Nie je označený začiatok"
 
 #. Translators: Message presented when a start marked has been placed, but not in the current object.
 msgid "The start marker must reside within the same object"
-msgstr "Označený začiatok sa musí nachádzať v rovnakom objekte"
+msgstr "Začiatok musí byť označený v tom istom objekte"
 
 #. Translators: message presented when review cursor has been used to add text and there is no text to add.
 msgid "No text to add"
@@ -83,11 +83,11 @@ msgstr "Žiadny text na pridanie"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
-msgstr "Prosím, potvrďte ak chcete pridať text do schránky"
+msgstr "Naozaj chcete pridať text do schránky?"
 
 #. Translators: Title of a dialog.
 msgid "Adding text to clipboard"
-msgstr "Pridanie textu do schránky"
+msgstr "Pridanie textu"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
@@ -102,55 +102,51 @@ msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
-msgstr ""
-"Získa text od pred tým nastavenej počiatočnej značky po / vrátane aktuálnej "
-"pozícii a skopíruje ho do schránky Windows."
+msgstr "Pridá označený text do schránky."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Prosím, potvrďte ak chcete vyčistiť schránku"
+msgstr "Naozaj chcete vymazať obsah schránky?"
 
 #. Translators: Title of a dialog.
 msgid "Clearing clipboard"
-msgstr "Čistenie schránky"
+msgstr "Vymazanie schránky"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Vymaže text a obsah schránky"
+msgstr "Vymaže obsah schránky."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "Prosím, potvrďte ak chcete skopýrovať do schránky"
+msgstr "Naozaj chcete kopírovať?"
 
 #. Translators: Title of a dialog.
 msgid "Copying to clipboard"
-msgstr "Kopýrujem do schránky"
+msgstr "Kopírovanie"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr ""
-"Kopírovať do schránky s možnosťou požiadať o predchádzajúce potvrdenie"
+msgstr "Skopíruje do schránky s možnosťou varovania"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Prosím, potvrďte ak chcete vystrihnúť do schránky"
+msgstr "Naozaj chcete vystrihnúť?"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
-msgstr "Vystrihovanie do schránky"
+msgstr "Vystrihnutie"
 
 #. Translators: message presented in input mode.
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr ""
-"Vystrihnúť zo schránky, s možnosťou požiadať o predchádzajúce potvrdenie"
+msgstr "Vystrihne do schránky s možnosťou varovania"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
-msgstr "Schránka nie je prázdna, ale nezobrazuje sa žiadny text"
+msgstr "Schránka nie je prázdna, ale nie je možné zobraziť text"
 
 #. Translators: presented when clipboard is empty.
 msgid "Clipboard is empty"
@@ -159,7 +155,7 @@ msgstr "Schránka je prázdna"
 #. Translators: title of a browseable message.
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "Text schránky ({max}/{current} - {formatForTitle})"
+msgstr "Text v schránke ({max}/{current} - {formatForTitle})"
 
 msgid "Shows the clipboard text in browse mode"
 msgstr "Zobrazí text schránky v režime prehliadania"
@@ -169,35 +165,35 @@ msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"Zadajte reťazec, ktorým sa budú oddeľovať jednotlivé časti textu v schránke."
+"Zadajte reťazec, ktorým sa budú oddeľovať jednotlivé ča&sti textu v schránke."
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
-msgstr "& Pridať text pred dátami klipu"
+msgstr "& Pridať reťazec pred textom"
 
 #. Translators: label of a dialog.
 msgid "Sele&ct the actions which require previous confirmation"
-msgstr "Vyber&te akcie, ktoré vyžadujú predchádzajúce potvrdenie"
+msgstr "Vyber&te akcie, ktoré vyžadujú varovanie"
 
 #. Translators: label of a dialog.
 msgid "Confirm to add text"
-msgstr "Potvrďte pridanie textu"
+msgstr "pridanie textu"
 
 #. Translators: label of a dialog.
 msgid "Confirm to clear clipboard"
-msgstr "Potvrďte čistenie schránky"
+msgstr "Vymazanie schránky"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate copy"
-msgstr "Potvrďte pre enulovanie kopýrovanie"
+msgstr "Kopírovať"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate cut"
-msgstr "Potvrďte pre enulovanie vystrihnutie"
+msgstr "Vystrihnúť"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"
-msgstr "&Požiadajte o potvrdenie pred vykonaním vybraných akcií, keď:"
+msgstr "Va&rovať keď:"
 
 #. Translators: label of a dialog.
 msgid "Always"
@@ -205,7 +201,7 @@ msgstr "Vždy"
 
 #. Translators: label of a dialog.
 msgid "If the clipboard contains text"
-msgstr "Ak schránka obsahuje text"
+msgstr "Ak je v schránke text"
 
 #. Translators: label of a dialog.
 msgid "If the clipboard is not empty"
@@ -213,23 +209,23 @@ msgstr "Ak schránka nie je prázdna"
 
 #. Translators: label of a dialog.
 msgid "&Format to show the clipboard text in browse mode:"
-msgstr "&Formát, ak chcete zobraziť text schránky v režime prehliadania:"
+msgstr "Zobraziť schránku vo &formáte:"
 
 #. Translators: label of a dialog.
 msgid ""
 "&Maximum number of characters when showing clipboard text in browse mode"
 msgstr ""
-"& Maximálny počet znakov pri zobrazení textu schránky v režime prehliadania"
+"&Maximálny počet znakov pri zobrazení textu schránky v režime prehliadania"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgstr "Rozšírená schránka"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
-msgstr "Doplnok pre vytváranie textu v schránke."
+msgstr "Doplnok na prácu so schránkou Windows."
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Nastavenia &Clip Contents Designer..."
