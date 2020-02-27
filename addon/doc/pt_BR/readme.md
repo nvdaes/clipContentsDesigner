@@ -1,51 +1,66 @@
 # Gestor do conteúdo de transferência #
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	Autores: Noelia, Abdel.
+*	Compatibilidade com NVDA: 2019.3 e posterior
 *	Baixe a [versão estável][1]
 *	Baixe a [versão de desenvolvimento][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+Este complemento é usado para adicionar texto à área de transferência, o que
+pode ser útil quando você deseja unir seções de texto prontas para colar. O
+conteúdo da área de transferência também pode ser limpo e mostrado no modo
+de navegação.
 
 ## Comandos de tecla ##
-*	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres unicode
+
+* NVDA+windows+c: Acrescenta o texto selecionado, os caracteres unicode
   braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
-*	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+* NVDA+windows+x: Apaga o conteúdo da área de transferência.
+* Não atribuído: copia (ou corta) a área de transferência, com a
+  possibilidade de ser solicitada uma confirmação prévia.
+* Não atribuído: mostra o texto da área de transferência no modo de
+  navegação ou anuncia se a área de transferência está vazia ou possui
+  conteúdo que não pode ser apresentado em uma mensagem navegável, por
+  exemplo se arquivos ou pastas foram copiados do Windows Explorer.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo de Gestos para Entrada, categoria Exploração
 de texto.
 
 ## Menu Preferências ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+*	Configurações do Gestor do Conteúdo de Transferência: Permite definir um separador que pode ser usado para localizar os segmentos de texto depois que todo o texto adicionado for colado.
+Também é possível escolher se o texto adicionado será anexado ou prefixado, se as ações disponíveis (adicionar, limpar a área de transferência, emular cópia e emular corte) devem ser executadas imediatamente ou após a confirmação, e se as confirmações serão solicitadas sempre, apenas se o texto estiver contido na área de transferência, ou se a área de transferência não estiver vazia.
+Além disso, é possível alterar o formato e o número máximo de caracteres do texto da área de transferência, que serão mostrados no modo de navegação. Por favor, esteja ciente de que aumentar esse limite pode causar problemas se a área de transferência contiver grandes seqüências de texto. O limite padrão é 100000 caracteres.
 
 Notas:
 
 *	Os comandos acima podem ser alterados a partir do menu do NVDA, submenu
   Preferências, diálogo de Gestos para Entrada, categoria configuração.
-*	Confirmação não será solicitada quando um diálogo do NVDA ainda estiver
-  aberto. Nesses casos, as ações serão executadas de imediato
+*	Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
+  ainda estiver aberta. Nesses casos, as ações serão executadas
+  imediatamente.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Mudanças na 11.0
+* Agora é possível adicionar texto marcado com o cursor de exploração usando
+  comandos padrão do NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9 não é mais
+  usado, por uma melhor integração com o novo comando NVDA+shift+f9.
+* Requer NVDA 2019.3 ou posterior.
 
-## Changes for 9.0
+## Mudanças na 10.0
+* Corrigida uma falha no diálogo usado para mostrar o texto da área de
+  transferência, quando o título continha caracteres não latinos.
+* Corrigido uma falha ao usar os recursos de emulação de corte e cópia com
+  um layout de teclado árabe. Isso foi corrigido por Abdel, adicionado como
+  um autor do complemento.
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+## Mudanças na 9.0
+
+* Adicionada a possibilidade de mostrar o texto da área de transferência no
+  modo de navegação.
+* Foi adicionada uma opção para escolher se as confirmações serão
+  necessárias se a área de transferência não estiver vazia, por exemplo,
+  caso arquivos ou pastas foram copiados.
+* Requer NVDA 2018.4 ou posterior.
 
 ## Mudanças na 8.0 ##
 
@@ -100,7 +115,6 @@ Notas:
 
 ## Mudanças na 1.0 ##
 *	Versão inicial.
-
 
 [[!tag dev stable]]
 

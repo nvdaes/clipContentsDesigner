@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
 *	Autori: Noelia și Abdel.
-*	Compatibilitate NVDA: 2018.4 - 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 
@@ -11,13 +11,17 @@ a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățat și
 afișat în modul de navigare.
 
 ## Comenzi de taste ##
-*	NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
+
+* NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
   reprezintă obiectele MathML, sau string-ul care a fost marcat cu cursorul
   de vizualizare, pe planșetă.
-*	NVDA+Windows+X: Curăță contentul de pe planșetă.
-*	NVDA+Windows+F9: Marchează poziția de vizualizare curentă din examinarea cursorului ca începutul textului pentru a fi adăugat pe planșetă. Dacă utilizați NVDA+F9, textul nu va fi adăugat.
-*	 Neatribuită: Copiază, cu posibilitatea de a fi întrebat pentru o confirmare anterioară.
-*	 Neatribuită: Afișează textul de pe planșetă în modul de navigare sau anunță dacă planșeta este goală ori are conținut care nu poate fi prezentat într-un mesaj de navigare, un bun exemplu fiind copierea fișierelor sau a folderelor din Windows Explorer..
+* NVDA+Windows+X: Curăță contentul de pe planșetă.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Notă: Comenzile de mai sus pot fi modificate din meniul NVDA, Preferințe,
 Gesturi de intrare, Categoria de vizualizare a textului.
@@ -31,8 +35,14 @@ Note:
 
 *	Comanda de mai sus poate fi modificată din meniul NVDA, Preferințe,
   Gesturi de intrare, Categoria de configurare.
-*	Confirmările nu vor fi solicitate dacă o casetă de mesaj a NVDA-ului e
-  încă deschisă. În aceste cazuri, acțiunile vor fi efectuate imediat
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Modificări în 10.0
 * S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
@@ -102,7 +112,6 @@ Note:
 
 ## Modificări din 1.0 ##
 *	Versiunea inițială.
-
 
 [[!tag dev stable]]
 

@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	Baixar a [versão estável][1]
 *	Baixar a [versão de desenvolvimento][2]
 
@@ -11,13 +11,17 @@ para colar.  O conteúdo da área de transferência também pode ser visto no
 modo de navegação.
 
 ## Comandos de teclado ##
-*	NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
+
+* NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
   Braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
-*	NVDA+windows+x: limpa o conteúdo da área de transferência.
-* NVDA+windows+f9: Marca a posição actual do cursor de revisão como o início do texto a ser adicionado à área de transferência. Se usar nvda+F9, o texto não será adicionado.
-*	 Não atribuído: copia para (ou corta) a área de transferência, com a possibilidade de ser solicitada uma confirmação anterior.
-*	 Não atribuído: mostra o texto da área de transferência no modo de navegação ou anuncia se a área de transferência está vazia ou tem conteúdo que não pode ser apresentado numa mensagem navegável, por exemplo, se arquivos ou pastas foram copiados do Windows Explorer.
+* NVDA+windows+x: limpa o conteúdo da área de transferência.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Nota: Os comandos anteriores podem ser alterados a partir do menu do NVDA,
 submenu Preferências, comandos, categoria Revisão de texto.
@@ -31,8 +35,14 @@ Notas:
 
 *	Os comandos anteriores podem ser modificados a partir do menu do NVDA,
   submenu Preferências, comandos, configuração.
-*	As confirmações não serão pedidas quando um diálogo do NVDA ainda estiver
-  aberto. Nesses casos, as acções serão executadas de imediato
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title
@@ -103,7 +113,6 @@ Notas:
 
 ## Alterações para a versão 1.0 ##
 *	Versão inicial.
-
 
 [[!tag dev stable]]
 

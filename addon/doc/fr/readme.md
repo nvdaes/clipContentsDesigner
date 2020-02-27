@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	Télécharger [version stable][1]
 *	Télécharger [version de développement][2]
 
@@ -10,15 +10,17 @@ peut être utile lorsque vous souhaitez relier des portions de texte ensemble
 prêt pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 
 ## Commandes clavier ##
-*	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
+
+* NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
-*	NVDA+windows+x : Vide le contenu du presse-papiers.
-*	NVDA+windows+f9 : Marque la position courante du curseur de revue comme début du texte devant être ajouté au presse-papiers. Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
-*	 Non assigné : Copier (ou couper) vers le presse-papiers, avec la possibilité de demander une confirmation préalable.
-*	 Non assigné : Afficher le contenu du presse-papiers en mode navigation, ou annoncer si le presse-papiers est vide ou si son contenu ne peut être présenté en mode navigation, par exemple si des fichiers ou dossiers ont été copiés depuis l'explorateur de fichiers..
-*	NVDA+windows+f9 : Marque la position actuelle du curseur de revue comme le début du texte à ajouter au presse-papiers. Si vous utilisez nvda+F9, le texte ne sera pas ajouté.
-*	 Non affecté : Copie dans (ou coupe depuis) le presse-papiers, avec la possibilité de demander une confirmation préalable.
+* NVDA+windows+x : Vide le contenu du presse-papiers.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
@@ -33,9 +35,14 @@ Notes :
 *	La commande ci-dessus peut être changé depuis le menu NVDA, sous-menu
   Préférences, dans la boîte de dialogue Gestes de commandes, dans la
   catégorie Configuration.
-*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
-  NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées
-  immédiatement
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title
@@ -107,7 +114,6 @@ Notes :
 
 ## Changements pour la version 1.0 ##
 *	Première version.
-
 
 [[!tag dev stable]]
 

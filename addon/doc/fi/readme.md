@@ -1,7 +1,7 @@
 # Leikepöydän sisällön käsittelijä #
 
 *	Tekijät: Noelia, Abdel.
-*	Yhteensopivuus: NVDA 2018.4-2019.2.
+*	Yhteensopivuus: NVDA 2019.3 tai uudempi
 *	Lataa [vakaa versio][1]
 *	Lataa [kehitysversio][2]
 
@@ -11,12 +11,16 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
 näyttää selaustilassa.
 
 ## Näppäinkomennot ##
-*	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
+
+* NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
-*	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-*	NVDA+Windows+F9: Merkitse tarkastelukohdistimen nykyinen sijainti leikepöydälle kopioitavan tekstin alkukohdaksi. Tekstiä ei lisätä, jos käytät näppäinkomentoa NVDA+F9.
-*	Ei määritetty: Kopioi tai leikkaa leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon suorittamiselle.
-*	Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos siinä on sisältöä, jota ei voida näyttää selaustilassa, esim. Resurssienhallinnasta kopioituja tiedostoja tai kansioita.
+* NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
+* Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
+  vaihtoehtoisesti vahvistuksen.
+* Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa tai
+  ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on sisältöä, jota ei
+  voida näyttää selaustilassa, esim. Resurssienhallinnasta kopioituja
+  tiedostoja tai kansioita.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
@@ -34,6 +38,13 @@ Huomautuksia:
   Asetukset-kategoria.
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
+
+## Muutokset versiossa 11.0
+* Nyt on mahdollista lisätä tarkastelukohdistimella merkittyä tekstiä
+  tavallisia NVDA-komentoja(NVDA+F9 ja NVDA+F10) käyttäen. Komentoa
+  NVDA+Win+F9 ei enää käytetä paremman uuteen NVDA+Vaihto+F9-komentoon
+  integroinnin takia.
+* Edellyttää NVDA 2019.3:a tai uudempaa.
 
 ## Muutokset versiossa 10.0
 * Korjattu ohjelmavirhe leikepöydän sisältämän tekstin näyttämiseen
@@ -103,7 +114,6 @@ Huomautuksia:
 
 ## Muutokset versiossa 1.0 ##
 *	Ensimmäinen versio.
-
 
 [[!tag dev stable]]
 

@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	Загрузить [стабильную версию][1]
 *	Загрузить [разрабатываемую версию][2]
 
@@ -10,13 +10,17 @@ you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared an shown in browse mode.
 
 ## Команды клавиш ##
-*	NVDA+windows+c: Добавить выделенный текст, символы юникода брайля,
+
+* NVDA+windows+c: Добавить выделенный текст, символы юникода брайля,
   представляющие объекты в MathML, или строку, которая была отмечена
   просмотровым курсором в буфер обмена.
-*	NVDA+windows+x: Очистить содержимое буфера обмена.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+* NVDA+windows+x: Очистить содержимое буфера обмена.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Примечание: Эти команды могут быть изменены в меню NVDA, подменю Параметры,
 диалог Жесты ввода, категория просмотр текста.
@@ -31,7 +35,13 @@ Furthermore, it's possible to change the format and maximum number of characters
 *	Приведенная выше команда может быть изменена из меню NVDA, подменю
   параметры, диалог жесты ввода, категория конфигурация.
 *	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title
@@ -98,7 +108,6 @@ Furthermore, it's possible to change the format and maximum number of characters
 
 ## Изменения для 1.0 ##
 *	Первоначальная версия.
-
 
 [[!tag dev stable]]
 

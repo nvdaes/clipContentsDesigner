@@ -1,7 +1,7 @@
 # Udklipsdesigner #
 
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
@@ -11,13 +11,17 @@ indsætning. Udklipsholderens indhold kan også ryddes og vises i
 gennemsynstilstand.
 
 ## Tastaturkommandoer ##
-*	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
+
+* NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
   MathML-objekter, eller den tekststreng, som er blevet markeret med
   læsemarkøren, til udklipsholderen.
-*	NVDA+Windows+x: Ryd udklipsholderen.
-*	NVDA+Windows+F9: Marker læsemarkørens aktuelle position som starten af den tekst, der skal tilføjes til udklipsholderen. Hvis du bruger NVDA+F9, vil teksten ikke blive tilføjet.
-*	 Ikke tildelt; Tilføjede mulighed for at kopiere test til eller klippe tekst fra udklipsholderen, med mulighed for at få dette bekræftet.
-*	 Ikke tildelt: Viser teksten i udklipsholderen i gennemsynstilstand, eller meddeler hvis udklipsholderen er tom eller indeholder tekst, der ikke kan vises i gennemsynstilstand. Dette kan f.eks. være, hvis filer eller mapper er blevet kopieret fra Windows Stifinder..
+* NVDA+Windows+x: Ryd udklipsholderen.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Præferencer/
 Inputbevægelser / kategorien tekstlæsning.
@@ -31,8 +35,14 @@ Bemærkninger:
 
 *	Ovennævnte kommando kan ændres fra NVDAs menu, under Præferencer. Herunder
   gå til Inputbevægelser og vælg kategorien "Configuration".
-*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
-  stadig er åben. I disse situationer vil handlingen straks udføres.
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title
@@ -102,7 +112,6 @@ Bemærkninger:
 
 ## ændringer i 1.0 ##
 *	Første version.
-
 
 [[!tag dev stable]]
 

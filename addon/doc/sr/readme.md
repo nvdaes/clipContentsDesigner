@@ -1,7 +1,7 @@
 # Dizajner sadržaja privremene memorije #
 
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	preuzmi [stabilnu verziju][1]
 *	preuzmi [verziju u razvoju][2]
 
@@ -10,12 +10,16 @@ you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared an shown in browse mode.
 
 ## Prečice ##
-*	NVDA+Windows+c: Dodaje označeni tekst, brajevo predstavljanje MathML
+
+* NVDA+Windows+c: Dodaje označeni tekst, brajevo predstavljanje MathML
   objekata ili tekst označen preglednim kursorom u privremenu memoriju.
-*	NVDA+Windows+x: Uklanja sadržaj privremene memorije.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+* NVDA+Windows+x: Uklanja sadržaj privremene memorije.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Napomena: Navedene komande možete pronaći i izmeniti kroz NVDA meni >
 Podešavanja > Ulazne komande, pa zatim pronađite sekciju Pregled teksta.
@@ -30,7 +34,13 @@ Notes:
 *	The above command can be changed from NVDA menu, Preferences submenu,
   Input gestures dialog, Configuration category.
 *	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
 * Fixed a bug in the dialog used to show the clipboard text, when its title
@@ -95,7 +105,6 @@ Notes:
 
 ## Promene u 1.0 ##
 *	Prva verzija.
-
 
 [[!tag dev stable]]
 

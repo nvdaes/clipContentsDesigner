@@ -1,63 +1,108 @@
-# Clip Contents Designer #
+# Rozšírená schránka #
 
-*	Autor: Noelia Ruiz Martínez.
-*	Stiahnuť [stabilná verzia][1]
+*	Autori: Noelia, Abdel.
+*	Funguje s NVDA od verzie 2019.3
+*	Stiahnuť [stabilnú verziu][1]
 *	Stiahnuť [vývojovú verziu][2]
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared.
+Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
+rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
+schránky a zobraziť obsah schránky v režime prehliadania.
 
 ## Klávesové skratky ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which
-  represent MathML objects, or the string which has been marked with the
-  review cursor, to the clipboard.
-*	NVDA+windows+x: vymaže obsah schránky.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
-    If you use nvda+F9, the text will not be added.
+
+* NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
+  ste označili prezeracím kurzorom. Takto je možné pridať aj znaky unicode,
+  MathML.
+* NVDA+windows+x: vymaže obsah schránky.
+* Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
+* Nepridelené: Zobrazí obsah schránky v režime prehliadania. Ak sa nedarí
+  zobraziť obsah schránky (napríklad ak je prázdna alebo ste vložili súbory
+  a priečinky), doplnok na to upozorní.
 
 Tieto skratky môžete zmeniť z menu NVDA >možnosti > klávesové skratky,
 kategória prezeranie textu.
 
 ## Možnosti ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended.
+*	Nastavenia rozšírenej schránky umožňujú nastaviť reťazec, ktorý bude oddeľovať jednotlivé kúsky textu, ktoré ste do schránky vložili.
+Takisto môžete určiť, či sa bude obsah vkladať na koniec alebo na začiatok obsahu schránky. Tiež môžete aktivovať varovanie, ktoré sa zobrazí pred kopírovaním alebo vystrihnutím do schránky, pričom varovanie je možné zobraziť len vtedy, ak je v schránke obsah.
+Nakoniec, môžete určiť formát  a počet znakov, ktoré sa zobrazia zo schránky v režime prehliadania. Odporúčame vám nenastavovať vysoký počet znakov. Predvolene sa v režime prehliadania zobrazuje 100000 znakov.
 
-Note: The above command can be changed from NVDA menu, Preferences submenu,
-Input gestures dialog, Configuration category.
+Poznámky:
 
-## Changes for 5.0 ##
+*	skratku môžete zmeniť z menu NVDA >možnosti > klávesové skratky, kategória
+  možnosti.
+*	Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
+  takomto prípade sa varovanie nezobrazí a akcia sa rovno vykoná.
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+## Zmeny vo verzii 11.0
+* Odteraz je možné do schránky pridať aj reťazce označené štandardnými
+  príkazmi na označovanie pomocou prezeracieho kurzora (NVDA+F9,
+  NVDA+F10). Nvda+windows+F9 sa už nepoužíva, pre lepšiu integráciu so
+  skratkou nvda+shift+F9.
+* Vyžaduje NVDA od verzie 2019.3.
 
-## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard
-  profiles can be used to save different separators, and it's not needed to
-  copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or
-  prepended, using the Add text before clip data check box from the Clip
-  Contents Designer settings dialog.
+## Zmeny vo verzii 10.0
+* Opravená chyba, ktorá nastávala pri zobrazení názvu okna so zobrazením
+  textu v režime prehliadania, ak boli v názve okna špeciálne znaky.
+* Abdel opravil problémy s kopírovaním na Arabskom rozložení klávesnice.
 
-## Changes for 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if
-  MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings
-  dialog.
-*	Added a check box in the settings dialog, for choosing if the separator
-  should be copied to be imported when reinstalling the add-on.
+## Zmeny vo verzii 9.0
+
+* Pridané zobrazenie obsahu schránky v režime prehliadania.
+* Pridaná možnosť zobraziť varovanie, ak schránka nie je prázdna, napríklad
+  ak sú v schránke súbory a priečinky.
+* Vyžaduje sa NVDA od verzie 2018.4.
+
+## Zmeny vo verzii 8.0 ##
+
+* Nastavenia doplnku pridané do stromu s nastaveniami NVDA.
+* Vyžaduje NVDA od verzie 2018.2.
+* Stále si môžete stiahnuť [verziu pre NVDA 2017.3][3].
+
+## Zmeny vo verzii 7.0
+
+* Ak nepovolíte simulovanie kopírovania pri inštalácii, doplnok neupravuje
+  klávesové skratky.
+
+## Zmeny vo verzii 6.0
+
+*	 Pridané varovanie pri kopírovaní a vystrihnutí.
+*	Pridané skratky, ktoré preberajú kontrolu nad schránkou a dajú sa nastaviť z dialógu Klávesové skratky.
+*	 Pridané okno, ktoré sa zobrazí pri prvom spustení doplnku a umožňuje nastaviť prevzatieskratiek na prácu so schránkou. Toto umožňuje následné zobrazovanie varovaní pri kopírovaní a vystrihnutí.
+*	Opravená dokumentácia pre skript_add (Windows+NVDA+c).
+
+## Zmeny vo verzii 5.0 ##
+
+*	Opravené vizuálne zobrazenie dialógov doplnku.
+*	Vyžaduje NVDA od verzie 2016.4
+
+## Zmeny vo verzii 4.0 ##
+*	Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
+  konfiguračné profily NVDA a nie je potrebné po preinštalovaní doplnku
+  nanovo importovať nastavenia.
+*	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
+  koniec alebo na začiatok obsahu schránky. 
+
+## Zmeny vo verzii 3.0 ##
+*	Braillovské znaky pre matematické operátory je takisto možné vkladať do
+  schránky, ak je k dispozícii MathPlayer.
+*	Ak nezadáte znaky na oddelenie, použije sa jeden prázdny riadok.
+*	Nastavenia doplnku je možné vyvolať klávesovou skratkou, ktorú si
+  nastavíte v dialógu klávesové skratky.
+*	Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
+  preinštalovaní doplnku.
 
 ## Zmeny vo verzii 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+*	Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
 
 ## Zmeny vo verzii 1.0 ##
 *	prvé vydanie.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[1]: https://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

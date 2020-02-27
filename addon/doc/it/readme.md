@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
 *	Autori: Noelia, Abdel.
-*	Compatibile con NVDA  2018.2 a 2019.2
+*	NVDA compatibility: 2019.3 or later
 *	Scarica la [versione stabile][1]
 *	Scarica la [versione in sviluppo][2]
 
@@ -11,13 +11,17 @@ per poi incollarlo. Il contenuto degli appunti può anche essere cancellato e
 visualizzato  in Modalità Navigazione.
 
 ## Comandi rapidi ##
-*	NVDA + Windows + C: Aggiunge e copia negli appunti il testo selezionato, o
+
+* NVDA + Windows + C: Aggiunge e copia negli appunti il testo selezionato, o
   i caratteri braille unicode che rappresentano oggetti MathMl, o la stringa
   che è stata contrassegnata con il cursore di controllo.
-*	NVDA + Windows + x: Cancella contenuto degli appunti.
-*	NVDA + Windows + f9: Marca la posizione corrente del cursore di controllo come l'inizio del testo da aggiungere negli Appunti. Se si utilizza NVDA + F9, il testo non verrà aggiunto.
-*	 Non assegnato: copia o taglia dagli appunti, con possibilità di essere avvisati tramite una conferma prima che l'azione sia eseguita.
-*	Non assegnato: visualizza il testo presente negli appunti in un messaggio navigabile. Se negli appunti è presente contenuto diverso, come file o cartelle copiate precedentemente, NVDA informa che non è presente testo negli appunti.
+* NVDA + Windows + x: Cancella contenuto degli appunti.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
@@ -31,8 +35,14 @@ Nota:
 
 *	Il comando sopra citato può essere modificato dal menu di NVDA, sottomenu
   Preferenze, gesti di immissione, categoria Configurazione
-*	Quando è aperta una finestra di NVDA non verrà visualizzato il messaggio
-  di conferma. In questa situazione lazione verrà eseguita direttamente.
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Cambiamenti per 10.0
 * Risolto un bug nella finestra di dialogo utilizzata per mostrare il testo
@@ -101,7 +111,6 @@ Nota:
 
 ## Cambiamenti per 1.0 ##
 *	Versione iniziale
-
 
 [[!tag dev stable]]
 

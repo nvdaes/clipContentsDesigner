@@ -1,7 +1,7 @@
 # Designer für die Zwischenablage #
 
 *	Autoren: Noelia Ruiz Martínez, Abdel.
-*	NVDA-Kompatibilität: 2018.4 bis 2019.2.
+*	NVDA compatibility: 2019.3 or later
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
@@ -11,12 +11,17 @@ Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
 gelöscht werden.
 
 ## Tastenkombinationen ##
-*	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
+
+* NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem Lese-Cursor
   markiert wurde, in die Zwischenablage hinzu.
-*	NVDA+windows+X: Löscht die Zwischenablage.
-*	NVDA+Windows+F9: Markiert die aktuelle Position des Lese-Cursors als Anfang des Textes, der in die Zwischenablage eingefügt werden soll. Wenn Sie nvda+F9 verwenden, wird der Text nicht hinzugefügt.
-*	Nicht zugeordnet: Kopien in die Zwischenablage (oder Ausschnitte aus der Zwischenablage) mit einer Bestätigungsabfrage einfügen oder entfernen.
+* NVDA+windows+X: Löscht die Zwischenablage.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Anmerkung: Die obigen Befehle können im NVDA-Menü unter Einstellungen /
 Eingaben... in der Kategorie "Befehle zum Text betrachten" geändert werden.
@@ -28,8 +33,14 @@ Anmerkungen:
 
 *	Der obige Befehl kann im NVDA-Menü unter Einstellungen / Eingaben in der
   Kategorie "Konfiguration" geändert werden.
-*	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
-  noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
+
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
 
 ## Änderungen in 10.0
 * Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
@@ -103,7 +114,6 @@ Anmerkungen:
 
 ## Änderungen in 1.0 ##
 *	Erstveröffentlichung.
-
 
 [[!tag dev stable]]
 

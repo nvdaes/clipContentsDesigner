@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
 *	Autores: Noelia, Abdel.
-*	Compatibilidade con NVDA: da 2018.4 á 2019.2.
+*	Compatibilidade con NVDA: 2019.3 ou posterior
 *	Descargar [versión estable][1]
 *	Descargar [versión de desenvolvemento][2]
 
@@ -10,13 +10,17 @@ cando queras unir seccións de texto listas para pegarse xuntas.  O contido
 do portapapeis tamén pode limparse e amosarse en modo exploración.
 
 ## Ordes de teclado ##
-*	NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
+
+* NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
   que representan obxectos MathML, ou a cadea que se marcou co cursor de
   revisión, ao portapapeis.
-*	NVDA+windows+x: Limpa o contido do portapapeis.
-*	NVDA+windows+f9: Marca a posición actual do cursor de revisión como o comezo do texto a engadir ó portapapeis. Se utilizas NVDA+F9, o texto non se engadirá.
-*	 Non asignado: Copia (ou curta) ao/do portapapeis, coa posibilidade de seren preguntado por unha confirmación anterior.
-*	 Non asignada: Amosa o texto do portapapeis en modo exploración, ou anuncia se o portapapeis está vacío ou se ten contidos que non se poden presentar nunha mensaxe de modo exploración, por exemplo, en caso de estarse copiando arquivos ou cartafoles dende o Explorador de Windows..
+* NVDA+windows+x: Limpa o contido do portapapeis.
+* Sen asignar: Copia a (ou corta dende) o portapapeis, coa posibilidade de
+  que se che pregunte por unha confirmación previa.
+* Sen asignar: Amosa o texto do portapapeis en modo exploración, ou anuncia
+  se o portapapeis está vacío ou se ten contidos que non se poden presentar
+  nunha mensaxe de modo exploración, por exemplo, en caso de estarse
+  copiando arquivos ou cartafoles dende o Explorador de Windows.
 
 Nota: as ordes anteriores poden cambiarse dende o menú NVDA, submenú
 Preferencias, diálogo Xestos de Entrada, categoría Revisión de Texto.
@@ -30,8 +34,14 @@ Notas:
 
 *	A orde anterior pódese cambiar dende o menú NVDA, submenú Preferencias,
   diálogo Xestos de Entrada, categoría Configuración.
-*	Non se deberían de solicitar confirmacións cando siga aberto unha Caixa de
-  mensaxe do NVDA. Nesos casos, as accións realizaranse inmediatamente
+*	Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
+  do NVDA. Neses casos, as accións realizaranse inmediatamente.
+
+## Cambios para 11.0
+* Agora é posible engadir texto marcado co cursor de revisión utilizando
+  ordes estándar do NVDA (NVDA+F9 e NVDA+F10). NVDA+Windows+F9 xa non se
+  usa, para unha mellor integración co novo atallo NVDA+Shift+F9.
+* Require NVDA 2019.3 ou posterior.
 
 ## Cambios para 10.0
 * Arranxado un erro no diálogo utilizado para mostrar o texto do portapapeis
@@ -101,7 +111,6 @@ Notas:
 
 ## Cambios para 1.0 ##
 *	Versión inicial.
-
 
 [[!tag dev stable]]
 
