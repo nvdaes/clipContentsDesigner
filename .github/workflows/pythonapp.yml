@@ -28,4 +28,19 @@ jobs:
     - name: Build add-on
       run: |
         scons
-        
+    - name: Create Release
+      uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          if { endswith("$tag_name", "-dev") }
+            prerelease: true
+            draft: true
+            
+
+          body: |
+            Release created with GitHub Actions
+          draft: false
+         
