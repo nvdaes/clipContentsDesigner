@@ -22,6 +22,6 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           body: |
-            "${{ release_name }} created with GitHub actions"
+            "$This is the release {{ github.ref }} created with GitHub actions"
           draft: false
           prerelease: endswith("${{ github.ref }}", "-dev")
