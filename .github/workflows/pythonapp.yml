@@ -36,9 +36,9 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          if (endswith("$tag_name", "-dev")) {
+          if [ endswith("$tag_name", "-dev") ]; then
             prerelease: true
             draft: true
-          }
+          fi
           body: |
             Release created with GitHub Actions
