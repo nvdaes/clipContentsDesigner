@@ -1,4 +1,4 @@
-name: Python application
+name: Build NVDA add-on
 
 on: [push]
 
@@ -29,16 +29,3 @@ jobs:
     - name: Build add-on
       run: |
         scons
-    - name: Create Release
-      id: create_release
-      tags:
-        - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
-      uses: actions/create-release@latest
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        prerelease: endswith("$tag_name", "-dev"
-        body: |
-          Release created with GitHub Actions
