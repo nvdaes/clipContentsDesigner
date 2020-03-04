@@ -33,5 +33,5 @@ jobs:
       uses: actions/setup-node@v1
     - name: Lint markdown
       run: |
-        npm install
+        npm install -g markdownlint-cli
         markdownlint **/*.md --ignore node_modules
