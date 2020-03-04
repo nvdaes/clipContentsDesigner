@@ -29,7 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. 
-          asset_path: formats('{0}/*.nvda-addon', ${{ github.workspace }})
+          asset_path: .../clipContentsDesigner-11.0.nvda-addon
           asset_name: nvda-addon
           asset_content_type: application/nvda-addon
           
