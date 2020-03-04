@@ -42,13 +42,10 @@ jobs:
           release_name: Release ${{ github.ref }}
           prerelease: endsWith(${{ github.ref }}, '-dev')
       - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: svenstaro/upload-release-action@v1-release
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. 
-          asset_path: ./*.nvda-addon
-          asset_name: nvda-addon
-          asset_content_type: application/nvda-addon
-          
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: *.nvda-addon
+          tag: ${{ github.ref }}
+          overwrite: true
+          file_glob: true
