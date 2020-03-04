@@ -40,7 +40,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          prerelease: endsWith(${{ github.ref }}, '-dev')
+          prerelease: endsWith('hell-o', '-o')
       - name: Upload Release Asset
         uses: svenstaro/upload-release-action@v1-release
         with:
