@@ -29,3 +29,8 @@ jobs:
     - name: Build add-on
       run: |
         scons
+    - name: Lint markdown
+      uses: actions/setup-node@v1
+      run: |
+        npm install
+        markdownlint **/*.md --ignore node_modules
