@@ -13,6 +13,25 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@master
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install scons
+          pip install Markdown
+      - name: Lint with flake8
+        run: |
+          pip install flake8
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Build add-on
+        run: |
+          scons
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
@@ -29,7 +48,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. 
-          asset_path: .../clipContentsDesigner-11.0.nvda-addon
+          asset_path: ./clipContentsDwsigner-11.0.nvda-addon
           asset_name: nvda-addon
           asset_content_type: application/nvda-addon
           
