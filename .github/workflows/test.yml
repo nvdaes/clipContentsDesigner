@@ -29,4 +29,23 @@ jobs:
     - name: Build add-on
       run: |
         scons
-    
+    if: contains(github.ref, '/tags/')
+    steps:
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        if: endsWith(github.ref, '-dev')
+        prerelease: true
+    - name: Upload Release Asset
+      uses: svenstaro/upload-release-action@v1-release
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: '*.nvda-addon'
+        tag: ${{ github.ref }}
+        overwrite: true
+        file_glob: true
