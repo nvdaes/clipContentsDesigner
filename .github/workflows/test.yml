@@ -38,7 +38,7 @@ jobs:
       uses: svenstaro/upload-release-action@v1-release
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: *.nvda-addon
+        file: '*.nvda-addon'
         tag: ${{ github.ref }}
         overwrite: true
         file_glob: true
