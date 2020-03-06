@@ -36,7 +36,6 @@ jobs:
       if: endsWith(tag_name, '-dev')
       with:
         prerelease: true
-      with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
     - name: Upload binaries to release
