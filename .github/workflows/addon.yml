@@ -36,6 +36,7 @@ jobs:
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
+        if: endsWith(github.ref, '-dev')
         prerelease: true
     - name: Upload binaries to release
       if: contains(github.ref, '/tags/')
