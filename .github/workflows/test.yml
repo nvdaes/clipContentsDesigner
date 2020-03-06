@@ -1,6 +1,6 @@
 name: Build NVDA add-on
 
-on: [push]
+on: push
 
 jobs:
   build:
@@ -28,9 +28,9 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build add-on
       run: scons
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: add-on
-        path: '*.nvda-addon'
-        
+    if: contains(github.ref, '/tags/')
+    - name: Create Release
+    id: create_release
+    uses: actions/create-release@latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not 
