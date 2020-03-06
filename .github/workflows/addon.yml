@@ -36,4 +36,5 @@ jobs:
       with:
         if: endsWith(github.ref, '-dev')
         prerelease: true
-        
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }} 
