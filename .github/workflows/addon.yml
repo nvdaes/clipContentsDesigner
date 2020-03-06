@@ -36,14 +36,4 @@ jobs:
       if: endsWith(tag_name, '-dev')
       with:
         prerelease: true
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-    - name: Upload binaries to release
-      if: contains(github.ref, '/tags/')
-      uses: svenstaro/upload-release-action@v1-release
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: '*.nvda-addon'
-        tag: ${{ github.ref }}
-        overwrite: true
-        file_glob: true
+        
