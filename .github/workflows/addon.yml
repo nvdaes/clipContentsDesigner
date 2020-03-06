@@ -33,7 +33,7 @@ jobs:
       uses: actions/create-release@latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      if: endsWith(github.ref, '-dev')
       with:
+        if: endsWith(github.ref, '-dev')
         prerelease: true
         
