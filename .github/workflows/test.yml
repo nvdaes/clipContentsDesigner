@@ -33,6 +33,10 @@ jobs:
       uses: actions/create-release@latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not 
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        prerelease: endsWith(github.ref, '-dev')
     - name: Upload binaries to release
       if: success()
       uses: svenstaro/upload-release-action@v1-release
@@ -42,4 +46,3 @@ jobs:
         tag: ${{ github.ref }}
         overwrite: true
         file_glob: true
-        
