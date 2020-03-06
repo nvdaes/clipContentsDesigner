@@ -1,4 +1,4 @@
-name: Build NVDA add-on
+name: Build and release NVDA add-on
 
 on: push
 
