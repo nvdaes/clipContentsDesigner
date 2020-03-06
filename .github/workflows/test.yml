@@ -27,10 +27,9 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build add-on
-      run: |
-        scons
+      run: scons
 
-    if: contains(github.ref, '/tags/')
+    if: contains(github.ref, '/tags/'):
     - name: Create Release
       id: create_release
       uses: actions/create-release@latest
@@ -41,7 +40,7 @@ jobs:
         release_name: Release ${{ github.ref }}
         if: endsWith(github.ref, '-dev')
         prerelease: true
-    if: contains(github.ref, '/tags/')
+    if: contains(github.ref, '/tags/'):
     - name: Upload Release Asset
       uses: svenstaro/upload-release-action@v1-release
       with:
