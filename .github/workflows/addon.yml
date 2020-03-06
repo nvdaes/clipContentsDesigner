@@ -32,12 +32,13 @@ jobs:
       if: contains(github.ref, '/tags/')
       uses: actions/create-release@latest
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      if: endsWith(tag_name, '-dev')
+      with:
+        prerelease: true
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
-        if: endsWith(tag_name, '-dev')
-        prerelease: true
     - name: Upload binaries to release
       if: contains(github.ref, '/tags/')
       uses: svenstaro/upload-release-action@v1-release
