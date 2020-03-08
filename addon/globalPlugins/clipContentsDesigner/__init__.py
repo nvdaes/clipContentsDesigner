@@ -406,4 +406,3 @@ class AddonSettingsPanel(SettingsPanel):
 		config.conf["clipContentsDesigner"]["confirmationRequirement"] = self.confirmRequirementChoices.GetSelection()
 		config.conf["clipContentsDesigner"]["browseableTextFormat"] = self.formatChoices.GetSelection()
 		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = self.maxLengthEdit.GetValue()
-a
