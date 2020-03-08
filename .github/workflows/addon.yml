@@ -29,13 +29,13 @@ jobs:
     - name: Build add-on
       run: scons
     - name: Create Release
-      if: contains(github.ref, '/tags/') && endsWith(github.ref, '-dev')
+      if: contains(github.ref, '/tags/')
       uses: actions/create-release@latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
         tag_name: ${{ github.ref }}
-        prerelease: true
+        prerelease: ${{ endsWith(github.ref, '-dev') }}
     - name: Upload binaries to release
       if: contains(github.ref, '/tags/')
       uses: svenstaro/upload-release-action@v1-release
