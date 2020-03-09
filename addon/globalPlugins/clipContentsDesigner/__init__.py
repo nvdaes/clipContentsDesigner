@@ -19,6 +19,7 @@ from gui import SettingsPanel, NVDASettingsDialog, guiHelper
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
+from logHandler import log
 
 addonHandler.initTranslation()
 
@@ -60,6 +61,7 @@ def getBookmark():
 		bookmark = "\r\n%s\r\n" % separator
 	return bookmark
 
+	
 def isArabicKeyboardLayout():
 	"""
 	Test if the keyboard layout is Arabic to avoid an error reported by a user.
@@ -77,6 +79,7 @@ def isArabicKeyboardLayout():
 		return True
 	return False
 
+	
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
@@ -111,9 +114,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.debug("Cannot clear clipboard: %s" % e)
 
 	def getSelectedText(self):
-		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if isinstance(treeInterceptor,treeInterceptorHandler.DocumentTreeInterceptor) and not treeInterceptor.passThrough:
+		obj = api.getFocusObject()
+		treeInterceptor = obj.treeInterceptor
+		if isinstance(
+			treeInterceptor, treeInterceptorHandler.DocumentTreeInterceptor
+		) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		try:
 			info=obj.makeTextInfo(textInfos.POSITION_SELECTION)
