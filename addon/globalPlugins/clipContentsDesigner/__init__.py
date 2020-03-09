@@ -448,3 +448,4 @@ class AddonSettingsPanel(SettingsPanel):
 		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = (
 			self.maxLengthEdit.GetValue()
 		)
+a
