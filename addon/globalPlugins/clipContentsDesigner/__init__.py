@@ -342,6 +342,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				html
 			)
 
+
 class AddonSettingsPanel(SettingsPanel):
 
 	title = ADDON_PANEL_TITLE
@@ -356,7 +357,7 @@ class AddonSettingsPanel(SettingsPanel):
 		except KeyError:
 			pass
 		# Translators: label of a dialog.
-		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label= _("&Add text before clip data")))
+		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
 		# Translators: label of a dialog.
 		confirmBoxLabel = _("Sele&ct the actions which require previous confirmation")
@@ -370,7 +371,9 @@ class AddonSettingsPanel(SettingsPanel):
 			# Translators: label of a dialog.
 			_("Confirm to emulate cut"),
 		]
-		self.confirmList=sHelper.addLabeledControl(confirmBoxLabel, gui.nvdaControls.CustomCheckListBox, choices=confirmChoices)
+		self.confirmList = sHelper.addLabeledControl(
+			confirmBoxLabel, gui.nvdaControls.CustomCheckListBox, choices=confirmChoices
+		)
 		checkedItems = []
 		if config.conf["clipContentsDesigner"]["confirmToAdd"]:
 			checkedItems.append(0)
@@ -392,7 +395,9 @@ class AddonSettingsPanel(SettingsPanel):
 			# Translators: label of a dialog.
 			_("If the clipboard is not empty"),
 		]
-		self.confirmRequirementChoices = sHelper.addLabeledControl(confirmRequirementsLabel, wx.Choice, choices=requirementChoices)
+		self.confirmRequirementChoices = sHelper.addLabeledControl(
+			confirmRequirementsLabel, wx.Choice, choices=requirementChoices
+		)
 		self.confirmRequirementChoices.SetSelection(config.conf["clipContentsDesigner"]["confirmationRequirement"])
 		# Translators: label of a dialog.
 		formatLabel = _("&Format to show the clipboard text in browse mode:")
