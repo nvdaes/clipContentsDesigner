@@ -288,7 +288,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_copy(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox and self.requiredFormatInClip()
+			config.conf["clipContentsDesigner"]["confirmToCopy"]
+			and not gui.isInMessageBox and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCopy)
 		else:
@@ -315,7 +316,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_cut(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToCut"] and not gui.isInMessageBox and self.requiredFormatInClip()
+			config.conf["clipContentsDesigner"]["confirmToCut"]
+			and not gui.isInMessageBox and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCut)
 		else:
@@ -338,7 +340,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: presented when clipboard is empty.
 				ui.message(_("Clipboard is empty"))
 		else:
-			maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] if config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text) else len(text)
+			maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+				if config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
+			else len(text)
 			format = config.conf["clipContentsDesigner"]["browseableTextFormat"]
 			html = True
 			if format == 0:
@@ -351,7 +355,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.browseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
-				_("Clipboard text ({max}/{current} - {formatForTitle})".format(max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format])),
+				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
+					max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format]
+				)),
 				html
 			)
 
@@ -417,7 +423,7 @@ class AddonSettingsPanel(SettingsPanel):
 		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
-		maxLengthLabel=wx.StaticText(self,-1,label=_("&Maximum number of characters when showing clipboard text in browse mode"))
+		wx.StaticText(self, -1, label=_("&Maximum number of characters when showing clipboard text in browse mode"))
 		self.maxLengthEdit=gui.nvdaControls.SelectOnFocusSpinCtrl(self, min=1, max=1000000, initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"])
 
 	def postInit(self):
