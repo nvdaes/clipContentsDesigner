@@ -183,7 +183,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			try:
 				api.getClipData()
 				return True
-			except Exception as e:
+			except Exception:
 				return False
 		if self.clipboardHasContent():
 			return True
@@ -248,15 +248,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="kb:NVDA+windows+x"
 	)
 	def script_clear(self, gesture):
-		if (config.conf["clipContentsDesigner"]["confirmToClear"] and not gui.isInMessageBox and self.requiredFormatInClip()):
+		if (
+			config.conf["clipContentsDesigner"]["confirmToClear"] and not gui.isInMessageBox and self.requiredFormatInClip()
+		):
 			wx.CallAfter(self.confirmClear)
 		else:
 			self.clearClipboard()
 
 	def copy(self):
-		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if isinstance(treeInterceptor,treeInterceptorHandler.DocumentTreeInterceptor) and not treeInterceptor.passThrough:
+		obj = api.getFocusObject()
+		treeInterceptor = obj.treeInterceptor
+		if isinstance(
+			treeInterceptor, treeInterceptorHandler.DocumentTreeInterceptor
+		) and not treeInterceptor.passThrough:
 			treeInterceptor.script_copyToClipboard(None)
 		else:
 			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
