@@ -158,7 +158,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText
 		try:
 			clipData = api.getClipData()
-		except Exception as e:
+		except Exception:
 			clipData = None
 		if clipData:
 			if config.conf["clipContentsDesigner"]["addTextBefore"]:
@@ -224,10 +224,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_add(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox and self.requiredFormatInClip()
+			config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox
+			and self.requiredFormatInClip()
 		):
-			wx.CallAfter(self.confirmAdd
-		)
+			wx.CallAfter(self.confirmAdd)
 		else:
 			self.performAdd()
 
