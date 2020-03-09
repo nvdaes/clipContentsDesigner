@@ -341,7 +341,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				ui.message(_("Clipboard is empty"))
 		else:
 			if (
-				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text):
+				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
 			):
 				maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
 			else:
