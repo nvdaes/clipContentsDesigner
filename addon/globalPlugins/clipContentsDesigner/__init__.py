@@ -61,7 +61,7 @@ def getBookmark():
 		bookmark = "\r\n%s\r\n" % separator
 	return bookmark
 
-	
+
 def isArabicKeyboardLayout():
 	"""
 	Test if the keyboard layout is Arabic to avoid an error reported by a user.
@@ -79,7 +79,7 @@ def isArabicKeyboardLayout():
 		return True
 	return False
 
-	
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = SCRCAT_TEXTREVIEW
@@ -119,11 +119,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(
 			treeInterceptor, treeInterceptorHandler.DocumentTreeInterceptor
 		) and not treeInterceptor.passThrough:
-			obj=treeInterceptor
+			obj = treeInterceptor
 		try:
-			info=obj.makeTextInfo(textInfos.POSITION_SELECTION)
+			info = obj.makeTextInfo(textInfos.POSITION_SELECTION)
 		except (RuntimeError, NotImplementedError):
-			info=None
+			info = None
 		if not info or info.isCollapsed:
 			return None
 		return info.clipboardText
@@ -148,7 +148,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def getTextToAdd(self):
 		newText = self.getSelectedText() or self.getMath()
 		if not newText:
-			if not getattr(api.getReviewPosition().obj, "_selectThenCopyRange", None) or not api.getReviewPosition().obj._selectThenCopyRange:
+			if not getattr(
+				api.getReviewPosition().obj,
+				"_selectThenCopyRange", None
+			) or not api.getReviewPosition().obj._selectThenCopyRange:
 				# Translators: message presented when it's not possible to add text, since no text has been selected or marked.
 				ui.message(_("No text to add"))
 				return
