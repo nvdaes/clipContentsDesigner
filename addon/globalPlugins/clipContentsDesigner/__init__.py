@@ -249,7 +249,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_clear(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToClear"] and not gui.isInMessageBox and self.requiredFormatInClip()
+			config.conf["clipContentsDesigner"]["confirmToClear"]
+			and not gui.isInMessageBox and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmClear)
 		else:
@@ -273,7 +274,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Please, confirm if you want to copy to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Copying to clipboard"),
-			wx.OK|wx.CANCEL
+			wx.OK | wx.CANCEL
 		) != wx.OK:
 			return
 		if text:
@@ -286,7 +287,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Copies to the clipboard, with the possibility of being asked for a previous confirmation")
 	)
 	def script_copy(self, gesture):
-		if (config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox and self.requiredFormatInClip()):
+		if (
+			config.conf["clipContentsDesigner"]["confirmToCopy"] and not gui.isInMessageBox and self.requiredFormatInClip()
+		):
 			wx.CallAfter(self.confirmCopy)
 		else:
 			self.copy()
@@ -301,7 +304,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Please, confirm if you want to cut from the clipboard"),
 			# Translators: Title of a dialog.
 			_("Cutting from clipboard"),
-			wx.OK|wx.CANCEL
+			wx.OK | wx.CANCEL
 		) != wx.OK:
 			return
 		core.callLater(200, self.cut)
@@ -311,7 +314,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Cuts from the clipboard, with the possibility of being asked for a previous confirmation")
 	)
 	def script_cut(self, gesture):
-		if (config.conf["clipContentsDesigner"]["confirmToCut"] and not gui.isInMessageBox and self.requiredFormatInClip()):
+		if (
+			config.conf["clipContentsDesigner"]["confirmToCut"] and not gui.isInMessageBox and self.requiredFormatInClip()
+		):
 			wx.CallAfter(self.confirmCut)
 		else:
 			self.cut()
@@ -323,7 +328,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_showClipboardText(self, gesture):
 		try:
 			text = api.getClipData()
-		except:
+		except Exception:
 			text = None
 		if not text:
 			if self.clipboardHasContent():
