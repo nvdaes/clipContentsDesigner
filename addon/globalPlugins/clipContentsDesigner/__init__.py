@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
-#Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import addonHandler
@@ -22,7 +22,7 @@ from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 
 addonHandler.initTranslation()
 
-### Constants
+# Constants
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 ADDON_PANEL_TITLE = ADDON_SUMMARY
@@ -47,6 +47,7 @@ confspec = {
 	"maxLengthForBrowseableText": "integer(default=100000)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
+
 
 def getBookmark():
 	try:
