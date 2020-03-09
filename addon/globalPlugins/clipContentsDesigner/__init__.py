@@ -181,7 +181,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return True
 		if config.conf["clipContentsDesigner"]["confirmationRequirement"] == 1:
 			try:
-				api.getClipData():
+				api.getClipData()
 				return True
 			except Exception as e:
 				return False
@@ -198,7 +198,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Please, confirm if you want to add text to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Adding text to clipboard"),
-			wx.OK|wx.CANCEL
+			wx.OK | wx.CANCEL
 		) == wx.OK:
 			if api.copyToClip(text):
 				# Translators: message presented when the text has been added to the clipboard.
@@ -218,12 +218,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode.
-		description=_("Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard."),
+		description=_("""Retrieves the selected string or the text from the previously set start marker up to
+		and including the current position of the review cursor, and adds it to the clipboard."""),
 		gesture="kb:NVDA+windows+c"
 	)
 	def script_add(self, gesture):
-		if (config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox and self.requiredFormatInClip()):
-			wx.CallAfter(self.confirmAdd)
+		if (
+			config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox and self.requiredFormatInClip()
+		):
+			wx.CallAfter(self.confirmAdd
+		)
 		else:
 			self.performAdd()
 
@@ -233,7 +237,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Please, confirm if you want to clear the clipboard"),
 			# Translators: Title of a dialog.
 			_("Clearing clipboard"),
-			wx.OK|wx.CANCEL
+			wx.OK | wx.CANCEL
 		) != wx.OK:
 			return
 		self.clearClipboard()
