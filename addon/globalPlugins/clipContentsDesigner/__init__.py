@@ -340,9 +340,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: presented when clipboard is empty.
 				ui.message(_("Clipboard is empty"))
 		else:
-			maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
-			if config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
-			else len(text)
+			if (
+				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text):
+			):
+				maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+			else:
+				maxLength = len(text)
 			format = config.conf["clipContentsDesigner"]["browseableTextFormat"]
 			html = True
 			if format == 0:
@@ -357,9 +360,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
 					max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format]
-				)),
-				html
-			)
+				)
+			), html)
 
 
 class AddonSettingsPanel(SettingsPanel):
