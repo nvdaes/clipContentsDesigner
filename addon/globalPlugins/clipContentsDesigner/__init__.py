@@ -152,19 +152,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				api.getReviewPosition().obj,
 				"_selectThenCopyRange", None
 			) or not api.getReviewPosition().obj._selectThenCopyRange:
-				# Translators: message presented when it's not possible to add text, since no text has been selected or marked.
+				# Translators: message presented when it's not possible to add text, since no text has been selected.
 				ui.message(_("No text to add"))
 				return
 			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText
 		try:
 			clipData = api.getClipData()
-		except:
+		except Exception as e:
 			clipData = None
 		if clipData:
 			if config.conf["clipContentsDesigner"]["addTextBefore"]:
-				text = newText+getBookmark()+clipData
+				text = newText + getBookmark() + clipData
 			else:
-				text = clipData+getBookmark()+newText
+				text = clipData + getBookmark() + newText
 		else:
 			text = newText
 		return text
@@ -181,9 +181,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return True
 		if config.conf["clipContentsDesigner"]["confirmationRequirement"] == 1:
 			try:
-				clipData = api.getClipData()
+				api.getClipData():
 				return True
-			except:
+			except Exception as e:
 				return False
 		if self.clipboardHasContent():
 			return True
