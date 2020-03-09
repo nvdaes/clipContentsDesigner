@@ -360,8 +360,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
 					max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format]
-				)
-			), html)
+				)), html)
 
 
 class AddonSettingsPanel(SettingsPanel):
@@ -440,6 +439,12 @@ class AddonSettingsPanel(SettingsPanel):
 		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmList.IsChecked(1)
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmList.IsChecked(2)
 		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmList.IsChecked(3)
-		config.conf["clipContentsDesigner"]["confirmationRequirement"] = self.confirmRequirementChoices.GetSelection()
-		config.conf["clipContentsDesigner"]["browseableTextFormat"] = self.formatChoices.GetSelection()
-		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = self.maxLengthEdit.GetValue()
+		config.conf["clipContentsDesigner"]["confirmationRequirement"] = (
+			self.confirmRequirementChoices.GetSelection()
+		)
+		config.conf["clipContentsDesigner"]["browseableTextFormat"] = (
+			self.formatChoices.GetSelection()
+		)
+		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = (
+			self.maxLengthEdit.GetValue()
+		)
