@@ -341,7 +341,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				ui.message(_("Clipboard is empty"))
 		else:
 			maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
-				if config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
+			if config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
 			else len(text)
 			format = config.conf["clipContentsDesigner"]["browseableTextFormat"]
 			html = True
@@ -424,7 +424,9 @@ class AddonSettingsPanel(SettingsPanel):
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
 		wx.StaticText(self, -1, label=_("&Maximum number of characters when showing clipboard text in browse mode"))
-		self.maxLengthEdit=gui.nvdaControls.SelectOnFocusSpinCtrl(self, min=1, max=1000000, initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"])
+		self.maxLengthEdit = gui.nvdaControls.SelectOnFocusSpinCtrl(
+			self, min=1, max=1000000, initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+		)
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
