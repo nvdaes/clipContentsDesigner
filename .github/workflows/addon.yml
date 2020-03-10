@@ -1,6 +1,6 @@
 name: Build and release NVDA add-on
 
-on: push
+on: [push, pull_request]
 
 jobs:
   build:
