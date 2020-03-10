@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # installTasks for clipContentsDesigner add-on
-#Copyright (C) 2017-2018 Noelia Ruiz Martínez
+# Copyright (C) 2017-2018 Noelia Ruiz Martínez
 # Released under GPL 2
 
 import addonHandler
@@ -24,6 +24,7 @@ confspec = {
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
+
 def onInstall():
 	module = "globalPlugins.clipContentsDesigner"
 	className = "GlobalPlugin"
@@ -38,16 +39,18 @@ def onInstall():
 		pass
 	if gui.messageBox(
 		# Translators: label of a dialog.
-		_("This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents, when pressing control+c and control+x. This is named Emulate copy and cut. Do you want to configure Emulate copy and cut now? You may do or change this later."),
+		_("""This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,
+		when pressing control+c and control+x. This is named Emulate copy and cut.
+		Do you want to configure Emulate copy and cut now? You may do or change this later."""),
 		# Translators: title of a dialog.
 		_("Configure Emulate copy and cut"),
-		wx.YES|wx.NO|wx.ICON_WARNING
-	)==wx.YES:
-			config.conf.spec["clipContentsDesigner"] = confspec
-			config.conf["clipContentsDesigner"]["confirmToCopy"] = True
-			config.conf["clipContentsDesigner"]["confirmToCut"] = True
-			config.conf.save()
-			# Adapted from NVDA's core.
-			inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)
-			inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)
+		wx.YES | wx.NO | wx.ICON_WARNING
+	) == wx.YES:
+		config.conf.spec["clipContentsDesigner"] = confspec
+		config.conf["clipContentsDesigner"]["confirmToCopy"] = True
+		config.conf["clipContentsDesigner"]["confirmToCut"] = True
+		config.conf.save()
+		# Adapted from NVDA's core.
+		inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)
+		inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)
 	inputCore.manager.userGestureMap.save()

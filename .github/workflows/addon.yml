@@ -1,6 +1,6 @@
-name: Python application
+name: Build and release NVDA add-on
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -19,23 +19,32 @@ jobs:
         python -m pip install --upgrade pip
         pip install scons
         pip install Markdown
-    - name: Lint with flake8
-      run: |
         pip install flake8
+        pip install flake8-tabs
+    - name: Lint with flake8
+      run:
+        flake8 --exit-zero addon
         # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build add-on
-      run: |
-        scons
+      run: scons
     - name: Create Release
+      if: contains(github.ref, '/tags/')
       uses: actions/create-release@latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
-        prerelease: endswith("$tag_name", "-dev"
-        body: |
-          Release created with GitHub Actions
+        prerelease: ${{ endsWith(github.ref, '-dev') }}
+    - name: Upload binaries to release
+      if: contains(github.ref, '/tags/')
+      uses: svenstaro/upload-release-action@v1-release
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: '*.nvda-addon'
+        tag: ${{ github.ref }}
+        overwrite: true
+        file_glob: true
