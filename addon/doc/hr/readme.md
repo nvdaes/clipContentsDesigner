@@ -1,7 +1,7 @@
 # Upravljanje sadržajem međuspremnika (Clip Contents Designer) #
 
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
+*	NVDA kompatibilnost: 2019.3 i novija
 *	Preuzmi [stabilnu verziju][1]
 *	Preuzmi [razvojnu verziju][2]
 
@@ -16,12 +16,12 @@ za čitanje.
   unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
   pomoću preglednog kursora.
 * NVDA+windows+x: Obriši sadržaj međuspremnika.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
-  of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+* Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
+  mogućnošću da se prethodno od korisnika traži potvrda.
+* Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
+  najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
+  predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
+  kopirane iz Windows Explorer.
 
 Napomena: Gore navedeni prečaci se mogu promijeniti u NVDA izborniku,
 podizbornik Postavke, dijaloški okvir Ulazne geste, kategorija Pregled
@@ -36,14 +36,14 @@ Napomene:
 
 *	Gore navedeni prečaci se mogu promijeniti u NVDA izborniku, podizbornik
   Postavke, dijaloški okvir Ulazne geste, kategorija Konfiguracija.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
+*	Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
+  prikazuje. U tim će se slučajevima radnje izvršavati odmah.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard
-  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
-  used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Promjene u verziji 11.0
+* Sada je moguće dodati tekst koji je označen preglednim kursorom, pomoću
+  standardnih naredbi NVDA (NVDA+f9 i NVDA+f10). NVDA+windows+f9 se više ne
+  koristi, radi boljw integracijw s novom naredbom NVDA+šift+f9.
+* Zahtijeva NVDA verziju 2019.3 ili noviju.
 
 ## Promjene u verziji 10.0
 * Ispravljana je greška u dijaloškom okviru za prikaz teksta međuspremnika,
