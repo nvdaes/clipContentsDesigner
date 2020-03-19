@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 5.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-03 03:00+1000\n"
-"PO-Revision-Date: 2018-07-29 22:41+0700\n"
-"Last-Translator: Cuong Dang Manh <dangmanhcuong@gmail.com>\n"
+"PO-Revision-Date: 2020-02-17 12:50+0700\n"
+"Last-Translator: Dang Manh Cuong <dangmanhcuong@gmail.com>\n"
 "Language-Team: \n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -33,7 +33,19 @@ msgstr ""
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Cấu hình Emulate copy and cut"
+msgstr "Cấu hình mô phỏng chép và cắt"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Văn bản định dạng sẵn là HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML hiển thị như trên trình duyệt"
+
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Văn bản thô"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -136,6 +148,22 @@ msgid ""
 "confirmation"
 msgstr "Cắt từ bộ nhớ tạm với khả năng yêu cầu xác nhận trước"
 
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Bộ nhớ tạm không rỗng, nhưng không có văn bản để hiển thị"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Không có gì trong bộ nhớ tạm"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Văn bản trong bộ nhớ tạm ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "Hiển thị văn bản trong bộ nhớ tạm ở chế độ duyệt"
+
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
@@ -149,24 +177,50 @@ msgid "&Add text before clip data"
 msgstr "&Thêm văn bản trước khi chép lên bộ nhớ tạm"
 
 #. Translators: label of a dialog.
-msgid "Confirm to a&dd text"
-msgstr "Xác nhận thêm &văn bản"
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "&Chọn hoạt động yêu cầu một xác nhận trước đó"
 
 #. Translators: label of a dialog.
-msgid "Confirm to c&lear clipboard"
-msgstr "Xác nhận &xóa bộ nhớ tạm"
+msgid "Confirm to add text"
+msgstr "Xác nhận thêm văn bản"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate copy"
-msgstr "&Xác nhận đến emulate copy"
+msgid "Confirm to clear clipboard"
+msgstr "Xác nhận xóa bộ nhớ tạm"
 
 #. Translators: label of a dialog.
-msgid "&Confirm to emulate cut"
-msgstr "&Xác nhận đến emulate cut"
+msgid "Confirm to emulate copy"
+msgstr "Xác nhận đến mô phỏng sao chép"
 
 #. Translators: label of a dialog.
-msgid "&Text in clipboard to confirm"
-msgstr "&Văn bản trong bộ nhớ tạm để xác nhận"
+msgid "Confirm to emulate cut"
+msgstr "Xác nhận đến mô phỏng cắt"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Yêu cầu xác nhận trước khi thực hiện hành động đã chọn nếu:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Luôn luôn"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Nếu bộ nhớ tạm có văn bản"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Nếu bộ nhớ tạm không rỗng"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "Định &dạng để hiển thị văn bản trong chế độ duyệt:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"&Số kí tự tối đa khi hiển thị văn bản của bộ nhớ tạm trong chế độ duyệt"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -177,6 +231,9 @@ msgstr "Quản lý nội dung tạm"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Add-on dùng để quản lý nội dung trên bộ nhớ tạm."
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&Văn bản trong bộ nhớ tạm để xác nhận"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Thiết lập quản lý nội dung tạm"

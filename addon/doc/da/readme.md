@@ -1,7 +1,7 @@
-# Udklipsdesigner #
+# Udklipsdesigner (Clip Contents Designer) #
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
+*	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
+*	NVDA-kompatibilitet: 2019.3 eller nyere
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
@@ -16,12 +16,12 @@ gennemsynstilstand.
   MathML-objekter, eller den tekststreng, som er blevet markeret med
   læsemarkøren, til udklipsholderen.
 * NVDA+Windows+x: Ryd udklipsholderen.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
-  of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+* Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
+  mulighed for at blive bedt om en bekræftelse.
+* Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand. Du vil
+  få besked, hvis udklipsholderen er tom eller hvis indholdet ikke kan vises
+  i gennemsynstilstand. Dette kan eksempelvis være, hvis du har kopiere
+  filer fra Stifinder.
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Præferencer/
 Inputbevægelser / kategorien tekstlæsning.
@@ -35,20 +35,22 @@ Bemærkninger:
 
 *	Ovennævnte kommando kan ændres fra NVDAs menu, under Præferencer. Herunder
   gå til Inputbevægelser og vælg kategorien "Configuration".
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
+*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
+  stadig er åben. I disse situationer vil handlingen straks udføres.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard
-  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
-  used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Ændringer i 11.0
+* Nu er det muligt at tilføje tekst markeret med læsemarkøren ved hjælp af
+  standardkommandoer for NVDA (NVDA+f9 og NVDA+f10). NVDA+windows+f9 bruges
+  ikke længere til, således tilføjelsen fungerer i overensstemmelse med
+  NVDA+Shift+F9.
+* Kræver NVDA 2019.3 eller nyere.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Ændringer i 10.0
+* Rettet en fejl i den dialog, der blev brugt til at vise teksten i
+  udklipsholderen, når dens titel indeholdte ikke-latinske tegn.
+* Rettet en fejl ved brug af emuleringen af klip/kopier og
+  kopieringsfunktioner med et arabisk tastaturlayout. Dette er rettet af
+  Abdel, nu tilføjet som en forfatter.
 
 ## Ændringer for 9.0
 
@@ -59,7 +61,7 @@ Bemærkninger:
   mapper.
 * Kræver NVDA 2018.4 eller nyere.
 
-## ændringer i 8.0 ##
+## Ændringer i 8.0 ##
 
 * Tilføjelsens indstillinger vises i den tilsvarende kategori NVDA
   indstillinger i dialogboksen.
@@ -67,7 +69,7 @@ Bemærkninger:
 * Hvis nødvendigt, kan du hente [sidste version kompatibel med NVDA
   2017.3][3].
 
-## ændringer i 7.0
+## Ændringer i7.0
 
 * Hvis du vælger "nej" i dialogen, hvor du kan konfigurere funktionaliteten
   til at emulere kopi og klip under installationen, vil kommandoerne for
@@ -87,7 +89,7 @@ Bemærkninger:
   udseendet af de dialoger, der vises i NVDA.
 *	Kræver NVDA 2016.4 eller nyere.
 
-## ændringer for 4.0 ##
+## Ændringer i 4.0 ##
 *	Tilføjelsesindstillinger administreres fra NVDA-konfiguration, så
   standardprofiler kan bruges til at gemme forskellige separatorer, og det
   er ikke nødvendigt at kopiere indstillingerne til import ved

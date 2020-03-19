@@ -72,13 +72,13 @@ Napomene:
 * U dijaloškom okviru za konfiguriranje funkcionalnosti Simuliraj kopiranje
   i Simuliraj izrezivanje, ako se odabere „ne”, uklonit će se naredbe za ove
   funkcije, tako da će biti moguće koristiti normalni način rada za
-  control+c i control+x.
+  kontrol+c i kontrol+x.
 
 ## Promjene u verziji 6.0
 
 *	Dodana je mogućnost za odluku o izvršavanju dostupnih radnji nakon potvrde.
 *	Dodane su naredbe Simuliraj kopiranje i Simuliraj izrezivanje, koje je moguće dodijeliti u dijaloškom okviru Ulazne geste.
-*	Dodan je dijaloški okvir za podešavanje naredbi Simuliraj kopiranje i Simuliraj izrezivanje, tijekom instaliranja. Ovo dozvoljava dodavanje naredbi control+c i control+x za kopiranje i izrezivanje, te postavljanjem pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih tipkovničkih prečaca.
+*	Dodan je dijaloški okvir za podešavanje naredbi Simuliraj kopiranje i Simuliraj izrezivanje, tijekom instaliranja. Ovo dozvoljava dodavanje naredbi kontrol+c i kontrol+x za kopiranje i izrezivanje, te postavljanjem pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih tipkovničkih prečaca.
 *	Riješena dokumentacija za script_add (Windows+NVDA+c).
 
 ## Promjene u verziji 5.0 ##
