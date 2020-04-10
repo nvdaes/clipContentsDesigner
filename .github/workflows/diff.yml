@@ -26,7 +26,7 @@ jobs:
           })
           const labels = await github.paginate(opts)
           for (label of labels) {
-            if (label === 'l10n') {
+            if (label === 'test') {
               const diff_url = context.payload.pull_request.diff_url
               const result = await github.request(diff_url)
               console.log(result)
