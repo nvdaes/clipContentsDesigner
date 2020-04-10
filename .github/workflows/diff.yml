@@ -1,0 +1,35 @@
+name: Show diffs
+
+on:
+- pull_request
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+
+  diff:
+    needs: triage
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/github-script@0.9.0
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          const opts = github.issues.listLabelsOnIssue({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number
+          })
+          const labels = await github.paginate(opts)
+          for (label of labels) {
+            if (label === 'test') {
+              const diff_url = context.payload.pull_request.diff_url
+              const result = await github.request(diff_url)
+              console.log(result)
+            }
+          }
+            
