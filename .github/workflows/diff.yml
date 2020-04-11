@@ -1,7 +1,9 @@
 name: Test title
 
 on:
-  pull_request
+  pull_request:
+    types:
+      - edited
 
 jobs:
   diff:
