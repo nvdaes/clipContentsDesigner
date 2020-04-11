@@ -1,9 +1,7 @@
 name: Test title
 
 on:
-  pull_request:
-    types:
-      - labeled
+  pull_request
 
 jobs:
   diff:
@@ -13,17 +11,9 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const opts = github.issues.listLabelsOnIssue({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo
-            })
-            const labels = await github.paginate(opts)
-            for (const label of labels) {
-              if (label.name === 'documentation') {
-                const diff_url = context.payload.pull_request.diff_url
-                const result = await github.request(diff_url)
-                console.log(result.data)
-                return
-              }
+            const body = context.payload.pull_request.body
+            if (body.includes('translation')) {
+              const diff_url = context.payload.pull_request.diff_url
+              const result = await github.request(diff_url)
+              console.log(result.data)
             }
