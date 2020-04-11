@@ -20,10 +20,10 @@ jobs:
             })
             const labels = await github.paginate(opts)
             for (const label of labels) {
-              if (label.name !== 'documentation') {
-                continue
+              if (label.name === 'documentation') {
+                const diff_url = context.payload.pull_request.diff_url
+                const result = await github.request(diff_url)
+                console.log(result.data)
+                return
               }
-              const diff_url = context.payload.pull_request.diff_url
-              const result = await github.request(diff_url)
-              console.log(result.data)
             }
