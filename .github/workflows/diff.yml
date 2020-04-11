@@ -1,9 +1,7 @@
 name: Test title
 
 on:
-  pull_request:
-    types:
-      - edited
+  pull_request
 
 jobs:
   diff:
@@ -13,8 +11,8 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const body = context.payload.pull_request.body
-            if (body.includes('translation')) {
+            const title = context.payload.pull_request.title
+            if (title.includes('translate')) {
               const diff_url = context.payload.pull_request.diff_url
               const result = await github.request(diff_url)
               console.log(result.data)
