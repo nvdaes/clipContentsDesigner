@@ -1,4 +1,4 @@
-# Clip Contents Designer 
+# Clip Contents Designer #
 *	Authors: Noelia, Abdel.
 *	NVDA compatibility: 2019.3 or later
 *	Download [stable version][1]
