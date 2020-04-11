@@ -13,8 +13,16 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const title = context.payload.pull_request.title
-            if (!title.includes('title')) { return }
+            const opts = github.issues.listLabelsOnIssue({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            })
+            const labels = await github.paginate(opts)
+            for (const label of labels) {
+              if (label.name !== 'documentation') {
+                continue
+              }
             const diff_url = context.payload.pull_request.diff_url
             const result = await github.request(diff_url)
             console.log(result.data)
