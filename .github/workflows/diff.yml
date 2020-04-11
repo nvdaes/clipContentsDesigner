@@ -14,7 +14,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const title = context.payload.pull_request.title
-            if (!title.includes('title')) { return }
+            if (!title.includes('Doc')) { return }
             const diff_url = context.payload.pull_request.diff_url
             const result = await github.request(diff_url)
             console.log(result.data)
