@@ -3,6 +3,7 @@ import json
 from typing import List, Dict
 import functools
 import api
+import ui 
 from keyboardHandler import KeyboardInputGesture
 import globalVars
 from logHandler import log
@@ -101,7 +102,8 @@ class ClipManagerDialog(wx.Dialog):
 			wx.EVT_TREE_END_LABEL_EDIT, self.onRenamedTreeItem)
 
 		self.clipList.Bind(wx.EVT_CONTEXT_MENU, self.onListContextMenu)
-		self.clipList.Bind(wx.EVT_KEY_DOWN, self.onListKeyPresses)
+		self.clipList.Bind(wx.EVT_KEY_UP, self.onListKeyUp)
+		self.clipList.Bind(wx.EVT_KEY_DOWN, self.onListKeyDown)
 		self.clipList.Bind(wx.EVT_LIST_ITEM_ACTIVATED, self.onActivatedListItem)
 		self.clipList.Bind(
 			wx.EVT_LIST_BEGIN_LABEL_EDIT,
@@ -207,19 +209,33 @@ class ClipManagerDialog(wx.Dialog):
 		self.Bind(wx.EVT_MENU, self.selectAllListItem, selectAllClips)
 		self.PopupMenu(menus, evt.GetPosition())
 
-	def onListKeyPresses(self, evt):
+	def onListKeyDown(self, evt):
+		if evt.ControlDown:
+			self.controlDown = True
+		else:
+			self.controlDown =False
+		evt.Skip()
+
+	def onListKeyUp(self, evt):
 		keyCode = evt.GetKeyCode()
 		if keyCode == wx.WXK_DELETE or keyCode == wx.WXK_NUMPAD_DELETE:
-			self.deleteListItem(evt=wx.EVT_CLOSE)
+			self.deleteListItem(evt=None)
+			ui.message("clips deleted")
 		elif keyCode == wx.WXK_F2:
 			item = self.clipList.GetFirstSelected()
 			self.clipList.EditLabel(item)
-		elif keyCode == wx.WXK_CONTROL_A:
+		elif keyCode ==65 and self.controlDown:
 			self.selectAllListItem(evt=None)
-		elif keyCode==wx.WXK_CONTROL_C:
+			ui.message("all clips selected.")
+		elif keyCode== 67 and self.controlDown:
 			self.copyListItem(evt = None)
-		elif keyCode == wx.WXK_CONTROL_X:
+			ui.message("copy clips to clipboard.")
+		elif keyCode ==88 and self.controlDown:
 			self.cutListItem(evt = None)
+			ui.message("cut clips to clipboard.")
+		elif keyCode == 86 and self.controlDown:
+			self.pasteListItems(evt = None)
+			ui.message("clips pasted")
 		evt.Skip()
 
 	def onListItemRenaming(self, evt):
