@@ -101,7 +101,7 @@ class ClipManagerDialog(wx.Dialog):
 			wx.EVT_TREE_END_LABEL_EDIT, self.onRenamedTreeItem)
 
 		self.clipList.Bind(wx.EVT_CONTEXT_MENU, self.onListContextMenu)
-		self.clipList.Bind(wx.EVT_LIST_KEY_DOWN, self.onListKeyPresses)
+		self.clipList.Bind(wx.EVT_KEY_DOWN, self.onListKeyPresses)
 		self.clipList.Bind(wx.EVT_LIST_ITEM_ACTIVATED, self.onActivatedListItem)
 		self.clipList.Bind(
 			wx.EVT_LIST_BEGIN_LABEL_EDIT,
@@ -156,7 +156,7 @@ class ClipManagerDialog(wx.Dialog):
 		labelItem = self.editDialog("add category ", "category name:")
 		if labelItem in self.TREE_ITEM_IDS.keys():
 			return False
-		addTreeId = self.clipCategoryTree.AppendItem(self.root, labelItem)
+		addTreeId = self.clipCategoryTree.AppendItem(self.root, labelItem,data=[])
 		self.TREE_ITEM_IDS[labelItem] = addTreeId
 
 	def renameTreeItem(self, evt):
@@ -170,29 +170,41 @@ class ClipManagerDialog(wx.Dialog):
 			self.clipCategoryTree.Delete(self.SelTreeItem)
 
 	def onTreeItemSelect(self, evt):
-		print('tree selection')
 		self.treeItemData = self.clipCategoryTree.GetItemData(evt.Item)
 		self.selCat = self.clipCategoryTree.GetItemText(evt.Item)
-		print(self.selCat, "label", evt.Label, evt.Skipped, self.treeItemData)
 		self.SelTreeItem = evt.Item
 		self.clipList.DeleteAllItems()
 		if self.treeItemData is None:
 			return []
 		for clip in self.treeItemData:
 			self.clipList.Append([clip])
+		item = self.clipList.GetTopItem()
+		self.clipList.SetItemState(item, wx.LIST_STATE_FOCUSED, wx.LIST_STATE_FOCUSED)
+		self.clipList.SetItemState(item,wx.LIST_STATE_SELECTED,wx.LIST_STATE_SELECTED)
 
 	def onListContextMenu(self, evt):
 		menus = wx.Menu()
 		addClip = wx.MenuItem(menus, id=wx.ID_ANY, text="add clip")
 		addFav = wx.MenuItem(menus, id=wx.ID_ANY, text="add to favourite")
 		delClip = wx.MenuItem(menus, id=wx.ID_ANY, text="delete clip")
+		cutClips = wx.MenuItem(menus, id=wx.ID_ANY, text="cut clips CTRL + X")
+		copyClips = wx.MenuItem(menus, id=wx.ID_ANY, text="copy clips CTRL + C")
+		pasteClips = wx.MenuItem(menus, id=wx.ID_ANY, text="Paste  clips CTRL + V")
+		selectAllClips = wx.MenuItem(menus, id=wx.ID_ANY, text="select all   clips CTRL + A")
 		menus.Append(addClip)
 		menus.Append(delClip)
-		# menus.Append(editClip)
 		menus.Append(addFav)
-		self.Bind(wx.EVT_MENU, self.addClip, addClip)
+		menus.Append(cutClips)
+		menus.Append(copyClips)
+		menus.Append(pasteClips)
+		menus.Append(selectAllClips)
+		self.Bind(wx.EVT_MENU, self.addListItem, addClip)
 		self.Bind(wx.EVT_MENU, self.deleteListItem, delClip)
 		self.Bind(wx.EVT_MENU, self.addToFavourite, addFav)
+		self.Bind(wx.EVT_MENU, self.cutListItem, cutClips)
+		self.Bind(wx.EVT_MENU, self.copyListItem, copyClips)
+		self.Bind(wx.EVT_MENU, self.pasteListItems, pasteClips)
+		self.Bind(wx.EVT_MENU, self.selectAllListItem, selectAllClips)
 		self.PopupMenu(menus, evt.GetPosition())
 
 	def onListKeyPresses(self, evt):
@@ -202,6 +214,12 @@ class ClipManagerDialog(wx.Dialog):
 		elif keyCode == wx.WXK_F2:
 			item = self.clipList.GetFirstSelected()
 			self.clipList.EditLabel(item)
+		elif keyCode == wx.WXK_CONTROL_A:
+			self.selectAllListItem(evt=None)
+		elif keyCode==wx.WXK_CONTROL_C:
+			self.copyListItem(evt = None)
+		elif keyCode == wx.WXK_CONTROL_X:
+			self.cutListItem(evt = None)
 		evt.Skip()
 
 	def onListItemRenaming(self, evt):
@@ -237,7 +255,7 @@ class ClipManagerDialog(wx.Dialog):
 		self.Close()
 		evt.Skip()
 
-	def addClip(self, evt):
+	def addListItem(self, evt):
 		itemLabel = self.editDialog("add a new clip", "paste clip ")
 		evt.Skip()
 		currentIndex = self.clipList.FocusedItem
@@ -249,13 +267,46 @@ class ClipManagerDialog(wx.Dialog):
 
 	def deleteListItem(self, evt):
 		selClips = self.getClipListSelection()
-		print(selClips)
 		if self.treeItemData == [] or selClips == [-1]:
 			return False
+		selClips.reverse()
 		for clip in selClips:
-			print(clip, "clip")
 			self.clipList.DeleteItem(clip)
 			self.treeItemData.pop(clip)
+
+	def cutListItem(self, evt):
+		clipSelection = self.getClipListSelection()
+		if clipSelection==[-1]:
+			return False
+		self.clipsToPaste = []
+		clipSelection.reverse()
+		for clip in clipSelection:
+			self.clipsToPaste.append(self.treeItemData.pop(clip))
+
+
+	def copyListItem(self, evt):
+		clipSelection = self.getClipListSelection()
+		if clipSelection==[-1]:
+			return False
+		self.clipsToPaste = []
+		clipSelection.reverse()
+		for clip in clipSelection:
+			self.clipsToPaste.append(self.treeItemData[clip])
+
+	def pasteListItems(self, evt):
+		for clip in self.clipsToPaste:
+			self.treeItemData.append(clip)
+			self.clipList.Append([clip])
+
+	def selectAllListItem(self, evt):
+		item = self.clipList.GetTopItem()
+		print(item)
+		while item>=0:
+			item = self.clipList.GetNextItem(
+				item, wx.LIST_NEXT_ALL,
+				wx.LIST_STATE_DONTCARE)
+			self.clipList.SetItemState(item, wx.LIST_STATE_SELECTED, wx.LIST_STATE_SELECTED)
+			print(item)
 
 	def getTreeItems(self):
 		treeItems: list = []
