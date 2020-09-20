@@ -3,7 +3,8 @@ import json
 from typing import List, Dict
 import functools
 import api
-import ui 
+import ui
+import gui
 from keyboardHandler import KeyboardInputGesture
 import globalVars
 from logHandler import log
@@ -148,17 +149,18 @@ class ClipManagerDialog(wx.Dialog):
 		evt.Skip()
 
 	def onRenamedTreeItem(self, evt):
-		print('renamed tree event')
 		if evt.Label in self.TREE_ITEM_IDS.keys():
 			evt.Veto()
+			gui.messageBox("can't rename item. there is already an item with the same name.", "rename error!")
 			return False
 		self.TREE_ITEM_IDS[evt.Label] = evt.Item
 
 	def addCategory(self, evt):
 		labelItem = self.editDialog("add category ", "category name:")
 		if labelItem in self.TREE_ITEM_IDS.keys():
+			gui.messageBox("can't create category. there is already category with the same name.", "add error!")
 			return False
-		addTreeId = self.clipCategoryTree.AppendItem(self.root, labelItem,data=[])
+		addTreeId = self.clipCategoryTree.AppendItem(self.root, labelItem, data=[])
 		self.TREE_ITEM_IDS[labelItem] = addTreeId
 
 	def renameTreeItem(self, evt):
@@ -182,7 +184,7 @@ class ClipManagerDialog(wx.Dialog):
 			self.clipList.Append([clip])
 		item = self.clipList.GetTopItem()
 		self.clipList.SetItemState(item, wx.LIST_STATE_FOCUSED, wx.LIST_STATE_FOCUSED)
-		self.clipList.SetItemState(item,wx.LIST_STATE_SELECTED,wx.LIST_STATE_SELECTED)
+		self.clipList.SetItemState(item, wx.LIST_STATE_SELECTED, wx.LIST_STATE_SELECTED)
 
 	def onListContextMenu(self, evt):
 		menus = wx.Menu()
@@ -213,7 +215,7 @@ class ClipManagerDialog(wx.Dialog):
 		if evt.ControlDown:
 			self.controlDown = True
 		else:
-			self.controlDown =False
+			self.controlDown = False
 		evt.Skip()
 
 	def onListKeyUp(self, evt):
@@ -224,17 +226,17 @@ class ClipManagerDialog(wx.Dialog):
 		elif keyCode == wx.WXK_F2:
 			item = self.clipList.GetFirstSelected()
 			self.clipList.EditLabel(item)
-		elif keyCode ==65 and self.controlDown:
+		elif keyCode == 65 and self.controlDown:
 			self.selectAllListItem(evt=None)
 			ui.message("all clips selected.")
-		elif keyCode== 67 and self.controlDown:
-			self.copyListItem(evt = None)
+		elif keyCode == 67 and self.controlDown:
+			self.copyListItem(evt=None)
 			ui.message("copy clips to clipboard.")
-		elif keyCode ==88 and self.controlDown:
-			self.cutListItem(evt = None)
+		elif keyCode == 88 and self.controlDown:
+			self.cutListItem(evt=None)
 			ui.message("cut clips to clipboard.")
 		elif keyCode == 86 and self.controlDown:
-			self.pasteListItems(evt = None)
+			self.pasteListItems(evt=None)
 			ui.message("clips pasted")
 		evt.Skip()
 
@@ -284,6 +286,7 @@ class ClipManagerDialog(wx.Dialog):
 	def deleteListItem(self, evt):
 		selClips = self.getClipListSelection()
 		if self.treeItemData == [] or selClips == [-1]:
+			gui.messageBox("no clip selected.", "delete error!")
 			return False
 		selClips.reverse()
 		for clip in selClips:
@@ -292,17 +295,16 @@ class ClipManagerDialog(wx.Dialog):
 
 	def cutListItem(self, evt):
 		clipSelection = self.getClipListSelection()
-		if clipSelection==[-1]:
+		if clipSelection == [-1]:
 			return False
 		self.clipsToPaste = []
 		clipSelection.reverse()
 		for clip in clipSelection:
 			self.clipsToPaste.append(self.treeItemData.pop(clip))
 
-
 	def copyListItem(self, evt):
 		clipSelection = self.getClipListSelection()
-		if clipSelection==[-1]:
+		if clipSelection == [-1]:
 			return False
 		self.clipsToPaste = []
 		clipSelection.reverse()
@@ -310,19 +312,19 @@ class ClipManagerDialog(wx.Dialog):
 			self.clipsToPaste.append(self.treeItemData[clip])
 
 	def pasteListItems(self, evt):
+		if not hasattr(self, 'clipsToPaste'):
+			return False
 		for clip in self.clipsToPaste:
 			self.treeItemData.append(clip)
 			self.clipList.Append([clip])
 
 	def selectAllListItem(self, evt):
 		item = self.clipList.GetTopItem()
-		print(item)
-		while item>=0:
+		while item >= 0:
 			item = self.clipList.GetNextItem(
 				item, wx.LIST_NEXT_ALL,
 				wx.LIST_STATE_DONTCARE)
 			self.clipList.SetItemState(item, wx.LIST_STATE_SELECTED, wx.LIST_STATE_SELECTED)
-			print(item)
 
 	def getTreeItems(self):
 		treeItems: list = []
@@ -338,11 +340,10 @@ class ClipManagerDialog(wx.Dialog):
 		return treeItems
 
 	def editDialog(self, msg: str, title: str) -> str:
-		with wx.TextEntryDialog(
-			self, title, msg) as d:
+		with wx.TextEntryDialog(self, title, msg) as d:
 			if d.ShowModal() == wx.ID_CANCEL:
 				return
-			return d.Value
+		return d.Value
 
 	def addToFavourite(self, evt):
 		clips = self.getClipListSelection()

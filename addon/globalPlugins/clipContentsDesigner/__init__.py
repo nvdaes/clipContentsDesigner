@@ -334,7 +334,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self.cut()
 
-	@script(gesture="kb:NVDA+V")
+	@script(gesture="kb:NVDA+SHIFT+V")
 	def script_showClipboardManager(self, gesture):
 		wx.CallAfter(self.onShowClipboardManager)
 
