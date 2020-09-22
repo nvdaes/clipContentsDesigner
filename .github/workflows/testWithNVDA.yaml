@@ -61,9 +61,6 @@ jobs:
     - name: Prepare NVDA's source tree
       run: scons source
       shell: cmd
-    - name: Check pot
-      run: scons checkPot
-      shell: cmd
     - name: Download add-on
       uses: actions/download-artifact@v2
       with:
@@ -72,6 +69,9 @@ jobs:
       run: |
         move *.nvda-addon addon.zip
         Expand-Archive addon.zip source\userConfig\addons\addon
+    - name: Check pot
+      run: scons checkPot
+      shell: cmd
     - name: Start NVDA
       run: |
         cd source
