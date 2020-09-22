@@ -69,11 +69,10 @@ jobs:
       run: |
         copy *.nvda-addon addon.zip
         Expand-Archive addon.zip source\userConfig\addons\addon
-    - name: Check pot
-      run: |
         copy *.nvda-addon addon.zip
         Expand-Archive addon.zip source
-        scons checkPot
+    - name: Check pot
+      run: scons checkPot
       shell: cmd
     - name: Start NVDA
       run: |
