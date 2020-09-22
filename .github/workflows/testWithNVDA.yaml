@@ -69,7 +69,7 @@ jobs:
       run: |
         move *.nvda-addon addon.zip
         Expand-Archive addon.zip source\userConfig\addons\addon
-        Expand-Archive addon.zip source
+        Copy-Item -Path "source\userConfig\addons\addon\*" -Destination "source" -Recurse
     - name: Check pot
       run: scons checkPot
       shell: cmd
