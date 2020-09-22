@@ -1,0 +1,85 @@
+name: Build and test NVDA add-on
+
+on:
+  push:
+    tags-ignore:
+      - '*'
+  pull_request:
+    branches:
+      - master
+jobs:
+
+  addon:
+  
+  
+    name: addon
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Install dependencies
+      run: |
+        pip install scons
+        pip install Markdown
+    - name: Build add-on
+      run: scons
+      shell: cmd
+    - name: Upload add-on
+      uses: actions/upload-artifact@v2
+      with:
+        name: nvda-addon
+        path: "*.nvda-addon"
+ 
+  nvda:
+  
+    name: NVDA
+  
+    needs: addon
+  
+    runs-on: windows-latest
+
+    steps:
+    
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Python 3.7 x86
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        architecture: x86
+    - name: Checkout NVDA
+      uses: actions/checkout@v2
+      with:
+        repository: nvaccess/nvda
+        submodules: true
+    - name: Prepare NVDA's source tree
+      run: scons source
+      shell: cmd
+    - name: Download add-on
+      uses: actions/download-artifact@v2
+      with:
+        name: nvda-addon
+    - name: Copy add-on
+      run: |
+        move *.nvda-addon addon.zip
+        Expand-Archive addon.zip source\userConfig\addons\addon
+    - name: Start NVDA
+      run: |
+        cd source
+        pythonw.exe nvda.pyw -m --debug-logging
+        ping 127.0.0.1 /n 20
+    - name: Quit NVDA
+      run: |
+        pythonw.exe nvda.pyw -q
+        ping 127.0.0.1 /n 20
+    - name: Upload log
+      uses: actions/upload-artifact@v2
+      with:
+        name: nvda-log
+        path: source\nvda.log
