@@ -63,6 +63,7 @@ jobs:
       shell: cmd
     - name: Check pot
       run: scons checkPot
+      shell: cmd
     - name: Download add-on
       uses: actions/download-artifact@v2
       with:
