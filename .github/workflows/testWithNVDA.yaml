@@ -27,14 +27,28 @@ jobs:
       run: |
         pip install scons
         pip install Markdown
+    - name: Download tools
+      run: |
+        Invoke-WebRequest -Uri https://github.com/nvaccess/nvda-misc-deps/blob/fc1e9c47dc7f797fa0bca6cd91a32590fbf30edf/tools/msgfmt.exe -OutFile "${{GITHUB_WORKSPACE}}\msgfmt.exe"
+        Invoke-WebRequest -Uri https://github.com/nvaccess/nvda-misc-deps/blob/fc1e9c47dc7f797fa0bca6cd91a32590fbf30edf/tools/xgettext.exe -OutFile "${{GITHUB_WORKSPACE}}\xgettext.exe"
+    - name: Build pot
+      run: scons pot
     - name: Build add-on
       run: scons
+      shell: cmd
+    - name: Build pot
+      run: scons pot
       shell: cmd
     - name: Upload add-on
       uses: actions/upload-artifact@v2
       with:
         name: nvda-addon
         path: "*.nvda-addon"
+    - name: Upload pot
+      uses: actions/upload-artifact@v2
+      with:
+        name: addon-pot
+        path: "*.pot"
  
   nvda:
   
@@ -69,6 +83,10 @@ jobs:
       run: |
         move *.nvda-addon addon.zip
         Expand-Archive addon.zip source\userConfig\addons\addon
+    - name: Download pot
+      uses: actions/download-artifact@v2
+      with:
+        name: addon-pot
     - name: Start NVDA
       run: |
         cd source
