@@ -27,7 +27,10 @@ jobs:
       run: |
         pip install scons
         pip install Markdown
-    - name: Build add-on
+      - name: Download tools
+        run: |
+          curl -o msgfmt.exe https://github.com/nvaccess/nvda-misc-deps/blob/fc1e9c47dc7f797fa0bca6cd91a32590fbf30edf/tools/msgfmt.exe
+          curl -o xgettext.exe https://github.com/nvaccess/nvda-misc-deps/blob/fc1e9c47dc7f797fa0bca6cd91a32590fbf30edf/tools/xgettext.exe    - name: Build add-on
       run: scons
       shell: cmd
     - name: Upload add-on
