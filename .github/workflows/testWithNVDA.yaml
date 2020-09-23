@@ -67,12 +67,8 @@ jobs:
         name: nvda-addon
     - name: Copy add-on
       run: |
-        copy *.nvda-addon addon.zip
+        move *.nvda-addon addon.zip
         Expand-Archive addon.zip source\userConfig\addons\addon
-        Copy-Item -Path source\userConfig\addons\addon -Filter *.py -Recurse -Container:$false -Destination source\addon
-    - name: Check pot
-      run: scons checkPot
-      shell: cmd
     - name: Start NVDA
       run: |
         cd source
