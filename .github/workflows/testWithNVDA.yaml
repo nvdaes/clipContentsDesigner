@@ -23,7 +23,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
-        architecture: x86
     - name: Install dependencies
       run: |
         pip install scons
@@ -36,11 +35,6 @@ jobs:
       with:
         name: nvda-addon
         path: "*.nvda-addon"
-    - name: Download tools
-      run: |
-        curl -O https://github.com/nvaccess/nvda-misc-deps/blob/fc1e9c47dc7f797fa0bca6cd91a32590fbf30edf/tools/msgfmt.exe
-        curl -O https://github.com/nvaccess/nvda-misc-deps/blob/fc1e9c47dc7f797fa0bca6cd91a32590fbf30edf/tools/xgettext.exe
-        dir
     - name: Build pot
       run: scons pot
       shell: cmd
