@@ -14,7 +14,7 @@ jobs:
   
     name: addon
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -27,15 +27,24 @@ jobs:
       run: |
         pip install scons
         pip install Markdown
+        sudo apt update
+        sudo apt install gettext
     - name: Build add-on
       run: scons
-      shell: cmd
     - name: Upload add-on
       uses: actions/upload-artifact@v2
       with:
         name: nvda-addon
         path: "*.nvda-addon"
- 
+    - name: Build pot
+      run: scons pot
+    - name: Upload pot
+      uses: actions/upload-artifact@v2
+      with:
+        name: pot-file
+        path: "*.pot"
+
+
   nvda:
   
     name: NVDA
@@ -61,13 +70,14 @@ jobs:
     - name: Prepare NVDA's source tree
       run: scons source
       shell: cmd
-    - name: Check pot
-      run: scons checkPot
-      shell: cmd
     - name: Download add-on
       uses: actions/download-artifact@v2
       with:
         name: nvda-addon
+    - name: Download pot
+      uses: actions/download-artifact@v2
+      with:
+        name: pot-file
     - name: Copy add-on
       run: |
         move *.nvda-addon addon.zip
@@ -86,3 +96,22 @@ jobs:
       with:
         name: nvda-log
         path: source\nvda.log
+    - name: Check pot
+      run: |
+        move *.pot tests\nvda.pot
+        cd tests
+        python checkPot.py nvda.pot
+        python checkPot.py nvda.pot > potResults.txt
+        If (Select-String -Path potResults.txt -Pattern 'Message has no translator comment' -SimpleMatch) {exit 1}
+    - name: Comment on PR
+      uses: actions/github-script@v3
+      if: failure()
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: 'This PR has messages without comments for translators'
+          })
