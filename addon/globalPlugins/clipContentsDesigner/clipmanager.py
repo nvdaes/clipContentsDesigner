@@ -10,7 +10,6 @@ import globalVars
 from logHandler import log
 import wx
 
-
 CLIPS_FILE_PATH: str = os.path.join(globalVars.appArgs.configPath, "clips.json")
 
 
@@ -59,28 +58,33 @@ class ClipManagerDialog(wx.Dialog):
 		ClipManagerDialog._instance = None
 
 	def __init__(self, *args, **kwds):
+		if ClipManagerDialog._instance is not None:
+			return
+		ClipManagerDialog._instance = self
+
 		kwds["style"] = kwds.get("style", 0) | wx.DEFAULT_DIALOG_STYLE
 		wx.Dialog.__init__(self, *args, **kwds)
-		self.SetTitle("clip manager")
+		# Translators: title of clipboard manager dialog
+		self.SetTitle(_("clip manager"))
 
 		mainSizer = wx.BoxSizer(wx.HORIZONTAL)
 
 		self.clipCategoryTree = wx.TreeCtrl(
-			self, wx.ID_ANY, style=wx.BORDER_SIMPLE | wx.TR_DEFAULT_STYLE |
-			wx.TR_EDIT_LABELS | wx.TR_HAS_BUTTONS | wx.TR_HIDE_ROOT | wx.TR_SINGLE)
+			self, wx.ID_ANY, style=wx.BORDER_SIMPLE | wx.TR_DEFAULT_STYLE
+			| wx.TR_EDIT_LABELS | wx.TR_HAS_BUTTONS | wx.TR_HIDE_ROOT | wx.TR_SINGLE)
 		mainSizer.Add(self.clipCategoryTree, 1, wx.ALL | wx.EXPAND, 0)
 
 		self.clipList = wx.ListCtrl(
-			self, wx.ID_ANY, style=wx.LC_EDIT_LABELS |
-			wx.LC_HRULES | wx.LC_NO_HEADER | wx.LC_REPORT | wx.LC_VRULES)
+			self, wx.ID_ANY, style=wx.LC_EDIT_LABELS
+			| wx.LC_HRULES | wx.LC_NO_HEADER | wx.LC_REPORT | wx.LC_VRULES)
 		self.clipList.SetFocus()
 		self.clipList.AppendColumn("", format=wx.LIST_FORMAT_LEFT, width=-1)
 		mainSizer.Add(self.clipList, 1, wx.EXPAND, 0)
 
 		btnSizer = wx.StdDialogButtonSizer()
 		mainSizer.Add(btnSizer, 0, wx.ALL, 4)
-
-		self.closeBtn = wx.Button(self, wx.ID_CLOSE, "")
+		# Translators: label of a button to close clipboard manager
+		self.closeBtn = wx.Button(self, wx.ID_CLOSE, _("close"))
 		btnSizer.AddButton(self.closeBtn)
 
 		btnSizer.Realize()
@@ -104,7 +108,6 @@ class ClipManagerDialog(wx.Dialog):
 
 		self.clipList.Bind(wx.EVT_CONTEXT_MENU, self.onListContextMenu)
 		self.clipList.Bind(wx.EVT_KEY_UP, self.onListKeyUp)
-		self.clipList.Bind(wx.EVT_KEY_DOWN, self.onListKeyDown)
 		self.clipList.Bind(wx.EVT_LIST_ITEM_ACTIVATED, self.onActivatedListItem)
 		self.clipList.Bind(
 			wx.EVT_LIST_BEGIN_LABEL_EDIT,
@@ -127,11 +130,13 @@ class ClipManagerDialog(wx.Dialog):
 
 	def onTreeContextMenu(self, evt):
 		menus = wx.Menu()
-		addCat = wx.MenuItem(menus, id=wx.ID_ANY, text="add category.")
-		delCat = wx.MenuItem(menus, id=wx.ID_ANY, text="delete category.")
-		renameCat = wx.MenuItem(menus, id=wx.ID_ANY, text="rename category.")
+		# Translators: label of menu item to create new category
+		addCat = wx.MenuItem(menus, id=wx.ID_ANY, text=_("add category."))
+		# Translators: label of a menu item to delete category
+		delCat = wx.MenuItem(menus, id=wx.ID_ANY, text=_("delete category."))
+		# Translators: label of a menu item to rename category
+		renameCat = wx.MenuItem(menus, id=wx.ID_ANY, text=_("rename category."))
 		menus.Append(addCat)
-		# menus.Append(addSubCat)
 		menus.Append(delCat)
 		menus.Append(renameCat)
 		self.Bind(wx.EVT_MENU, self.addCategory, addCat)
@@ -151,20 +156,31 @@ class ClipManagerDialog(wx.Dialog):
 	def onRenamedTreeItem(self, evt):
 		if evt.Label in self.TREE_ITEM_IDS.keys():
 			evt.Veto()
-			gui.messageBox("can't rename item. there is already an item with the same name.", "rename error!")
+			gui.messageBox(
+				# Translators: error message to be shown when can't rename the  category
+				_("can't rename item. there is already an item with the same name."),
+				# Translators: title of error dialog
+				_("rename error!"))
 			return False
 		self.TREE_ITEM_IDS[evt.Label] = evt.Item
 
 	def addCategory(self, evt):
-		labelItem = self.editDialog("add category ", "category name:")
+		labelItem = self.editDialog(
+			# Translators: title of a text entry dialog shown to create new category
+			_("add category "),
+			# Translators: label of an edit field shown to type new category name
+			_("category name:"))
 		if labelItem in self.TREE_ITEM_IDS.keys():
-			gui.messageBox("can't create category. there is already category with the same name.", "add error!")
+			gui.messageBox(
+				# Translators: error message shown when can't add new category
+				_("can't create category. there is already category with the same name."),
+				# Translators: title of error dialog
+				_("add error!"))
 			return False
 		addTreeId = self.clipCategoryTree.AppendItem(self.root, labelItem, data=[])
 		self.TREE_ITEM_IDS[labelItem] = addTreeId
 
 	def renameTreeItem(self, evt):
-		print('renamed tree')
 		selTreeItem = self.clipCategoryTree.FocusedItem
 		self.clipCategoryTree.EditLabel(selTreeItem)
 
@@ -188,13 +204,34 @@ class ClipManagerDialog(wx.Dialog):
 
 	def onListContextMenu(self, evt):
 		menus = wx.Menu()
-		addClip = wx.MenuItem(menus, id=wx.ID_ANY, text="add clip")
-		addFav = wx.MenuItem(menus, id=wx.ID_ANY, text="add to favourite")
-		delClip = wx.MenuItem(menus, id=wx.ID_ANY, text="delete clip")
-		cutClips = wx.MenuItem(menus, id=wx.ID_ANY, text="cut clips CTRL + X")
-		copyClips = wx.MenuItem(menus, id=wx.ID_ANY, text="copy clips CTRL + C")
-		pasteClips = wx.MenuItem(menus, id=wx.ID_ANY, text="Paste  clips CTRL + V")
-		selectAllClips = wx.MenuItem(menus, id=wx.ID_ANY, text="select all   clips CTRL + A")
+		addClip = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of menu item shown to create new clip
+			text=_("add clip"))
+		addFav = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of menu item to add selected clips to favourites
+			text=_("add to favourite"))
+		delClip = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of a menu item to delete selected clips
+			text=_("delete clip"))
+		cutClips = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of a menu item to cut clips
+			text=_("cut clips CTRL + X"))
+		copyClips = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of a menu item to copy clips
+			text=_("copy clips CTRL + C"))
+		pasteClips = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of a menu item paste clips
+			text=_("Paste  clips CTRL + V"))
+		selectAllClips = wx.MenuItem(
+			menus, id=wx.ID_ANY,
+			# Translators: label of a menu item to select all clips
+			text=_("select all   clips CTRL + A"))
 		menus.Append(addClip)
 		menus.Append(delClip)
 		menus.Append(addFav)
@@ -211,33 +248,21 @@ class ClipManagerDialog(wx.Dialog):
 		self.Bind(wx.EVT_MENU, self.selectAllListItem, selectAllClips)
 		self.PopupMenu(menus, evt.GetPosition())
 
-	def onListKeyDown(self, evt):
-		if evt.ControlDown:
-			self.controlDown = True
-		else:
-			self.controlDown = False
-		evt.Skip()
-
 	def onListKeyUp(self, evt):
 		keyCode = evt.GetKeyCode()
 		if keyCode == wx.WXK_DELETE or keyCode == wx.WXK_NUMPAD_DELETE:
 			self.deleteListItem(evt=None)
-			ui.message("clips deleted")
 		elif keyCode == wx.WXK_F2:
 			item = self.clipList.GetFirstSelected()
 			self.clipList.EditLabel(item)
-		elif keyCode == 65 and self.controlDown:
+		elif keyCode == 65 and evt.ControlDown():
 			self.selectAllListItem(evt=None)
-			ui.message("all clips selected.")
-		elif keyCode == 67 and self.controlDown:
+		elif keyCode == 67 and evt.ControlDown():
 			self.copyListItem(evt=None)
-			ui.message("copy clips to clipboard.")
-		elif keyCode == 88 and self.controlDown:
+		elif keyCode == 88 and evt.ControlDown():
 			self.cutListItem(evt=None)
-			ui.message("cut clips to clipboard.")
-		elif keyCode == 86 and self.controlDown:
+		elif keyCode == 86 and evt.ControlDown():
 			self.pasteListItems(evt=None)
-			ui.message("clips pasted")
 		evt.Skip()
 
 	def onListItemRenaming(self, evt):
@@ -274,7 +299,11 @@ class ClipManagerDialog(wx.Dialog):
 		evt.Skip()
 
 	def addListItem(self, evt):
-		itemLabel = self.editDialog("add a new clip", "paste clip ")
+		itemLabel = self.editDialog(
+			# Translators: title of edit dialog
+			_("add a new clip"),
+			# Translators: label of an edit field to type new clip text
+			"clip: ")
 		evt.Skip()
 		currentIndex = self.clipList.FocusedItem
 		if currentIndex < 0:
@@ -286,45 +315,78 @@ class ClipManagerDialog(wx.Dialog):
 	def deleteListItem(self, evt):
 		selClips = self.getClipListSelection()
 		if self.treeItemData == [] or selClips == [-1]:
-			gui.messageBox("no clip selected.", "delete error!")
+			gui.messageBox(
+				# Translators: error message shown when no clips is selected
+				_("no clip selected."),
+				# Translators: title of error dialog
+				_("delete error!"))
 			return False
 		selClips.reverse()
 		for clip in selClips:
 			self.clipList.DeleteItem(clip)
 			self.treeItemData.pop(clip)
+		ui.message(
+			# Translators: message presented when clips are deleted
+			_("clips deleted"))
 
 	def cutListItem(self, evt):
 		clipSelection = self.getClipListSelection()
 		if clipSelection == [-1]:
+			ui.message(
+				# Translators: message presented when no clip selected to be copied
+				_("no clip selected."))
 			return False
 		self.clipsToPaste = []
 		clipSelection.reverse()
 		for clip in clipSelection:
 			self.clipsToPaste.append(self.treeItemData.pop(clip))
+		ui.message(
+			# Translators: message presented when clips are cut to clipboard
+			_("cut clips to clipboard."))
 
 	def copyListItem(self, evt):
 		clipSelection = self.getClipListSelection()
 		if clipSelection == [-1]:
+			ui.message(
+				# Translators: message presented when no clip is selected to be copied to clipboard
+				_("no clip selected"))
 			return False
 		self.clipsToPaste = []
 		clipSelection.reverse()
 		for clip in clipSelection:
 			self.clipsToPaste.append(self.treeItemData[clip])
+		ui.message(
+			# Translators: message presented when clips are copied to clipboard
+			_("clips copied to clipboard"))
 
 	def pasteListItems(self, evt):
-		if not hasattr(self, 'clipsToPaste'):
+		if not hasattr(self, 'clipsToPaste') or self.clipsToPaste == []:
+			ui.message(
+				# Translators: message presented when no clip is copied or cut
+				_("no clip to paste."))
 			return False
 		for clip in self.clipsToPaste:
 			self.treeItemData.append(clip)
 			self.clipList.Append([clip])
+		ui.message(
+			# Translators: message presented when clip are pasted
+			_("clip pasted."))
 
 	def selectAllListItem(self, evt):
 		item = self.clipList.GetTopItem()
+		if self.clipList.ItemCount <= 0:
+			ui.message(
+				# Translators: message presented when no clips are available
+				_("no clip available."))
+			return False
 		while item >= 0:
 			item = self.clipList.GetNextItem(
 				item, wx.LIST_NEXT_ALL,
 				wx.LIST_STATE_DONTCARE)
 			self.clipList.SetItemState(item, wx.LIST_STATE_SELECTED, wx.LIST_STATE_SELECTED)
+		ui.message(
+			# Translators: message presented when all clips are selected
+			_("all clips selected."))
 
 	def getTreeItems(self):
 		treeItems: list = []

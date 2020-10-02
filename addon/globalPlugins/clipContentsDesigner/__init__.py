@@ -22,6 +22,12 @@ from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 from logHandler import log
 from .clipmanager import recentClips, ClipManagerDialog
 
+import gettext
+import os
+
+localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
+translate = gettext.translation('handroll', localedir, fallback=True)
+_ = translate.gettext
 addonHandler.initTranslation()
 
 # Constants
@@ -88,6 +94,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
+		# translator: label for clipboard manager under tools menu
 		self.toolsMenuItem = gui.mainFrame.sysTrayIcon.toolsMenu.Append(wx.ID_ANY, _("clipboard manager..."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onShowClipboardManager, self.toolsMenuItem)
 
@@ -334,7 +341,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self.cut()
 
-	@script(gesture="kb:NVDA+SHIFT+V")
+	@script(
+		gesture="kb:NVDA+SHIFT+V",
+		# Translators: message presented in input mode.
+		description=_("shows clipboard manager to manage and paste clips."))
 	def script_showClipboardManager(self, gesture):
 		wx.CallAfter(self.onShowClipboardManager)
 
