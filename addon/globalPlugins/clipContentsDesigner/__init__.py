@@ -20,6 +20,8 @@ from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 from logHandler import log
+from .clipmanager import recentClips, ClipManagerDialog
+
 
 addonHandler.initTranslation()
 
@@ -87,6 +89,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
+		# translator: label for clipboard manager under tools menu
+		self.toolsMenuItem = gui.mainFrame.sysTrayIcon.toolsMenu.Append(wx.ID_ANY, _("clipboard manager..."))
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onShowClipboardManager, self.toolsMenuItem)
+
+	def onShowClipboardManager(self, evt=None):
+		gui.mainFrame.prePopup()
+		d = ClipManagerDialog(gui.mainFrame)
+		d.Show()
+		gui.mainFrame.postPopup()
 
 	def terminate(self):
 		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
@@ -256,6 +267,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self.clearClipboard()
 
+	@recentClips
 	def copy(self):
 		obj = api.getFocusObject()
 		treeInterceptor = obj.treeInterceptor
@@ -267,6 +279,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
 			KeyboardInputGesture.fromName(keyName).send()
 
+	@recentClips
 	def confirmCopy(self):
 		text = self.getSelectedText()
 		if gui.messageBox(
@@ -322,6 +335,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			wx.CallAfter(self.confirmCut)
 		else:
 			self.cut()
+
+	@script(
+		gesture="kb:NVDA+SHIFT+V",
+		# Translators: message presented in input mode.
+		description=_("shows clipboard manager to manage and paste clips."))
+	def script_showClipboardManager(self, gesture):
+		wx.CallAfter(self.onShowClipboardManager)
 
 	@script(
 		# Translators: message presented in input mode.
