@@ -22,7 +22,6 @@ from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 from logHandler import log
 from .clipmanager import recentClips, ClipManagerDialog
 
-
 addonHandler.initTranslation()
 
 # Constants
@@ -83,13 +82,12 @@ def isArabicKeyboardLayout():
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-
 	scriptCategory = SCRCAT_TEXTREVIEW
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
-		# translator: label for clipboard manager under tools menu
+		# translators: label for clipboard manager under tools menu
 		self.toolsMenuItem = gui.mainFrame.sysTrayIcon.toolsMenu.Append(wx.ID_ANY, _("clipboard manager..."))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onShowClipboardManager, self.toolsMenuItem)
 
@@ -100,7 +98,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.postPopup()
 
 	def terminate(self):
-		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
+		try:
+			NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
+			gui.mainFrame.sysTrayIcon.toolsMenu.Remove(self.toolsMenuItem)
+		except AttributeError:
+			pass
 
 	def onSettings(self, evt):
 		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
