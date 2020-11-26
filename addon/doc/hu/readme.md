@@ -1,80 +1,89 @@
 # Vágólap tartalomtervező #
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2018.4 to 2019.2.
+*	Készítők: Noelia, Abdel.
+*	Támogatott NVDA kiadások: 2019.3 és újabb
 *	[Stabil verzió][1] letöltése
 *	[Fejlesztői verzió][2] letöltése
 
-This add-on is used to add text to the clipboard, which can be useful when
-you want to join sections of text together ready for pasting.  The clipboard
-content can also be cleared an shown in browse mode.
+A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
+szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
+tartalma törölhető, illetve megjeleníthető böngésző módban.
 
 ## Billentyűparancsok ##
-*	NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
+
+* NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
   kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
   reprezentáló karaktereket is.
-*	NVDA+windows+x: Vágólap tartalom törlése.
-*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard. If you use nvda+F9, the text will not be added.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer..
+* NVDA+windows+x: Vágólap tartalom törlése.
+* Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
+  vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
+* Alapértelmezés szerint nincs billentyűparancs hozzárendelve: A vágólap
+  tartalmának megjelenítése böngészőmódú ablakban. Amennyiben nincs
+  böngészőmódban megjeleníthető tartalom a vágólapon a program
+  figyelmeztet. Akkor is, ha a vágólap üres, és akkor is, ha nincs rajta
+  szövegesen megjeleníthető tartalom. Ez utóbbi olyan esetben lehetséges, ha
+  pl. fájlokat másoltunk a vágólapra.
 
-- NVDA+control+shift+c: A kijelölt vagy az áttekintő kurzorral megjelölt
-szöveg hozzáfűzése a vágólaphoz.  - NVDA+control+shift+x: A vágólap
-tartalmának törlése.  - NVDA+control+f9: Beállítja az áttekintő kurzor
-aktuális pontját kijelölés kezdetének.
+Megjegyzés: A fenti parancsok megváltoztathatók az NVDA
+menü->Beállítások->Beviteli parancsok ablakában a Szövegáttekintés
+kategóriát választva.
 
 ## Beállítások menü ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+*	Vágólap tartalomtervező beállításai: Lehetőség van megadni egy elválasztó karaktert, mely minden hozzáadott szövegrész után beillesztésre kerül, így a végén elkülöníthetőek lesznek a különböző helyről hozzáfűzött részek.
+Beállítható, hogy a hozzáfűzni kívánt szöveg a vágólap tartalma elé vagy mögé kerüljön. Megadható, hogy mely vágólap műveletek végrehajtása előtt kérjen a program megerősítést. Az is, hogy megerősítést mindig, csak szöveges tartalom esetén vagy csak akkor kérjen, ha a vágólap nem üres.
+Megadható továbbá a vágólap tartalmának böngészőmódú megjelenítési formátuma és a megjeleníthető karakterek maximális száma. A limit megadásánál figyelembe kell venni, hogy a nagy mennyiségű szövegek megjelenítése problémákat okozhat. A limit alapértelmezés szerint 100000 karakter.
 
-Notes:
+Megjegyzések:
 
-*	The above command can be changed from NVDA menu, Preferences submenu,
-  Input gestures dialog, Configuration category.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
+*	A fenti parancs megváltoztatható az NVDA menü->Beállítások->Beviteli
+  parancsok ablakában a konfiguráció kategóriát választva.
+*	Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
+  megerősítést a vágólapműveletek előtt, de attól még végrehajtja azokat.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## A 11.0 változásai
+* Most már hozzáfűzhető az áttekintőkurzorral kijelölt szöveg is az NVDA+F9
+  és NVDA+F10 billentyűparancsok használatával. A korábban használt
+  NVDA+Windows+F9 parancs már nem használható.
+* Az NVDA 2019.3 vagy újabb kiadására van szükség.
 
-## Changes for 9.0
+## A 10.0 változásai
+* Hiba elhárítva: ha a vágólap tartalmát megjelenítő párbeszédablak címe nem
+  latin betűket tartalmaz
+* Hiba elhárítva: problémát okozott az emulált másolás és kivágás arab
+  kiosztású billentyűzeteken
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard
-  is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+## A 9.0 változásai
 
-## Changes for 8.0 ##
+* A vágólap tartalma már megjeleníthető böngészőmódban is
+* Megerősítés kérhető olyan esetben, ha a vágólap nem üres, de tartalma nem
+  szöveges, pl. ha egy fájlt vagy mappát másoltunk rá.
+* Az NVDA 2018.4 vagy újabb kiadása szükséges
 
-* The add-on settings are shown in the corresponding category of the NVDA
-  Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+## A 8.0 változásai ##
 
-## Changes for 7.0
+* A bővítmény beállításai az NVDA beállításai közt jelennek meg külön
+  kategóriában
+* Az NVDA 2018.2 vagy újabb kiadása szükséges
+* Ha szükséges, letöltheti a [legutolsó verziót][3], ami még támogatja az
+  NVDA 2017.3 kiadását.
 
-* In the dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
+## A 7.0 változásai
 
-## Changes for 6.0
+* Amennyiben a bővítmény telepítése során nem állítja be az emulált másolást
+  és kivágást, akkor nem változik meg a Ctrl+C és Ctrl+X parancsok
+  hagyományos viselkedése.
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+## A 6.0 változásai
 
-## Changes for 5.0 ##
+*	 Beállítható, hogy mely vágólapműveletek végrehajtása előtt kérjen megerősítést.
+*	Az NVDA beviteli parancsai között billentyűparancs rendelhető az emulált másoláshoz és az emulált kivágáshoz.
+*	 A telepítésnél beállítható a Ctrl+C és Ctrl+X billentyűparancs az emulált másoláshoz és kivágáshoz. Ekkor megerősítést kér a parancsok végrehajtása előtt.
+*	 Javították a hozzáfűzés szkriptjének (Windows+NVDA+c) dokumentációját.
 
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+## Az 5.0 változásai ##
+
+*	Javították a bővítmény párbeszédablakának vizuális megjelenítését.
+*	Az NVDA 2016.4 vagy újabb kiadása szükséges
 
 ## A 4.0 változásai ##
 *	A bővítmény beállításai az NVDA konfigurációjában kezelhetők, így a
@@ -103,11 +112,11 @@ Notes:
 ## Az 1.0 változásai ##
 *	- Első kiadás
 
-
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=ccd
 
 [2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
+[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o[1]:
+https://addons.nvda-project.org/files/get.php?file=ccd

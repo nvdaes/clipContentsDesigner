@@ -1,20 +1,20 @@
-# Gestor do conteúdo de transferência #
+# Gestor do Conteúdo de Transferência (Clip Contents Designer) #
 
 *	Autores: Noelia, Abdel.
-*	Compatibilidade com NVDA: 2019.3 e posterior
+*	Compatibilidade com NVDA: 2019.3 ou posterior
 *	Baixe a [versão estável][1]
-*	Baixe a [versão de desenvolvimento][2]
+*	Baixe a [versão em desenvolvimento][2]
 
 Este complemento é usado para adicionar texto à área de transferência, o que
 pode ser útil quando você deseja unir seções de texto prontas para colar. O
 conteúdo da área de transferência também pode ser limpo e mostrado no modo
 de navegação.
 
-## Comandos de tecla ##
+## Comandos de teclado ##
 
-* NVDA+windows+c: Acrescenta o texto selecionado, os caracteres unicode
-  braille que representem objetos MathML, ou a cadeia que foi marcada com o
-  cursor de exploração, à área de transferência.
+* NVDA+windows+c: Acrescenta o texto selecionado, os caracteres braille
+  Unicode que representem objetos MathML, ou a sequência (string) que foi
+  marcada com o cursor de exploração, à área de transferência.
 * NVDA+windows+x: Apaga o conteúdo da área de transferência.
 * Não atribuído: copia (ou corta) a área de transferência, com a
   possibilidade de ser solicitada uma confirmação prévia.
@@ -24,8 +24,8 @@ de navegação.
   exemplo se arquivos ou pastas foram copiados do Windows Explorer.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
-submenu Preferências, diálogo de Gestos para Entrada, categoria Exploração
-de texto.
+submenu Preferências, diálogo Definir comandos (Gestos para entrada),
+categoria Exploração de texto.
 
 ## Menu Preferências ##
 *	Configurações do Gestor do Conteúdo de Transferência: Permite definir um separador que pode ser usado para localizar os segmentos de texto depois que todo o texto adicionado for colado.
@@ -35,7 +35,8 @@ Além disso, é possível alterar o formato e o número máximo de caracteres do
 Notas:
 
 *	Os comandos acima podem ser alterados a partir do menu do NVDA, submenu
-  Preferências, diálogo de Gestos para Entrada, categoria configuração.
+  Preferências, diálogo Definir comandos (Gestos para entrada), categoria
+  Configuração.
 *	Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
   ainda estiver aberta. Nesses casos, as ações serão executadas
   imediatamente.
@@ -80,7 +81,7 @@ Notas:
 ## Mudanças na 6.0
 
 *	 Adicionadas opções para escolher se as ações disponíveis devem ser executadas após confirmação.
-*	Adicionados comandos emulação de copiar e emulação de cortar, que podem ser atribuídos no diálogo de gestos para entrada.
+*	Adicionados comandos emulação de copiar e emulação de cortar, que podem ser atribuídos no diálogo de Gestos para entrada.
 *	 Adicionado um diálogo para configurar as funções emulação de copiar e de cortar na instalação. Isso possibilita adicionar os comandos control+c e control+x para copiar e cortar e ser indagado se deseja substituir o conteúdo da área de transferência ao pressionar essas teclas.
 *	Corrigida documentação para script_add (Windows+NVDA+c).
 

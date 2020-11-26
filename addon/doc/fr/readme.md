@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
+*	Auteurs : Noelia, Abdel
+*	Compatibilité NVDA: 2019.3 ou ultérieure
 *	Télécharger [version stable][1]
 *	Télécharger [version de développement][2]
 
@@ -15,12 +15,12 @@ prêt pour le collage. Le contenu du presse-papiers peut aussi être vidé.
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
 * NVDA+windows+x : Vide le contenu du presse-papiers.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
-  of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+* Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
+  possibilité d'une demande de confirmation préalable.
+* Non assigné : Affiche le texte du presse-papiers en mode navigation, ou
+  annonce si le presse-papiers est vide ou si son contenu ne peut être
+  affiché en mode navigable, par exemple si des fichiers ou dossiers sont
+  copiés depuis l'explorateur Windows.
 
 Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
@@ -35,20 +35,23 @@ Notes :
 *	La commande ci-dessus peut être changé depuis le menu NVDA, sous-menu
   Préférences, dans la boîte de dialogue Gestes de commandes, dans la
   catégorie Configuration.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
+*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
+  NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
+  immédiatement
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard
-  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
-  used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Changements pour la version 11.0
+* Il est maintenant possible d'ajouter du texte marqué avec le curseur de
+  revue à l'aide de commandes standards de NVDA (NVDA+f9 et
+  NVDA+f10). NVDA+Windows+f9 n'est plus utilisé pour une meilleure
+  intégration avec na nouvelle commande de NVDA NVDA+maj+f9.
+* Nécessite NVDA 2019.3 ou ultérieur.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Changements pour la version 10.0
+* Correction d'un bogue dans le dialogue présentant le texte du
+  presse-papiers, quand son titre contient des caractères non latins.
+* Correction d'un bogue lors de l'utioisation des fonctionnalités
+  d'émulation de copier ou couper avec une configuration clavier Arabe. Ceci
+  a été corrigé par Abdel, ajouté comme auteur de l'extention.
 
 ## Changements pour la version 9.0
 

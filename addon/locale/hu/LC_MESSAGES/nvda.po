@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-11-03 07:57+0100\n"
+"PO-Revision-Date: 2020-07-29 16:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -25,12 +25,12 @@ msgid ""
 "text. Do you want to configure Emulate copy and cut now? You may do or "
 "change this later."
 msgstr ""
-"A bővítmény rákérdez mielőtt a vágólap tartalma kicserélődik a control+x "
-"vagy a ctrl+c billentyűparancsok segítségével. Ezt emulált kivágásnak vagy "
-"másolásnak nevezzük, alapértelmezetten akkor működik, ha a vágólap szöveget "
-"tartalmaz.\n"
-"Be szeretné állítani most az emulált kivágást és másolást? A későbbi "
-"beállításra is lehetősége nyílik majd."
+"A bővítmény lehetőséget nyújt rá, hogy a program megerősítést kérjen mielőtt "
+"a vágólap tartalma kicserélődne a control+x vagy a ctrl+c billentyűparancsok "
+"segítségével. Ezt emulált kivágásnak vagy másolásnak nevezzük, "
+"alapértelmezetten akkor működik, ha a vágólap szöveget tartalmaz.\n"
+"Be szeretné állítani most az emulált kivágást és másolást? Ezt később is "
+"megteheti bármikor."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -42,7 +42,7 @@ msgstr "HTML alapú előformázott szöveg"
 
 #. Translators: label of a dialog.
 msgid "HTML as shown in a web browser"
-msgstr "HTML a böngészőben látható módon"
+msgstr "HTML, mint a böngészőben"
 
 #. Translators: label of a dialog.
 msgid "Raw text"
@@ -54,11 +54,11 @@ msgstr "Megjeleníti a vágólap tartalomtervező beállítás ablakát."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
-msgstr "Vágólap törölve"
+msgstr "Vágólap kiürítve"
 
 #. Translators: message presented when the clipboard content cannot be deleted.
 msgid "Clipboard not cleared"
-msgstr "A vágólap nem lett kitörölve"
+msgstr "A vágólapot nem lehet kiüríteni"
 
 #. Translators: message presented when the start marker for appending text has been set using the review cursor.
 msgid "Start marker set"
@@ -104,16 +104,16 @@ msgid ""
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
-"A kijelölt szöveget, vagy az áttekintőkurzorral kijelölt szövegrészt a "
-"vágólap tartalmához fűzi."
+"A kijelölt szöveget, vagy a kezdőponttól az áttekintőkurzor pozíciójáig "
+"kijelölt szövegrészt a vágólap tartalmához fűzi."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Kérem erősítse meg, ha törölni akarja a vágólap tartalmát"
+msgstr "Kérem erősítse meg, hogy ki akarja üríteni a vágólapot"
 
 #. Translators: Title of a dialog.
 msgid "Clearing clipboard"
-msgstr "vágólap tartalmának kiűrítése"
+msgstr "Vágólap ürítése"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
@@ -121,7 +121,7 @@ msgstr "Törli a hozzáfűzött szöveget, és a vágólap tartalmát."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "Kérem erősítse meg, ha másolni szeretne a vágólap tartalmához"
+msgstr "Kérem erősítse meg, hogy másolni szeretne a vágólap tartalmához"
 
 #. Translators: Title of a dialog.
 msgid "Copying to clipboard"
@@ -131,11 +131,11 @@ msgstr "másolás a vágólapra"
 msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "Vágólapra másolás, az előbbi műveletre való rákérdezés lehetőségével"
+msgstr "Másolás a vágólapra, a művelet megerősítését kérheti"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Kérem erősítse meg, ha ki akar vágni a vágólap tartalmából"
+msgstr "Kérem erősítse meg, hogy ki akar vágni a vágólapról"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
@@ -145,7 +145,7 @@ msgstr "kivágás a vágólapról"
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "Kivágás a vágólapról, az előző művelet megerősítésének lehetőségével"
+msgstr "Kivágás a vágólapról, a művelet megerősítését kérheti"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -153,7 +153,7 @@ msgstr "A vágólap nem üres, de nincs megjeleníthető szöveg"
 
 #. Translators: presented when clipboard is empty.
 msgid "Clipboard is empty"
-msgstr "Vágólap törölve"
+msgstr "A vágólap üres"
 
 #. Translators: title of a browseable message.
 #, python-brace-format
@@ -161,43 +161,43 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Vágólap szövege ({max}/{current} - {formatForTitle})"
 
 msgid "Shows the clipboard text in browse mode"
-msgstr "A vágólap szövegét böngésző módban jeleníti meg"
+msgstr "A vágólap szöveges tartalmának megjelenítése böngészőmódban"
 
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"Adja meg az elválasztó szöveget, ami beszúrásra kerül két tartalom közé a "
-"vágólapra."
+"Adja meg a vágólaphoz hozzáfűzött tartalmak közé beszúrandó elválasztó "
+"szöveget"
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
-msgstr "szöveg hozzáadása a vágólap jelenlegi tartalma elé"
+msgstr "szöveg hozzáadása a vágólap tartalma elé"
 
 #. Translators: label of a dialog.
 msgid "Sele&ct the actions which require previous confirmation"
-msgstr "M&űveletek kijelölése, amelyeknek megerősítésre van szükségük"
+msgstr "A következő műveletek végrehajtása előtt kérjen megerősítést:"
 
 #. Translators: label of a dialog.
 msgid "Confirm to add text"
-msgstr "szöveg hozzáadásának megerősítése"
+msgstr "Szöveg hozzáadása"
 
 #. Translators: label of a dialog.
 msgid "Confirm to clear clipboard"
-msgstr "vágólap törléséről való megerősítés"
+msgstr "Vágólap ürítése"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate copy"
-msgstr "másolás emulálásának megerősítése"
+msgstr "Másolás emulálása"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate cut"
-msgstr "kivágás emulálásának megerősítése"
+msgstr "Kivágás emulálása"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"
-msgstr "&Megerősítés kérése a következő műveletekhez, ha:"
+msgstr "Megerősítés kérése:"
 
 #. Translators: label of a dialog.
 msgid "Always"
@@ -213,22 +213,24 @@ msgstr "Ha a vágólap nem üres"
 
 #. Translators: label of a dialog.
 msgid "&Format to show the clipboard text in browse mode:"
-msgstr "&Formátum a böngésző módban való szövegmegjelenítéshez:"
+msgstr "A böngészőmódú szöveg formátuma:"
 
 #. Translators: label of a dialog.
 msgid ""
 "&Maximum number of characters when showing clipboard text in browse mode"
-msgstr "Karakterek &maximális száma vágólap tartalmának mutatása esetén"
+msgstr ""
+"Karakterek &maximális száma a vágólap tartalmának böngészőmódú "
+"megjelenítéséhez"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Vágólap tartalomtervező "
+msgstr "Vágólap tartalomtervező"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
-msgstr "Kiegészítő a vágólap szövegeinek kezeléséhez."
+msgstr "Kiegészítő a vágólap szöveges tartalmának kezeléséhez."
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "&szöveg megerősítése a vágólapon"

@@ -1,7 +1,7 @@
 # Designer für die Zwischenablage #
 
 *	Autoren: Noelia Ruiz Martínez, Abdel.
-*	NVDA compatibility: 2019.3 or later
+*	NVDA-Kompatibilität: 2019.3 oder neuer
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
@@ -16,12 +16,12 @@ gelöscht werden.
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem Lese-Cursor
   markiert wurde, in die Zwischenablage hinzu.
 * NVDA+windows+X: Löscht die Zwischenablage.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
-  of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+* Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
+  der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
+* Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus an oder
+  sagt an, wenn die Zwischenablage leer ist oder Inhalte enthält, die nicht
+  in einer browserfähigen Nachricht angezeigt werden können, z. B. wenn
+  Dateien oder Ordner aus dem Windows Explorer kopiert wurden.
 
 Anmerkung: Die obigen Befehle können im NVDA-Menü unter Einstellungen /
 Eingaben... in der Kategorie "Befehle zum Text betrachten" geändert werden.
@@ -33,14 +33,15 @@ Anmerkungen:
 
 *	Der obige Befehl kann im NVDA-Menü unter Einstellungen / Eingaben in der
   Kategorie "Konfiguration" geändert werden.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
+*	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
+  noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard
-  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
-  used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Änderungen in 11.0
+* Jetzt ist es möglich, Text mit den Standardbefehlen des NVDA-Cursors
+  (NVDA+f9 und NVDA+f10) zu markieren und in die Zwischenablage zu
+  kopieren. NVDA+Windows+f9 wird nicht mehr verwendet, um dem neuen Befehl
+  NVDA+shift+f9  besser zu integrieren.
+* Erfordert NVDA 2019.3 oder höher.
 
 ## Änderungen in 10.0
 * Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
