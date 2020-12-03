@@ -1,6 +1,6 @@
 # Designer für die Zwischenablage #
 
-*	Autoren: Noelia Ruiz Martínez, Abdel.
+*	Autoren: Noelia, Abdel.
 *	NVDA-Kompatibilität: 2019.3 oder neuer
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
