@@ -26,7 +26,7 @@ Notes:
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 
 ## Changes for 12.0
-* Fixed bugs when using emulate copy and emulate cut in applications like LibreOffice Writer.
+* Fixed bugs when using emulate copy in applications like LibreOffice Writer.
 
 ## Changes for 11.0
 * Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
