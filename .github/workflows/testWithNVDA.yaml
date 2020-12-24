@@ -10,8 +10,7 @@ on:
 jobs:
 
   addon:
-  
-  
+
     name: addon
 
     runs-on: ubuntu-latest
@@ -29,6 +28,16 @@ jobs:
         pip install Markdown
         sudo apt update
         sudo apt install gettext
+    - name: Add add-on version
+      run: |
+        import re
+        with open("buildVars.py", 'r+', encoding='utf-8') as f:
+          text = f.read()
+          text = re.sub("\"addon_version\" : ,", "\"addon_version\" : \"${{ github.sha }}\",", text)
+          f.seek(0)
+          f.write(text)
+          f.truncate()
+      shell: python 
     - name: Build add-on
       run: scons
     - name: Upload add-on
@@ -44,7 +53,7 @@ jobs:
         name: pot-file
         path: "*.pot"
 
-
+        
   nvda:
   
     name: NVDA
@@ -115,3 +124,4 @@ jobs:
             repo: context.repo.repo,
             body: 'This PR has messages without comments for translators'
           })
+          
