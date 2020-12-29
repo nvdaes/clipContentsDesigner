@@ -10,7 +10,7 @@ import textInfos
 import controlTypes
 import ui
 import winUser
-import treeInterceptorHandler
+import browseMode
 import config
 import core
 import wx
@@ -116,9 +116,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def getSelectedText(self):
 		obj = api.getFocusObject()
 		treeInterceptor = obj.treeInterceptor
-		if isinstance(
-			treeInterceptor, treeInterceptorHandler.DocumentTreeInterceptor
-		) and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
 			obj = treeInterceptor
 		try:
 			info = obj.makeTextInfo(textInfos.POSITION_SELECTION)
@@ -259,9 +257,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def copy(self):
 		obj = api.getFocusObject()
 		treeInterceptor = obj.treeInterceptor
-		if isinstance(
-			treeInterceptor, treeInterceptorHandler.DocumentTreeInterceptor
-		) and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
 			treeInterceptor.script_copyToClipboard(None)
 		else:
 			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
