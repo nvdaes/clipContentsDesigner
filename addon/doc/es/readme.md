@@ -5,6 +5,7 @@
 *	Descargar [versión estable][1]
 *	Descargar [versión de desarrollo][2]
 
+
 Este complemento se utiliza para agregar texto al portapapeles, el cual
 puede ser útil cuando quieras unir secciones de texto listas para pegar
 juntas.  El contenido del portapapeles también puede limpiarse y mostrarse
@@ -37,6 +38,10 @@ Notas:
   Preferencias, diálogo Gestos de Entrada, Categoría Configuración.
 *	No se solicitarán confirmaciones cuando siga abierto un cuadro de mensaje
   de NVDA. En esos casos, las acciones se realizarán inmediatamente.
+
+## Cambios para 12.0
+* Se han corregido fallos al usar Emular copia en aplicaciones como Libre
+  Office Writer.
 
 ## Cambios para 11.0
 * Ahora es posible añadir texto marcado con el cursor de revisión usando

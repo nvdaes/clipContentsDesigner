@@ -5,6 +5,7 @@
 *	Baixe a [versão estável][1]
 *	Baixe a [versão em desenvolvimento][2]
 
+
 Este complemento é usado para adicionar texto à área de transferência, o que
 pode ser útil quando você deseja unir seções de texto prontas para colar. O
 conteúdo da área de transferência também pode ser limpo e mostrado no modo
@@ -18,10 +19,10 @@ de navegação.
 * NVDA+windows+x: Apaga o conteúdo da área de transferência.
 * Não atribuído: copia (ou corta) a área de transferência, com a
   possibilidade de ser solicitada uma confirmação prévia.
-* Não atribuído: mostra o texto da área de transferência no modo de
-  navegação ou anuncia se a área de transferência está vazia ou possui
-  conteúdo que não pode ser apresentado em uma mensagem navegável, por
-  exemplo se arquivos ou pastas foram copiados do Windows Explorer.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Nota: Os comandos acima podem ser alterados a partir do menu do NVDA,
 submenu Preferências, diálogo Definir comandos (Gestos para entrada),
@@ -40,6 +41,10 @@ Notas:
 *	Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
   ainda estiver aberta. Nesses casos, as ações serão executadas
   imediatamente.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Mudanças na 11.0
 * Agora é possível adicionar texto marcado com o cursor de exploração usando

@@ -5,6 +5,7 @@
 *	Lataa [vakaa versio][1]
 *	Lataa [kehitysversio][2]
 
+
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
 liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
@@ -19,8 +20,8 @@ näyttää selaustilassa.
   vaihtoehtoisesti vahvistuksen.
 * Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa tai
   ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on sisältöä, jota ei
-  voida näyttää selaustilassa, esim. Resurssienhallinnasta kopioituja
-  tiedostoja tai kansioita.
+  voida näyttää, esim. Resurssienhallinnasta kopioituja tiedostoja tai
+  kansioita.
 
 Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
 NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
@@ -38,6 +39,10 @@ Huomautuksia:
   Asetukset-kategoria.
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
+
+## Muutokset versiossa 12.0
+* Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa
+  sovelluksissa kuin LibreOffice Writer.
 
 ## Muutokset versiossa 11.0
 * Nyt on mahdollista lisätä tarkastelukohdistimella merkittyä tekstiä

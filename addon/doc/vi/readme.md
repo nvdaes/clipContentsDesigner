@@ -5,6 +5,7 @@
 *	Tải về [phiên bản chính thức][1]
 *	Tải về [phiên bản thử nghiệm][2]
 
+
 Add-on này dùng để thêm văn bản vào bộ nhớ tạm, có thể hữu ích khi bạn muốn
 kết hợp nhiều phần văn bản lại với nhau rồi mới dán.  Bạn cũng có thể xóa
 nội dung bộ nhớ tạm hoặc cho chúng hiển thị trong chế độ duyệt.
@@ -17,9 +18,10 @@ nội dung bộ nhớ tạm hoặc cho chúng hiển thị trong chế độ duy
 * NVDA+windows+x: xóa nội dung bộ nhớ tạm.
 * Chưa gán: chép vào (hoặc cắt từ) bộ nhớ tạm với khả năng yêu cầu xác nhận
   trước đó.
-* Chưa gán: hiển thị văn bản bộ nhớ tạm trong chế độ duyệt, hoặc thông báo
-  khi bộ nhớ tạm rỗng hay có nội dung không hiển thị được ở chế độ duyệt. Ví
-  dụ: nội dung được chép là các tập tin hay thư mục.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Lưu ý: có thể thay đổi các lệnh nói trên từ trình đơn NVDA, Tùy chọn, hộp
 thoại Quản lý thao tác, phân loại duyệt nội dung.
@@ -35,6 +37,10 @@ Lưu ý:
   quản lý thao tác, phân loại cấu hình.
 *	Sẽ không có yêu cầu xác nhận khi có một hộp thông điệp của NVDA đang
   mở. Các trường hợp này, các hành động sd4 được thực hiện ngay lập tức.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Các thay đổi cho bản 11.0
 * Giờ đây đã có thể them các điểm đánh dấu văn bản với con trỏ duyệt với

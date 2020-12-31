@@ -5,6 +5,7 @@
 *	Baixar a [versão estável][1]
 *	Baixar a [versão de desenvolvimento][2]
 
+
 Este extra é usado para adicionar texto à área de transferência, o que lhe
 pode ser útil quando quiser juntar várias partes de textos num só, pronto
 para colar.  O conteúdo da área de transferência também pode ser visto no
@@ -37,6 +38,10 @@ Notas:
   submenu Preferências, comandos, configuração.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Changes for 11.0
 * Now it's possible to add text marked with the review cursor using standard

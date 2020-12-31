@@ -5,6 +5,7 @@
 *	Scarica la [versione stabile][1]
 *	Scarica la [versione in sviluppo][2]
 
+
 Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
 appunti, operazione utile quando si desidera unire sezioni di testo insieme
 per poi incollarlo. Il contenuto degli appunti può anche essere cancellato e
@@ -17,10 +18,10 @@ visualizzato  in Modalità Navigazione.
   che è stata contrassegnata con il cursore di controllo.
 * NVDA + Windows + x: Cancella contenuto degli appunti.
 * Non assegnato: copia o taglia, con possibilità di richeista di conferma.
-* Non assegnato: visualizza il testo presente negli appunti in un messaggio
-  navigabile. Se negli appunti è presente contenuto diverso, come file o
-  cartelle copiate precedentemente, NVDA informa che non è presente testo
-  negli appunti.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Nota: I comandi di cui sopra possono essere modificati dal menu di NVDA,
 sottomenu Preferenze, gesti di immissione, categoria revisione del testo.
@@ -36,6 +37,10 @@ Note:
   Preferenze, gesti e tasti di immissione, categoria Configurazione.
 *	Quando è aperta una finestra di NVDA non verrà visualizzato il messaggio
   di conferma. In questi casi le azioni verranno eseguite immediatamente.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Novità nella versione 11.0
 * E' ora possibile agiungere testo selezionato con il cursore di controllo

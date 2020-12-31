@@ -5,6 +5,7 @@
 *	Descargar [versión estable][1]
 *	Descargar [versión de desenvolvemento][2]
 
+
 Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
 cando queras unir seccións de texto listas para pegarse xuntas.  O contido
 do portapapeis tamén pode limparse e amosarse en modo exploración.
@@ -36,6 +37,10 @@ Notas:
   diálogo Xestos de Entrada, categoría Configuración.
 *	Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
+
+## Cambios para 12.0
+* Arranxados erros ao usar emular copiar en aplicacións como LIbreOffice
+  Writer.
 
 ## Cambios para 11.0
 * Agora é posible engadir texto marcado co cursor de revisión utilizando

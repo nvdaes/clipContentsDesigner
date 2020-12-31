@@ -5,6 +5,7 @@
 *	Download [stabil version][1]
 *	Download [udviklingsversion][2]
 
+
 Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
 kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
 indsætning. Udklipsholderens indhold kan også ryddes og vises i
@@ -18,10 +19,10 @@ gennemsynstilstand.
 * NVDA+Windows+x: Ryd udklipsholderen.
 * Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
   mulighed for at blive bedt om en bekræftelse.
-* Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand. Du vil
-  få besked, hvis udklipsholderen er tom eller hvis indholdet ikke kan vises
-  i gennemsynstilstand. Dette kan eksempelvis være, hvis du har kopiere
-  filer fra Stifinder.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Præferencer/
 Inputbevægelser / kategorien tekstlæsning.
@@ -37,6 +38,10 @@ Bemærkninger:
   gå til Inputbevægelser og vælg kategorien "Configuration".
 *	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
   stadig er åben. I disse situationer vil handlingen straks udføres.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Ændringer i 11.0
 * Nu er det muligt at tilføje tekst markeret med læsemarkøren ved hjælp af

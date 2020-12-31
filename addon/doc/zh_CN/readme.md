@@ -1,9 +1,10 @@
 # 剪辑内容设计器 #
 
-*	作者: Noelia, Abdel.
-*	NVDA兼容版本: 2019.3或更高版本
+*	作者: Noelia, Abdel。
+*	NVDA兼容版本: 2019.3或更高
 *	下载 [稳定版][1]
 *	下载 [开发板][2]
+
 
 此插件用于向剪贴板添加文本，当您希望将文本部分连接在一起以准备粘贴时，这可能很有用。剪贴板内容也可以清除或者用浏览模式逐字逐句查看。
 
@@ -12,11 +13,14 @@
 * NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
 * NVDA+windows+x: 清除剪贴板内容.
 * 未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
-* 未分配：朗读在浏览模式下显示剪贴板文本，读出剪贴板是否为空，和从Windows资源管理器复制了文件或文件夹。
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
-注意：可以从NVDA菜单，“首选项”子菜单，“输入手势”对话框，“文本浏览”类别更改上述快捷键。
+注意：可以从NVDA菜单，“选项”子菜单，“输入手势”对话框，“文本浏览”类别更改上述快捷键。
 
-## 首选项菜单 ##
+## 选项菜单 ##
 *	剪贴板内容编辑器设置：允许设置一个分隔符，可以在粘贴整个添加的文本后用于查找文本片段.
 如果可以执行的操作（添加，清除剪贴板，模拟副本和模拟剪切）应该立即执行或在确认后执行，并且如果文本包含在文本中，则还可以选择确认，也可以选择是添加还是添加文本。剪贴板.
 
@@ -24,6 +28,9 @@
 
 *	可以从NVDA菜单，“首选项”子菜单，“输入手势”对话框，“配置”类别更改上述快捷键。
 *	当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作。
+
+## 版本 12.0
+* 修复了在 LibreOffice Writer 等应用程序中使用模拟复制时的错误。
 
 ## 版本11.0
 * 现在可以使用 NVDA （NVDA_f9 和 NVDA_f10） 的标准命令添加带有浏览光标标记的文本。NVDA_windows_f9

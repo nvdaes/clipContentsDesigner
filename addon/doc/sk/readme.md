@@ -5,6 +5,7 @@
 *	Stiahnuť [stabilnú verziu][1]
 *	Stiahnuť [vývojovú verziu][2]
 
+
 Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
 rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
 schránky a zobraziť obsah schránky v režime prehliadania.
@@ -16,9 +17,10 @@ schránky a zobraziť obsah schránky v režime prehliadania.
   MathML.
 * NVDA+windows+x: vymaže obsah schránky.
 * Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
-* Nepridelené: Zobrazí obsah schránky v režime prehliadania. Ak sa nedarí
-  zobraziť obsah schránky (napríklad ak je prázdna alebo ste vložili súbory
-  a priečinky), doplnok na to upozorní.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Tieto skratky môžete zmeniť z menu NVDA >možnosti > klávesové skratky,
 kategória prezeranie textu.
@@ -34,6 +36,10 @@ Poznámky:
   možnosti.
 *	Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
   takomto prípade sa varovanie nezobrazí a akcia sa rovno vykoná.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Zmeny vo verzii 11.0
 * Odteraz je možné do schránky pridať aj reťazce označené štandardnými

@@ -5,6 +5,7 @@
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
+
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
 hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
 Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
@@ -18,10 +19,10 @@ gelöscht werden.
 * NVDA+windows+X: Löscht die Zwischenablage.
 * Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
   der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
-* Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus an oder
-  sagt an, wenn die Zwischenablage leer ist oder Inhalte enthält, die nicht
-  in einer browserfähigen Nachricht angezeigt werden können, z. B. wenn
-  Dateien oder Ordner aus dem Windows Explorer kopiert wurden.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Anmerkung: Die obigen Befehle können im NVDA-Menü unter Einstellungen /
 Eingaben... in der Kategorie "Befehle zum Text betrachten" geändert werden.
@@ -35,6 +36,10 @@ Anmerkungen:
   Kategorie "Konfiguration" geändert werden.
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Änderungen in 11.0
 * Jetzt ist es möglich, Text mit den Standardbefehlen des NVDA-Cursors

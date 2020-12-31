@@ -5,6 +5,7 @@
 *	Preuzmi [stabilnu verziju][1]
 *	Preuzmi [razvojnu verziju][2]
 
+
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
 lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
@@ -38,6 +39,10 @@ Napomene:
   Postavke, dijaloški okvir Ulazne geste, kategorija Konfiguracija.
 *	Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
   prikazuje. U tim će se slučajevima radnje izvršavati odmah.
+
+## Promjene u verziji 12.0
+* Ispravljene su greške prilikom korištenja emulirajuće kopije u programima
+  poput LibreOffice Writer.
 
 ## Promjene u verziji 11.0
 * Sada je moguće dodati tekst koji je označen preglednim kursorom, pomoću

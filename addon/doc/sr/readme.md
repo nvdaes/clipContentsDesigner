@@ -5,6 +5,7 @@
 *	preuzmi [stabilnu verziju][1]
 *	preuzmi [verziju u razvoju][2]
 
+
 This add-on is used to add text to the clipboard, which can be useful when
 you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared an shown in browse mode.
@@ -35,6 +36,10 @@ Notes:
   Input gestures dialog, Configuration category.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Changes for 11.0
 * Now it's possible to add text marked with the review cursor using standard

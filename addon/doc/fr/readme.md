@@ -1,43 +1,48 @@
 # Clip Contents Designer #
 
-*	Auteurs : Noelia, Abdel
-*	Compatibilité NVDA: 2019.3 ou ultérieure
+*	Auteurs : Noelia, Abdel
+*	Compatibilité NVDA : 2019.3 ou ultérieure
 *	Télécharger [version stable][1]
 *	Télécharger [version de développement][2]
 
+
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
-peut être utile lorsque vous souhaitez relier des portions de texte ensemble
-prêt pour le collage. Le contenu du presse-papiers peut aussi être vidé.
+peut être utile lorsque vous souhaitez joindre des portions de texte prêt
+pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 
 ## Commandes clavier ##
 
-* NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
+* NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
 * NVDA+windows+x : Vide le contenu du presse-papiers.
 * Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
   possibilité d'une demande de confirmation préalable.
-* Non assigné : Affiche le texte du presse-papiers en mode navigation, ou
-  annonce si le presse-papiers est vide ou si son contenu ne peut être
-  affiché en mode navigable, par exemple si des fichiers ou dossiers sont
-  copiés depuis l'explorateur Windows.
+* Non assigné : Affiche le texte du presse-papiers en mode navigation, ou
+  annonce si le presse-papiers est vide ou si le contenu du presse-papiers
+  ne peut être présenté en mode navigation, par exemple si des fichiers ou
+  dossiers sont en cours de copie depuis l'explorateur Windows.
 
-Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
+Note : Les commandes ci-dessus peuvent être changés depuis le menu NVDA,
 sous-menu Préférences, dans la boîte de dialogue Gestes de commandes, dans
 la catégorie Revue de texte.
 
 ## Menu Préférences ##
-*	Paramètres Clip Contents Designer : Permet de définir un séparateur qui peut être utilisé pour trouver les segments de texte une fois que tout le texte ajouté est collé.
+*	Paramètres Clip Contents Designer : Permet de définir un séparateur qui peut être utilisé pour trouver les segments de texte une fois que tout le texte ajouté est collé.
 Vous pouvez également choisir si le texte sera ajouté à la fin ou au début, si les actions disponibles (ajouter, vider le presse-papiers, émuler copier et émuler couper) doivent être effectuées immédiatement ou après confirmation, et si des confirmations seront demandées juste si le texte est contenu dans le presse-papiers.
 
-Notes :
+Notes :
 
-*	La commande ci-dessus peut être changé depuis le menu NVDA, sous-menu
+*	La commande ci-dessus peut être changée depuis le menu NVDA, sous-menu
   Préférences, dans la boîte de dialogue Gestes de commandes, dans la
   catégorie Configuration.
 *	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
   NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
-  immédiatement
+  immédiatement.
+
+## Changements pour la version 12.0
+* Correction de bogues lors de l'utilisation de l'émulation de copie dans
+  les applications telles que LibreOffice Writer.
 
 ## Changements pour la version 11.0
 * Il est maintenant possible d'ajouter du texte marqué avec le curseur de
@@ -49,7 +54,7 @@ Notes :
 ## Changements pour la version 10.0
 * Correction d'un bogue dans le dialogue présentant le texte du
   presse-papiers, quand son titre contient des caractères non latins.
-* Correction d'un bogue lors de l'utioisation des fonctionnalités
+* Correction d'un bogue lors de l'utilisation des fonctionnalités
   d'émulation de copier ou couper avec une configuration clavier Arabe. Ceci
   a été corrigé par Abdel, ajouté comme auteur de l'extention.
 
@@ -67,8 +72,8 @@ Notes :
 * Les paramètres de l'extension sont affichés dans la catégorie
   correspondante au dialogue Paramètres NVDA.
 * Nécessite NVDA 2018.2 ou ultérieur.
-* Si nécessaire, vous pouvez télécharger la [dernière version compatible
-  avec NVDA 2017.3][3].
+* Si besoin, vous pouvez télécharger la [dernière version compatible avec
+  NVDA 2017.3][3].
 
 ## Changements pour la version 7.0
 

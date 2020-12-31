@@ -5,6 +5,7 @@
 *	[Stabil verzió][1] letöltése
 *	[Fejlesztői verzió][2] letöltése
 
+
 A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
 szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
 tartalma törölhető, illetve megjeleníthető böngésző módban.
@@ -17,12 +18,10 @@ tartalma törölhető, illetve megjeleníthető böngésző módban.
 * NVDA+windows+x: Vágólap tartalom törlése.
 * Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
   vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
-* Alapértelmezés szerint nincs billentyűparancs hozzárendelve: A vágólap
-  tartalmának megjelenítése böngészőmódú ablakban. Amennyiben nincs
-  böngészőmódban megjeleníthető tartalom a vágólapon a program
-  figyelmeztet. Akkor is, ha a vágólap üres, és akkor is, ha nincs rajta
-  szövegesen megjeleníthető tartalom. Ez utóbbi olyan esetben lehetséges, ha
-  pl. fájlokat másoltunk a vágólapra.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
 Megjegyzés: A fenti parancsok megváltoztathatók az NVDA
 menü->Beállítások->Beviteli parancsok ablakában a Szövegáttekintés
@@ -39,6 +38,10 @@ Megjegyzések:
   parancsok ablakában a konfiguráció kategóriát választva.
 *	Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
   megerősítést a vágólapműveletek előtt, de attól még végrehajtja azokat.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## A 11.0 változásai
 * Most már hozzáfűzhető az áttekintőkurzorral kijelölt szöveg is az NVDA+F9

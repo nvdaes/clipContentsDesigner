@@ -5,6 +5,7 @@
 *	Descarcă [versiunea stabilă][1]
 *	Descarcă [versiunea în dezvoltare][2]
 
+
 Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
 fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
 a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățat și
@@ -37,6 +38,10 @@ Note:
   Gesturi de intrare, Categoria de configurare.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed.
+
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
 ## Changes for 11.0
 * Now it's possible to add text marked with the review cursor using standard
