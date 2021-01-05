@@ -1,0 +1,52 @@
+name: Upload on new tags
+
+on:
+  push:
+    tags:
+      '*'
+
+jobs:
+  buildAndUpload:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install scons
+        pip install Markdown
+    - name: Add add-on version
+      run: |
+        import re
+        with open("buildVars.py", 'r+', encoding='utf-8') as f:
+          text = f.read()
+          version = "${{ github.ref }}".split("/")[-1]
+          text = re.sub("\"addon_version\" : ,", "\"addon_version\" : \"%s\",", text) % version
+          f.seek(0)
+          f.write(text)
+          f.truncate()
+      shell: python 
+    - name: Build add-on
+      run: scons
+    - name: Create Release
+      uses: actions/create-release@latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        prerelease: ${{ endsWith(github.ref, '-dev') }}
+        body_path: changelog.md
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v1-release
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: '*.nvda-addon'
+        tag: ${{ github.ref }}
+        overwrite: true
+        file_glob: true
