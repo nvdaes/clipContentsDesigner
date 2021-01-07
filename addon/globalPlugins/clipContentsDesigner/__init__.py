@@ -420,9 +420,13 @@ class AddonSettingsPanel(SettingsPanel):
 		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
-		wx.StaticText(self, -1, label=_("&Maximum number of characters when showing clipboard text in browse mode"))
-		self.maxLengthEdit = gui.nvdaControls.SelectOnFocusSpinCtrl(
-			self, min=1, max=1000000, initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+		maxLengthLabel = _("&Maximum number of characters when showing clipboard text in browse mode")
+		self.maxLengthEdit =  sHelper.addLabeledControl(
+			maxLengthLabel,
+			gui.nvdaControls.SelectOnFocusSpinCtrl,
+			min=1,
+			max=1000000,
+			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
 		)
 
 	def postInit(self):
