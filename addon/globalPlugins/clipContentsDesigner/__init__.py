@@ -421,7 +421,7 @@ class AddonSettingsPanel(SettingsPanel):
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
 		maxLengthLabel = _("&Maximum number of characters when showing clipboard text in browse mode")
-		self.maxLengthEdit =  sHelper.addLabeledControl(
+		self.maxLengthEdit = sHelper.addLabeledControl(
 			maxLengthLabel,
 			gui.nvdaControls.SelectOnFocusSpinCtrl,
 			min=1,
