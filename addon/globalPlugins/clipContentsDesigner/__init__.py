@@ -257,7 +257,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def copy(self):
 		obj = api.getFocusObject()
 		treeInterceptor = obj.treeInterceptor
-		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
+		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			treeInterceptor.script_copyToClipboard(None)
 		else:
 			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
