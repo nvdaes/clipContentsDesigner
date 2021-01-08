@@ -28,6 +28,7 @@ Notes:
 
 ## Changes for 13.0 
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
 
 ## Changes for 12.0
 * Fixed bugs when using emulate copy in applications like LibreOffice Writer.
