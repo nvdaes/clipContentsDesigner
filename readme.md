@@ -25,6 +25,10 @@ Notes:
 *	The above command can be changed from NVDA menu, Preferences submenu, Input gestures dialog, Configuration category.
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
+
 ## Changes for 12.0
 * Fixed bugs when using emulate copy in applications like LibreOffice Writer.
 
