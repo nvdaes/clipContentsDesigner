@@ -36,6 +36,7 @@ Notes:
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
 
 ## Changes for 12.0
 * Fixed bugs when using emulate copy in applications like LibreOffice Writer.
