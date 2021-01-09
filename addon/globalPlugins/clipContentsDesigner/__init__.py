@@ -82,7 +82,7 @@ def isArabicKeyboardLayout():
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
-	scriptCategory = SCRCAT_TEXTREVIEW
+	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
@@ -97,7 +97,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode.
 		description=_("Shows the Clip Contents Designer settings."),
-		category=SCRCAT_CONFIG
 	)
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
