@@ -31,10 +31,10 @@ BROWSEABLETEXT_FORMATS = [
 	# Translators: label of a dialog.
 	_("Preformatted text in HTML"),
 	# Translators: label of a dialog.
-	_("HTML as shown in a web browser"),
-	# Translators: label of a dialog.
-	_("Raw text"),
+	_("HTML as shown in a web browser")
 ]
+# Translators: Text of the clipboard shown without being formatted.
+RAW_TEXT = _("Plain text")
 
 confspec = {
 	"separator": "string(default="")",
@@ -320,7 +320,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode.
-		description=_("Shows the clipboard text in browse mode")
+		description=_("Shows the clipboard text as HTML in browse mode")
 	)
 	def script_showClipboardText(self, gesture):
 		try:
@@ -345,17 +345,45 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			html = True
 			if format == 0:
 				browseableText = "<pre>%s</pre>" % text.strip()[:maxLength]
-			elif format == 1:
-				browseableText = text.strip()[:maxLength]
 			else:
-				browseableText = text[:maxLength]
-				html = False
+				browseableText = text.strip()[:maxLength]
 			ui.browseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
 					max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format]
 				)), html)
+
+	@script(
+		# Translators: message presented in input mode.
+		description=_("Shows the clipboard textual contents as plain text in browse mode")
+	)
+	def script_showClipboardRawText(self, gesture):
+		try:
+			text = api.getClipData()
+		except Exception:
+			text = None
+		if not text:
+			if self.clipboardHasContent():
+				# Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+				ui.message(_("Clipboard is not empty, but there is no text to show"))
+			else:
+				# Translators: presented when clipboard is empty.
+				ui.message(_("Clipboard is empty"))
+		else:
+			if (
+				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
+			):
+				maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+			else:
+				maxLength = len(text)
+			browseableText = text.strip()[:maxLength]
+			ui.browseableMessage(
+				browseableText,
+				# Translators: title of a browseable message.
+				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
+					max=maxLength, current=len(text), formatForTitle=RAW_TEXT
+				)), False)
 
 
 class AddonSettingsPanel(SettingsPanel):
