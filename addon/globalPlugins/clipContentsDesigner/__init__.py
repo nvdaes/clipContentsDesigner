@@ -443,7 +443,7 @@ class AddonSettingsPanel(SettingsPanel):
 		)
 		self.confirmRequirementChoices.SetSelection(config.conf["clipContentsDesigner"]["confirmationRequirement"])
 		# Translators: label of a dialog.
-		formatLabel = _("&Format to show the clipboard text in browse mode:")
+		formatLabel = _("&Format to show the clipboard text as HTML in browse mode:")
 		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
