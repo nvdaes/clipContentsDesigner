@@ -21,12 +21,14 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "Ovaj dodatak omogućuje potvrđivanje kopiranja i rezanja, čime se zamijenjuje "
 "sadržaj međuspremnika prilikom pritiskanja tipki kontrol+c i kontrol+x. To "
@@ -62,27 +64,7 @@ msgstr "Međuspremnik je izbrisan"
 msgid "Clipboard not cleared"
 msgstr "Međuspremnik nije izbrisan"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Početna oznaka je postavljena"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Označava trenutačnu poziciju preglednog kursora kao početak teksta koji će "
-"biti dodan u međuspremnik."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Nema odabira. Nema postavljene početne oznake"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "Početna oznaka se mora nalaziti u istom objektu"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Nema teksta za dodavanje"
 
@@ -103,10 +85,12 @@ msgid "Cannot add"
 msgstr "Nije moguće dodati"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "Pronalazi označeni niz znakova ili tekst od prethodno postavljene početne "
 "oznake do uključujući trenutačne pozicije preglednog kursora, te ga dodaje u "
@@ -152,6 +136,10 @@ msgid ""
 "confirmation"
 msgstr "Reže iz međuspremnika, s mogućnošću prethodnog traženja odobrenja"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Pokazuje tekst međuspremnika u modusu čitanja"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Međuspremik nije prazan, ali ne postoji tekst za prikaz"
@@ -164,9 +152,6 @@ msgstr "Međuspremnik je prazan"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Tekst međuspremnika ({max}/{current} – {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Pokazuje tekst međuspremnika u modusu čitanja"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -236,3 +221,19 @@ msgstr "Upravljanje sadržajem međuspremnika"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatak za upravljanje tekstom iz međuspremnika."
+
+#~ msgid "Start marker set"
+#~ msgstr "Početna oznaka je postavljena"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Označava trenutačnu poziciju preglednog kursora kao početak teksta koji "
+#~ "će biti dodan u međuspremnik."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Nema odabira. Nema postavljene početne oznake"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Početna oznaka se mora nalaziti u istom objektu"

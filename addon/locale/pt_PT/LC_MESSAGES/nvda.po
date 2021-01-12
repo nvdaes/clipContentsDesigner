@@ -20,12 +20,14 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "Este extra permite confirmar se quer copiar e cortar, substituindo os "
 "conteúdos da área de transferência, quando pressionar control+c e control+x. "
@@ -61,27 +63,7 @@ msgstr "Área de transferência limpa!"
 msgid "Clipboard not cleared"
 msgstr "Área de transferência não limpa!"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Definir marcador de início"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Marca a posição do cursor de revisão como início do texto a ser passado para "
-"a área de transferência. "
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Sem selecção. O marcador de início não foi definido!"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "O marcador de início deve estar dentro do mesmo objeto"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Sem texto para adicionar."
 
@@ -102,10 +84,12 @@ msgid "Cannot add"
 msgstr "Não é possível adicionar."
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "Recupera a seqüência selecionada ou o texto a partir do marcador de início "
 "previamente definido até à posição do cursor de revisão e adiciona-o à área "
@@ -155,6 +139,10 @@ msgstr ""
 "Retira da área de transferência, com a possibilidade de lhe ser pedida uma "
 "confirmação."
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Mostra o texto da área de transferência no modo de navegação"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "A área de transferência não está vazia, mas não há texto para mostrar"
@@ -167,9 +155,6 @@ msgstr "A área de transferência está vazia"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texto da área de transferência ({max} / {current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Mostra o texto da área de transferência no modo de navegação"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -241,6 +226,22 @@ msgstr "Gestor de conteúdos da área de transferência."
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Extra para gerir o texto da área de transferência"
+
+#~ msgid "Start marker set"
+#~ msgstr "Definir marcador de início"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Marca a posição do cursor de revisão como início do texto a ser passado "
+#~ "para a área de transferência. "
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Sem selecção. O marcador de início não foi definido!"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "O marcador de início deve estar dentro do mesmo objeto"
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "&Texto na área de transferência para confirmar."

@@ -10,20 +10,22 @@ msgstr ""
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
 "PO-Revision-Date: 2020-01-12 13:01+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
+"Language-Team: \n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.11\n"
-"Language-Team: \n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "Teraz môžete nastaviť, aby sa pred skopírovaním a vystrihnutím do schránky "
 "zobrazilo varovanie. Predvolene sa toto varovanie objaví len vtedy, ak je v "
@@ -57,27 +59,7 @@ msgstr "Schránka je prázdna"
 msgid "Clipboard not cleared"
 msgstr "obsach schránky sa nepodarilo odstrániť"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Začiatok označený"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Označí aktuálnu pozíciu prezeracieho kurzora ako začiatok textu, ktorý bude "
-"skopírovaný do schránky."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Nie je označený začiatok"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "Začiatok musí byť označený v tom istom objekte"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Žiadny text na pridanie"
 
@@ -98,10 +80,12 @@ msgid "Cannot add"
 msgstr "Nie je možné pripojiť"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr "Pridá označený text do schránky."
 
 #. Translators: Label of a dialog.
@@ -144,6 +128,10 @@ msgid ""
 "confirmation"
 msgstr "Vystrihne do schránky s možnosťou varovania"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Zobrazí text schránky v režime prehliadania"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Schránka nie je prázdna, ale nie je možné zobraziť text"
@@ -156,9 +144,6 @@ msgstr "Schránka je prázdna"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text v schránke ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Zobrazí text schránky v režime prehliadania"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -226,6 +211,22 @@ msgstr "Rozšírená schránka"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Doplnok na prácu so schránkou Windows."
+
+#~ msgid "Start marker set"
+#~ msgstr "Začiatok označený"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Označí aktuálnu pozíciu prezeracieho kurzora ako začiatok textu, ktorý "
+#~ "bude skopírovaný do schránky."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Nie je označený začiatok"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Začiatok musí byť označený v tom istom objekte"
 
 #~ msgid "&Clip Contents Designer settings..."
 #~ msgstr "Nastavenia &Clip Contents Designer..."

@@ -19,12 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "תוסף זה מאפשר לאשר אם אתה רוצה להעתיק ולחתוך, להחליף את תוכן הלוח הגזירים, "
 "בעת לחיצה על control  + C או control + x. זה נקרא לחקות להעתיק ולחתוך, "
@@ -59,25 +61,7 @@ msgstr "לוח הגזירים אופס"
 msgid "Clipboard not cleared"
 msgstr "לוח הגזירים לא אופס"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "קביעת סימניית התחלה"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr "מסמן את מיקום סמן הסריקה כתחילת הטקסט שיתווסף ללוח הגזירים."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "אין טקסט נבחר. לא נקבעה סימניית התחלת"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "סמן ההתחלה חייב להיות ממוקם בתוך אותו אובייקט"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "אין טקסט להוספה"
 
@@ -98,10 +82,12 @@ msgid "Cannot add"
 msgstr "לא ניתן לבצע הוספה"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "מחזיר את המחרוזת או את הטקסט ממיקום סימניית ההתחלה אחורה עד למקום סמן הסריקה "
 "הנוכחי,  ומוסיף את המידע ללוח הזמינים."
@@ -146,6 +132,10 @@ msgid ""
 "confirmation"
 msgstr "גזירה מלוח הגזירים, עם אפשרות של בקשה לאישור הקודם"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "הצגת טקסט לוח הגזירים במצב גלישה"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "לוח הגזירים אינו ריק, אבל אין טקסט להציג"
@@ -158,9 +148,6 @@ msgstr "לוח הגזירים ריק"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "טקסט לוח הגזירים ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "הצגת טקסט לוח הגזירים במצב גלישה"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -230,6 +217,20 @@ msgstr "הגדרות עורך הזכרון הזמני"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "תוסף מיועד לעריכת תוכן לוח הגזירים."
+
+#~ msgid "Start marker set"
+#~ msgstr "קביעת סימניית התחלה"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr "מסמן את מיקום סמן הסריקה כתחילת הטקסט שיתווסף ללוח הגזירים."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "אין טקסט נבחר. לא נקבעה סימניית התחלת"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "סמן ההתחלה חייב להיות ממוקם בתוך אותו אובייקט"
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "&טקסט בלוח כדי לאשר"

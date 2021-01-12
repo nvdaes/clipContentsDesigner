@@ -18,12 +18,14 @@ msgstr ""
 "X-Generator: Poedit 2.2.2\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "Mit dieser Erweiterung erhalten Sie eine Meldung, womit Sie bestätigen "
 "können, ob Sie den Inhalt aus der Zwischenablage durch einen neuen Inhalt "
@@ -63,27 +65,7 @@ msgstr "Zwischenablage geleert"
 msgid "Clipboard not cleared"
 msgstr "Zwischenablage ist nicht leer"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Startmarke gesetzt"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
-"Anfügen von Text zum Inhalt der Zwischenablage."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Kein Text zum Anfügen vorhanden."
 
@@ -105,10 +87,12 @@ msgid "Cannot add"
 msgstr "Text konnte nicht hinzugefügt werden."
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "Fügt den Text zwischen der zuvor gesetzten Startmarke und der aktuellen "
 "Position des NVDA-Cursors in die Zwischenablage."
@@ -161,6 +145,10 @@ msgstr ""
 "Schneidet Inhalt aus der Zwischenablage aus, nachdem ggf. eine Bestätigung "
 "erfolgt ist"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Zwischenablage ist nicht leer, aber es gibt keinen Text zu zeigen"
@@ -173,9 +161,6 @@ msgstr "Zwischenablage ist leer"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text der Zwischenablage ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -245,6 +230,22 @@ msgstr "Designer für den  Inhalt der Zwischenablage"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Erweiterung zum Umgang mit der Windows-Zwischenablage."
+
+#~ msgid "Start marker set"
+#~ msgstr "Startmarke gesetzt"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
+#~ "Anfügen von Text zum Inhalt der Zwischenablage."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "&Text in der Zwischenablage bestätigen"
