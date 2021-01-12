@@ -18,12 +18,14 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents, when pressing control+c and control+x. This is named "
@@ -59,27 +61,7 @@ msgstr "Portapapeles limpiado"
 msgid "Clipboard not cleared"
 msgstr "Portapapeles no limpiado"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Colocación de marca de inicio"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Marca la posición actual del cursor de revisión como el comienzo del texto a "
-"anexar al portapapeles."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "No hay selección. No se colocó la marca de inicio"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "La marca de comienzo debe residir dentro del mismo objeto"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "No hay texto para añadir"
 
@@ -100,10 +82,12 @@ msgid "Cannot add"
 msgstr "No se puede añadir"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "Recupera la cadena seleccionada o el texto de la marca anterior de inicio "
 "incluyendo la posición actual del cursor de revisión, y lo añade al "
@@ -153,6 +137,10 @@ msgstr ""
 "Corta desde el portapapeles, con la posibilidad de que se te pregunte por "
 "una confirmación previa"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Muestra el texto del portapapeles en modo exploración"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "El portapapeles no está vacío, pero no hay texto que mostrar"
@@ -165,9 +153,6 @@ msgstr "El portapapeles está vacío"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texto del portapapeles ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Muestra el texto del portapapeles en modo exploración"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -238,6 +223,22 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para manejar texto en el portapapeles."
+
+#~ msgid "Start marker set"
+#~ msgstr "Colocación de marca de inicio"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Marca la posición actual del cursor de revisión como el comienzo del "
+#~ "texto a anexar al portapapeles."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "No hay selección. No se colocó la marca de inicio"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "La marca de comienzo debe residir dentro del mismo objeto"
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "&Texto en portapapeles a confirmar"

@@ -18,12 +18,14 @@ msgstr ""
 "X-Generator: Poedit 1.6.10\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "A bővítmény lehetőséget nyújt rá, hogy a program megerősítést kérjen mielőtt "
 "a vágólap tartalma kicserélődne a control+x vagy a ctrl+c billentyűparancsok "
@@ -60,25 +62,7 @@ msgstr "Vágólap kiürítve"
 msgid "Clipboard not cleared"
 msgstr "A vágólapot nem lehet kiüríteni"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Kezdőpont beállítva"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr "Megjelöli az áttekintő kurzornál lévő pozíciót a kijelölés kezdeteként"
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Nincs kijelölés, nincs megadva kijelölési kezdőpont"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "a kezdő pontnak ugyanabban az objektumban kell lennie."
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Nincs hozzáfűzhető szöveg"
 
@@ -99,10 +83,12 @@ msgid "Cannot add"
 msgstr "Nem fűzhető hozzá"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "A kijelölt szöveget, vagy a kezdőponttól az áttekintőkurzor pozíciójáig "
 "kijelölt szövegrészt a vágólap tartalmához fűzi."
@@ -147,6 +133,10 @@ msgid ""
 "confirmation"
 msgstr "Kivágás a vágólapról, a művelet megerősítését kérheti"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "A vágólap szöveges tartalmának megjelenítése böngészőmódban"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "A vágólap nem üres, de nincs megjeleníthető szöveg"
@@ -159,9 +149,6 @@ msgstr "A vágólap üres"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Vágólap szövege ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "A vágólap szöveges tartalmának megjelenítése böngészőmódban"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -231,6 +218,21 @@ msgstr "Vágólap tartalomtervező"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Kiegészítő a vágólap szöveges tartalmának kezeléséhez."
+
+#~ msgid "Start marker set"
+#~ msgstr "Kezdőpont beállítva"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Megjelöli az áttekintő kurzornál lévő pozíciót a kijelölés kezdeteként"
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Nincs kijelölés, nincs megadva kijelölési kezdőpont"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "a kezdő pontnak ugyanabban az objektumban kell lennie."
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "&szöveg megerősítése a vágólapon"

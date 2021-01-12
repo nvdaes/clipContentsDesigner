@@ -18,12 +18,14 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "Acest suplimemt permite să confirmați dacă vreți să copiați și să tăiați, "
 "înlocuind conținuturile planșetei la apăsarea control+c și control+x. "
@@ -59,28 +61,7 @@ msgstr "Planșetă golită"
 msgid "Clipboard not cleared"
 msgstr "Planșetă negolită"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Marcaj de început stabilit"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Marchează poziția curentă a cursorului de examinare ca începutul textului ce "
-"va fi adăugat în planșetă."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Fără selecție. Niciun marcaj de început stabilit"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr ""
-"Marcatorul de pornire trebuie să se afle în interiorul obiectului curent"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Fără text de adăugat"
 
@@ -101,10 +82,12 @@ msgid "Cannot add"
 msgstr "Nu se poate adăuga"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "Recuperează șirul selectat sau textul de la marcajul de început stabilit "
 "anterior și până la poziția curentă a cursorului de examinare, inclusiv, și "
@@ -154,6 +137,10 @@ msgstr ""
 "Se taie de pe planșetă, cu posibilitatea de a fi întrebat pentru o "
 "confirmare anterioară"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Afișează textul planșetei în modul de navigare"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Planșeta nu este goală, însă nu există niciun text de afișat"
@@ -166,9 +153,6 @@ msgstr "Planșeta este goală"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text planșetă ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Afișează textul planșetei în modul de navigare"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -237,6 +221,23 @@ msgstr "Clip Contents Designer (Proiectantul conținutului planșetei)"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Supliment pentru gestionarea textului din planșetă."
+
+#~ msgid "Start marker set"
+#~ msgstr "Marcaj de început stabilit"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Marchează poziția curentă a cursorului de examinare ca începutul textului "
+#~ "ce va fi adăugat în planșetă."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Fără selecție. Niciun marcaj de început stabilit"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr ""
+#~ "Marcatorul de pornire trebuie să se afle în interiorul obiectului curent"
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "Te&xt pe planșetă pentru confirmare"

@@ -19,12 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "ஏற்கெனவே பிடிப்புப் பலகையில் உரை இருந்து, கட்டுப்பாடு+c, கட்டுப்பாடு+x விசைகளைக் கொண்டு "
 "உரையைப் பிடிப்புப் பலகைக்குச் சேர்க்க முயலும்பொழுது, அச்செயல்களைச் செய்ய வேண்டுமா என்று "
@@ -59,27 +61,7 @@ msgstr "பிடிப்புப்பலகை துடைக்கப்�
 msgid "Clipboard not cleared"
 msgstr "பிடிப்புப்பலகை துடைக்கப்படவில்லை"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "துவக்கக் குறி இடப்பட்டது"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"சீராய்வுச் சுட்டியின் தற்போதைய நிலையை, பிடிப்புப்பலகையில் பின்னிணைக்க வேண்டிய உரையின் "
-"துவக்கமாகக் குறிக்கிறது. "
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "தெரிவு ஏதுமில்லை, அல்லது துவக்கம் குறிக்கப்படவில்லை."
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "துவக்கக் குறி அதே பொருளுக்குள் இருக்க வேண்டும்"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
 
@@ -101,10 +83,12 @@ msgid "Cannot add"
 msgstr "பின்னிணைக்க இயலாது"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச் சுட்டியின் நிலை "
 "வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
@@ -149,6 +133,10 @@ msgid ""
 "confirmation"
 msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு வெட்டுகிறது"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டுகிறது"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "வெற்றுப் பிடிப்புப்பலகையல்ல. ஆனால், காட்டப்படுவதற்கு உரையேதுமில்லை."
@@ -161,9 +149,6 @@ msgstr "வெற்றுப் பிடிப்புப்பலகை"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "பிடிப்புப்பலகை உரை ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டுகிறது"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -233,6 +218,22 @@ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர�
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
+
+#~ msgid "Start marker set"
+#~ msgstr "துவக்கக் குறி இடப்பட்டது"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "சீராய்வுச் சுட்டியின் தற்போதைய நிலையை, பிடிப்புப்பலகையில் பின்னிணைக்க வேண்டிய உரையின் "
+#~ "துவக்கமாகக் குறிக்கிறது. "
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "தெரிவு ஏதுமில்லை, அல்லது துவக்கம் குறிக்கப்படவில்லை."
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "துவக்கக் குறி அதே பொருளுக்குள் இருக்க வேண்டும்"
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "பிடிப்புப்பலகையில் இருக்கும் உறுதிச் செய்யப்பட வேண்டிய உரை (&T)"

@@ -18,12 +18,14 @@ msgstr ""
 "X-Generator: Poedit 1.6.11\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "تسمح هذه الإضافة بتأكيد ما إذا كنت تريد النسخ والقص ، واستبدال محتويات "
 "الحافظة ، عند الضغط على control + c و control + x. يستدعى مربع الحوار هذا "
@@ -58,25 +60,7 @@ msgstr "تم مسح محتوى الحافظة"
 msgid "Clipboard not cleared"
 msgstr "لم يتم مسح محتوى الحافظة"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "تم وضع علامة بداية التحديد"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr "تحديد الموضع الحالي لمؤشر الاستعراض كبداية للنص الذي سيلحق بالحافظة."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "لا يوجد نص محدد. لم توضع علامة لبداية التحديد"
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "علامة البداية يجب أن تتواجد في نفس الكائن "
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "لا يوجد نص لإلحاقه بالحافظة"
 
@@ -97,10 +81,12 @@ msgid "Cannot add"
 msgstr "تعذر الإلحاق بالحافظة"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "استرجاع النص المحدد بداية من علامة التحديد التي تم تعيينها مسبقاويشمل ذلك "
 "استرجاع الموضع الحالي لمؤشر الاستعراض وإلحاقه بالحافظة."
@@ -145,6 +131,10 @@ msgid ""
 "confirmation"
 msgstr "التأكيد على القص الى الحافظة"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "لأظهار نص الحافظة في وضع الإستعراض"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "الحافظة ليست فارغة ، لكن لا يوجد نص لإظهاره"
@@ -157,9 +147,6 @@ msgstr "الحافظة فارغة"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "نص الحافظة ({max} / {current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "لأظهار نص الحافظة في وضع الإستعراض"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -225,6 +212,21 @@ msgstr "التحكم في محتوى الحافظة"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "إضافة لإدارة النص الموجود بالحافظة"
+
+#~ msgid "Start marker set"
+#~ msgstr "تم وضع علامة بداية التحديد"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "تحديد الموضع الحالي لمؤشر الاستعراض كبداية للنص الذي سيلحق بالحافظة."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "لا يوجد نص محدد. لم توضع علامة لبداية التحديد"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "علامة البداية يجب أن تتواجد في نفس الكائن "
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "التأ&كيد عند وجود نص في الحافظة"

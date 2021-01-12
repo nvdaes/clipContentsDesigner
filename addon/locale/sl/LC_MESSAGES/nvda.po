@@ -18,12 +18,14 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog.
+#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents, when pressing control+c and control+x. This is named "
-"Emulate copy and cut, and by default it works just when clipboard contains "
-"text. Do you want to configure Emulate copy and cut now? You may do or "
-"change this later."
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
 msgstr ""
 "Ta dodatek vam dovoljuje potrditi, če želite preslikati in izrezati, z "
 "zamenjavo vsebine odložišča, ko pritisnete control+c in control+x. To se "
@@ -59,27 +61,7 @@ msgstr "Odložišče počiščeno"
 msgid "Clipboard not cleared"
 msgstr "Odložišče ni počiščeno"
 
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "Točka začetka postavljena"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"Označi trenutni položaj pregledne utripalke kot začetek vsebine, ki naj se "
-"doda v odložišče."
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "Brez izbora. Točka začetka ni postavljena."
-
-#. Translators: Message presented when a start marked has been placed, but not in the current object.
-msgid "The start marker must reside within the same object"
-msgstr "Točka začetka mora obstajati znotraj istega predmeta"
-
-#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
 msgstr "Ni besedila za dodati"
 
@@ -100,10 +82,12 @@ msgid "Cannot add"
 msgstr "Ni mogoče dodati"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+"marker up to\n"
+"\t\tand including the current position of the review cursor, and adds it to "
+"the clipboard."
 msgstr ""
 "Izbran niz ali vsebino od predhodno postavljene točke začetka do vključno "
 "trenutnega položaja pregledne utripalke obdela in doda v odložišče."
@@ -148,6 +132,10 @@ msgid ""
 "confirmation"
 msgstr "Izreže iz odložišča z možnostjo zaprosila po predhodni odobritvi"
 
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text in browse mode"
+msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
+
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Odložišče ni prazno, toda tam ni besedila za prikaz"
@@ -157,11 +145,9 @@ msgid "Clipboard is empty"
 msgstr "Odložišče je prazno"
 
 #. Translators: title of a browseable message.
+#, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Besedilo v odložišču ({max}/{current} - {formatForTitle})"
-
-msgid "Shows the clipboard text in browse mode"
-msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -229,6 +215,22 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatek namenjen upravljanju z vsebino odložišča"
+
+#~ msgid "Start marker set"
+#~ msgstr "Točka začetka postavljena"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Označi trenutni položaj pregledne utripalke kot začetek vsebine, ki naj "
+#~ "se doda v odložišče."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Brez izbora. Točka začetka ni postavljena."
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Točka začetka mora obstajati znotraj istega predmeta"
 
 #~ msgid "&Text in clipboard to confirm"
 #~ msgstr "Potrjevanje &besedila v odložišču"
