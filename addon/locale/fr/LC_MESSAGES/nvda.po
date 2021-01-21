@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner-addon version 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-30 13:20+0100\n"
-"PO-Revision-Date: 2019-03-29 09:15+0100\n"
+"PO-Revision-Date: 2021-01-12 10:00+0100\n"
 "Last-Translator: Michel Such <michel.such@free.fr>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
@@ -13,12 +13,11 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Bookmarks: -1,14,-1,-1,-1,-1,-1,-1,-1,-1\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -28,11 +27,11 @@ msgid ""
 "this later."
 msgstr ""
 "Cette extension permet de confirmer si vous voulez copier et couper, en "
-"remplaçant le contenu du presse-papiers, en appuyant sur Contrôle+c et "
-"Contrôle+x. Cela s'appelle émuler copier et couper, et par défaut cela "
-"fonctionne juste quand le presse-papiers contient du texte. Voulez-vous "
-"configurer Émuler copier et couper maintenant ? Vous pouvez faire ou changer "
-"cela plus tard."
+"remplaçant le contenu du presse-papiers,\n"
+"\t\ten appuyant sur Contrôle+c et Contrôle+x. Cela s'appelle émuler copier "
+"et couper.\n"
+"\t\tVoulez-vous configurer Émuler copier et couper maintenant ? Vous pouvez "
+"faire cela maintenant ou plus tard."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -84,7 +83,6 @@ msgid "Cannot add"
 msgstr "Impossible d'ajouter"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
@@ -93,7 +91,7 @@ msgid ""
 msgstr ""
 "Récupérer la chaîne sélectionnée ou le texte depuis le marqueur de début "
 "précédemment défini jusqu'à et y compris la position actuelle du curseur de "
-"revue, et l'ajouter au presse-papiers."
+"revue et l'ajouter au presse-papiers."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -226,19 +224,3 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Extension pour gérer le texte du presse-papiers."
-
-#~ msgid "Start marker set"
-#~ msgstr "Marqueur de début défini"
-
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Définir la position actuelle du curseur de revue comme début du texte à "
-#~ "ajouter au presse-papiers."
-
-#~ msgid "No selection. No start marker set"
-#~ msgstr "Aucune sélection. Pas de marqueur de début"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "Le marqueur de début doit résider dans le même objet"

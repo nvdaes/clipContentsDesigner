@@ -9,19 +9,18 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2020-03-13 17:19+0100\n"
+"PO-Revision-Date: 2021-01-17 01:54+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -31,10 +30,11 @@ msgid ""
 "this later."
 msgstr ""
 "Ovaj dodatak omogućuje potvrđivanje kopiranja i rezanja, čime se zamijenjuje "
-"sadržaj međuspremnika prilikom pritiskanja tipki kontrol+c i kontrol+x. To "
-"se zove „Simuliranje kopiranja i rezanja” i standardno radi samo kad "
-"međuspremnik sadrži tekst. Želiš li sada konifigurirati Simuliranje "
-"kopiranja i izrezivanja? To možeš uraditi ili promijeniti i kasnije."
+"sadržaj međuspremnika\n"
+"\t\tprilikom pritiskanja tipki kontrol+c i kontrol+x. To se zove "
+"„Simuliranje kopiranja i rezanja”.\n"
+"\t\tŽeliš li sada konifigurirati Simuliranje kopiranja i izrezivanja? To "
+"možeš uraditi ili promijeniti i kasnije."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -85,15 +85,15 @@ msgid "Cannot add"
 msgstr "Nije moguće dodati"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
 "\t\tand including the current position of the review cursor, and adds it to "
 "the clipboard."
 msgstr ""
-"Pronalazi označeni niz znakova ili tekst od prethodno postavljene početne "
-"oznake do uključujući trenutačne pozicije preglednog kursora, te ga dodaje u "
+"Pronalazi odabrani niz znakova ili tekst od prethodno postavljene početne "
+"oznake\n"
+"\t\tdo uključujući trenutačne pozicije preglednog kursora, te ga dodaje u "
 "međuspremnik."
 
 #. Translators: Label of a dialog.
@@ -221,19 +221,3 @@ msgstr "Upravljanje sadržajem međuspremnika"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatak za upravljanje tekstom iz međuspremnika."
-
-#~ msgid "Start marker set"
-#~ msgstr "Početna oznaka je postavljena"
-
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Označava trenutačnu poziciju preglednog kursora kao početak teksta koji "
-#~ "će biti dodan u međuspremnik."
-
-#~ msgid "No selection. No start marker set"
-#~ msgstr "Nema odabira. Nema postavljene početne oznake"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "Početna oznaka se mora nalaziti u istom objektu"

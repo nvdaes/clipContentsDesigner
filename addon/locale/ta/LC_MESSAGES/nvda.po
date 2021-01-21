@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-05-26 10:09+0530\n"
+"PO-Revision-Date: 2021-01-15 10:55+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -19,7 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -28,10 +27,11 @@ msgid ""
 "\t\tDo you want to configure Emulate copy and cut now? You may do or change "
 "this later."
 msgstr ""
-"ஏற்கெனவே பிடிப்புப் பலகையில் உரை இருந்து, கட்டுப்பாடு+c, கட்டுப்பாடு+x விசைகளைக் கொண்டு "
-"உரையைப் பிடிப்புப் பலகைக்குச் சேர்க்க முயலும்பொழுது, அச்செயல்களைச் செய்ய வேண்டுமா என்று "
-"உறுதிச் செய்ய இக்கூட்டுக் கூறு கேட்கும். இவ்வசதியை இப்பொழுதே அமைவடிவமாக்க "
-"விரும்புகிறீர்களா? பிறகும் கூட அமைவடிவமாக்கலாம், அல்லது மாற்றங்களை மேற்கொள்ளலாம். "
+"ஏற்கெனவே பிடிப்புப் பலகையில் உரை இருந்து, கட்டுப்பாடு+c, கட்டுப்பாடு+x\n"
+" \t\tவிசைகளைக் கொண்டு உரையைப் பிடிப்புப் பலகைக்குச் சேர்க்க முயலும்பொழுது, அச்செயல்களைச் "
+"செய்ய வேண்டுமா என்று உறுதிச் செய்ய இக்கூட்டுக் கூறு கேட்கும்.\n"
+" \t\tஇவ்வசதியை இப்பொழுதே அமைவடிவமாக்க விரும்புகிறீர்களா? பிறகும் கூட "
+"அமைவடிவமாக்கலாம், அல்லது மாற்றங்களை மேற்கொள்ளலாம். "
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -83,15 +83,14 @@ msgid "Cannot add"
 msgstr "பின்னிணைக்க இயலாது"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
 "\t\tand including the current position of the review cursor, and adds it to "
 "the clipboard."
 msgstr ""
-"துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச் சுட்டியின் நிலை "
-"வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
+"துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச்\n"
+" \t\tசுட்டியின் நிலை வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
