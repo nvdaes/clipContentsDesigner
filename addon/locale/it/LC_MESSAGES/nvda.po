@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-31 08:59+0100\n"
-"PO-Revision-Date: 2020-01-11 10:44+0100\n"
-"Last-Translator: Chris Leo Mameli <llajta2012@gmail.com>\n"
+"PO-Revision-Date: 2021-01-15 18:48+0100\n"
+"Last-Translator: Fabrizio Marini <marini.carlo@fastwebnet.it>\n"
 "Language-Team: Translators <llajta@gmx.us>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
@@ -13,12 +13,11 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
 "X-Poedit-Basepath: C:/Users/user/Downloads/AppendText/globalPlugins\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -28,15 +27,14 @@ msgid ""
 "this later."
 msgstr ""
 "Questo componente aggiuntivo consente di richiedere una conferma prima di "
-"modificare il contenuto degli appunti eseguendo Copia o Taglia, al premere "
-"control-c o control-x. L'operazione viene chiamata simulazione copia e "
-"simulazione taglia e da impostazioni predefinite funziona solo quando negli "
-"appunti è già presente del testo. Vuoi configurare simulazione copia/taglia "
-"adesso? Puoi farlo anche in un secondo momento."
+"modificare il contenuto degli appunti eseguendo Copia o Taglia, quando si "
+"preme control-c o control-x. L'operazione viene chiamata emulazione di copia "
+"e taglia. Vuoi configurare emulazione copia e taglia adesso? Puoi farlo "
+"anche in un secondo momento."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Configurazione simulazione taglia/copia"
+msgstr "Configura emulazione di copia e taglia"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
@@ -52,7 +50,7 @@ msgstr "Testo semplice"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Visualizza le impostazioni di Clip Contents Designer"
+msgstr "Visualizza le impostazioni di Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -64,7 +62,7 @@ msgstr "Appunti non eliminati"
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
-msgstr "Nessun testo aggiunto."
+msgstr "Nessun testo aggiunto"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
@@ -83,15 +81,14 @@ msgid "Cannot add"
 msgstr "Impossibile aggiungere testo"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
 "\t\tand including the current position of the review cursor, and adds it to "
 "the clipboard."
 msgstr ""
-"Recupera il testo selezionato, o il testo dal marcatore d'inizio al cursore "
-"di controllo, e lo aggiunge negli appunti."
+"Recupera il testo selezionato, o il testo dal marcatore d'inizio alla "
+"posizione del cursore di controllo, e lo aggiunge agli appunti."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -111,7 +108,7 @@ msgstr "Per favore, confermare di voler copiare il contenuto negli appunti"
 
 #. Translators: Title of a dialog.
 msgid "Copying to clipboard"
-msgstr "Copia negli appunti "
+msgstr "Copia negli appunti"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -141,7 +138,7 @@ msgstr "Visualizza il contenuto degli appunti in modalità navigazione"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
-msgstr "Gli appunti non contengono testo."
+msgstr "Gli appunti non sono vuoti, ma non contengono testo"
 
 #. Translators: presented when clipboard is empty.
 msgid "Clipboard is empty"
@@ -166,7 +163,7 @@ msgstr "&Aggiungi testo prima degli appunti"
 
 #. Translators: label of a dialog.
 msgid "Sele&ct the actions which require previous confirmation"
-msgstr "Seleziona le azioni che richiedono una &conferma: "
+msgstr "Seleziona le azioni che richiedono una &conferma"
 
 #. Translators: label of a dialog.
 msgid "Confirm to add text"
@@ -186,7 +183,7 @@ msgstr "Quando si esegue Taglia"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"
-msgstr "&Richiedi conferma per le azioni selezionate: "
+msgstr "&Richiedi conferma prima di eseguire le azioni selezionate quando:"
 
 #. Translators: label of a dialog.
 msgid "Always"
@@ -207,7 +204,9 @@ msgstr "&Formato di visualizzazione degli appunti in Modalità Navigazione:"
 #. Translators: label of a dialog.
 msgid ""
 "&Maximum number of characters when showing clipboard text in browse mode"
-msgstr "&Numero massimo di caratteri per la visualizzazione degli appunti:"
+msgstr ""
+"&Numero massimo di caratteri quando il testo degli appunti è visualizzato in "
+"modalità navigazione"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

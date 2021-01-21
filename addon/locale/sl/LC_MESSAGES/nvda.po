@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-05-23 21:59+0100\n"
+"PO-Revision-Date: 2021-01-15 12:42+0100\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -18,7 +18,6 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -28,10 +27,11 @@ msgid ""
 "this later."
 msgstr ""
 "Ta dodatek vam dovoljuje potrditi, če želite preslikati in izrezati, z "
-"zamenjavo vsebine odložišča, ko pritisnete control+c in control+x. To se "
-"imenuje Oponašanje preslikave in izreza in privzeto to deluje samo, ko "
-"odložišče vsebuje besedilo. Želite nastaviti Oponašanje preslikave in izreza "
-"zdaj? To lahko storite ali spremenite tudi kasneje."
+"zamenjavo vsebine odložišča,\n"
+"\t\tko pritisnete control+c in control+x. To se imenuje Oponašanje "
+"preslikave in izreza.\n"
+"\t\tŽelite nastaviti Oponašanje preslikave in izreza zdaj? To lahko storite "
+"ali spremenite tudi kasneje."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -145,7 +145,6 @@ msgid "Clipboard is empty"
 msgstr "Odložišče je prazno"
 
 #. Translators: title of a browseable message.
-#, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Besedilo v odložišču ({max}/{current} - {formatForTitle})"
 
