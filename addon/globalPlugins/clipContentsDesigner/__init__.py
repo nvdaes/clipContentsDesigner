@@ -31,10 +31,10 @@ BROWSEABLETEXT_FORMATS = [
 	# Translators: label of a dialog.
 	_("Preformatted text in HTML"),
 	# Translators: label of a dialog.
-	_("HTML as shown in a web browser"),
-	# Translators: label of a dialog.
-	_("Raw text"),
+	_("HTML as shown in a web browser")
 ]
+# Translators: Text of the clipboard shown without being formatted.
+RAW_TEXT = _("Plain text")
 
 confspec = {
 	"separator": "string(default="")",
@@ -82,7 +82,7 @@ def isArabicKeyboardLayout():
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
-	scriptCategory = SCRCAT_TEXTREVIEW
+	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
@@ -97,7 +97,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode.
 		description=_("Shows the Clip Contents Designer settings."),
-		category=SCRCAT_CONFIG
 	)
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
@@ -256,9 +255,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def copy(self):
 		obj = api.getFocusObject()
-		treeInterceptor = obj.treeInterceptor
-		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
-			treeInterceptor.script_copyToClipboard(None)
+		tI = obj.treeInterceptor
+		if isinstance(tI, browseMode.BrowseModeDocumentTreeInterceptor) and not tI.passThrough:
+			tI.script_copyToClipboard(None)
 		else:
 			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
 			KeyboardInputGesture.fromName(keyName).send()
@@ -321,7 +320,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode.
-		description=_("Shows the clipboard text in browse mode")
+		description=_("Shows the clipboard text as HTML in browse mode")
 	)
 	def script_showClipboardText(self, gesture):
 		try:
@@ -346,17 +345,45 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			html = True
 			if format == 0:
 				browseableText = "<pre>%s</pre>" % text.strip()[:maxLength]
-			elif format == 1:
-				browseableText = text.strip()[:maxLength]
 			else:
-				browseableText = text[:maxLength]
-				html = False
+				browseableText = text.strip()[:maxLength]
 			ui.browseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
 					max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format]
 				)), html)
+
+	@script(
+		# Translators: message presented in input mode.
+		description=_("Shows the clipboard textual contents as plain text in browse mode")
+	)
+	def script_showClipboardRawText(self, gesture):
+		try:
+			text = api.getClipData()
+		except Exception:
+			text = None
+		if not text:
+			if self.clipboardHasContent():
+				# Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+				ui.message(_("Clipboard is not empty, but there is no text to show"))
+			else:
+				# Translators: presented when clipboard is empty.
+				ui.message(_("Clipboard is empty"))
+		else:
+			if (
+				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
+			):
+				maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+			else:
+				maxLength = len(text)
+			browseableText = text.strip()[:maxLength]
+			ui.browseableMessage(
+				browseableText,
+				# Translators: title of a browseable message.
+				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
+					max=maxLength, current=len(text), formatForTitle=RAW_TEXT
+				)), False)
 
 
 class AddonSettingsPanel(SettingsPanel):
@@ -416,13 +443,17 @@ class AddonSettingsPanel(SettingsPanel):
 		)
 		self.confirmRequirementChoices.SetSelection(config.conf["clipContentsDesigner"]["confirmationRequirement"])
 		# Translators: label of a dialog.
-		formatLabel = _("&Format to show the clipboard text in browse mode:")
+		formatLabel = _("&Format to show the clipboard text as HTML in browse mode:")
 		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
-		wx.StaticText(self, -1, label=_("&Maximum number of characters when showing clipboard text in browse mode"))
-		self.maxLengthEdit = gui.nvdaControls.SelectOnFocusSpinCtrl(
-			self, min=1, max=1000000, initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+		maxLengthLabel = _("&Maximum number of characters when showing clipboard text in browse mode")
+		self.maxLengthEdit = sHelper.addLabeledControl(
+			maxLengthLabel,
+			gui.nvdaControls.SelectOnFocusSpinCtrl,
+			min=1,
+			max=1000000,
+			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
 		)
 
 	def postInit(self):
