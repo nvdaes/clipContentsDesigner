@@ -5,37 +5,80 @@
 *	Stiahnuť [stabilnú verziu][1]
 *	Stiahnuť [vývojovú verziu][2]
 
-
 Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
 rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
 schránky a zobraziť obsah schránky v režime prehliadania.
 
 ## Klávesové skratky ##
-
-* NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
+*	NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
   ste označili prezeracím kurzorom. Takto je možné pridať aj znaky unicode,
   MathML.
-* NVDA+windows+x: vymaže obsah schránky.
-* Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	NVDA+windows+x: vymaže obsah schránky.
+*	Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Tieto skratky môžete zmeniť z menu NVDA >možnosti > klávesové skratky,
-kategória prezeranie textu.
 
-## Možnosti ##
-*	Nastavenia rozšírenej schránky umožňujú nastaviť reťazec, ktorý bude oddeľovať jednotlivé kúsky textu, ktoré ste do schránky vložili.
-Takisto môžete určiť, či sa bude obsah vkladať na koniec alebo na začiatok obsahu schránky. Tiež môžete aktivovať varovanie, ktoré sa zobrazí pred kopírovaním alebo vystrihnutím do schránky, pričom varovanie je možné zobraziť len vtedy, ak je v schránke obsah.
-Nakoniec, môžete určiť formát  a počet znakov, ktoré sa zobrazia zo schránky v režime prehliadania. Odporúčame vám nenastavovať vysoký počet znakov. Predvolene sa v režime prehliadania zobrazuje 100000 znakov.
+## Clip Contents Designer settings ##
+
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
+
+It contains the following controls:
+
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
 
 Poznámky:
 
-*	skratku môžete zmeniť z menu NVDA >možnosti > klávesové skratky, kategória
-  možnosti.
 *	Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
   takomto prípade sa varovanie nezobrazí a akcia sa rovno vykoná.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
+* Improved documentation.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## Changes for 12.0
 * Fixed bugs when using emulate copy in applications like LibreOffice

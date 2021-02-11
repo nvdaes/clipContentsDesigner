@@ -46,8 +46,9 @@ msgstr "HTML alapú előformázott szöveg"
 msgid "HTML as shown in a web browser"
 msgstr "HTML, mint a böngészőben"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Nyers szöveg"
 
 #. Translators: message presented in input mode.
@@ -134,7 +135,8 @@ msgid ""
 msgstr "Kivágás a vágólapról, a művelet megerősítését kérheti"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "A vágólap szöveges tartalmának megjelenítése böngészőmódban"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -149,6 +151,11 @@ msgstr "A vágólap üres"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Vágólap szövege ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "A vágólap szöveges tartalmának megjelenítése böngészőmódban"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -199,7 +206,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ha a vágólap nem üres"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "A böngészőmódú szöveg formátuma:"
 
 #. Translators: label of a dialog.

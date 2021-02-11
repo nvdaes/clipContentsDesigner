@@ -5,40 +5,81 @@
 *	Lataa [vakaa versio][1]
 *	Lataa [kehitysversio][2]
 
-
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
 liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
 näyttää selaustilassa.
 
 ## Näppäinkomennot ##
-
-* NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
+*	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
-* NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-* Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
+*	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
+*	Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
   vaihtoehtoisesti vahvistuksen.
-* Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa tai
-  ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on sisältöä, jota ei
-  voida näyttää, esim. Resurssienhallinnasta kopioituja tiedostoja tai
-  kansioita.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
-NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
-valintaikkunasta Tekstin tarkastelu -kategoria.
 
-## Asetukset-valikko ##
-*	Leikepöydän sisällön käsittelijä: Mahdollistaa erottimen määrittämisen, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
-On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioinnin ja leikkaamisen emulointi) heti vai pyydetäänkö ensin vahvistus, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä tai jos se ei ole tyhjä.
-Lisäksi on mahdollista muuttaa leikepöydällä olevan tekstin muotoa ja selaustilassa näytettävien merkkien enimmäismäärää. Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, jos leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
+## Clip Contents Designer settings ##
+
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
+
+It contains the following controls:
+
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
 
 Huomautuksia:
 
-*	Edellä mainittua komentoa on mahdollista muuttaa kohdasta NVDA-valikko ->
-  Asetukset -> Syötekomennot ja valitsemalla avautuvasta valintaikkunasta
-  Asetukset-kategoria.
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
+* Improved documentation.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## Muutokset versiossa 12.0
 * Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa

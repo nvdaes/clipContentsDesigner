@@ -45,8 +45,9 @@ msgstr "متنِ از‌پیش‌قالب‌بندی‌شده در HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML آنطور که در مرورگر نمایش داده میشود"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "متنِ خام"
 
 #. Translators: message presented in input mode.
@@ -132,7 +133,8 @@ msgid ""
 msgstr "از کلیپ‌برد میبُرَد، با امکانِ درخواستِ تأییدِ قبلی"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "متنِ کلیپ‌برد را در حالتِ مرور نمایش میدهد"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -147,6 +149,11 @@ msgstr "کلیپ‌برد خالی است"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "متنِ کلیپ‌برد ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "متنِ کلیپ‌برد را در حالتِ مرور نمایش میدهد"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -197,7 +204,8 @@ msgid "If the clipboard is not empty"
 msgstr "اگر کلیپ‌برد خالی نباشد"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&قالبِ نمایشِ متنِ کلیپ‌برد در حالتِ مرور"
 
 #. Translators: label of a dialog.

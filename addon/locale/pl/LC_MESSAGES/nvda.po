@@ -45,8 +45,9 @@ msgstr "Przeformatowany tekst w HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML taki jak w przeglądarce"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "tekst surowy"
 
 #. Translators: message presented in input mode.
@@ -134,7 +135,8 @@ msgid ""
 msgstr "wycina ze schowka, uprzednio pytając o zgode"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Pokazuje tekst schowka w trybie czytania"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -149,6 +151,11 @@ msgstr "Schowek jest pusty"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "tekst schowka ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Pokazuje tekst schowka w trybie czytania"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -199,7 +206,8 @@ msgid "If the clipboard is not empty"
 msgstr "Jeśli schowek nie jest pusty"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Format do pokazywania schowka w trybie czytania:"
 
 #. Translators: label of a dialog.

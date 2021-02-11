@@ -45,8 +45,9 @@ msgstr "Texte préformaté en HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML tel qu'affiché dans un navigateur web"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Texte brut"
 
 #. Translators: message presented in input mode.
@@ -138,7 +139,8 @@ msgstr ""
 "confirmation préalable"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Affiche le texte du presse-papiers en mode navigation"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -154,6 +156,11 @@ msgstr "Le presse-papiers est vide"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texte du presse-papiers ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Affiche le texte du presse-papiers en mode navigation"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -204,7 +211,8 @@ msgid "If the clipboard is not empty"
 msgstr "Si le presse-papiers n'est pas vide"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr ""
 "&Formater pour présenter le contenu du presse-papiers en mode navigation :"
 

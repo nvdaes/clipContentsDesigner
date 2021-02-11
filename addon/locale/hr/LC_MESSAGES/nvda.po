@@ -48,8 +48,9 @@ msgstr "Predformatirani tekst u HTML-u"
 msgid "HTML as shown in a web browser"
 msgstr "HTML prikazan kao u web pregledniku"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Neformatirani tekst"
 
 #. Translators: message presented in input mode.
@@ -137,7 +138,8 @@ msgid ""
 msgstr "Reže iz međuspremnika, s mogućnošću prethodnog traženja odobrenja"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Pokazuje tekst međuspremnika u modusu čitanja"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -152,6 +154,11 @@ msgstr "Međuspremnik je prazan"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Tekst međuspremnika ({max}/{current} – {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Pokazuje tekst međuspremnika u modusu čitanja"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -202,7 +209,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ako međuspremnik nije prazan"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Format za prikaz teksta međuspremnika u modusu čitanja:"
 
 #. Translators: label of a dialog.

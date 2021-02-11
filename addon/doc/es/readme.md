@@ -5,39 +5,85 @@
 *	Descargar [versión estable][1]
 *	Descargar [versión de desarrollo][2]
 
-
 Este complemento se utiliza para agregar texto al portapapeles, el cual
 puede ser útil cuando quieras unir secciones de texto listas para pegar
 juntas.  El contenido del portapapeles también puede limpiarse y mostrarse
 en modo exploración.
 
 ## Órdenes de teclado ##
-
-* NVDA+windows+c: añade el texto seleccionado, los caracteres braille
+*	NVDA+windows+c: añade el texto seleccionado, los caracteres braille
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
-* NVDA+windows+x: Limpia el contenido del portapapeles.
-* Sin asignar: copia hacia (o desde) el portapapeles, con la posibilidad de
+*	NVDA+windows+x: Limpia el contenido del portapapeles.
+*	Sin asignar: copia hacia (o desde) el portapapeles, con la posibilidad de
   solicitar una confirmación previa.
-* Sin asignar: Muestra el texto de portapapeles en modo exploración, o lo
-  anuncia si el portapapeles está vacío o si tiene contenidos que no se
-  pueden presentar en un mensaje navegable, por ejemplo si se están copiando
-  archivos o carpetas desde el Explorador de Windows.
+*	Sin asignar: Muestra el texto del portapapeles como HTML en modo
+  exploración, o lo anuncia si el portapapeles está vacío o si tiene
+  contenidos que no se pueden presentar en un mensaje navegable, por ejemplo
+  si se están copiando archivos o carpetas desde el Explorador de Windows.
+*	Sin asignar: Muestra el texto del portapapeles como texto sin formato en
+  modo exploración, o lo anuncia si el portapapeles está vacío o si tiene
+  contenidos que no se pueden presentar en un mensaje navegable, por ejemplo
+  si se están copiando archivos o carpetas desde el Explorador de Windows.
 
-Nota: Las órdenes anteriores se pueden cambiar desde el menú NVDA, submenú
-Preferencias, Diálogo Gestos de Entrada, Categoría Revisión de Texto.
 
-## Menú Preferencias ##
-*	Opciones de Clip Contents Designer: te permite poner un separador que se pueda  utilizar para encontrar los segmentos de texto una vez todo el texto añadido sea pegado.
-También es posible elegir si el texto añadido se anexará o se antepondrá, si hay acciones disponibles (añadir, vaciar portapapeles, emular copiar y emular cortar) deberían realizarse inmediatamente o después de una confirmación, y de haber confirmaciones si se preguntará siempre, sólo si hay texto en el portapapeles o si el portapapeles no está vacío.
-Adicionalmente, es posible cambiar el formato y el número máximo de caracteres del texto del portapapeles que se mostrará en modo exploración. Por favor, ten en cuenta que incrementar este límite podría causar problemas cuando el portapapeles contenga largas cadenas de texto. El límite por defecto es 100000 caracteres.
+## Opciones de Clip Contents Designer ##
+
+Este panel se encuentra disponible en el menú NVDA, submenú Preferencias,
+diálogo Opciones.
+
+Contiene los siguientes controles:
+
+* Teclea la cadena que se usará como separador entre contenidos añadidos al
+  portapapeles: permite configurar un separador que puede usarse para buscar
+  los segmentos de texto una vez que se pega el texto completo.
+* Añadir texto antes de los datos del portapapeles: también es posible
+  elegir si el texto añadido irá antes o después.
+* Elige las acciones que requieren confirmación previa: puedes elegir, en
+  cada acción disponible, si se debe realizar inmediatamente o tras una
+  confirmación. Las acciones disponibles son: añadir texto, limpiar
+  portapapeles, emular copia y emular cortar.
+* Cuándo solicitar confirmación antes de realizar las acciones
+  seleccionadas: puedes elegir si se solicitarán confirmaciones siempre,
+  sólo si el portapapeles contiene texto, o si el portapapeles no está vacío
+  (por ejemplo si has copiado un archivo, y no texto).
+* Formatear para mostrar el texto del portapapeles como HTML en modo
+  exploración: si estás aprendiendo el lenguaje de marcado HTML, puedes
+  elegir texto preformateado en HTML o HTML como se muestra en un navegador
+  web, para hacerte una idea de cómo renderizará NVDA tu código HTML en un
+  navegador web. La diferencia entre HTML preformateado y convencional es
+  que la primera opción preservará espacios consecutivos y saltos de línea,
+  mientras que la segunda los compactará. Por ejemplo, escribe algunas
+  etiquetas HTML como h1, h2, li, pre, etc., selecciona y copia el texto al
+  portapapeles, y usa el complemento ClipContentsDesigner para mostrar el
+  texto en un mensaje explorable.
+* Máximo de caracteres cuando se muestra el texto del portapapeles en modo
+  exploración: por favor, ten en cuenta que aumentar este límite puede
+  producir problemas si el portapapeles contiene grandes cadenas de
+  texto. El límite predeterminado es de 100000 caracteres.
 
 Notas:
 
-*	La orden anterior puede cambiarse desde el menú NVDA, submenú
-  Preferencias, diálogo Gestos de Entrada, Categoría Configuración.
 *	No se solicitarán confirmaciones cuando siga abierto un cuadro de mensaje
   de NVDA. En esos casos, las acciones se realizarán inmediatamente.
+*	Las órdenes Emular copiar y Emular cortar significan que, cuando estas
+  funciones están activadas, el complemento tomará el control de control+c y
+  control+x. Esto permitirá elegir si se debería solicitar una confirmación
+  antes de realizar las acciones correspondientes a estos atajos de teclado.
+
+## Cambios para 13.0 
+* Se ha corregido un problema en la disposición visual del panel de
+  opciones, gracias a Cyrille Bougot.
+* Se ha mejorado la documentación.
+* Se ha añadido una categoría Clip Contents Designer para asignar gestos de
+  entrada a todas las órdenes disponibles para este complemento.
+* Se han corregido fallos al usar Emular copia en navegadores si el modo
+  foco está activo.
+* Puedes asignar diferentes gestos para mostrar el contenido textual del
+  portapapeles como texto sin formato o formateado en HTML. Se ha modificado
+  apropiadamente el formato en el que se muestra el texto del portapapeles
+  en el panel de opciones para seleccionar las dos opciones disponibles para
+  el formato HTML.
 
 ## Cambios para 12.0
 * Se han corregido fallos al usar Emular copia en aplicaciones como Libre

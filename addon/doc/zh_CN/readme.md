@@ -5,29 +5,75 @@
 *	下载 [稳定版][1]
 *	下载 [开发板][2]
 
-
 此插件用于向剪贴板添加文本，当您希望将文本部分连接在一起以准备粘贴时，这可能很有用。剪贴板内容也可以清除或者用浏览模式逐字逐句查看。
 
 ## 键盘快捷键 ##
+*	NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
+*	NVDA+windows+x: 清除剪贴板内容.
+*	未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-* NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
-* NVDA+windows+x: 清除剪贴板内容.
-* 未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
 
-注意：可以从NVDA菜单，“选项”子菜单，“输入手势”对话框，“文本浏览”类别更改上述快捷键。
+## Clip Contents Designer settings ##
 
-## 选项菜单 ##
-*	剪贴板内容编辑器设置：允许设置一个分隔符，可以在粘贴整个添加的文本后用于查找文本片段.
-如果可以执行的操作（添加，清除剪贴板，模拟副本和模拟剪切）应该立即执行或在确认后执行，并且如果文本包含在文本中，则还可以选择确认，也可以选择是添加还是添加文本。剪贴板.
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
+
+It contains the following controls:
+
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
 
 注意:
 
-*	可以从NVDA菜单，“首选项”子菜单，“输入手势”对话框，“配置”类别更改上述快捷键。
 *	当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作。
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
+* Improved documentation.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## 版本 12.0
 * 修复了在 LibreOffice Writer 等应用程序中使用模拟复制时的错误。

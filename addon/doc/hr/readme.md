@@ -5,40 +5,82 @@
 *	Preuzmi [stabilnu verziju][1]
 *	Preuzmi [razvojnu verziju][2]
 
-
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
 lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
 za čitanje.
 
 ## Tipkovnički prečaci ##
-
-* NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
+*	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
   unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
   pomoću preglednog kursora.
-* NVDA+windows+x: Obriši sadržaj međuspremnika.
-* Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
+*	NVDA+windows+x: Obriši sadržaj međuspremnika.
+*	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
-* Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
-  najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
-  predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
-  kopirane iz Windows Explorer.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Napomena: Gore navedeni prečaci se mogu promijeniti u NVDA izborniku,
-podizbornik Postavke, dijaloški okvir Ulazne geste, kategorija Pregled
-teksta.
 
-## Izbornik za Postavke ##
-*	Postavke za „Upravljanje sadržajem međuspremnika”: Omogućuje postavljanje rastavljača koji se može koristiti za traženje segmenata teksta, nakon što je cjelokupni tekst zalijepljen.
-Također je moguće odabrati hoće li se tekst dodati ispred ili iza postojećeg teksta, ako se raspoložive radnje (dodaj, izbriši međuspremnik, simuliraj kopiranje i simuliraj izrezivanje) trebaju izvesti odmah ili nakon potvrde, a ako će se potvrde uvijek tražiti, samo ako se u međuspremniku nalazi tekst ili ako međuspremnik nije prazan.
-Nadalje je moguće promijeniti format i maksimalni broj znakova teksta u međuspremniku, koji će biti prikazan u modusu pregledavanja. Povećanje ograničenja može stvoriti probleme, ako međuspremnik sadrži veliki broj tekstualnih nizova. Zadana granica je 100000 znakova.
+## Clip Contents Designer settings ##
+
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
+
+It contains the following controls:
+
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
 
 Napomene:
 
-*	Gore navedeni prečaci se mogu promijeniti u NVDA izborniku, podizbornik
-  Postavke, dijaloški okvir Ulazne geste, kategorija Konfiguracija.
 *	Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
   prikazuje. U tim će se slučajevima radnje izvršavati odmah.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
+* Improved documentation.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## Promjene u verziji 12.0
 * Ispravljene su greške prilikom korištenja emulirajuće kopije u programima

@@ -5,38 +5,81 @@
 *	Pobierz [wersja stabilna][1]
 *	Pobierz [wersja rozwojowa][2]
 
-
 This add-on is used to add text to the clipboard, which can be useful when
 you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared an shown in browse mode.
 
 ## Skróty klawiszowe ##
-
-* NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
+*	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
-* NVDA+windows+x: wyczyść zawartość schowka.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+*	NVDA+windows+x: wyczyść zawartość schowka.
+*	Not assigned: Copies to (or cuts from) the clipboard, with the possibility
   of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Uwaga: powyższe polecenia mogą zostać zmienione z menu NVDA, Podmenu
-Ustawienia, okno zdarzenia wejścia, kategoria przegląd tekstu.
 
-## Menu ustawienia ##
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-It's also possible to choose if the added text will be appended or prepended, if available actions (add, clear clipboard, emulate copy and emulate cut) should be performed inmediately or after confirmation, and if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty.
-Furthermore, it's possible to change the format and maximum number of characters of the clipboard text which will be shown in browse mode. Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+## Clip Contents Designer settings ##
+
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
+
+It contains the following controls:
+
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
 
 Uwagi:
 
-*	Powyższy skrót można zmienić w menu NVDA, podmenu Ustawienia, Zdarzenia
-  wejścia, Panel Konfiguracji.
 *	Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
+* Improved documentation.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## Changes for 12.0
 * Fixed bugs when using emulate copy in applications like LibreOffice

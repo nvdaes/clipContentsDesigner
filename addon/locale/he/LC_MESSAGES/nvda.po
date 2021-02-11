@@ -45,8 +45,9 @@ msgstr "טקסט מעוצב ב HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML כפי שמוצג בדפדפן אינטרנט"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "טקסט גולמי"
 
 #. Translators: message presented in input mode.
@@ -133,7 +134,8 @@ msgid ""
 msgstr "גזירה מלוח הגזירים, עם אפשרות של בקשה לאישור הקודם"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "הצגת טקסט לוח הגזירים במצב גלישה"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -148,6 +150,11 @@ msgstr "לוח הגזירים ריק"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "טקסט לוח הגזירים ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "הצגת טקסט לוח הגזירים במצב גלישה"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -200,7 +207,8 @@ msgid "If the clipboard is not empty"
 msgstr "אם לוח הגזירים אינו ריק"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&תבנית להצגת טקסט לוח הגזירים במצב דפדוף:"
 
 #. Translators: label of a dialog.
