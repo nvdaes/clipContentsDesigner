@@ -47,8 +47,9 @@ msgstr "Esimuotoiltu HTML-teksti"
 msgid "HTML as shown in a web browser"
 msgstr "HTML verkkoselaimessa"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Raakateksti"
 
 #. Translators: message presented in input mode.
@@ -140,7 +141,8 @@ msgstr ""
 "suorittamiselle"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Näyttää leikepöydällä olevan tekstin selaustilassa."
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -155,6 +157,11 @@ msgstr "Leikepöytä on tyhjä"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Leikepöydän teksti ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Näyttää leikepöydällä olevan tekstin selaustilassa."
 
 #. Translators: label of a dialog.
 msgid ""
@@ -205,7 +212,8 @@ msgid "If the clipboard is not empty"
 msgstr "Jos leikepöytä ei ole tyhjä"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Muoto, jossa leikepöydän teksti näytetään selaustilassa:"
 
 #. Translators: label of a dialog.

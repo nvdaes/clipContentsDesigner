@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2019-04-22 19:47+0100\n"
+"PO-Revision-Date: 2021-02-05 15:43+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -18,7 +18,6 @@ msgstr ""
 "X-Generator: Poedit 1.6.10\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -27,16 +26,15 @@ msgid ""
 "\t\tDo you want to configure Emulate copy and cut now? You may do or change "
 "this later."
 msgstr ""
-"Ovaj dodatak vam dozvoljava da potvrdite akcije kopiranja i isecanja, u "
-"slučajevima kada to menja već postojeći sadržaj privremene memorije, Kada "
-"pritisnete control+c i control+x. Ovaj deo dodatka se zove Emulate copy and "
-"cut, i po podrazumevanim podešavanjima radi samo kada privremena memorija "
-"sadrži tekst. Da li želite da podesite Emulate copy and cut sada? Ovo "
-"kasnije možete promeniti."
+"Ovaj dodatak vam dozvoljava da potvrdite kopiranje i isecanje, kada to menja "
+"sadržaj privremene memorije,\n"
+"\t\tKada pritisnete Ctrl plus C ili Ctrl plus X. Ovo se zove emuliranje "
+"kopiranja i isecanja.\n"
+"\t\tDa li želite ovo sada da podesite? Ovo možete promeniti kasnije."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Podesite Emulate copy and cut"
+msgstr "Podesite emuliranje kopiranja i isecanja"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
@@ -46,13 +44,14 @@ msgstr "Formatiran tekst kao HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML način prikaza u Web pretraživačima"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Običan tekst"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Prikazuje Clip Contents Designer podešavanja."
+msgstr "Prikazuje podešavanja dizajnera sadržaja privremene memorije."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -83,16 +82,15 @@ msgid "Cannot add"
 msgstr "Nije moguće dodavanje"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
 "\t\tand including the current position of the review cursor, and adds it to "
 "the clipboard."
 msgstr ""
-"Vraća odabrane znakove ili tekst od prethodno postavljenog početnog markera "
-"sve do trenutne pozicije preglednog kursora uključujući i nju, i dodaje ih u "
-"privremenu memoriju."
+"Preuzima tekst od prethodno podešenog početnog markera do\n"
+"\t\ti uključujući poziciju preglednog kursora, i dodaje ga u privremenu "
+"memoriju."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -135,7 +133,8 @@ msgid ""
 msgstr "Seče u privremenu memoriju, uz mogućnost potvrde"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Prikazuje tekst privremene memorije u režimu pretraživanja"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -150,6 +149,11 @@ msgstr "Privremena memorija je prazna"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Tekst privremene memorije ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Prikazuje tekst privremene memorije u režimu pretraživanja"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -201,7 +205,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ako privremena memorija nije prazna"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Format prikazivanja teksta u režimu pretraživanja:"
 
 #. Translators: label of a dialog.
@@ -213,7 +218,7 @@ msgstr ""
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgstr "Dizajner sadržaja privremene memorije"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager

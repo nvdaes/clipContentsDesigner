@@ -45,8 +45,9 @@ msgstr "Văn bản định dạng sẵn là HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML hiển thị như trên trình duyệt"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Văn bản thô"
 
 #. Translators: message presented in input mode.
@@ -134,7 +135,8 @@ msgid ""
 msgstr "Cắt từ bộ nhớ tạm với khả năng yêu cầu xác nhận trước"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Hiển thị văn bản trong bộ nhớ tạm ở chế độ duyệt"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -149,6 +151,11 @@ msgstr "Không có gì trong bộ nhớ tạm"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Văn bản trong bộ nhớ tạm ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Hiển thị văn bản trong bộ nhớ tạm ở chế độ duyệt"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -199,7 +206,8 @@ msgid "If the clipboard is not empty"
 msgstr "Nếu bộ nhớ tạm không rỗng"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "Định &dạng để hiển thị văn bản trong chế độ duyệt:"
 
 #. Translators: label of a dialog.

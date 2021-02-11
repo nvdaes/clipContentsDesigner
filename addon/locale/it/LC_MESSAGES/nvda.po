@@ -44,8 +44,9 @@ msgstr "Html preformattato"
 msgid "HTML as shown in a web browser"
 msgstr "Html semplice"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Testo semplice"
 
 #. Translators: message presented in input mode.
@@ -133,7 +134,8 @@ msgstr ""
 "Taglia dagli appunti, con possibilità di ricevere una richiesta di conferma"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Visualizza il contenuto degli appunti in modalità navigazione"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -148,6 +150,11 @@ msgstr "Nessun contenuto negli appunti"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Contenuto degli appunti ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Visualizza il contenuto degli appunti in modalità navigazione"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -198,7 +205,8 @@ msgid "If the clipboard is not empty"
 msgstr "Se è presente qualsiasi contenuto negli appunti"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Formato di visualizzazione degli appunti in Modalità Navigazione:"
 
 #. Translators: label of a dialog.

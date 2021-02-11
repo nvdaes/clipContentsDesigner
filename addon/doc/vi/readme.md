@@ -5,38 +5,81 @@
 *	Tải về [phiên bản chính thức][1]
 *	Tải về [phiên bản thử nghiệm][2]
 
-
 Add-on này dùng để thêm văn bản vào bộ nhớ tạm, có thể hữu ích khi bạn muốn
 kết hợp nhiều phần văn bản lại với nhau rồi mới dán.  Bạn cũng có thể xóa
 nội dung bộ nhớ tạm hoặc cho chúng hiển thị trong chế độ duyệt.
 
 ## Các phím lệnh ##
-
-* NVDA+windows+c: thêm văn bản đã chọn vào bộ nhớ tạm, bao gồm các kí tự chữ
+*	NVDA+windows+c: thêm văn bản đã chọn vào bộ nhớ tạm, bao gồm các kí tự chữ
   nổi Unicode thể hiện dưới dạng đối tượng MathML hoặc các chuỗi được đánh
   dấu với con trỏ duyệt.
-* NVDA+windows+x: xóa nội dung bộ nhớ tạm.
-* Chưa gán: chép vào (hoặc cắt từ) bộ nhớ tạm với khả năng yêu cầu xác nhận
+*	NVDA+windows+x: xóa nội dung bộ nhớ tạm.
+*	Chưa gán: chép vào (hoặc cắt từ) bộ nhớ tạm với khả năng yêu cầu xác nhận
   trước đó.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Lưu ý: có thể thay đổi các lệnh nói trên từ trình đơn NVDA, Tùy chọn, hộp
-thoại Quản lý thao tác, phân loại duyệt nội dung.
 
-## Trình đơn cấu hình ##
-*	Thiết lập quản lý nội dung tạm: cho phép đặt dấu phân cách có thể dùng để tìm các phần của văn bản khi dán toàn bộ các nội dung đã thêm vào.
-Nó cũng cho phép chọn việc thêm văn bản vào trước hay sau, nếu các hoạt động hiện có (them vào, xóa bộ nhớ tạm, mô phỏng sao chép và cắt) phải được thực hiện ngay hay thực hiện sau khi xác nhận, và nếu việc xác nhận sẽ luôn được yêu cầu, chỉ khi có văn bản trong bộ nhớ tạm, hay bộ nhớ tạm không rỗng.
-Hơn thế nữa, nó cũng cho phép thay đổi định dạng và số kí tự tối đa của văn bản trong bộ nhớ tạm được hiển thị trong chế độ duyệt. Xin lưu ý rằng việc tăng số kí tự tối đa có thể gây ra lỗi nếu bộ nhớ tạm có các chuỗi văn bản dài. Giới hạn mặc định là 100000 kí tự.
+## Clip Contents Designer settings ##
+
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
+
+It contains the following controls:
+
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
 
 Lưu ý:
 
-*	Có thể thay đổi các lệnh nói trên từ trình đơn NVDA, Tùy chọn, Hộp thoại
-  quản lý thao tác, phân loại cấu hình.
 *	Sẽ không có yêu cầu xác nhận khi có một hộp thông điệp của NVDA đang
   mở. Các trường hợp này, các hành động sd4 được thực hiện ngay lập tức.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 13.0 
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
+* Improved documentation.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
+* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## Changes for 12.0
 * Fixed bugs when using emulate copy in applications like LibreOffice

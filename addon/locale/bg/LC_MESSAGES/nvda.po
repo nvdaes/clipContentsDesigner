@@ -46,8 +46,9 @@ msgstr "Предварително форматиран текст в HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML, както е показано в уеб браузър"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Необработен текст"
 
 #. Translators: message presented in input mode.
@@ -139,7 +140,8 @@ msgstr ""
 "извършване на операцията"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Показва текста от клипборда в режим на разглеждане"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -154,6 +156,11 @@ msgstr "Клипбордът е празен"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Текст в клипборда ({max}/{current} – {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Показва текста от клипборда в режим на разглеждане"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -204,7 +211,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ако клипбордът не е празен"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Формат за показване на текста от клипборда в режим на разглеждане:"
 
 #. Translators: label of a dialog.

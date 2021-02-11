@@ -5,38 +5,85 @@
 *	Descargar [versión estable][1]
 *	Descargar [versión de desenvolvemento][2]
 
-
 Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
 cando queras unir seccións de texto listas para pegarse xuntas.  O contido
 do portapapeis tamén pode limparse e amosarse en modo exploración.
 
 ## Ordes de teclado ##
-
-* NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
+*	NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
   que representan obxectos MathML, ou a cadea que se marcou co cursor de
   revisión, ao portapapeis.
-* NVDA+windows+x: Limpa o contido do portapapeis.
-* Sen asignar: Copia a (ou corta dende) o portapapeis, coa posibilidade de
+*	NVDA+windows+x: Limpa o contido do portapapeis.
+*	Sen asignar: Copia a (ou corta dende) o portapapeis, coa posibilidade de
   que se che pregunte por unha confirmación previa.
-* Sen asignar: Amosa o texto do portapapeis en modo exploración, ou anuncia
-  se o portapapeis está vacío ou se ten contidos que non se poden presentar
-  nunha mensaxe de modo exploración, por exemplo, en caso de estarse
-  copiando arquivos ou cartafoles dende o Explorador de Windows.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Nota: as ordes anteriores poden cambiarse dende o menú NVDA, submenú
-Preferencias, diálogo Xestos de Entrada, categoría Revisión de Texto.
 
-## Menú Preferencias ##
-*	Opcións do Clip Contents Designer: permite poñer un separador que poda usarse para atopar os segmentos de texto una vez que todo o texto sexa pegado.
-Tamén é posible escoller se o texto engadido se anexará ou se anteporá, se hai accións dispoñibles (engadir, valdeirar portapapeis, emular copiar e emular cortar) deberían realizarse inmediatamente ou despois dunha confirmación, e se se requerirá confirmanción sempre, só se o portapapeis contén texto, ou se o portapapeis non está baleiro.
-Ademais, é posible cambiar o formato e o número máximo de caracteres do texto do portapapeis que se amosará en modo exploración. Por favor, ten en conta que incrementar este límite pode causar problemas se o portapapeis contén longas cadeas de texto. O límite por defecto é de 100000 caracteres.
+## Opcións de Clip Contents Designer ##
+
+Este panel está dispoñible dende o menú de NVDA, submenú Preferencias,
+diálogo Opcións.
+
+contén os seguintes controis:
+
+* Escribe a cadea de texto que se utilizará como separador entre contido
+  engadido ao portapapeis: Permite establecer un separador que se pode
+  utilizar para buscar os segmentos de texto unha vez se pegue todo o texto
+  engadido.
+* Engadir texto tralos datos do portapapeis: Tamén é posible escoller se o
+  texto engadido se engadirá ó final ou ó principio.
+* Seleccionar as accións que requiren confirmación previa: Podes escoller,
+  para cada acción dispoñible, se se debe realizar inmediatamente ou previa
+  confirmación. As accións dispoñibles son: engadir texto, limpar
+  portapapeis, emular copiar e emular curtar.
+* Pedir confirmación antes das accións seleccionadas cando: Podes
+  seleccionar se as confirmacións se solicitarán sempre, só se o portapapeis
+  contén texto, ou se o portapapeis non está baleiro (por exemplo se
+  copiaches un arquivo, non texto).
+* formato no que amosar o texto do portapapeis en HTML en modo exploración:
+  Se estás aprendendo a linguaxe de marcas HTML, podes escoller Texto
+  Preformateado en HTML ou HTML como se amosaría nun navegador web, para ter
+  unha idea de cómo o teu código HTML se tratará dende NVDA nun navegador. A
+  diferencia entre HTML preformateado e convencional é que a primeira opción
+  preservará os espazos e saltos de liña consecutivos, e o segundo
+  compactaraos.  Por exemplo, escribe algunhas etiquetas HTML como h1, h2,
+  li, pre, etc., selecciona e copia o texto ao portapapeis, e utiliza o
+  complemento ClipContentsDesigner para amosar o texto nunha mensaxe
+  navegable.
+* Número máximo de caracteres ao amosar texto do portapapeis en modo
+  exploración: Por favor, ten en conta que incrementar este límite podería
+  producir problemas se o portapapeis contén largas cadeas de texto. O
+  límite por defecto é de 100000 caracteres.
 
 Notas:
 
-*	A orde anterior pódese cambiar dende o menú NVDA, submenú Preferencias,
-  diálogo Xestos de Entrada, categoría Configuración.
 *	Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Cambios para 13.0
+* Arranxado un problema no deseño visual do panel de opcións, grazas a
+  Cyrille Bougot.
+* Mellorada a documentación.
+* engadida unha categoría Clip contents Designer para asignar xestos de
+  entrada a tódolas ordes dispoñibles neste complemento.
+* Arranxados erros ao usar emular copiar en en navegadores cando o modo foco
+  estaba activo.
+* Podes asignar diferentes xestos para amosar o contido textual do
+  portapapeis como texto plano ou formateado en HTML. O Formato no que
+  amosar o texto do portapapeis no panel de opcións modificouse en
+  consecuencia, para seleccionar as dúas opcións dispoñibles para o formato
+  HTML.
 
 ## Cambios para 12.0
 * Arranxados erros ao usar emular copiar en aplicacións como LIbreOffice

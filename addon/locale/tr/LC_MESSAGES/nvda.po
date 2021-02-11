@@ -57,8 +57,9 @@ msgstr "HTML’de önceden biçimlendirilmiş metin"
 msgid "HTML as shown in a web browser"
 msgstr "Bir web tarayıcısında gösterildiği gibi HTML"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Ham metin"
 
 #. Translators: message presented in input mode.
@@ -148,7 +149,8 @@ msgstr ""
 "keser"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Pano metnini tarama kipinde gösterir"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -163,6 +165,11 @@ msgstr "Pano boş"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Pano metni ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Pano metnini tarama kipinde gösterir"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -212,7 +219,8 @@ msgid "If the clipboard is not empty"
 msgstr "Pano boş değilse"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Pano metnini tarama kipinde göstermeden önce biçimlendir:"
 
 #. Translators: label of a dialog.

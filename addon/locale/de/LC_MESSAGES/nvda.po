@@ -45,8 +45,9 @@ msgstr "Vorformatierter Text in HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML wie im Web-Browser"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Nur Text"
 
 #. Translators: message presented in input mode.
@@ -142,7 +143,8 @@ msgstr ""
 "erfolgt ist"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -157,6 +159,11 @@ msgstr "Zwischenablage ist leer"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text der Zwischenablage ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -208,7 +215,8 @@ msgid "If the clipboard is not empty"
 msgstr "Wenn die Zwischenablage nicht leer ist"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "& Format, um den Text der Zwischenablage im Browsermodus anzuzeigen:"
 
 #. Translators: label of a dialog.

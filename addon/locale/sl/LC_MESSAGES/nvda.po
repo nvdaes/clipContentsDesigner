@@ -45,8 +45,9 @@ msgstr "Predoblikovano besedilo v HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML kot se prikaže v spletnem brskalniku"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Surovo besedilo"
 
 #. Translators: message presented in input mode.
@@ -133,7 +134,8 @@ msgid ""
 msgstr "Izreže iz odložišča z možnostjo zaprosila po predhodni odobritvi"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -145,8 +147,14 @@ msgid "Clipboard is empty"
 msgstr "Odložišče je prazno"
 
 #. Translators: title of a browseable message.
+#, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Besedilo v odložišču ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -195,7 +203,8 @@ msgid "If the clipboard is not empty"
 msgstr "Če odložišče ni prazno"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Oblika prikaza besedila iz odložišča v brskalniškem delovanju:"
 
 #. Translators: label of a dialog.

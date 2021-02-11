@@ -46,8 +46,9 @@ msgstr "Texto preformatado en HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML como se mostraría nun navegador web"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Texto plano"
 
 #. Translators: message presented in input mode.
@@ -139,7 +140,8 @@ msgstr ""
 "confirmación anterior"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Amosa o texto do portapapeis en modo exploración"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -154,6 +156,11 @@ msgstr "O portapapeis está baleiro"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texto do portapapeis ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Amosa o texto do portapapeis en modo exploración"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -205,7 +212,8 @@ msgid "If the clipboard is not empty"
 msgstr "Se o portapapeis non está baleiro"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Formato para amosar o texto do portapapeis en modo exploración:"
 
 #. Translators: label of a dialog.

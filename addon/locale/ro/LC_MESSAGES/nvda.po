@@ -45,8 +45,9 @@ msgstr "Text preformat în HTML"
 msgid "HTML as shown in a web browser"
 msgstr "Ca și cum HTML ar fi afișat într-un browser web"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Text brut"
 
 #. Translators: message presented in input mode.
@@ -138,7 +139,8 @@ msgstr ""
 "confirmare anterioară"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Afișează textul planșetei în modul de navigare"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -153,6 +155,11 @@ msgstr "Planșeta este goală"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text planșetă ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Afișează textul planșetei în modul de navigare"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -203,7 +210,8 @@ msgid "If the clipboard is not empty"
 msgstr "Dacă planșeta nu este goală"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "Format de afișare a textului planșetei în modul de navigare:"
 
 #. Translators: label of a dialog.

@@ -45,8 +45,9 @@ msgstr "Forformateret tekst i HTML"
 msgid "HTML as shown in a web browser"
 msgstr "HTML som vist i en webbrowser"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
 msgstr "Rå tekst"
 
 #. Translators: message presented in input mode.
@@ -138,7 +139,8 @@ msgstr ""
 "bekræftelse"
 
 #. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
 msgstr "Viser udklipsholderens indhold i gennemsynstilstand"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
@@ -153,6 +155,11 @@ msgstr "Udklipsholderen er tom"
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Tekst i udklipsholder ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Viser udklipsholderens indhold i gennemsynstilstand"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -203,7 +210,8 @@ msgid "If the clipboard is not empty"
 msgstr "Hvis udklipsholderen ikke er tom"
 
 #. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&Format til visning af udklipsholderens tekst i gennemsynstilstand:"
 
 #. Translators: label of a dialog.

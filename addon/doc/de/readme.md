@@ -5,41 +5,94 @@
 *	[Stabile Version herunterladen][1]
 *	[Entwicklerversion herunterladen][2]
 
-
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
 hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
 Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
 gelöscht werden.
 
 ## Tastenkombinationen ##
-
-* NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
+*	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem Lese-Cursor
   markiert wurde, in die Zwischenablage hinzu.
-* NVDA+windows+X: Löscht die Zwischenablage.
-* Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
+*	NVDA+windows+X: Löscht die Zwischenablage.
+*	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
   der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
-Anmerkung: Die obigen Befehle können im NVDA-Menü unter Einstellungen /
-Eingaben... in der Kategorie "Befehle zum Text betrachten" geändert werden.
 
-## Einstellungen ##
-*	Einstellungen des Designers für den inhalt der Zwischenablage: hier kann ein Trennzeichen zum leichteren Auffinden von Textsegmenten gesetzt werden, sobald der gesamte Text zur Zwischenablage eingefügt wurde. Es kann auch gewählt werden, ob der hinzugefügte Text angehängt oder vorangestellt wird, ob verfügbare Aktionen (Hinzufügen, Löschen der Zwischenablage, Kopieren und Ausschneiden emulieren) sofort oder nach Bestätigung ausgeführt werden sollen und ob Bestätigungen nur bei vorhandenem Text in der Zwischenablage ausgegeben werden.
+## Einstellungen für Clip Content Designer ##
+
+Der obige Befehl kann im NVDA-Menü unter Einstellungen -> Tastenbefehle in
+der Kategorie "Konfiguration" geändert werden.
+
+Es enthält die folgenden Tastenkombinationen:
+
+* Geben Sie die Zeichenfolge ein, die als Trennzeichen zwischen Inhalten
+  verwendet werden soll, die der Zwischenablage hinzugefügt wurden:
+  Ermöglicht das Festlegen eines Trennzeichens, mit dem die Textsegmente
+  gefunden werden können, sobald der gesamte hinzugefügte Text eingefügt
+  wurde.
+* Text vor Daten der Zwischenablage hinzufügen: Sie können auch auswählen,
+  ob der hinzugefügte Text angehängt oder vorangestellt werden soll.
+* Wählen Sie die Aktionen aus, für die eine vorherige Bestätigung
+  erforderlich ist: Sie können für jede verfügbare Aktion auswählen, ob sie
+  sofort oder nach der Bestätigung ausgeführt werden soll. Verfügbare
+  Aktionen sind: Text hinzufügen, Zwischenablage löschen, Kopie emulieren
+  und Schnitt emulieren.
+* Fordern Sie eine Bestätigung an, bevor Sie die ausgewählten Aktionen
+  ausführen, wenn: Sie auswählen können, ob immer Bestätigungen angefordert
+  werden sollen, nur wenn Text in der Zwischenablage enthalten ist oder wenn
+  die Zwischenablage nicht leer ist (z. B. wenn Sie eine Datei kopiert
+  haben, keinen Text).
+* Formatieren, um den Text in der Zwischenablage im Suchmodus als HTML
+  anzuzeigen: Wenn Sie die HTML-Auszeichnungssprache lernen, können Sie
+  vorformatierten Text in HTML oder HTML auswählen, wie in einem Webbrowser
+  angezeigt, um eine Vorstellung davon zu erhalten, wie Ihr HTML-Code von
+  gerendert wird NVDA in einem Browser. Der Unterschied zwischen
+  vorformatiertem und herkömmlichem HTML besteht darin, dass bei der ersten
+  Option aufeinanderfolgende Leerzeichen und Zeilenumbrüche beibehalten und
+  bei der zweiten Option komprimiert werden. Schreiben Sie beispielsweise
+  einige HTML-Tags wie h1, h2, li, pre usw., wählen Sie den Text aus und
+  kopieren Sie ihn in die Zwischenablage. Verwenden Sie die Erweiterung, um
+  den Text in einer durchsuchbaren Nachricht anzuzeigen.
+* Maximale Anzahl von Zeichen beim Anzeigen von Text in der Zwischenablage
+  im Lesemodus: Beachten Sie, dass das Erhöhen dieser Grenze zu Problemen
+  führen kann, wenn die Zwischenablage große Textzeichenfolgen enthält. Das
+  Standardlimit beträgt 100000 Zeichen.
 
 Anmerkungen:
 
-*	Der obige Befehl kann im NVDA-Menü unter Einstellungen / Eingaben in der
-  Kategorie "Konfiguration" geändert werden.
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice
-  Writer.
+## Änderungen in 13.0 
+* Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
+  Einstellungsfelds behoben.
+* Verbesserte Dokumentation.
+* Es wurde eine Kategorie "Clip Contents Designer" hinzugefügt, um allen für
+  diese Erweiterung verfügbaren Tastenbefehlen zuzuweisen.
+* Fehler bei der Verwendung der Emulationskopie im Lesemodus behoben, wenn
+  der Fokusmodus aktiv ist.
+* Sie können verschiedene Gesten zuweisen, um den Textinhalt der
+  Zwischenablage als Rohtext oder in HTML formatiert anzuzeigen. Das Format
+  zum Anzeigen des Textes in der Zwischenablage im Einstellungsfeld wurde
+  entsprechend geändert, um die beiden für das HTML-Format verfügbaren
+  Optionen auszuwählen.
+
+## Änderungen in 12.0
+* Fehler bei der Verwendung von Emulationskopien in Anwendungen wie
+  LibreOffice Writer behoben.
 
 ## Änderungen in 11.0
 * Jetzt ist es möglich, Text mit den Standardbefehlen des NVDA-Cursors
