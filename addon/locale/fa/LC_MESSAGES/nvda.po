@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-12 16:33+0330\n"
+"PO-Revision-Date: 2021-02-11 23:03+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation <nvda-translations@freelists.org>\n"
 "Language: fa\n"
@@ -46,9 +46,8 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML آنطور که در مرورگر نمایش داده میشود"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "متنِ خام"
+msgstr "متنِ ساده"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -133,9 +132,8 @@ msgid ""
 msgstr "از کلیپ‌برد میبُرَد، با امکانِ درخواستِ تأییدِ قبلی"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "متنِ کلیپ‌برد را در حالتِ مرور نمایش میدهد"
+msgstr "متنِ کلیپ‌برد را به شکلِ HTML در حالتِ مرور نمایش میدهد"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -151,9 +149,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "متنِ کلیپ‌برد ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "متنِ کلیپ‌برد را در حالتِ مرور نمایش میدهد"
+msgstr "محتوای متنیِ کلیپ‌برد را به شکلِ متنِ ساده در حالتِ مرور نشان می دهد"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -204,7 +201,6 @@ msgid "If the clipboard is not empty"
 msgstr "اگر کلیپ‌برد خالی نباشد"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr "&قالبِ نمایشِ متنِ کلیپ‌برد در حالتِ مرور"
 

@@ -17,14 +17,15 @@ gelöscht werden.
 *	NVDA+windows+X: Löscht die Zwischenablage.
 *	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
   der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
+  an oder gibt an, ob die Zwischenablage leer ist oder Inhalte enthält, die
+  nicht in einer durchsuchbaren Nachricht angezeigt werden können,
+  z. B. wenn Dateien oder Ordner aus dem Windows Explorer kopiert wurden.
+*	Nicht zugewiesen: Zeigt den Inhalt der Text-Zwischenablage im Lesemodus
+  als einfachen Text an oder gibt an, ob die Zwischenablage leer ist oder
+  Inhalte enthält, die nicht in einer durchsuchbaren Nachricht angezeigt
+  werden können, z. B. wenn Dateien oder Ordner aus dem Windows Explorer
+  kopiert wurden.
 
 
 ## Einstellungen für Clip Content Designer ##
@@ -71,10 +72,11 @@ Anmerkungen:
 
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	Kopierbefehle emulieren und Schnittbefehle emulieren bedeutet, dass die
+  Erweiterung bei Aktivierung dieser Funktionen die Kontrolle über Strg+C
+  und Strg+X übernimmt. Auf diese Weise können Sie auswählen, ob eine
+  Bestätigung angefordert werden soll, bevor Sie die Tastenkombinationen
+  verwenden.
 
 ## Änderungen in 13.0 
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des

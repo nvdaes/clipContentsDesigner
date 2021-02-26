@@ -16,14 +16,14 @@ do portapapeis tamén pode limparse e amosarse en modo exploración.
 *	NVDA+windows+x: Limpa o contido do portapapeis.
 *	Sen asignar: Copia a (ou corta dende) o portapapeis, coa posibilidade de
   que se che pregunte por unha confirmación previa.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Sen asignar: amosa o texto do portapapeis como HTML en modo exploración,
+  ou anuncia se o portapapeis está vacío ou ten contido que non se pode
+  amosar nunha mensaxe navegable, se se están a copiar arquivos ou carpetas
+  do Explorador de Windows, por exemplo.
+*	Sen asignar: Amosa os contidos textuais do portapapeis como texto plano en
+  modo exploración, ou anuncia se o portapapeis está vacío ou ten contido
+  que non se pode amosar nunha mensaxe navegable, se se están a copiar
+  arquivos ou carpetas do Explorador de Windows, por exemplo.
 
 
 ## Opcións de Clip Contents Designer ##
@@ -47,16 +47,16 @@ contén os seguintes controis:
   seleccionar se as confirmacións se solicitarán sempre, só se o portapapeis
   contén texto, ou se o portapapeis non está baleiro (por exemplo se
   copiaches un arquivo, non texto).
-* formato no que amosar o texto do portapapeis en HTML en modo exploración:
-  Se estás aprendendo a linguaxe de marcas HTML, podes escoller Texto
-  Preformateado en HTML ou HTML como se amosaría nun navegador web, para ter
-  unha idea de cómo o teu código HTML se tratará dende NVDA nun navegador. A
-  diferencia entre HTML preformateado e convencional é que a primeira opción
-  preservará os espazos e saltos de liña consecutivos, e o segundo
-  compactaraos.  Por exemplo, escribe algunhas etiquetas HTML como h1, h2,
-  li, pre, etc., selecciona e copia o texto ao portapapeis, e utiliza o
-  complemento ClipContentsDesigner para amosar o texto nunha mensaxe
-  navegable.
+* Formato no que amosar o texto do portapapeis como HTML en modo
+  exploración: Se estás aprendendo a linguaxe de marcas HTML, podes escoller
+  Texto Preformateado en HTML ou HTML como se amosaría nun navegador web,
+  para ter unha idea de cómo o teu código HTML se tratará dende NVDA nun
+  navegador. A diferencia entre HTML preformateado e convencional é que a
+  primeira opción preservará os espazos e saltos de liña consecutivos, e o
+  segundo compactaraos.  Por exemplo, escribe algunhas etiquetas HTML como
+  h1, h2, li, pre, etc., selecciona e copia o texto ao portapapeis, e
+  utiliza o complemento ClipContentsDesigner para amosar o texto nunha
+  mensaxe navegable.
 * Número máximo de caracteres ao amosar texto do portapapeis en modo
   exploración: Por favor, ten en conta que incrementar este límite podería
   producir problemas se o portapapeis contén largas cadeas de texto. O
@@ -66,16 +66,16 @@ Notas:
 
 *	Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	As ordes emular copiar e emular curtar significan que, cando estas
+  características estean habilitadas, o complemento controlará control+c e
+  control+x. Isto permitirá seleccionar se se debería pedir unha
+  confirmación antes de realizar as accións de ditos atallos.
 
-## Cambios para 13.0
+## Cambios para 13.0 
 * Arranxado un problema no deseño visual do panel de opcións, grazas a
   Cyrille Bougot.
 * Mellorada a documentación.
-* engadida unha categoría Clip contents Designer para asignar xestos de
+* Engadida unha categoría Clip contents Designer para asignar xestos de
   entrada a tódolas ordes dispoñibles neste complemento.
 * Arranxados erros ao usar emular copiar en en navegadores cando o modo foco
   estaba activo.
