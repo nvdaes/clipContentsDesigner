@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-02-09 11:09+0100\n"
+"PO-Revision-Date: 2021-02-13 11:47+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: \n"
 "Language: sk\n"
@@ -44,9 +44,8 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML zobrazené vo webovom prehliadači"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "čistý text"
+msgstr "Čistý text"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -131,9 +130,8 @@ msgid ""
 msgstr "Vystrihne do schránky s možnosťou varovania"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Zobrazí text schránky v režime prehliadania"
+msgstr "Zobrazí formátovaný text schránky v režime prehliadania"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -149,9 +147,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text v schránke ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Zobrazí text schránky v režime prehliadania"
+msgstr "Zobrazí neformátovaný text schránky v režime prehliadania"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -201,9 +198,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ak schránka nie je prázdna"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "Zobraziť schránku vo &formáte:"
+msgstr "Zobraziť schránku vo formáte:"
 
 #. Translators: label of a dialog.
 msgid ""

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-08-12 10:07+0200\n"
+"PO-Revision-Date: 2021-02-15 09:02+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -19,7 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -29,11 +28,12 @@ msgid ""
 "this later."
 msgstr ""
 "Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopioinnille (Ctrl+C) ja "
-"leikkaamiselle (Ctrl+X), jolloin leikepöydän sisältö korvataan. Näitä "
-"toimintoja kutsutaan kopioinnin ja leikkaamisen emuloinniksi, ja "
-"oletusarvoisesti ne toimivat vain, kun leikepöydällä on tekstiä. Haluatko "
-"määrittää kopioinnin ja leikkaamisen emuloinnin nyt? Voit muuttaa tätä "
-"myöhemmin."
+"leikkaamiselle (Ctrl+X), jolloin\n"
+"\t\tleikepöydän sisältö korvataan. Näitä toimintoja kutsutaan kopioinnin ja "
+"leikkaamisen emuloinniksi,\n"
+"\t\tja oletusarvoisesti ne toimivat vain, kun leikepöydällä on tekstiä. "
+"Haluatko määrittää kopioinnin ja leikkaamisen emuloinnin nyt? Voit muuttaa "
+"tätä myöhemmin."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -48,9 +48,8 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML verkkoselaimessa"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "Raakateksti"
+msgstr "Pelkkä teksti"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -85,7 +84,6 @@ msgid "Cannot add"
 msgstr "Ei voi lisätä"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
@@ -93,8 +91,8 @@ msgid ""
 "the clipboard."
 msgstr ""
 "Hakee valitun merkkijonon tai aiemmin asetetun alkumerkin ja "
-"tarkastelukohdistimen nykyisen kohdan välisen tekstin ja lisää sen "
-"leikepöydälle."
+"tarkastelukohdistimen\n"
+"\t\tnykyisen kohdan välisen tekstin ja lisää sen leikepöydälle."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -141,9 +139,8 @@ msgstr ""
 "suorittamiselle"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Näyttää leikepöydällä olevan tekstin selaustilassa."
+msgstr "Näyttää leikepöydällä olevan tekstin HTML-muodossa selaustilassa."
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -159,9 +156,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Leikepöydän teksti ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Näyttää leikepöydällä olevan tekstin selaustilassa."
+msgstr "Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä selaustilassa."
 
 #. Translators: label of a dialog.
 msgid ""
@@ -212,9 +208,9 @@ msgid "If the clipboard is not empty"
 msgstr "Jos leikepöytä ei ole tyhjä"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Muoto, jossa leikepöydän teksti näytetään selaustilassa:"
+msgstr ""
+"&Muotoile leikepöydän teksti näytettäväksi HTML-muodossa selaustilassa:"
 
 #. Translators: label of a dialog.
 msgid ""

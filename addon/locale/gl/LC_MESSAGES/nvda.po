@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-12 16:15+0100\n"
+"PO-Revision-Date: 2021-02-11 18:03+0100\n"
 "Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: gl\n"
@@ -47,7 +47,6 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML como se mostraría nun navegador web"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
 msgstr "Texto plano"
 
@@ -140,9 +139,8 @@ msgstr ""
 "confirmación anterior"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Amosa o texto do portapapeis en modo exploración"
+msgstr "Amosa o texto do portapapeis como HTML en modo exploración"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -158,9 +156,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texto do portapapeis ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Amosa o texto do portapapeis en modo exploración"
+msgstr "Amosa o texto do portapapeis como texto plano en modo exploración"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -212,9 +209,9 @@ msgid "If the clipboard is not empty"
 msgstr "Se o portapapeis non está baleiro"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Formato para amosar o texto do portapapeis en modo exploración:"
+msgstr ""
+"&Formato para amosar o texto do portapapeis como HTML en modo exploración:"
 
 #. Translators: label of a dialog.
 msgid ""

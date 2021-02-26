@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-12 11:23+0200\n"
+"PO-Revision-Date: 2021-02-11 20:11+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: \n"
 "Language: bg\n"
@@ -47,9 +47,8 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML, както е показано в уеб браузър"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "Необработен текст"
+msgstr "Обикновен текст"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -140,9 +139,8 @@ msgstr ""
 "извършване на операцията"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Показва текста от клипборда в режим на разглеждане"
+msgstr "Показва текста на клипборда като HTML в режим на разглеждане"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -158,9 +156,9 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Текст в клипборда ({max}/{current} – {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Показва текста от клипборда в режим на разглеждане"
+msgstr ""
+"Показва текста на клипборда като обикновен текст в режим на разглеждане"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -211,9 +209,10 @@ msgid "If the clipboard is not empty"
 msgstr "Ако клипбордът не е празен"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Формат за показване на текста от клипборда в режим на разглеждане:"
+msgstr ""
+"&Формат, в който да се извежда текстът на клипборда като HTML в режим на "
+"разглеждане:"
 
 #. Translators: label of a dialog.
 msgid ""
