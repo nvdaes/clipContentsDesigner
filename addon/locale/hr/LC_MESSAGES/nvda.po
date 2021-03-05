@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-17 01:54+0100\n"
+"PO-Revision-Date: 2021-02-28 18:45+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -49,13 +49,12 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML prikazan kao u web pregledniku"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
 msgstr "Neformatirani tekst"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Pokazuje postavke za „Upravljanje sadržajem međuspremnika”."
+msgstr "Prikazuje postavke za „Upravljanje sadržajem međuspremnika”."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -138,9 +137,8 @@ msgid ""
 msgstr "Reže iz međuspremnika, s mogućnošću prethodnog traženja odobrenja"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Pokazuje tekst međuspremnika u modusu čitanja"
+msgstr "Prikazuje tekst međuspremnika kao HTML u modusu čitanja"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -156,9 +154,9 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Tekst međuspremnika ({max}/{current} – {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Pokazuje tekst međuspremnika u modusu čitanja"
+msgstr ""
+"Prikazuje neformatiran tekstualni sadržaj međuspremnika u modusu čitanja "
 
 #. Translators: label of a dialog.
 msgid ""
@@ -209,9 +207,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ako međuspremnik nije prazan"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Format za prikaz teksta međuspremnika u modusu čitanja:"
+msgstr "&Format za prikaz teksta međuspremnika kao HTML u modusu čitanja:"
 
 #. Translators: label of a dialog.
 msgid ""
