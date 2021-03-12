@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-15 10:55+0530\n"
+"PO-Revision-Date: 2021-03-06 10:34+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -46,9 +46,8 @@ msgid "HTML as shown in a web browser"
 msgstr "இணைய உலாவியில் காட்டப்படுவது போன்ற எச்.டி.எம்.எல்."
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "கச்சா உரை"
+msgstr "எளிய உரை"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -134,9 +133,9 @@ msgid ""
 msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு வெட்டுகிறது"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டுகிறது"
+msgstr ""
+"பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் எஸ்.டி.எம்.எல். வடிவில் காட்டுகிறது"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -152,9 +151,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "பிடிப்புப்பலகை உரை ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டுகிறது"
+msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் எளிய வடிவில் காட்டுகிறது"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -205,9 +203,10 @@ msgid "If the clipboard is not empty"
 msgstr "பிடிப்புப்பலகை வெற்றாக இல்லாதபொழுது"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "உலாவு நிலையில் காட்டப்பட வேண்டிய பிடிப்புப்பலகையின் வடிவூட்டம் (&F)"
+msgstr ""
+"பிடிப்புப்பலகை உரையை உலாவு நிலையில் எச்.டி.எம்.எல். வடிவில் காட்டுவதற்கு "
+"அமைவடிவமாக்குக:"
 
 #. Translators: label of a dialog.
 msgid ""
