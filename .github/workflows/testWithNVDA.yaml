@@ -18,10 +18,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.7
+    - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
     - name: Install dependencies
       run: |
         pip install scons
@@ -66,10 +66,10 @@ jobs:
     
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.7 x86
+    - name: Set up Python 3.8 x86
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
         architecture: x86
     - name: Checkout NVDA
       uses: actions/checkout@v2
@@ -93,12 +93,11 @@ jobs:
         Expand-Archive addon.zip source\userConfig\addons\addon
     - name: Start NVDA
       run: |
-        cd source
-        pythonw.exe nvda.pyw -m --debug-logging
+        runnvda.bat -m --debug-logging
         ping 127.0.0.1 /n 20
     - name: Quit NVDA
       run: |
-        pythonw.exe nvda.pyw -q
+        runnvda.bat -q
         ping 127.0.0.1 /n 20
     - name: Upload log
       uses: actions/upload-artifact@v2

@@ -1,0 +1,35 @@
+name: "pre-release"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  pre-release:
+    name: "Pre Release"
+    runs-on: "windows-latest"
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        pip install scons
+        pip install Markdown
+      - name: "Build"
+        run: |
+          scons
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            *.nvda-addon
