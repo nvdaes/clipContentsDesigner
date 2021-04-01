@@ -1,14 +1,14 @@
-name: "pre-release"
+name: pre-release
 
 on:
   push:
     branches:
-      - "master"
+      - master
 
 jobs:
   pre-release:
-    name: "Pre Release"
-    runs-on: "windows-latest"
+    name: Pre Release
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -27,9 +27,9 @@ jobs:
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: latest
           prerelease: true
-          title: "Development Build"
+          title: Development Build
           files: |
             *.nvda-addon
