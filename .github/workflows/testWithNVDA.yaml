@@ -89,12 +89,14 @@ jobs:
         Expand-Archive addon.zip source\userConfig\addons\addon
     - name: Start NVDA
       run: |
-        runnvda.bat -m --debug-logging
+        runnvda -m --debug-logging
         ping 127.0.0.1 /n 20
+      shell: cmd
     - name: Quit NVDA
       run: |
-        runnvda.bat -q
+        runnvda -q
         ping 127.0.0.1 /n 20
+      shell: cmd
     - name: Upload log
       uses: actions/upload-artifact@v2
       with:
@@ -104,7 +106,6 @@ jobs:
       run: |
         move *.pot tests\nvda.pot
         cd tests
-        python checkPot.py nvda.pot
         python checkPot.py nvda.pot > potResults.txt
         If (Select-String -Path potResults.txt -Pattern 'Message has no translator comment' -SimpleMatch) {exit 1}
     - name: Comment on PR
