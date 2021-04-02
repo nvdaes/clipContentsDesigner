@@ -24,8 +24,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install scons
-        pip install Markdown
+        pip install scons markdown
         sudo apt update
         sudo apt install gettext
     - name: Add add-on version
