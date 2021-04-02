@@ -43,4 +43,4 @@ jobs:
         files: |
           *.nvda-addon
         body_path: changelog.md
-        prerelease: endsWith(github.ref, '-dev')
+        prerelease: ${{ endsWith(github.ref, '-dev') }}
