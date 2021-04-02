@@ -5,3 +5,7 @@
 * Fixed bugs when using emulate copy in browsers if focus mode is active.
 * You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
 * Updated translations.
+
+## Checksum for nvda-addon binary
+
+SHA-256: 
