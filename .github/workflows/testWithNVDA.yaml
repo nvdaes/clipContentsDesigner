@@ -1,9 +1,6 @@
 name: Build and test NVDA add-on
 
 on:
-  push:
-    tags-ignore:
-      - '*'
   pull_request:
     branches:
       - master
