@@ -18,18 +18,15 @@ jobs:
       with:
         python-version: 3.8
     - name: Install dependencies
-      run: |
-        pip install scons
-        pip install markdown
-      - name: Build
-        run: |
-          scons
-
-      - uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          automatic_release_tag: latest
-          prerelease: true
-          title: Development Build
-          files: |
-            *.nvda-addon
+      run: pip install scons markdown
+    - name: Build
+      run: scons
+    - name: Automatic release
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        automatic_release_tag: latest
+        prerelease: true
+        title: Development Build
+        files: |
+          *.nvda-addon
