@@ -20,12 +20,12 @@ jobs:
     - name: Install dependencies
       run: |
         pip install scons
-        pip install Markdown
+        pip install markdown
       - name: Build
         run: |
           scons
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           automatic_release_tag: latest
