@@ -16,70 +16,67 @@ näyttää selaustilassa.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
 *	Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
   vaihtoehtoisesti vahvistuksen.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Ei määritetty: Näyttää leikepöydällä olevan tekstin HTML-muodossa
+  selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
+  sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
+  tiedostoja tai kansioita.
+*	Ei määritetty: Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä
+  selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
+  sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
+  tiedostoja tai kansioita.
 
 
-## Clip Contents Designer settings ##
+## Leikepöydän sisällön käsittelijän asetukset ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings
-dialog.
+Tämä paneeli löytyy kohdasta NVDA-valikko -> Asetukset -> Asetukset.
 
-It contains the following controls:
+Se sisältää seuraavat säätimet:
 
-* Type the string to be used as a separator between contents added to the
-  clipboard: Allows to set a separator which can be used to find the text
-  segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text
-  will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose,
-  for each action available, if it should be performed inmediately or after
-  confirmation. Available actions are: add text, clear clipboard, emulate
-  copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can
-  select if confirmations will be requested always, just if text is
-  contained in the clipboard, or if clipboard is not empty (for example if
-  you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're
-  learning HTML markup language, you may choose Preformatted text in HTML or
-  HTML as shown in a web browser, to have an idea of how your HTML code will
-  be rendered by NVDA in a browser. The difference between preformatted and
-  conventional HTML is that the first option will preserve consecutive
-  spaces and line breaks, and the second one will compact them.  For
-  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
-  the text to clipboard, and use clipContentsDesigner add-on to show the
-  text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode:
-  Please, be aware that increasing this limit may produce issues if the
-  clipboard contains large strings of text. The default limit is 100000
-  characters.
+* Kirjoita merkkijono, jota käytetään erottimena leikepöydälle lisättyjen
+  tekstiosuuksien välissä: Mahdollistaa erottimen asettamisen, jota voidaan
+  käyttää tekstiosioiden etsimiseen.
+* Lisää teksti leikepöydällä olevan tekstin eteen: Voit myös valita,
+  liitetäänkö lisätty teksti leikepöydällä jo olevan sisällön jälkeen vai
+  eteen.
+* Valitse vahvistusta edellyttävät toiminnot: Voit valita kullekin
+  käytettävissä olevalle toiminnolle, suoritetaanko se heti vai vahvistuksen
+  jälkeen. Käytettävissä ovat seuraavat toiminnot: lisää tekstiä, tyhjennä
+  leikepöytä, kopioinnin emulointi sekä leikkaamisen emulointi.
+* Pyydä vahvistus ennen valittujen toimintojen suorittamista: Voit valita,
+  pyydetäänkö vahvistus aina, vain, jos leikepöydällä on tekstiä tai mikäli
+  leikepöytä ei ole tyhjä (esim. jos olet kopioinut tiedoston tekstin
+  asemesta).
+* Näytä leikepöydän teksti selaustilassa HTML-muodossa: Jos opettelet
+  HTML-kieltä, voit valita esimuotoillun tekstin HTML-muodossa tai HTML:n
+  sellaisena, kuin se näytetään verkkoselaimessa saadaksesi käsityksen
+  siitä, miten NVDA näyttää HTML-koodisi verkkoselaimessa. Ero esimuotoillun
+  ja tavallisen HTML:n välillä on, että ensimmäinen vaihtoehto säilyttää
+  peräkkäiset välilyönnit ja rivinvaihdot, kun jälkimmäinen tiivistää
+  ne. Esimerkki: Kirjoita joitakin HTML-tägejä, kuten h1, h2, li, pre jne.,
+  valitse ja kopioi teksti leikepöydälle ja käytä Leikepöydän sisällön
+  käsittelijä -lisäosaa tekstin näyttämiseen selaustilassa.
+* Merkkien enimmäismäärä selaustilassa leikepöydän tekstiä näytettäessä:
+  Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, mikäli
+  leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
 
 Huomautuksia:
 
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa
+  ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
+  valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
-## Changes for 13.0 
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
-  Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all
-  commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents
-  as raw text or formatted in HTML. The Format to show the clipboard text in
-  the settings panel has being modified accordingly, to select the two
-  options available for HTML format.
+## Muutokset versiossa 13.0 
+* Korjattu ongelma asetuspaneelin visuaalisessa ulkoasussa; kiitos Cyrille
+  Bougotille.
+* Dokumentaatiota paranneltu.
+* Lisätty Leikepöydän sisällön käsittelijä -kategoria, josta voidaan
+  määrittää syötekomennot kaikille tämän lisäosan komennoille.
+* Korjattu bugeja käytettäessä kopioinnin emulointia selaimissa selaustilan
+  ollessa käytössä.
+* Voit määrittää eri syötekomennot näyttämään leikepöydän tekstisisällön
+  joko raakatekstinä tai muotoiltuna HTML:nä.
 
 ## Muutokset versiossa 12.0
 * Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa
