@@ -1,14 +1,15 @@
-name: pre-release
+name: pre-release-l10n
 
 on:
-  push:
-    branches:
-      - master
+  workflow_run:
+    workflows: ["Check for l10n updates"]
+    types: [completed]
 
 jobs:
-  pre-release:
-    name: Pre Release
+  pre-release-l10n:
+    name: Pre Release l10n
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
