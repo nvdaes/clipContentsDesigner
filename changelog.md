@@ -1,3 +1,3 @@
-## Changes for 13.1 ##
+## Changes for 13.2 ##
 
 * Updated translations.
