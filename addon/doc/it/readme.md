@@ -17,70 +17,76 @@ anche essere cancellato e visualizzato  in Modalità Navigazione.
   NVDA+f10).
 *	NVDA + Windows + x: Cancella il contenuto degli appunti.
 *	Non assegnato: copia o taglia, con possibilità di richiesta di conferma.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Non assegnato: visualizza il testo presente negli appunti in modalità
+  navigazione in formato html. In alternativa dice se negli appunti è
+  presente contenuto che non è possibile mostrare in modalità navigazione,
+  come file o cartelle copiati da Windows Explorer, o se non è presente
+  testo negli appunti.
+*	Non assegnato: visualizza il testo presente negli appunti in modalità
+  navigazione come testo semplice. In alternativa dice se negli appunti è
+  presente contenuto che non è possibile mostrare in modalità navigazione,
+  come file o cartelle copiati da Windows Explorer, o se non è presente
+  testo negli appunti.
 
 
-## Clip Contents Designer settings ##
+## Impostazioni dell'add-on ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings
-dialog.
+Si accede a questa finestra dal menu di NVDA, scegliendo la voce Preferenze
+e quindi Impostazioni.
 
-It contains the following controls:
+Essa contiene i seguenti controlli:
 
-* Type the string to be used as a separator between contents added to the
-  clipboard: Allows to set a separator which can be used to find the text
-  segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text
-  will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose,
-  for each action available, if it should be performed inmediately or after
-  confirmation. Available actions are: add text, clear clipboard, emulate
-  copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can
-  select if confirmations will be requested always, just if text is
-  contained in the clipboard, or if clipboard is not empty (for example if
-  you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're
-  learning HTML markup language, you may choose Preformatted text in HTML or
-  HTML as shown in a web browser, to have an idea of how your HTML code will
-  be rendered by NVDA in a browser. The difference between preformatted and
-  conventional HTML is that the first option will preserve consecutive
-  spaces and line breaks, and the second one will compact them.  For
-  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
-  the text to clipboard, and use clipContentsDesigner add-on to show the
-  text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode:
-  Please, be aware that increasing this limit may produce issues if the
-  clipboard contains large strings of text. The default limit is 100000
-  characters.
+* Digitare il testo da usare come separatore tra i contenuti aggiunti negli
+  appunti: permette di definire un separatore da usare per individuare, nel
+  momento in cui si effettua l'operazione di "incolla", i vari segmenti di
+  testo aggiunti in sequenza agli appunti.
+* Aggiungi testo prima degli appunti: è anche possibile scegliere se il
+  testo tagliato o copiato deve essere aggiunto allin testa o in coda agli
+  appunti.
+* Seleziona le azioni che richiedono una conferma: si può scegliere, per
+  ogni azione disponibile, se farla eseguire immediatamente o dopo una
+  conferma da parte dell'utente. Le azioni disponibili sono: aggiungi testo,
+  elimina gli appunti, emula copia ed emula taglia.
+* Richiedi conferma prima di eseguire le azioni selezionate quando: si può
+  scegliere se le conferme devono essere richieste sempre, solo se c'è del
+  testo negli appunti o se gli appunti non sono vuoti (ossia, ad esempio, se
+  avete copiato un file e non del testo).
+* Formato di visualizzazione degli appunti in Modalità Navigazione, come
+  html: se state imparando il linguaggio HTML, potete selezionare "HTML
+  preformattato" oppure HTML semplice, per avere un'idea di come NVDA
+  mostrerebbe il vostro codice HTML in un browser. La differenza tra l'HTML
+  preformattato e quello semplice è che la prima opzione manterrà gli spazi
+  consecutivi e le interruzioni di riga, mentre la seconda li eliminerà. Ad
+  esempio, scrivete qualche tag HTML come h1, h2, li, pre, ecc., Selezionate
+  e copiate quanto scritto negli appunti ed utilizzate clipContentsDesigner
+  per visualizzare il testo in modalità navigazione.
+* Numero massimo di caratteri quando il testo degli appunti è visualizzato
+  in modalità navigazione: si noti che l'incremento di questo valore può
+  causare problemi se gli appunti contengono grandi stringhe di testo. Il
+  valore di default è 100000 caratteri.
 
 Note:
 
 *	Quando è aperta una finestra di NVDA non verrà richiesta alcuna
   conferma. In questi casi le azioni verranno eseguite immediatamente.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	Quando le funzioni Emula copia ed Emula taglia sono abilitate, l'add-on
+  prenderà il controllo dei comandi control+c e control+x. Ciò consentirà di
+  scegliere se chiedere conferma prima di eseguire tali comandi.
 
-## Changes for 13.0 
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
-  Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all
-  commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents
-  as raw text or formatted in HTML. The Format to show the clipboard text in
-  the settings panel has being modified accordingly, to select the two
-  options available for HTML format.
+## Novità nella versione 13.0 
+* Risolto un problema nella grafica della finestra Impostazioni. Grazie a
+  Cyrille Bougot.
+* Miglioramenti alla documentazione.
+* Aggiunta la categoria Clip Contents Designer nella finestra Gesti e Tasti
+  di Immissione di NVDA, per assegnare tasti personalizzati a tutti i
+  comandi disponibili.
+* Risolti problemi che si riscontravano quando si utilizzava l'emulazione
+  copia nei browser con la modalità focus attiva.
+* Potete assegnare tasti diversi per visualizzare il contenuto testuale
+  degli appunti come testo puro o come HTML. Le scelte possibili nella
+  finestra Impostazioni per il formato di visualizzazione degli appunti sono
+  state modificate di conseguenza, per riflettere le due opzioni disponibili
+  per l'HTML.
 
 ## Novità nella versione 12.0
 * Risolti problemi che si riscontravano quando si utilizzava la simulazione

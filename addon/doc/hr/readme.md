@@ -17,20 +17,20 @@ za čitanje.
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
 *	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
+  najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
+  predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
+  kopirane iz Windows Explorera.
+*	Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
+  tekst u modusu pregledavanja ili najavljuje prazno stanje međuspremnika
+  ili sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na
+  primjer ako su datoteke ili mape kopirane iz Windows Explorer.
 
 
-## Clip Contents Designer settings ##
+## Upravljanje sadržajem međuspremnika, postavke ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings
-dialog.
+Ova je ploča dostupna u NVDA izborniku, podizbornik Postavke, dijaloški
+okvir Postavke.
 
 It contains the following controls:
 
@@ -70,13 +70,14 @@ Napomene:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
-## Changes for 13.0 
+## Promjene u verziji 13.0
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all
   commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
+* Ispravljene su greške prilikom korištenja emulirajuće kopije u
+  preglednicima ako je modus fokusa aktiviran.
 * You can assign different gestures to show the clipboard textual contents
   as raw text or formatted in HTML. The Format to show the clipboard text in
   the settings panel has being modified accordingly, to select the two
