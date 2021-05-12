@@ -3,7 +3,7 @@ name: pre-release
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * 6'
@@ -15,10 +15,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
     - name: Install dependencies
       run: |
         pip install scons markdown

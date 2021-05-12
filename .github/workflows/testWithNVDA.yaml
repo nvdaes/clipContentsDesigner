@@ -3,7 +3,7 @@ name: Build and test NVDA add-on
 on:
   pull_request:
     branches:
-      - master
+      - main
 jobs:
 
   addon:
@@ -15,10 +15,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
     - name: Install dependencies
       run: |
         pip install scons markdown
@@ -62,10 +62,10 @@ jobs:
     
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.8 x86
+    - name: Set up Python 3.7 x86
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
         architecture: x86
     - name: Checkout NVDA
       uses: actions/checkout@v2
@@ -108,16 +108,3 @@ jobs:
         cd tests
         python checkPot.py nvda.pot > potResults.txt
         If (Select-String -Path potResults.txt -Pattern 'Message has no translator comment' -SimpleMatch) {exit 1}
-    - name: Comment on PR
-      uses: actions/github-script@v3
-      if: failure()
-      with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          github.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: 'This PR has messages without comments for translators'
-          })
-          
