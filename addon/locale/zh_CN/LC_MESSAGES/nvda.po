@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: clipContentsDesigner 7.1\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2018-05-04 03:00+1000\n"
 "PO-Revision-Date: 2019-04-04 12:27+0800\n"
 "Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
