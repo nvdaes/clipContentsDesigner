@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 5.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
 "PO-Revision-Date: 2021-02-12 08:13+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
