@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-12 09:37+0100\n"
-"Last-Translator: René Linke <rene.linke@hamburg.de>\n"
+"PO-Revision-Date: 2021-05-15 01:11+0200\n"
+"Last-Translator: Bernd Dorer <mail@bdorer.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -46,7 +46,6 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML wie im Web-Browser"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
 msgstr "Nur Text"
 
@@ -143,9 +142,8 @@ msgstr ""
 "erfolgt ist"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
+msgstr "Zeigt den Text der Zwischenablage als HTML im Lesemodus"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -161,9 +159,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text der Zwischenablage ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
+msgstr "Zeigt den Text der Zwischenablage als nur Text im Lesemodus"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -195,7 +192,7 @@ msgstr "Emulieren von kopieren bestätigen"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate cut"
-msgstr "emulieren von ausschneiden bestätigen"
+msgstr "Emulieren von ausschneiden bestätigen"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"
@@ -215,9 +212,9 @@ msgid "If the clipboard is not empty"
 msgstr "Wenn die Zwischenablage nicht leer ist"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "& Format, um den Text der Zwischenablage im Browsermodus anzuzeigen:"
+msgstr ""
+"& Format, um den Text der Zwischenablage als HTML im Browsermodus anzuzeigen:"
 
 #. Translators: label of a dialog.
 msgid ""
