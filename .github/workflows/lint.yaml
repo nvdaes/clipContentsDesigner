@@ -1,4 +1,4 @@
-name: Lint diff
+name: Lint
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  diff:
+  lint:
 
     runs-on: windows-latest
 
@@ -15,15 +15,11 @@ jobs:
 
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: pip install tox
     - name: Lint
-      run: |
-        git diff -U0 origin/main...HEAD -- addon/. > flake8.diff
-        type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
+      tox

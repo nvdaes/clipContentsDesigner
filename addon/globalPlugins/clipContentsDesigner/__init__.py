@@ -18,7 +18,6 @@ import gui
 from gui import SettingsPanel, NVDASettingsDialog, guiHelper
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
-from globalCommands import SCRCAT_TEXTREVIEW, SCRCAT_CONFIG
 from logHandler import log
 
 addonHandler.initTranslation()
