@@ -22,4 +22,4 @@ jobs:
     - name: Install dependencies
       run: pip install tox
     - name: Lint
-      tox
+      run: tox
