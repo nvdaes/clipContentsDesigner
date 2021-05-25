@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
-# Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2021 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import addonHandler
@@ -19,11 +19,12 @@ from gui import SettingsPanel, NVDASettingsDialog, guiHelper
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
-
+from typing import Optional
 addonHandler.initTranslation()
 
 # Constants
 
+ADDON_NAME = addonHandler.getCodeAddon().name
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 ADDON_PANEL_TITLE = ADDON_SUMMARY
 BROWSEABLETEXT_FORMATS = [
@@ -46,22 +47,22 @@ confspec = {
 	"browseableTextFormat": "integer(default=0)",
 	"maxLengthForBrowseableText": "integer(default=100000)",
 }
-config.conf.spec["clipContentsDesigner"] = confspec
+config.conf.spec[ADDON_NAME] = confspec
 
 
-def getBookmark():
+def getBookmark() -> str:
 	try:
-		separator = config.conf["clipContentsDesigner"]["separator"]
+		separator = config.conf[ADDON_NAME]["separator"]
 	except KeyError:
 		separator = None
 	if not separator:
 		bookmark = "\r\n"
 	else:
-		bookmark = "\r\n%s\r\n" % separator
+		bookmark = f"\r\n{separator}\r\n"
 	return bookmark
 
 
-def isArabicKeyboardLayout():
+def isArabicKeyboardLayout() -> bool:
 	"""
 	Test if the keyboard layout is Arabic to avoid an error reported by a user.
 	"""
@@ -100,7 +101,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_settings(self, gesture):
 		wx.CallAfter(self.onSettings, None)
 
-	def clearClipboard(self):
+	def clearClipboard(self) -> None:
 		try:
 			with winUser.openClipboard(gui.mainFrame.Handle):
 				winUser.emptyClipboard()
@@ -109,9 +110,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except Exception as e:
 			# Translators: message presented when the clipboard content cannot be deleted.
 			ui.message(_("Clipboard not cleared"))
-			log.debug("Cannot clear clipboard: %s" % e)
+			log.debug(f"Cannot clear clipboard: {e}")
 
-	def getSelectedText(self):
+	def getSelectedText(self) -> Optional[str]:
 		obj = api.getFocusObject()
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
@@ -124,7 +125,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return None
 		return info.clipboardText
 
-	def getMath(self):
+	def getMath(self) -> Optional[str]:
 		import mathPres
 		mathMl = mathPres.getMathMlFromTextInfo(api.getReviewPosition())
 		if not mathMl:
@@ -141,7 +142,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
 
-	def getTextToAdd(self):
+	def getTextToAdd(self) -> Optional[str]:
 		newText = self.getSelectedText() or self.getMath()
 		if not newText:
 			if not getattr(
@@ -157,7 +158,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except Exception:
 			clipData = None
 		if clipData:
-			if config.conf["clipContentsDesigner"]["addTextBefore"]:
+			if config.conf[ADDON_NAME]["addTextBefore"]:
 				text = newText + getBookmark() + clipData
 			else:
 				text = clipData + getBookmark() + newText
@@ -165,17 +166,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			text = newText
 		return text
 
-	def clipboardHasContent(self):
+	def clipboardHasContent(self) -> bool:
 		with winUser.openClipboard(gui.mainFrame.Handle):
 			clipFormat = winUser.windll.user32.EnumClipboardFormats(0)
 		if clipFormat:
 			return True
 		return False
 
-	def requiredFormatInClip(self):
-		if config.conf["clipContentsDesigner"]["confirmationRequirement"] == 0:
+	def requiredFormatInClip(self) -> bool:
+		if config.conf[ADDON_NAME]["confirmationRequirement"] == 0:
 			return True
-		if config.conf["clipContentsDesigner"]["confirmationRequirement"] == 1:
+		if config.conf[ADDON_NAME]["confirmationRequirement"] == 1:
 			try:
 				api.getClipData()
 				return True
@@ -185,7 +186,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return True
 		return False
 
-	def confirmAdd(self):
+	def confirmAdd(self) -> None:
 		text = self.getTextToAdd()
 		if not text:
 			return
@@ -203,7 +204,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when the text cannot be added to the clipboard.
 				core.callLater(200, ui.message, _("Cannot add"))
 
-	def performAdd(self):
+	def performAdd(self) -> None:
 		text = self.getTextToAdd()
 		if api.copyToClip(text):
 			# Translators: message presented when the text has been added to the clipboard.
@@ -227,7 +228,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self.performAdd()
 
-	def confirmClear(self):
+	def confirmClear(self) -> None:
 		if gui.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to clear the clipboard"),
@@ -252,7 +253,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self.clearClipboard()
 
-	def copy(self):
+	def copy(self) -> None:
 		obj = api.getFocusObject()
 		tI = obj.treeInterceptor
 		if isinstance(tI, browseMode.BrowseModeDocumentTreeInterceptor) and not tI.passThrough:
@@ -261,7 +262,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
 			KeyboardInputGesture.fromName(keyName).send()
 
-	def confirmCopy(self):
+	def confirmCopy(self) -> None:
 		text = self.getSelectedText()
 		if gui.messageBox(
 			# Translators: Label of a dialog.
@@ -282,18 +283,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_copy(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToCopy"]
+			config.conf[ADDON_NAME]["confirmToCopy"]
 			and not gui.isInMessageBox and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCopy)
 		else:
 			self.copy()
 
-	def cut(self):
+	def cut(self) -> None:
 		keyName = "control+x" if not isArabicKeyboardLayout() else u"control+ء"
 		KeyboardInputGesture.fromName(keyName).send()
 
-	def confirmCut(self):
+	def confirmCut(self) -> None:
 		if gui.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to cut from the clipboard"),
@@ -335,15 +336,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				ui.message(_("Clipboard is empty"))
 		else:
 			if (
-				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
+				config.conf[ADDON_NAME]["maxLengthForBrowseableText"] <= len(text)
 			):
-				maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+				maxLength = config.conf[ADDON_NAME]["maxLengthForBrowseableText"]
 			else:
 				maxLength = len(text)
 			format = config.conf["clipContentsDesigner"]["browseableTextFormat"]
 			html = True
 			if format == 0:
-				browseableText = "<pre>%s</pre>" % text.strip()[:maxLength]
+				browseableText = f"<pre>{text.strip()[:maxLength]}</pre>"
 			else:
 				browseableText = text.strip()[:maxLength]
 			ui.browseableMessage(
@@ -371,9 +372,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				ui.message(_("Clipboard is empty"))
 		else:
 			if (
-				config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] <= len(text)
+				config.conf[ADDON_NAME]["maxLengthForBrowseableText"] <= len(text)
 			):
-				maxLength = config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+				maxLength = config.conf[ADDON_NAME]["maxLengthForBrowseableText"]
 			else:
 				maxLength = len(text)
 			browseableText = text.strip()[:maxLength]
@@ -395,12 +396,12 @@ class AddonSettingsPanel(SettingsPanel):
 		setSeparatorLabel = _("Type the string to be used as a &separator between contents added to the clipboard.")
 		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
 		try:
-			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
+			self.setSeparatorEdit.SetValue(config.conf[ADDON_NAME]["separator"])
 		except KeyError:
 			pass
 		# Translators: label of a dialog.
 		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))
-		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
+		self.addTextBeforeCheckBox.SetValue(config.conf[ADDON_NAME]["addTextBefore"])
 		# Translators: label of a dialog.
 		confirmBoxLabel = _("Sele&ct the actions which require previous confirmation")
 		confirmChoices = [
@@ -417,14 +418,11 @@ class AddonSettingsPanel(SettingsPanel):
 			confirmBoxLabel, gui.nvdaControls.CustomCheckListBox, choices=confirmChoices
 		)
 		checkedItems = []
-		if config.conf["clipContentsDesigner"]["confirmToAdd"]:
-			checkedItems.append(0)
-		if config.conf["clipContentsDesigner"]["confirmToClear"]:
-			checkedItems.append(1)
-		if config.conf["clipContentsDesigner"]["confirmToCopy"]:
-			checkedItems.append(2)
-		if config.conf["clipContentsDesigner"]["confirmToCut"]:
-			checkedItems.append(3)
+		confirmationItems = ("confirmToAdd", "confirmToClear", "confirmToCopy", "confirmToCut")
+		for k, v in config.conf[ADDON_NAME].items:
+			if k not in confirmationItems or not v:
+				continue
+			checkedItems.append(confirmationItems.index(k))
 		self.confirmList.CheckedItems = checkedItems
 		self.confirmList.Select(0)
 		# Translators: label of a dialog.
@@ -444,7 +442,7 @@ class AddonSettingsPanel(SettingsPanel):
 		# Translators: label of a dialog.
 		formatLabel = _("&Format to show the clipboard text as HTML in browse mode:")
 		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)
-		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
+		self.formatChoices.SetSelection(config.conf[ADDON_NAME]["browseableTextFormat"])
 		# Translators: label of a dialog.
 		maxLengthLabel = _("&Maximum number of characters when showing clipboard text in browse mode")
 		self.maxLengthEdit = sHelper.addLabeledControl(
@@ -452,25 +450,25 @@ class AddonSettingsPanel(SettingsPanel):
 			gui.nvdaControls.SelectOnFocusSpinCtrl,
 			min=1,
 			max=1000000,
-			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
+			initial=config.conf[ADDON_NAME]["maxLengthForBrowseableText"]
 		)
 
 	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
 
 	def onSave(self):
-		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
-		config.conf["clipContentsDesigner"]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmList.IsChecked(0)
-		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmList.IsChecked(1)
-		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmList.IsChecked(2)
-		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmList.IsChecked(3)
-		config.conf["clipContentsDesigner"]["confirmationRequirement"] = (
+		config.conf[ADDON_NAME]["separator"] = self.setSeparatorEdit.GetValue()
+		config.conf[ADDON_NAME]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
+		config.conf[ADDON_NAME]["confirmToAdd"] = self.confirmList.IsChecked(0)
+		config.conf[ADDON_NAME]["confirmToClear"] = self.confirmList.IsChecked(1)
+		config.conf[ADDON_NAME]["confirmToCopy"] = self.confirmList.IsChecked(2)
+		config.conf[ADDON_NAME]["confirmToCut"] = self.confirmList.IsChecked(3)
+		config.conf[ADDON_NAME]["confirmationRequirement"] = (
 			self.confirmRequirementChoices.GetSelection()
 		)
-		config.conf["clipContentsDesigner"]["browseableTextFormat"] = (
+		config.conf[ADDON_NAME]["browseableTextFormat"] = (
 			self.formatChoices.GetSelection()
 		)
-		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = (
+		config.conf[ADDON_NAME]["maxLengthForBrowseableText"] = (
 			self.maxLengthEdit.GetValue()
 		)
