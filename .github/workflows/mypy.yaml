@@ -3,6 +3,8 @@ name: Check for MyPy type hints
 on:
 
   push:
+    branches:
+      - main
   
   pull_request:
     branches:
@@ -21,6 +23,8 @@ jobs:
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: pip install mypy
+      run: |
+        pip install --upgrade 
+        pip install mypy
     - name: MyPy
-      run: python -m mypy addon/
+      run: python -m mypy .
