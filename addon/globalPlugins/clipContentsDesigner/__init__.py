@@ -19,8 +19,11 @@ from gui import SettingsPanel, NVDASettingsDialog, guiHelper
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
-from typing import Optional
+from typing import Callable, Optional
+
 addonHandler.initTranslation()
+
+_: Callable[[str], str]
 
 # Constants
 
