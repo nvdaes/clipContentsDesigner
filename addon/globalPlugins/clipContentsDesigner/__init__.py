@@ -75,7 +75,7 @@ def isArabicKeyboardLayout() -> bool:
 	klID = winUser.getKeyboardLayout(threadID)
 	lID = klID & (2**16 - 1)
 	try:
-		localeName = locale.windows_locale[lID]
+		localeName: Optional[str] = locale.windows_locale[lID]
 	except KeyError:
 		localeName = None
 	if localeName and localeName.startswith("ar_"):
@@ -115,7 +115,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Clipboard not cleared"))
 			log.debug(f"Cannot clear clipboard: {e}")
 
-	def getSelectedText(self) -> Optional[str]:
+	def getSelectedText(self) -> str:
 		obj = api.getFocusObject()
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
@@ -125,10 +125,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except (RuntimeError, NotImplementedError):
 			info = None
 		if not info or info.isCollapsed:
-			return None
+			return ""
 		return info.clipboardText
 
-	def getMath(self) -> Optional[str]:
+	def getMath(self) -> str:
 		import mathPres
 		mathMl = mathPres.getMathMlFromTextInfo(api.getReviewPosition())
 		if not mathMl:
@@ -139,14 +139,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				except (NotImplementedError, LookupError):
 					mathMl = None
 		if not mathMl:
-			return
+			return ""
 		mathPres.ensureInit()
 		if mathPres.brailleProvider:
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
+		return ""
 
 	def getTextToAdd(self) -> Optional[str]:
-		newText = self.getSelectedText() or self.getMath()
+		newText: str = self.getSelectedText() or self.getMath()
 		if not newText:
 			if not getattr(
 				api.getReviewPosition().obj,
@@ -154,13 +155,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			) or not api.getReviewPosition().obj._selectThenCopyRange:
 				# Translators: message presented when it's not possible to add text, since no text has been selected.
 				ui.message(_("No text to add"))
-				return
+				return None
 			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText
+			text: str = ""
 		try:
-			clipData = api.getClipData()
+			clipData: str = api.getClipData()
 		except Exception:
-			clipData = None
-		if clipData:
+			clipData = ""
+		if len(clipData) > 0:
 			if config.conf[ADDON_NAME]["addTextBefore"]:
 				text = newText + getBookmark() + clipData
 			else:
