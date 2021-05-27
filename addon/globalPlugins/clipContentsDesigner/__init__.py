@@ -161,7 +161,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			clipData: str = api.getClipData()
 		except Exception:
 			clipData = ""
-			
 		text: str
 		if len(clipData) > 0:
 			if config.conf[ADDON_NAME]["addTextBefore"]:
