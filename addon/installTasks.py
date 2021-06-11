@@ -1,4 +1,4 @@
-﻿# -*- coding: UTF-8 -*-
+# -*- coding: UTF-8 -*-
 # installTasks for clipContentsDesigner add-on
 # Copyright (C) 2017-2018 Noelia Ruiz Martínez
 # Released under GPL 2
