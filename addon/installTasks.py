@@ -6,8 +6,8 @@
 import addonHandler
 import gui
 import wx
-import config
 import inputCore
+import config
 
 addonHandler.initTranslation()
 
