@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2021-02-05 15:43+0100\n"
+"PO-Revision-Date: 2021-06-04 19:27+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -45,7 +45,6 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML način prikaza u Web pretraživačima"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
 msgstr "Običan tekst"
 
@@ -133,9 +132,8 @@ msgid ""
 msgstr "Seče u privremenu memoriju, uz mogućnost potvrde"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Prikazuje tekst privremene memorije u režimu pretraživanja"
+msgstr "Prikazuje tekst privremene memorije kao HTML u režimu pretraživanja"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -151,9 +149,9 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Tekst privremene memorije ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Prikazuje tekst privremene memorije u režimu pretraživanja"
+msgstr ""
+"Prikazuje tekst privremene memorije kao običan tekst u režimu pretraživanja"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -205,9 +203,8 @@ msgid "If the clipboard is not empty"
 msgstr "Ako privremena memorija nije prazna"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Format prikazivanja teksta u režimu pretraživanja:"
+msgstr "&Formatiranje teksta za prikazivanje kao HTML u režimu pretraživanja:"
 
 #. Translators: label of a dialog.
 msgid ""
