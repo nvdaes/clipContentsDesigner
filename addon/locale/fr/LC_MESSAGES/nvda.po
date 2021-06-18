@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner-addon version 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-30 13:20+0100\n"
-"PO-Revision-Date: 2021-01-12 10:00+0100\n"
+"PO-Revision-Date: 2021-06-13 20:13+0200\n"
 "Last-Translator: Michel Such <michel.such@free.fr>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 1.8.13\n"
 "X-Poedit-Bookmarks: -1,14,-1,-1,-1,-1,-1,-1,-1,-1\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -46,7 +46,6 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML tel qu'affiché dans un navigateur web"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
 msgstr "Texte brut"
 
@@ -139,9 +138,8 @@ msgstr ""
 "confirmation préalable"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Affiche le texte du presse-papiers en mode navigation"
+msgstr "Affiche le texte du presse-papiers en HTML en mode navigation"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -158,9 +156,8 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texte du presse-papiers ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Affiche le texte du presse-papiers en mode navigation"
+msgstr "Affiche le texte du presse-papiers en texte en mode navigation"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -211,10 +208,10 @@ msgid "If the clipboard is not empty"
 msgstr "Si le presse-papiers n'est pas vide"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr ""
-"&Formater pour présenter le contenu du presse-papiers en mode navigation :"
+"&Formater et afficher le contenu du presse-papiers en HtML en mode "
+"navigation :"
 
 #. Translators: label of a dialog.
 msgid ""
