@@ -19,23 +19,25 @@ from gui import SettingsPanel, NVDASettingsDialog, guiHelper
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
+from typing import Callable, Dict, List
 
 addonHandler.initTranslation()
+_: Callable[[str], str]
 
 # Constants
 
-ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
-ADDON_PANEL_TITLE = ADDON_SUMMARY
-BROWSEABLETEXT_FORMATS = [
+ADDON_SUMMARY: str = addonHandler.getCodeAddon().manifest["summary"]
+ADDON_PANEL_TITLE: str = ADDON_SUMMARY
+BROWSEABLETEXT_FORMATS: List[str] = [
 	# Translators: label of a dialog.
 	_("Preformatted text in HTML"),
 	# Translators: label of a dialog.
 	_("HTML as shown in a web browser")
 ]
 # Translators: Text of the clipboard shown without being formatted.
-RAW_TEXT = _("Plain text")
+RAW_TEXT: str = _("Plain text")
 
-confspec = {
+confspec: Dict[str, str] = {
 	"separator": "string(default="")",
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
@@ -49,7 +51,7 @@ confspec = {
 config.conf.spec["clipContentsDesigner"] = confspec
 
 
-def getBookmark():
+def getBookmark() -> str:
 	try:
 		separator = config.conf["clipContentsDesigner"]["separator"]
 	except KeyError:
