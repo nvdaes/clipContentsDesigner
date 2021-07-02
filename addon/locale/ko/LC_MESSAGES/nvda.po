@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-06-20 22:47+0900\n"
+"PO-Revision-Date: 2021-06-25 22:12+0900\n"
 "Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
 "Language-Team: \n"
 "Language: ko\n"
@@ -36,19 +36,19 @@ msgstr ""
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr ""
+msgstr "복사 및 잘라내기 모방 기능 설정"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
-msgstr ""
+msgstr "HTML 형식의 텍스트"
 
 #. Translators: label of a dialog.
 msgid "HTML as shown in a web browser"
-msgstr ""
+msgstr "웹브라우저에서 표현되는 HTML"
 
 #. Translators: Text of the clipboard shown without being formatted.
 msgid "Plain text"
-msgstr ""
+msgstr "일반 텍스트"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -89,6 +89,8 @@ msgid ""
 "\t\tand including the current position of the review cursor, and adds it to "
 "the clipboard."
 msgstr ""
+"선택된 문구, 혹은 설정한 시작점부터 리뷰 커서의 현재 위치까지의 문구를\n"
+"\t\t클립보드에 추가합니다."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -100,7 +102,7 @@ msgstr "클립보드 초기화"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
-msgstr ""
+msgstr "추가된 문구와 클립보드에 포함된 내용을 삭제합니다."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
@@ -114,7 +116,7 @@ msgstr "클립보드에 복사"
 msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr ""
+msgstr "클립보드로 내용을 복사하며, 사용자의 확인을 요구할 수 있습니다."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
@@ -128,15 +130,15 @@ msgstr "클립보드에서 자르기"
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr ""
+msgstr "클립보드에서 내용을 잘라내며, 사용자의 확인을 요구할 수 있습니다."
 
 #. Translators: message presented in input mode.
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr ""
+msgstr "브라우즈 모드에서 클립보드에 들어있는 문구를 HTML로 표시합니다."
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
-msgstr ""
+msgstr "클립보드가 비어있지는 않지만, 표시할 문구가 없습니다."
 
 #. Translators: presented when clipboard is empty.
 msgid "Clipboard is empty"
@@ -145,7 +147,7 @@ msgstr "클립보드가 비어 있습니다"
 #. Translators: title of a browseable message.
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr ""
+msgstr "클립보드 문구 ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
 msgid "Shows the clipboard textual contents as plain text in browse mode"

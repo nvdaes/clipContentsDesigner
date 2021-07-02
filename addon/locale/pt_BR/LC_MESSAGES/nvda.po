@@ -1,17 +1,18 @@
 # Brazilian Portuguese translation of Clip Contents Designer.
-# Copyright (C) 2014-2020 NVDA Contributors.
+# Copyright (C) 2014-2021 NVDA Contributors.
 # This file is distributed under the same license as the NVDA package.
 # Cleverson Casarin Uliana <clever97@gmail.com>, 2014-2017.
-# Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2018, 2020.
+# Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2018, 2020-2021.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Project-Id-Version: clipContentsDesigner\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2020-02-15 17:56-0300\n"
+"PO-Revision-Date: 2021-06-26 16:24-0300\n"
 "Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
-"Language-Team: Equipe de tradução do NVDA para Português Brasileiro "
-"<clever97@gmail.com>\n"
+"Language-Team: NVDA Brazilian Portuguese translation team (Equipe de "
+"tradução do NVDA para Português Brasileiro) <clever97@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -30,10 +30,11 @@ msgid ""
 "this later."
 msgstr ""
 "Este complemento possibilita confirmar se você deseja copiar e cortar, "
-"substituindo o conteúdo da área de transferência, ao pressionar control+c e "
-"control+x. Isto é chamado de emulação de copiar e cortar e por padrão só "
-"funciona quando a área de transferência contém texto. Deseja configurar a "
-"emulação de copiar e cortar agora? Pode também alterá-la mais tarde."
+"substituindo o conteúdo da área de transferência,\n"
+"\t\tao pressionar control+c e control+x. Isto é chamado de emulação de "
+"copiar e cortar.\n"
+"\t\tDeseja configurar a emulação de copiar e cortar agora? Pode também "
+"alterá-la mais tarde."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -48,9 +49,8 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML como mostrado num navegador web"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "Texto bruto"
+msgstr "Texto simples"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -86,16 +86,16 @@ msgid "Cannot add"
 msgstr "Não consegui acrescentar"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to\n"
 "\t\tand including the current position of the review cursor, and adds it to "
 "the clipboard."
 msgstr ""
-"Captura a cadeia selecionada, ou o texto desde o marcador inicial definido "
-"até e incluindo a posição atual do cursor de exploração, e o acrescenta à "
-"área de transferência."
+"Captura a sequência de caracteres selecionada ou o texto do marcador inicial "
+"definido anteriormente até\n"
+"\t\te incluindo a posição atual do cursor de exploração, e o adiciona à área "
+"de transferência."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -142,9 +142,8 @@ msgstr ""
 "consultado para confirmar"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Mostra o texto da área de transferência no modo de navegação"
+msgstr "Mostra o texto da área de transferência como HTML no modo de navegação"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -160,17 +159,18 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Texto da área de transferência ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Mostra o texto da área de transferência no modo de navegação"
+msgstr ""
+"Mostra o conteúdo textual da área de transferência como texto simples no "
+"modo de navegação"
 
 #. Translators: label of a dialog.
 msgid ""
 "Type the string to be used as a &separator between contents added to the "
 "clipboard."
 msgstr ""
-"Digite a cadeia a ser usada como &separador entre conteúdos acrescentados à "
-"área de transferência."
+"Digite a sequência de caracteres a ser usada como &separador entre conteúdos "
+"acrescentados à área de transferência."
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
@@ -213,10 +213,10 @@ msgid "If the clipboard is not empty"
 msgstr "Se a área de transferência não estiver vazia"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr ""
-"&Formate para mostrar o texto da área de transferência no modo de navegação:"
+"&Formato para mostrar o texto da área de transferência como HTML em modo de "
+"navegação:"
 
 #. Translators: label of a dialog.
 msgid ""
