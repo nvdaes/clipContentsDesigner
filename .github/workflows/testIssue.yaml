@@ -25,4 +25,4 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: ${{steps.get-data.outputs.repo}}
-        ref: stable
+        ref: stabla
