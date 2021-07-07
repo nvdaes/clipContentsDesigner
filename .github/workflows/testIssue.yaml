@@ -26,7 +26,7 @@ jobs:
           const author = context.payload.issue.user.login
           const body = context.payload.issue.body   
           core.setOutput('body', body)
-          fields = body.split(body, /###.*/)
+          fields = body.split(/###.*/)
           const repo = fields[3]
           core.setOutput('repo', repo)
           console.log(body)
