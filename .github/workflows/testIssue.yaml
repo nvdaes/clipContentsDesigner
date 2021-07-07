@@ -12,22 +12,17 @@ jobs:
     name: Check for stable branch
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
     - name: Get data
       id: get-data
       uses: actions/github-script@v4
       with:
         script: |
-          const number = context.payload.issue.number.toString()
-          core.setOutput('number', "#" + number)
-          const title = context.payload.issue.title
-          core.setOutput('title', title)
-          const author = context.payload.issue.user.login
           const body = context.payload.issue.body   
           core.setOutput('body', body)
-          const repo = body.split("### Add-on repository")[1].split("###")[0].trim()
-          core.setOutput('repo', repo)
-          console.log(body)
-          console.log(author)
-          console.log(repo)
+          const name = body.split("### Add-on name")[1].split("###")[0].trim()
+          core.setOutput('repo', "nvdaaddons" + name)
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        repository: ${{steps.get-data.outputs.repo}}
+        ref: stable
