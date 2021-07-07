@@ -31,3 +31,4 @@ jobs:
           core.setOutput('repo', repo)
           console.log(body)
           console.log(author)
+          console.log(repo)
