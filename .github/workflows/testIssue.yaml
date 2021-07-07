@@ -18,11 +18,31 @@ jobs:
       with:
         script: |
           const body = context.payload.issue.body   
-          core.setOutput('body', body)
           const name = body.split("### Add-on name")[1].split("###")[0].trim()
           core.setOutput('repo', "nvdaaddons/" + name)
     - name: Checkout code
       uses: actions/checkout@v2
       with:
         repository: ${{steps.get-data.outputs.repo}}
-        ref: stabla
+        ref: stable
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        pip install scons markdown
+        sudo apt update
+        sudo apt install gettext
+    - name: Build pot
+      run: scons pot
+      
+    - name: Comment
+      uses: actions/github-script@v4
+      with:
+        script: |
+          github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: 'The pot file was built from stable branch'
