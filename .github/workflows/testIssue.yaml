@@ -8,7 +8,7 @@ on:
       - edited
 
 jobs:
-  stable-branch
+  stable-branch:
     name: Check for stable branch
     runs-on: ubuntu-latest
     steps:
