@@ -35,7 +35,9 @@ jobs:
         sudo apt update
         sudo apt install gettext
     - name: Build pot
-      run: scons pot
+      run: |
+        scons
+        scons pot
     - name: Comment
       uses: actions/github-script@v4
       with:
@@ -44,6 +46,6 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: 'The pot file was built from stable branch'
+            body: 'The add-on and pot files were built from stable branch'
           })
           
