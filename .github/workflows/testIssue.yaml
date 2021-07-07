@@ -1,0 +1,30 @@
+name: Test issue
+
+on:
+  issues:
+    types: 
+      - opened
+      - reopened
+      - edited
+
+jobs:
+  stable-branch
+    name: Check for stable branch
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get data
+      id: get-data
+      uses: actions/github-script@v4
+      with:
+        script: |
+          const number = context.payload.issue.number.toString()
+          core.setOutput('number', "#" + number)
+          const title = context.payload.issue.title
+          core.setOutput('title', title)
+          const author = context.payload.issue.user.login
+          const body = context.payload.issue.body   
+          core.setOutput('body', body)
+          console.log(body)
+          console.log(author)
