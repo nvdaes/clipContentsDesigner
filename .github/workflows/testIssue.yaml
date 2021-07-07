@@ -20,7 +20,7 @@ jobs:
           const body = context.payload.issue.body   
           core.setOutput('body', body)
           const name = body.split("### Add-on name")[1].split("###")[0].trim()
-          core.setOutput('repo', "nvdaaddons" + name)
+          core.setOutput('repo', "nvdaaddons/" + name)
     - name: Checkout code
       uses: actions/checkout@v2
       with:
