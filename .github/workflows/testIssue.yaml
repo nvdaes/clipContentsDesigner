@@ -26,7 +26,7 @@ jobs:
           const author = context.payload.issue.user.login
           const body = context.payload.issue.body   
           core.setOutput('body', body)
-          const repo = body.split("### Add-on repository")[1].trim()
+          const repo = body.split("### Add-on repository")[1].split("###")[0].trim()
           core.setOutput('repo', repo)
           console.log(body)
           console.log(author)
