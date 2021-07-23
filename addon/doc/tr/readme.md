@@ -37,8 +37,8 @@ Aşağıdaki kontrolleri içerir:
 * Panoya eklenen içerikler arasında ayraç olarak kullanılacak metni yazın:
   Eklenen metnin tamamı yapıştırıldıktan sonra metin bölümlerini bulmak için
   kullanılabilecek bir ayırıcı ayarlamayı sağlar.
-* Pano verilerinden önce metin ekle: Eklenen metnin eklenip eklenmeyeceğini
-  veya başına ekleneceğini seçmek de mümkündür.
+* Metni panodaki verilerden önce ekle: Eklenen metnin sona mı yoksa başa mı
+  ekleneceğini seçmek de mümkündür.
 * Önceden onay gerektiren eylemleri seçin: Mevcut her eylem için hemen mi
   yoksa onaydan sonra mı gerçekleştirileceğini
   seçebilirsiniz. Kullanılabilir eylemler şunlardır: metin ekle, panoyu
@@ -140,9 +140,9 @@ Notlar:
 *	Eklenti ayarları NVDA konfigürasyonundan yönetilir, böylece farklı
   ayraçları kaydetmek için standart profiller kullanılabilir ve yeniden
   kurulum sırasında içe aktarma için ayarların kopyalanması gerekmez.
-*	Artık, Pano İçerik düzenleyicisi ayarları iletişim kutusundaki Klip
-  verilerinden önce metin ekle onay kutusunu kullanarak, eklenen metnin
-  eklenip eklenmeyeceğini veya başına ekleneceğini seçmek mümkündür.
+*	Artık, Pano İçerik düzenleyicisi ayarları iletişim kutusundaki metni pano
+  verilerinden önce ekle onay kutusunu kullanarak, eklenecek metnin  başa mı
+  yoksa sona mı ekleneceğini seçmek mümkündür.
 
 ## 3.0 için Değişiklikler ##
 *	MathPlayer kuruluysa, MathML nesnelerinin Braille gösterimi panoya

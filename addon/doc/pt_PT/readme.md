@@ -1,7 +1,7 @@
 # Clip Contents Designer #
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
+*	Autores: Noelia, Abdel.
+*	Compatibilidade com o NVDA: 2019.3 ou posterior
 *	Baixar a [versão estável][1]
 *	Baixar a [versão de desenvolvimento][2]
 
@@ -15,88 +15,96 @@ modo de navegação.
   Braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
 *	NVDA+windows+x: limpa o conteúdo da área de transferência.
-*	Not assigned: Copies to (or cuts from) the clipboard, with the possibility
-  of being asked for a previous confirmation.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Não atribuído: Cópias para (ou cortes de) a área de transferência, com a
+  possibilidade de ser solicitada uma confirmação prévia.
+*	Não atribuído: Mostra o texto da área de transferência como HTML no modo
+  de navegação, ou anuncia se a área de transferência está vazia ou tem
+  conteúdos que não podem ser apresentados numa mensagem navegável, por
+  exemplo, se ficheiros ou pastas foram copiados do Explorador do Windows.
+*	Não atribuído: Mostra o conteúdo da área de transferência textual como
+  texto simples no modo de navegação, ou anuncia se a área de transferência
+  está vazia ou tem conteúdo que não pode ser apresentado numa mensagem
+  navegável, por exemplo, se os ficheiros ou pastas foram copiados do
+  Explorador do Windows.
 
 
-## Clip Contents Designer settings ##
+## Configurações do gestor da área de transferência. ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings
-dialog.
+Este painel está disponível a partir do menu do NVDA, submenu Preferências,
+diálogo configurações.
 
-It contains the following controls:
+Contém os seguintes controlos:
 
-* Type the string to be used as a separator between contents added to the
-  clipboard: Allows to set a separator which can be used to find the text
-  segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text
-  will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose,
-  for each action available, if it should be performed inmediately or after
-  confirmation. Available actions are: add text, clear clipboard, emulate
-  copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can
-  select if confirmations will be requested always, just if text is
-  contained in the clipboard, or if clipboard is not empty (for example if
-  you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're
-  learning HTML markup language, you may choose Preformatted text in HTML or
-  HTML as shown in a web browser, to have an idea of how your HTML code will
-  be rendered by NVDA in a browser. The difference between preformatted and
-  conventional HTML is that the first option will preserve consecutive
-  spaces and line breaks, and the second one will compact them.  For
-  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
-  the text to clipboard, and use clipContentsDesigner add-on to show the
-  text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode:
-  Please, be aware that increasing this limit may produce issues if the
-  clipboard contains large strings of text. The default limit is 100000
-  characters.
+* Digite a cadeia a ser utilizada como separador entre os conteúdos
+  adicionados à área de transferência: Permite definir um separador que pode
+  ser utilizado para encontrar os segmentos de texto uma vez colado todo o
+  texto adicionado.
+* Acrescentar texto antes dos dados do clip: Também é possível escolher se o
+  texto adicionado será anexado ou pré-preenchido.
+* Seleccionar as acções que requerem confirmação prévia: Pode escolher, para
+  cada acção disponível, se esta deve ser realizada imediatamente ou após
+  confirmação. As acções disponíveis são: adicionar texto, limpar a área de
+  transferência, emular cópia e emular corte.
+* Solicitar confirmação antes de executar as acções seleccionadas quando:
+  Pode seleccionar se as confirmações serão sempre solicitadas, apenas se o
+  texto estiver contido na área de transferência, ou se a área de
+  transferência não estiver vazia (por exemplo, se copiou um ficheiro, não
+  um texto).
+* Formatação para mostrar o texto da área de transferência como HTML no modo
+  de navegação: Se estiver a aprender a linguagem de marcação HTML, pode
+  escolher texto pré-formatado em HTML ou HTML como mostrado num navegador
+  web, para ter uma ideia de como o seu código HTML será apresentado pelo
+  NVDA num navegador. A diferença entre HTML pré-formatado e convencional é
+  que a primeira opção irá preservar espaços consecutivos e quebras de
+  linha, e a segunda irá compactá-los.  Por exemplo, escreva algumas
+  etiquetas HTML como h1, h2, li, pre, etc., seleccione e copie o texto para
+  a área de transferência, e use o add-on clipContentsDesigner para mostrar
+  o texto numa mensagem navegável.
+* Número máximo de caracteres ao mostrar o texto da área de transferência no
+  modo de navegação: Tenha em atenção que o aumento deste limite pode
+  produzir problemas se a área de transferência contiver grandes cadeias de
+  texto. O limite por defeito é de 100000 caracteres.
 
 Notas:
 
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	As confirmações não serão solicitadas quando uma caixa de mensagens do
+  NVDA ainda estiver aberta. Nesses casos, as acções serão executadas de
+  imediato.
+*	Emular os comandos copiar e emular o corte significa que, quando estas
+  funcionalidades estão activadas, o extra assumirá o controlo de control+c
+  e control+x. Isto permitirá seleccionar se deve ser solicitada uma
+  confirmação antes de executar as acções correspondentes a estes atalhos.
 
-## Changes for 13.0 
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
-  Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all
-  commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents
-  as raw text or formatted in HTML. The Format to show the clipboard text in
-  the settings panel has being modified accordingly, to select the two
-  options available for HTML format.
+## Alterações para 13.0
+* Corrigido um problema na disposição visual do painel de configurações,
+  graças a Cyrille Bougot.
+* Documentação melhorada.
+* Adicionada uma categoria Clip Content Designer para atribuir comandos de
+  entrada a todos os comandos disponíveis para este add-on.
+* Corrigidos bugs ao utilizar cópia emulada em navegadores se o modo de foco
+  estiver activo.
+* Pode atribuir diferentes comandos para mostrar o conteúdo textual da área
+  de transferência como texto em bruto ou formatado em HTML. O Formato para
+  mostrar o texto da área de transferência no painel de definições foi
+  modificado em conformidade, para seleccionar as duas opções disponíveis
+  para o formato HTML.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice
+## Alterações para 12.0
+* Corrigidos bugs ao utilizar cópia emulada em aplicações como o LibreOffice
   Writer.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard
-  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
-  used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Alterações para 11.0
+* Agora é possível adicionar texto marcado com o cursor de revisão usando
+  comandos padrão do NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9 já não é
+  utilizado, para uma melhor integração com o novo comando NVDA+shift+f9.
+* Requer NVDA 2019.3 ou posterior.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Alterações para 10.0
+* Corrigido um erro no diálogo utilizado para mostrar o texto da área de
+  transferência, quando o seu título contém caracteres não latinos.
+* Corrigido um erro ao utilizar as funções de corte e cópia emulada com um
+  teclado árabe. Isto foi corrigido por Abdel, adicionado como um dos
+  autores do extra.
 
 ## Alterações para a versão 9.0
 
