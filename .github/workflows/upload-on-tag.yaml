@@ -36,7 +36,7 @@ jobs:
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
         git commit -a -m "Update buildVars"
-        git push
+        git push origin HEAD:main
     - name: Build add-on
       run: scons
     - name: Calculate sha256
