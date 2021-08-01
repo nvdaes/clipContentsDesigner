@@ -31,6 +31,14 @@ jobs:
           f.write(text)
           f.truncate()
       shell: python 
+    - name: Push changes
+      run: |
+        git config --global user.name github-actions
+        git config --global user.email github-actions@github.com
+        git add buildVars.py
+        git commit -m "Update buildVars"
+        git pull
+        git push
     - name: Build add-on
       run: scons
     - name: Calculate sha256
