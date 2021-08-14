@@ -20,23 +20,6 @@ jobs:
         pip install scons markdown
         sudo apt update
         sudo apt install gettext
-    - name: Add add-on version
-      run: |
-        import re
-        with open("buildVars.py", 'r+', encoding='utf-8') as f:
-          text = f.read()
-          version = "${{ github.ref }}".split("/")[-1]
-          text = re.sub(r"\"addon_version\" : .*?,", "\"addon_version\" : \"%s\",", text) % version
-          f.seek(0)
-          f.write(text)
-          f.truncate()
-      shell: python 
-    - name: Push changes
-      run: |
-        git config --global user.name github-actions
-        git config --global user.email github-actions@github.com
-        git commit -a -m "Update buildVars"
-        git push origin HEAD:main
     - name: Build add-on
       run: scons
     - name: Calculate sha256
