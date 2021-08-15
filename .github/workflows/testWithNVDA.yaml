@@ -23,25 +23,15 @@ jobs:
         pip install scons markdown
         sudo apt update
         sudo apt install gettext
-    - name: Add add-on version
-      run: |
-        import re
-        with open("buildVars.py", 'r+', encoding='utf-8') as f:
-          text = f.read()
-          text = re.sub(r"\"addon_version\" : .*?,", "\"addon_version\" : \"${{ github.sha }}\",", text)
-          f.seek(0)
-          f.write(text)
-          f.truncate()
-      shell: python 
     - name: Build add-on
-      run: scons
+      run: scons version=${{ github.sha }}
     - name: Upload add-on
       uses: actions/upload-artifact@v2
       with:
         name: nvda-addon
         path: "*.nvda-addon"
     - name: Build pot
-      run: scons pot
+      run: scons pot version=${{ github.sha }}
     - name: Upload pot
       uses: actions/upload-artifact@v2
       with:
