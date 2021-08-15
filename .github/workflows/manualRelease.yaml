@@ -40,7 +40,7 @@ jobs:
         git config --global user.email github-actions@github.com
         git commit -a -m "Update buildVars"
         git push origin HEAD:main
-        git tag -a -m "Version ${{ github.event.inputs.version }}""
+        git tag ${{ github.event.inputs.version }} -a -m "Version ${{ github.event.inputs.version }}"
         git push origin ${{ github.event.inputs.version }}
     - name: Build add-on
       run: scons
