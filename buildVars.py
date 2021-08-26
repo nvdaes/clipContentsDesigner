@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-
+import os.path
 # Build customizations
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
@@ -11,31 +11,31 @@ addon_info = {
 	# for previously unpublished addons, please follow the community guidelines at:
 	# https://bitbucket.org/nvdaaddonteam/todo/raw/master/guideLines.txt
 	# add-on Name, internal for nvda
-	"addon_name" : "clipContentsDesigner",
+	"addon_name": "clipContentsDesigner",
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on to be shown on installation and add-on information.
-	"addon_summary" : _("Clip Contents Designer"),
+	"addon_summary": _("Clip Contents Designer"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("""Add-on for managing clipboard text."""),
+	"addon_description": _("""Add-on for managing clipboard text."""),
 	# version
-	"addon_version" : "14.4-dev",
+	"addon_version": "14.4-dev",
 	# Author(s)
-	"addon_author" : u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com",
+	"addon_author": u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com",
 	# URL for the add-on documentation support
-	"addon_url" : "https://addons.nvda-project.org/addons/clipContentsDesigner",
+	"addon_url": "https://addons.nvda-project.org/addons/clipContentsDesigner",
 	# Documentation file name
-	"addon_docFileName" : "readme.html",
+	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3")
-	"addon_minimumNVDAVersion" : "2019.3",
+	"addon_minimumNVDAVersion": "2019.3",
 	# Last NVDA version supported/tested (e.g. "2018.4", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : "2021.1",
+	"addon_lastTestedNVDAVersion": "2021.1",
 	# Add-on update channel (default is stable or None)
-	"addon_updateChannel" : None,
+	"addon_updateChannel": None,
 }
 
 
-import os.path
+
 
 # Define the python files that are the sources of your add-on.
 # You can use glob expressions here, they will be expanded.
