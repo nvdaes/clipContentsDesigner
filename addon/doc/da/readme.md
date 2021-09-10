@@ -17,73 +17,75 @@ gennemsynstilstand.
 *	NVDA+Windows+x: Ryd udklipsholderen.
 *	Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
   mulighed for at blive bedt om en bekræftelse.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
-  in a browseable message, for instance if files or folders are been copied
-  from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
-  mode, or announces if clipboard is empty or has contents which can't be
-  presented in a browseable message, for instance if files or folders are
-  been copied from Windows Explorer.
+*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som
+  HTML-indhold. Du vil få besked, hvis udklipsholderen er tom eller hvis
+  indholdet ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være,
+  hvis du har kopiere filer fra Stifinder.
+*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som rå
+  tekst. Du vil få besked, hvis udklipsholderen er tom eller hvis indholdet
+  ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være, hvis du
+  har kopiere filer fra Stifinder.
 
 
-## Clip Contents Designer settings ##
+## Indstillinger for Udklipsdesigner ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings
-dialog.
+Ovennævnte kommando kan ændres fra NVDAs menu, under "Opsætning".
 
-It contains the following controls:
+Den indeholder følgende kontroller:
 
-* Type the string to be used as a separator between contents added to the
-  clipboard: Allows to set a separator which can be used to find the text
-  segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text
-  will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose,
-  for each action available, if it should be performed inmediately or after
-  confirmation. Available actions are: add text, clear clipboard, emulate
-  copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can
-  select if confirmations will be requested always, just if text is
-  contained in the clipboard, or if clipboard is not empty (for example if
-  you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're
-  learning HTML markup language, you may choose Preformatted text in HTML or
-  HTML as shown in a web browser, to have an idea of how your HTML code will
-  be rendered by NVDA in a browser. The difference between preformatted and
-  conventional HTML is that the first option will preserve consecutive
-  spaces and line breaks, and the second one will compact them.  For
-  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
-  the text to clipboard, and use clipContentsDesigner add-on to show the
-  text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode:
-  Please, be aware that increasing this limit may produce issues if the
-  clipboard contains large strings of text. The default limit is 100000
-  characters.
+* Indtast den streng, der skal bruges som separator mellem indhold tilføjet
+  til udklipsholderen: Gør det muligt at indstille en separator, som kan
+  bruges til at finde tekstsegmenterne, når hele den tilføjede tekst er
+  indsat.
+* Tilføj tekst før klipdata: Det er også muligt at vælge, om den tilføjede
+  tekst skal tilføjes foran eller bagefter tekst, der allerede befinder sig
+  ved markøren.
+* Vælg de handlinger, der kræver tidligere bekræftelse: Du kan for hver
+  tilgængelig handling vælge, om den skal udføres med det samme eller efter
+  bekræftelse. Tilgængelige handlinger er: tilføj tekst, ryd
+  udklipsholderen, emuler kopi og emuler klip.
+* Anmod om bekræftelse, før du udfører de valgte handlinger, når: Du kan
+  vælge, om der altid skal anmodes om bekræftelser, hvis der kun er tekst i
+  udklipsholderen, eller hvis udklipsholderen ikke er tom (f.eks. Hvis du
+  har kopieret en fil, ikke tekst).
+* Formatér og vis udklipsholderteksten som HTML i gennemsynstilstand: Hvis
+  du er ved at lære HTML, kan du vælge Forformateret tekst i HTML eller HTML
+  som vist i en webbrowser for at få en idé om, hvordan din HTML -kode vil
+  blive gengivet af NVDA i en browser. Forskellen mellem forformateret og
+  konventionel HTML er, at den første mulighed bevarer fortløbende mellemrum
+  og linjeskift, og den anden komprimerer dem. Skriv f.eks. Nogle HTML-tags
+  som h1, h2, li, pre osv., Vælg og kopier teksten til udklipsholderen, og
+  brug tilføjelsen til at vise teksten i en meddelelse, der kan gennemses.
+* Maksimalt antal tegn, når udklipsholdertekst vises i gennemsynstilstand:
+  Vær opmærksom på, at forhøjelse af denne grænse kan give problemer, hvis
+  udklipsholderen indeholder store tekststrenge. Standardgrænsen er 100000
+  tegn.
 
 Bemærkninger:
 
 *	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
   stadig er åben. I disse situationer vil handlingen straks udføres.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	Kommandoerne "Emulering af kopier" og "Emulering af klip" betyder, at når
+  disse funktioner er aktiveret, overtager tilføjelsen Ctrl+C og
+  Ctrl+X. Dette giver mulighed for at vælge, om der skal anmodes om en
+  bekræftelse, før de handlinger, der svarer til disse tastetryk, udføres.
 
-## Changes for 13.0 
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
-  Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all
-  commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents
-  as raw text or formatted in HTML. The Format to show the clipboard text in
-  the settings panel has being modified accordingly, to select the two
-  options available for HTML format.
+## Ændringer for 13.0
+* Rettet et problem i det visuelle layout for indstillingspanelet takket
+  være Cyrille Bougot.
+* Forbedret dokumentationen.
+* Tilføjede en Udklipsdesigner-kategori for at tildele inputbevægelser til
+  alle kommandoer, der er tilgængelige for denne tilføjelse.
+* Rettede fejl ved brug af "Emuler kopi" i browsere, hvis fokustilstand er
+  aktiv.
+* Du kan tildele forskellige kommandoer til visning af udklipsholderens
+  tekstlige indhold. Indholdet kan vises som rå tekst eller formateret i
+  HTML. Formatet til visning af udklipsholderteksten i indstillingspanelet
+  er blevet ændret i overensstemmelse hermed, så du kan vælge de to mulige
+  indstillinger.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice
+## Ændringer for 12.0
+* Rettede fejl ved brug af "Emuler kopi" i applikationer som LibreOffice
   Writer.
 
 ## Ændringer i 11.0
@@ -124,7 +126,7 @@ Bemærkninger:
   disse funktioner blive deaktiveret. Dette gendanner den sædvanlige adfærd
   for Ctrl+C og Ctrl+X.
 
-## ændringer i 6.0
+## Ændringer i 6.0
 
 *	 Tilføjede indstilling der lader dig vælge, om tilgængelige handlinger skal bekræftes, før de udføres.
 *	 Tilføjede tastetryk for emuler kopi og emuler klip, der kan tildeles under dialogen "Inputbevægelser".
