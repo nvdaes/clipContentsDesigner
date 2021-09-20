@@ -1,3 +1,5 @@
+# https://crontab.guru/crontab.5.html
+
 name: Check for l10n updates
 
 on:
@@ -6,7 +8,7 @@ on:
 
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '1 * * * *'
+    - cron:  '1 * * * *' # Once every hour (minute 1)
 
 jobs:
   update-translations:
@@ -16,10 +18,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Push changes
+      env:
+        REMOTE = https://github.com/nvdaaddons/${{ github.event.repository.name }}
       run: |
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
-        git remote add l10n https://github.com/nvdaaddons/clipContentsDesigner
+        git remote add l10n $REMOTE
         git fetch l10n
         git reset l10n/stable addon/doc addon/locale
         git commit -m "Update translations"
