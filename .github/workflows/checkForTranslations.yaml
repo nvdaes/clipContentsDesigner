@@ -2,7 +2,7 @@
 
 name: Check for l10n updates
 
-if: ${{ github.event.repository.name }} != addonTemplate:
+if: ${{ github.event.repository.name }} != addonTemplate
 
 
 on:
