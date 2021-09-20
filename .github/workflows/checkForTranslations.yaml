@@ -18,13 +18,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Push changes
-      env:
-        REPO = https://github.com/nvdaaddons/${{ github.event.repository.name }}
       run: |
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
-        git remote add l10n $REPO
-        # git remote add l10n https://github.com/nvdaaddons/clipContentsDesigner
+        git remote add l10n https://github.com/nvdaaddons/${{ github.event.repository.name }}
         git fetch l10n
         git reset l10n/stable addon/doc addon/locale
         git commit -m "Update translations"
