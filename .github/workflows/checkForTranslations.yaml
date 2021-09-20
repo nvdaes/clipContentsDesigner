@@ -2,9 +2,6 @@
 
 name: Check for l10n updates
 
-
-
-
 on:
 
   workflow_dispatch:
@@ -13,12 +10,13 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '1 * * * *' # Once every hour (minute 1)
 
-if: ${{ github.event.repository.name }} != addonTemplate
+
 
 jobs:
   update-translations:
     runs-on: windows-latest
     steps:
+    if: ${{ github.event.repository.name }} != addonTemplate
     - name: Checkout main
       uses: actions/checkout@v2
 
