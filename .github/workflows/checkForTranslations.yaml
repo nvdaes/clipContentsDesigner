@@ -19,7 +19,7 @@ jobs:
 
     - name: Push changes
       env:
-        REMOTE = https://github.com/nvdaaddons/${{ github.event.repository.name }}
+        REMOTE = "https://github.com/nvdaaddons/${{ github.event.repository.name }}"
       run: |
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
