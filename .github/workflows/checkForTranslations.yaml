@@ -11,12 +11,11 @@ on:
     - cron:  '1 * * * *' # Once every hour (minute 1)
 
 
-
 jobs:
   update-translations:
     runs-on: windows-latest
+    if: ${{ github.event.repository.name }} != 'clipContentsDesigner'
     steps:
-    if: ${{ github.event.repository.name }} != addonTemplate
     - name: Checkout main
       uses: actions/checkout@v2
 
