@@ -13,13 +13,13 @@ on:
 
   update-translations:
     runs-on: windows-latest
-    if: ${{ github.event.repository.name }} != clipContentsDesigner
     steps:
   - name: Checkout remote
       uses: actions/checkout@v2
       with:
-        repository: ${{ github.event.repository.name }}
+        repository: nvdaaddons/${{ github.event.repository.name }}
         path: remote
+        ref: stable
     - name: Disable workflow on failure        
       if: failure()
       run: gh workflow disable ${{ github.workflow }}
