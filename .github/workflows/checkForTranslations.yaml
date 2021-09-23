@@ -10,20 +10,19 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '1 * * * *' # Once every hour (minute 1)
 
-
+jobs:
   update-translations:
     runs-on: windows-latest
     steps:
-  - name: Checkout remote
+    - name: Checkout remote
       uses: actions/checkout@v2
       with:
         repository: nvdaaddons/${{ github.event.repository.name }}
-        path: remote
         ref: stable
-    - name: Disable workflow on failure        
-      if: failure()
-      run: gh workflow disable ${{ github.workflow }}
-
+        path: remote
+   - name: Disable workflow on failure
+     if: failure()
+     run: gh workflow disable ${{ github.workflow }}
     - name: Checkout main
       uses: actions/checkout@v2
 
