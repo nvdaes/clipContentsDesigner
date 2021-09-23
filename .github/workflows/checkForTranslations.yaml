@@ -20,9 +20,9 @@ jobs:
         repository: nvdaaddons/clipContentsDesigners
         ref: stable
         path: remote
-    - name: Disable workflow on failure
-      if: failure()
-      run: gh workflow disable checkForTranslations.yaml
+    - name: Check remote
+      if: ${{ failure() }}
+      run: gh workflow disable
     - name: Checkout main
       uses: actions/checkout@v2
 
