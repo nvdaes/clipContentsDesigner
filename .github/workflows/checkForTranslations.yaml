@@ -16,13 +16,13 @@ jobs:
     steps:
     - name: Checkout remote
       uses: actions/checkout@v2
-      with:
+      with: |
         repository: nvdaaddons/${{ github.event.repository.name }}
         ref: stable
         path: remote
-   - name: Disable workflow on failure
-     if: failure()
-     run: gh workflow disable ${{ github.workflow }}
+    - name: Disable workflow on failure
+      if: failure()
+      run: gh workflow disable ${{ github.workflow }}
     - name: Checkout main
       uses: actions/checkout@v2
 
