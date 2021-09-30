@@ -14,15 +14,6 @@ jobs:
   update-translations:
     runs-on: windows-latest
     steps:
-    - name: Checkout remote
-      uses: actions/checkout@v2
-      with: |
-        repository: nvdaaddons/clipContentsDesigners
-        ref: stable
-        path: remote
-    - name: Check remote
-      if: ${{ failure() }}
-      run: gh workflow disable
     - name: Checkout main
       uses: actions/checkout@v2
 
