@@ -215,8 +215,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(_("Cannot add"))
 
 	@script(
-		# Translators: message presented in input mode.
 		description=_(
+			# Translators: message presented in input mode.
 			"Retrieves the selected string or the text from the previously set start marker "
 			"up to	and including the current position of the review cursor, and adds it to the clipboard."
 		),
