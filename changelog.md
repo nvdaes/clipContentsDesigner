@@ -1,3 +1,2 @@
-## Changes for 14.2 ##
-
-* Updated translations.
+## Changes
+* The command to add text to clipboard is again presented in the input gestures dialog.
