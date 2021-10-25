@@ -1,0 +1,27 @@
+name: Add check for l10n workflow
+
+on:
+
+  fork:
+  
+if: ${{github.event.forkee.owner.login}} == 'nvdaaddons'
+
+jobs:
+  update-translations:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@v2
+
+    - name: Push changes
+      run: |
+        git config --global user.name github-actions
+        git config --global user.email github-actions@github.com
+        git remote add l10n https://github.com/nvdaaddons/${{ github.event.repository.name }}
+        git fetch l10n
+        git reset l10n/stable .github/workflows/checkForTranslations.yaml
+        git commit -m "Update translations"
+        git pull
+        git push
+        
+        
