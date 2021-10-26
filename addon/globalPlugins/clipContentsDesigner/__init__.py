@@ -80,20 +80,26 @@ def getKeyForCopy():
 	"""
 	Test the keyboard layout and return correct keyName for copying
 	"""
-	l = getKeyboardLayout()
-	if l.startswith("fa_"): return "control+ز"
-	elif l.startswith("ar_"): return "control+ؤ"
-	else: return "control+c"
+	keyboardLayout = getKeyboardLayout()
+	if keyboardLayout.startswith("fa_"):
+		return "control+ز"
+	elif keyboardLayout.startswith("ar_"):
+		return "control+ؤ"
+	else:
+		return "control+c"
 
 
 def getKeyForCut():
 	"""
 	Test the keyboard layout and return correct keyName for cutting
 	"""
-	l=getKeyboardLayout()
-	if l.startswith("fa_"): return "control+ط"
-	elif l.startswith("ar_"): return "control+ء"
-	else: return "control+x"
+	keyboardLayout = getKeyboardLayout()
+	if keyboardLayout.startswith("fa_"):
+		return "control+ط"
+	elif keyboardLayout.startswith("ar_"):
+		return "control+ء"
+	else:
+		return "control+x"
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
