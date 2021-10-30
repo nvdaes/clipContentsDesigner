@@ -20,6 +20,7 @@ from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
 from typing import Callable, Dict, List
+import locale
 
 addonHandler.initTranslation()
 _: Callable[[str], str]
@@ -63,11 +64,7 @@ def getBookmark() -> str:
 	return bookmark
 
 
-def isArabicKeyboardLayout():
-	"""
-	Test if the keyboard layout is Arabic to avoid an error reported by a user.
-	"""
-	import locale
+def getKeyboardLayout():
 	curWindow = winUser.getForegroundWindow()
 	threadID = winUser.getWindowThreadProcessID(curWindow)[1]
 	klID = winUser.getKeyboardLayout(threadID)
@@ -76,9 +73,33 @@ def isArabicKeyboardLayout():
 		localeName = locale.windows_locale[lID]
 	except KeyError:
 		localeName = None
-	if localeName and localeName.startswith("ar_"):
-		return True
-	return False
+	return localeName
+
+
+def getKeyForCopy():
+	"""
+	Test the keyboard layout and return correct keyName for copying
+	"""
+	keyboardLayout = getKeyboardLayout()
+	if keyboardLayout.startswith("fa_"):
+		return "control+ز"
+	elif keyboardLayout.startswith("ar_"):
+		return "control+ؤ"
+	else:
+		return "control+c"
+
+
+def getKeyForCut():
+	"""
+	Test the keyboard layout and return correct keyName for cutting
+	"""
+	keyboardLayout = getKeyboardLayout()
+	if keyboardLayout.startswith("fa_"):
+		return "control+ط"
+	elif keyboardLayout.startswith("ar_"):
+		return "control+ء"
+	else:
+		return "control+x"
 
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
@@ -217,8 +238,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		description=_(
 			# Translators: message presented in input mode.
-			"Retrieves the selected string or the text from the previously set start marker "
-			"up to	and including the current position of the review cursor, and adds it to the clipboard."
+			"Retrieves the selected string or the text from the previously set start marker up to "
+			"and including the current position of the review cursor, and adds it to the clipboard."
 		),
 		gesture="kb:NVDA+windows+c"
 	)
@@ -262,7 +283,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(tI, browseMode.BrowseModeDocumentTreeInterceptor) and not tI.passThrough:
 			tI.script_copyToClipboard(None)
 		else:
-			keyName = "control+c" if not isArabicKeyboardLayout() else u"control+ؤ"
+			keyName = getKeyForCopy()
 			KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCopy(self):
@@ -294,7 +315,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.copy()
 
 	def cut(self):
-		keyName = "control+x" if not isArabicKeyboardLayout() else u"control+ء"
+		keyName = getKeyForCut()
 		KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCut(self):
