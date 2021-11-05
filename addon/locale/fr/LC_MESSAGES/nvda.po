@@ -83,11 +83,11 @@ msgid "Cannot add"
 msgstr "Impossible d'ajouter"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
 "Récupérer la chaîne sélectionnée ou le texte depuis le marqueur de début "
 "précédemment défini jusqu'à et y compris la position actuelle du curseur de "

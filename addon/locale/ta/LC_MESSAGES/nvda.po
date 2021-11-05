@@ -83,11 +83,11 @@ msgid "Cannot add"
 msgstr "பின்னிணைக்க இயலாது"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
 "துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச்\n"
 " \t\tசுட்டியின் நிலை வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "

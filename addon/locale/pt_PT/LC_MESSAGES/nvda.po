@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-04-08 10:45+0100\n"
+"PO-Revision-Date: 2021-10-30 18:55+0100\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Translators: label of a dialog.
@@ -29,14 +29,16 @@ msgid ""
 "this later."
 msgstr ""
 "Este extra permite confirmar se quer copiar e cortar, substituindo os "
-"conteúdos da área de transferência, quando pressionar control+c e control+x. "
-"Isto chama-se \"emulação de copiar e cortar\", e, por padrão, trabalha "
-"apenas quando a área de transferência contém texto. Quer configurar, agora, "
-"emulação de copiar e cortar? Também poderá fazer isto mais tarde."
+"conteúdos da área de transferência,\n"
+"\t\tquando pressionar control+c e control+x. Isto chama-se \"emulação de "
+"copiar e cortar\", e, por padrão, trabalha apenas quando a área de "
+"transferência contém texto.\n"
+"\t\tQuer configurar, agora, emulação de copiar e cortar? Também poderá fazer "
+"isto mais tarde."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Configurar emulação de copiar e cortar."
+msgstr "Configurar emulação de copiar e cortar"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
@@ -56,62 +58,62 @@ msgstr "Mostra as configurações do gestor da área de transferência."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
-msgstr "Área de transferência limpa!"
+msgstr "Área de transferência limpa"
 
 #. Translators: message presented when the clipboard content cannot be deleted.
 msgid "Clipboard not cleared"
-msgstr "Área de transferência não limpa!"
+msgstr "Área de transferência não limpa"
 
 #. Translators: message presented when it's not possible to add text, since no text has been selected.
 msgid "No text to add"
-msgstr "Sem texto para adicionar."
+msgstr "Sem texto para adicionar"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
-msgstr "Por favor, confirme se quer adicionar texto à área de transferência."
+msgstr "Por favor, confirme se quer adicionar texto à área de transferência"
 
 #. Translators: Title of a dialog.
 msgid "Adding text to clipboard"
-msgstr "A adicionar texto à área de transferência..."
+msgstr "A adicionar texto à área de transferência"
 
 #. Translators: message presented when the text has been added to the clipboard.
 msgid "Added"
-msgstr "Adicionado."
+msgstr "Adicionado"
 
 #. Translators: message presented when the text cannot be added to the clipboard.
 msgid "Cannot add"
-msgstr "Não é possível adicionar."
+msgstr "Não é possível adicionar"
 
 #. Translators: message presented in input mode.
+#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
-"Recupera a sequência seleccionada ou o texto a partir do marcador de início "
-"previamente definido até à posição do cursor de revisão e adiciona-o à área "
-"de transferência."
+"Recupera a sequência seleccionada ou o texto a partir do\n"
+"\t\tmarcador de início previamente definido até à posição do cursor de "
+"revisão e adiciona-o à área de transferência."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Por favor, confirme se quer limpar a área de transferência."
+msgstr "Por favor, confirme se quer limpar a área de transferência"
 
 #. Translators: Title of a dialog.
 msgid "Clearing clipboard"
-msgstr "A limpar a área de transferência."
+msgstr "A limpar a área de transferência"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Apaga o texto adicionado e o conteúdo da área de transferência"
+msgstr "Apaga o texto adicionado e o conteúdo da área de transferência."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "Por favor, confirme se quer copiar para a área de transferência."
+msgstr "Por favor, confirme se quer copiar para a área de transferência"
 
 #. Translators: Title of a dialog.
 msgid "Copying to clipboard"
-msgstr "A copiar para a área de transferência..."
+msgstr "A copiar para a área de transferência"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -119,15 +121,15 @@ msgid ""
 "confirmation"
 msgstr ""
 "Copia para a área de transferência, com a possibilidade de lhe ser pedida "
-"uma confirmação."
+"uma confirmação"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Por favor, confirme se quer cortar da área de transferência."
+msgstr "Por favor, confirme se quer cortar da área de transferência"
 
 #. Translators: Title of a dialog.
 msgid "Cutting from clipboard"
-msgstr "A cortar da área de transferência..."
+msgstr "A cortar da área de transferência"
 
 #. Translators: message presented in input mode.
 msgid ""
@@ -135,7 +137,7 @@ msgid ""
 "confirmation"
 msgstr ""
 "Retira da área de transferência, com a possibilidade de lhe ser pedida uma "
-"confirmação."
+"confirmação"
 
 #. Translators: message presented in input mode.
 msgid "Shows the clipboard text as HTML in browse mode"
@@ -171,7 +173,7 @@ msgstr ""
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
-msgstr "&adicionar texto antes dos dados da área de transferência."
+msgstr "&adicionar texto antes dos dados da área de transferência"
 
 #. Translators: label of a dialog.
 msgid "Sele&ct the actions which require previous confirmation"
@@ -191,7 +193,7 @@ msgstr "Confirmar emulação de cópia"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate cut"
-msgstr "Confirmar emulação de corte."
+msgstr "Confirmar emulação de corte"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"
@@ -226,12 +228,12 @@ msgstr ""
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
-msgstr "Gestor de conteúdos da área de transferência."
+msgstr "Gestor de conteúdos da área de transferência"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
-msgstr "Extra para gerir o texto da área de transferência"
+msgstr "Extra para gerir o texto da área de transferência."
 
 #~ msgid "Start marker set"
 #~ msgstr "Definir marcador de início"
