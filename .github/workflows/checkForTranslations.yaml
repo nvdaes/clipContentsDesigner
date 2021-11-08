@@ -20,7 +20,9 @@ jobs:
       id: getRepoName
       uses: actions/github-script@v5
       with:
-        script: return $GITHUB_REPOSITORY.split("/")[1]
+        script: |
+          const repo = $GITHUB_REPOSITORY
+          return repo.split("/")[1]
         result-encoding: string
     - name: Push changes
       run: |
