@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-02-11 18:05+0100\n"
+"PO-Revision-Date: 2021-11-05 08:48+0100\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -82,15 +82,14 @@ msgid "Cannot add"
 msgstr "No se puede añadir"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
 "Recupera la cadena seleccionada o el texto desde la marca anterior de inicio "
-"hasta\n"
-"\t\tla posición actual del cursor de revisión, y lo añade al portapapeles."
+"hasta la posición actual del cursor de revisión incluida, y la añade al "
+"portapapeles."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
