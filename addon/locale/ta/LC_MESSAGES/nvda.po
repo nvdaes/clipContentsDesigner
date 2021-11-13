@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-03-06 10:34+0530\n"
+"PO-Revision-Date: 2021-11-05 13:39+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -83,14 +83,13 @@ msgid "Cannot add"
 msgstr "பின்னிணைக்க இயலாது"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
-"துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச்\n"
-" \t\tசுட்டியின் நிலை வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
+"முன்னதாக துவக்கக் குறியிடப்பட்ட இடத்திலிருந்து தற்போதைய சீராய்வுச் சுட்டியின் நிலை வரை, "
+"சரம், அல்லது உரையை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"

@@ -1,4 +1,4 @@
-# Designer für die Zwischenablage #
+# Zwischenablagenverwalter #
 
 *	Autoren: Noelia, Abdel.
 *	NVDA-Kompatibilität: 2019.3 oder neuer
@@ -12,28 +12,27 @@ gelöscht werden.
 
 ## Tastenkombinationen ##
 *	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
-  Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem Lese-Cursor
-  markiert wurde, in die Zwischenablage hinzu.
-*	NVDA+windows+X: Löscht die Zwischenablage.
+  Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem NVDA-Cursor
+  markiert wurde, zur Zwischenablage hinzu.
+*	NVDA+Windows+X: Leert die Zwischenablage.
 *	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
   der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
 *	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
-  an oder gibt an, ob die Zwischenablage leer ist oder Inhalte enthält, die
-  nicht in einer durchsuchbaren Nachricht angezeigt werden können,
-  z. B. wenn Dateien oder Ordner aus dem Windows Explorer kopiert wurden.
-*	Nicht zugewiesen: Zeigt den Inhalt der Text-Zwischenablage im Lesemodus
-  als einfachen Text an oder gibt an, ob die Zwischenablage leer ist oder
-  Inhalte enthält, die nicht in einer durchsuchbaren Nachricht angezeigt
-  werden können, z. B. wenn Dateien oder Ordner aus dem Windows Explorer
+  an oder benachrichtigt, wenn die Zwischenablage leer ist oder Inhalte
+  enthält, die nicht in einer darstellbaren Nachricht angezeigt werden
+  können, z. B. wenn Dateien oder Ordner im Windows Explorer kopiert wurden.
+*	Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
+  als einfachen Text an oder gibt aus, ob die Zwischenablage leer ist oder
+  Inhalte enthält, die nicht in einer darstellbaren Nachricht angezeigt
+  werden können, z. B. wenn Dateien oder Ordner im dem Windows Explorer
   kopiert wurden.
 
 
-## Einstellungen für Clip Content Designer ##
+## Einstellungen für den Zwischenablagenverwalter ##
 
-Der obige Befehl kann im NVDA-Menü unter Einstellungen -> Tastenbefehle in
-der Kategorie "Konfiguration" geändert werden.
+Diese Kategorie finden Sie im NVDA_Menü, unter Optionen und Einstellungen.
 
-Es enthält die folgenden Tastenkombinationen:
+Folgende Einstellungen sind verfügbar:
 
 * Geben Sie die Zeichenfolge ein, die als Trennzeichen zwischen Inhalten
   verwendet werden soll, die der Zwischenablage hinzugefügt wurden:
@@ -45,24 +44,24 @@ Es enthält die folgenden Tastenkombinationen:
 * Wählen Sie die Aktionen aus, für die eine vorherige Bestätigung
   erforderlich ist: Sie können für jede verfügbare Aktion auswählen, ob sie
   sofort oder nach der Bestätigung ausgeführt werden soll. Verfügbare
-  Aktionen sind: Text hinzufügen, Zwischenablage löschen, Kopie emulieren
-  und Schnitt emulieren.
+  Aktionen sind: Text hinzufügen, Zwischenablage löschen, Kopieren emulieren
+  und Ausschneiden emulieren.
 * Fordern Sie eine Bestätigung an, bevor Sie die ausgewählten Aktionen
-  ausführen, wenn: Sie auswählen können, ob immer Bestätigungen angefordert
+  ausführen, wenn: Sie können wählen, ob immer Bestätigungen angefordert
   werden sollen, nur wenn Text in der Zwischenablage enthalten ist oder wenn
-  die Zwischenablage nicht leer ist (z. B. wenn Sie eine Datei kopiert
-  haben, keinen Text).
-* Formatieren, um den Text in der Zwischenablage im Suchmodus als HTML
-  anzuzeigen: Wenn Sie die HTML-Auszeichnungssprache lernen, können Sie
-  vorformatierten Text in HTML oder HTML auswählen, wie in einem Webbrowser
-  angezeigt, um eine Vorstellung davon zu erhalten, wie Ihr HTML-Code von
-  gerendert wird NVDA in einem Browser. Der Unterschied zwischen
+  die Zwischenablage nicht leer ist z. B. wenn Sie eine Datei (kein Text)
+  kopiert haben.
+* Legen Sie fest, wie der Text in der Zwischenablage als HTML im Lesemodus
+  dargestellt wird: Wenn Sie die HTML-Auszeichnungssprache lernen, können
+  Sie vorformatierten Text in HTML oder HTML wie im Internetbrowser
+  auswählen, damit Sie eine Vorstellung bekommen, wie Ihr HTML-Code in einem
+  Internetbrowser von NVDA dargestellt wird. Der Unterschied zwischen
   vorformatiertem und herkömmlichem HTML besteht darin, dass bei der ersten
   Option aufeinanderfolgende Leerzeichen und Zeilenumbrüche beibehalten und
   bei der zweiten Option komprimiert werden. Schreiben Sie beispielsweise
-  einige HTML-Tags wie h1, h2, li, pre usw., wählen Sie den Text aus und
-  kopieren Sie ihn in die Zwischenablage. Verwenden Sie die Erweiterung, um
-  den Text in einer durchsuchbaren Nachricht anzuzeigen.
+  einige HTML-Tags wie h1, h2, li, pre etc.., wählen Sie den Text aus und
+  kopieren Sie diesen in die Zwischenablage. Verwenden Sie die Erweiterung,
+  um den Text in einer Fenster anzuzeigen.
 * Maximale Anzahl von Zeichen beim Anzeigen von Text in der Zwischenablage
   im Lesemodus: Beachten Sie, dass das Erhöhen dieser Grenze zu Problemen
   führen kann, wenn die Zwischenablage große Textzeichenfolgen enthält. Das
@@ -71,19 +70,18 @@ Es enthält die folgenden Tastenkombinationen:
 Anmerkungen:
 
 *	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
-  noch geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
-*	Kopierbefehle emulieren und Schnittbefehle emulieren bedeutet, dass die
-  Erweiterung bei Aktivierung dieser Funktionen die Kontrolle über Strg+C
-  und Strg+X übernimmt. Auf diese Weise können Sie auswählen, ob eine
-  Bestätigung angefordert werden soll, bevor Sie die Tastenkombinationen
-  verwenden.
+  geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
+*	Emulieren von kopieren und ausschneiden bedeutet, dass die Erweiterung bei
+  Aktivierung dieser Funktionen die Kontrolle über Strg+C und Strg+X
+  übernimmt. Auf diese Weise können Sie auswählen, ob eine Bestätigung
+  angefordert werden soll, bevor Sie die Tastenkombinationen verwenden.
 
 ## Änderungen in 13.0 
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
   Einstellungsfelds behoben.
 * Verbesserte Dokumentation.
-* Es wurde eine Kategorie "Clip Contents Designer" hinzugefügt, um allen für
-  diese Erweiterung verfügbaren Tastenbefehlen zuzuweisen.
+* Es wurde eine Kategorie "Zwischenablagenverwalter" hinzugefügt, damit
+  allen verfügbaren Befehlen Tastenkombinationen zugewiesen werden können.
 * Fehler bei der Verwendung der Emulationskopie im Lesemodus behoben, wenn
   der Fokusmodus aktiv ist.
 * Sie können verschiedene Gesten zuweisen, um den Textinhalt der
@@ -161,7 +159,7 @@ Anmerkungen:
 
 ## Änderungen in 3.0 ##
 *	Braille-Darstellung von MathML-Objekten können bei installiertem
-  MathPlayer zur Zwischenablage kopiert oder ausgeschnitten werden.
+  MathPlayer zur Zwischenablage hinzugefügt werden.
 *	Wenn kein Trennzeichen gesetzt ist, wird nur eine einzige Linie zwischen
   den angehängten Textsegmenten platziert.
 *	Sie können ein Tastenkürzel zum Öffnen des Einstellungsdialogs zuweisen.
