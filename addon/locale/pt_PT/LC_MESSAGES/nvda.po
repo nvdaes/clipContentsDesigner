@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-10-30 18:55+0100\n"
+"PO-Revision-Date: 2021-11-18 23:00+0000\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -85,15 +85,14 @@ msgid "Cannot add"
 msgstr "Não é possível adicionar"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
-"Recupera a sequência seleccionada ou o texto a partir do\n"
-"\t\tmarcador de início previamente definido até à posição do cursor de "
-"revisão e adiciona-o à área de transferência."
+"Recupera a sequência seleccionada ou o texto a partir do marcador de início "
+"previamente definido até à posição do cursor de revisão e adiciona-o à área "
+"de transferência."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
