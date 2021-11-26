@@ -76,6 +76,15 @@ Anmerkungen:
   übernimmt. Auf diese Weise können Sie auswählen, ob eine Bestätigung
   angefordert werden soll, bevor Sie die Tastenkombinationen verwenden.
 
+## Änderungen in 15.0
+* Der Befehl zum Hinzufügen von Text in die Zwischenablage wird wieder im
+  Dialogfeld für die Tastenbefehle angezeigt.
+* Tastenkombinationen zum Kopieren und Ausschneiden mit persischer Tastatur
+  behoben, dank Mohammad Hosein Ghezelsofla.
+
+## Änderungen in 14.0
+* Kompatibel mit NVDA 2021.1.
+
 ## Änderungen in 13.0 
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
   Einstellungsfelds behoben.

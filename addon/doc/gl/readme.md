@@ -31,7 +31,7 @@ do portapapeis tamén pode limparse e amosarse en modo exploración.
 Este panel está dispoñible dende o menú de NVDA, submenú Preferencias,
 diálogo Opcións.
 
-contén os seguintes controis:
+Contén os seguintes controis:
 
 * Escribe a cadea de texto que se utilizará como separador entre contido
   engadido ao portapapeis: Permite establecer un separador que se pode
@@ -70,6 +70,15 @@ Notas:
   características estean habilitadas, o complemento controlará control+c e
   control+x. Isto permitirá seleccionar se se debería pedir unha
   confirmación antes de realizar as accións de ditos atallos.
+
+## Cambios para 15.0
+* A orde para engadir texto ó portapapeis aparece de novo no diálogo xestos
+  de entrada.
+* Arranxadas as ordes para copiar e cortar en teclado persa, grazas a
+  Mohammadhosein Ghezelsofla.
+
+## Cambios para 14.0
+* Compatible con NVDA 2021.1.
 
 ## Cambios para 13.0 
 * Arranxado un problema no deseño visual do panel de opcións, grazas a

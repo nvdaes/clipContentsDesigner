@@ -77,6 +77,15 @@ Notes :
   confirmation doit être demandée avant d'effectuer les actions
   correspondant à ces frappes.
 
+## Changes for 15.0
+* The command to add text to clipboard is again presented in the input
+  gestures dialog.
+* Fixed gestures to copy and cut with Persian keyboard, thanks to
+  Mohammadhosein Ghezelsofla.
+
+## Changes for 14.0
+* Compatible with NVDA 2021.1.
+
 ## Changements pour la version 13.0
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
