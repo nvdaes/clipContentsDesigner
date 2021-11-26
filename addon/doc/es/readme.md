@@ -71,6 +71,15 @@ Notas:
   control+x. Esto permitirá elegir si se debería solicitar una confirmación
   antes de realizar las acciones correspondientes a estos atajos de teclado.
 
+## Cambios para 15.0
+* La orden para añadir texto al portapapeles se presenta de nuevo en el
+  diálogo Gestos de entrada.
+* Se corrigen los gestos de copiar y cortar en el teclado persa. Gracias a
+  Mohammadhosein Ghezelsofla.
+
+## Cambios para 14.0
+* Compatible con NVDA 2021.1.
+
 ## Cambios para 13.0 
 * Se ha corregido un problema en la disposición visual del panel de
   opciones, gracias a Cyrille Bougot.

@@ -71,6 +71,15 @@ Notlar:
   gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin
   verecektir.
 
+## 15.0 için Değişiklikler
+* Panoya metin ekleme komutu, girdi hareketleri iletişim kutusuna tekrar
+  eklendi.
+* Mohammadhosein Ghezelsofla sayesinde Farsça klavyeyle kopyalama ve kesme
+  hareketleri düzeltildi.
+
+## 14.0 için değişiklikler
+* NVDA 2021.1 ile uyumlu.
+
 ## 13.0 için Değişiklikler
 * Ayarlar panelinin görsel düzenindeki bir sorun düzeltildi, teşekkürler
   Cyrille Bougot.

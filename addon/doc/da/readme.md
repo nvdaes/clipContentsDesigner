@@ -70,6 +70,15 @@ Bemærkninger:
   Ctrl+X. Dette giver mulighed for at vælge, om der skal anmodes om en
   bekræftelse, før de handlinger, der svarer til disse tastetryk, udføres.
 
+## Changes for 15.0
+* The command to add text to clipboard is again presented in the input
+  gestures dialog.
+* Fixed gestures to copy and cut with Persian keyboard, thanks to
+  Mohammadhosein Ghezelsofla.
+
+## Changes for 14.0
+* Compatible with NVDA 2021.1.
+
 ## Ændringer for 13.0
 * Rettet et problem i det visuelle layout for indstillingspanelet takket
   være Cyrille Bougot.

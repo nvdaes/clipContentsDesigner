@@ -67,6 +67,15 @@ Huomautuksia:
   ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
   valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
+## Muutokset versiossa 15.0
+* Tekstiä leikepöydälle lisäävä komento näytetään taas
+  Syötekomennot-valintaikkunassa.
+* Korjattu kopioinnin ja leikkaamisen syötekomennot persiankielisellä
+  näppäimistöllä. Kiitokset Mohammadhosein Ghezelsofla'lle.
+
+## Muutokset versiossa 14.0
+* Yhteensopiva NVDA 2021.1:n kanssa.
+
 ## Muutokset versiossa 13.0 
 * Korjattu ongelma asetuspaneelin visuaalisessa ulkoasussa; kiitos Cyrille
   Bougotille.

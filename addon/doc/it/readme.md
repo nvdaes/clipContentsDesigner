@@ -73,6 +73,15 @@ Note:
   prenderà il controllo dei comandi control+c e control+x. Ciò consentirà di
   scegliere se chiedere conferma prima di eseguire tali comandi.
 
+## Changes for 15.0
+* The command to add text to clipboard is again presented in the input
+  gestures dialog.
+* Fixed gestures to copy and cut with Persian keyboard, thanks to
+  Mohammadhosein Ghezelsofla.
+
+## Changes for 14.0
+* Compatible with NVDA 2021.1.
+
 ## Novità nella versione 13.0 
 * Risolto un problema nella grafica della finestra Impostazioni. Grazie a
   Cyrille Bougot.
