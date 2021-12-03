@@ -52,7 +52,7 @@ Il contient les contrôles suivants :
   pas du texte).
 * Format pour afficher le texte du presse-papiers au format HTML en mode
   navigation : si vous apprenez le langage de balisage HTML, vous pouvez
-  choisir le texte préformaté en HTML ou HTML comme indiqué dans un
+  choisir le texte préformaté en HTML ou HTML comme affiché dans un
   navigateur Web, pour avoir une idée de la façon dont votre code HTML sera
   rendu par NVDA dans un navigateur. La différence entre le HTML préformaté
   et le HTML conventionnel est que la première option conservera les espaces
@@ -77,14 +77,14 @@ Notes :
   confirmation doit être demandée avant d'effectuer les actions
   correspondant à ces frappes.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input
-  gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to
-  Mohammadhosein Ghezelsofla.
+## Changements pour la version 15.0
+* La commande pour ajouter du texte au presse-papiers est à nouveau
+  présentée dans la boîte de dialogue des gestes de commande.
+* Correction des gestes pour copier et couper avec le clavier persan, grâce
+  à Mohammadhosein Ghezelsofla.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+## Changements pour la version 14.0
+* Compatible avec NVDA 2021.1.
 
 ## Changements pour la version 13.0
 * Correction d'un problème dans la disposition visuelle du panneau des
@@ -116,7 +116,7 @@ Notes :
   presse-papiers, quand son titre contient des caractères non latins.
 * Correction d'un bogue lors de l'utilisation des fonctionnalités
   d'émulation de copier ou couper avec une configuration clavier Arabe. Ceci
-  a été corrigé par Abdel, ajouté comme auteur de l'extention.
+  a été corrigé par Abdel, ajouté comme auteur de l'extension.
 
 ## Changements pour la version 9.0
 
