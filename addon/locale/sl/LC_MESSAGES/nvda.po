@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-15 12:42+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2021-12-13 19:01+0100\n"
+"Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -43,12 +43,11 @@ msgstr "Predoblikovano besedilo v HTML"
 
 #. Translators: label of a dialog.
 msgid "HTML as shown in a web browser"
-msgstr "HTML kot se prikaže v spletnem brskalniku"
+msgstr "HTML, kot se prikaže v spletnem brskalniku"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "Surovo besedilo"
+msgstr "Golo besedilo"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -86,12 +85,12 @@ msgstr "Ni mogoče dodati"
 #, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
-"Izbran niz ali vsebino od predhodno postavljene točke začetka do vključno "
-"trenutnega položaja pregledne utripalke obdela in doda v odložišče."
+"Izbran niz ali vsebino od predhodno postavljene točke začetka do\n"
+"\t\tvključno trenutnega položaja pregledne utripalke obdela in doda v "
+"odložišče."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -134,9 +133,8 @@ msgid ""
 msgstr "Izreže iz odložišča z možnostjo zaprosila po predhodni odobritvi"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
+msgstr "Prikaže besedilo iz odložišča kot HTML v brskalniškem delovanju"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -152,9 +150,10 @@ msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Besedilo v odložišču ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Pokaže besedilo iz odložišča v brskalniškem delovanju"
+msgstr ""
+"Prikaže besedilno vsebino odložišča kot golo besedilo v brskalniškem "
+"delovanju"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -203,9 +202,9 @@ msgid "If the clipboard is not empty"
 msgstr "Če odložišče ni prazno"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Oblika prikaza besedila iz odložišča v brskalniškem delovanju:"
+msgstr ""
+"&Oblika za prikaz besedila v odložišču kot HTML v brskalniškem delovanju:"
 
 #. Translators: label of a dialog.
 msgid ""
