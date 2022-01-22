@@ -23,7 +23,7 @@ addon_info = {
 	# Author(s)
 	"addon_author": u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com",
 	# URL for the add-on documentation support
-	"addon_url": "https://addons.nvda-project.org/addons/clipContentsDesigner",
+	"addon_url": "https://github.com/nvdaes/clipContentsDesigner",
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3")
