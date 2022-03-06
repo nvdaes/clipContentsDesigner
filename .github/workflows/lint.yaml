@@ -11,5 +11,5 @@ on:
 jobs:
 
   lint:
-    uses: nvdaes/nvdaAddonWorkflows/.github/workflows/lint.yaml
+    uses: nvdaes/nvdaAddonWorkflows/.github/workflows/lint.yaml@main
     
