@@ -4,7 +4,7 @@ name: Check for l10n updates
 
 on:
 
-  workflow_dispatch:
+  push:
 
   schedule:
     # * is a special character in YAML so you have to quote this string
@@ -12,25 +12,4 @@ on:
 
 jobs:
   update-translations:
-    runs-on: windows-latest
-    steps:
-    - name: Checkout main
-      uses: actions/checkout@v2
-    - name: Get repository name
-      id: getRepoName
-      uses: actions/github-script@v5
-      with:
-        script: return context.repo.repo
-        result-encoding: string
-    - name: Push changes
-      run: |
-        git config --global user.name github-actions
-        git config --global user.email github-actions@github.com
-        git remote add l10n https://github.com/nvdaaddons/${{ steps.getRepoName.outputs.result }}
-        git fetch l10n
-        git reset l10n/stable addon/doc addon/locale
-        git commit -m "Update translations"
-        git pull
-        git push
-        
-        
+    uses: nvdaes/nvdaAddonWorkflows/.github/workflows/checkForTranslations.yaml@main
