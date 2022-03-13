@@ -4,8 +4,6 @@ name: Check for l10n updates
 
 on:
 
-  push:
-
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '1 * * * *' # Once every hour (minute 1)

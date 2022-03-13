@@ -2,8 +2,6 @@ name: Build and test NVDA add-on
 
 on:
   pull_request:
-  push:
-
 
 jobs:
 
