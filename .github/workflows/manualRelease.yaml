@@ -58,4 +58,4 @@ jobs:
           *.nvda-addon
           sha256.txt
         generate_release_notes: true
-        prerelease: ${{ github.event.inputs.prerelease }} == true
+        prerelease: ${{ github.event.inputs.prerelease }}
