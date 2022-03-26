@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
-# Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2022 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import addonHandler
@@ -152,14 +152,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		mathMl = mathPres.getMathMlFromTextInfo(api.getReviewPosition())
 		if not mathMl:
 			obj = api.getNavigatorObject()
-			if obj.role == controlTypes.ROLE_MATH:
+			if obj.role == controlTypes.Role.MATH:
 				try:
 					mathMl = obj.mathMl
 				except (NotImplementedError, LookupError):
 					mathMl = None
 		if not mathMl:
 			return
-		mathPres.ensureInit()
 		if mathPres.brailleProvider:
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
@@ -245,7 +244,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_add(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.isInMessageBox
+			config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.message.isModalMessageBoxActive()
 			and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmAdd)
@@ -271,7 +270,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_clear(self, gesture):
 		if (
 			config.conf["clipContentsDesigner"]["confirmToClear"]
-			and not gui.isInMessageBox and self.requiredFormatInClip()
+			and not gui.message.isModalMessageBoxActive()
 		):
 			wx.CallAfter(self.confirmClear)
 		else:
@@ -308,7 +307,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_copy(self, gesture):
 		if (
 			config.conf["clipContentsDesigner"]["confirmToCopy"]
-			and not gui.isInMessageBox and self.requiredFormatInClip()
+			and not gui.message.isModalMessageBoxActive()
+			and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCopy)
 		else:
@@ -336,7 +336,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_cut(self, gesture):
 		if (
 			config.conf["clipContentsDesigner"]["confirmToCut"]
-			and not gui.isInMessageBox and self.requiredFormatInClip()
+			and not gui.message.isModalMessageBoxActive()
+			and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCut)
 		else:
