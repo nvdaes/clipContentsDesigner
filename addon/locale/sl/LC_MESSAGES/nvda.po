@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-12-13 19:01+0100\n"
+"PO-Revision-Date: 2022-04-11 13:07+0100\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -82,15 +82,13 @@ msgid "Cannot add"
 msgstr "Ni mogoče dodati"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
-"Izbran niz ali vsebino od predhodno postavljene točke začetka do\n"
-"\t\tvključno trenutnega položaja pregledne utripalke obdela in doda v "
-"odložišče."
+"Izbran niz ali vsebino od predhodno postavljene točke začetka do vključno "
+"trenutnega položaja pregledne utripalke obdela in doda v odložišče."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -145,7 +143,6 @@ msgid "Clipboard is empty"
 msgstr "Odložišče je prazno"
 
 #. Translators: title of a browseable message.
-#, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Besedilo v odložišču ({max}/{current} - {formatForTitle})"
 
