@@ -1,5 +1,6 @@
 name: l10n
 
+on:
   workflow_dispatch:
 
   schedule:
