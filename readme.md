@@ -33,7 +33,7 @@ Notes:
 * Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
 
 ## Changes for 16.0
-* Compatible with NVDA 2022.1 or later.
+* Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input gestures dialog.
