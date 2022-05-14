@@ -1,8 +1,7 @@
 # Clip Contents Designer #
 *	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2022.1 or later
-*	Download [stable version][1]
-*	Download [development version][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
 The clipboard content can also be cleared an shown in browse mode.
