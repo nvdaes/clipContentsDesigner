@@ -1,9 +1,8 @@
 # Udklipsdesigner (Clip Contents Designer) #
 
 *	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
-*	NVDA-kompatibilitet: 2019.3 eller nyere
-*	Download [stabil version][1]
-*	Download [udviklingsversion][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
 kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
@@ -11,17 +10,18 @@ indsætning. Udklipsholderens indhold kan også ryddes og vises i
 gennemsynstilstand.
 
 ## Tastaturkommandoer ##
-*	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
+
+* NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
   MathML-objekter, eller den tekststreng, som er blevet markeret med
   læsemarkøren, til udklipsholderen.
-*	NVDA+Windows+x: Ryd udklipsholderen.
-*	Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
+* NVDA+Windows+x: Ryd udklipsholderen.
+* Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
   mulighed for at blive bedt om en bekræftelse.
-*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som
+* Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som
   HTML-indhold. Du vil få besked, hvis udklipsholderen er tom eller hvis
   indholdet ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være,
   hvis du har kopiere filer fra Stifinder.
-*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som rå
+* Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som rå
   tekst. Du vil få besked, hvis udklipsholderen er tom eller hvis indholdet
   ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være, hvis du
   har kopiere filer fra Stifinder.
@@ -63,12 +63,15 @@ Den indeholder følgende kontroller:
 
 Bemærkninger:
 
-*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
+* Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
   stadig er åben. I disse situationer vil handlingen straks udføres.
-*	Kommandoerne "Emulering af kopier" og "Emulering af klip" betyder, at når
-  disse funktioner er aktiveret, overtager tilføjelsen Ctrl+C og
-  Ctrl+X. Dette giver mulighed for at vælge, om der skal anmodes om en
-  bekræftelse, før de handlinger, der svarer til disse tastetryk, udføres.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

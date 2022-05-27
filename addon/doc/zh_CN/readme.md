@@ -1,21 +1,21 @@
 # 剪辑内容设计器 #
 
 *	作者: Noelia, Abdel。
-*	NVDA兼容版本: 2019.3或更高
-*	下载 [稳定版][1]
-*	下载 [开发板][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 此插件用于向剪贴板添加文本，当您希望将文本部分连接在一起以准备粘贴时，这可能很有用。剪贴板内容也可以清除或者用浏览模式逐字逐句查看。
 
 ## 键盘快捷键 ##
-*	NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
-*	NVDA+windows+x: 清除剪贴板内容.
-*	未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+
+* NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
+* NVDA+windows+x: 清除剪贴板内容.
+* 未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -57,11 +57,14 @@ It contains the following controls:
 
 注意:
 
-*	当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作。
-*	Emulate copy and emulate cut commands mean that, when these features are
+* 当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作。
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

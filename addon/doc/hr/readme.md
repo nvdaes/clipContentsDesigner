@@ -1,9 +1,8 @@
 # Upravljanje sadržajem međuspremnika (Clip Contents Designer) #
 
 *	Authors: Noelia, Abdel.
-*	NVDA kompatibilnost: 2019.3 i novija
-*	Preuzmi [stabilnu verziju][1]
-*	Preuzmi [razvojnu verziju][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
@@ -11,17 +10,18 @@ lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
 za čitanje.
 
 ## Tipkovnički prečaci ##
-*	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
+
+* NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
   unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
   pomoću preglednog kursora.
-*	NVDA+windows+x: Obriši sadržaj međuspremnika.
-*	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
+* NVDA+windows+x: Obriši sadržaj međuspremnika.
+* Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
-*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
+* Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
   najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
   predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
   kopirane iz Windows Explorera.
-*	Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
+* Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
   tekst u modusu pregledavanja ili najavljuje prazno stanje međuspremnika
   ili sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na
   primjer ako su datoteke ili mape kopirane iz Windows Explorer.
@@ -63,12 +63,15 @@ It contains the following controls:
 
 Napomene:
 
-*	Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
+* Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
   prikazuje. U tim će se slučajevima radnje izvršavati odmah.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

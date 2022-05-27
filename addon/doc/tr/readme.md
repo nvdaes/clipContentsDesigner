@@ -1,27 +1,27 @@
 # Pano içerik düzenleyicisi #
 
 *	Yazarlar: Noelia, Abdel.
-*	NVDA uyumluluğu: 2019.3 ve üstü
-*	İndir [Kararlı Sürüm][1]
-*	İndir [Geliştirme sürümü][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Bu eklenti, panoya metin eklemek için kullanılır. BU, farklı metinleri
 birleştirmek ve yapıştırmak istediğinizde yararlı olabilir. Ayrıca Pano
 içeriği temizlenebilir ve tarama kipi modunda gösterilebilir.
 
 ## Klavye komutları ##
-*	NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode
+
+* NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode
   braille karakterlerini veya inceleme imleciyle işaretlenmiş dizeyi panoya
   ekler.
-*	NVDA+windows+x: Pano içeriğini temizle.NVDA+windows+x: Pano içeriğini
+* NVDA+windows+x: Pano içeriğini temizle.NVDA+windows+x: Pano içeriğini
   siler.
-*	Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme
+* Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme
   olasılığı ile.
-*	Atanmamış: Pano metnini HTML olarak Tarama kipi  modunda gösterir veya
+* Atanmamış: Pano metnini HTML olarak Tarama kipi  modunda gösterir veya
   panonun boş olup olmadığını veya örneğin dosyalar veya klasörler Windows
   Gezgini'nden kopyalanmışsa, bir iletide gösterilemeyen içeriğe sahip olup
   olmadığını bildir.
-*	Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak
+* Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak
   gösterir veya panonun boş olup olmadığını veya örneğin dosyalar veya
   klasörler Windows Gezgini'nden kopyalanmışsa, göz atılabilir bir iletide
   gösterilemeyen içeriğe sahip olup olmadığını bildir.
@@ -62,14 +62,16 @@ Aşağıdaki kontrolleri içerir:
 
 Notlar:
 
-*	Eğer NVDA'nın bir mesaj kutusu hala açıksa bir işlem için onay
+* Eğer NVDA'nın bir mesaj kutusu hala açıksa bir işlem için onay
   istenmeyecektir. Bu gibi durumlarda, işlemler derhal
   gerçekleştirilecektir.
-*	Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler
-  etkinleştirildiğinde, eklentinin kontrol+c ve kontrol+x'in kontrolünü
-  alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri
-  gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin
-  verecektir.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## 15.0 için Değişiklikler
 * Panoya metin ekleme komutu, girdi hareketleri iletişim kutusuna tekrar

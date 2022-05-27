@@ -1,26 +1,26 @@
 # Clip Contents Designer #
 
 *	Auteurs : Noelia, Abdel
-*	Compatibilité NVDA : 2019.3 ou ultérieure
-*	Télécharger [version stable][1]
-*	Télécharger [version de développement][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
 peut être utile lorsque vous souhaitez joindre des portions de texte prêt
 pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 
 ## Commandes clavier ##
-*	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
+
+* NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
-*	NVDA+windows+x : Vide le contenu du presse-papiers.
-*	Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
+* NVDA+windows+x : Vide le contenu du presse-papiers.
+* Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
   possibilité d'une demande de confirmation préalable.
-*	Non assigné : affiche le texte du presse-papiers au format HTML en mode
+* Non assigné : affiche le texte du presse-papiers au format HTML en mode
   navigation, ou annonce si le presse-papiers est vide ou a un contenu qui
   ne peut pas être présenté dans un message consultable, par exemple si des
   fichiers ou des dossiers ont été copiés à partir de l'Explorateur Windows.
-*	Non assigné : affiche le contenu textuel du presse-papiers sous forme de
+* Non assigné : affiche le contenu textuel du presse-papiers sous forme de
   texte brut en mode navigation, ou annonce si le presse-papiers est vide ou
   a un contenu qui ne peut pas être présenté dans un message consultable,
   par exemple si des fichiers ou des dossiers ont été copiés à partir de
@@ -68,14 +68,16 @@ Il contient les contrôles suivants :
 
 Notes :
 
-*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
+* Les confirmations ne seront pas demandées lorsqu'une boîte de message de
   NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
   immédiatement.
-*	Les commandes d'émulation de copie et de coupe signifient que, lorsque ces
-  fonctionnalités sont activées, le module complémentaire prendra le
-  contrôle de control+c et control+x. Cela permettra de sélectionner si une
-  confirmation doit être demandée avant d'effectuer les actions
-  correspondant à ces frappes.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changements pour la version 15.0
 * La commande pour ajouter du texte au presse-papiers est à nouveau

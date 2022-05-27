@@ -1,9 +1,9 @@
 # Zwischenablagenverwalter #
 
 *	Autoren: Noelia, Abdel.
-*	NVDA-Kompatibilität: 2019.3 oder neuer
-*	[Stabile Version herunterladen][1]
-*	[Entwicklerversion herunterladen][2]
+*	[Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
+*	[Entwicklerversion herunterladen][2] (kompatibel mit NVDA 2022.1 und
+  neuer)
 
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
 hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
@@ -11,17 +11,18 @@ Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
 gelöscht werden.
 
 ## Tastenkombinationen ##
-*	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
+
+* NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem NVDA-Cursor
   markiert wurde, zur Zwischenablage hinzu.
-*	NVDA+Windows+X: Leert die Zwischenablage.
-*	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
+* NVDA+Windows+X: Leert die Zwischenablage.
+* Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
   der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
-*	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
+* Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
   an oder benachrichtigt, wenn die Zwischenablage leer ist oder Inhalte
   enthält, die nicht in einer darstellbaren Nachricht angezeigt werden
   können, z. B. wenn Dateien oder Ordner im Windows Explorer kopiert wurden.
-*	Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
+* Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
   als einfachen Text an oder gibt aus, ob die Zwischenablage leer ist oder
   Inhalte enthält, die nicht in einer darstellbaren Nachricht angezeigt
   werden können, z. B. wenn Dateien oder Ordner im dem Windows Explorer
@@ -69,12 +70,16 @@ Folgende Einstellungen sind verfügbar:
 
 Anmerkungen:
 
-*	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
+* Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
-*	Emulieren von kopieren und ausschneiden bedeutet, dass die Erweiterung bei
-  Aktivierung dieser Funktionen die Kontrolle über Strg+C und Strg+X
-  übernimmt. Auf diese Weise können Sie auswählen, ob eine Bestätigung
-  angefordert werden soll, bevor Sie die Tastenkombinationen verwenden.
+* Die Befehle "Kopieren" und "Ausschneiden" emulieren bedeutet, dass die
+  Erweiterung die Kontrolle über Strg+C und Strg+X übernimmt, sobald diese
+  Funktionen verwendet werden. So können Sie auswählen, ob eine Bestätigung
+  angefordert werden soll, bevor die diesen Tastenkombinationen
+  entsprechenden Aktionen ausgeführt werden.
+
+## Änderungen in 16.0
+* Benötigt NVDA 2022.1 oder neuer.
 
 ## Änderungen in 15.0
 * Der Befehl zum Hinzufügen von Text in die Zwischenablage wird wieder im

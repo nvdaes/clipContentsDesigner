@@ -1,9 +1,8 @@
 # Gestor do Conteúdo de Transferência (Clip Contents Designer) #
 
 *	Autores: Noelia, Abdel.
-*	Compatibilidade com NVDA: 2019.3 ou posterior
-*	Baixe a [versão estável][1]
-*	Baixe a [versão em desenvolvimento][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento é usado para adicionar texto à área de transferência, o que
 pode ser útil quando você deseja unir seções de texto prontas para colar. O
@@ -11,17 +10,18 @@ conteúdo da área de transferência também pode ser limpo e mostrado no modo
 de navegação.
 
 ## Comandos de teclado ##
-*	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres braille
+
+* NVDA+windows+c: Acrescenta o texto selecionado, os caracteres braille
   Unicode que representem objetos MathML, ou a sequência (string) que foi
   marcada com o cursor de exploração, à área de transferência.
-*	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	Não atribuído: copia (ou corta) a área de transferência, com a
+* NVDA+windows+x: Apaga o conteúdo da área de transferência.
+* Não atribuído: copia (ou corta) a área de transferência, com a
   possibilidade de ser solicitada uma confirmação prévia.
-*	Não atribuído: Mostra o texto da área de transferência como HTML no modo
+* Não atribuído: Mostra o texto da área de transferência como HTML no modo
   de navegação ou anuncia se a área de transferência está vazia ou possui
   conteúdos que não podem ser apresentados em uma mensagem navegável, por
   exemplo, se arquivos ou pastas foram copiados do Windows Explorer.
-*	Não atribuído: Mostra o conteúdo textual da área de transferência como
+* Não atribuído: Mostra o conteúdo textual da área de transferência como
   texto simples no modo de navegação ou anuncia se a área de transferência
   está vazia ou tem conteúdos que não podem ser apresentados em uma mensagem
   navegável, por exemplo, se arquivos ou pastas foram copiados do Windows
@@ -67,13 +67,16 @@ Contém os seguintes controles:
 
 Notas:
 
-*	Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
+* Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
   ainda estiver aberta. Nesses casos, as ações serão executadas
   imediatamente.
-*	Os comandos emular cópia e emular corte significam que, quando esses
-  recursos estão ativados, o complemento assumirá o controle de control+c e
-  control+x. Isso permitirá selecionar se uma confirmação deve ser
-  solicitada antes de realizar as ações correspondentes a essas teclas.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

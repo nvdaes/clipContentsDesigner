@@ -1,26 +1,26 @@
 # Vágólap tartalomtervező #
 
 *	Készítők: Noelia, Abdel.
-*	Támogatott NVDA kiadások: 2019.3 és újabb
-*	[Stabil verzió][1] letöltése
-*	[Fejlesztői verzió][2] letöltése
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
 szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
 tartalma törölhető, illetve megjeleníthető böngésző módban.
 
 ## Billentyűparancsok ##
-*	NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
+
+* NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
   kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
   reprezentáló karaktereket is.
-*	NVDA+windows+x: Vágólap tartalom törlése.
-*	Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
+* NVDA+windows+x: Vágólap tartalom törlése.
+* Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
   vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -62,12 +62,15 @@ It contains the following controls:
 
 Megjegyzések:
 
-*	Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
+* Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
   megerősítést a vágólapműveletek előtt, de attól még végrehajtja azokat.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input
