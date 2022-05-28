@@ -1,26 +1,26 @@
 # quản lý nội dung tạm #
 
 *	Tác giả: Noelia, Abdel.
-*	NVDA tương thích: 2019.3 trở lên
-*	Tải về [phiên bản chính thức][1]
-*	Tải về [phiên bản thử nghiệm][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Add-on này dùng để thêm văn bản vào bộ nhớ tạm, có thể hữu ích khi bạn muốn
 kết hợp nhiều phần văn bản lại với nhau rồi mới dán.  Bạn cũng có thể xóa
 nội dung bộ nhớ tạm hoặc cho chúng hiển thị trong chế độ duyệt.
 
 ## Các phím lệnh ##
-*	NVDA+windows+c: thêm văn bản đã chọn vào bộ nhớ tạm, bao gồm các kí tự chữ
+
+* NVDA+windows+c: thêm văn bản đã chọn vào bộ nhớ tạm, bao gồm các kí tự chữ
   nổi Unicode thể hiện dưới dạng đối tượng MathML hoặc các chuỗi được đánh
   dấu với con trỏ duyệt.
-*	NVDA+windows+x: xóa nội dung bộ nhớ tạm.
-*	Chưa gán: chép vào (hoặc cắt từ) bộ nhớ tạm với khả năng yêu cầu xác nhận
+* NVDA+windows+x: xóa nội dung bộ nhớ tạm.
+* Chưa gán: chép vào (hoặc cắt từ) bộ nhớ tạm với khả năng yêu cầu xác nhận
   trước đó.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -62,12 +62,15 @@ It contains the following controls:
 
 Lưu ý:
 
-*	Sẽ không có yêu cầu xác nhận khi có một hộp thông điệp của NVDA đang
+* Sẽ không có yêu cầu xác nhận khi có một hộp thông điệp của NVDA đang
   mở. Các trường hợp này, các hành động sd4 được thực hiện ngay lập tức.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

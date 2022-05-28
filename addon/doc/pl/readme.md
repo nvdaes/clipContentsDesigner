@@ -1,26 +1,26 @@
 # Clip Contents Designer #
 
 *	Autorzy: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
-*	Pobierz [wersja stabilna][1]
-*	Pobierz [wersja rozwojowa][2]
+*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 This add-on is used to add text to the clipboard, which can be useful when
 you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared an shown in browse mode.
 
 ## Skróty klawiszowe ##
-*	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
+
+* NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
-*	NVDA+windows+x: wyczyść zawartość schowka.
-*	Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+* NVDA+windows+x: wyczyść zawartość schowka.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
   of being asked for a previous confirmation.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -62,12 +62,15 @@ It contains the following controls:
 
 Uwagi:
 
-*	Confirmations won't be requested when a message box of NVDA is still
+* Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 16.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

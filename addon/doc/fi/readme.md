@@ -1,9 +1,8 @@
 # Leikepöydän sisällön käsittelijä #
 
 *	Tekijät: Noelia, Abdel.
-*	Yhteensopivuus: NVDA 2019.3 tai uudempi
-*	Lataa [vakaa versio][1]
-*	Lataa [kehitysversio][2]
+*	Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
+*	Lataa [kehitysversio][2] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
 
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
@@ -11,16 +10,17 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
 näyttää selaustilassa.
 
 ## Näppäinkomennot ##
-*	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
+
+* NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
-*	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-*	Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
+* NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
+* Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
   vaihtoehtoisesti vahvistuksen.
-*	Ei määritetty: Näyttää leikepöydällä olevan tekstin HTML-muodossa
+* Ei määritetty: Näyttää leikepöydällä olevan tekstin HTML-muodossa
   selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
   sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
   tiedostoja tai kansioita.
-*	Ei määritetty: Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä
+* Ei määritetty: Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä
   selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
   sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
   tiedostoja tai kansioita.
@@ -61,11 +61,14 @@ Se sisältää seuraavat säätimet:
 
 Huomautuksia:
 
-*	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
+* Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
-*	Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa
+* Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa
   ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
   valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
+
+## Muutokset versiossa 16.0
+* Edellyttää NVDA 2022.1:tä tai uudempaa.
 
 ## Muutokset versiossa 15.0
 * Tekstiä leikepöydälle lisäävä komento näytetään taas
