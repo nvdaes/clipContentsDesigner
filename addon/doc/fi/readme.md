@@ -72,8 +72,8 @@ Huomautuksia:
 
 ## Muutokset versiossa 15.0
 * Tekstiä leikepöydälle lisäävä komento näytetään taas
-  Syötekomennot-valintaikkunassa.
-* Korjattu kopioinnin ja leikkaamisen syötekomennot persiankielisellä
+  Näppäinkomennot-valintaikkunassa.
+* Korjattu kopioinnin ja leikkaamisen näppäinkomennot persiankielisellä
   näppäimistöllä. Kiitokset Mohammadhosein Ghezelsofla'lle.
 
 ## Muutokset versiossa 14.0
@@ -84,10 +84,10 @@ Huomautuksia:
   Bougotille.
 * Dokumentaatiota paranneltu.
 * Lisätty Leikepöydän sisällön käsittelijä -kategoria, josta voidaan
-  määrittää syötekomennot kaikille tämän lisäosan komennoille.
+  määrittää näppäinkomennot kaikille tämän lisäosan komennoille.
 * Korjattu bugeja käytettäessä kopioinnin emulointia selaimissa selaustilan
   ollessa käytössä.
-* Voit määrittää eri syötekomennot näyttämään leikepöydän tekstisisällön
+* Voit määrittää eri näppäinkomennot näyttämään leikepöydän tekstisisällön
   joko raakatekstinä tai muotoiltuna HTML:nä.
 
 ## Muutokset versiossa 12.0
@@ -134,7 +134,7 @@ Huomautuksia:
 ## Muutokset versiossa 6.0
 
 *	 Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -asetukset, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
+*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -asetukset, joille voidaan määrittää näppäinkomennot Näppäinkomennot-valintaikkunasta.
 *	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
 *	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
 
