@@ -8,17 +8,16 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2015-06-26 03:00+1000\n"
-"PO-Revision-Date: 2019-08-23 19:17+0100\n"
+"PO-Revision-Date: 2022-05-29 11:14+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: pl <LL@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid ""
 "This add-on allows to confirm if you want to copy and cut, replacing the "
 "clipboard contents,\n"
@@ -27,15 +26,16 @@ msgid ""
 "\t\tDo you want to configure Emulate copy and cut now? You may do or change "
 "this later."
 msgstr ""
-"Ten dodatek umożliwia potwierdzenie kopiowania i wklejania, Zamieniając "
-"treść schowka, gdy naciśnięte są skróty ctrl+c oraz ctrl+x. Taka akcja "
-"nazywa się emulowanie kopiowania i wklejania, i działa ona gdy w schowku "
-"znajduje się tekst. Czy chcesz skonfigurować emulowanie kopiowania i "
-"wklejania? Można to zmienić, oraz zrobić to później."
+"Ten dodatek pozwala potwierdzić, czy chcesz skopiować i wyciąć, zastępując "
+"zawartość schowka,\n"
+"\t\tpo naciśnięciu control+c i control+x. Nazywa się to Emuluj kopiowanie i "
+"wycinanie.\n"
+"\t\tCzy chcesz teraz skonfigurować Emuluj kopiowanie i wycinanie? Możesz to "
+"zrobić lub zmienić później."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Konfigurowanie emulacji kopiowania i wklejania"
+msgstr "Konfigurowanie emulacji kopiowania i wycinania"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
@@ -46,9 +46,8 @@ msgid "HTML as shown in a web browser"
 msgstr "HTML taki jak w przeglądarce"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
 msgid "Plain text"
-msgstr "tekst surowy"
+msgstr "Zwykły tekst"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
@@ -86,13 +85,13 @@ msgstr "Nie można dodać"
 #, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
-"Pobiera oznaczony ciąg znaków lub tekst od ustawionego wcześniej znacznika "
-"początkowego wyłącznie z pozycją teraźniejszą kursora przeglądu, i dodaje ją "
-"do schowka."
+"Pobiera zaznaczony ciąg lub tekst z wcześniej ustawionego znacznika start "
+"do\n"
+"\t\ti uwzględnia bieżącą pozycję kursora recenzji, a następnie dodaje go do "
+"schowka."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -118,7 +117,8 @@ msgstr "Kopiuję do schowka"
 msgid ""
 "Copies to the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "kopiuje ze schowka, uprzednio pytając o zgodeconfirmation"
+msgstr ""
+"Kopie do schowka, z możliwością poproszenia o wcześniejsze potwierdzenie"
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to cut from the clipboard"
@@ -132,12 +132,12 @@ msgstr "Wycinam ze schowka"
 msgid ""
 "Cuts from the clipboard, with the possibility of being asked for a previous "
 "confirmation"
-msgstr "wycina ze schowka, uprzednio pytając o zgode"
+msgstr ""
+"Wycinki ze schowka, z możliwością poproszenia o wcześniejsze potwierdzenie"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Pokazuje tekst schowka w trybie czytania"
+msgstr "Tekst schowka jest wyświetlany w formacie HTML w trybie przeglądania"
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
 msgid "Clipboard is not empty, but there is no text to show"
@@ -150,12 +150,12 @@ msgstr "Schowek jest pusty"
 #. Translators: title of a browseable message.
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "tekst schowka ({max}/{current} - {formatForTitle})"
+msgstr "Tekst w schowku ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Pokazuje tekst schowka w trybie czytania"
+msgstr ""
+"Wyświetla zawartość tekstową schowka jako zwykły tekst w trybie przeglądania"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -199,16 +199,16 @@ msgstr "Zawsze"
 
 #. Translators: label of a dialog.
 msgid "If the clipboard contains text"
-msgstr "jeśli schowek zawiera tekst"
+msgstr "Jeśli schowek zawiera tekst"
 
 #. Translators: label of a dialog.
 msgid "If the clipboard is not empty"
 msgstr "Jeśli schowek nie jest pusty"
 
 #. Translators: label of a dialog.
-#, fuzzy
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "&Format do pokazywania schowka w trybie czytania:"
+msgstr ""
+"&Sformatuj, aby wyświetlić tekst schowka jako HTML w trybie przeglądania:"
 
 #. Translators: label of a dialog.
 msgid ""

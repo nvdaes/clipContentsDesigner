@@ -1,8 +1,8 @@
 # Upravljanje sadržajem međuspremnika (Clip Contents Designer) #
 
 *	Authors: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
+*	Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
+*	Preuzmi [razvojnu verziju][2] (kompatibilna s NVDA 2022.1 i novijom)
 
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
@@ -70,8 +70,8 @@ Napomene:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
-## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+## Promjene u verziji 16.0
+* Zahtijeva NVDA verziju 2022.1 ili noviju.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input
