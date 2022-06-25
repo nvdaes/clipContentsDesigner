@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Add-on for managing clipboard text."""),
 	# version
-	"addon_version": "16.0-dev",
+	"addon_version": "testGpg16.0.0-dev",
 	# Author(s)
 	"addon_author": u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com",
 	# URL for the add-on documentation support

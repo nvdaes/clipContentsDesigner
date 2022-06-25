@@ -46,6 +46,14 @@ jobs:
         git push origin HEAD:main
     - name: Build add-on
       run: scons
+    - name: Import GPG key
+      id: import_gpg
+      uses: crazy-max/ghaction-import-gpg@v5
+      with:
+        gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+    - name: Sign add-on
+      run: gpg --detach-sign *.nvda-addon
     - name: Calculate sha256
       run: sha256sum *.nvda-addon >> sha256.txt
     - name: Release
@@ -56,6 +64,8 @@ jobs:
         tag_name: ${{ github.event.inputs.version }}
         files: |
           *.nvda-addon
+          *.sig
+          publicKey.asc
           sha256.txt
         generate_release_notes: true
         prerelease: ${{ github.event.inputs.prerelease }}
