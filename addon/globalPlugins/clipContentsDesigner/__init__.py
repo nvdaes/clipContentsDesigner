@@ -170,8 +170,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				api.getReviewPosition().obj,
 				"_selectThenCopyRange", None
 			) or not api.getReviewPosition().obj._selectThenCopyRange:
-				# Translators: message presented when it's not possible to add text, since no text has been selected.
-				ui.message(_("No text to add"))
 				return
 			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText
 		try:
