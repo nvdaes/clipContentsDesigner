@@ -27,10 +27,6 @@ on:
         description: 'Add-on license URL'
         default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
 
-env:
-  DOWNLOAD_URL: ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
-  ADDON_PUBLISHER: ${{ github.event.sender.login }}
-  ADDON_SOURCE_URL: ${{ github.event.repository.html_url }}/
   
 jobs:
   buildAndUpload:
@@ -111,7 +107,7 @@ jobs:
     
     - name: Download add-on
       run: |
-        curl --location --output addon.nvda-addon $DOWNLOAD_URL
+        curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
     - name: Create json
-      run: validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ github.inputs.channel }} --publisher=$ADDON_PUBLISHER --sourceUrl=$ADDON_SOURCE_URL --url=DOWNLOAD_URL --licName=${{ github.inputs.license }} --licUrl=${{github.inputs.licenseURL }}
+      run: validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ github.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName=${{ github.inputs.license }} --licUrl=${{github.inputs.licenseURL }}
       
