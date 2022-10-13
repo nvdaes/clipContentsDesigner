@@ -15,14 +15,14 @@ on:
         type: boolean
       publisher:
         description: 'Add-on publisher'
-        default: '${{ github.event.repository.sender.login }}'
-    channel:
-      description: 'Add-on channel'
-      default: stable
-      type: choice
-      options:
-      - stable
-      - beta
+        default: '${{ github.event.repository.sender.login }}''
+      channel:
+        description: 'Add-on channel'
+        default: stable
+        type: choice
+        options:
+        - stable
+        - beta
       sourceUrl:
         description: 'Source url'
         default: '${{  github.event.repository.html_url }}/'
