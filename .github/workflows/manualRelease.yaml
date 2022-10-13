@@ -92,7 +92,7 @@ jobs:
         
   store:
     needs: buildAndUpload
-    if: ${{ github.event.inputs.publishOnStore 
+    if: ${{ github.event.inputs.publishOnStore }}
     runs-on: windows-latest
     
     steps:
