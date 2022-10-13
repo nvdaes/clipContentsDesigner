@@ -102,8 +102,7 @@ jobs:
     - name: Checkout datastore repo
       uses: actions/checkout@v3
       with:
-        repository: ${ github.event.sender.login }}/addon-datastore
-        ref: master
+        repository: ${{ github.event.sender.login }}/addon-datastore
         path: store
     
     - name: Download add-on
