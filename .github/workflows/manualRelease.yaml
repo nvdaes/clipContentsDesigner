@@ -29,8 +29,8 @@ on:
 
 env:
   DOWNLOAD_URL: ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
-  ADDON_PUBLISHER: ${{ github.sender.login }}
-  ADDON_SOURCE_URL: ${{ github.repository.html_url }}/
+  ADDON_PUBLISHER: ${{ github.event.sender.login }}
+  ADDON_SOURCE_URL: ${{ github.event.repository.html_url }}/
   
 jobs:
   buildAndUpload:
