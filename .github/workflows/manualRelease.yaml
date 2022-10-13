@@ -13,10 +13,9 @@ on:
       publishOnStore:
         description: 'Publish on add-on datastore'
         type: boolean
-        default: true
       publisher:
         description: 'Add-on publisher'
-        default: '${{ github.event.sender.login }}'
+        default: '${{ github.event.repository.sender.login }}'
     channel:
       description: 'Add-on channel'
       default: stable
