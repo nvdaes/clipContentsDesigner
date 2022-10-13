@@ -10,8 +10,30 @@ on:
       prerelease:
         description: 'True if this is a prerelease'
         type: boolean
-        required: false
-        default: false
+      publishOnStore:
+        description: 'Publish on add-on datastore'
+        type: boolean
+        default: true
+      publisher:
+        description: 'Add-on publisher'
+        default: '${{ github.event.sender.login }}'
+    channel:
+      description: 'Add-on channel'
+      default: stable
+      type: choice
+      options:
+      - stable
+      - beta
+      sourceUrl:
+        description: 'Source url'
+        default: '${{  github.event.repository.html_url }}/'
+      license:
+        description: 'Add-on license'
+        default: 'GPL v2'
+      licenseURL:
+        description: 'Add-on license URL'
+        default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
+
 jobs:
   buildAndUpload:
     runs-on: ubuntu-latest
@@ -72,6 +94,7 @@ jobs:
         
   store:
     needs: buildAndUpload
+    if ${{ github.event.inputs.publishOnStore }}
     runs-on: windows-latest
     
     steps:
