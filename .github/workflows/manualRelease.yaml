@@ -118,7 +118,8 @@ jobs:
         git fetch nvaccess
         git branch -u nvaccess/master
         git pull
+        git add .
+        git commit -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
         git checkout -b ${{ github.event.repository.name }}-${{ github.event.inputs.version }}
-        git commit -a -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
         git push origin HEAD:${{ github.event.repository.name }}-${{ github.event.inputs.version }}
         
