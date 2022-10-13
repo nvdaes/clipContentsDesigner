@@ -69,3 +69,25 @@ jobs:
           sha256.txt
         generate_release_notes: true
         prerelease: ${{ github.event.inputs.prerelease }}
+        
+ store:
+   needs: buildAndUpload
+    runs-on: windows-latest
+    
+    steps:
+      
+    - name: Checkout validation repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-validation
+        submodules: true
+        path: validation
+    - name: Checkout datastore repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore
+        path: store
+    
+    - name: Download add-on
+      run: |
+        curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
