@@ -70,8 +70,8 @@ jobs:
         generate_release_notes: true
         prerelease: ${{ github.event.inputs.prerelease }}
         
- store:
-   needs: buildAndUpload
+  store:
+    needs: buildAndUpload
     runs-on: windows-latest
     
     steps:
