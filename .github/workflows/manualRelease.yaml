@@ -114,5 +114,8 @@ jobs:
       run: |
         cd store
         git config --global user.email github-actions@github.com
-        git commit -a -m "Update store"
-        git push origin HEAD:main
+        git remote add ${{ github.event.sender.login }} https://github.com/${{ github.event.sender.login }}/addon-datastore
+        git fetch ${{ github.event.sender.login }}
+        git checkout -b ${{ github.event.repository.name }}-${{ github.event.inputs.version }}
+        git commit -a -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
+        git push ${{ github.event.sender.login }} HEAD:${{ github.event.repository.name }}-${{ github.event.inputs.version }}
