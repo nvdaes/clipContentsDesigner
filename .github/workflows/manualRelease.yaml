@@ -15,7 +15,7 @@ on:
         type: boolean
       publisher:
         description: 'Add-on publisher'
-        default: '${{ github.event.repository.sender.login }}''
+        default: '${{ github.event.repository.sender.login }}'
       channel:
         description: 'Add-on channel'
         default: stable
