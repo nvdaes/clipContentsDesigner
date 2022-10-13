@@ -109,5 +109,10 @@ jobs:
       run: |
         curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
     - name: Create json
-      run: validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ github.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName=${{ github.inputs.license }} --licUrl=${{github.inputs.licenseURL }}
-      
+      run: validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ github.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName=${{ github.event.inputs.license }} --licUrl=${{github.event.inputs.licenseURL }}
+    - name: Push changes to store
+      run: |
+        cd store
+        git config --global user.email github-actions@github.com
+        git commit -a -m "Update store"
+        git push origin HEAD:main
