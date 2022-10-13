@@ -15,7 +15,7 @@ on:
         type: boolean
       publisher:
         description: 'Add-on publisher'
-        default: '${{ github.event.repository.sender.login }}'
+        default: ${{ github.event.repository.sender.login }}
       channel:
         description: 'Add-on channel'
         default: stable
@@ -25,7 +25,7 @@ on:
         - beta
       sourceUrl:
         description: 'Source url'
-        default: '${{  github.event.repository.html_url }}/'
+        default: ${{  github.event.repository.html_url }}/
       license:
         description: 'Add-on license'
         default: 'GPL v2'
