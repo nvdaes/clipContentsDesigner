@@ -27,6 +27,11 @@ on:
         description: 'Add-on license URL'
         default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
 
+env:
+  DOWNLOAD_URL: ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
+  ADDON_PUBLISHER: ${{ github.sender.login }}
+  ADDON_SOURCE_URL: ${{ github.repository.html_url }}/
+  
 jobs:
   buildAndUpload:
     runs-on: ubuntu-latest
@@ -106,4 +111,7 @@ jobs:
     
     - name: Download add-on
       run: |
-        curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon
+        curl --location --output addon.nvda-addon $DOWNLOAD_URL
+    - name: Create json
+      run: validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ github.inputs.channel }} --publisher=$ADDON_PUBLISHER --sourceUrl=$ADDON_SOURCE_URL --url=DOWNLOAD_URL --licName=${{ github.inputs.license }} --licUrl=${{github.inputs.licenseURL }}
+      
