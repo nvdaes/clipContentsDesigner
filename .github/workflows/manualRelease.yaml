@@ -102,7 +102,7 @@ jobs:
     - name: Checkout datastore repo
       uses: actions/checkout@v3
       with:
-        repository: nvaccess/addon-datastore
+        repository: ${ github.event.sender.login }}/addon-datastore
         path: store
     
     - name: Download add-on
@@ -114,8 +114,11 @@ jobs:
       run: |
         cd store
         git config --global user.email github-actions@github.com
-        git remote add ${{ github.event.sender.login }} https://github.com/${{ github.event.sender.login }}/addon-datastore
-        git fetch ${{ github.event.sender.login }}
+        git remote add nvaccess https://github.com/nvaccess/addon-datastore
+        git fetch nvaccess
+        git branch -u nvaccess/master
+        git pull
         git checkout -b ${{ github.event.repository.name }}-${{ github.event.inputs.version }}
         git commit -a -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
-        git push ${{ github.event.sender.login }} HEAD:${{ github.event.repository.name }}-${{ github.event.inputs.version }}
+        git push origin HEAD:${{ github.event.repository.name }}-${{ github.event.inputs.version }}
+        
