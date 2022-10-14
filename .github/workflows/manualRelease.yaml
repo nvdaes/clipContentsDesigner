@@ -116,13 +116,12 @@ jobs:
         git remote add nvaccess https://github.com/nvaccess/addon-datastore
         git fetch nvaccess
         git branch -u nvaccess/master
-        git pull
+        git reset --hard nvaccess/master
         git checkout -b ${{ github.event.repository.name }}-${{ github.event.inputs.version }}
-    - name: Create json
-      run: validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ github.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName="${{ github.event.inputs.license }}" --licUrl=${{ github.event.inputs.licenseURL }}
-    - name: Push changes to store
-      run: |
+        cd..
+        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ github.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName="${{ github.event.inputs.license }}" --licUrl=${{ github.event.inputs.licenseURL }}
+        cd store
         git add .
         git commit -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
+        git add .
         git push origin HEAD:${{ github.event.repository.name }}-${{ github.event.inputs.version }}
-        
