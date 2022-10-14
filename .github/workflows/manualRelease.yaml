@@ -119,7 +119,7 @@ jobs:
         git reset --hard nvaccess/master
         git checkout -b ${{ github.event.repository.name }}-${{ github.event.inputs.version }}
         cd..
-        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ github.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName="${{ github.event.inputs.license }}" --licUrl=${{ github.event.inputs.licenseURL }}
+        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ github.event.inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ github.event.inputs.version }}/${{ github.event.repository.name }}-${{ github.event.inputs.version }}.nvda-addon --licName="${{ github.event.inputs.license }}" --licUrl=${{ github.event.inputs.licenseURL }}
         cd store
         git add .
         git commit -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
