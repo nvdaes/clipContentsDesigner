@@ -112,10 +112,10 @@ jobs:
     - name: Create branch for store
       run: |
         cd store
+        git config --global user.name github-actions
         git config --global user.email github-actions@github.com
         git remote add nvaccess https://github.com/nvaccess/addon-datastore
         git fetch nvaccess
-        git branch -u nvaccess/master
         git reset --hard nvaccess/master
         git checkout -b ${{ github.event.repository.name }}-${{ github.event.inputs.version }}
         cd..
@@ -123,5 +123,4 @@ jobs:
         cd store
         git add .
         git commit -m "Add ${{ github.event.repository.name }} ${{ github.event.inputs.version }} to add-on datastore"
-        git add .
         git push origin HEAD:${{ github.event.repository.name }}-${{ github.event.inputs.version }}
