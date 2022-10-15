@@ -116,4 +116,8 @@ jobs:
       with:
         token: ${{ secrets.CHECKOUT_ACCESS_TOKEN }}
         path: store
+        commit-message: Add ${{ github.event.repository.name  }}-${{ github.event.inputs.version }} add-on
+        branch: ${{ github.event.repository.name}}-${{ github.event.inputs.version }}
+        delete-branch: true
+        title: Add ${{ github.event.repository.name  }}-${{ github.event.inputs.version }} add-on
         push-to-fork: nvdaes/addon-datastore
