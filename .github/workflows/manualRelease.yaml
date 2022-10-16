@@ -9,6 +9,8 @@ on:
         default: '0.0.0'
       prerelease:  
         description: 'Prerelease'
+        default: false
+        type: boolean
       publishOnStore:
         description: 'Publish on add-on datastore'
         default: true
