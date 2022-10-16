@@ -17,10 +17,7 @@ on:
       publishOnStore:
         description: 'Publish on add-on datastore'
         default: true
-        type: choice
-        options:
-        - true
-        - false
+        type: boolean
       license:
         description: 'Add-on license'
         default: 'GPL v2'
@@ -30,12 +27,8 @@ on:
       signAddOn:
         description: 'Sign add-on with GPG'
         default: false
-        type: choice
-        options:
-        - false
-        - true
-      
-  
+        type: boolean
+
 jobs:
   buildAndUpload:
     runs-on: ubuntu-latest
@@ -72,13 +65,13 @@ jobs:
         git commit -a -m "Update buildVars"
         git push origin HEAD:main
     - id: import_gpg
-      if: "${{ inputs.signAddOn }} == 'true'"
+      if: ${{ inputs.signAddOn }}
       name: Import GPG key
       uses: crazy-max/ghaction-import-gpg@v5
       with:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
-    - if: "${{ inputs.signAddOn }} == 'true'"
+    - if: ${{ inputs.signAddOn }}
       name: Sign add-on  
       run: gpg --detach-sign *.nvda-addon
     - name: Calculate sha256
@@ -99,7 +92,7 @@ jobs:
         
   store:
     needs: buildAndUpload
-    if: "${{ inputs.publishOnStore }} == 'yes'"
+    if: "${{ inputs.publishOnStore }}
     runs-on: windows-latest
     
     steps:
