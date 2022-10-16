@@ -7,10 +7,13 @@ on:
         description: 'Add-on version'
         required: true
         default: '0.0.0'
-      prerelease:
-        description: 'Prerelease'
-        default: false
-        type: boolean
+      channel:
+        description: 'Add-on channel'
+        default: stable
+        type: choice
+        options:
+        - stable
+        - beta
       signAddOn:
         description: 'Sign add-on with GPG'
         default: false
@@ -19,20 +22,12 @@ on:
         description: 'Publish on add-on datastore'
         default: true
         type: boolean
-      channel:
-        description: 'Add-on channel'
-        default: stable
-        type: choice
-        options:
-        - stable
-        - beta
       license:
         description: 'Add-on license'
         default: 'GPL v2'
       licenseURL:
         description: 'Add-on license URL'
         default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
-
 
 jobs:
   buildAndUpload:
