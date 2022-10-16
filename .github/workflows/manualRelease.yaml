@@ -16,11 +16,11 @@ on:
         - beta
       publishOnStore:
         description: 'Publish on add-on datastore'
-        default: yes
+        default: true
         type: choice
         options:
-        - yes
-        - no
+        - true
+        - false
       license:
         description: 'Add-on license'
         default: 'GPL v2'
@@ -29,11 +29,11 @@ on:
         default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
       signAddOn:
         description: 'Sign add-on with GPG'
-        default: no
+        default: false
         type: choice
         options:
-        - no
-        - yes
+        - false
+        - true
       
   
 jobs:
@@ -71,15 +71,15 @@ jobs:
         git config --global user.email github-actions@github.com
         git commit -a -m "Update buildVars"
         git push origin HEAD:main
-    - name: Import GPG key
-      if: ${{ inputs.signAddOn }} == 'yes'
-      id: import_gpg
+    - id: import_gpg
+      if: "${{ inputs.signAddOn }} == 'true'"
+      name: Import GPG key
       uses: crazy-max/ghaction-import-gpg@v5
       with:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
     - name: Sign add-on
-      if: ${{ inputs.signAddOn }} == 'yes'
+      if: "${{ inputs.signAddOn }} == 'true'"
       run: gpg --detach-sign *.nvda-addon
     - name: Calculate sha256
       run: sha256sum *.nvda-addon >> sha256.txt
@@ -99,7 +99,7 @@ jobs:
         
   store:
     needs: buildAndUpload
-    if: ${{ inputs.publishOnStore }} == 'yes'
+    if: "${{ inputs.publishOnStore }} == 'yes'"
     runs-on: windows-latest
     
     steps:
