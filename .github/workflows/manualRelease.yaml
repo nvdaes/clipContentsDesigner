@@ -92,7 +92,7 @@ jobs:
         
   store:
     needs: buildAndUpload
-    if: "${{ inputs.publishOnStore }}
+    if: ${{ inputs.publishOnStore }}
     runs-on: windows-latest
     
     steps:
