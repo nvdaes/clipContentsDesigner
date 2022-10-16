@@ -65,10 +65,6 @@ jobs:
         git commit -a -m "Update buildVars"
         git push origin HEAD:main
     - id: import_gpg
-    - name: Create tag
-      run: |
-        git tag ${{ inputs.version }}
-        git push origin ${{ inputs.version }}
       if: ${{ inputs.signAddOn }}
       name: Import GPG key
       uses: crazy-max/ghaction-import-gpg@v5
@@ -80,6 +76,10 @@ jobs:
       run: gpg --detach-sign *.nvda-addon
     - name: Calculate sha256
       run: sha256sum *.nvda-addon >> sha256.txt
+    - name: Create tag
+      run: |
+        git tag ${{ inputs.version }}
+        git push origin ${{ inputs.version }}
     - name: Release
       uses: ncipollo/release-action@v1
       with:
