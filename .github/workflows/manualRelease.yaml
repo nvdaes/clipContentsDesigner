@@ -7,13 +7,8 @@ on:
         description: 'Add-on version'
         required: true
         default: '0.0.0'
-      channel:
-        description: 'Add-on channel'
-        default: stable
-        type: choice
-        options:
-        - stable
-        - beta
+      prerelease:  
+        description: 'Prerelease'
       publishOnStore:
         description: 'Publish on add-on datastore'
         default: true
@@ -86,7 +81,7 @@ jobs:
         tag: ${{ inputs.version }}
         artifacts: "*.nvda-addon,*.sig,publicKey.asc,sha256.txt"
         generateReleaseNotes: true
-        prerelease: "${{ inputs.channel }} != 'stable'"
+        prerelease: ${{ inputs.prerelease }}
         
   store:
     needs: buildAndUpload
@@ -109,8 +104,12 @@ jobs:
       run: |
         curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon
     - name: Create json
+      env:
+        CHANNEL: stable
+        if: ${{ inputs.prerelease }}
+        CHANNEL: beta
       run: |
-        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon --licName="${{ inputs.license }}" --licUrl=${{ inputs.licenseURL }}
+        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=$CHANNEL --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon --licName="${{ inputs.license }}" --licUrl=${{ inputs.licenseURL }}
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
       with:
