@@ -88,7 +88,7 @@ jobs:
           publicKey.asc
           sha256.txt
         generate_release_notes: true
-        prerelease: ${{ github.event.inputs.channel }} != 'stable'
+        prerelease: ${{ inputs.channel }} != stable
         
   store:
     needs: buildAndUpload
