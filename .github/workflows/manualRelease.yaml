@@ -86,7 +86,7 @@ jobs:
         tag: ${{ inputs.version }}
         artifacts: "*.nvda-addon,*.sig,publicKey.asc,sha256.txt"
         generateReleaseNotes: true
-        prerelease: "!contains(${{ inputs.channel }}, 'stable')"
+        prerelease: "!contains(fromJSON(${{ inputs.channel }}), stable)"
         
   store:
     needs: buildAndUpload
