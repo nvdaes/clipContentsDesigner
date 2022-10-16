@@ -9,14 +9,14 @@ on:
         default: '0.0.0'
       channel:
         description: 'Add-on channel'
-        default: stable
+        default: 'stable'
         type: choice
         options:
         - stable
         - beta
       publishOnStore:
         description: 'Publish on add-on datastore'
-        default: yes
+        default: 'yes'
         type: choice
         options:
         - yes
@@ -28,8 +28,8 @@ on:
         description: 'Add-on license URL'
         default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
       signAddOn:
-        description: Sign add-on with GPG
-        default: no
+        description: 'Sign add-on with GPG'
+        default: 'no'
         type: choice
         options:
         - no
