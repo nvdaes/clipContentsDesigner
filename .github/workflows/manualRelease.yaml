@@ -3,7 +3,7 @@ name: Manual release
 on:
   workflow_dispatch:
     inputs:
-      version:
+      version:  
         description: 'Add-on version'
         required: true
         default: '0.0.0'
@@ -28,12 +28,12 @@ on:
         description: 'Add-on license URL'
         default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
       signAddOn:
-      description: Sign add-on with GPG
-      default: no
-      type: choice
-      options:
-      - no
-      - yes
+        description: Sign add-on with GPG
+        default: no
+        type: choice
+        options:
+        - no
+        - yes
       
   
 jobs:
