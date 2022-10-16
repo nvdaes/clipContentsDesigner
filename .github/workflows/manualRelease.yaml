@@ -7,13 +7,10 @@ on:
         description: 'Add-on version'
         required: true
         default: '0.0.0'
-      channel:
-        description: 'Add-on channel'
-        default: stable
-        type: choice
-        options:
-        - stable
-        - beta
+      prerelease:
+        description: 'Mark as prerelease on GitHub'
+        default: false
+        type: boolean
       signAddOn:
         description: 'Sign add-on with GPG'
         default: false
@@ -22,6 +19,13 @@ on:
         description: 'Publish on add-on datastore'
         default: true
         type: boolean
+      channel:
+        description: 'Add-on channel for store'
+        default: stable
+        type: choice
+        options:
+        - stable
+        - beta
       license:
         description: 'Add-on license'
         default: 'GPL v2'
@@ -86,7 +90,7 @@ jobs:
         tag: ${{ inputs.version }}
         artifacts: "*.nvda-addon,*.sig,publicKey.asc,sha256.txt"
         generateReleaseNotes: true
-        prerelease: "!contains(fromJSON(${{ inputs.channel }}), stable)"
+        prerelease: ${{ inputs.prerelease }}
         
   store:
     needs: buildAndUpload
