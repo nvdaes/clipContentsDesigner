@@ -22,7 +22,7 @@ jobs:
         script: |
           const release = await github.request('GET /repos/{owner}/{repo}/releases/tags/{tag}', {
             owner: context.repo.owner,
-            repo: context.reporepo,
-            tag: inputs.tag
+            repo: context.repo.repo,
+            tag: ${{ inputs.tag }}
           })
           console.log(release)
