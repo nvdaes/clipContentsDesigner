@@ -38,8 +38,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Get release
-      id: getRelease
+    - name: Should create release
+      id: shouldCreateRelease
       uses: actions/github-script@v6
       with:
         script: |
@@ -50,13 +50,13 @@ jobs:
               tag: ${{ inputs.version }}
             })
             console.log(release)
-            return true
+            return false
           } catch(err) {
             console.log(err)
-            return false
+            return true
           }
     - id: checkoutCode
-      if: "${{ steps.getRelease.outputs.result }} === false"
+      if: ${{ steps.shouldCreateRelease.outputs.result }}
       name: Checkout code
       uses: actions/checkout@v3
     - name: Set up Python 3.8
