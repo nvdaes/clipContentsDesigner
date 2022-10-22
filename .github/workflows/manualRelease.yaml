@@ -38,7 +38,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Get release
+      id: getRelease
+      uses: actions/github-script@v6
+      with:
+        script: |
+          try {
+            const release = await github.request('GET /repos/{owner}/{repo}/releases/tags/{tag}', {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: ${{ inputs.version }}
+            })
+            console.log(release)
+            return true
+          } catch(err) {
+            console.log(err)
+            return false
+          }
+    - id: checkoutCode
+      if: !${{ steps.getRelease.outputs.result }}
+      name: Checkout code
       uses: actions/checkout@v3
     - name: Set up Python 3.8
       uses: actions/setup-python@v4
