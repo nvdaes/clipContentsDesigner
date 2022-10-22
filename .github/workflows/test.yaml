@@ -17,12 +17,19 @@ jobs:
     steps:
     
     - name: Get release
+      id: getRelease
       uses: actions/github-script@v6
       with:
         script: |
-          const release = await github.request('GET /repos/{owner}/{repo}/releases/tags/{tag}', {
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            tag: ${{ inputs.tag }}
-          })
-          console.log(release)
+          try {
+            const release = await github.request('GET /repos/{owner}/{repo}/releases/tags/{tag}', {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: ${{ inputs.tag }}
+            })
+            console.log(release)
+            return release
+          } catch(err) {
+            console.log(err)
+            return null
+          }
