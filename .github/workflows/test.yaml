@@ -6,7 +6,6 @@ on:
 inputs:
   tag:  
     description: 'Release tag'
-    default: ''
     type: string
     required: true
 
