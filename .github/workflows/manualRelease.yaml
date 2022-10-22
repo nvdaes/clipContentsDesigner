@@ -35,28 +35,11 @@ on:
 
 jobs:
   buildAndUpload:
+    continue-on-error: true
     runs-on: ubuntu-latest
 
     steps:
-    - name: Should create release
-      id: shouldCreateRelease
-      uses: actions/github-script@v6
-      with:
-        script: |
-          try {
-            const release = await github.request('GET /repos/{owner}/{repo}/releases/tags/{tag}', {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              tag: ${{ inputs.version }}
-            })
-            console.log(release)
-            core.setOutput('createRelease', false)
-          } catch(err) {
-            console.log(err)
-            core.setOutput('createRelease', true)
-          }
     - id: checkoutCode
-      if: ${{ steps.shouldCreateRelease.outputs.createRelease }}
       name: Checkout code
       uses: actions/checkout@v3
     - name: Set up Python 3.8
