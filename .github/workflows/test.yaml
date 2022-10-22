@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+inputs:
+  tag:  
+    description: 'Release tag'
+    default: ''
+    type: string
+    required: true
+
+jobs:
+  
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Get release
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const release = await github.request('GET /repos/{owner}/{repo}/releases/tags/{tag}', {
+            owner: context.repo.owner,
+            repo: context.reporepo,
+            tag: inputs.tag
+          })
+          console.log(release)
