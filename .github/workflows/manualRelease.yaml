@@ -50,13 +50,13 @@ jobs:
               tag: ${{ inputs.version }}
             })
             console.log(release)
-            return false
+            core.setOutput('createRelease', false)
           } catch(err) {
             console.log(err)
-            return true
+            core.setOutput('createRelease', true)
           }
     - id: checkoutCode
-      if: ${{ steps.shouldCreateRelease.outputs.result }}
+      if: ${{ steps.shouldCreateRelease.outputs.createRelease }}
       name: Checkout code
       uses: actions/checkout@v3
     - name: Set up Python 3.8
