@@ -111,6 +111,7 @@ jobs:
       with:
         repository: nvaccess/addon-datastore
         path: store
+        token: ${{ secrets.PR_ACCESS_TOKEN }}
     - name: Download add-on
       run: |
         curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon
