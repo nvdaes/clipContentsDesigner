@@ -1,8 +1,8 @@
 # Udklipsdesigner (Clip Contents Designer) #
 
 *	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
+*	Download [stabil version][1] (kompatibel med NVDA 2022.1 og nyere)
+*	Download [udviklingsversion][2] (kompatibel med NVDA 2022.1 og nyere)
 
 Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
 kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
@@ -65,22 +65,22 @@ Bemærkninger:
 
 * Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
   stadig er åben. I disse situationer vil handlingen straks udføres.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Kommandoerne "Emulering af kopier" og "Emulering af klip" betyder, at når
+  disse funktioner er aktiveret, overtager tilføjelsen Ctrl+C og
+  Ctrl+X. Dette giver mulighed for at vælge, om der skal anmodes om en
+  bekræftelse, før de handlinger, der svarer til disse tastetryk, udføres.
 
-## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+## Ændringer for 16.0
+* Kræver NVDA 2022.1 eller nyere.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input
-  gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to
-  Mohammadhosein Ghezelsofla.
+## Ændringer for 15.0
+* Kommandoen til at tilføje tekst til udklipsholder vises igen i
+  dialogboksen til håndtering af kommandoer.
+* Rettede kommandoer til at kopiere og klippe med persisk tastatur, takket
+  være Mohammadhosein Ghezelsofla.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+## Ændringer for 14.0
+* Kompatibel med NVDA 2021.1.
 
 ## Ændringer for 13.0
 * Rettet et problem i det visuelle layout for indstillingspanelet takket
