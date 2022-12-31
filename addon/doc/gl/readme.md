@@ -1,8 +1,9 @@
 # Clip Contents Designer #
 
 *	Autores: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
+*	Descargar [versión estable][1] (compatible con NVDA 2022.1 e posterior)
+*	Descargar [versión de desenvolvemento][2] (compatible con NVDA 2022.1 e
+  posterior)
 
 Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
 cando queras unir seccións de texto listas para pegarse xuntas.  O contido
@@ -66,13 +67,13 @@ Notas:
 
 * Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* As ordes emular copiar e emular curtar significan que, cando estas
+  características estean habilitadas, o complemento controlará control+c e
+  control+x. Isto permitirá seleccionar se se debería pedir unha
+  confirmación antes de realizar as accións de ditos atallos.
 
-## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+## Cambios para 16.0
+* Require NVDA 2022.1 ou posterior.
 
 ## Cambios para 15.0
 * A orde para engadir texto ó portapapeis aparece de novo no diálogo xestos
