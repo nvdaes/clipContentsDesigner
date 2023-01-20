@@ -39,7 +39,7 @@ BROWSEABLETEXT_FORMATS: List[str] = [
 RAW_TEXT: str = _("Plain text")
 
 confspec: Dict[str, str] = {
-	"separator": "string(default="")",
+	"separator": "string(default='')",
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
@@ -53,10 +53,7 @@ config.conf.spec["clipContentsDesigner"] = confspec
 
 
 def getBookmark() -> str:
-	try:
-		separator = config.conf["clipContentsDesigner"]["separator"]
-	except KeyError:
-		separator = None
+	separator = config.conf["clipContentsDesigner"]["separator"]
 	if not separator:
 		bookmark = "\r\n"
 	else:
@@ -418,10 +415,7 @@ class AddonSettingsPanel(SettingsPanel):
 		# Translators: label of a dialog.
 		setSeparatorLabel = _("Type the string to be used as a &separator between contents added to the clipboard.")
 		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
-		try:
-			self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
-		except KeyError:
-			pass
+		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
 		# Translators: label of a dialog.
 		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
