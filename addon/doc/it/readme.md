@@ -1,8 +1,9 @@
 # Clip Contents Designer #
 
 *	Autori: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
+*	Scarica [versione stabile][1] (compatibile con NVDA 2022.1 e successive)
+*	Scarica [versione di sviluppo][2] (compatibile con NVDA 2022.1 e
+  successive)Scarica la [versione in sviluppo][2]
 
 Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
 appunti, operazione utile quando si desidera unire sezioni di testo insieme
@@ -69,22 +70,21 @@ Note:
 
 * Quando è aperta una finestra di NVDA non verrà richiesta alcuna
   conferma. In questi casi le azioni verranno eseguite immediatamente.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Quando le funzioni Emula copia ed Emula taglia sono abilitate, l'add-on
+  prenderà il controllo dei comandi control+c e control+x. Ciò consentirà di
+  scegliere se chiedere conferma prima di eseguire tali comandi.
 
-## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+## Novità nella versione 16.0
+* Richiede NVDA 2022.1 o versioni successive.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input
-  gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to
+## Novità nella versione 15.0
+* Il comando per aggiungere testo agli appunti è nuovamente presente nella
+  finestra di dialogo dei gesti di immissione.
+* Risolti i gesti da copiare e tagliare con la tastiera persiana, grazie a
   Mohammadhosein Ghezelsofla.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+## Novità nella versione 14.0
+* Compatibile con NVDA 2021.1.
 
 ## Novità nella versione 13.0 
 * Risolto un problema nella grafica della finestra Impostazioni. Grazie a
