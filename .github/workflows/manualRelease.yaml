@@ -3,23 +3,47 @@ name: Manual release
 on:
   workflow_dispatch:
     inputs:
-      version:
+      version:  
         description: 'Add-on version'
         required: true
         default: '0.0.0'
       prerelease:
-        description: 'True if this is a prerelease'
-        type: boolean
-        required: false
+        description: 'Mark as prerelease on GitHub'
         default: false
+        type: boolean
+      signAddOn:
+        description: 'Sign add-on with GPG'
+        default: false
+        type: boolean
+      publishOnStore:
+        description: 'Publish on add-on datastore'
+        default: true
+        type: boolean
+      channel:
+        description: 'Add-on channel for store'
+        default: stable
+        type: choice
+        options:
+        - stable
+        - beta
+      license:
+        description: 'Add-on license'
+        default: 'GPL v2'
+      licenseURL:
+        description: 'Add-on license URL'
+        default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
+
 jobs:
   buildAndUpload:
+    continue-on-error: true
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
+    - id: checkoutCode
+      name: Checkout code
       uses: actions/checkout@v3
     - name: Set up Python 3.8
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v4
       with:
         python-version: 3.8
     - name: Install dependencies
@@ -38,34 +62,69 @@ jobs:
           f.write(text)
           f.truncate()
       shell: python 
+    - name: Build add-on
+      run: scons
     - name: Push changes
       run: |
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
         git commit -a -m "Update buildVars"
         git push origin HEAD:main
-    - name: Build add-on
-      run: scons
-    - name: Import GPG key
-      id: import_gpg
+    - id: import_gpg
+      if: ${{ inputs.signAddOn }}
+      name: Import GPG key
       uses: crazy-max/ghaction-import-gpg@v5
       with:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
-    - name: Sign add-on
+    - if: ${{ inputs.signAddOn }}
+      name: Sign add-on  
       run: gpg --detach-sign *.nvda-addon
     - name: Calculate sha256
       run: sha256sum *.nvda-addon >> sha256.txt
+    - name: Create tag
+      run: |
+        git tag ${{ inputs.version }}
+        git push origin ${{ inputs.version }}
     - name: Release
-      uses: softprops/action-gh-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ncipollo/release-action@v1
       with:
-        tag_name: ${{ github.event.inputs.version }}
-        files: |
-          *.nvda-addon
-          *.sig
-          publicKey.asc
-          sha256.txt
-        generate_release_notes: true
-        prerelease: ${{ github.event.inputs.prerelease }}
+        tag: ${{ inputs.version }}
+        artifacts: "*.nvda-addon,*.sig,publicKey.asc,sha256.txt"
+        generateReleaseNotes: true
+        prerelease: ${{ inputs.prerelease }}
+        
+  store:
+    needs: buildAndUpload
+    if: ${{ inputs.publishOnStore }}
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout validation repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-validation
+        submodules: true
+        path: validation
+    - name: Checkout datastore repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore
+        path: store
+        token: ${{ secrets.PR_ACCESS_TOKEN }}
+    - name: Download add-on
+      run: |
+        curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon
+    - name: Create json
+      run: |
+        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon --licName="${{ inputs.license }}" --licUrl=${{ inputs.licenseURL }}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.PR_ACCESS_TOKEN }}
+        path: store
+        commit-message: Add ${{ github.event.repository.name }} ${{ inputs.version }} add-on
+        branch: ${{ github.event.repository.name}}-${{ inputs.version }}
+        delete-branch: true
+        title: Add ${{ github.event.repository.name }} ${{ inputs.version }} add-on
+        push-to-fork: ${{ github.event.sender.login }}/addon-datastore
