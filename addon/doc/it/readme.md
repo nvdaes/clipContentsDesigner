@@ -11,19 +11,18 @@ per poi incollarle in un'unica soluzione. Il contenuto degli appunti può
 anche essere cancellato e visualizzato  in Modalità Navigazione.
 
 ## Comandi da tastiera ##
-
-* NVDA + Windows + C: Aggiunge agli appunti il testo selezionato, o i
+*	NVDA + Windows + C: Aggiunge agli appunti il testo selezionato, o i
   caratteri braille unicode che rappresentano oggetti MathMl, o la stringa
   che è stata contrassegnata con il cursore di controllo (comandi NVDA+f9 ed
   NVDA+f10).
-* NVDA + Windows + x: Cancella il contenuto degli appunti.
-* Non assegnato: copia o taglia, con possibilità di richiesta di conferma.
-* Non assegnato: visualizza il testo presente negli appunti in modalità
+*	NVDA + Windows + x: Cancella il contenuto degli appunti.
+*	Non assegnato: copia o taglia, con possibilità di richiesta di conferma.
+*	Non assegnato: visualizza il testo presente negli appunti in modalità
   navigazione in formato html. In alternativa dice se negli appunti è
   presente contenuto che non è possibile mostrare in modalità navigazione,
   come file o cartelle copiati da Windows Explorer, o se non è presente
   testo negli appunti.
-* Non assegnato: visualizza il testo presente negli appunti in modalità
+*	Non assegnato: visualizza il testo presente negli appunti in modalità
   navigazione come testo semplice. In alternativa dice se negli appunti è
   presente contenuto che non è possibile mostrare in modalità navigazione,
   come file o cartelle copiati da Windows Explorer, o se non è presente
@@ -70,12 +69,16 @@ Note:
 
 * Quando è aperta una finestra di NVDA non verrà richiesta alcuna
   conferma. In questi casi le azioni verranno eseguite immediatamente.
-* Quando le funzioni Emula copia ed Emula taglia sono abilitate, l'add-on
-  prenderà il controllo dei comandi control+c e control+x. Ciò consentirà di
-  scegliere se chiedere conferma prima di eseguire tali comandi.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
 
 ## Novità nella versione 16.0
-* Richiede NVDA 2022.1 o versioni successive.
+* Reqires NVDA 2022.1 or later.
 
 ## Novità nella versione 15.0
 * Il comando per aggiungere testo agli appunti è nuovamente presente nella

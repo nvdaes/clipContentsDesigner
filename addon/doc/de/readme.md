@@ -11,18 +11,17 @@ Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
 gelöscht werden.
 
 ## Tastenkombinationen ##
-
-* NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
+*	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem NVDA-Cursor
   markiert wurde, zur Zwischenablage hinzu.
-* NVDA+Windows+X: Leert die Zwischenablage.
-* Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
+*	NVDA+Windows+X: Leert die Zwischenablage.
+*	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
   der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
-* Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
+*	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
   an oder benachrichtigt, wenn die Zwischenablage leer ist oder Inhalte
   enthält, die nicht in einer darstellbaren Nachricht angezeigt werden
   können, z. B. wenn Dateien oder Ordner im Windows Explorer kopiert wurden.
-* Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
+*	Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
   als einfachen Text an oder gibt aus, ob die Zwischenablage leer ist oder
   Inhalte enthält, die nicht in einer darstellbaren Nachricht angezeigt
   werden können, z. B. wenn Dateien oder Ordner im dem Windows Explorer
@@ -72,14 +71,16 @@ Anmerkungen:
 
 * Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
-* Die Befehle "Kopieren" und "Ausschneiden" emulieren bedeutet, dass die
-  Erweiterung die Kontrolle über Strg+C und Strg+X übernimmt, sobald diese
-  Funktionen verwendet werden. So können Sie auswählen, ob eine Bestätigung
-  angefordert werden soll, bevor die diesen Tastenkombinationen
-  entsprechenden Aktionen ausgeführt werden.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
 
 ## Änderungen in 16.0
-* Benötigt NVDA 2022.1 oder neuer.
+* Reqires NVDA 2022.1 or later.
 
 ## Änderungen in 15.0
 * Der Befehl zum Hinzufügen von Text in die Zwischenablage wird wieder im

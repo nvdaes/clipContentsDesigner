@@ -9,18 +9,17 @@ chcesz połączyć sekcje tekstu gotowe do wklejenia.  Zawartość schowka możn
 również wyczyścić i wyświetlić w trybie przeglądania.
 
 ## Skróty klawiszowe ##
-
-* NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
+*	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
-* NVDA+windows+x: wyczyść zawartość schowka.
-* Nieprzypisane: Kopiuje do schowka (lub wycina z niego), z możliwością
+*	NVDA+windows+x: wyczyść zawartość schowka.
+*	Nieprzypisane: Kopiuje do schowka (lub wycina z niego), z możliwością
   poproszenia o wcześniejsze potwierdzenie.
-* Nieprzypisane: Wyświetla tekst schowka jako HTML w trybie przeglądania lub
+*	Nieprzypisane: Wyświetla tekst schowka jako HTML w trybie przeglądania lub
   informuje, czy schowek jest pusty lub zawiera zawartość, której nie można
   przedstawić w wiadomości z możliwością przeglądania, na przykład jeśli
   pliki lub foldery zostały skopiowane z Eksploratora Windows.
-* Nieprzypisane: Wyświetla tekstową zawartość schowka jako zwykły tekst w
+*	Nieprzypisane: Wyświetla tekstową zawartość schowka jako zwykły tekst w
   trybie przeglądania lub informuje, czy schowek jest pusty lub zawiera
   zawartość, której nie można przedstawić w wiadomości z możliwością
   przeglądania, na przykład jeśli pliki lub foldery zostały skopiowane z
@@ -66,13 +65,16 @@ Uwagi:
 
 * Potwierdzenia nie będą wymagane, gdy okno komunikatu NVDA jest nadal
   otwarte. W takich przypadkach działania będą wykonywane natychmiast.
-* Polecenia Emuluj kopiowanie i emuluj wycinanie oznaczają, że gdy te
-  funkcje są włączone, dodatek przejmie kontrolę nad control+c i
-  control+x. Pozwoli to wybrać, czy przed wykonaniem czynności
-  odpowiadających tym naciśnięciom należy zażądać potwierdzenia.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
 
 ## Zmiany w wersji 16.0
-* Wymaga NVDA 2022.1 lub nowszego.
+* Reqires NVDA 2022.1 or later.
 
 ## Zmiany w wersji 15.0
 * Polecenie dodawania tekstu do schowka jest ponownie wyświetlane w oknie

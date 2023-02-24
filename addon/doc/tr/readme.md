@@ -9,19 +9,18 @@ birleştirmek ve yapıştırmak istediğinizde yararlı olabilir. Ayrıca Pano
 içeriği temizlenebilir ve tarama kipi modunda gösterilebilir.
 
 ## Klavye komutları ##
-
-* NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode
+*	NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode
   braille karakterlerini veya inceleme imleciyle işaretlenmiş dizeyi panoya
   ekler.
-* NVDA+windows+x: Pano içeriğini temizle.NVDA+windows+x: Pano içeriğini
+*	NVDA+windows+x: Pano içeriğini temizle.NVDA+windows+x: Pano içeriğini
   siler.
-* Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme
+*	Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme
   olasılığı ile.
-* Atanmamış: Pano metnini HTML olarak Tarama kipi  modunda gösterir veya
+*	Atanmamış: Pano metnini HTML olarak Tarama kipi  modunda gösterir veya
   panonun boş olup olmadığını veya örneğin dosyalar veya klasörler Windows
   Gezgini'nden kopyalanmışsa, bir iletide gösterilemeyen içeriğe sahip olup
   olmadığını bildir.
-* Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak
+*	Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak
   gösterir veya panonun boş olup olmadığını veya örneğin dosyalar veya
   klasörler Windows Gezgini'nden kopyalanmışsa, göz atılabilir bir iletide
   gösterilemeyen içeriğe sahip olup olmadığını bildir.
@@ -70,8 +69,11 @@ Notlar:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
+
 ## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+* Reqires NVDA 2022.1 or later.
 
 ## 15.0 için Değişiklikler
 * Panoya metin ekleme komutu, girdi hareketleri iletişim kutusuna tekrar

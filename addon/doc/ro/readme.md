@@ -10,18 +10,17 @@ a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățat și
 afișat în modul de navigare.
 
 ## Comenzi de taste ##
-
-* NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
+*	NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
   reprezintă obiectele MathML, sau string-ul care a fost marcat cu cursorul
   de vizualizare, pe planșetă.
-* NVDA+Windows+X: Curăță contentul de pe planșetă.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+*	NVDA+Windows+X: Curăță contentul de pe planșetă.
+*	Not assigned: Copies to (or cuts from) the clipboard, with the possibility
   of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text as HTML in browse mode, or
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-* Not assigned: Shows the textual clipboard contents as plain text in browse
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -70,8 +69,11 @@ Note:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
+
 ## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+* Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

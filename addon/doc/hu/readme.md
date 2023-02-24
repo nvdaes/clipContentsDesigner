@@ -9,18 +9,17 @@ szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
 tartalma törölhető, illetve megjeleníthető böngésző módban.
 
 ## Billentyűparancsok ##
-
-* NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
+*	NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
   kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
   reprezentáló karaktereket is.
-* NVDA+windows+x: Vágólap tartalom törlése.
-* Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
+*	NVDA+windows+x: Vágólap tartalom törlése.
+*	Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
   vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
-* Not assigned: Shows the clipboard text as HTML in browse mode, or
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-* Not assigned: Shows the textual clipboard contents as plain text in browse
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -69,8 +68,11 @@ Megjegyzések:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
+
 ## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+* Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input
