@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-11-27 00:48+0100\n"
+"PO-Revision-Date: 2023-02-22 15:57+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -29,16 +29,16 @@ msgid ""
 "\t\tDo you want to configure Emulate copy and cut now? You may do or change "
 "this later."
 msgstr ""
-"Ovaj dodatak omogućuje potvrđivanje kopiranja i rezanja, čime se zamijenjuje "
-"sadržaj međuspremnika\n"
-"\t\tprilikom pritiskanja tipki kontrol+c i kontrol+x. To se zove "
-"„Simuliranje kopiranja i rezanja”.\n"
-"\t\tŽeliš li sada konifigurirati Simuliranje kopiranja i izrezivanja? To "
+"Ovaj dodatak omogućuje potvrđivanje kopiranja i izrezivanja, čime se "
+"zamjenjuje sadržaj međuspremnika\n"
+"\t\tprilikom pritiskanja tipki kontrol+c i kontrol+x. To se zove „Emuliranje "
+"kopiranja i izrezivanja”.\n"
+"\t\tŽeliš li sada konifigurirati Emuliranje kopiranja i izrezivanja? To "
 "možeš uraditi ili promijeniti i kasnije."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
-msgstr "Podesi simuliranje kopiranja i izrezivanja"
+msgstr "Podesi Emuliranje kopiranja i izrezivanja"
 
 #. Translators: label of a dialog.
 msgid "Preformatted text in HTML"
@@ -154,7 +154,7 @@ msgstr "Tekst međuspremnika ({max}/{current} – {formatForTitle})"
 #. Translators: message presented in input mode.
 msgid "Shows the clipboard textual contents as plain text in browse mode"
 msgstr ""
-"Prikazuje neformatiran tekstualni sadržaj međuspremnika u modusu čitanja "
+"Prikazuje neformatiran tekstualni sadržaj međuspremnika u modusu čitanja"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -182,11 +182,11 @@ msgstr "Potvrdi za brisanje međuspremnika"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate copy"
-msgstr "Potvrdi za simuliranje kopiranja"
+msgstr "Potvrdi za emuliranje kopiranja"
 
 #. Translators: label of a dialog.
 msgid "Confirm to emulate cut"
-msgstr "Potvrdi za simuliranje izrezivanja"
+msgstr "Potvrdi za emuliranje izrezivanja"
 
 #. Translators: label of a dialog.
 msgid "&Request confirmation before performing the selected actions when:"

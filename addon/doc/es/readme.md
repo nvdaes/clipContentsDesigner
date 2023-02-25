@@ -11,18 +11,17 @@ juntas.  El contenido del portapapeles también puede limpiarse y mostrarse
 en modo exploración.
 
 ## Órdenes de teclado ##
-
-* NVDA+windows+c: añade el texto seleccionado, los caracteres braille
+*	NVDA+windows+c: añade el texto seleccionado, los caracteres braille
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
-* NVDA+windows+x: Limpia el contenido del portapapeles.
-* Sin asignar: copia hacia (o desde) el portapapeles, con la posibilidad de
+*	NVDA+windows+x: Limpia el contenido del portapapeles.
+*	Sin asignar: copia hacia (o desde) el portapapeles, con la posibilidad de
   solicitar una confirmación previa.
-* Sin asignar: Muestra el texto del portapapeles como HTML en modo
+*	Sin asignar: Muestra el texto del portapapeles como HTML en modo
   exploración, o lo anuncia si el portapapeles está vacío o si tiene
   contenidos que no se pueden presentar en un mensaje navegable, por ejemplo
   si se están copiando archivos o carpetas desde el Explorador de Windows.
-* Sin asignar: Muestra el texto del portapapeles como texto sin formato en
+*	Sin asignar: Muestra el texto del portapapeles como texto sin formato en
   modo exploración, o lo anuncia si el portapapeles está vacío o si tiene
   contenidos que no se pueden presentar en un mensaje navegable, por ejemplo
   si se están copiando archivos o carpetas desde el Explorador de Windows.
@@ -72,8 +71,11 @@ Notas:
   control+x. Esto permitirá elegir si se debería solicitar una confirmación
   antes de realizar las acciones correspondientes a estos atajos de teclado.
 
+## Cambios para 17.0
+* Compatible con NVDA 2023.1.
+
 ## Cambios para 16.0
-* Se requiere NVDA 2022.1 o posterior.
+* Requiere NVDA 2022.1 o posterior.
 
 ## Cambios para 15.0
 * La orden para añadir texto al portapapeles se presenta de nuevo en el

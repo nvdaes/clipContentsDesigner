@@ -10,18 +10,17 @@ para colar.  O conteúdo da área de transferência também pode ser visto no
 modo de navegação.
 
 ## Comandos de teclado ##
-
-* NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
+*	NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
   Braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
-* NVDA+windows+x: limpa o conteúdo da área de transferência.
-* Não atribuído: Cópias para (ou cortes de) a área de transferência, com a
+*	NVDA+windows+x: limpa o conteúdo da área de transferência.
+*	Não atribuído: Cópias para (ou cortes de) a área de transferência, com a
   possibilidade de ser solicitada uma confirmação prévia.
-* Não atribuído: Mostra o texto da área de transferência como HTML no modo
+*	Não atribuído: Mostra o texto da área de transferência como HTML no modo
   de navegação, ou anuncia se a área de transferência está vazia ou tem
   conteúdos que não podem ser apresentados numa mensagem navegável, por
   exemplo, se ficheiros ou pastas foram copiados do Explorador do Windows.
-* Não atribuído: Mostra o conteúdo da área de transferência textual como
+*	Não atribuído: Mostra o conteúdo da área de transferência textual como
   texto simples no modo de navegação, ou anuncia se a área de transferência
   está vazia ou tem conteúdo que não pode ser apresentado numa mensagem
   navegável, por exemplo, se os ficheiros ou pastas foram copiados do
@@ -75,8 +74,11 @@ Notas:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
+
 ## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+* Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

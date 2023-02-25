@@ -9,17 +9,16 @@ rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť ob
 schránky a zobraziť obsah schránky v režime prehliadania.
 
 ## Klávesové skratky ##
-
-* NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
+*	NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
   ste označili prezeracím kurzorom. Takto je možné pridať aj znaky unicode,
   MathML.
-* NVDA+windows+x: vymaže obsah schránky.
-* Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
-* Not assigned: Shows the clipboard text as HTML in browse mode, or
+*	NVDA+windows+x: vymaže obsah schránky.
+*	Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-* Not assigned: Shows the textual clipboard contents as plain text in browse
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
@@ -68,8 +67,11 @@ Poznámky:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
+
 ## Changes for 16.0
-* Requires NVDA 2022.1 or later.
+* Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
 * The command to add text to clipboard is again presented in the input

@@ -10,17 +10,16 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
 näyttää selaustilassa.
 
 ## Näppäinkomennot ##
-
-* NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
+*	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
-* NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-* Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
+*	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
+*	Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
   vaihtoehtoisesti vahvistuksen.
-* Ei määritetty: Näyttää leikepöydällä olevan tekstin HTML-muodossa
+*	Ei määritetty: Näyttää leikepöydällä olevan tekstin HTML-muodossa
   selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
   sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
   tiedostoja tai kansioita.
-* Ei määritetty: Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä
+*	Ei määritetty: Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä
   selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
   sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
   tiedostoja tai kansioita.
@@ -67,8 +66,11 @@ Huomautuksia:
   ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
   valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
+## Muutokset versiossa 17.0
+* Yhteensopiva NVDA 2023.1:n kanssa.
+
 ## Muutokset versiossa 16.0
-* Edellyttää NVDA 2022.1:tä tai uudempaa.
+* Edellyttää NVDA 2022.4:ää tai uudempaa.
 
 ## Muutokset versiossa 15.0
 * Tekstiä leikepöydälle lisäävä komento näytetään taas

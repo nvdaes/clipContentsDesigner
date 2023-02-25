@@ -10,18 +10,17 @@ cando queras unir seccións de texto listas para pegarse xuntas.  O contido
 do portapapeis tamén pode limparse e amosarse en modo exploración.
 
 ## Ordes de teclado ##
-
-* NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
+*	NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
   que representan obxectos MathML, ou a cadea que se marcou co cursor de
   revisión, ao portapapeis.
-* NVDA+windows+x: Limpa o contido do portapapeis.
-* Sen asignar: Copia a (ou corta dende) o portapapeis, coa posibilidade de
+*	NVDA+windows+x: Limpa o contido do portapapeis.
+*	Sen asignar: Copia a (ou corta dende) o portapapeis, coa posibilidade de
   que se che pregunte por unha confirmación previa.
-* Sen asignar: amosa o texto do portapapeis como HTML en modo exploración,
+*	Sen asignar: amosa o texto do portapapeis como HTML en modo exploración,
   ou anuncia se o portapapeis está vacío ou ten contido que non se pode
   amosar nunha mensaxe navegable, se se están a copiar arquivos ou carpetas
   do Explorador de Windows, por exemplo.
-* Sen asignar: Amosa os contidos textuais do portapapeis como texto plano en
+*	Sen asignar: Amosa os contidos textuais do portapapeis como texto plano en
   modo exploración, ou anuncia se o portapapeis está vacío ou ten contido
   que non se pode amosar nunha mensaxe navegable, se se están a copiar
   arquivos ou carpetas do Explorador de Windows, por exemplo.
@@ -67,13 +66,16 @@ Notas:
 
 * Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
-* As ordes emular copiar e emular curtar significan que, cando estas
-  características estean habilitadas, o complemento controlará control+c e
-  control+x. Isto permitirá seleccionar se se debería pedir unha
-  confirmación antes de realizar as accións de ditos atallos.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
 
 ## Cambios para 16.0
-* Require NVDA 2022.1 ou posterior.
+* Reqires NVDA 2022.1 or later.
 
 ## Cambios para 15.0
 * A orde para engadir texto ó portapapeis aparece de novo no diálogo xestos

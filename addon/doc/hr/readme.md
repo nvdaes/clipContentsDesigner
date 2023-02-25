@@ -10,18 +10,17 @@ lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
 za čitanje.
 
 ## Tipkovnički prečaci ##
-
-* NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
+*	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
   unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
   pomoću preglednog kursora.
-* NVDA+windows+x: Obriši sadržaj međuspremnika.
-* Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
+*	NVDA+windows+x: Obriši sadržaj međuspremnika.
+*	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
-* Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
+*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
   najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
   predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
   kopirane iz Windows Explorera.
-* Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
+*	Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
   tekst u modusu pregledavanja ili najavljuje prazno stanje međuspremnika
   ili sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na
   primjer ako su datoteke ili mape kopirane iz Windows Explorer.
@@ -65,22 +64,25 @@ Napomene:
 
 * Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
   prikazuje. U tim će se slučajevima radnje izvršavati odmah.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Naredbe za emuliranje kopiranja i emuliranje izrezivanja znače, da će
+  dodatak preuzeti kontrolu nad kontrol+c i kontrol+x kad su ove funkcije
+  aktivirane. Time se može odabrati mogućnost za potvrdom prije izvođenja
+  radnji koje odgovaraju tim prečacima.
+
+## Promjene u verziji 17.0
+* Kompatibilno s NVDA čitačem 2023.1.
 
 ## Promjene u verziji 16.0
-* Zahtijeva NVDA verziju 2022.1 ili noviju.
+* Zahtijeva NVDA 2022.1 ili noviju verziju.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input
-  gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to
-  Mohammadhosein Ghezelsofla.
+## Promjene u verziji 15.0
+* Naredba za dodavanje teksta u međuspremnik ponovo se prikazuje u
+  dijaloškom okviru gesta unosa.
+* Ispravljene su geste za kopiranje i rezanje s perzijskom tipkovnicom,
+  hvala Mohammadhosein Ghezelsofla.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+## Promjene u verziji 14.0
+* Kompatibilno s NVDA čitačem 2021.1.
 
 ## Promjene u verziji 13.0
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
@@ -88,7 +90,7 @@ Napomene:
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all
   commands available for this add-on.
-* Ispravljene su greške prilikom korištenja emulirajuće kopije u
+* Ispravljene su greške prilikom korištenja emuliranja kopiranja u
   preglednicima ako je modus fokusa aktiviran.
 * You can assign different gestures to show the clipboard textual contents
   as raw text or formatted in HTML. The Format to show the clipboard text in
@@ -96,8 +98,8 @@ Napomene:
   options available for HTML format.
 
 ## Promjene u verziji 12.0
-* Ispravljene su greške prilikom korištenja emulirajuće kopije u programima
-  poput LibreOffice Writer.
+* Ispravljene su greške prilikom korištenja emuliranja kopiranja u
+  programima poput LibreOffice Writer.
 
 ## Promjene u verziji 11.0
 * Sada je moguće dodati tekst koji je označen preglednim kursorom, pomoću
@@ -108,7 +110,7 @@ Napomene:
 ## Promjene u verziji 10.0
 * Ispravljana je greška u dijaloškom okviru za prikaz teksta međuspremnika,
   kad naslov sadrži ne-latinične znakove.
-* Ispravljena je greška kad se koriste funkcije simuliranja izrezivanja i
+* Ispravljena je greška kad se koriste funkcije emuliranja izrezivanja i
   kopiranja s arapskim rasporedom tipkovnice. To je ispravio Abdel, dodan je
   kao autor dodatka.
 
@@ -129,17 +131,17 @@ Napomene:
 
 ## Promjene u verziji 7.0
 
-* U dijaloškom okviru za konfiguriranje funkcionalnosti Simuliraj kopiranje
-  i Simuliraj izrezivanje, ako se odabere „ne”, uklonit će se naredbe za ove
+* U dijaloškom okviru za konfiguriranje funkcionalnosti Emuliraj kopiranje i
+  Emuliraj izrezivanje, ako se odabere „ne”, uklonit će se naredbe za ove
   funkcije, tako da će biti moguće koristiti normalni način rada za
   kontrol+c i kontrol+x.
 
 ## Promjene u verziji 6.0
 
 *	Dodana je mogućnost za odluku o izvršavanju dostupnih radnji nakon potvrde.
-*	Dodane su naredbe Simuliraj kopiranje i Simuliraj izrezivanje, koje je moguće dodijeliti u dijaloškom okviru Ulazne geste.
-*	Dodan je dijaloški okvir za podešavanje naredbi Simuliraj kopiranje i Simuliraj izrezivanje, tijekom instaliranja. Ovo dozvoljava dodavanje naredbi kontrol+c i kontrol+x za kopiranje i izrezivanje, te postavljanjem pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih tipkovničkih prečaca.
-*	Riješena dokumentacija za script_add (Windows+NVDA+c).
+*	Dodane su naredbe Emuliraj kopiranje i Emuliraj izrezivanje, koje je moguće dodijeliti u dijaloškom okviru Ulazne geste.
+*	Dodan je dijaloški okvir za podešavanje naredbi Emuliraj kopiranje i Emuliraj izrezivanje, tijekom instaliranja. Ovo dozvoljava dodavanje naredbi kontrol+c i kontrol+x za kopiranje i izrezivanje, te postavljanjem pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih tipkovničkih prečaca.
+*	Ispravljana dokumentacija za script_add (Windows+NVDA+c).
 
 ## Promjene u verziji 5.0 ##
 
