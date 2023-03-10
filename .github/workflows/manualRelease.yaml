@@ -13,25 +13,8 @@ on:
         type: boolean
       signAddOn:
         description: 'Sign add-on with GPG'
-        default: false
-        type: boolean
-      publishOnStore:
-        description: 'Publish on add-on datastore'
         default: true
         type: boolean
-      channel:
-        description: 'Add-on channel for store'
-        default: stable
-        type: choice
-        options:
-        - stable
-        - beta
-      license:
-        description: 'Add-on license'
-        default: 'GPL v2'
-      licenseURL:
-        description: 'Add-on license URL'
-        default: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html'
 
 jobs:
   buildAndUpload:
@@ -94,37 +77,3 @@ jobs:
         generateReleaseNotes: true
         prerelease: ${{ inputs.prerelease }}
         
-  store:
-    needs: buildAndUpload
-    if: ${{ inputs.publishOnStore }}
-    runs-on: windows-latest
-    
-    steps:
-    - name: Checkout validation repo
-      uses: actions/checkout@v3
-      with:
-        repository: nvaccess/addon-datastore-validation
-        submodules: true
-        path: validation
-    - name: Checkout datastore repo
-      uses: actions/checkout@v3
-      with:
-        repository: nvaccess/addon-datastore
-        path: store
-        token: ${{ secrets.PR_ACCESS_TOKEN }}
-    - name: Download add-on
-      run: |
-        curl --location --output addon.nvda-addon ${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon
-    - name: Create json
-      run: |
-        validation\runcreatejson -f addon.nvda-addon --dir store\addons --channel=${{ inputs.channel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ github.event.repository.html_url }}/ --url=${{ github.event.repository.html_url }}/releases/download/${{ inputs.version }}/${{ github.event.repository.name }}-${{ inputs.version }}.nvda-addon --licName="${{ inputs.license }}" --licUrl=${{ inputs.licenseURL }}
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
-      with:
-        token: ${{ secrets.PR_ACCESS_TOKEN }}
-        path: store
-        commit-message: Add ${{ github.event.repository.name }} ${{ inputs.version }} add-on
-        branch: ${{ github.event.repository.name}}-${{ inputs.version }}
-        delete-branch: true
-        title: Add ${{ github.event.repository.name }} ${{ inputs.version }} add-on
-        push-to-fork: ${{ github.event.sender.login }}/addon-datastore
