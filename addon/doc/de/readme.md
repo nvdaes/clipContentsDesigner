@@ -2,8 +2,6 @@
 
 *	Autoren: Noelia, Abdel.
 *	[Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
-*	[Entwicklerversion herunterladen][2] (kompatibel mit NVDA 2022.1 und
-  neuer)
 
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
 hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
@@ -191,8 +189,6 @@ Anmerkungen:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

@@ -2,8 +2,6 @@
 
 *	Autores: Noelia, Abdel.
 *	Descargar [versión estable][1] (compatible desde NVDA 2022.1 en adelante)
-*	Descargar [versión de desarrollo][2] (compatible desde NVDA 2022.1 en
-  adelante)
 
 Este complemento se utiliza para agregar texto al portapapeles, el cual
 puede ser útil cuando quieras unir secciones de texto listas para pegar
@@ -184,8 +182,6 @@ Notas:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

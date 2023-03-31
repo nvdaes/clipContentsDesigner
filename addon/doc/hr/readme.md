@@ -2,7 +2,6 @@
 
 *	Authors: Noelia, Abdel.
 *	Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
-*	Preuzmi [razvojnu verziju][2] (kompatibilna s NVDA 2022.1 i novijom)
 
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
@@ -26,7 +25,7 @@ za čitanje.
   primjer ako su datoteke ili mape kopirane iz Windows Explorer.
 
 
-## Upravljanje sadržajem međuspremnika, postavke ##
+## Postavke dodatka „Upravljanje sadržajem međuspremnika” ##
 
 Ova je ploča dostupna u NVDA izborniku, podizbornik Postavke, dijaloški
 okvir Postavke.
@@ -177,8 +176,6 @@ Napomene:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

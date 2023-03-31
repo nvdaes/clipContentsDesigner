@@ -2,7 +2,6 @@
 
 *	Autori: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
 rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
@@ -164,8 +163,6 @@ Poznámky:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

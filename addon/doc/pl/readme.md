@@ -2,7 +2,6 @@
 
 *	Autorzy: Noelia, Abdel.
 *	Pobierz [stabilna wersja][1] (kompatybilna z NVDA 2022.1 i nowszymi)
-*	Pobierz [wersja rozwojowa][2] (kompatybilna z NVDA 2022.1 i nowszymi)
 
 Ten dodatek służy do dodawania tekstu do schowka, co może być przydatne, gdy
 chcesz połączyć sekcje tekstu gotowe do wklejenia.  Zawartość schowka można
@@ -177,8 +176,6 @@ Uwagi:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
