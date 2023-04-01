@@ -2,7 +2,6 @@
 
 *	Autores: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento é usado para adicionar texto à área de transferência, o que
 pode ser útil quando você deseja unir seções de texto prontas para colar. O
@@ -186,8 +185,6 @@ Notas:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

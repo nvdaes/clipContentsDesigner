@@ -3,8 +3,6 @@
 *	Автори: Noelia, Abdel.
 *	Изтегляне на [стабилна версия][1] (съвместима с NVDA 2022.1 и по-нови
   версии)
-*	Изтегляне на [тестова версия][2] (съвместима с NVDA 2022.1 и по-нови
-  версии)
 
 Тази добавка служи за добавяне на текст към клипборда, което може да бъде
 полезно когато искате да обедините в едно отделни части от текст, готов за
@@ -187,8 +185,6 @@
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

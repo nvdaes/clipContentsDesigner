@@ -2,7 +2,6 @@
 
 *	作者: Noelia, Abdel。
 *	ダウンロード [安定版][1] (NVDA 2022.1以降に互換)
-*	ダウンロード [開発版][2] (NVDA 2022.1以降に互換)
 
 このアドオンは、クリップボードにテキストを追加するのに使用されます。テキストの切片を結合して一緒に貼り付けしたい時に便利です。クリップボードの内容は、ブラウズモードでの表示で消去も出来ます。
 
@@ -126,8 +125,6 @@
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

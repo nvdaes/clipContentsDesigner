@@ -2,7 +2,6 @@
 
 *	Autori: Noelia și Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
 fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
@@ -177,8 +176,6 @@ Note:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

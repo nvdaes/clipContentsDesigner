@@ -2,7 +2,6 @@
 
 *	Tác giả: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Add-on này dùng để thêm văn bản vào bộ nhớ tạm, có thể hữu ích khi bạn muốn
 kết hợp nhiều phần văn bản lại với nhau rồi mới dán.  Bạn cũng có thể xóa
@@ -173,8 +172,6 @@ Lưu ý:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

@@ -2,7 +2,6 @@
 
 *	Készítők: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
 szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
@@ -173,9 +172,7 @@ Megjegyzések:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o[1]:
 https://addons.nvda-project.org/files/get.php?file=ccd

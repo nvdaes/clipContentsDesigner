@@ -2,7 +2,6 @@
 
 *	Автори: Noelia, Abdel.
 *	Завантажити [стабільну версію][1] (сумісну з NVDA 2022.1 і новішими)
-*	Завантажити [версію в розробці][2] (сумісну з NVDA 2019.3 і новішими)
 
 Цей додаток використовується для додавання тексту в буфер обміну, що може
 бути корисним, коли ви хочете з'єднати частини тексту для того, щоб вставити
@@ -173,8 +172,6 @@
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

@@ -2,7 +2,6 @@
 
 *	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
 *	Download [stabil version][1] (kompatibel med NVDA 2022.1 og nyere)
-*	Download [udviklingsversion][2] (kompatibel med NVDA 2022.1 og nyere)
 
 Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
 kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
@@ -181,9 +180,7 @@ Bemærkninger:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o[1]:
 https://addons.nvda-project.org/files/get.php?file=ccd

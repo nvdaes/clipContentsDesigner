@@ -2,7 +2,6 @@
 
 *	Tekijät: Noelia, Abdel.
 *	Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
-*	Lataa [kehitysversio][2] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
 
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
@@ -174,8 +173,6 @@ Huomautuksia:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

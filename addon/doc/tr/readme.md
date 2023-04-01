@@ -2,7 +2,6 @@
 
 *	Yazarlar: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Bu eklenti, panoya metin eklemek için kullanılır. BU, farklı metinleri
 birleştirmek ve yapıştırmak istediğinizde yararlı olabilir. Ayrıca Pano
@@ -177,8 +176,6 @@ Notlar:
 
 [[!tag dev kararlı]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

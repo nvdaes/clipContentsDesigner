@@ -2,8 +2,6 @@
 
 *	Autori: Noelia, Abdel.
 *	Scarica [versione stabile][1] (compatibile con NVDA 2022.1 e successive)
-*	Scarica [versione di sviluppo][2] (compatibile con NVDA 2022.1 e
-  successive)Scarica la [versione in sviluppo][2]
 
 Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
 appunti, operazione utile quando si desidera unire sezioni di testo insieme
@@ -187,8 +185,6 @@ Note:
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

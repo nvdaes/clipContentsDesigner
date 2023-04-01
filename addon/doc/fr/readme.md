@@ -3,8 +3,6 @@
 *	Auteurs : Noelia, Abdel
 *	Télécharger [version stable][1] (compatible avec NVDA 2022.1 et version
   ultérieure)
-*	Télécharger [version de développement][2] (compatible avec NVDA 2022.1 et
-  version ultérieure)
 
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
 peut être utile lorsque vous souhaitez joindre des portions de texte prêt
@@ -180,7 +178,7 @@ Notes :
   Contents Designer.
 *	Ajouté une case à cocher dans la boîte de dialogue paramètres, afin de
   choisir si le séparateur doit être copié pour être importé lors de la
-  réinstallation du module complémentaire.
+  réinstallation de l'extension.
 
 ## Changements pour la version 2.0 ##
 *	Les caractères Hindous peuvent être utilisés comme séparateur entre les
@@ -191,8 +189,6 @@ Notes :
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
-
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=clipContentsDesigner
 
 [3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
