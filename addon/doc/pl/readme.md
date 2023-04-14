@@ -64,16 +64,16 @@ Uwagi:
 
 * Potwierdzenia nie będą wymagane, gdy okno komunikatu NVDA jest nadal
   otwarte. W takich przypadkach działania będą wykonywane natychmiast.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Polecenia emuluj kopiowanie i emuluj cięcie oznaczają, że gdy te funkcje
+  są włączone, dodatek przejmie kontrolę nad control+c i control+x. Pozwoli
+  to wybrać, czy należy poprosić o potwierdzenie przed wykonaniem czynności
+  odpowiadających tym naciśnięciom.
 
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
+## Zmiany w wersji 17.0
+* Kompatybilny z NVDA 2023.1.
 
 ## Zmiany w wersji 16.0
-* Reqires NVDA 2022.1 or later.
+* Wymagana wersja NVDA 2022.1 lub nowsza.
 
 ## Zmiany w wersji 15.0
 * Polecenie dodawania tekstu do schowka jest ponownie wyświetlane w oknie
