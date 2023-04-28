@@ -1,8 +1,7 @@
 # Clip Contents Designer #
 
 *	Auteurs : Noelia, Abdel
-*	Télécharger [version stable][1] (compatible avec NVDA 2022.1 et version
-  ultérieure)
+*	Télécharger [version stable][1] (compatible avec NVDA 2022.1 et au-delà)
 
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
 peut être utile lorsque vous souhaitez joindre des portions de texte prêt
@@ -70,16 +69,17 @@ Notes :
 * Les confirmations ne seront pas demandées lorsqu'une boîte de message de
   NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
   immédiatement.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Emuler les commandes copier et couper signifie que, lorsque ces
+  fonctionnalités sont activées, l'extension prendra le contrôle de
+  contrôle+c et contrôle+x. Cela permettra de choisir si une confirmation
+  doit être demandée avant d'effectuer les actions correspondant à ces
+  frappes.
 
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
+## Changements pour la version 17.0
+* Compatible avec NVDA 2023.1.
 
 ## Changements pour la version 16.0
-* Reqires NVDA 2022.1 or later.
+* Nécessite NVDA 2022.1 ou ultérieur.
 
 ## Changements pour la version 15.0
 * La commande pour ajouter du texte au presse-papiers est à nouveau
