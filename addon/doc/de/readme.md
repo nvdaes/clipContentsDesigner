@@ -69,16 +69,17 @@ Anmerkungen:
 
 * Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Die Befehle "Kopieren" und "Ausschneiden" emulieren bedeutet, dass die
+  NVDA-Erweiterung die Kontrolle über Strg+C und Strg+X übernimmt, wenn
+  diese Funktionen aktiviert sind. So können Sie auswählen, ob eine
+  Bestätigung angefordert werden soll, bevor die diese Tastenkombinationen
+  entsprechenden Aktionen ausgeführt werden.
 
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
+## Änderungen in 17.0
+* Kompatibel mit NVDA 2023.1.
 
 ## Änderungen in 16.0
-* Reqires NVDA 2022.1 or later.
+* NVDA 2022.1 oder neuer wird benötigt.
 
 ## Änderungen in 15.0
 * Der Befehl zum Hinzufügen von Text in die Zwischenablage wird wieder im
