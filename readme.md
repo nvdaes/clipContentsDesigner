@@ -1,7 +1,6 @@
 # Clip Contents Designer #
 *	Authors: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
 The clipboard content can also be cleared an shown in browse mode.
@@ -109,7 +108,6 @@ Notes:
 
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
 
-[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o
-
+[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
