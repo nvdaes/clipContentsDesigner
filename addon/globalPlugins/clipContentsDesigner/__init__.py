@@ -478,12 +478,22 @@ class AddonSettingsPanel(SettingsPanel):
 		self.setSeparatorEdit.SetFocus()
 
 	def onRestoreDefaults(self, evt):
-		self.setSeparatorEdit.SetValue(config.conf.getConfigValidation(['clipContentsDesigner', 'separator']).default)
-		self.addTextBeforeCheckBox.SetValue(config.conf.getConfigValidation(['clipContentsDesigner', 'addTextBefore']).default)
+		self.setSeparatorEdit.SetValue(
+			config.conf.getConfigValidation(['clipContentsDesigner', 'separator']).default
+		)
+		self.addTextBeforeCheckBox.SetValue(
+			config.conf.getConfigValidation(['clipContentsDesigner', 'addTextBefore']).default
+		)
 		self.confirmList.CheckedItems = []
-		self.confirmRequirementChoices.SetSelection(config.conf.getConfigValidation(['clipContentsDesigner', 'confirmationRequirement']).default)
-		self.formatChoices.SetSelection(config.conf.getConfigValidation(['clipContentsDesigner', 'browseableTextFormat']).default)
-		self.maxLengthEdit.SetValue(config.conf.getConfigValidation(['clipContentsDesigner', 'maxLengthForBrowseableText']).default)
+		self.confirmRequirementChoices.SetSelection(
+			config.conf.getConfigValidation(['clipContentsDesigner', 'confirmationRequirement']).default
+		)
+		self.formatChoices.SetSelection(
+			config.conf.getConfigValidation(['clipContentsDesigner', 'browseableTextFormat']).default
+		)
+		self.maxLengthEdit.SetValue(
+			config.conf.getConfigValidation(['clipContentsDesigner', 'maxLengthForBrowseableText']).default
+		)
 
 	def onSave(self):
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
