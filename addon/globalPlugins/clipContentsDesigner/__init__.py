@@ -413,6 +413,9 @@ class AddonSettingsPanel(SettingsPanel):
 	def makeSettings(self, settingsSizer):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: label of a dialog.
+		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))
+		self.restoreDefaultsButton.Bind(wx.EVT_BUTTON, self.onRestoreDefaults)
+		# Translators: label of a dialog.
 		setSeparatorLabel = _("Type the string to be used as a &separator between contents added to the clipboard.")
 		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
 		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
@@ -472,9 +475,15 @@ class AddonSettingsPanel(SettingsPanel):
 			max=1000000,
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
 		)
-
-	def postInit(self):
 		self.setSeparatorEdit.SetFocus()
+
+	def onRestoreDefaults(self, evt):
+		self.setSeparatorEdit.SetValue(config.conf.getConfigValidation(['clipContentsDesigner', 'separator']).default)
+		self.addTextBeforeCheckBox.SetValue(config.conf.getConfigValidation(['clipContentsDesigner', 'addTextBefore']).default)
+		self.confirmList.CheckedItems = []
+		self.confirmRequirementChoices.SetSelection(config.conf.getConfigValidation(['clipContentsDesigner', 'confirmationRequirement']).default)
+		self.formatChoices.SetSelection(config.conf.getConfigValidation(['clipContentsDesigner', 'browseableTextFormat']).default)
+		self.maxLengthEdit.SetValue(config.conf.getConfigValidation(['clipContentsDesigner', 'maxLengthForBrowseableText']).default)
 
 	def onSave(self):
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()

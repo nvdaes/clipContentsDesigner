@@ -19,6 +19,7 @@ This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
 
 It contains the following controls:
 
+* Restore defaults: Press shift+tab after opening the panel to press this button.
 * Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 * Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
 * Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
@@ -30,6 +31,9 @@ Notes:
 
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 * Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
