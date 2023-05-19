@@ -64,16 +64,16 @@ Notas:
 
 * Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* As ordes emular copiar e emular curtar significan que, cando estas
+  características estean habilitadas, o complemento controlará control+c e
+  control+x. Isto permitirá seleccionar se se debería pedir unha
+  confirmación antes de realizar as accións de ditos atallos.
 
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
+## Cambios para 17.0
+* Compatible con NVDA 2023.1.
 
 ## Cambios para 16.0
-* Reqires NVDA 2022.1 or later.
+* Require NVDA 2022.1 ou posterior.
 
 ## Cambios para 15.0
 * A orde para engadir texto ó portapapeis aparece de novo no diálogo xestos
