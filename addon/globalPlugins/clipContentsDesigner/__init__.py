@@ -99,6 +99,13 @@ def getKeyForCut():
 		return "control+x"
 
 
+def disableInSecureMode(decoratedCls):
+	if globalVars.appArgs.secure:
+		return globalPluginHandler.GlobalPlugin
+	return decoratedCls
+
+
+@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = ADDON_SUMMARY
