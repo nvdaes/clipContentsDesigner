@@ -1,6 +1,7 @@
 # Clip Contents Designer #
 *	Authors: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
 The clipboard content can also be cleared an shown in browse mode.
@@ -19,6 +20,7 @@ This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
 
 It contains the following controls:
 
+* Restore defaults: Press shift+tab after opening the panel to press this button.
 * Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 * Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
 * Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
@@ -30,6 +32,10 @@ Notes:
 
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 * Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
@@ -109,5 +115,7 @@ Notes:
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
