@@ -5,6 +5,7 @@
 
 import addonHandler
 import globalPluginHandler
+import globalVars
 import api
 import textInfos
 import controlTypes
