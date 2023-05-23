@@ -116,6 +116,6 @@ Notes:
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
 
-[]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
+[2]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
