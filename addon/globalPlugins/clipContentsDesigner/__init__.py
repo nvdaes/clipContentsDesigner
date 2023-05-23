@@ -5,6 +5,7 @@
 
 import addonHandler
 import globalPluginHandler
+import globalVars
 import api
 import textInfos
 import controlTypes
@@ -99,6 +100,13 @@ def getKeyForCut():
 		return "control+x"
 
 
+def disableInSecureMode(decoratedCls):
+	if globalVars.appArgs.secure:
+		return globalPluginHandler.GlobalPlugin
+	return decoratedCls
+
+
+@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = ADDON_SUMMARY

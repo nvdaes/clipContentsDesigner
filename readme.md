@@ -34,6 +34,7 @@ Notes:
 
 ## Changes for 22.0.0
 * Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
