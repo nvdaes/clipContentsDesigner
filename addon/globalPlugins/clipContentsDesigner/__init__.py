@@ -421,9 +421,6 @@ class AddonSettingsPanel(SettingsPanel):
 	def makeSettings(self, settingsSizer):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		# Translators: label of a dialog.
-		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))
-		self.restoreDefaultsButton.Bind(wx.EVT_BUTTON, self.onRestoreDefaults)
-		# Translators: label of a dialog.
 		setSeparatorLabel = _("Type the string to be used as a &separator between contents added to the clipboard.")
 		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
 		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
@@ -483,6 +480,9 @@ class AddonSettingsPanel(SettingsPanel):
 			max=1000000,
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
 		)
+		# Translators: label of a dialog.
+		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))
+		self.restoreDefaultsButton.Bind(wx.EVT_BUTTON, self.onRestoreDefaults)
 
 	def onRestoreDefaults(self, evt):
 		self.setSeparatorEdit.SetValue(
