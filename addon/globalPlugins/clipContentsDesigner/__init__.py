@@ -483,7 +483,6 @@ class AddonSettingsPanel(SettingsPanel):
 			max=1000000,
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"]
 		)
-		self.setSeparatorEdit.SetFocus()
 
 	def onRestoreDefaults(self, evt):
 		self.setSeparatorEdit.SetValue(
