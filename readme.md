@@ -112,8 +112,6 @@ Notes:
 ## Changes for 1.0 ##
 *	Initial version.
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
 
 [2]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
