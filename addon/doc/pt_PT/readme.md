@@ -2,6 +2,7 @@
 
 *	Autores: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este extra é usado para adicionar texto à área de transferência, o que lhe
 pode ser útil quando quiser juntar várias partes de textos num só, pronto
@@ -33,6 +34,8 @@ diálogo configurações.
 
 Contém os seguintes controlos:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * Digite a cadeia a ser utilizada como separador entre os conteúdos
   adicionados à área de transferência: Permite definir um separador que pode
   ser utilizado para encontrar os segmentos de texto uma vez colado todo o
@@ -72,6 +75,10 @@ Notas:
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
@@ -186,5 +193,8 @@ Notas:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

@@ -60,10 +60,6 @@ msgstr "Udklipsholder ryddet"
 msgid "Clipboard not cleared"
 msgstr "Udklipsholder ikke ryddet"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Ingen tekst at tilføje"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "Bekræft, at du vil tilføje tekst til udklipsholderen"
@@ -215,6 +211,10 @@ msgstr ""
 "&Maksimalt antal tegn, når du viser udklipsholderens tekst i "
 "gennemsynstilstand"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -224,6 +224,9 @@ msgstr "Udklipsdesigner"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Tilføjelsesprogram til styring af tekst i udklipsholderen."
+
+#~ msgid "No text to add"
+#~ msgstr "Ingen tekst at tilføje"
 
 #~ msgid "Start marker set"
 #~ msgstr "Startmærke sat"

@@ -1,7 +1,8 @@
 # Pano içerik düzenleyicisi #
 
 *	Yazarlar: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	[Kararlı sürümü indir][1] (NVDA 2022.1 ve sonrası ile uyumlu)
+*	[Beta sürümünü indir][2] (NVDA 2022.1 ve sonrası ile uyumlu)
 
 Bu eklenti, panoya metin eklemek için kullanılır. BU, farklı metinleri
 birleştirmek ve yapıştırmak istediğinizde yararlı olabilir. Ayrıca Pano
@@ -32,6 +33,8 @@ girerek erişilebilir.
 
 Aşağıdaki kontrolleri içerir:
 
+* Varsayılanları geri yükle: Bu düğmeye basmak için paneli açtıktan sonra
+  shift+tab tuşlarına basın.
 * Panoya eklenen içerikler arasında ayraç olarak kullanılacak metni yazın:
   Eklenen metnin tamamı yapıştırıldıktan sonra metin bölümlerini bulmak için
   kullanılabilecek bir ayırıcı ayarlamayı sağlar.
@@ -63,16 +66,22 @@ Notlar:
 * Eğer NVDA'nın bir mesaj kutusu hala açıksa bir işlem için onay
   istenmeyecektir. Bu gibi durumlarda, işlemler derhal
   gerçekleştirilecektir.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler
+  etkinleştirildiğinde, eklentinin kontrol+c ve kontrol+x'in kontrolünü
+  alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri
+  gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin
+  verecektir.
 
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
+## 22.0.0 için Değişiklikler
+* Eklenti ayarları panelinde varsayılanları geri yüklemek için bir düğme
+  eklendi.
+* Eklenti güvenli modda çalıştırılamaz.
 
-## Changes for 16.0
-* Reqires NVDA 2022.1 or later.
+## 17.0 için Değişiklikler
+* NVDA 2023.1 ile uyumlu.
+
+## 16.0 için Değişiklikler
+* NVDA 2022.1 veya sonraki bir sürümü gerektirir.
 
 ## 15.0 için Değişiklikler
 * Panoya metin ekleme komutu, girdi hareketleri iletişim kutusuna tekrar
@@ -83,10 +92,10 @@ Notlar:
 ## 14.0 için değişiklikler
 * NVDA 2021.1 ile uyumlu.
 
-## 13.0 için Değişiklikler
+## 13.0 için Değişiklikler 
 * Ayarlar panelinin görsel düzenindeki bir sorun düzeltildi, teşekkürler
   Cyrille Bougot.
-* dokümantasyon (yardım dosyaları) geliştirildi.
+* Dokümantasyon (yardım dosyaları) geliştirildi.
 * Eklenti için kullanılabilen tüm komutlara girdi hareketleri atamak için
   bir Pano İçerik Düzenleyicisi kategorisi eklendi.
 * Tarayıcılarda odak modu etkinken Kopyalamayı taklit et  kullanıldığında
@@ -177,5 +186,8 @@ Notlar:
 [[!tag dev kararlı]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

@@ -2,6 +2,7 @@
 
 *	Autori: Noelia, Abdel.
 *	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
 rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
@@ -30,6 +31,8 @@ dialog.
 
 It contains the following controls:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * Type the string to be used as a separator between contents added to the
   clipboard: Allows to set a separator which can be used to find the text
   segments once the entire added text is pasted.
@@ -65,6 +68,10 @@ Poznámky:
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
@@ -164,5 +171,8 @@ Poznámky:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

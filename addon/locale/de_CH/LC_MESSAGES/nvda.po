@@ -66,10 +66,6 @@ msgstr "Zwischenablage geleert"
 msgid "Clipboard not cleared"
 msgstr "Zwischenablage ist nicht leer"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Kein Text zum Anfügen vorhanden."
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr ""
@@ -91,9 +87,8 @@ msgstr "Text konnte nicht hinzugefügt werden."
 #, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
 "Fügt den Text zwischen der zuvor gesetzten Startmarke und der aktuellen "
 "Position des NVDA-Cursors in die Zwischenablage."
@@ -229,6 +224,10 @@ msgid ""
 msgstr ""
 "& Maximale Anzahl der Zeichen bei der Anzeige der Zwischenablage im Lesemodus"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -238,6 +237,9 @@ msgstr "Designer für den  Inhalt der Zwischenablage"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Erweiterung zum Umgang mit der Windows-Zwischenablage."
+
+#~ msgid "No text to add"
+#~ msgstr "Kein Text zum Anfügen vorhanden."
 
 #~ msgid "Start marker set"
 #~ msgstr "Startmarke gesetzt"

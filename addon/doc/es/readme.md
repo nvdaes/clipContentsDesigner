@@ -2,6 +2,7 @@
 
 *	Autores: Noelia, Abdel.
 *	Descargar [versión estable][1] (compatible desde NVDA 2022.1 en adelante)
+*	Descargar [versión beta][2] (compatible desde NVDA 2022.1 en adelante)
 
 Este complemento se utiliza para agregar texto al portapapeles, el cual
 puede ser útil cuando quieras unir secciones de texto listas para pegar
@@ -32,6 +33,8 @@ diálogo Opciones.
 
 Contiene los siguientes controles:
 
+* Restaurar valores por defecto: pulsa shift+tab tras abrir el panel para
+  pulsar este botón.
 * Teclea la cadena que se usará como separador entre contenidos añadidos al
   portapapeles: permite configurar un separador que puede usarse para buscar
   los segmentos de texto una vez que se pega el texto completo.
@@ -68,6 +71,11 @@ Notas:
   funciones están activadas, el complemento tomará el control de control+c y
   control+x. Esto permitirá elegir si se debería solicitar una confirmación
   antes de realizar las acciones correspondientes a estos atajos de teclado.
+
+## Cambios para 22.0.0
+* Se ha añadido un botón para restaurar valores por defecto en el panel de
+  opciones del complemento.
+* El complemento no se puede ejecutar en modo seguro.
 
 ## Cambios para 17.0
 * Compatible con NVDA 2023.1.
@@ -183,5 +191,8 @@ Notas:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

@@ -60,10 +60,6 @@ msgstr "Ispražnjena privremena memorija"
 msgid "Clipboard not cleared"
 msgstr "Nije ispražnjena privremena memorija"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Nema teksta za dodavanje"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "Molimo, podvrdite da želite da dodate tekst u privremenu memoriju"
@@ -211,6 +207,10 @@ msgid ""
 msgstr ""
 "&Maksimalan broj znakova kada se prikazuje tekst u režimu pretraživanja"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -220,6 +220,9 @@ msgstr "Dizajner sadržaja privremene memorije"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Dodatak za upravljanje tekstualnog sadržaja privremene memorije"
+
+#~ msgid "No text to add"
+#~ msgstr "Nema teksta za dodavanje"
 
 #~ msgid "Start marker set"
 #~ msgstr "Postavljen početni marker"

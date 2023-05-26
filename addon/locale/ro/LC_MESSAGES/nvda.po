@@ -62,10 +62,6 @@ msgstr "Planșetă golită"
 msgid "Clipboard not cleared"
 msgstr "Planșetă negolită"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Fără text de adăugat"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "Vă rugăm să confirmați dacă vreți să adăugați text pe planșetă"
@@ -86,9 +82,8 @@ msgstr "Nu se poate adăuga"
 #, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
 "Recuperează șirul selectat sau textul de la marcajul de început stabilit "
 "anterior și până la poziția curentă a cursorului de examinare, inclusiv, și "
@@ -220,6 +215,10 @@ msgid ""
 msgstr ""
 "&Număr maxim de caractere la afișarea textului planșetei în modul de navigare"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -229,6 +228,9 @@ msgstr "Clip Contents Designer (Proiectantul conținutului planșetei)"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Supliment pentru gestionarea textului din planșetă."
+
+#~ msgid "No text to add"
+#~ msgstr "Fără text de adăugat"
 
 #~ msgid "Start marker set"
 #~ msgstr "Marcaj de început stabilit"

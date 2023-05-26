@@ -61,10 +61,6 @@ msgstr "பிடிப்புப்பலகை துடைக்கப்�
 msgid "Clipboard not cleared"
 msgstr "பிடிப்புப்பலகை துடைக்கப்படவில்லை"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr ""
@@ -214,6 +210,10 @@ msgstr ""
 "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டப்படும்பொழுது, காட்டப்பட வேண்டிய "
 "வரியுருக்களின் உச்ச எண்ணிக்கை (&M)"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -223,6 +223,9 @@ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர�
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
+
+#~ msgid "No text to add"
+#~ msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
 
 #~ msgid "Start marker set"
 #~ msgstr "துவக்கக் குறி இடப்பட்டது"

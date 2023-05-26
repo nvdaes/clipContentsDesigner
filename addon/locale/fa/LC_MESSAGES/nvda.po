@@ -61,10 +61,6 @@ msgstr "کلیپ‌برد پاک شد."
 msgid "Clipboard not cleared"
 msgstr "کلیپ‌برد پاک نشد."
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "متنی برای اضافه شدن به کلیپ‌برد موجود نیست"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "لطفا تأیید کنید که میخواهید متن را به کلیپ‌برد بیفزایید"
@@ -208,6 +204,10 @@ msgid ""
 "&Maximum number of characters when showing clipboard text in browse mode"
 msgstr "&حداکثرِ تعدادِ نویسه‌ها هنگامِ نمایشِ متنِ کلیپ‌برد در حالتِ مرور"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -217,6 +217,9 @@ msgstr "طراحِ محتوای کلیپ‌برد"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "افزونه‌ای برای مدیریتِ متنِ داخلِ کلیپ‌برد"
+
+#~ msgid "No text to add"
+#~ msgstr "متنی برای اضافه شدن به کلیپ‌برد موجود نیست"
 
 #~ msgid "Start marker set"
 #~ msgstr "نشانه‌ی آغاز گذاشته شد."
