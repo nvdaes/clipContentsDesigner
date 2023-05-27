@@ -61,10 +61,6 @@ msgstr "Portapapeles limpiado"
 msgid "Clipboard not cleared"
 msgstr "Portapapeles no limpiado"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "No hay texto para añadir"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "Por favor, confirma si quieres añadir texto al portapapeles"
@@ -219,6 +215,10 @@ msgstr ""
 "Número &máximo de caracteres al mostrar el texto del portapapeles en modo "
 "exploración"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -228,6 +228,9 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para manejar texto en el portapapeles."
+
+#~ msgid "No text to add"
+#~ msgstr "No hay texto para añadir"
 
 #~ msgid "Start marker set"
 #~ msgstr "Colocación de marca de inicio"

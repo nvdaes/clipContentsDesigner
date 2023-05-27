@@ -62,10 +62,6 @@ msgstr "클립보드 텍스트 삭제됨"
 msgid "Clipboard not cleared"
 msgstr "클립보드 텍스트 삭제 실패"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "추가할 텍스트 없음"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "클립보드에 텍스트 추가하려면 확인하세요"
@@ -209,6 +205,10 @@ msgid ""
 msgstr ""
 "브라우즈 모드에서 클립보드에 저장된 문구를 표시할 때 최대 표시 글자수(&M)"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -218,3 +218,6 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "클립보드 텍스트 관리용 추가기능."
+
+#~ msgid "No text to add"
+#~ msgstr "추가할 텍스트 없음"

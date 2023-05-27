@@ -1,7 +1,8 @@
-# Zwischenablagenverwalter #
+# Clip Contents Designer #
 
-*	Autoren: Noelia, Abdel.
+*	Autoren: Noelia und Abdel.
 *	[Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
+*	[Beta-Version herunterladen][2] (kompatibel mit NVDA 2022.1 und neuer)
 
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
 hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
@@ -32,6 +33,8 @@ Diese Kategorie finden Sie im NVDA_Menü, unter Optionen und Einstellungen.
 
 Folgende Einstellungen sind verfügbar:
 
+* Standard-Einstellungen wiederherstellen: Drücken Sie nach dem Öffnen des
+  Panels Umschalt+Tab, um diese Schaltfläche zu betätigen.
 * Geben Sie die Zeichenfolge ein, die als Trennzeichen zwischen Inhalten
   verwendet werden soll, die der Zwischenablage hinzugefügt wurden:
   Ermöglicht das Festlegen eines Trennzeichens, mit dem die Textsegmente
@@ -70,10 +73,15 @@ Anmerkungen:
 * Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
   geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
 * Die Befehle "Kopieren" und "Ausschneiden" emulieren bedeutet, dass die
-  NVDA-Erweiterung die Kontrolle über Strg+C und Strg+X übernimmt, wenn
-  diese Funktionen aktiviert sind. So können Sie auswählen, ob eine
-  Bestätigung angefordert werden soll, bevor die diese Tastenkombinationen
-  entsprechenden Aktionen ausgeführt werden.
+  NVDA-Erweiterung die Kontrolle über Strg+C und Strg+X übernimmt, sobald
+  diese Funktionen ausgeführt werden. So können Sie auswählen, ob eine
+  Bestätigung angefordert werden soll, bevor die entsprechende Aktion
+  ausgeführt wird.
+
+## Änderungen in 22.0.0
+* Es wurde eine Schaltfläche zum Wiederherstellen der Standard-Einstellungen
+  im den Einstellungen der NVDA-Erweiterung hinzugefügt.
+* Die NVDA-Erweiterung läuft nicht im geschützten Modus.
 
 ## Änderungen in 17.0
 * Kompatibel mit NVDA 2023.1.
@@ -191,5 +199,8 @@ Anmerkungen:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

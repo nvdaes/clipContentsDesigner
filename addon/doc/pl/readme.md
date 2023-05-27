@@ -2,6 +2,7 @@
 
 *	Autorzy: Noelia, Abdel.
 *	Pobierz [stabilna wersja][1] (kompatybilna z NVDA 2022.1 i nowszymi)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Ten dodatek służy do dodawania tekstu do schowka, co może być przydatne, gdy
 chcesz połączyć sekcje tekstu gotowe do wklejenia.  Zawartość schowka można
@@ -32,6 +33,8 @@ Ustawienia.
 
 Zawiera następujące kontrolki:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * Wpisz ciąg, który ma być używany jako separator między zawartością dodaną
   do schowka: Umożliwia ustawienie separatora, który może być używany do
   znajdowania segmentów tekstu po wklejeniu całego dodanego tekstu.
@@ -64,10 +67,14 @@ Uwagi:
 
 * Potwierdzenia nie będą wymagane, gdy okno komunikatu NVDA jest nadal
   otwarte. W takich przypadkach działania będą wykonywane natychmiast.
-* Polecenia emuluj kopiowanie i emuluj cięcie oznaczają, że gdy te funkcje
-  są włączone, dodatek przejmie kontrolę nad control+c i control+x. Pozwoli
-  to wybrać, czy należy poprosić o potwierdzenie przed wykonaniem czynności
-  odpowiadających tym naciśnięciom.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Zmiany w wersji 17.0
 * Kompatybilny z NVDA 2023.1.
@@ -177,5 +184,8 @@ Uwagi:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

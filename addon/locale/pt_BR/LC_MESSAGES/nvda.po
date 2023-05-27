@@ -65,10 +65,6 @@ msgstr "Apagada a área de transferência"
 msgid "Clipboard not cleared"
 msgstr "Não foi apagada a área de transferência"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Nenhum texto a acrescentar"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "Por favor confirme se deseja acrescentar texto à área de transferência"
@@ -225,6 +221,10 @@ msgstr ""
 "Número &máximo de caracteres ao mostrar o texto da área de transferência no "
 "modo de navegação"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -234,6 +234,9 @@ msgstr "Gestor do Conteúdo de Transferência"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para gerir o texto da área de transferência."
+
+#~ msgid "No text to add"
+#~ msgstr "Nenhum texto a acrescentar"
 
 #~ msgid "Start marker set"
 #~ msgstr "Definido marcador inicial"

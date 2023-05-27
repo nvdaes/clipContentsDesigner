@@ -2,6 +2,7 @@
 
 *	Autores: Noelia, Abdel.
 *	Descargar [versión estable][1] (compatible con NVDA 2022.1 e posterior)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
 cando queras unir seccións de texto listas para pegarse xuntas.  O contido
@@ -31,6 +32,8 @@ diálogo Opcións.
 
 Contén os seguintes controis:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * Escribe a cadea de texto que se utilizará como separador entre contido
   engadido ao portapapeis: Permite establecer un separador que se pode
   utilizar para buscar os segmentos de texto unha vez se pegue todo o texto
@@ -64,10 +67,14 @@ Notas:
 
 * Non se solicitarán confirmacións cando estea aberta unha Caixa de mensaxe
   do NVDA. Neses casos, as accións realizaranse inmediatamente.
-* As ordes emular copiar e emular curtar significan que, cando estas
-  características estean habilitadas, o complemento controlará control+c e
-  control+x. Isto permitirá seleccionar se se debería pedir unha
-  confirmación antes de realizar as accións de ditos atallos.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Cambios para 17.0
 * Compatible con NVDA 2023.1.
@@ -180,5 +187,8 @@ Notas:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

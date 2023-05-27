@@ -2,6 +2,7 @@
 
 *	Autori: Noelia, Abdel.
 *	Scarica [versione stabile][1] (compatibile con NVDA 2022.1 e successive)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
 appunti, operazione utile quando si desidera unire sezioni di testo insieme
@@ -34,6 +35,8 @@ e quindi Impostazioni.
 
 Essa contiene i seguenti controlli:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * Digitare il testo da usare come separatore tra i contenuti aggiunti negli
   appunti: permette di definire un separatore da usare per individuare, nel
   momento in cui si effettua l'operazione di "incolla", i vari segmenti di
@@ -71,6 +74,10 @@ Note:
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
@@ -186,5 +193,8 @@ Note:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

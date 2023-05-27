@@ -2,6 +2,7 @@
 
 *	Authors: Noelia, Abdel.
 *	Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
@@ -32,6 +33,8 @@ okvir Postavke.
 
 It contains the following controls:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * Type the string to be used as a separator between contents added to the
   clipboard: Allows to set a separator which can be used to find the text
   segments once the entire added text is pasted.
@@ -63,10 +66,14 @@ Napomene:
 
 * Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
   prikazuje. U tim će se slučajevima radnje izvršavati odmah.
-* Naredbe za emuliranje kopiranja i emuliranje izrezivanja znače, da će
-  dodatak preuzeti kontrolu nad kontrol+c i kontrol+x kad su ove funkcije
-  aktivirane. Time se može odabrati mogućnost za potvrdom prije izvođenja
-  radnji koje odgovaraju tim prečacima.
+* Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Promjene u verziji 17.0
 * Kompatibilno s NVDA čitačem 2023.1.
@@ -177,5 +184,8 @@ Napomene:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

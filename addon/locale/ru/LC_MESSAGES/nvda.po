@@ -61,10 +61,6 @@ msgstr "Буфер обмена очищен"
 msgid "Clipboard not cleared"
 msgstr "Буфер обмена не очищен"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Нет текста для добавления"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr "Пожалуйста, подтвердите, что вы хотите добавить текст в буфер обмена"
@@ -222,6 +218,10 @@ msgstr ""
 "&Максимальное число символов при отображении текста буфера обмена в режиме "
 "обзора"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -231,3 +231,6 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Дополнение для управления текстом буфера обмена."
+
+#~ msgid "No text to add"
+#~ msgstr "Нет текста для добавления"

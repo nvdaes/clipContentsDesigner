@@ -2,6 +2,7 @@
 
 *	作者: Noelia, Abdel。
 *	ダウンロード [安定版][1] (NVDA 2022.1以降に互換)
+*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 このアドオンは、クリップボードにテキストを追加するのに使用されます。テキストの切片を結合して一緒に貼り付けしたい時に便利です。クリップボードの内容は、ブラウズモードでの表示で消去も出来ます。
 
@@ -24,6 +25,8 @@
 
 次のコントロールを含みます:
 
+* Restore defaults: Press shift+tab after opening the panel to press this
+  button.
 * クリップボードに追加された内容の間のセパレータとして使用する文字列を入力します:
   追加されたテキスト全体がペーストされた時に、テキストの区切りを見つけるのに使用可能なセパレータを設定出来ます。
 * クリップデータの前にテキストを追加: 追加されたテキストが後ろに追加されるか前に追加されるかを選択することも可能です。
@@ -46,6 +49,10 @@
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
 * Compatible with NVDA 2023.1.
@@ -126,5 +133,8 @@
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

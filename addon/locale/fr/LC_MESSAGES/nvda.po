@@ -61,10 +61,6 @@ msgstr "Presse-papiers vidé"
 msgid "Clipboard not cleared"
 msgstr "Presse-papiers non vidé"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Aucun texte à ajouter"
-
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to add text to the clipboard"
 msgstr ""
@@ -219,6 +215,10 @@ msgstr ""
 "Nombre &maximum de caractères quand le texte du presse-papiers est présenté "
 "en mode navigation"
 
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Clip Contents Designer"
@@ -228,3 +228,6 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Extension pour gérer le texte du presse-papiers."
+
+#~ msgid "No text to add"
+#~ msgstr "Aucun texte à ajouter"

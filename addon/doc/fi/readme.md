@@ -2,6 +2,8 @@
 
 *	Tekijät: Noelia, Abdel.
 *	Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
+*	Lataa [beetaversio][2] (yhteensopiva NVDA 2022.1:n ja sitä uudempien
+  kanssa)
 
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
@@ -30,6 +32,8 @@ Tämä paneeli löytyy kohdasta NVDA-valikko -> Asetukset -> Asetukset.
 
 Se sisältää seuraavat säätimet:
 
+* Palauta oletukset: Paina Vaihto+Sarkain paneelin avaamisen jälkeen
+  painaaksesi tätä painiketta.
 * Kirjoita merkkijono, jota käytetään erottimena leikepöydälle lisättyjen
   tekstiosuuksien välissä: Mahdollistaa erottimen asettamisen, jota voidaan
   käyttää tekstiosioiden etsimiseen.
@@ -64,6 +68,11 @@ Huomautuksia:
 * Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa
   ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
   valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
+
+## Muutokset versiossa 22.0.0
+* Lisäosan asetuspaneeliin lisätty painike oletusarvojen palauttamista
+  varten.
+* Lisäosaa ei voi käyttää suojatussa tilassa.
 
 ## Muutokset versiossa 17.0
 * Yhteensopiva NVDA 2023.1:n kanssa.
@@ -174,5 +183,8 @@ Huomautuksia:
 [[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
+
+[2]:
+https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
