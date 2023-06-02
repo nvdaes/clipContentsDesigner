@@ -2,7 +2,7 @@
 
 *	Auteurs : Noelia, Abdel
 *	Télécharger [version stable][1] (compatible avec NVDA 2022.1 et au-delà)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
+*	Télécharger [version béta][2] (compatible avec NVDA 2022.1 et au-delà)
 
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
 peut être utile lorsque vous souhaitez joindre des portions de texte prêt
@@ -33,8 +33,8 @@ le dialogue Paramètres.
 
 Il contient les contrôles suivants :
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
+* Restaurer aux paramètres par défaut : Appuyer sur Maj+Tab après
+  l'ouverture du panneau pour appuyer sur ce bouton.
 * Tapez la chaîne à utiliser comme séparateur entre les contenus ajoutés au
   presse-papiers : Permet de définir un séparateur qui peut être utilisé
   pour trouver les segments de texte une fois que tout le texte ajouté est
@@ -72,14 +72,16 @@ Notes :
 * Les confirmations ne seront pas demandées lorsqu'une boîte de message de
   NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
   immédiatement.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Emuler les commandes copier et couper signifie que, lorsque ces
+  fonctionnalités sont activées, l'extension prendra le contrôle de
+  contrôle+c et contrôle+x. Cela permettra de sélectionner si une
+  confirmation doit être demandée avant d'effectuer les actions
+  correspondant à ces frappes.
 
-## Changes for 22.0.0
-* Added a button to restore defaults in the add-on settings panel.
-* The add-on cannot be run in secure mode.
+## Changements pour la version 22.0.0
+* Ajout d'un bouton pour restaurer aux paramètres par défaut dans le panneau
+  de paramètres de l'extension.
+* L'extension ne peut pas être exécuté en mode sécurisé.
 
 ## Changements pour la version 17.0
 * Compatible avec NVDA 2023.1.
