@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 6.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-11-05 08:48+0100\n"
-"Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
+"PO-Revision-Date: 2023-05-26 09:02+0200\n"
+"Last-Translator: José Manuel Delicado <jm.delicado@nvda.es>\n"
 "Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -217,7 +217,7 @@ msgstr ""
 
 #. Translators: label of a dialog.
 msgid "Restore defaults"
-msgstr ""
+msgstr "Restaurar valores predeterminados"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -228,31 +228,3 @@ msgstr "Clip Contents Designer"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for managing clipboard text."
 msgstr "Complemento para manejar texto en el portapapeles."
-
-#~ msgid "No text to add"
-#~ msgstr "No hay texto para añadir"
-
-#~ msgid "Start marker set"
-#~ msgstr "Colocación de marca de inicio"
-
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Marca la posición actual del cursor de revisión como el comienzo del "
-#~ "texto a anexar al portapapeles."
-
-#~ msgid "No selection. No start marker set"
-#~ msgstr "No hay selección. No se colocó la marca de inicio"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "La marca de comienzo debe residir dentro del mismo objeto"
-
-#~ msgid "&Text in clipboard to confirm"
-#~ msgstr "&Texto en portapapeles a confirmar"
-
-#~ msgid "&Clip Contents Designer settings..."
-#~ msgstr "Opciones de &Clip Contents Designer..."
-
-#~ msgid "Clip Contents Designer settings"
-#~ msgstr "Opciones de Clip Contents Designer"

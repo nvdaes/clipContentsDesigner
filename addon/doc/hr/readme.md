@@ -2,7 +2,7 @@
 
 *	Authors: Noelia, Abdel.
 *	Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
+*	Preuzmi [beta verziju][2] (kompatibilna s NVDA 2022.1 i novijom)
 
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
@@ -66,12 +66,12 @@ Napomene:
 
 * Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
   prikazuje. U tim će se slučajevima radnje izvršavati odmah.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Naredbe za emuliranje kopiranja i emuliranje izrezivanja znače, da će
+  dodatak preuzeti kontrolu nad kontrol+c i kontrol+x kad su ove funkcije
+  aktivirane. Time se može odabrati mogućnost za potvrdom prije izvođenja
+  radnji koje odgovaraju tim prečacima.
 
-## Changes for 22.0.0
+## Promjene u verziji 22.0.0
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
