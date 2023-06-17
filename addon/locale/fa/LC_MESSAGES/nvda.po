@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2023-02-27 22:04+0330\n"
+"PO-Revision-Date: 2023-06-09 20:41+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -206,7 +206,7 @@ msgstr "&حداکثرِ تعدادِ نویسه‌ها هنگامِ نمایشِ
 
 #. Translators: label of a dialog.
 msgid "Restore defaults"
-msgstr ""
+msgstr "برگرداندن به پیشفرض"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
