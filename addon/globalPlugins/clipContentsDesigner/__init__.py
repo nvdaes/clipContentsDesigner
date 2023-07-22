@@ -215,7 +215,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		text = self.getTextToAdd()
 		if not text:
 			return
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to add text to the clipboard"),
 			# Translators: Title of a dialog.
@@ -256,7 +256,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.performAdd()
 
 	def confirmClear(self):
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to clear the clipboard"),
 			# Translators: Title of a dialog.
@@ -291,7 +291,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def confirmCopy(self):
 		text = self.getSelectedText()
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to copy to the clipboard"),
 			# Translators: Title of a dialog.
@@ -323,7 +323,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCut(self):
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to cut from the clipboard"),
 			# Translators: Title of a dialog.
