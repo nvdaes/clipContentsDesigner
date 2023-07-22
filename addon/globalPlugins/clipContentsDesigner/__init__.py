@@ -16,7 +16,8 @@ import config
 import core
 import wx
 import gui
-from gui import SettingsPanel, NVDASettingsDialog, guiHelper
+from gui import guiHelper
+from gui.settingsDialogs import SettingsPanel, NVDASettingsDialog
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
@@ -112,14 +113,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
-		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		super().__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
 
 	def terminate(self):
 		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
 
 	def onSettings(self, evt):
-		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
+		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
 
 	@script(
 		# Translators: message presented in input mode.
