@@ -38,7 +38,7 @@ def onInstall():
 		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
 	except ValueError:
 		pass
-	if gui.messageBox(
+	if gui.message.messageBox(
 		# Translators: label of a dialog.
 		_("""This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,
 		when pressing control+c and control+x. This is named Emulate copy and cut.

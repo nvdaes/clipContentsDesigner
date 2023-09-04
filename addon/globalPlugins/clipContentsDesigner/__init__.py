@@ -16,7 +16,8 @@ import config
 import core
 import wx
 import gui
-from gui import SettingsPanel, NVDASettingsDialog, guiHelper
+from gui import guiHelper
+from gui.settingsDialogs import SettingsPanel, NVDASettingsDialog
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
@@ -112,14 +113,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
-		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		super().__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
 
 	def terminate(self):
 		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
 
 	def onSettings(self, evt):
-		gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
+		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
 
 	@script(
 		# Translators: message presented in input mode.
@@ -214,7 +215,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		text = self.getTextToAdd()
 		if not text:
 			return
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to add text to the clipboard"),
 			# Translators: Title of a dialog.
@@ -255,7 +256,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.performAdd()
 
 	def confirmClear(self):
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to clear the clipboard"),
 			# Translators: Title of a dialog.
@@ -290,7 +291,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def confirmCopy(self):
 		text = self.getSelectedText()
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to copy to the clipboard"),
 			# Translators: Title of a dialog.
@@ -322,7 +323,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCut(self):
-		if gui.messageBox(
+		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to cut from the clipboard"),
 			# Translators: Title of a dialog.
