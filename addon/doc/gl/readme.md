@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Autores: Noelia, Abdel.
-*	Descargar [versión estable][1] (compatible con NVDA 2022.1 e posterior)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento úsase para engadir texto ó portapapeis, que pode ser útil
 cando queras unir seccións de texto listas para pegarse xuntas.  O contido
@@ -185,10 +183,5 @@ Notas:
 *	Versión inicial.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

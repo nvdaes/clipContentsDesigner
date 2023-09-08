@@ -1,8 +1,6 @@
 # Vágólap tartalomtervező #
 
 *	Készítők: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
 szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
@@ -178,10 +176,5 @@ Megjegyzések:
 *	- Első kiadás
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

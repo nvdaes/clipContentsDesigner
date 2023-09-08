@@ -1,8 +1,6 @@
 # Gestor do Conteúdo de Transferência (Clip Contents Designer) #
 
 *	Autores: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento é usado para adicionar texto à área de transferência, o que
 pode ser útil quando você deseja unir seções de texto prontas para colar. O
@@ -191,10 +189,5 @@ Notas:
 *	Versão inicial.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

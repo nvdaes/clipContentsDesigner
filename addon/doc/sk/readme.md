@@ -1,8 +1,6 @@
 # Rozšírená schránka #
 
 *	Autori: Noelia, Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
 rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
@@ -169,10 +167,5 @@ Poznámky:
 *	prvé vydanie.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

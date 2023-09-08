@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Autori: Noelia, Abdel.
-*	Scarica [versione stabile][1] (compatibile con NVDA 2022.1 e successive)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
 appunti, operazione utile quando si desidera unire sezioni di testo insieme
@@ -191,10 +189,5 @@ Note:
 *	Versione iniziale.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

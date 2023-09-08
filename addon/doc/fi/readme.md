@@ -1,9 +1,6 @@
 # Leikepöydän sisällön käsittelijä #
 
 *	Tekijät: Noelia, Abdel.
-*	Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
-*	Lataa [beetaversio][2] (yhteensopiva NVDA 2022.1:n ja sitä uudempien
-  kanssa)
 
 Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
 hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
@@ -181,10 +178,5 @@ Huomautuksia:
 *	Ensimmäinen versio.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
