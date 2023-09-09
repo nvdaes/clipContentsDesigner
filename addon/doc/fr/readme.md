@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Auteurs : Noelia, Abdel
-*	Télécharger [version stable][1] (compatible avec NVDA 2022.1 et au-delà)
-*	Télécharger [version béta][2] (compatible avec NVDA 2022.1 et au-delà)
 
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
 peut être utile lorsque vous souhaitez joindre des portions de texte prêt
@@ -196,10 +194,5 @@ Notes :
 *	Première version.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

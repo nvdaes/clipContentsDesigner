@@ -1,8 +1,6 @@
 # 剪辑内容设计器 #
 
 *	作者: Noelia, Abdel。
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 此插件用于向剪贴板添加文本，当您希望将文本部分连接在一起以准备粘贴时，这可能很有用。剪贴板内容也可以清除或者用浏览模式逐字逐句查看。
 
@@ -153,10 +151,5 @@ It contains the following controls:
 *	发布初始版本。
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

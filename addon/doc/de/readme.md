@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Autoren: Noelia und Abdel.
-*	[Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
-*	[Beta-Version herunterladen][2] (kompatibel mit NVDA 2022.1 und neuer)
 
 Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
 hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
@@ -197,10 +195,5 @@ Anmerkungen:
 *	Erstveröffentlichung.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

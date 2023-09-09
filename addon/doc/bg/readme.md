@@ -1,9 +1,6 @@
 # Дизайнер за съдържанието на клипборда (Clip Contents Designer) #
 
 *	Автори: Noelia, Abdel.
-*	Изтегляне на [стабилна версия][1] (съвместима с NVDA 2022.1 и по-нови
-  версии)
-*	Изтегляне на [бета версия][2] (съвместима с NVDA 2022.1 и по-нови версии)
 
 Тази добавка служи за добавяне на текст към клипборда, което може да бъде
 полезно когато искате да обедините в едно отделни части от текст, готов за
@@ -192,10 +189,5 @@
 *	Първоначално издание.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

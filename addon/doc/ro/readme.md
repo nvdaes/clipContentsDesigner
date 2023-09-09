@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Autori: Noelia și Abdel.
-*	Download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
 fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
@@ -182,10 +180,5 @@ Note:
 *	Versiunea inițială.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Автори: Noelia, Abdel.
-*	Завантажити [стабільну версію][1] (сумісну з NVDA 2022.1 і новішими)
-*	Завантажити [бета версію][2] (сумісну з NVDA 2022.1 і новішими)
 
 Цей додаток використовується для додавання тексту в буфер обміну, що може
 бути корисним, коли ви хочете з'єднати частини тексту для того, щоб вставити
@@ -179,10 +177,5 @@
 *	Перша версія.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

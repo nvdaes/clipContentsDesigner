@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	Autorzy: Noelia, Abdel.
-*	Pobierz [stabilna wersja][1] (kompatybilna z NVDA 2022.1 i nowszymi)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Ten dodatek służy do dodawania tekstu do schowka, co może być przydatne, gdy
 chcesz połączyć sekcje tekstu gotowe do wklejenia.  Zawartość schowka można
@@ -182,10 +180,5 @@ Uwagi:
 *	Pierwsze wydanie.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

@@ -1,8 +1,6 @@
 # Udklipsdesigner (Clip Contents Designer) #
 
 *	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
-*	Download [stabil version][1] (kompatibel med NVDA 2022.1 og nyere)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
 kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
@@ -186,10 +184,5 @@ Bemærkninger:
 *	Første version.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

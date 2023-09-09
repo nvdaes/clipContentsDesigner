@@ -1,8 +1,6 @@
 # Clip Contents Designer #
 
 *	作者: Noelia, Abdel。
-*	ダウンロード [安定版][1] (NVDA 2022.1以降に互換)
-*	Download [beta version][2] (compatible with NVDA 2022.1 and beyond)
 
 このアドオンは、クリップボードにテキストを追加するのに使用されます。テキストの切片を結合して一緒に貼り付けしたい時に便利です。クリップボードの内容は、ブラウズモードでの表示で消去も出来ます。
 
@@ -131,10 +129,5 @@
 *	最初のバージョン。
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

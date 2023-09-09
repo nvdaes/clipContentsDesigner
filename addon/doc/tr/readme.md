@@ -1,8 +1,6 @@
 # Pano içerik düzenleyicisi #
 
 *	Yazarlar: Noelia, Abdel.
-*	[Kararlı sürümü indir][1] (NVDA 2022.1 ve sonrası ile uyumlu)
-*	[Beta sürümünü indir][2] (NVDA 2022.1 ve sonrası ile uyumlu)
 
 Bu eklenti, panoya metin eklemek için kullanılır. BU, farklı metinleri
 birleştirmek ve yapıştırmak istediğinizde yararlı olabilir. Ayrıca Pano
@@ -184,10 +182,5 @@ Notlar:
 *	İlk versiyon.
 
 [[!tag dev kararlı]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner
-
-[2]:
-https://www.nvaccess.org/addonStore/legacy?file=clipContentsDesigner-beta
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
