@@ -1,0 +1,34 @@
+name: Check submitted NVDA add-on test
+
+on:
+  workflow_dispatch:
+
+jobs:
+        
+  createReviewComment:
+    # jq for windows has issues parsing multiline strings (e.g. CRLF),
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      discussions: write
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Get repository ID   
+      id: get-repo-id
+      uses: nvdaes/get-repository-id
+    - name: Create discussion
+      id: createDiscussion
+      uses: abirismyname/create-discussion@v1.1.0
+      env:
+        GH_TOKEN: ${{ github.token }}      
+      with:
+        repository-id: "${{ steps.get-repo-id.outputs.repo-id }}"
+        category-id: "DIC_kwDODeDxhs4CZ6Q6"
+        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ needs.getAddonId.outputs.addonId }})
+        body: |
+          Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
+          Please use threaded replies and avoid email responses.
+          You can specify the add-on version and other info that you consider relevant in your comment.
+          Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
