@@ -6,7 +6,6 @@ on:
 jobs:
         
   createReviewComment:
-    # jq for windows has issues parsing multiline strings (e.g. CRLF),
     runs-on: ubuntu-latest
 
     permissions:
