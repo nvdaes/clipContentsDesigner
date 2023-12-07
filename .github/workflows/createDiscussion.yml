@@ -24,7 +24,7 @@ jobs:
         GH_TOKEN: ${{ github.token }}      
       with:
         repository-id: "${{ steps.get-repo-id.outputs.repo-id }}"
-        category-id: "DIC_kwDODeDxhs4CZ6Q6"
+        category-id: "DIC_kwDOBHOvPs4Cbj6K"
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ needs.getAddonId.outputs.addonId }})
         body: |
           Test.
