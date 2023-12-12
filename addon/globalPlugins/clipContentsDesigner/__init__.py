@@ -281,16 +281,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.clearClipboard()
 
 	def copy(self):
+		keyName = getKeyForCopy()
+		gesture = KeyboardInputGesture.fromName(keyName)
 		obj = api.getFocusObject()
 		tI = obj.treeInterceptor
 		if isinstance(tI, browseMode.BrowseModeDocumentTreeInterceptor) and not tI.passThrough:
-			tI.script_copyToClipboard(None)
+			tI.script_copyToClipboard(gesture)
 		else:
-			keyName = getKeyForCopy()
-			KeyboardInputGesture.fromName(keyName).send()
+			gesture.send()
+
 
 	def confirmCopy(self):
-		text = self.getSelectedText()
 		if gui.message.messageBox(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to copy to the clipboard"),
@@ -299,10 +300,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			wx.OK | wx.CANCEL
 		) != wx.OK:
 			return
-		if text:
-			api.copyToClip(text)
-		else:
-			core.callLater(200, self.copy)
+		core.callLater(200, self.copy)
 
 	@script(
 		# Translators: message presented in input mode.
