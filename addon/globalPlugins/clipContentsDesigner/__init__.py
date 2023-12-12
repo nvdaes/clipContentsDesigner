@@ -290,7 +290,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			gesture.send()
 
-
 	def confirmCopy(self):
 		if gui.message.messageBox(
 			# Translators: Label of a dialog.
