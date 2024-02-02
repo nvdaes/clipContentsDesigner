@@ -139,10 +139,15 @@ Lưu ý:
 
 ## Các thay đổi cho bản 6.0
 
-*	 Thêm tùy chọn để chọn hành động thích hợp sẽ được thực hiện sau khi xác nhận.
-*	Thêm các dòng lệnh mô phỏng cắt và sao chép, có thể gán thao tác từ hộp thoại quản lý các thao tác.
-*	 Thêm một hộp thoại để cấu hình tính năng mô phỏng sao chép và cắt trong khi cài đặt. Điều này cho phép gán các lệnh control+c và control+x để chép và cắt, cũng như yêu cầu bạn xác nhận thay thế nội dung trong bộ nhớ tạm khi bấm các lệnh này.
-*	Sửa nội dugn tài liệu cho phần script_add (Windows+NVDA+c).
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Các thay đổi cho bản 5.0 ##
 

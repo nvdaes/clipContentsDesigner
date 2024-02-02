@@ -143,10 +143,15 @@ Uwagi:
 
 ## Zmiany w wersji 6.0
 
-*	 Dodano opcje pozwalające wybrać, czy dostępne czynności mają być wykonane dopiero po ich potwierdzeniu.
-*	Dodano skróty emulowania kopiowania i emulowania wycinania, które można przypisać w oknie dialogowym Zdarzeń wejścia.
-*	 Dodano okno dialogowe służące do ustawiania funkcji emulowania kopiowania i emulowania wycinania podczas instalacji dodatku. Pozwala to na dodawanie skrótów control+c i control+x do kopiowania i wycinania, oraz wywołania pytania, czy zawartość schowka ma zostać zastąpiona po naciśnięciu tych skrótów.
-*	Poprawiono dokumentację dla skryptu_add (Windows+NVDA+c).
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmiany w wersji 5.0 ##
 

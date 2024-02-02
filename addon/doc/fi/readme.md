@@ -140,10 +140,15 @@ Huomautuksia:
 
 ## Muutokset versiossa 6.0
 
-*	 Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -asetukset, joille voidaan määrittää näppäinkomennot Näppäinkomennot-valintaikkunasta.
-*	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
-*	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Muutokset versiossa 5.0 ##
 

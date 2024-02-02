@@ -101,10 +101,15 @@
 
 ## 6.0の変更点
 
-*	 利用可能な動作を確認後に実行するかどうかを選択する選択肢を追加しました。
-*	コピーのエミュレートと切り取りのエミュレートのコマンドを追加し、入力ジェスチャーダイアログから割り当て可能になりました。
-*	 インストール時に、コピーのエミュレートと切り取りのエミュレート機能を設定するダイアログを追加しました。これにより、コピーと切り取りにcontrol+cとcontrol+xコマンドを追加出来、これらのキー操作を押した時に、クリップボードの内容を置き換えたいかを尋ねられます。
-*	script_add(Windows+NVDA+c)のドキュメントを修正しました。
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## 5.0の変更点 ##
 

@@ -144,10 +144,15 @@ Notlar:
 
 ## 6.0 için Değişiklikler
 
-*	 Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini seçmek için seçenekler eklendi.
-*	 Giriş hareketleri iletişim kutusundan atanabilen Kopyalama  ve Kesme taklidi komutları eklendi.
-*	 Kurulumda Kopyalamayı ve kesmeyi Taklit işlevlerini yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek için kontrol+c ve kontrol+x komutlarının eklenmesine ve bu tuşlara basıldığında pano içeriğini değiştirmek isteyip istemediğinizin sorulmasına olanak tanır.
-*	 komut (Windows+NVDA+c) için dokümantasyon düzeltildi.
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## 5.0 için Değişiklikler ##
 

@@ -134,10 +134,15 @@ Poznámky:
 
 ## Zmeny vo verzii 6.0
 
-*	 Pridané varovanie pri kopírovaní a vystrihnutí.
-*	Pridané skratky, ktoré preberajú kontrolu nad schránkou a dajú sa nastaviť z dialógu Klávesové skratky.
-*	 Pridané okno, ktoré sa zobrazí pri prvom spustení doplnku a umožňuje nastaviť prevzatieskratiek na prácu so schránkou. Toto umožňuje následné zobrazovanie varovaní pri kopírovaní a vystrihnutí.
-*	Opravená dokumentácia pre skript_add (Windows+NVDA+c).
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmeny vo verzii 5.0 ##
 

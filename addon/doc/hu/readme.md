@@ -138,10 +138,15 @@ Megjegyzések:
 
 ## A 6.0 változásai
 
-*	 Beállítható, hogy mely vágólapműveletek végrehajtása előtt kérjen megerősítést.
-*	Az NVDA beviteli parancsai között billentyűparancs rendelhető az emulált másoláshoz és az emulált kivágáshoz.
-*	 A telepítésnél beállítható a Ctrl+C és Ctrl+X billentyűparancs az emulált másoláshoz és kivágáshoz. Ekkor megerősítést kér a parancsok végrehajtása előtt.
-*	 Javították a hozzáfűzés szkriptjének (Windows+NVDA+c) dokumentációját.
+*	 Added options to choose if available actions should be performed after
+   confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut
+   functionalities at installation. This allows to add the control+c and
+   control+x commands to copy and cut, and be asked if you want to replace
+   the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Az 5.0 változásai ##
 
