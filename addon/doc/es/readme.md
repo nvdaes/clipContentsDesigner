@@ -148,15 +148,15 @@ Notas:
 
 ## Cambios para 6.0
 
-*	 Added options to choose if available actions should be performed after
-   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
-  the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut
-   functionalities at installation. This allows to add the control+c and
-   control+x commands to copy and cut, and be asked if you want to replace
-   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Se han añadido opciones para elegir si se deberían realizar las acciones
+  disponibles tras una confirmación.
+*	Añadidas órdenes para emular cortar y emular copiar, que se pueden asignar
+  desde el diálogo Gestos de entrada.
+*	Añadido un diálogo para configurar las funcionalidades Emular cortar y
+  Emular copiar en la instalación. Esto permite añadir las órdenes control+c
+  y control+x para copiar y cortar, y preguntar si quieres reemplazar los
+  contenidos del portapapeles al pulsar estos atajos de teclado.
+*	Corregida la documentación de script_add (Windows+NVDA+c).
 
 ## Cambios para 5.0 ##
 

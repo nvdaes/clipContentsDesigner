@@ -150,15 +150,17 @@
 
 ## Промени във версия 6.0
 
-*	 Added options to choose if available actions should be performed after
-   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
-  the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut
-   functionalities at installation. This allows to add the control+c and
-   control+x commands to copy and cut, and be asked if you want to replace
-   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Добавени са опции за избор дали наличните действия  ще се извършват след
+  потвърждение.
+*	Добавени са команди за емулиране на копирането и изрязването, на които
+  могат да бъдат назначени жестове в екрана за управление на жестовете на
+  NVDA.
+*	Добавен е диалогов прозорец по време на инсталацията за конфигуриране на
+  функциите за емулиране на копирането и изрязването. Това позволява да
+  добавите командите Control+C и Control+X към копирането и изрязването, и
+  да бъдете запитвани дали желаете да замените съдържанието на клипборда при
+  натискането на тези клавишни комбинации.
+*	Поправена е документацията за script_add (Windows+NVDA+C).
 
 ## Промени във версия 5.0 ##
 

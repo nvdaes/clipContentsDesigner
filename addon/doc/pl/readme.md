@@ -143,14 +143,14 @@ Uwagi:
 
 ## Zmiany w wersji 6.0
 
-*	 Added options to choose if available actions should be performed after
-   confirmation.
+*	Added options to choose if available actions should be performed after
+  confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut
-   functionalities at installation. This allows to add the control+c and
-   control+x commands to copy and cut, and be asked if you want to replace
-   the clipboard contents when pressing these keystrokes.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmiany w wersji 5.0 ##
