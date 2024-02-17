@@ -6,6 +6,7 @@
 
 import ui
 import buildVersion
+from typing import Callable
 
 _: Callable[[str], str]
 
