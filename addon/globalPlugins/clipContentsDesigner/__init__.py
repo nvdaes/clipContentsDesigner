@@ -24,6 +24,9 @@ from logHandler import log
 from typing import Callable, Dict, List
 import locale
 
+from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
+
+
 addonHandler.initTranslation()
 _: Callable[[str], str]
 
@@ -373,7 +376,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				browseableText = "<pre>%s</pre>" % text.strip()[:maxLength]
 			else:
 				browseableText = text.strip()[:maxLength]
-			ui.browseableMessage(
+			secureBrowseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
@@ -404,7 +407,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				maxLength = len(text)
 			browseableText = text.strip()[:maxLength]
-			ui.browseableMessage(
+			secureBrowseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
