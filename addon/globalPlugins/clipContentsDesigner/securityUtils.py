@@ -7,6 +7,8 @@
 import ui
 import buildVersion
 
+_: Callable[[str], str]
+
 nvdaTranslations = _
 
 currentVersion = (buildVersion.version_year, buildVersion.version_major, buildVersion.version_minor)
