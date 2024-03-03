@@ -110,5 +110,4 @@ Notes:
 ## Changes for 1.0 ##
 *	Initial version.
 
-
 [3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
