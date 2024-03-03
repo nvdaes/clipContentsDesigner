@@ -144,10 +144,16 @@ Notlar:
 
 ## 6.0 için Değişiklikler
 
-*	 Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini seçmek için seçenekler eklendi.
-*	 Giriş hareketleri iletişim kutusundan atanabilen Kopyalama  ve Kesme taklidi komutları eklendi.
-*	 Kurulumda Kopyalamayı ve kesmeyi Taklit işlevlerini yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek için kontrol+c ve kontrol+x komutlarının eklenmesine ve bu tuşlara basıldığında pano içeriğini değiştirmek isteyip istemediğinizin sorulmasına olanak tanır.
-*	 komut (Windows+NVDA+c) için dokümantasyon düzeltildi.
+*	Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini
+  seçmek için seçenekler eklendi.
+*	Girdi hareketleri iletişim kutusundan atanabilen Kopyalamayı taklit et ve
+  Kesmeyi taklit et komutları eklendi.
+*	Kurulum sırasında Kopyalamayı taklit et ve Kesmeyi taklit et işlevlerini
+  yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek
+  için control+c ve control+x komutlarının eklenmesine ve bu tuşlara
+  basıldığında pano içeriğini değiştirmek isteyip istemediğinizin
+  sorulmasına olanak tanır.
+*	script_add (Windows+NVDA+c) için belgeler düzeltildi.
 
 ## 5.0 için Değişiklikler ##
 

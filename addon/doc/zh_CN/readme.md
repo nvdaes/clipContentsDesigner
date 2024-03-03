@@ -124,9 +124,14 @@ It contains the following controls:
 
 ## 版本6.0
 
-*	 添加选项以选择是否应在确认后执行可用操作.
-*	添加了“模拟复制”和“模拟剪切”快捷键，可以从“输入”手势对话框中指定.
-*	 添加了一个对话框，用于在安装时配置模拟复制和模拟剪切功能。这允许添加control + c和control + x命令进行复制和剪切，并在按下这些按键时询问是否要替换剪贴板内容.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## 版本5.0 ##

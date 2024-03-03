@@ -140,9 +140,16 @@ Huomautuksia:
 
 ## Muutokset versiossa 6.0
 
-*	 Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -asetukset, joille voidaan määrittää näppäinkomennot Näppäinkomennot-valintaikkunasta.
-*	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
+*	Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä
+  olevien toimintojen suorittamiseen vahvistus.
+*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi
+  -asetukset, joille voidaan määrittää näppäinkomennot
+  Näppäinkomennot-valintaikkunasta.
+*	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista
+  leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan
+  asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C)
+  ja leikkaamisen (Ctrl+X) suorittamiselle ja leikepöydän sisällön
+  korvaamiselle pyydetään vahvistus.
 *	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
 
 ## Muutokset versiossa 5.0 ##

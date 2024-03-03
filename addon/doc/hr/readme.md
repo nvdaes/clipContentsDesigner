@@ -142,10 +142,15 @@ Napomene:
 
 ## Promjene u verziji 6.0
 
-*	Dodana je mogućnost za odluku o izvršavanju dostupnih radnji nakon potvrde.
-*	Dodane su naredbe Emuliraj kopiranje i Emuliraj izrezivanje, koje je moguće dodijeliti u dijaloškom okviru Ulazne geste.
-*	Dodan je dijaloški okvir za podešavanje naredbi Emuliraj kopiranje i Emuliraj izrezivanje, tijekom instaliranja. Ovo dozvoljava dodavanje naredbi kontrol+c i kontrol+x za kopiranje i izrezivanje, te postavljanjem pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih tipkovničkih prečaca.
-*	Ispravljana dokumentacija za script_add (Windows+NVDA+c).
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Promjene u verziji 5.0 ##
 

@@ -148,10 +148,15 @@ Notas:
 
 ## Cambios para 6.0
 
-*	 Añadidas opciones para elegir si las acciones disponibles se deberían llevar a cabo después de la confirmación.
-*	Se han añadido órdenes Emular copiar y Emular cortar, qué podrían asignarse desde el diálogo Gestos de Entrada.
-*	 Añadido un diálogo para configurar las funcionalidades Emular copiar y Emular copiar en la instalación. Esto permite añadir las órdenes control+c y control+x para copiar y cortar, y ser preguntado si quieres reemplazar los contenidos del portapapeles al pulsar estos atajos de teclado.
-*	Corregida la documentación para script_add (Windows+NVDA+c).
+*	Se han añadido opciones para elegir si se deberían realizar las acciones
+  disponibles tras una confirmación.
+*	Añadidas órdenes para emular cortar y emular copiar, que se pueden asignar
+  desde el diálogo Gestos de entrada.
+*	Añadido un diálogo para configurar las funcionalidades Emular cortar y
+  Emular copiar en la instalación. Esto permite añadir las órdenes control+c
+  y control+x para copiar y cortar, y preguntar si quieres reemplazar los
+  contenidos del portapapeles al pulsar estos atajos de teclado.
+*	Corregida la documentación de script_add (Windows+NVDA+c).
 
 ## Cambios para 5.0 ##
 
