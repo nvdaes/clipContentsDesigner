@@ -31,8 +31,6 @@ okvir Postavke.
 
 It contains the following controls:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Type the string to be used as a separator between contents added to the
   clipboard: Allows to set a separator which can be used to find the text
   segments once the entire added text is pasted.
@@ -59,6 +57,7 @@ It contains the following controls:
   Please, be aware that increasing this limit may produce issues if the
   clipboard contains large strings of text. The default limit is 100000
   characters.
+* Restore defaults.
 
 Napomene:
 

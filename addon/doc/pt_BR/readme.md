@@ -32,8 +32,6 @@ de Configurações.
 
 Contém os seguintes controles:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Digite a sequência de caracteres a ser usada como separador entre os
   conteúdos adicionados à área de transferência: Permite definir um
   separador que pode ser usado para localizar os segmentos de texto, uma vez
@@ -63,6 +61,7 @@ Contém os seguintes controles:
   modo de navegação: Lembre-se de que aumentar este limite pode causar
   problemas se a área de transferência contiver grandes cadeias de texto. O
   limite padrão é 100000 caracteres.
+* Restore defaults.
 
 Notas:
 

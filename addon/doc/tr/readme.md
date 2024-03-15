@@ -31,8 +31,6 @@ girerek erişilebilir.
 
 Aşağıdaki kontrolleri içerir:
 
-* Varsayılanları geri yükle: Bu düğmeye basmak için paneli açtıktan sonra
-  shift+tab tuşlarına basın.
 * Panoya eklenen içerikler arasında ayraç olarak kullanılacak metni yazın:
   Eklenen metnin tamamı yapıştırıldıktan sonra metin bölümlerini bulmak için
   kullanılabilecek bir ayırıcı ayarlamayı sağlar.
@@ -58,6 +56,7 @@ Aşağıdaki kontrolleri içerir:
 * Pano metnini Tarama kipi modunda gösterirken maksimum karakter sayısı:
   Pano büyük metin dizeleri içeriyorsa, bu sınırı artırmanın sorunlara yol
   açabileceğini lütfen unutmayın. Varsayılan sınır 100000 karakterdir.
+* Varsayılanları geri yükln.
 
 Notlar:
 

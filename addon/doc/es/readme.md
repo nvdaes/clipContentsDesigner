@@ -31,8 +31,6 @@ diálogo Opciones.
 
 Contiene los siguientes controles:
 
-* Restaurar valores por defecto: pulsa shift+tab tras abrir el panel para
-  pulsar este botón.
 * Teclea la cadena que se usará como separador entre contenidos añadidos al
   portapapeles: permite configurar un separador que puede usarse para buscar
   los segmentos de texto una vez que se pega el texto completo.
@@ -60,6 +58,7 @@ Contiene los siguientes controles:
   exploración: por favor, ten en cuenta que aumentar este límite puede
   producir problemas si el portapapeles contiene grandes cadenas de
   texto. El límite predeterminado es de 100000 caracteres.
+* Restaurar valores por defecto.
 
 Notas:
 

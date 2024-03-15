@@ -33,8 +33,6 @@ e quindi Impostazioni.
 
 Essa contiene i seguenti controlli:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Digitare il testo da usare come separatore tra i contenuti aggiunti negli
   appunti: permette di definire un separatore da usare per individuare, nel
   momento in cui si effettua l'operazione di "incolla", i vari segmenti di
@@ -63,6 +61,7 @@ Essa contiene i seguenti controlli:
   in modalità navigazione: si noti che l'incremento di questo valore può
   causare problemi se gli appunti contengono grandi stringhe di testo. Il
   valore di default è 100000 caratteri.
+* Restore defaults.
 
 Note:
 

@@ -29,8 +29,6 @@ Tämä paneeli löytyy kohdasta NVDA-valikko -> Asetukset -> Asetukset.
 
 Se sisältää seuraavat säätimet:
 
-* Palauta oletukset: Paina Vaihto+Sarkain paneelin avaamisen jälkeen
-  painaaksesi tätä painiketta.
 * Kirjoita merkkijono, jota käytetään erottimena leikepöydälle lisättyjen
   tekstiosuuksien välissä: Mahdollistaa erottimen asettamisen, jota voidaan
   käyttää tekstiosioiden etsimiseen.
@@ -57,6 +55,7 @@ Se sisältää seuraavat säätimet:
 * Merkkien enimmäismäärä selaustilassa leikepöydän tekstiä näytettäessä:
   Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, mikäli
   leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
+* Restore defaults.
 
 Huomautuksia:
 

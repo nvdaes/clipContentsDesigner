@@ -30,8 +30,6 @@ Ovennævnte kommando kan ændres fra NVDAs menu, under "Opsætning".
 
 Den indeholder følgende kontroller:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Indtast den streng, der skal bruges som separator mellem indhold tilføjet
   til udklipsholderen: Gør det muligt at indstille en separator, som kan
   bruges til at finde tekstsegmenterne, når hele den tilføjede tekst er
@@ -59,6 +57,7 @@ Den indeholder følgende kontroller:
   Vær opmærksom på, at forhøjelse af denne grænse kan give problemer, hvis
   udklipsholderen indeholder store tekststrenge. Standardgrænsen er 100000
   tegn.
+* Restore defaults.
 
 Bemærkninger:
 

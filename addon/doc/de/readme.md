@@ -31,8 +31,6 @@ Diese Kategorie finden Sie im NVDA_Menü, unter Optionen und Einstellungen.
 
 Folgende Einstellungen sind verfügbar:
 
-* Standard-Einstellungen wiederherstellen: Drücken Sie nach dem Öffnen des
-  Panels Umschalt+Tab, um diese Schaltfläche zu betätigen.
 * Geben Sie die Zeichenfolge ein, die als Trennzeichen zwischen Inhalten
   verwendet werden soll, die der Zwischenablage hinzugefügt wurden:
   Ermöglicht das Festlegen eines Trennzeichens, mit dem die Textsegmente
@@ -65,6 +63,7 @@ Folgende Einstellungen sind verfügbar:
   im Lesemodus: Beachten Sie, dass das Erhöhen dieser Grenze zu Problemen
   führen kann, wenn die Zwischenablage große Textzeichenfolgen enthält. Das
   Standardlimit beträgt 100000 Zeichen.
+* Restore defaults.
 
 Anmerkungen:
 
