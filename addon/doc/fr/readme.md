@@ -31,8 +31,6 @@ le dialogue Paramètres.
 
 Il contient les contrôles suivants :
 
-* Restaurer aux paramètres par défaut : Appuyer sur Maj+Tab après
-  l'ouverture du panneau pour appuyer sur ce bouton.
 * Tapez la chaîne à utiliser comme séparateur entre les contenus ajoutés au
   presse-papiers : Permet de définir un séparateur qui peut être utilisé
   pour trouver les segments de texte une fois que tout le texte ajouté est
@@ -64,6 +62,7 @@ Il contient les contrôles suivants :
   presse-papiers en mode navigation : veuillez noter que l'augmentation de
   cette limite peut entraîner des problèmes si le presse-papiers contient de
   grandes chaînes de texte. La limite par défaut est de 100 000 caractères.
+* Restaurer les valeurs par défaut.
 
 Notes :
 
@@ -96,7 +95,7 @@ Notes :
 ## Changements pour la version 14.0
 * Compatible avec NVDA 2021.1.
 
-## Changements pour la version 13.0
+## Changements pour la version 13.0 
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
 * Documentation améliorée.

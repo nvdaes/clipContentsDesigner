@@ -31,8 +31,6 @@ Ustawienia.
 
 Zawiera następujące kontrolki:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Wpisz ciąg, który ma być używany jako separator między zawartością dodaną
   do schowka: Umożliwia ustawienie separatora, który może być używany do
   znajdowania segmentów tekstu po wklejeniu całego dodanego tekstu.
@@ -60,6 +58,7 @@ Zawiera następujące kontrolki:
   przeglądania: Należy pamiętać, że zwiększenie tego limitu może powodować
   problemy, jeśli schowek zawiera duże ciągi tekstu. Domyślny limit to
   100000 znaków.
+* Restore defaults.
 
 Uwagi:
 

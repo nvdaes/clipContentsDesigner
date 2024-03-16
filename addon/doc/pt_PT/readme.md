@@ -32,8 +32,6 @@ diálogo configurações.
 
 Contém os seguintes controlos:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Digite a cadeia a ser utilizada como separador entre os conteúdos
   adicionados à área de transferência: Permite definir um separador que pode
   ser utilizado para encontrar os segmentos de texto uma vez colado todo o
@@ -63,6 +61,7 @@ Contém os seguintes controlos:
   modo de navegação: Tenha em atenção que o aumento deste limite pode
   produzir problemas se a área de transferência contiver grandes cadeias de
   texto. O limite por defeito é de 100000 caracteres.
+* Restore defaults.
 
 Notas:
 

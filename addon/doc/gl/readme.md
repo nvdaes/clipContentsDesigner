@@ -30,8 +30,6 @@ diálogo Opcións.
 
 Contén os seguintes controis:
 
-* Restore defaults: Press shift+tab after opening the panel to press this
-  button.
 * Escribe a cadea de texto que se utilizará como separador entre contido
   engadido ao portapapeis: Permite establecer un separador que se pode
   utilizar para buscar os segmentos de texto unha vez se pegue todo o texto
@@ -60,6 +58,7 @@ Contén os seguintes controis:
   exploración: Por favor, ten en conta que incrementar este límite podería
   producir problemas se o portapapeis contén largas cadeas de texto. O
   límite por defecto é de 100000 caracteres.
+* Restore defaults.
 
 Notas:
 
