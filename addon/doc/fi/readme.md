@@ -55,7 +55,7 @@ Se sisältää seuraavat säätimet:
 * Merkkien enimmäismäärä selaustilassa leikepöydän tekstiä näytettäessä:
   Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, mikäli
   leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
-* Restore defaults.
+* Palauta oletukset
 
 Huomautuksia:
 
