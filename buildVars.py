@@ -17,7 +17,7 @@ addon_info = {
 	"addon_summary": _("Clip Contents Designer"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""Add-on for managing clipboard text."""),
+	"addon_description": _("""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."""),
 	# version
 	"addon_version": "31.0.0",
 	# Author(s)
