@@ -214,8 +214,16 @@ msgstr "Rozšírená schránka"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "Doplnok na prácu so schránkou Windows."
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Doplnok na prácu so schránkou Windows."
 
 #~ msgid "No text to add"
 #~ msgstr "Žiadny text na pridanie"

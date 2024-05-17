@@ -141,6 +141,7 @@ msgid "Clipboard is empty"
 msgstr "வெற்றுப் பிடிப்புப்பலகை"
 
 #. Translators: title of a browseable message.
+#, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "பிடிப்புப்பலகை உரை ({max}/{current} - {formatForTitle})"
 
@@ -220,8 +221,16 @@ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர�
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
 
 #~ msgid "No text to add"
 #~ msgstr "பின்னிணைக்க உரை ஏதுமில்லை"

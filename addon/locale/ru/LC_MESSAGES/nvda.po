@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2022-01-11 01:59+0800\n"
+"PO-Revision-Date: 2024-05-13 13:49+0300\n"
 "Last-Translator: Kvark <kvark128@yandex.ru>\n"
 "Language-Team: Translators <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. Translators: label of a dialog.
 msgid ""
@@ -51,7 +51,7 @@ msgstr "Простой текст без форматирования"
 
 #. Translators: message presented in input mode.
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Отображает диалог настроек Clip Contents Designer"
+msgstr "Показывает диалог настроек Clip Contents Designer."
 
 #. Translators: message presented when the clipboard content has been deleted.
 msgid "Clipboard cleared"
@@ -78,16 +78,14 @@ msgid "Cannot add"
 msgstr "Невозможно добавить"
 
 #. Translators: message presented in input mode.
-#, fuzzy
 msgid ""
 "Retrieves the selected string or the text from the previously set start "
 "marker up to and including the current position of the review cursor, and "
 "adds it to the clipboard."
 msgstr ""
 "Получает выделенную строку или текст от ранее установленного начального "
-"маркера,\n"
-"\t\tвплоть до текущей позиции просмотрового курсора, и добавляет его в буфер "
-"обмена."
+"маркера вплоть до текущей позиции просмотрового курсора и добавляет его в "
+"буфер обмена."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to clear the clipboard"
@@ -99,7 +97,7 @@ msgstr "Очистка буфера обмена"
 
 #. Translators: message presented in input mode.
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Удаляет добавленный текст и содержимое буфера обмена"
+msgstr "Удаляет добавленный текст и содержимое буфера обмена."
 
 #. Translators: Label of a dialog.
 msgid "Please, confirm if you want to copy to the clipboard"
@@ -164,7 +162,7 @@ msgid ""
 "clipboard."
 msgstr ""
 "Строка, используемая в качестве &разделителя содержимого, добавляемого в "
-"буфер обмена"
+"буфер обмена."
 
 #. Translators: label of a dialog.
 msgid "&Add text before clip data"
@@ -220,7 +218,7 @@ msgstr ""
 
 #. Translators: label of a dialog.
 msgid "Restore defaults"
-msgstr ""
+msgstr "Восстановить значения по умолчанию"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
