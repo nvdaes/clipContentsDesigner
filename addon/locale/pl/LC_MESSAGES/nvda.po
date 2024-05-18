@@ -30,8 +30,8 @@ msgstr ""
 "treść schowka,\n"
 "\t\tgdy naciskane są klawisze ctrl+c i ctrl+v. Ta opcja nazywa sięemulowane "
 "kopiowanie i wklejanie.\n"
-"\t\tCzy chcesz skonfigurować emulowane kopiowanie i wklejanie teraz?? "
-"Możesz tk skonfigurować teraz lub później."
+"\t\tCzy chcesz skonfigurować emulowane kopiowanie i wklejanie teraz?? Możesz "
+"tk skonfigurować teraz lub później."
 
 #. Translators: title of a dialog.
 msgid "Configure Emulate copy and cut"
@@ -219,8 +219,16 @@ msgstr "Clip Contents Designer"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "Dodatek do zarządzania tekstem ze schowka."
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Dodatek do zarządzania tekstem ze schowka."
 
 #~ msgid "No text to add"
 #~ msgstr "Nie ma tekstu do dodania"
