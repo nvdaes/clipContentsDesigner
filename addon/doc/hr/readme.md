@@ -5,7 +5,7 @@
 Ovaj se dodatak koristi za dodavanje teksta u međuspremnik, što može biti
 korisno kad se žele spojiti dijelovi teksta, koji su spremni za
 lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
-za čitanje.
+čitanja.
 
 ## Tipkovnički prečaci ##
 *	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
@@ -14,14 +14,14 @@ za čitanje.
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
 *	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
-*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu pregledavanja ili
+*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu čitanja ili
   najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
   predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
   kopirane iz Windows Explorera.
 *	Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
-  tekst u modusu pregledavanja ili najavljuje prazno stanje međuspremnika
-  ili sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na
-  primjer ako su datoteke ili mape kopirane iz Windows Explorer.
+  tekst u modusu čitanja ili najavljuje prazno stanje međuspremnika ili
+  sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na primjer
+  ako su datoteke ili mape kopirane iz Windows Explorer.
 
 
 ## Postavke dodatka „Upravljanje sadržajem međuspremnika” ##
@@ -29,35 +29,36 @@ za čitanje.
 Ova je ploča dostupna u NVDA izborniku, podizbornik Postavke, dijaloški
 okvir Postavke.
 
-It contains the following controls:
+Sadrži sljedeće kontrole:
 
-* Type the string to be used as a separator between contents added to the
-  clipboard: Allows to set a separator which can be used to find the text
-  segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text
-  will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose,
-  for each action available, if it should be performed inmediately or after
-  confirmation. Available actions are: add text, clear clipboard, emulate
-  copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can
-  select if confirmations will be requested always, just if text is
-  contained in the clipboard, or if clipboard is not empty (for example if
-  you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're
-  learning HTML markup language, you may choose Preformatted text in HTML or
-  HTML as shown in a web browser, to have an idea of how your HTML code will
-  be rendered by NVDA in a browser. The difference between preformatted and
-  conventional HTML is that the first option will preserve consecutive
-  spaces and line breaks, and the second one will compact them.  For
-  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
-  the text to clipboard, and use clipContentsDesigner add-on to show the
-  text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode:
-  Please, be aware that increasing this limit may produce issues if the
-  clipboard contains large strings of text. The default limit is 100000
-  characters.
-* Restore defaults.
+* Upiši znakovni niz koji će se koristiti kao razdjeljivač između sadržaja
+  koji su dodani u međuspremnik: Omogućuje postavljanje razdjeljivača koji
+  se može koristiti za pronalaženje segmenata teksta nakon što je cijeli
+  dodani tekst umetnut.
+* Dodaj tekst prije podataka međuspremnika: Također je moguće odabrati, hoće
+  li se dodani tekst umetnuti ispred ili iza.
+* Odaberi radnje koje zahtijevaju prethodnu potvrdu: Za svaku dostupnu
+  radnju možeš odabrati, hoće li se izvršiti odmah ili nakon
+  potvrde. Dostupne radnje su: dodaj tekst, isprazni međuspremnik, emuliraj
+  kopiranje i emuliraj izrezivanje.
+* Zatraži potvrdu prije izvođenja odabranih radnji: Možeš odabrati hoće li
+  se potvrde zatražiti uvijek, samo ako se tekst nalazi u međuspremniku ili
+  ako međuspremnik nije prazan (na primjer ako si kopirao/la datoteku, a ne
+  tekst).
+* Format za prikaz teksta međuspremnika kao HTML u načinu čitanja: Ako učiš
+  HTML jezik, možeš odabrati predformatirani tekst u HTML-u ili HTML kako se
+  prikazuje u web-pregledniku za dobivanje predodžbe o tome kako će NVDA
+  prikazati tvoj HTML kod u pregledniku. Razlika između unaprijed
+  formatiranog i konvencionalnog HTML-a je u tome što će prva opcija
+  sačuvati uzastopne razmake i prijelome redaka, a druga neće. Na primjer,
+  napiši neke HTML oznake kao što su h1, h2, li, pre itd., odaberi i kopiraj
+  tekst u međuspremnik i kosristi dodatak „Upravljanje sadržajem
+  međuspremnika” za prikaz teksta.
+* Maksimalni broj znakova kada se prikazuje tekst međuspremnika u modusu
+  čitanja: imaj na umu da povećanje ovog ograničenja može uzrokovati
+  probleme ako međuspremnik sadrži dugačke tekstove. Standardno ograničenje
+  je 100.000 znakova.
+* Obnovi standardne vrijednosti.
 
 Napomene:
 
@@ -69,8 +70,8 @@ Napomene:
   radnji koje odgovaraju tim prečacima.
 
 ## Promjene u verziji 22.0.0
-* Added a button to restore defaults in the add-on settings panel.
-* The add-on cannot be run in secure mode.
+* Dodan je gumb za obnavljanje zadanih postavki u ploči postavki dodatka.
+* Dodatak se ne može pokrenuti u sigurnom modusu.
 
 ## Promjene u verziji 17.0
 * Kompatibilno s NVDA čitačem 2023.1.
@@ -88,17 +89,18 @@ Napomene:
 * Kompatibilno s NVDA čitačem 2021.1.
 
 ## Promjene u verziji 13.0
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
-  Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all
-  commands available for this add-on.
+* Ispravljen je problem s vizualnim izgledom u ploči s postavkama. Hvala
+  Cyrille Bougot.
+* Poboljšana dokumentacija.
+* Dodatku „Upravljanje sadržajem međuspremnika” je dodana kategorija za
+  dodjelu gesta unosa svim naredbama koje su dostupne za ovaj dodatak.
 * Ispravljene su greške prilikom korištenja emuliranja kopiranja u
   preglednicima ako je modus fokusa aktiviran.
-* You can assign different gestures to show the clipboard textual contents
-  as raw text or formatted in HTML. The Format to show the clipboard text in
-  the settings panel has being modified accordingly, to select the two
-  options available for HTML format.
+* Mogu se dodijeliti različite geste za prikaz tekstualnog sadržaja
+  međuspremnika kao neobrađeni tekst ili formatiran u HTML-u. Format za
+  prikaz teksta međuspremnika je u ploči postavki u skladu s time
+  promijenjen, što omogućuje biranje tih dviju opcija dostupne za HTML
+  format.
 
 ## Promjene u verziji 12.0
 * Ispravljene su greške prilikom korištenja emuliranja kopiranja u
@@ -134,22 +136,23 @@ Napomene:
 
 ## Promjene u verziji 7.0
 
-* U dijaloškom okviru za konfiguriranje funkcionalnosti Emuliraj kopiranje i
-  Emuliraj izrezivanje, ako se odabere „ne”, uklonit će se naredbe za ove
-  funkcije, tako da će biti moguće koristiti normalni način rada za
-  kontrol+c i kontrol+x.
+* Ako se u dijaloškom okviru za konfiguriranje funkcionalnosti „Emuliraj
+  kopiranje” i „Emuliraj izrezivanje” odabere „ne”, naredbe za ove funkcije
+  će se ukloniti kako bi se omogućio normalni način rada za kontrol+c i
+  kontrol+x.
 
 ## Promjene u verziji 6.0
 
-*	Added options to choose if available actions should be performed after
-  confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
-  the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation. This allows to add the control+c and
-  control+x commands to copy and cut, and be asked if you want to replace
-  the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Dodane su opcije s kojima se može odlučiti je li se dostupne radnje
+  trebaju izvršiti nakon potvrde.
+*	Dodane su naredbe „Emuliraj kopiranje” i „Emuliraj izrezivanje”, koje je
+  moguće dodijeliti u dijaloškom okviru „Ulazne geste”.
+*	Dodan je dijaloški okvir za podešavanje naredbi „Emuliraj kopiranje” i
+  „Emuliraj izrezivanje”, tijekom instaliranja. Ovo dozvoljava dodavanje
+  naredbi kontrol+c i kontrol+x za kopiranje i izrezivanje, te postavljanjem
+  pitanja, želiš li zamijeniti sadržaj međuspremnika pri korištenju ovih
+  tipkovničkih prečaca.
+*	Ispravljena je dokumentacija za script_add (Windows+NVDA+c).
 
 ## Promjene u verziji 5.0 ##
 
