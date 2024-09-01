@@ -87,6 +87,8 @@ def getKeyForCopy():
 		return "control+ز"
 	elif keyboardLayout.startswith("ar_"):
 		return "control+ؤ"
+	elif keyboardLayout.startswith("he_"):
+		return "control+ב"
 	else:
 		return "control+c"
 
