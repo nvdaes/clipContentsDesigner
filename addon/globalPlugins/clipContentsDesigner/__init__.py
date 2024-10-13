@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
-# Copyright (C) 2012-2022 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2024 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import addonHandler
