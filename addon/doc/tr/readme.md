@@ -69,6 +69,9 @@ Notlar:
   gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin
   verecektir.
 
+## 40.0.0 için Değişiklikler
+* İbranice klavye için destek eklendi.
+
 ## 22.0.0 için Değişiklikler
 * Eklenti ayarları panelinde varsayılanları geri yüklemek için bir düğme
   eklendi.
@@ -152,7 +155,7 @@ Notlar:
   için control+c ve control+x komutlarının eklenmesine ve bu tuşlara
   basıldığında pano içeriğini değiştirmek isteyip istemediğinizin
   sorulmasına olanak tanır.
-*	script_add (Windows+NVDA+c) için belgeler düzeltildi.
+*	Belgeler script_add (Windows+NVDA+c) için düzeltildi.
 
 ## 5.0 için Değişiklikler ##
 

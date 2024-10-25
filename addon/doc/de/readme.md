@@ -75,6 +75,9 @@ Anmerkungen:
   Bestätigung angefordert werden soll, bevor die entsprechende Aktion
   ausgeführt wird.
 
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
 ## Änderungen in 22.0.0
 * Es wurde eine Schaltfläche zum Wiederherstellen der Standard-Einstellungen
   im den Einstellungen der NVDA-Erweiterung hinzugefügt.

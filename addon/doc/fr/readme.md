@@ -75,6 +75,9 @@ Notes :
   confirmation doit être demandée avant d'effectuer les actions
   correspondant à ces frappes.
 
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
 ## Changements pour la version 22.0.0
 * Ajout d'un bouton pour restaurer aux paramètres par défaut dans le panneau
   de paramètres de l'extension.
