@@ -69,6 +69,9 @@ Napomene:
   aktivirane. Time se može odabrati mogućnost za potvrdom prije izvođenja
   radnji koje odgovaraju tim prečacima.
 
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
 ## Promjene u verziji 22.0.0
 * Dodan je gumb za obnavljanje zadanih postavki u ploči postavki dodatka.
 * Dodatak se ne može pokrenuti u sigurnom modusu.

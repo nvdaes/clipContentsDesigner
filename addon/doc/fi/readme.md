@@ -65,6 +65,9 @@ Huomautuksia:
   ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
   valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
 ## Muutokset versiossa 22.0.0
 * Lisäosan asetuspaneeliin lisätty painike oletusarvojen palauttamista
   varten.

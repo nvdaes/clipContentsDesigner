@@ -69,6 +69,9 @@ Notas:
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
 ## Changes for 22.0.0
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
