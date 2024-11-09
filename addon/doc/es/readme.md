@@ -69,8 +69,8 @@ Notas:
   control+x. Esto permitirá elegir si se debería solicitar una confirmación
   antes de realizar las acciones correspondientes a estos atajos de teclado.
 
-## Changes for 40.0.0
-* Added support for Hebrew keyboard.
+## Cambios para 40.0.0
+* Se añade soporte para el teclado hebreo.
 
 ## Cambios para 22.0.0
 * Se ha añadido un botón para restaurar valores por defecto en el panel de
