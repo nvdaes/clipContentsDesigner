@@ -55,7 +55,7 @@ Se sisältää seuraavat säätimet:
 * Merkkien enimmäismäärä selaustilassa leikepöydän tekstiä näytettäessä:
   Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, mikäli
   leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
-* Palauta oletukset
+* Palauta oletukset.
 
 Huomautuksia:
 
@@ -65,8 +65,8 @@ Huomautuksia:
   ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
   valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
-## Changes for 40.0.0
-* Added support for Hebrew keyboard.
+## Muutokset versiossa 40.0.0
+* Lisätty tuki hepreankieliselle näppäimistölle.
 
 ## Muutokset versiossa 22.0.0
 * Lisäosan asetuspaneeliin lisätty painike oletusarvojen palauttamista
