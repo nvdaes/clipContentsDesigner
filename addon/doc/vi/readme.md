@@ -130,8 +130,6 @@ Lưu ý:
 * Bản thiết lập của add-on được hiển thị ở phân loại thích hợp trong hộp
   thoại cấu hình NVDA.
 * Yêu cầu NVDA 2018.2 trở lên.
-* Nếu cần, bạn có thể tải [phiên bản cuối cùng tương thích với NVDA
-  2017.3][3].
 
 ## Các thay đổi cho bản 7.0
 
@@ -184,4 +182,3 @@ Lưu ý:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

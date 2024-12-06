@@ -129,8 +129,6 @@ Megjegyzések:
 * A bővítmény beállításai az NVDA beállításai közt jelennek meg külön
   kategóriában
 * Az NVDA 2018.2 vagy újabb kiadása szükséges
-* Ha szükséges, letöltheti a [legutolsó verziót][3], ami még támogatja az
-  NVDA 2017.3 kiadását.
 
 ## A 7.0 változásai
 
@@ -184,4 +182,3 @@ Megjegyzések:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

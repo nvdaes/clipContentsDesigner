@@ -134,8 +134,6 @@ Napomene:
 * Postavke dodatka se prikazuju u odgovarajućoj kategoriji dijaloškog okvira
   za NVDA Postavke.
 * Zahtijeva NVDA verziju 2018.2 ili noviju.
-* Ako treba, moguće je preuzeti [zadnju verziju kompatibilnu s NVDA
-  2017.3][3].
 
 ## Promjene u verziji 7.0
 
@@ -191,4 +189,3 @@ Napomene:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

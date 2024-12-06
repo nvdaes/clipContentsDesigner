@@ -133,8 +133,6 @@ Note:
 * Setările suplimentului sunt afișate în categoria corespunzătoare a
   dialogului setărilor NVDA..
 * Necesită NVDA 2018.2 sau mai nou.
-* Dacă e musai, puteți să descărcați [ultima versiune compatibilă cu NVDA
-  2017.3][3].
 
 ## Modificări în 7.0
 
@@ -188,4 +186,3 @@ Note:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

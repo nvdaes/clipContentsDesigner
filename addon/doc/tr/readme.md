@@ -135,7 +135,6 @@ Notlar:
 * Eklenti ayarları, NVDA Ayarları iletişim kutusunun ilgili kategorisinde
   gösterilir.
 * NVDA 2018.2 veya sonraki bir sürümü gerektirir.
-* Gerekirse [NVDA 2017.3 ile uyumlu son sürümü] indirebilirsiniz [3].
 
 ## 7.0 için Değişiklikler
 
@@ -191,4 +190,3 @@ Notlar:
 
 [[!tag dev kararlı]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

@@ -95,7 +95,6 @@
 
 * アドオン設定は、NVDA設定ダイアログの、対応するカテゴリーに表示されます。
 * NVDA 2018.2以降が必要。
-* もし必要であれば、[NVDA 2017.3に互換する最後のバージョン][3]をダウンロード出来ます。
 
 ## 7.0の変更点
 
@@ -137,4 +136,3 @@
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
