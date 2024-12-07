@@ -130,8 +130,6 @@ Huomautuksia:
 * Lisäosan asetukset näkyvät omassa kategoriassaan NVDA:n
   Asetukset-valintaikkunassa.
 * Edellyttää NVDA 2018.2:ta tai uudempaa.
-* Tarvittaessa voit ladata [viimeisimmän version, joka on yhteensopiva NVDA
-  2017.3:n kanssa.][3]
 
 ## Muutokset versiossa 7.0
 
@@ -188,4 +186,3 @@ Huomautuksia:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

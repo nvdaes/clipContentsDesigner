@@ -140,8 +140,6 @@ Notas:
 * As configurações adicionais são mostradas na categoria correspondente da
   caixa de diálogo Configurações do NVDA.
 * Requer o NVDA 2018.2 ou posterior.
-* Se for necessário, pode fazer o download da [última versão compatível com
-  o NVDA 2017.3] [3].
 
 ## Alterações para a versão 7.0
 
@@ -197,4 +195,3 @@ Notas:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

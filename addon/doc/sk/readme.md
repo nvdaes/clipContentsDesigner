@@ -127,7 +127,6 @@ Poznámky:
 
 * Nastavenia doplnku pridané do stromu s nastaveniami NVDA.
 * Vyžaduje NVDA od verzie 2018.2.
-* Stále si môžete stiahnuť [verziu pre NVDA 2017.3][3].
 
 ## Zmeny vo verzii 7.0
 
@@ -175,4 +174,3 @@ Poznámky:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

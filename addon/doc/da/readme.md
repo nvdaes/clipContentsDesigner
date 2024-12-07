@@ -136,8 +136,6 @@ Bemærkninger:
 * Tilføjelsens indstillinger vises i den tilsvarende kategori NVDA
   indstillinger i dialogboksen.
 * Kræver NVDA 2018.2 eller nyere.
-* Hvis nødvendigt, kan du hente [sidste version kompatibel med NVDA
-  2017.3][3].
 
 ## Ændringer i7.0
 
@@ -192,4 +190,3 @@ Bemærkninger:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o

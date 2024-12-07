@@ -117,7 +117,6 @@ It contains the following controls:
 
 * 插件设置显示在NVDA设置对话框的相应类别中。
 * 需要NVDA 2018.2或更高版本。
-* 假如需要用旧版本，您可以下载[与NVDA 2017.3兼容的旧版本] [3]。
 
 ## 版本7.0
 
@@ -159,4 +158,3 @@ It contains the following controls:
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
