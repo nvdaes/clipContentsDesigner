@@ -31,6 +31,9 @@ Notes:
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 * Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
 
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
 ## Changes for 22.0.0
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
@@ -76,7 +79,6 @@ Notes:
 
 * The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
 * Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA 2017.3][3].
 
 ## Changes for 7.0
 
@@ -111,4 +113,3 @@ Notes:
 *	Initial version.
 
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=ccd-o
