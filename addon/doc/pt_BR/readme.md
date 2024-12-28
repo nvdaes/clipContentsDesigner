@@ -61,41 +61,42 @@ Contém os seguintes controles:
   modo de navegação: Lembre-se de que aumentar este limite pode causar
   problemas se a área de transferência contiver grandes cadeias de texto. O
   limite padrão é 100000 caracteres.
-* Restore defaults.
+* Restaurar os padrões.
 
 Notas:
 
 * Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
   ainda estiver aberta. Nesses casos, as ações serão executadas
   imediatamente.
-* Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+* Os comandos emular cópia e emular corte significam que, quando esses
+  recursos estão ativados, o complemento assumirá o controle de control+c e
+  control+x. Isso permitirá selecionar se uma confirmação deve ser
+  solicitada antes de realizar as ações correspondentes a essas teclas.
 
-## Changes for 40.0.0
-* Added support for Hebrew keyboard.
+## Mudanças na 40.0.0
+* Adicionado suporte ao teclado hebraico.
 
-## Changes for 22.0.0
-* Added a button to restore defaults in the add-on settings panel.
-* The add-on cannot be run in secure mode.
+## Mudanças na 22.0.0
+* Foi adicionado um botão para restaurar os padrões no painel de
+  configurações do complemento.
+* O add-on não pode ser executado no modo seguro.
 
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
+## Mudanças na 17.0
+* Compatível com o NVDA 2023.1.
 
-## Changes for 16.0
-* Reqires NVDA 2022.1 or later.
+## Mudanças na 16.0
+* Requer NVDA 2022.1 ou posterior.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input
-  gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to
+## Mudanças na 15.0
+* O comando para adicionar texto à área de transferência é novamente
+  apresentado na caixa de diálogo de gestos de entrada.
+* Corrigidos os gestos para copiar e cortar com o teclado persa, graças a
   Mohammadhosein Ghezelsofla.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+## Mudanças na 14.0
+* Compatível com o NVDA 2021.1.
 
-## Mudanças na 13.0
+## Mudanças na 13.0 
 * Corrigido um problema no leiaute visual do painel de configurações, graças
   a Cyrille Bougot.
 * Documentação melhorada.
@@ -151,15 +152,16 @@ Notas:
 
 ## Mudanças na 6.0
 
-*	Added options to choose if available actions should be performed after
-  confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
-  the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation. This allows to add the control+c and
-  control+x commands to copy and cut, and be asked if you want to replace
-  the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Foram adicionadas opções para escolher se as ações disponíveis devem ser
+  executadas após a confirmação.
+*	Adição dos comandos Emular cópia e Emular corte, que podem ser atribuídos
+  na caixa de diálogo Gestos de entrada.
+*	Adicionada uma caixa de diálogo para configurar as funcionalidades Emular
+  cópia e Emular corte na instalação. Isso permite adicionar os comandos
+  control+c e control+x para copiar e cortar, e ser perguntado se você
+  deseja substituir o conteúdo da área de transferência ao pressionar essas
+  teclas.
+*	Corrigida a documentação do script_add (Windows+NVDA+c).
 
 ## Mudanças na 5.0 ##
 
@@ -168,9 +170,10 @@ Notas:
 *	Requer NVDA 2016.4 ou posterior.
 
 ## Mudanças na 4.0 ##
-*	As opções do complemento são agora geridas pela configuração do NVDA, de
-  modo que se pode usar perfis para salvar diferentes separadores e não é
-  necessário copiar as opções para importá-las quando duma reinstalação.
+*	As configurações do complemento são gerenciadas a partir da configuração
+  do NVDA, de modo que os perfis padrão podem ser usados para salvar
+  separadores diferentes, e não é necessário copiar as configurações para
+  importação na reinstalação.
 *	Agora é possível escolher se o texto será acrescentado depois ou antes do
   que já está lá, usando a caixa de seleção acrescentar texto antes dos
   dados, no diálogo de opções do gestor de conteúdo da área de
