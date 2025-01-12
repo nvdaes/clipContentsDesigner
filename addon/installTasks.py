@@ -1,9 +1,7 @@
 # -*- coding: UTF-8 -*-
 # installTasks for clipContentsDesigner add-on
-# Copyright (C) 2017-2024 Noelia Ruiz Martínez
+# Copyright (C) 2017-2025 Noelia Ruiz Martínez
 # Released under GPL 2
-
-import wx
 
 import addonHandler
 import inputCore
