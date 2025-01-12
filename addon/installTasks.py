@@ -1,14 +1,14 @@
 # -*- coding: UTF-8 -*-
 # installTasks for clipContentsDesigner add-on
-# Copyright (C) 2017-2022 Noelia Ruiz Martínez
+# Copyright (C) 2017-2024 Noelia Ruiz Martínez
 # Released under GPL 2
 
 import wx
 
 import addonHandler
-import gui
 import inputCore
 import config
+from gui import MessageDialog, ReturnCode
 
 addonHandler.initTranslation()
 
@@ -38,15 +38,14 @@ def onInstall():
 		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
 	except ValueError:
 		pass
-	if gui.message.messageBox(
+	if MessageDialog.ask(
 		# Translators: label of a dialog.
 		_("""This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,
 		when pressing control+c and control+x. This is named Emulate copy and cut.
 		Do you want to configure Emulate copy and cut now? You may do or change this later."""),
 		# Translators: title of a dialog.
 		_("Configure Emulate copy and cut"),
-		wx.YES | wx.NO | wx.ICON_WARNING
-	) == wx.YES:
+	) == ReturnCode.YES:
 		config.conf.spec["clipContentsDesigner"] = confspec
 		config.conf["clipContentsDesigner"]["confirmToCopy"] = True
 		config.conf["clipContentsDesigner"]["confirmToCut"] = True

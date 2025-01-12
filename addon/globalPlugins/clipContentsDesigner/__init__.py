@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
-# Copyright (C) 2012-2024 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2025 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 
 import addonHandler
@@ -18,13 +18,14 @@ import wx
 import gui
 from gui import guiHelper
 from gui.settingsDialogs import SettingsPanel, NVDASettingsDialog
+from gui.message import MessageDialog, ReturnCode
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
-from typing import Callable, Dict, List
+from typing import Dict, List
+from collections.abc import Callable
 import locale
-
-from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
+from ui import browseableMessage
 
 
 addonHandler.initTranslation()
@@ -220,13 +221,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		text = self.getTextToAdd()
 		if not text:
 			return
-		if gui.message.messageBox(
+		if MessageDialog(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to add text to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Adding text to clipboard"),
-			wx.OK | wx.CANCEL
-		) == wx.OK:
+		).confirm() == ReturnCode.OK:
 			if api.copyToClip(text):
 				# Translators: message presented when the text has been added to the clipboard.
 				core.callLater(200, ui.message, _("Added"))
@@ -253,7 +253,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_add(self, gesture):
 		if (
-			config.conf["clipContentsDesigner"]["confirmToAdd"] and not gui.message.isModalMessageBoxActive()
+			config.conf["clipContentsDesigner"]["confirmToAdd"]
 			and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmAdd)
@@ -261,13 +261,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.performAdd()
 
 	def confirmClear(self):
-		if gui.message.messageBox(
+		if MessageDialog(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to clear the clipboard"),
 			# Translators: Title of a dialog.
 			_("Clearing clipboard"),
-			wx.OK | wx.CANCEL
-		) != wx.OK:
+		).confirm() != ReturnCode.OK:
 			return
 		self.clearClipboard()
 
@@ -279,7 +278,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_clear(self, gesture):
 		if (
 			config.conf["clipContentsDesigner"]["confirmToClear"]
-			and not gui.message.isModalMessageBoxActive()
 		):
 			wx.CallAfter(self.confirmClear)
 		else:
@@ -296,13 +294,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 
 	def confirmCopy(self):
-		if gui.message.messageBox(
+		if MessageDialog(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to copy to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Copying to clipboard"),
-			wx.OK | wx.CANCEL
-		) != wx.OK:
+		).confirm() != ReturnCode.OK:
 			return
 		core.callLater(200, self.copy)
 
@@ -313,7 +310,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_copy(self, gesture):
 		if (
 			config.conf["clipContentsDesigner"]["confirmToCopy"]
-			and not gui.message.isModalMessageBoxActive()
 			and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCopy)
@@ -325,13 +321,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCut(self):
-		if gui.message.messageBox(
+		if MessageDialog(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to cut from the clipboard"),
 			# Translators: Title of a dialog.
 			_("Cutting from clipboard"),
-			wx.OK | wx.CANCEL
-		) != wx.OK:
+		).confirm() != ReturnCode.OK:
 			return
 		core.callLater(200, self.cut)
 
@@ -342,7 +337,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_cut(self, gesture):
 		if (
 			config.conf["clipContentsDesigner"]["confirmToCut"]
-			and not gui.message.isModalMessageBoxActive()
 			and self.requiredFormatInClip()
 		):
 			wx.CallAfter(self.confirmCut)
@@ -378,12 +372,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				browseableText = "<pre>%s</pre>" % text.strip()[:maxLength]
 			else:
 				browseableText = text.strip()[:maxLength]
-			secureBrowseableMessage(
+			browseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
 					max=maxLength, current=len(text), formatForTitle=BROWSEABLETEXT_FORMATS[format]
-				)), html)
+				)), html, closeButton=True)
 
 	@script(
 		# Translators: message presented in input mode.
@@ -409,12 +403,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			else:
 				maxLength = len(text)
 			browseableText = text.strip()[:maxLength]
-			secureBrowseableMessage(
+			browseableMessage(
 				browseableText,
 				# Translators: title of a browseable message.
 				_("Clipboard text ({max}/{current} - {formatForTitle})".format(
 					max=maxLength, current=len(text), formatForTitle=RAW_TEXT
-				)), False)
+				)), False, closeButton=True)
 
 
 class AddonSettingsPanel(SettingsPanel):
