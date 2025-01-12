@@ -6,7 +6,7 @@
 import addonHandler
 import inputCore
 import config
-from gui import MessageDialog, ReturnCode
+from gui.message import MessageDialog, ReturnCode
 
 addonHandler.initTranslation()
 
