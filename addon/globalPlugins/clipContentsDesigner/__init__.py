@@ -221,12 +221,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		text = self.getTextToAdd()
 		if not text:
 			return
-		if MessageDialog(
+		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to add text to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Adding text to clipboard"),
-		).confirm() == ReturnCode.OK:
+		) == ReturnCode.OK:
 			if api.copyToClip(text):
 				# Translators: message presented when the text has been added to the clipboard.
 				core.callLater(200, ui.message, _("Added"))
@@ -261,12 +261,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self.performAdd()
 
 	def confirmClear(self):
-		if MessageDialog(
+		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to clear the clipboard"),
 			# Translators: Title of a dialog.
 			_("Clearing clipboard"),
-		).confirm() != ReturnCode.OK:
+		) != ReturnCode.OK:
 			return
 		self.clearClipboard()
 
@@ -294,12 +294,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 
 	def confirmCopy(self):
-		if MessageDialog(
+		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to copy to the clipboard"),
 			# Translators: Title of a dialog.
 			_("Copying to clipboard"),
-		).confirm() != ReturnCode.OK:
+		) != ReturnCode.OK:
 			return
 		core.callLater(200, self.copy)
 
@@ -321,12 +321,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		KeyboardInputGesture.fromName(keyName).send()
 
 	def confirmCut(self):
-		if MessageDialog(
+		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
 			_("Please, confirm if you want to cut from the clipboard"),
 			# Translators: Title of a dialog.
 			_("Cutting from clipboard"),
-		).confirm() != ReturnCode.OK:
+		) != ReturnCode.OK:
 			return
 		core.callLater(200, self.cut)
 
