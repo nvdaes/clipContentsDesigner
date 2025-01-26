@@ -217,6 +217,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return True
 		return False
 
+	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmAdd(self):
 		text = self.getTextToAdd()
 		if not text:
@@ -260,6 +261,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			self.performAdd()
 
+	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmClear(self):
 		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
@@ -293,6 +295,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			gesture.send()
 
+	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCopy(self):
 		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
@@ -320,6 +323,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		keyName = getKeyForCut()
 		KeyboardInputGesture.fromName(keyName).send()
 
+	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCut(self):
 		if MessageDialog.confirm(
 			# Translators: Label of a dialog.
