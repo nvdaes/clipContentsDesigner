@@ -88,7 +88,7 @@ Huomautuksia:
 ## Muutokset versiossa 14.0
 * Yhteensopiva NVDA 2021.1:n kanssa.
 
-## Muutokset versiossa 13.0 
+## Muutokset versiossa 13.0
 * Korjattu ongelma asetuspaneelin visuaalisessa ulkoasussa; kiitos Cyrille
   Bougotille.
 * Dokumentaatiota paranneltu.
@@ -185,4 +185,3 @@ Huomautuksia:
 *	Ensimmäinen versio.
 
 [[!tag dev stable]]
-
