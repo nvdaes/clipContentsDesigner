@@ -94,7 +94,7 @@ Note:
 ## Novità nella versione 14.0
 * Compatibile con NVDA 2021.1.
 
-## Novità nella versione 13.0 
+## Novità nella versione 13.0
 * Risolto un problema nella grafica della finestra Impostazioni. Grazie a
   Cyrille Bougot.
 * Miglioramenti alla documentazione.
@@ -194,4 +194,3 @@ Note:
 *	Versione iniziale.
 
 [[!tag dev stable]]
-
