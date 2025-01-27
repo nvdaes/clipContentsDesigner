@@ -51,7 +51,7 @@ Notes:
 ## Changes for 14.0
 * Compatible with NVDA 2021.1.
 
-## Changes for 13.0 
+## Changes for 13.0
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
@@ -111,5 +111,3 @@ Notes:
 
 ## Changes for 1.0 ##
 *	Initial version.
-
-
