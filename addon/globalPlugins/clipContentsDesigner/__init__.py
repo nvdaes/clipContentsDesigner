@@ -315,8 +315,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		core.callLater(200, self.copy)
 
 	@script(
-		# Translators: message presented in input mode.
 		description=_(
+			# Translators: message presented in input mode.
 			"Copies to the clipboard, with the possibility of being asked for a previous confirmation"
 		),
 	)
@@ -345,8 +345,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		core.callLater(200, self.cut)
 
 	@script(
-		# Translators: message presented in input mode.
 		description=_(
+			# Translators: message presented in input mode.
 			"Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
 		),
 	)
@@ -385,8 +385,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				browseableText = text.strip()[:maxLength]
 			browseableMessage(
 				browseableText,
-				# Translators: title of a browseable message.
 				_(
+					# Translators: title of a browseable message.
 					"Clipboard text ({max}/{current} - {formatForTitle})".format(
 						max=maxLength,
 						current=len(text),
@@ -439,8 +439,8 @@ class AddonSettingsPanel(SettingsPanel):
 
 	def makeSettings(self, settingsSizer):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
-		# Translators: label of a dialog.
 		setSeparatorLabel = _(
+			# Translators: label of a dialog.
 			"Type the string to be used as a &separator between contents added to the clipboard."
 		)
 		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
