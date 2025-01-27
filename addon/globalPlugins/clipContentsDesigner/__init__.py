@@ -317,7 +317,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		description=_(
 			# Translators: message presented in input mode.
-			"Copies to the clipboard, with the possibility of being asked for a previous confirmation"
+			"Copies to the clipboard, with the possibility of being asked for a previous confirmation",
 		),
 	)
 	def script_copy(self, gesture):
@@ -347,7 +347,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		description=_(
 			# Translators: message presented in input mode.
-			"Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
+			"Cuts from the clipboard, with the possibility of being asked for a previous confirmation",
 		),
 	)
 	def script_cut(self, gesture):
@@ -441,7 +441,7 @@ class AddonSettingsPanel(SettingsPanel):
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
 		setSeparatorLabel = _(
 			# Translators: label of a dialog.
-			"Type the string to be used as a &separator between contents added to the clipboard."
+			"Type the string to be used as a &separator between contents added to the clipboard.",
 		)
 		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
 		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
@@ -492,7 +492,7 @@ class AddonSettingsPanel(SettingsPanel):
 			choices=requirementChoices,
 		)
 		self.confirmRequirementChoices.SetSelection(
-			config.conf["clipContentsDesigner"]["confirmationRequirement"]
+			config.conf["clipContentsDesigner"]["confirmationRequirement"],
 		)
 		# Translators: label of a dialog.
 		formatLabel = _("&Format to show the clipboard text as HTML in browse mode:")
