@@ -10,7 +10,7 @@
     "translation": "clipContentsDesigner/addon/locale/%two_letters_code%/LC_MESSAGES/nvda.po"
   },
   {
-    "source": "readme.md",
-    "translation": "clipContentsDesigner/addon/doc/%two_letters_code%/%original_file_name%"
+    "source": "*.md",
+    "translation": "clipContentsDesigner/addon/doc/%two_letters_code%/readme.xliff"
   },
 ]
