@@ -7,10 +7,10 @@
 "files": [
   {
     "source": "*.pot",
-    "translation": "clipContentsDesigner/addon/locale/%two_letters_code%/LC_MESSAGES/nvda.po"
+    "translation": "addon/locale/%locale_with_underscore%/LC_MESSAGES/nvda.po"
   },
   {
     "source": "*.md",
-    "translation": "clipContentsDesigner/addon/doc/%two_letters_code%/readme.xliff"
+    "translation": "addon/doc/%two_letters_code%/readme.md"
   },
 ]
