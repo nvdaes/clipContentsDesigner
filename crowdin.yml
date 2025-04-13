@@ -1,0 +1,16 @@
+"project_id_env": "CROWDIN_PROJECT_ID"
+"api_token_env": "CROWDIN_PERSONAL_TOKEN"
+"base_path": "./clipContentsDesigner"
+
+"preserve_hierarchy": true
+
+"files": [
+  {
+    "source": "*.pot",
+    "translation": "addon/locale/%two_letters_code%/LC_MESSAGES/nvda.po"
+  },
+  {
+    "source": "readme.md",
+    "translation": "addon/doc/%two_letters_code%/%original_file_name%"
+  },
+]
