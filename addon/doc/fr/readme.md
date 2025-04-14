@@ -98,7 +98,7 @@ Notes :
 ## Changements pour la version 14.0
 * Compatible avec NVDA 2021.1.
 
-## Changements pour la version 13.0 
+## Changements pour la version 13.0
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
 * Documentation améliorée.
@@ -200,4 +200,3 @@ Notes :
 *	Première version.
 
 [[!tag dev stable]]
-
