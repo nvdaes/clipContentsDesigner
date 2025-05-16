@@ -25,7 +25,7 @@ näyttää selaustilassa.
 
 ## Leikepöydän sisällön käsittelijän asetukset ##
 
-Tämä paneeli löytyy kohdasta NVDA-valikko -> Asetukset -> Asetukset.
+Tämä paneeli löytyy kohdasta NVDA-valikko > Mukautukset > Asetukset.
 
 Se sisältää seuraavat säätimet:
 
