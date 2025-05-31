@@ -92,7 +92,7 @@ Notas:
 ## Cambios para 14.0
 * Compatible con NVDA 2021.1.
 
-## Cambios para 13.0 
+## Cambios para 13.0
 * Se ha corregido un problema en la disposición visual del panel de
   opciones, gracias a Cyrille Bougot.
 * Se ha mejorado la documentación.
@@ -192,4 +192,3 @@ Notas:
 *	Versión inicial.
 
 [[!tag dev stable]]
-
