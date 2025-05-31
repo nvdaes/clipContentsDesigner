@@ -1,6 +1,7 @@
 {
     "editor.accessibilitySupport": "on",
     "ruff.enable": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/../nvda/.venv/Scripts/python.exe",
     "python.autoComplete.extraPaths": [
         "addon",
         "${workspaceFolder}/../nvda/source",
@@ -32,4 +33,5 @@
     },
     "python.analysis.autoImportCompletions": true,
     "python.analysis.importFormat": "relative"
-}
+    }
+        
