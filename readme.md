@@ -31,6 +31,11 @@ Notes:
 *	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 * Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
 
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape key.
+
+
 ## Changes for 40.0.0
 * Added support for Hebrew keyboard.
 
@@ -51,7 +56,7 @@ Notes:
 ## Changes for 14.0
 * Compatible with NVDA 2021.1.
 
-## Changes for 13.0 
+## Changes for 13.0
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
@@ -111,5 +116,3 @@ Notes:
 
 ## Changes for 1.0 ##
 *	Initial version.
-
-

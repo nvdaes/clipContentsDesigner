@@ -1,0 +1,16 @@
+"project_id_env": "CROWDIN_PROJECT_ID"
+"api_token_env": "CROWDIN_PERSONAL_TOKEN"
+"base_path": "."
+
+"preserve_hierarchy": true
+
+"files": [
+  {
+    "source": "*.pot",
+    "translation": "addon/locale/%locale_with_underscore%/LC_MESSAGES/nvda.po"
+  },
+  {
+    "source": "*.md",
+    "translation": "addon/doc/%two_letters_code%/readme.md"
+  },
+]

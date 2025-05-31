@@ -5,7 +5,6 @@ addon/doc/en/
 addon/*.ini
 addon/locale/*/*.ini
 *.mo
-*.pot
 *.pyc
 *.nvda-addon
 .sconsign.dblite

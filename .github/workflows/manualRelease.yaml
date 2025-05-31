@@ -3,7 +3,7 @@ name: Manual release
 on:
   workflow_dispatch:
     inputs:
-      version:  
+      version:
         description: 'Add-on version'
         required: true
         default: '0.0.0'
@@ -44,7 +44,7 @@ jobs:
           f.seek(0)
           f.write(text)
           f.truncate()
-      shell: python 
+      shell: python
     - name: Build add-on
       run: scons
     - name: Push changes
@@ -61,7 +61,7 @@ jobs:
         gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
     - if: ${{ inputs.signAddOn }}
-      name: Sign add-on  
+      name: Sign add-on
       run: gpg --detach-sign *.nvda-addon
     - name: Calculate sha256
       run: sha256sum *.nvda-addon >> sha256.txt
@@ -76,4 +76,3 @@ jobs:
         artifacts: "*.nvda-addon,*.sig,publicKey.asc,sha256.txt"
         generateReleaseNotes: true
         prerelease: ${{ inputs.prerelease }}
-        
