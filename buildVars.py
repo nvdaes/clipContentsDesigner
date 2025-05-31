@@ -4,7 +4,7 @@ import os.path
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
 # Full getext (please don't change)
-_ = lambda x : x
+_ = lambda x: x
 
 # Add-on information variables
 addon_info = {
@@ -16,12 +16,14 @@ addon_info = {
 	# Translators: Summary for this add-on to be shown on installation and add-on information.
 	"addon_summary": _("Clip Contents Designer"),
 	# Add-on description
-	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."""),
+	"addon_description": _(
+		# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+		"""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes.""",
+	),
 	# version
 	"addon_version": "45.1.0",
 	# Author(s)
-	"addon_author": u"Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>",
+	"addon_author": "Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url": "https://github.com/nvdaes/clipContentsDesigner",
 	# Documentation file name
@@ -35,11 +37,12 @@ addon_info = {
 }
 
 
-
-
 # Define the python files that are the sources of your add-on.
 # You can use glob expressions here, they will be expanded.
-pythonSources = [os.path.join("addon", "*.py"), os.path.join("addon", "globalPlugins", "clipContentsDesigner", "*.py")]
+pythonSources = [
+	os.path.join("addon", "*.py"),
+	os.path.join("addon", "globalPlugins", "clipContentsDesigner", "*.py"),
+]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources = pythonSources + ["buildVars.py"]

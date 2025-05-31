@@ -50,6 +50,7 @@ exclude = [
 	".git",
 	"__pycache__",
 	".venv",
+	"buildVars.py",
 ]
 
 [tool.ruff.format]
