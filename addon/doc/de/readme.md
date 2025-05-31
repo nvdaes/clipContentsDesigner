@@ -98,7 +98,7 @@ Anmerkungen:
 ## Änderungen in 14.0
 * Kompatibel mit NVDA 2021.1.
 
-## Änderungen in 13.0 
+## Änderungen in 13.0
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
   Einstellungsfelds behoben.
 * Verbesserte Dokumentation.
@@ -200,4 +200,3 @@ Anmerkungen:
 *	Erstveröffentlichung.
 
 [[!tag dev stable]]
-
