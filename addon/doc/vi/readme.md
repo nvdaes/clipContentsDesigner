@@ -89,7 +89,7 @@ Lưu ý:
 ## Changes for 14.0
 * Compatible with NVDA 2021.1.
 
-## Changes for 13.0
+## Changes for 13.0 
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -181,3 +181,4 @@ Lưu ý:
 *	Phiên bản đầu tiên
 
 [[!tag dev stable]]
+
