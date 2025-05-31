@@ -92,7 +92,7 @@ Notlar:
 ## 14.0 için değişiklikler
 * NVDA 2021.1 ile uyumlu.
 
-## 13.0 için Değişiklikler
+## 13.0 için Değişiklikler 
 * Ayarlar panelinin görsel düzenindeki bir sorun düzeltildi, teşekkürler
   Cyrille Bougot.
 * Dokümantasyon (yardım dosyaları) geliştirildi.
@@ -189,3 +189,4 @@ Notlar:
 *	İlk versiyon.
 
 [[!tag dev kararlı]]
+

@@ -91,7 +91,7 @@ Uwagi:
 ## Zmiany w wersji 14.0
 * Kompatybilny z NVDA 2021.1.
 
-## Zmiany w wersji 13.0
+## Zmiany w wersji 13.0 
 * Naprawiono błąd w układzie wizualnym panelu ustawień, dzięki Cyrille
   Bougot.
 * Ulepszona dokumentacja.
@@ -186,3 +186,4 @@ Uwagi:
 *	Pierwsze wydanie.
 
 [[!tag dev stable]]
+

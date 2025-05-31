@@ -96,7 +96,7 @@ Notas:
 ## Mudanças na 14.0
 * Compatível com o NVDA 2021.1.
 
-## Mudanças na 13.0
+## Mudanças na 13.0 
 * Corrigido um problema no leiaute visual do painel de configurações, graças
   a Cyrille Bougot.
 * Documentação melhorada.
@@ -197,3 +197,4 @@ Notas:
 *	Versão inicial.
 
 [[!tag dev stable]]
+

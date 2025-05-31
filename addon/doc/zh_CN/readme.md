@@ -83,7 +83,7 @@ It contains the following controls:
 ## Changes for 14.0
 * Compatible with NVDA 2021.1.
 
-## Changes for 13.0
+## Changes for 13.0 
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -157,3 +157,4 @@ It contains the following controls:
 *	发布初始版本。
 
 [[!tag dev stable]]
+
