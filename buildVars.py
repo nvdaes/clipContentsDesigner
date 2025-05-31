@@ -18,7 +18,7 @@ addon_info = {
 	# Add-on description
 	"addon_description": _(
 		# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-		"""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."""
+		"""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes.""",
 	),
 	# version
 	"addon_version": "45.1.0",
