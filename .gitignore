@@ -8,3 +8,4 @@ addon/locale/*/*.ini
 *.pyc
 *.nvda-addon
 .sconsign.dblite
+*.pot
