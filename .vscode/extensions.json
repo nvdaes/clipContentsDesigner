@@ -3,9 +3,18 @@
 	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
+		"ms-vscode.cpptools",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"redhat.vscode-yaml"
+		"cschlosser.doxdocgen",
+		"davidanson.vscode-markdownlint",
+		"ms-vscode.powershell",
+		"charliermarsh.ruff",
+		"editorconfig.editorconfig",
+		"njpwerner.autodocstring",
+		"ms-python.debugpy",
+		"ms-vscode.remote-server",
+		"benjamin-simmonds.pythoncpp-debug",
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []

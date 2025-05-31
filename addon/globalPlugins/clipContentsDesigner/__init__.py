@@ -1,4 +1,3 @@
-# -*- coding: UTF-8 -*-
 # clipContentsDesigner: a global plugin for managing clipboard text
 # Copyright (C) 2012-2025 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
@@ -22,20 +21,16 @@ from gui.message import MessageDialog, ReturnCode
 from keyboardHandler import KeyboardInputGesture
 from scriptHandler import script
 from logHandler import log
-from typing import Dict, List
-from collections.abc import Callable
 import locale
 from ui import browseableMessage
 
-
 addonHandler.initTranslation()
-_: Callable[[str], str]
 
 # Constants
 
 ADDON_SUMMARY: str = addonHandler.getCodeAddon().manifest["summary"]
 ADDON_PANEL_TITLE: str = ADDON_SUMMARY
-BROWSEABLETEXT_FORMATS: List[str] = [
+BROWSEABLETEXT_FORMATS: list[str] = [
 	# Translators: label of a dialog.
 	_("Preformatted text in HTML"),
 	# Translators: label of a dialog.
@@ -44,7 +39,7 @@ BROWSEABLETEXT_FORMATS: List[str] = [
 # Translators: Text of the clipboard shown without being formatted.
 RAW_TEXT: str = _("Plain text")
 
-confspec: Dict[str, str] = {
+confspec: dict[str, str] = {
 	"separator": "string(default='')",
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
