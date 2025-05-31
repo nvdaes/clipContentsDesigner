@@ -88,7 +88,7 @@ Poznámky:
 ## Changes for 14.0
 * Compatible with NVDA 2021.1.
 
-## Changes for 13.0
+## Changes for 13.0 
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -155,7 +155,7 @@ Poznámky:
   konfiguračné profily NVDA a nie je potrebné po preinštalovaní doplnku
   nanovo importovať nastavenia.
 *	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
-  koniec alebo na začiatok obsahu schránky.
+  koniec alebo na začiatok obsahu schránky. 
 
 ## Zmeny vo verzii 3.0 ##
 *	Braillovské znaky pre matematické operátory je takisto možné vkladať do
@@ -173,3 +173,4 @@ Poznámky:
 *	prvé vydanie.
 
 [[!tag dev stable]]
+
