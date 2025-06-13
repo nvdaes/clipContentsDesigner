@@ -11,18 +11,10 @@ de navegação.
 *	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres braille
   Unicode que representem objetos MathML, ou a sequência (string) que foi
   marcada com o cursor de exploração, à área de transferência.
-*	NVDA+windows+x: Apaga o conteúdo da área de transferência.
-*	Não atribuído: copia (ou corta) a área de transferência, com a
-  possibilidade de ser solicitada uma confirmação prévia.
-*	Não atribuído: Mostra o texto da área de transferência como HTML no modo
-  de navegação ou anuncia se a área de transferência está vazia ou possui
-  conteúdos que não podem ser apresentados em uma mensagem navegável, por
-  exemplo, se arquivos ou pastas foram copiados do Windows Explorer.
-*	Não atribuído: Mostra o conteúdo textual da área de transferência como
-  texto simples no modo de navegação ou anuncia se a área de transferência
-  está vazia ou tem conteúdos que não podem ser apresentados em uma mensagem
-  navegável, por exemplo, se arquivos ou pastas foram copiados do Windows
-  Explorer.
+*	NVDA+windows+x: Clear clipboard contents.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
 
 
 ## Configurações do Gestor do Conteúdo de Transferência ##
@@ -65,13 +57,14 @@ Contém os seguintes controles:
 
 Notas:
 
-* Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
-  ainda estiver aberta. Nesses casos, as ações serão executadas
-  imediatamente.
-* Os comandos emular cópia e emular corte significam que, quando esses
-  recursos estão ativados, o complemento assumirá o controle de control+c e
-  control+x. Isso permitirá selecionar se uma confirmação deve ser
-  solicitada antes de realizar as ações correspondentes a essas teclas.
+*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
+* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape
+  key.
+
 
 ## Mudanças na 40.0.0
 * Adicionado suporte ao teclado hebraico.
@@ -96,7 +89,7 @@ Notas:
 ## Mudanças na 14.0
 * Compatível com o NVDA 2021.1.
 
-## Mudanças na 13.0 
+## Changes for 13.0
 * Corrigido um problema no leiaute visual do painel de configurações, graças
   a Cyrille Bougot.
 * Documentação melhorada.
@@ -152,16 +145,10 @@ Notas:
 
 ## Mudanças na 6.0
 
-*	Foram adicionadas opções para escolher se as ações disponíveis devem ser
-  executadas após a confirmação.
-*	Adição dos comandos Emular cópia e Emular corte, que podem ser atribuídos
-  na caixa de diálogo Gestos de entrada.
-*	Adicionada uma caixa de diálogo para configurar as funcionalidades Emular
-  cópia e Emular corte na instalação. Isso permite adicionar os comandos
-  control+c e control+x para copiar e cortar, e ser perguntado se você
-  deseja substituir o conteúdo da área de transferência ao pressionar essas
-  teclas.
-*	Corrigida a documentação do script_add (Windows+NVDA+c).
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Mudanças na 5.0 ##
 

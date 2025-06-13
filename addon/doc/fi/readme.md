@@ -10,17 +10,10 @@ näyttää selaustilassa.
 ## Näppäinkomennot ##
 *	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
-*	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-*	Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
-  vaihtoehtoisesti vahvistuksen.
-*	Ei määritetty: Näyttää leikepöydällä olevan tekstin HTML-muodossa
-  selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
-  sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
-  tiedostoja tai kansioita.
-*	Ei määritetty: Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä
-  selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
-  sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
-  tiedostoja tai kansioita.
+*	NVDA+Win+X: Tyhjennä leikepöytä.
+*	 Ei määritetty: Kopioi leikepöydälle tai leikkaa leikepöydältä ja kysyy valinnaisesti vahvistuksen suoritettavalle toiminnolle.
+*	 Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa HTML-muodossa, tai ilmoittaa, jos leikepöytä on tyhjä tai mikäli sisältö on sellaista, jota ei voida näyttää (esimm. Resurssienhallinnasta kopioidut tiedostot tai kansiot).
+*	 Ei määritetty: Näyttää leikepöydän tekstimuotoisen sisällön selaustilassa, tai ilmoittaa, jos leikepöytä on tyhjä tai mikäli sisältö on sellaista, jota ei voida näyttää (esim. Resurssienhallinnasta kopioidut tiedostot tai kansiot).
 
 
 ## Leikepöydän sisällön käsittelijän asetukset ##
@@ -59,11 +52,14 @@ Se sisältää seuraavat säätimet:
 
 Huomautuksia:
 
-* Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
-  toiminnot suoritetaan heti.
-* Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa
-  ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Tämä mahdollistaa
-  valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
+*	Vahvistuksia ei pyydetä, jos NVDA:n viestiruutu on yhä avoinna. Tällaisissa tilanteissa toiminto suoritetaan välittömästi.
+* Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Se mahdollistaa valinnaisen vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
+
+## Muutokset versiossa 46.0.0
+* NVDA siivoaa selattavien viestien HTML-koodin.
+* Lisätty Esc-näppäimen ohelle painike selattavien viestien sulkemista
+  varten.
+
 
 ## Muutokset versiossa 40.0.0
 * Lisätty tuki hepreankieliselle näppäimistölle.
@@ -88,7 +84,7 @@ Huomautuksia:
 ## Muutokset versiossa 14.0
 * Yhteensopiva NVDA 2021.1:n kanssa.
 
-## Muutokset versiossa 13.0 
+## Muutokset versiossa 13.0
 * Korjattu ongelma asetuspaneelin visuaalisessa ulkoasussa; kiitos Cyrille
   Bougotille.
 * Dokumentaatiota paranneltu.
@@ -140,17 +136,10 @@ Huomautuksia:
 
 ## Muutokset versiossa 6.0
 
-*	Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä
-  olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi
-  -asetukset, joille voidaan määrittää näppäinkomennot
-  Näppäinkomennot-valintaikkunasta.
-*	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista
-  leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan
-  asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C)
-  ja leikkaamisen (Ctrl+X) suorittamiselle ja leikepöydän sisällön
-  korvaamiselle pyydetään vahvistus.
-*	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
+*	 Lisätty asetukset, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiselle vahvistus.
+*	Lisätty "Kopioinnin emulointi"- ja "Leikkaamisen emulointi" -komennot, joille on mahdollista määrittää näppäinkomennot NVDA:n Näppäinkomennot-valintaikkunasta.
+*	 Lisätty valintaikkuna "Vahvista kopioinnin emulointi"- ja "Vahvista leikkaamisen emulointi" -toiminnallisuuksien  määrittämiselle lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle ja leikepöydän sisällön korvaamiselle pyydetään vahvistus.
+*	Korjattu _add-skriptin (Win+NVDA+C) dokumentaatio.
 
 ## Muutokset versiossa 5.0 ##
 

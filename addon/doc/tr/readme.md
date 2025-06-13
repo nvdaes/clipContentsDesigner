@@ -10,18 +10,10 @@ içeriği temizlenebilir ve tarama kipi modunda gösterilebilir.
 *	NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode
   braille karakterlerini veya inceleme imleciyle işaretlenmiş dizeyi panoya
   ekler.
-*	NVDA+windows+x: Pano içeriğini temizle.NVDA+windows+x: Pano içeriğini
-  siler.
-*	Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme
-  olasılığı ile.
-*	Atanmamış: Pano metnini HTML olarak Tarama kipi  modunda gösterir veya
-  panonun boş olup olmadığını veya örneğin dosyalar veya klasörler Windows
-  Gezgini'nden kopyalanmışsa, bir iletide gösterilemeyen içeriğe sahip olup
-  olmadığını bildir.
-*	Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak
-  gösterir veya panonun boş olup olmadığını veya örneğin dosyalar veya
-  klasörler Windows Gezgini'nden kopyalanmışsa, göz atılabilir bir iletide
-  gösterilemeyen içeriğe sahip olup olmadığını bildir.
+*	 NVDA+Windows+X: Pano içeriğini temizler.
+*	 Atanmamış: Panoya kopyalar (veya panodan keser), önceden bir onay istenmesi olasılığı vardır.
+*	 Atanmamış: Pano metnini Tarama kipinde HTML olarak gösterir veya pano boşsa veya göz atılabilir bir mesajda gösterilemeyen içeriğe sahipse, örneğin dosyalar veya klasörler Windows Explorer'dan kopyalanmışsa bunu duyurur.
+*	 Atanmamış: Pano içeriğini Tarama kipinde düz metin olarak gösterir veya pano boşsa ya da göz atılabilir bir mesajda gösterilemeyecek içeriğe sahipse, örneğin dosyalar veya klasörler Windows Gezgini'nden kopyalanmışsa bunu bildirir.
 
 
 ## Pano İçeriği düzenleyici ayarları ##
@@ -60,14 +52,13 @@ Aşağıdaki kontrolleri içerir:
 
 Notlar:
 
-* Eğer NVDA'nın bir mesaj kutusu hala açıksa bir işlem için onay
-  istenmeyecektir. Bu gibi durumlarda, işlemler derhal
-  gerçekleştirilecektir.
-* Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler
-  etkinleştirildiğinde, eklentinin kontrol+c ve kontrol+x'in kontrolünü
-  alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri
-  gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin
-  verecektir.
+Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler etkinleştirildiğinde, eklentinin kontrol+c ve kontrol+x'in kontrolünü alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin verecektir.
+
+## 46.0.0 için Değişiklikler
+* NVDA, göz atılabilir iletilerdeki HTML'yi sterilize edecektir.
+* Göz atılabilir mesajları kapatmak için Escape tuşuna ek olarak bir düğme
+  eklendi.
+
 
 ## 40.0.0 için Değişiklikler
 * İbranice klavye için destek eklendi.
@@ -92,7 +83,7 @@ Notlar:
 ## 14.0 için değişiklikler
 * NVDA 2021.1 ile uyumlu.
 
-## 13.0 için Değişiklikler 
+## 13.0 için Değişiklikler
 * Ayarlar panelinin görsel düzenindeki bir sorun düzeltildi, teşekkürler
   Cyrille Bougot.
 * Dokümantasyon (yardım dosyaları) geliştirildi.
@@ -145,16 +136,10 @@ Notlar:
 
 ## 6.0 için Değişiklikler
 
-*	Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini
-  seçmek için seçenekler eklendi.
-*	Girdi hareketleri iletişim kutusundan atanabilen Kopyalamayı taklit et ve
-  Kesmeyi taklit et komutları eklendi.
-*	Kurulum sırasında Kopyalamayı taklit et ve Kesmeyi taklit et işlevlerini
-  yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek
-  için control+c ve control+x komutlarının eklenmesine ve bu tuşlara
-  basıldığında pano içeriğini değiştirmek isteyip istemediğinizin
-  sorulmasına olanak tanır.
-*	Belgeler script_add (Windows+NVDA+c) için düzeltildi.
+*	 Mevcut eylemlerin onaylandıktan sonra gerçekleştirilip gerçekleştirilmeyeceğini seçmek için seçenekler eklendi.
+*	 Girdi hareketleri iletişim kutusundan atanabilen Kopyalamayı taklit et ve Kesmeyi taklit et komutları eklendi.
+*	 Kurulum sırasında Kopyalamayı taklit et ve Kesmeyi taklit et eylemlerini yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalama ve kesmeye control+c ve control+x komutlarının eklenmesine ve bu tuşlara basıldığında pano içeriğinin değiştirilmesini isteyip istemediğinizin sorulmasına olanak tanır.
+*	 script_add (Windows+NVDA+c) için dokümantasyon düzeltildi.
 
 ## 5.0 için Değişiklikler ##
 

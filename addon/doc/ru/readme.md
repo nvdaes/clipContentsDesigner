@@ -11,18 +11,10 @@
 *	NVDA+windows+c: Добавить выделенный текст, символы юникода брайля,
   представляющие объекты в MathML, или строку, которая была отмечена
   просмотровым курсором в буфер обмена.
-*	NVDA+windows+x: Очистить содержимое буфера обмена.
-*	Не назначена: Копирует в буфер обмена (или вырезает из него) с
-  возможностью запроса предварительного подтверждения.
-*	Не назначена: Отображает текст из буфера обмена в формате HTML в режиме
-  просмотра или сообщает, если буфер обмена пуст или содержит содержимое,
-  которое невозможно отобразить в доступном для просмотра сообщении,
-  например, если файлы или папки были скопированы из проводника Windows.
-*	Не назначена: Отображает текстовое содержимое буфера обмена в виде
-  обычного текста в режиме обзора или сообщает, если буфер обмена пуст или
-  содержит содержимое, которое невозможно отобразить в доступном для
-  просмотра сообщении, например, если файлы или папки были скопированы из
-  проводника Windows.
+*	NVDA+windows+x: Clear clipboard contents.
+*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
 
 
 ## Настройки Clip Contents Designer ##
@@ -64,13 +56,14 @@
 
 Примечания:
 
-* Подтверждения не будут запрашиваться, если окно сообщений NVDA всё ещё
-  открыто. В таких случаях действия будут выполнены незамедлительно.
-* Команды "Эмулировать копирование" и "эмулировать вырезание" означают, что
-  при включении этих функций надстройка возьмет на себя управление клавишами
-  control+c и control+x. Это позволит выбрать, следует ли запрашивать
-  подтверждение перед выполнением действий, соответствующих этим нажатиям
-  клавиш.
+*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
+* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape
+  key.
+
 
 ## Изменения для 40.0.0
 * Добавлена ​​поддержка клавиатуры на иврите.
@@ -95,7 +88,7 @@
 ## Изменения для 14.0
 * Совместимо с NVDA 2021.1.
 
-## Изменения для 13.0 
+## Changes for 13.0
 * Исправлена ошибка в визуальном оформлении панели настроек, спасибо Cyrille
   Bougot.
 * Улучшена документация.
@@ -147,15 +140,10 @@
 
 ## Изменения для 6.0
 
-*	Добавлены опции для выбора того, следует ли выполнять доступные действия
-  после подтверждения.
-*	Добавлены команды "Эмулировать копирование" и "Эмулировать вырезание",
-  которые можно назначить из диалога "Жесты ввода".
-*	Добавлен диалог для настройки функций "Эмулировать копирование" и
-  "Эмулировать вырезание" при установке. Это позволяет добавлять команды
-  control+c и control+x для копирования и вырезания, а также получать запрос
-  на замену содержимого буфера обмена при нажатии этих клавиш.
-*	Исправлена документация для script_add (Windows+NVDA+c).
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Изменения для 5.0 ##
 

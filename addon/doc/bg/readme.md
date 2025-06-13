@@ -12,16 +12,9 @@
   символи представящи обекти на MathML, или низа маркиран с курсора за
   преглед.
 *	NVDA+Windows+X: Изчистване на съдържанието на клипборда.
-*	Не е назначено: Копира в (или изрязва от) клипборда, с възможност за
-  запитване за потвърждение.
-*	Не е назначено: Показва текста на клипборда като HTML в режим на
-  разглеждане или съобщава, ако клипбордът е празен или има съдържание,
-  което не може да бъде представено в съобщение за преглед, например ако
-  файлове или папки са копирани от Windows Explorer.
-*	Не е назначено: Показва текста на клипборда в режим на разглеждане или
-  съобщава, ако клипбордът е празен или има съдържание, което не може да
-  бъде представено в съобщение за преглед, например ако файлове или папки са
-  копирани от Windows Explorer.
+*	 Не е назначено: Копиране в (или изрязване от) клипборда, с възможност за за запитване за предшестващо потвърждение.
+*	 Не е назначено: Извеждане на текста на клипборда като HTML в режим на разглеждане или докладване ако клипбордът е празен или има съдържание, което не може да бъде представено в съобщение за разглеждане (например при копиране на файлове или папки от Windows Explorer).
+*	 Не е назначено: Извеждане на текста на клипборда като обикновен текст в режим на разглеждане или докладване ако клипбордът е празен или има съдържание, което не може да бъде представено в съобщение за разглеждане (например при копиране на файлове или папки от Windows Explorer).
 
 
 ## Настройки на дизайнера за съдържанието на клипборда ##
@@ -64,13 +57,14 @@
 
 Забележки:
 
-* Няма да има запитване за потвърждение, ако в момента има отворен друг
-  диалогов прозорец на NVDA. В тези случаи действията ще бъдат извършвани
-  незабавно.
-* Под "емулирано копиране" и "емулирано изрязване" се има предвид, че когато
-  тези функции са активирани, добавката ще поеме контрола върху Control+C и
-  Control+X. Това ще позволи да се избере дали да се иска потвърждение преди
-  извършване на действията, съответстващи на тези клавишни команди.
+*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
+* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape
+  key.
+
 
 ## Changes for 40.0.0
 * Added support for Hebrew keyboard.
@@ -95,7 +89,7 @@
 ## Промени във версия 14.0
 * Съвместима с NVDA 2021.1.
 
-## Промени във версия 13.0 
+## Changes for 13.0
 * Отстранен проблем с визуалното оформление на панела за настройки
   (благодарности за това към Cyrille Bougot).
 * Подобрения в документацията.
@@ -150,17 +144,10 @@
 
 ## Промени във версия 6.0
 
-*	Добавени са опции за избор дали наличните действия  ще се извършват след
-  потвърждение.
-*	Добавени са команди за емулиране на копирането и изрязването, на които
-  могат да бъдат назначени жестове в екрана за управление на жестовете на
-  NVDA.
-*	Добавен е диалогов прозорец по време на инсталацията за конфигуриране на
-  функциите за емулиране на копирането и изрязването. Това позволява да
-  добавите командите Control+C и Control+X към копирането и изрязването, и
-  да бъдете запитвани дали желаете да замените съдържанието на клипборда при
-  натискането на тези клавишни комбинации.
-*	Поправена е документацията за script_add (Windows+NVDA+C).
+*	 Added options to choose if available actions should be performed after confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Промени във версия 5.0 ##
 
