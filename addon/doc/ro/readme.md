@@ -175,3 +175,4 @@ Note:
 *	Versiunea inițială.
 
 [[!tag dev stable]]
+
