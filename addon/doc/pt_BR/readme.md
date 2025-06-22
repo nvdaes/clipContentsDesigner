@@ -184,4 +184,3 @@ Notas:
 *	Versão inicial.
 
 [[!tag dev stable]]
-
