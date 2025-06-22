@@ -171,4 +171,3 @@ Megjegyzések:
 *	- Első kiadás
 
 [[!tag dev stable]]
-
