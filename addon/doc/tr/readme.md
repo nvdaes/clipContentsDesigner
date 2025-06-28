@@ -174,3 +174,4 @@ Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler etkinleş
 *	İlk versiyon.
 
 [[!tag dev kararlı]]
+

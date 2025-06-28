@@ -10,10 +10,10 @@ pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 *	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	NVDA+windows+x : Effacer le contenu du presse-papiers.
+*	 Non assigné : Copiés vers (ou coupés à partir du presse-papiers, avec la possibilité d'être demandé une confirmation préalable.
+*	 Non assigné : Afficher le texte du presse-papiers sous forme HTML en mode navigation, ou annoncer si le presse-papiers est vide ou a un contenu qui ne peut pas être présenté dans  un message navigable, par exemple, si des fichiers ou des dossiers sont copiés à partir de Windows Explorer.
+*	 Non assigné : Afficher le contenu textuel du presse-papiers sous forme de texte brut en mode navigation, ou annoncer si le presse-papiers est vide ou a un contenu qui ne peut pas être présenté dans  un message navigable, par exemple, si des fichiers ou des dossiers sont copiés à partir de Windows Explorer.
 
 
 ## Paramètres de Clip Contents Designer ##
@@ -58,13 +58,13 @@ Il contient les contrôles suivants :
 
 Notes :
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées immédiatement.
+* Emuler les commandes copier et couper signifie que, lorsque ces fonctionnalités sont activées, l'extension prendra le contrôle de contrôle+c et contrôle+x. Cela permettra de sélectionner si une confirmation doit être demandée avant d'effectuer les actions correspondant à ces frappes.
 
-## Changes for 46.0.0
-* NVDA will sanitize HTML in browseable messages.
-* Added a button to close browseable messages, in addition to the Escape
-  key.
+## Changements pour la version 46.0.0
+* NVDA expurgera le HTML dans les messages navigables.
+* Ajout d'un bouton pour fermer les messages navigables, en plus de la
+  touche Échap.
 
 
 ## Changements pour la version 40.0.0
@@ -90,7 +90,7 @@ Notes :
 ## Changements pour la version 14.0
 * Compatible avec NVDA 2021.1.
 
-## Changes for 13.0
+## Changements pour la version 13.0
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
 * Documentation améliorée.
@@ -146,10 +146,10 @@ Notes :
 
 ## Changements pour la version 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	 Ajout d'options à choisir si les actions disponibles doivent être effectuées après la confirmation.
+*	 Emuler les commandes copier et couper qui pourrait être attribué à partir de la boîte de dialogue Gestes de commandes.
+*	 Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler copier et Émuler couper lors de l'installation. Cela permet d'ajouter les commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si vous voulez remplacer le contenu du presse-papiers en appuyant sur ces combinaisons de touches.
+*	 Correction de la documentation pour script_add (Windows+Nvda+c).
 
 ## Changements pour la version 5.0 ##
 
@@ -186,3 +186,4 @@ Notes :
 *	Première version.
 
 [[!tag dev stable]]
+
