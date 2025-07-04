@@ -11,10 +11,18 @@ de navegação.
 *	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres braille
   Unicode que representem objetos MathML, ou a sequência (string) que foi
   marcada com o cursor de exploração, à área de transferência.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	NVDA+windows+x: Apaga o conteúdo da área de transferência.
+*	Não atribuído: copia (ou corta) a área de transferência, com a
+  possibilidade de ser solicitada uma confirmação prévia.
+*	Não atribuído: Mostra o texto da área de transferência como HTML no modo
+  de navegação ou anuncia se a área de transferência está vazia ou possui
+  conteúdos que não podem ser apresentados em uma mensagem navegável, por
+  exemplo, se arquivos ou pastas foram copiados do Windows Explorer.
+*	Não atribuído: Mostra o conteúdo textual da área de transferência como
+  texto simples no modo de navegação ou anuncia se a área de transferência
+  está vazia ou tem conteúdos que não podem ser apresentados em uma mensagem
+  navegável, por exemplo, se arquivos ou pastas foram copiados do Windows
+  Explorer.
 
 
 ## Configurações do Gestor do Conteúdo de Transferência ##
@@ -57,8 +65,13 @@ Contém os seguintes controles:
 
 Notas:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Confirmações não serão solicitadas quando uma caixa de mensagem do NVDA
+  ainda estiver aberta. Nesses casos, as ações serão executadas
+  imediatamente.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
 * NVDA will sanitize HTML in browseable messages.
@@ -145,10 +158,15 @@ Notas:
 
 ## Mudanças na 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Foram adicionadas opções para escolher se as ações disponíveis devem ser
+  executadas após a confirmação.
+*	Adição dos comandos Emular cópia e Emular corte, que podem ser atribuídos
+  na caixa de diálogo Gestos de entrada.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
+*	Corrigida a documentação do script_add (Windows+NVDA+c).
 
 ## Mudanças na 5.0 ##
 

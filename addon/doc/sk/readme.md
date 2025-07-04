@@ -10,10 +10,16 @@ schránky a zobraziť obsah schránky v režime prehliadania.
 *	NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
   ste označili prezeracím kurzorom. Takto je možné pridať aj znaky unicode,
   MathML.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	NVDA+windows+x: vymaže obsah schránky.
+*	Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
 
 ## Clip Contents Designer settings ##
@@ -53,8 +59,12 @@ It contains the following controls:
 
 Poznámky:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
+  takomto prípade sa varovanie nezobrazí a akcia sa rovno vykoná.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
 * NVDA will sanitize HTML in browseable messages.
@@ -131,9 +141,14 @@ Poznámky:
 
 ## Zmeny vo verzii 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmeny vo verzii 5.0 ##

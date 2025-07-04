@@ -11,10 +11,18 @@ gelöscht werden.
 *	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem NVDA-Cursor
   markiert wurde, zur Zwischenablage hinzu.
-*	NVDA+Windows+X: Löscht den Inhalt der Zwischenablage.
-*	Nicht zugewiesen: Kopiert (oder schneidet) in die Zwischenablage, mit der Möglichkeit, nach einer vorherigen Bestätigung gefragt zu werden.
-*	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Suchmodus als HTML an oder gibt an, ob die Zwischenablage leer ist oder Inhalte enthält, die nicht in einer durchsuchbaren Nachricht angezeigt werden können, z. B. wenn Dateien oder Ordner aus dem Windows Explorer kopiert wurden.
-*	Nicht zugewiesen: Zeigt den Inhalt der Text-Zwischenablage im Suchmodus als einfachen Text an oder gibt an, ob die Zwischenablage leer ist oder Inhalte enthält, die nicht in einer durchsuchbaren Nachricht angezeigt werden können, z. B. wenn Dateien oder Ordner aus dem Windows Explorer kopiert wurden.
+*	NVDA+Windows+X: Leert die Zwischenablage.
+*	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
+  der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
+*	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
+  an oder benachrichtigt, wenn die Zwischenablage leer ist oder Inhalte
+  enthält, die nicht in einer darstellbaren Nachricht angezeigt werden
+  können, z. B. wenn Dateien oder Ordner im Windows Explorer kopiert wurden.
+*	Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
+  als einfachen Text an oder gibt aus, ob die Zwischenablage leer ist oder
+  Inhalte enthält, die nicht in einer darstellbaren Nachricht angezeigt
+  werden können, z. B. wenn Dateien oder Ordner im dem Windows Explorer
+  kopiert wurden.
 
 
 ## Einstellungen für den Zwischenablagenverwalter ##
@@ -59,8 +67,12 @@ Folgende Einstellungen sind verfügbar:
 
 Anmerkungen:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
+  geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
 * NVDA will sanitize HTML in browseable messages.
@@ -149,9 +161,14 @@ Anmerkungen:
 
 ## Änderungen in 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Änderungen in 5.0 ##
