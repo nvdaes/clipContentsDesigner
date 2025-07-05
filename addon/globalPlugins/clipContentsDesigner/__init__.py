@@ -503,8 +503,8 @@ class AddonSettingsPanel(SettingsPanel):
 			max=1000000,
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"],
 		)
-		# Translators: label of a dialog.
-		self.runOnInstallCheckBox = sHelper.addItem(
+		self.runOnInstallCheckBox = sHelper.addItem(	
+			# Translators: label of a dialog.
 			wx.CheckBox(self, label=_("Show configuration dialog when &updating"))
 		)
 		self.runOnInstallCheckBox.SetValue(config.conf["clipContentsDesigner"]["runOnInstall"])
