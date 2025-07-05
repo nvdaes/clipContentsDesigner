@@ -11,10 +11,17 @@ gennemsynstilstand.
 *	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
   MathML-objekter, eller den tekststreng, som er blevet markeret med
   læsemarkøren, til udklipsholderen.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	NVDA+Windows+x: Ryd udklipsholderen.
+*	Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
+  mulighed for at blive bedt om en bekræftelse.
+*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som
+  HTML-indhold. Du vil få besked, hvis udklipsholderen er tom eller hvis
+  indholdet ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være,
+  hvis du har kopiere filer fra Stifinder.
+*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som rå
+  tekst. Du vil få besked, hvis udklipsholderen er tom eller hvis indholdet
+  ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være, hvis du
+  har kopiere filer fra Stifinder.
 
 
 ## Indstillinger for Udklipsdesigner ##
@@ -54,8 +61,12 @@ Den indeholder følgende kontroller:
 
 Bemærkninger:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
+  stadig er åben. I disse situationer vil handlingen straks udføres.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
 * NVDA will sanitize HTML in browseable messages.
@@ -141,9 +152,14 @@ Bemærkninger:
 
 ## Ændringer i 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## ændringer i 5.0 ##

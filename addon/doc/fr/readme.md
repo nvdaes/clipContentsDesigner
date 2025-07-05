@@ -10,10 +10,18 @@ pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 *	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
-*	NVDA+windows+x : Effacer le contenu du presse-papiers.
-*	 Non assigné : Copiés vers (ou coupés à partir du presse-papiers, avec la possibilité d'être demandé une confirmation préalable.
-*	 Non assigné : Afficher le texte du presse-papiers sous forme HTML en mode navigation, ou annoncer si le presse-papiers est vide ou a un contenu qui ne peut pas être présenté dans  un message navigable, par exemple, si des fichiers ou des dossiers sont copiés à partir de Windows Explorer.
-*	 Non assigné : Afficher le contenu textuel du presse-papiers sous forme de texte brut en mode navigation, ou annoncer si le presse-papiers est vide ou a un contenu qui ne peut pas être présenté dans  un message navigable, par exemple, si des fichiers ou des dossiers sont copiés à partir de Windows Explorer.
+*	NVDA+windows+x : Vide le contenu du presse-papiers.
+*	Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
+  possibilité d'une demande de confirmation préalable.
+*	Non assigné : affiche le texte du presse-papiers au format HTML en mode
+  navigation, ou annonce si le presse-papiers est vide ou a un contenu qui
+  ne peut pas être présenté dans un message consultable, par exemple si des
+  fichiers ou des dossiers ont été copiés à partir de l'Explorateur Windows.
+*	Non assigné : affiche le contenu textuel du presse-papiers sous forme de
+  texte brut en mode navigation, ou annonce si le presse-papiers est vide ou
+  a un contenu qui ne peut pas être présenté dans un message consultable,
+  par exemple si des fichiers ou des dossiers ont été copiés à partir de
+  l'explorateur Windows.
 
 
 ## Paramètres de Clip Contents Designer ##
@@ -58,8 +66,14 @@ Il contient les contrôles suivants :
 
 Notes :
 
-*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de NVDA est toujours ouverte. Dans ces cas, les actions seront effectuées immédiatement.
-* Emuler les commandes copier et couper signifie que, lorsque ces fonctionnalités sont activées, l'extension prendra le contrôle de contrôle+c et contrôle+x. Cela permettra de sélectionner si une confirmation doit être demandée avant d'effectuer les actions correspondant à ces frappes.
+*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
+  NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
+  immédiatement.
+*	Emuler les commandes copier et couper signifie que, lorsque ces
+  fonctionnalités sont activées, l'extension prendra le contrôle de
+  contrôle+c et contrôle+x. Cela permettra de sélectionner si une
+  confirmation doit être demandée avant d'effectuer les actions
+  correspondant à ces frappes.
 
 ## Changements pour la version 46.0.0
 * NVDA expurgera le HTML dans les messages navigables.
@@ -146,10 +160,16 @@ Notes :
 
 ## Changements pour la version 6.0
 
-*	 Ajout d'options à choisir si les actions disponibles doivent être effectuées après la confirmation.
-*	 Emuler les commandes copier et couper qui pourrait être attribué à partir de la boîte de dialogue Gestes de commandes.
-*	 Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler copier et Émuler couper lors de l'installation. Cela permet d'ajouter les commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si vous voulez remplacer le contenu du presse-papiers en appuyant sur ces combinaisons de touches.
-*	 Correction de la documentation pour script_add (Windows+Nvda+c).
+*	Ajout d'options pour choisir si les actions disponibles doivent être
+  effectuées après confirmation.
+*	Ajout des commandes Émuler copier et Émuler couper, qui peuvent être
+  affectées  à partir de la boîte de dialogue Gestes de commandes.
+*	Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler
+  copier et Émuler couper lors de l'installation. Cela permet d'ajouter les
+  commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si
+  vous voulez remplacer le contenu du presse-papiers en appuyant sur ces
+  combinaisons de touches.
+*	Correction de la documentation pour le script_add (Windows+NVDA+c).
 
 ## Changements pour la version 5.0 ##
 

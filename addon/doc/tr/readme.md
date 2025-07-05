@@ -10,10 +10,18 @@ içeriği temizlenebilir ve tarama kipi modunda gösterilebilir.
 *	NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode
   braille karakterlerini veya inceleme imleciyle işaretlenmiş dizeyi panoya
   ekler.
-*	 NVDA+Windows+X: Pano içeriğini temizler.
-*	 Atanmamış: Panoya kopyalar (veya panodan keser), önceden bir onay istenmesi olasılığı vardır.
-*	 Atanmamış: Pano metnini Tarama kipinde HTML olarak gösterir veya pano boşsa veya göz atılabilir bir mesajda gösterilemeyen içeriğe sahipse, örneğin dosyalar veya klasörler Windows Explorer'dan kopyalanmışsa bunu duyurur.
-*	 Atanmamış: Pano içeriğini Tarama kipinde düz metin olarak gösterir veya pano boşsa ya da göz atılabilir bir mesajda gösterilemeyecek içeriğe sahipse, örneğin dosyalar veya klasörler Windows Gezgini'nden kopyalanmışsa bunu bildirir.
+*	NVDA+windows+x: Pano içeriğini temizle.NVDA+windows+x: Pano içeriğini
+  siler.
+*	Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme
+  olasılığı ile.
+*	Atanmamış: Pano metnini HTML olarak Tarama kipi  modunda gösterir veya
+  panonun boş olup olmadığını veya örneğin dosyalar veya klasörler Windows
+  Gezgini'nden kopyalanmışsa, bir iletide gösterilemeyen içeriğe sahip olup
+  olmadığını bildir.
+*	Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak
+  gösterir veya panonun boş olup olmadığını veya örneğin dosyalar veya
+  klasörler Windows Gezgini'nden kopyalanmışsa, göz atılabilir bir iletide
+  gösterilemeyen içeriğe sahip olup olmadığını bildir.
 
 
 ## Pano İçeriği düzenleyici ayarları ##
@@ -52,7 +60,13 @@ Aşağıdaki kontrolleri içerir:
 
 Notlar:
 
-Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler etkinleştirildiğinde, eklentinin kontrol+c ve kontrol+x'in kontrolünü alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri gerçekleştirmeden önce bir onay istenip istenmeyeceğini seçmeye izin verecektir.
+*	Eğer NVDA'nın bir mesaj kutusu hala açıksa bir işlem için onay
+  istenmeyecektir. Bu gibi durumlarda, işlemler derhal
+  gerçekleştirilecektir.
+*	Kopyalayı taklit et ve kesme komutlarını taklit et, bu özellikler
+  etkinleştirildiğinde, eklentinin kontrol+c ve control+x kontrolünü ele
+  alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri
+  gerçekleştirmeden önce bir onay istenip verilmeyeceğini seçecektir.
 
 ## 46.0.0 için Değişiklikler
 * NVDA, göz atılabilir iletilerdeki HTML'yi sterilize edecektir.
@@ -136,10 +150,16 @@ Kopyalamayı taklit et ve kesmeyi taklit et komutları, bu özellikler etkinleş
 
 ## 6.0 için Değişiklikler
 
-*	 Mevcut eylemlerin onaylandıktan sonra gerçekleştirilip gerçekleştirilmeyeceğini seçmek için seçenekler eklendi.
-*	 Girdi hareketleri iletişim kutusundan atanabilen Kopyalamayı taklit et ve Kesmeyi taklit et komutları eklendi.
-*	 Kurulum sırasında Kopyalamayı taklit et ve Kesmeyi taklit et eylemlerini yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalama ve kesmeye control+c ve control+x komutlarının eklenmesine ve bu tuşlara basıldığında pano içeriğinin değiştirilmesini isteyip istemediğinizin sorulmasına olanak tanır.
-*	 script_add (Windows+NVDA+c) için dokümantasyon düzeltildi.
+*	Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini
+  seçmek için seçenekler eklendi.
+*	Girdi hareketleri iletişim kutusundan atanabilen Kopyalamayı taklit et ve
+  Kesmeyi taklit et komutları eklendi.
+*	Yükleme sırasında Kopyalamayı taklit et ve Kesmeyi taklit et işlevlerini
+  yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek
+  için control+c ve control+x komutlarının eklenmesine ve bu tuş vuruşlarına
+  basıldığında pano içeriğini değiştirmek isteyip istemediğinizin
+  sorulmasına olanak tanır.
+*	Belgeler script_add (Windows+NVDA+c) için düzeltildi.
 
 ## 5.0 için Değişiklikler ##
 

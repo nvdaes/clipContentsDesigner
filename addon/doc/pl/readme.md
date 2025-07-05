@@ -10,10 +10,18 @@ również wyczyścić i wyświetlić w trybie przeglądania.
 *	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	NVDA+windows+x: wyczyść zawartość schowka.
+*	Nieprzypisane: Kopiuje do schowka (lub wycina z niego), z możliwością
+  poproszenia o wcześniejsze potwierdzenie.
+*	Nieprzypisane: Wyświetla tekst schowka jako HTML w trybie przeglądania lub
+  informuje, czy schowek jest pusty lub zawiera zawartość, której nie można
+  przedstawić w wiadomości z możliwością przeglądania, na przykład jeśli
+  pliki lub foldery zostały skopiowane z Eksploratora Windows.
+*	Nieprzypisane: Wyświetla tekstową zawartość schowka jako zwykły tekst w
+  trybie przeglądania lub informuje, czy schowek jest pusty lub zawiera
+  zawartość, której nie można przedstawić w wiadomości z możliwością
+  przeglądania, na przykład jeśli pliki lub foldery zostały skopiowane z
+  Eksploratora Windows.
 
 
 ## Ustawienia Projektanta zawartości klipu ##
@@ -54,8 +62,12 @@ Zawiera następujące kontrolki:
 
 Uwagi:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Potwierdzenia nie będą wymagane, gdy okno komunikatu NVDA jest nadal
+  otwarte. W takich przypadkach działania będą wykonywane natychmiast.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
 * NVDA will sanitize HTML in browseable messages.
@@ -138,9 +150,14 @@ Uwagi:
 
 ## Zmiany w wersji 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmiany w wersji 5.0 ##

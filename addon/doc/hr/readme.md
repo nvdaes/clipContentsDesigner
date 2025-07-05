@@ -11,10 +11,17 @@ lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
 *	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
   unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
   pomoću preglednog kursora.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*	NVDA+windows+x: Obriši sadržaj međuspremnika.
+*	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
+  mogućnošću da se prethodno od korisnika traži potvrda.
+*	Nije dodijeljeno: Prikazuje tekst međuspremnika u modusu čitanja ili
+  najavljuje prazno stanje međuspremnika ili sadržaj koji se ne može
+  predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
+  kopirane iz Windows Explorera.
+*	Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
+  tekst u modusu čitanja ili najavljuje prazno stanje međuspremnika ili
+  sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na primjer
+  ako su datoteke ili mape kopirane iz Windows Explorer.
 
 
 ## Postavke dodatka „Upravljanje sadržajem međuspremnika” ##
@@ -55,8 +62,12 @@ Sadrži sljedeće kontrole:
 
 Napomene:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Neće biti potrebno potvrditi, ako se neka NVDA poruka još uvijek
+  prikazuje. U tim će se slučajevima radnje izvršavati odmah.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
 * NVDA will sanitize HTML in browseable messages.
@@ -139,10 +150,15 @@ Napomene:
 
 ## Promjene u verziji 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Dodane su opcije s kojima se može odlučiti je li se dostupne radnje
+  trebaju izvršiti nakon potvrde.
+*	Dodane su naredbe „Emuliraj kopiranje” i „Emuliraj izrezivanje”, koje je
+  moguće dodijeliti u dijaloškom okviru „Ulazne geste”.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
+*	Ispravljena je dokumentacija za script_add (Windows+NVDA+c).
 
 ## Promjene u verziji 5.0 ##
 
