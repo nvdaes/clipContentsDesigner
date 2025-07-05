@@ -20,11 +20,14 @@ confspec = {
 	"confirmationRequirement": "integer(default=0)",
 	"browseableTextFormat": "integer(default=0)",
 	"maxLengthForBrowseableText": "integer(default=100000)",
+	"runOnInstall": "boolean(default=True)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
 
 def onInstall():
+	if not config.conf["clipContentsDesigner"]["runOnInstall"]:
+		return
 	module = "globalPlugins.clipContentsDesigner"
 	className = "GlobalPlugin"
 	copyGesture = "kb:control+c"

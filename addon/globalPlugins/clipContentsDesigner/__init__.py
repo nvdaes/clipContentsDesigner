@@ -49,6 +49,7 @@ confspec: dict[str, str] = {
 	"confirmationRequirement": "integer(default=0)",
 	"browseableTextFormat": "integer(default=0)",
 	"maxLengthForBrowseableText": "integer(default=100000)",
+	"runOnInstall": "boolean(default=True)",
 }
 config.conf.spec["clipContentsDesigner"] = confspec
 
@@ -503,6 +504,9 @@ class AddonSettingsPanel(SettingsPanel):
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"],
 		)
 		# Translators: label of a dialog.
+		self.runOnInstallCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("Show configuration dialog when &updating")))
+		self.runOnInstallCheckBox.SetValue(config.conf["clipContentsDesigner"]["runOnInstall"])
+		# Translators: label of a dialog.
 		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))
 		self.restoreDefaultsButton.Bind(wx.EVT_BUTTON, self.onRestoreDefaults)
 
@@ -523,6 +527,9 @@ class AddonSettingsPanel(SettingsPanel):
 		self.maxLengthEdit.SetValue(
 			config.conf.getConfigValidation(["clipContentsDesigner", "maxLengthForBrowseableText"]).default,
 		)
+		self.runOnInstallCheckBox.SetValue(
+			config.conf.getConfigValidation(["clipContentsDesigner", "runOnInstall"]).default,
+		)
 
 	def onSave(self):
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
@@ -536,3 +543,4 @@ class AddonSettingsPanel(SettingsPanel):
 		)
 		config.conf["clipContentsDesigner"]["browseableTextFormat"] = self.formatChoices.GetSelection()
 		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = self.maxLengthEdit.GetValue()
+		config.conf["clipContentsDesigner"]["runOnInstall"] = self.runOnInstallCheckBox.GetValue()
