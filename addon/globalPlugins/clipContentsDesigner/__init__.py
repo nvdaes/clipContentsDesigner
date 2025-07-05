@@ -504,7 +504,9 @@ class AddonSettingsPanel(SettingsPanel):
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"],
 		)
 		# Translators: label of a dialog.
-		self.runOnInstallCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("Show configuration dialog when &updating")))
+		self.runOnInstallCheckBox = sHelper.addItem(
+			wx.CheckBox(self, label=_("Show configuration dialog when &updating"))
+		)
 		self.runOnInstallCheckBox.SetValue(config.conf["clipContentsDesigner"]["runOnInstall"])
 		# Translators: label of a dialog.
 		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))
