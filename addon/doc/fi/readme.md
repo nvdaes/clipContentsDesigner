@@ -191,4 +191,3 @@ Huomautuksia:
 *	Ensimmäinen versio.
 
 [[!tag dev stable]]
-
