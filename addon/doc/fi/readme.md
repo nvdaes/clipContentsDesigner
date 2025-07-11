@@ -61,10 +61,9 @@ Huomautuksia:
 
 *	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
   toiminnot suoritetaan heti.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+*	Kun kopioinnin ja leikkaamisen emulointi on otettu käyttöön, tämä lisäosa
+  ottaa hallintaansa Ctrl+C- ja Ctrl+X-komennot. Se mahdollistaa valinnaisen
+  vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
 ## Muutokset versiossa 46.0.0
 * NVDA siivoaa selattavien viestien HTML-koodin.
@@ -152,10 +151,11 @@ Huomautuksia:
 *	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi
   -asetukset, joille voidaan määrittää näppäinkomennot
   Näppäinkomennot-valintaikkunasta.
-*	Added a dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation. This allows to add the control+c and
-  control+x commands to copy and cut, and be asked if you want to replace
-  the clipboard contents when pressing these keystrokes.
+*	Lisätty valintaikkuna "Vahvista kopioinnin emulointi"- ja "Vahvista
+  leikkaamisen emulointi" -toiminnallisuuksien  määrittämistä varten
+  lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin
+  (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle ja leikepöydän sisällön
+  korvaamiselle pyydetään vahvistus.
 *	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
 
 ## Muutokset versiossa 5.0 ##
