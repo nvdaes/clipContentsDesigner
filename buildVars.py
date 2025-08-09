@@ -21,7 +21,7 @@ addon_info = {
 		"""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes.""",
 	),
 	# version
-	"addon_version": "49.0.0",
+	"addon_version": "48.0.0",
 	# Author(s)
 	"addon_author": "Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>",
 	# URL for the add-on documentation support
