@@ -1,13 +1,9 @@
 name: Merge pull request created by Dependabot
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   mergePullRequestByDependabot:
@@ -16,7 +12,6 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    
     steps:
     - name: Comment to merge Dependabot PR
       uses: actions/github-script@v8
