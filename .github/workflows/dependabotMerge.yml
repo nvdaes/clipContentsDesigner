@@ -1,0 +1,30 @@
+name: Merge pull request created by Dependabot
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  mergePullRequestByDependabot:
+    if: github.actor == 'dependabot'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+    - name: Comment to merge Dependabot PR
+      uses: actions/github-script@v8
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: @dependabot merge
+          })
