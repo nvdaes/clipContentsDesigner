@@ -18,4 +18,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v5
     - name: Fetch translations from Crowdin
-      uses: nvdaaddons/crowdinRegistration/.github/actions/fetchTranslations
+      uses: nvdaaddons/crowdinRegistration/fetchTranslations@main
