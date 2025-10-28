@@ -1,25 +1,23 @@
-name: Merge pull request created by Dependabot
+name: Dependabot auto-merge
+on: pull_request
 
-on:
-  pull_request:
-    branches:
-      - main
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  mergePullRequestByDependabot:
-    if: github.actor == 'dependabot'
+  dependabot:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'nvdaes/build-discussion'
     steps:
-    - name: Comment to merge Dependabot PR
-      uses: actions/github-script@v8
-      with:
-        script: |
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: @dependabot merge
-          })
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@08eff52bf64351f401fb50d4972fa95b9f2c2d1b
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Enable auto-merge for Dependabot PRs
+        if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'nvdaes/clipContentsDesigner'
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
