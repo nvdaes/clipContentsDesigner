@@ -7,6 +7,8 @@ cando queras unir seccións de texto listas para pegarse xuntas.  O contido
 do portapapeis tamén pode limparse e amosarse en modo exploración.
 
 ## Ordes de teclado ##
+
+
 *	NVDA+windows+c: engade o texto seleccionado, os caracteres braille Unicode
   que representan obxectos MathML, ou a cadea que se marcou co cursor de
   revisión, ao portapapeis.
@@ -21,8 +23,6 @@ do portapapeis tamén pode limparse e amosarse en modo exploración.
   modo exploración, ou anuncia se o portapapeis está vacío ou ten contido
   que non se pode amosar nunha mensaxe navegable, se se están a copiar
   arquivos ou carpetas do Explorador de Windows, por exemplo.
-
-
 ## Opcións de Clip Contents Designer ##
 
 Este panel está dispoñible dende o menú de NVDA, submenú Preferencias,
@@ -70,34 +70,48 @@ Notas:
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
-
-
 ## Changes for 40.0.0
+
+
 * Added support for Hebrew keyboard.
 
+
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
+
 ## Cambios para 17.0
+
+
 * Compatible con NVDA 2023.1.
 
 ## Cambios para 16.0
+
+
 * Require NVDA 2022.1 ou posterior.
 
 ## Cambios para 15.0
+
 * A orde para engadir texto ó portapapeis aparece de novo no diálogo xestos
+
   de entrada.
 * Arranxadas as ordes para copiar e cortar en teclado persa, grazas a
   Mohammadhosein Ghezelsofla.
 
+
 ## Cambios para 14.0
+
 * Compatible con NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Arranxado un problema no deseño visual do panel de opcións, grazas a
   Cyrille Bougot.
 * Mellorada a documentación.
@@ -105,23 +119,29 @@ Notas:
   entrada a tódolas ordes dispoñibles neste complemento.
 * Arranxados erros ao usar emular copiar en en navegadores cando o modo foco
   estaba activo.
+
 * Podes asignar diferentes xestos para amosar o contido textual do
   portapapeis como texto plano ou formateado en HTML. O Formato no que
   amosar o texto do portapapeis no panel de opcións modificouse en
   consecuencia, para seleccionar as dúas opcións dispoñibles para o formato
+
   HTML.
 
 ## Cambios para 12.0
+
 * Arranxados erros ao usar emular copiar en aplicacións como LIbreOffice
   Writer.
 
+
 ## Cambios para 11.0
+
 * Agora é posible engadir texto marcado co cursor de revisión utilizando
   ordes estándar do NVDA (NVDA+F9 e NVDA+F10). NVDA+Windows+F9 xa non se
   usa, para unha mellor integración co novo atallo NVDA+Shift+F9.
 * Require NVDA 2019.3 ou posterior.
 
 ## Cambios para 10.0
+
 * Arranxado un erro no diálogo utilizado para mostrar o texto do portapapeis
   cando o seu título contiña caracteres non latinos.
 * Arranxado un erro ao utilizar as funcións emular curtar e copiar cunha
@@ -159,6 +179,7 @@ Notas:
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
+
   the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
@@ -168,7 +189,9 @@ Notas:
   diálogos amosados no NVDA.
 *	Requírese do NVDA 2016.4 ou posterior.
 
+
 ## Cambios para 4.0 ##
+
 *	As opción do complemento adminístranse dende a configuración do NVDA, así
   que os perfís estándar pódense usar para gardar diferentes separadores, e
   non é necesario copiar as opcións para importalas na reinstalación.
@@ -177,8 +200,11 @@ Notas:
   diálogo Opcións do Clip Contents Designer.
 
 ## Cambios para 3.0 ##
+
+
 *	Pódese engadir a representación braille de obxectos MathML ó portapapeis
   se MathPlayer está instalado.
+
 *	Se non se puxo un separador, porase una soa liña entre os segmentos de
   texto engadido.
 *	Pódese asignar un atallo de teclado para abrir o diálogo de opcións do
@@ -188,10 +214,11 @@ Notas:
   complemento.
 
 ## Cambios para 2.0 ##
+
 *	Pódense usar caracteres Hindi como o separador entre contidos engadidos.
 
 ## Cambios para 1.0 ##
+
 *	Versión inicial.
 
 [[!tag dev stable]]
-

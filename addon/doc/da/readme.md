@@ -8,6 +8,8 @@ indsætning. Udklipsholderens indhold kan også ryddes og vises i
 gennemsynstilstand.
 
 ## Tastaturkommandoer ##
+
+
 *	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
   MathML-objekter, eller den tekststreng, som er blevet markeret med
   læsemarkøren, til udklipsholderen.
@@ -22,8 +24,6 @@ gennemsynstilstand.
   tekst. Du vil få besked, hvis udklipsholderen er tom eller hvis indholdet
   ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være, hvis du
   har kopiere filer fra Stifinder.
-
-
 ## Indstillinger for Udklipsdesigner ##
 
 Ovennævnte kommando kan ændres fra NVDAs menu, under "Opsætning".
@@ -69,34 +69,48 @@ Bemærkninger:
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
-
-
 ## Changes for 40.0.0
+
+
 * Added support for Hebrew keyboard.
 
+
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
+
 ## Changes for 17.0
+
+
 * Compatible with NVDA 2023.1.
 
 ## Ændringer for 16.0
+
+
 * Reqires NVDA 2022.1 or later.
 
 ## Ændringer for 15.0
+
 * Kommandoen til at tilføje tekst til udklipsholder vises igen i
+
   dialogboksen til håndtering af kommandoer.
 * Rettede kommandoer til at kopiere og klippe med persisk tastatur, takket
   være Mohammadhosein Ghezelsofla.
 
+
 ## Ændringer for 14.0
+
 * Kompatibel med NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Rettet et problem i det visuelle layout for indstillingspanelet takket
   være Cyrille Bougot.
 * Forbedret dokumentationen.
@@ -104,17 +118,22 @@ Bemærkninger:
   alle kommandoer, der er tilgængelige for denne tilføjelse.
 * Rettede fejl ved brug af "Emuler kopi" i browsere, hvis fokustilstand er
   aktiv.
+
 * Du kan tildele forskellige kommandoer til visning af udklipsholderens
   tekstlige indhold. Indholdet kan vises som rå tekst eller formateret i
   HTML. Formatet til visning af udklipsholderteksten i indstillingspanelet
   er blevet ændret i overensstemmelse hermed, så du kan vælge de to mulige
+
   indstillinger.
 
 ## Ændringer for 12.0
+
 * Rettede fejl ved brug af "Emuler kopi" i applikationer som LibreOffice
   Writer.
 
+
 ## Ændringer i 11.0
+
 * Nu er det muligt at tilføje tekst markeret med læsemarkøren ved hjælp af
   standardkommandoer for NVDA (NVDA+f9 og NVDA+f10). NVDA+windows+f9 bruges
   ikke længere til, således tilføjelsen fungerer i overensstemmelse med
@@ -122,6 +141,7 @@ Bemærkninger:
 * Kræver NVDA 2019.3 eller nyere.
 
 ## Ændringer i 10.0
+
 * Rettet en fejl i den dialog, der blev brugt til at vise teksten i
   udklipsholderen, når dens titel indeholdte ikke-latinske tegn.
 * Rettet en fejl ved brug af emuleringen af klip/kopier og
@@ -159,6 +179,7 @@ Bemærkninger:
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
+
   the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
@@ -168,7 +189,9 @@ Bemærkninger:
   udseendet af de dialoger, der vises i NVDA.
 *	Kræver NVDA 2016.4 eller nyere.
 
+
 ## Ændringer i 4.0 ##
+
 *	Tilføjelsesindstillinger administreres fra NVDA-konfiguration, så
   standardprofiler kan bruges til at gemme forskellige separatorer, og det
   er ikke nødvendigt at kopiere indstillingerne til import ved
@@ -178,8 +201,11 @@ Bemærkninger:
   data i udklipsholder" i dialogen Indstillinger for udklipsdesigner.
 
 ## ændringer i 3.0 ##
+
+
 *	Punktskriftrepræsentation af MathML-objekter kan tilføjes til
   udklipsholderen, hvis MathPlayer er installeret.
+
 *	Hvis der ikke er indstillet nogen separator, vil der blot blive indsat en
   enkelt linje mellem de tilføjede tekstsegmenter.
 *	Der kan knyttes en genvejstast til at åbne dialogen Indstillinger for
@@ -189,10 +215,11 @@ Bemærkninger:
   tilføjelsesprogrammet bliver geninstalleret.
 
 ## ændringer i 2.0 ##
+
 *	Hindi-tegn kan nu bruges som separator mellem tilføjet indhold.
 
 ## ændringer i 1.0 ##
+
 *	Første version.
 
 [[!tag dev stable]]
-
