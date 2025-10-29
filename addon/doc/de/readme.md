@@ -23,6 +23,9 @@ gelöscht werden.
 
   Aktionen sind: Text hinzufügen, Zwischenablage löschen, Kopieren emulieren
   und Ausschneiden emulieren.
+
+
+
 * Fordern Sie eine Bestätigung an, bevor Sie die ausgewählten Aktionen
   ausführen, wenn: Sie können wählen, ob immer Bestätigungen angefordert
   werden sollen, nur wenn Text in der Zwischenablage enthalten ist oder wenn
@@ -66,37 +69,16 @@ Anmerkungen:
 
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
 
-  Einstellungsfelds behoben.
-
-
-
-* Sie können verschiedene Gesten zuweisen, um den Textinhalt der
-
   Optionen auszuwählen.
 
-
-
-
 ## Änderungen in 12.0
-
-  LibreOffice Writer behoben.
-
-
 ## Änderungen in 11.0
-
-
-* Jetzt ist es möglich, Text mit den Standardbefehlen des NVDA-Cursors
-  (NVDA+f9 und NVDA+f10) zu markieren und in die Zwischenablage zu
-  kopieren. NVDA+Windows+f9 wird nicht mehr verwendet, um dem neuen Befehl
   NVDA+shift+f9  besser zu integrieren.
 
-## Änderungen in 10.0
 
 * Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
-  Text der Zwischenablage anzuzeigen, wenn sein Titel nicht-lateinische
   Zeichen enthält.
   zum Ausschneiden und Kopieren mit einem arabischen Tastaturlayout
-  auftrat. Dies wurde von Abdel behoben, der als zusätzlichen Autor dieser
   Erweiterung nun hinzugefügt wurde.
 
 ## Änderungen in 9.0
@@ -108,33 +90,22 @@ Anmerkungen:
   Dateien oder Ordner kopiert wurden.
 * Benötigt NVDA 2018.4 oder höher.
 
-
 * Die Einstellungen für die Erweiterung werden in der entsprechenden
   Kategorie der Einstellungen von NVDA angezeigt.
 * Benötigt NVDA 2018.2 oder höher.
 
-
-
 * Die Befehle im Dialog zum Konfigurieren der Funktionen für das Emulieren
   der Kopier- und Ausschneide-Funktion  werden bei der Installation
-
   entfernt, so dass das normale Verhalten von Strg+C und Strg+X
 
 ## Änderungen in 6.0
 
-
-*	Added options to choose if available actions should be performed after
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
 *	Added a dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation. This allows to add the control+c and
 
   the clipboard contents when pressing these keystrokes.
 
 *	Fixed documentation for script_add (Windows+NVDA+c).
-
-## Änderungen in 5.0 ##
-
 *	Die visuelle Darstellung des Dialogs wurde verbessert und entspricht dem
   Erscheinungsbild der Dialoge in NVDA.
 
@@ -142,7 +113,6 @@ Anmerkungen:
 
 ## Änderungen in 4.0 ##
 
-*	Erweiterungseinstellungen werden von der NVDA-Konfiguration verwaltet, so
   dass Standardprofile verwendet werden können, um verschiedene Trennlinien
 
   zu speichern. Es ist nicht erforderlich, die Einstellungen für den Import
@@ -151,7 +121,6 @@ Anmerkungen:
 *	Es kann nun gewählt werden, ob der hinzugefügte Text angehängt oder
   vorangestellt werden soll, indem Sie das Kontrollkästchen Text vor den
   verwenden.
-
 
 ## Änderungen in 3.0 ##
 
@@ -163,8 +132,6 @@ Anmerkungen:
 *	Es wurde ein Kontrollkästchen im Einstellungsdialog hinzugefügt, mit dem
   festgelegt wird, ob die Trennlinie beim erneuten Installieren der
 
-
-*	Indische Zeichen können nun als Trennzeichen zwischen kopierten Inhalten
 
 ## Änderungen in 1.0 ##
 

@@ -11,10 +11,6 @@ lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
 
   pomoću preglednog kursora.
 
-
-
-
-
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
 *	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
@@ -70,10 +66,6 @@ Napomene:
 
 ## Changes for 40.0.0
 
-
-
-
-
   dijaloškom okviru gesta unosa.
 
 * Ispravljene su geste za kopiranje i rezanje s perzijskom tipkovnicom,
@@ -81,19 +73,9 @@ Napomene:
 
 ## Promjene u verziji 14.0
 
-
-
-
 * Kompatibilno s NVDA čitačem 2021.1.
 
-
-
-
 ## Changes for 13.0
-
-
-
-
 
 * Ispravljen je problem s vizualnim izgledom u ploči s postavkama. Hvala
   Cyrille Bougot.
@@ -120,10 +102,6 @@ Napomene:
   standardnih naredbi NVDA (NVDA+f9 i NVDA+f10). NVDA+windows+f9 se više ne
   koristi, radi boljw integracijw s novom naredbom NVDA+šift+f9.
 * Zahtijeva NVDA verziju 2019.3 ili noviju.
-
-
-
-
 
 ## Promjene u verziji 10.0
 
@@ -175,12 +153,9 @@ Napomene:
 
 ## Promjene u verziji 4.0 ##
 
-
 *	Postavkama dodatka se upravlja NVDA konfiguracijom, tako da je moguće
 
   koristiti standardne profile za spremanje raznih rastavljača te nije
-
-
 
   potrebno kopirati postavke nakon reinstalacije.
 
@@ -193,9 +168,9 @@ Napomene:
   je MathPlayer instaliran.
 
   teksta.
+
 *	Moguće je odrediti prečac za otvaranje dijaloškog okvira za postavke
   o tome, treba li razdvajač kopirati za uvoz nakon ponovnog instaliranja
-
 
   sadržaja.
 

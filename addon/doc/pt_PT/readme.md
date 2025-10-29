@@ -11,15 +11,6 @@ modo de navegação.
 
   cursor de exploração, à área de transferência.
 
-
-
-
-*	NVDA+windows+x: limpa o conteúdo da área de transferência.
-*	Não atribuído: Cópias para (ou cortes de) a área de transferência, com a
-  possibilidade de ser solicitada uma confirmação prévia.
-*	Não atribuído: Mostra o texto da área de transferência como HTML no modo
-  de navegação, ou anuncia se a área de transferência está vazia ou tem
-  conteúdos que não podem ser apresentados numa mensagem navegável, por
   exemplo, se ficheiros ou pastas foram copiados do Explorador do Windows.
 *	Não atribuído: Mostra o conteúdo da área de transferência textual como
   texto simples no modo de navegação, ou anuncia se a área de transferência
@@ -75,61 +66,25 @@ Notas:
 
 ## Changes for 40.0.0
 
-
-
 ## Changes for 16.0
 
-
-
   gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
-## Changes for 14.0
-
-
-
-
-
 * Compatible with NVDA 2021.1.
-
-
 ## Changes for 13.0
 
 
 
-
-* Corrigido um problema na disposição visual do painel de configurações,
-  graças a Cyrille Bougot.
-* Documentação melhorada.
-* Adicionada uma categoria Clip Content Designer para atribuir comandos de
-  entrada a todos os comandos disponíveis para este add-on.
-  estiver activo.
-
 * Pode atribuir diferentes comandos para mostrar o conteúdo textual da área
-  de transferência como texto em bruto ou formatado em HTML. O Formato para
   mostrar o texto da área de transferência no painel de definições foi
   modificado em conformidade, para seleccionar as duas opções disponíveis
-
-  para o formato HTML.
-
 ## Alterações para 12.0
 
-* Corrigidos bugs ao utilizar cópia emulada em aplicações como o LibreOffice
-  Writer.
-
-## Alterações para 11.0
 
 * Agora é possível adicionar texto marcado com o cursor de revisão usando
-  comandos padrão do NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9 já não é
   utilizado, para uma melhor integração com o novo comando NVDA+shift+f9.
 * Requer NVDA 2019.3 ou posterior.
-
-
-
-
-## Alterações para 10.0
-
 * Corrigido um erro no diálogo utilizado para mostrar o texto da área de
   transferência, quando o seu título contém caracteres não latinos.
 * Corrigido um erro ao utilizar as funções de corte e cópia emulada com um
@@ -142,9 +97,6 @@ Notas:
 * Adicionada uma opção para escolher se as confirmações serão necessárias se
   a área de transferência não estiver vazia, por exemplo, se os arquivos ou
   pastas forem copiados.
-* Requer o NVDA 2018.4 ou posterior.
-
-## Alterações para a versão 8.0 ##
 
 * As configurações adicionais são mostradas na categoria correspondente da
   caixa de diálogo Configurações do NVDA.
@@ -159,9 +111,6 @@ Notas:
 
 ## Alterações para a versão 6.0
 
-*	Added options to choose if available actions should be performed after
-  confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and

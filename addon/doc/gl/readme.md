@@ -19,9 +19,6 @@ do portapapeis tamén pode limparse e amosarse en modo exploración.
   que non se pode amosar nunha mensaxe navegable, se se están a copiar
   arquivos ou carpetas do Explorador de Windows, por exemplo.
 
-
-Contén os seguintes controis:
-
 * Escribe a cadea de texto que se utilizará como separador entre contido
   engadido ao portapapeis: Permite establecer un separador que se pode
   utilizar para buscar os segmentos de texto unha vez se pegue todo o texto
@@ -75,11 +72,8 @@ Notas:
 
   estaba activo.
 
-
 * Podes asignar diferentes xestos para amosar o contido textual do
-  portapapeis como texto plano ou formateado en HTML. O Formato no que
   amosar o texto do portapapeis no panel de opcións modificouse en
-
   HTML.
 
 ## Cambios para 12.0
@@ -100,13 +94,10 @@ Notas:
 * Arranxado un erro ao utilizar as funcións emular curtar e copiar cunha
   distribución de teclado árabe. Isto foi solucionado por Abdel, engadido
 
-
 ## Cambios para 9.0
 
-* Engadida a posibilidade de amosar o texto do portapapeis en modo
   exploración.
 * Engadida unha opción para elixir se se requerirán confirmacións se o
-  cartafoles.
 * Requírese do NVDA 2018.4 ou posterior.
 
 ## Cambios para 8.0 ##
@@ -157,10 +148,13 @@ Notas:
 *	Pódese engadir a representación braille de obxectos MathML ó portapapeis
 
   se MathPlayer está instalado.
+
 *	Se non se puxo un separador, porase una soa liña entre os segmentos de
   texto engadido.
+
 *	Pódese asignar un atallo de teclado para abrir o diálogo de opcións do
   Clip Contents Designer .
+
   se o separador se debería copiar para seren importado cando se reinstale o
   complemento.
 
@@ -170,4 +164,3 @@ Notas:
 
 *	Versión inicial.
 [[!tag dev stable]]
-

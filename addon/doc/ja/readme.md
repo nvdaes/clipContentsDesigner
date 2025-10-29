@@ -48,7 +48,6 @@
 
 * LibreOffice Writerのようなアプリケーションで、コピーのエミュレートを使用する時の、バグを修正しました。
 
-
 * NVDAの標準コマンド(NVDA+f9とNVDA+f10)を使用して、レビューカーソルでマークされたテキストを追加することが可能になりました。新しいNVDA+shift+f9コマンドとの統一性を良くするため、NVDA+windows+f9は使ええなくなりました。
 * アラビア語キーボードレイアウトで、切り取りとコピー機能のエミュレートを使用する時のバグを修正しました。これはアドオンの作者として追加された、Abdelにより修正されました。
 
@@ -56,15 +55,12 @@
 
 * ブラウズモードでクリップボードのテキストを表示出来る機能を追加しました。
 
-
 ## 8.0の変更点 ##
 
 * アドオン設定は、NVDA設定ダイアログの、対応するカテゴリーに表示されます。
 * NVDA 2018.2以降が必要。
 
 ## 7.0の変更点
-
-
 
 ## 6.0の変更点
 
@@ -74,14 +70,12 @@
   the Input gestures dialog.
 *	Added a dialog to configure the Emulate copy and Emulate cut
 
-
   functionalities at installation. This allows to add the control+c and
 
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
 
 *	Fixed documentation for script_add (Windows+NVDA+c).
-
 
 ## 5.0の変更点 ##
 
@@ -100,11 +94,10 @@
 
 *	Clip Contents Designer 設定ダイアログを開くショートカットを割り当て可能。
 
-
 ## 2.0の変更点 ##
 
 ## 1.0の変更点 ##
+
 *	最初のバージョン。
 
 [[!tag dev stable]]
-

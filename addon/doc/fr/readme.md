@@ -10,18 +10,6 @@ pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 
   avec le curseur de revue, dans le presse-papiers.
 
-
-
-
-
-*	NVDA+windows+x : Vide le contenu du presse-papiers.
-*	Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
-  possibilité d'une demande de confirmation préalable.
-*	Non assigné : affiche le texte du presse-papiers au format HTML en mode
-  navigation, ou annonce si le presse-papiers est vide ou a un contenu qui
-  ne peut pas être présenté dans un message consultable, par exemple si des
-  fichiers ou des dossiers ont été copiés à partir de l'Explorateur Windows.
-*	Non assigné : affiche le contenu textuel du presse-papiers sous forme de
   texte brut en mode navigation, ou annonce si le presse-papiers est vide ou
 
 Il contient les contrôles suivants :
@@ -76,70 +64,25 @@ Notes :
 
 ## Changements pour la version 40.0.0
 
-
-
-
-
-
-
   présentée dans la boîte de dialogue des gestes de commande.
+
 * Correction des gestes pour copier et couper avec le clavier persan, grâce
   à Mohammadhosein Ghezelsofla.
-
-## Changements pour la version 14.0
-
-
-
-
-* Compatible avec NVDA 2021.1.
-
-
-
-
-## Changements pour la version 13.0
-
-
-
 
 
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
-* Documentation améliorée.
-* Ajout d'une catégorie Clip Contents Designer pour attribuer des gestes
-  d'entrée à toutes les commandes disponibles pour cette extension.
-  navigateurs si le mode focus est actif.
-
-* Vous pouvez assigner différents gestes pour afficher le contenu textuel du
-  presse-papiers sous forme de texte brut ou formaté en HTML. Le Format pour
-  afficher le texte du presse-papiers dans le panneau des paramètres a été
-  modifié en conséquence, pour sélectionner les deux options disponibles
-
-  pour le format HTML.
-
 ## Changements pour la version 12.0
-
-* Correction de bogues lors de l'utilisation de l'émulation de copie dans
-  les applications telles que LibreOffice Writer.
 
 ## Changements pour la version 11.0
 
 * Il est maintenant possible d'ajouter du texte marqué avec le curseur de
   revue à l'aide de commandes standards de NVDA (NVDA+f9 et
   NVDA+f10). NVDA+Windows+f9 n'est plus utilisé pour une meilleure
-  intégration avec na nouvelle commande de NVDA NVDA+maj+f9.
-
-## Changements pour la version 10.0
 
 * Correction d'un bogue dans le dialogue présentant le texte du
-  presse-papiers, quand son titre contient des caractères non latins.
-* Correction d'un bogue lors de l'utilisation des fonctionnalités
-  a été corrigé par Abdel, ajouté comme auteur de l'extension.
 
 ## Changements pour la version 9.0
-
-* Ajout de la possibilité de voir le contenu du presse-papiers en mode
-  navigation.
-* Ajout d'une option pour définir si une confirmation sera requise quand le
   presse-papiers n'est pas vide, par exemple si des fichiers ou dossiers
   sont en cours de copie.
 * Nécessite NVDA 2018.4 ou ultérieur.
@@ -186,10 +129,6 @@ Notes :
 
   des séparateurs différents, et les paramètres n'ont pas besoin d'être
   copiés lors de l'importation pendant la réinstallation.
-
-
-
-
 
 *	Il est maintenant possible de choisir si l’ajout de texte sera ajouté à la
   fin ou ajouté au début, en utilisant la case à cocher Ajouter du texte

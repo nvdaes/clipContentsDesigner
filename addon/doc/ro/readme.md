@@ -20,10 +20,6 @@ afișat în modul de navigare.
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
 
-
-It contains the following controls:
-
-* Type the string to be used as a separator between contents added to the
   clipboard: Allows to set a separator which can be used to find the text
   segments once the entire added text is pasted.
 * Add text before clip data: It's also possible to choose if the added text
@@ -91,22 +87,14 @@ Note:
 
 ## Modificări în 10.0
 
-
 * S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
-  planșetă când titlul său conținea caractere nelatine.
 * S-a rezolvat o problemă întâmpinată la utilizarea copierii și a tăierii
-  simulate cu o tastatură arabă. A fost rezolvată de Abdel, care acum are
 
 
-## Modificări în 9.0
-
-* Acum, este posibilă afișarea textului aflat pe planșetă în modul de
   navigare.
 * S-a adăugat o opțiune care vă permite să alegeți dacă vor fi sau nu
-  exemplu fiind copierea fișierelor sau a folderelor.
 * Necesită NVDA 2018.4 sau mai nou.
 
-## Modificări în 8.0 ##
 
 * Setările suplimentului sunt afișate în categoria corespunzătoare a
 * Necesită NVDA 2018.2 sau mai nou.
@@ -154,12 +142,16 @@ Note:
 *	Reprezentarea Braille din obiectele MathML poate fi adăugat pe planșetă
 
   dacă MathPlayer este instalat.
+
 *	Dacă niciun separator nu este setat, o singură linie va fi adăugată între
   segmentele textului adăugat.
+
 *	O scurtătură poate fi definită pentru a deschide setările Clip Contents
   Designer-ului.
+
   separatorul trebuie să fie copiat pentru a fi immportat când reinstalezi
   add-on-ul.
+
 
 ## Modificări din 2.0 ##
 
@@ -167,4 +159,3 @@ Note:
 
 *	Versiunea inițială.
 [[!tag dev stable]]
-

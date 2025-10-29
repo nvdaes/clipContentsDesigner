@@ -22,6 +22,7 @@ de navegação.
   Explorer.
 
   escolher se o texto adicionado será anexado ou prefixado.
+
 * Selecione as ações que requerem confirmação prévia: Você pode escolher,
   para cada ação disponível, se ela deve ser realizada imediatamente ou após
   a confirmação. As ações disponíveis são: adicionar texto, limpar área de
@@ -73,16 +74,11 @@ Notas:
 
   estiver ativo.
 
-
-
-
 * Você pode atribuir diferentes gestos para mostrar o conteúdo textual da
   área de transferência como texto bruto ou formatado em HTML. O formato
   foi modificado conformemente, para selecionar as duas opções disponíveis
 
-
   para o formato HTML.
-
 
 ## Mudanças na 12.0
 
@@ -90,7 +86,6 @@ Notas:
   Writer.
 
 ## Mudanças na 11.0
-
 
 * Agora é possível adicionar texto marcado com o cursor de exploração usando
   comandos padrão do NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9 não é mais
@@ -100,16 +95,13 @@ Notas:
 
 ## Mudanças na 10.0
 
-
 * Corrigida uma falha no diálogo usado para mostrar o texto da área de
 
   transferência, quando o título continha caracteres não latinos.
 * Corrigido uma falha ao usar os recursos de emulação de corte e cópia com
   um layout de teclado árabe. Isso foi corrigido por Abdel, adicionado como
 
-
 ## Mudanças na 9.0
-
 
 * Adicionada a possibilidade de mostrar o texto da área de transferência no
   modo de navegação.
@@ -163,21 +155,17 @@ Notas:
 
   transferência.
 
-
 ## Mudanças na 3.0 ##
 
-
   transferência se o MathPlayer estiver instalado.
+
 *	Caso nenhum separador seja configurado, apenas uma linha será colocada
 
   gestor do conteúdo de transferência.
+
 *	Adicionada uma caixa de seleção ao diálogo de opções, para escolher se o
   separador deve ser copiado para ser importado ao reinstalar o complemento.
 
-
 *	Caracteres hindi podem ser usados como o separador entre conteúdos
-
-
-
 
 *	Versão inicial.

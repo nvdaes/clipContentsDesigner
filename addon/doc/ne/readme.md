@@ -18,54 +18,13 @@ content can also be cleared.
 
 ## प्राथमिकता मेनु ##
 
-
-
-
-
-
-
-*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-
-
-
-Input gestures dialog, Configuration category.
-
-## Changes for 5.0 ##
-
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-
-
-
-
-  copy the settings for importing at reinstallation.
-
-
-
-## Changes for 3.0 ##
-
-*	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
 *	If no separator is set, just a single line will be placed between the
-  added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings
-
-  dialog.
-
-
 *	Added a check box in the settings dialog, for choosing if the separator
-  should be copied to be imported when reinstalling the add-on.
-
-
 ## २.० संस्करणमा गरिएका परिवर्तनहरू ##
-
 
 *	Hindi characters can be used as the separator between added contents.
 
 ## १.० मा गरिएका परिवर्तनहरू ##
 
-*	सुरुको संस्करण
-[[!tag dev stable]]
-
 [1]: http://addons.nvda-project.org/files/get.php?file=ccd
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

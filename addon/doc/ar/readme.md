@@ -18,23 +18,8 @@ content can also be cleared.
 
 ## قائمة التفضيلات ##
 
-
-
-  Input gestures dialog, Configuration category.
-
-
-
-
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed
-
-## Changes for 7.0
-
 * In the dialog to configure the Emulate copy and Emulate cut
   functionalities at installation, if you choose no, the commands for these
-  features will be removed, so that you can restore the normal behavior for
-  control+c and control+x.
-
 # Changes for 6.0
 
 * dded options to choose if available actions should be performed after confirmation.
@@ -51,28 +36,18 @@ content can also be cleared.
 ## Changes for 4.0 ##
 
   profiles can be used to save different separators, and it's not needed to
+
 ## مستجدات الإصدار 3.0 ##
-
-
-
 
 *	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
+
 *	If no separator is set, just a single line will be placed between the
   added text segments.
-*	يمكن تعيين اختصار لفتح محاورة إعدادات الإضافة.
-
-*	إضافة مربع تحديد لإعدادات الإضافة, للاختيار ما إذا كان ينبغي نسخ الفاصل
   بين القطع النصية لاستيراده عند إعادة تثبيت الإضافة
 
 
 ## مستجدات الإصدار 2.0 ##
 
-
-
-*	Hindi characters can be used as the separator between added contents.
-
-
-[[!tag dev stable]]
 
 [2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

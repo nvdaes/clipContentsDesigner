@@ -10,16 +10,6 @@ tartalma törölhető, illetve megjeleníthető böngésző módban.
 
   reprezentáló karaktereket is.
 
-
-
-
-
-
-*	NVDA+windows+x: Vágólap tartalom törlése.
-*	Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
-  vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
-  announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
 It contains the following controls:
@@ -67,64 +57,23 @@ Megjegyzések:
 
 ## Changes for 40.0.0
 
-
-
-
-
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
-
 ## Changes for 14.0
-
-
-
-* Compatible with NVDA 2021.1.
-
-
-
-
-
-## Changes for 13.0
-
-
-
-
-
-
 
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all
   commands available for this add-on.
 * Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents
-  as raw text or formatted in HTML. The Format to show the clipboard text in
   the settings panel has being modified accordingly, to select the two
-
-  options available for HTML format.
-
-## Changes for 12.0
 
 * Fixed bugs when using emulate copy in applications like LibreOffice
   Writer.
-
-## A 11.0 változásai
-
-* Most már hozzáfűzhető az áttekintőkurzorral kijelölt szöveg is az NVDA+F9
-  és NVDA+F10 billentyűparancsok használatával. A korábban használt
-  NVDA+Windows+F9 parancs már nem használható.
 * Az NVDA 2019.3 vagy újabb kiadására van szükség.
 
-
-
-
-
-
 ## A 10.0 változásai
-
-
 
 * Hiba elhárítva: ha a vágólap tartalmát megjelenítő párbeszédablak címe nem
 
@@ -146,14 +95,7 @@ Megjegyzések:
 * A bővítmény beállításai az NVDA beállításai közt jelennek meg külön
   kategóriában
 * Az NVDA 2018.2 vagy újabb kiadása szükséges
-
-## A 7.0 változásai
-
-* Amennyiben a bővítmény telepítése során nem állítja be az emulált másolást
-  és kivágást, akkor nem változik meg a Ctrl+C és Ctrl+X parancsok
   hagyományos viselkedése.
-
-## A 6.0 változásai
 
 *	Added options to choose if available actions should be performed after
   confirmation.
@@ -163,8 +105,11 @@ Megjegyzések:
   functionalities at installation. This allows to add the control+c and
 
   the clipboard contents when pressing these keystrokes.
+
 *	Fixed documentation for script_add (Windows+NVDA+c).
+
 ## Az 5.0 változásai ##
+
 *	Javították a bővítmény párbeszédablakának vizuális megjelenítését.
 
 ## A 4.0 változásai ##
@@ -190,4 +135,7 @@ Megjegyzések:
 
 ## Az 1.0 változásai ##
 
+
+
 *	* Első kiadás
+

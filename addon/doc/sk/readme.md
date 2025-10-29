@@ -62,20 +62,16 @@ Poznámky:
 * Improved documentation.
 * You can assign different gestures to show the clipboard textual contents
   as raw text or formatted in HTML. The Format to show the clipboard text in
+
+
 ## Changes for 12.0
-
-
 ## Zmeny vo verzii 11.0
+
+
   NVDA+F10). Nvda+windows+F9 sa už nepoužíva, pre lepšiu integráciu so
   skratkou nvda+shift+F9.
-
-
 ## Zmeny vo verzii 10.0
 
-
-
-* Opravená chyba, ktorá nastávala pri zobrazení názvu okna so zobrazením
-  textu v režime prehliadania, ak boli v názve okna špeciálne znaky.
 
 ## Zmeny vo verzii 9.0
 
@@ -93,38 +89,24 @@ Poznámky:
 
 ## Zmeny vo verzii 7.0
 
-
-
 * Ak nepovolíte simulovanie kopírovania pri inštalácii, doplnok neupravuje
   klávesové skratky.
-
-## Zmeny vo verzii 6.0
-
-
-
 
 *	Added options to choose if available actions should be performed after
   confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
-
-
-  functionalities at installation. This allows to add the control+c and
 
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
 
-
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
-## Zmeny vo verzii 5.0 ##
 
 *	Opravené vizuálne zobrazenie dialógov doplnku.
 
 *	Vyžaduje NVDA od verzie 2016.4
 
-## Zmeny vo verzii 4.0 ##
 
 *	Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
 
@@ -132,18 +114,16 @@ Poznámky:
 
 *	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
   koniec alebo na začiatok obsahu schránky.
-## Zmeny vo verzii 3.0 ##
 
+## Zmeny vo verzii 3.0 ##
 
 *	Braillovské znaky pre matematické operátory je takisto možné vkladať do
   schránky, ak je k dispozícii MathPlayer.
 *	Nastavenia doplnku je možné vyvolať klávesovou skratkou, ktorú si
 *	Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
 
-
 ## Zmeny vo verzii 2.0 ##
 
+
 *	Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
-
-
 [[!tag dev stable]]

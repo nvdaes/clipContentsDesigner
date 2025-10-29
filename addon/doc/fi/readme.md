@@ -65,36 +65,21 @@ Huomautuksia:
 
 * Lisäosan asetuspaneeliin lisätty painike oletusarvojen palauttamista
 * Lisäosaa ei voi käyttää suojatussa tilassa.
-## Muutokset versiossa 17.0
+
 
 
 ## Muutokset versiossa 15.0
-  Näppäinkomennot-valintaikkunassa.
+
 
 
 * Korjattu kopioinnin ja leikkaamisen näppäinkomennot persiankielisellä
 
-
-## Muutokset versiossa 14.0
-
-
 * Yhteensopiva NVDA 2021.1:n kanssa.
-
-
-
 ## Muutokset versiossa 13.0
-
-
-* Korjattu ongelma asetuspaneelin visuaalisessa ulkoasussa; kiitos Cyrille
-
   Bougotille.
 
-* Dokumentaatiota paranneltu.
-
-* Lisätty Leikepöydän sisällön käsittelijä -kategoria, josta voidaan
 
 * Korjattu bugeja käytettäessä kopioinnin emulointia selaimissa selaustilan
-  ollessa käytössä.
 * Voit määrittää eri näppäinkomennot näyttämään leikepöydän tekstisisällön
 
   joko raakatekstinä tai muotoiltuna HTML:nä.
@@ -169,26 +154,16 @@ Huomautuksia:
 
   tarvita niiden tuomiseksi asennettaessa lisäosaa uudelleen.
 
-
-
-
 *	Lisäosan asetusvalintaikkunan Lisää teksti leikepöydän nykyisen sisällön
   lisätty teksti leikepöydällä jo olevan tekstin loppuun vai alkuun.
 
 ## Muutokset versiossa 3.0 ##
-
-*	MathML-objekteja kuvaavat pistekirjoitusmerkit voidaan lisätä
-  leikepöydälle, mikäli MathPlayer on asennettu.
 
   tyhjä rivi.
 
 *	Leikepöydän sisällön käsittelijän asetusvalintaikkunan avaamista varten
 *	Asetusvalintaikkunaan lisätty valintaruutu, jolla voidaan määrittää,
   kopioidaanko erotin käyttäjän NVDA-asetusten kansioon, josta se voidaan
-  tuoda asennettaessa lisäosaa uudelleen.
-
-## Muutokset versiossa 2.0 ##
-
 
 *	Ensimmäinen versio.
 

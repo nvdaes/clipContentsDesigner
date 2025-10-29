@@ -21,6 +21,9 @@ gennemsynstilstand.
   har kopiere filer fra Stifinder.
 
   ved markøren.
+
+
+
 * Vælg de handlinger, der kræver tidligere bekræftelse: Du kan for hver
   tilgængelig handling vælge, om den skal udføres med det samme eller efter
   bekræftelse. Tilgængelige handlinger er: tilføj tekst, ryd
@@ -111,12 +114,12 @@ Bemærkninger:
   confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
 
+
+
   the Input gestures dialog.
+
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
-  control+x commands to copy and cut, and be asked if you want to replace
-
-  the clipboard contents when pressing these keystrokes.
 
 
 *	Fixed documentation for script_add (Windows+NVDA+c).

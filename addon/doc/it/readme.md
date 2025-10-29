@@ -12,15 +12,6 @@ anche essere cancellato e visualizzato  in Modalità Navigazione.
   che è stata contrassegnata con il cursore di controllo (comandi NVDA+f9 ed
   NVDA+f10).
 
-
-
-
-*	NVDA + Windows + x: Cancella il contenuto degli appunti.
-*	Non assegnato: copia o taglia, con possibilità di richiesta di conferma.
-*	Non assegnato: visualizza il testo presente negli appunti in modalità
-  navigazione in formato html. In alternativa dice se negli appunti è
-  presente contenuto che non è possibile mostrare in modalità navigazione,
-  come file o cartelle copiati da Windows Explorer, o se non è presente
   testo negli appunti.
 *	Non assegnato: visualizza il testo presente negli appunti in modalità
   navigazione come testo semplice. In alternativa dice se negli appunti è
@@ -74,58 +65,25 @@ Note:
 
 ## Changes for 40.0.0
 
-
-
 ## Novità nella versione 16.0
 
-
-
   finestra di dialogo dei gesti di immissione.
-* Risolti i gesti da copiare e tagliare con la tastiera persiana, grazie a
   Mohammadhosein Ghezelsofla.
 
-## Novità nella versione 14.0
-
-
-
-
-
 * Compatibile con NVDA 2021.1.
-
-
 ## Changes for 13.0
 
-
-
-
-* Risolto un problema nella grafica della finestra Impostazioni. Grazie a
-  Cyrille Bougot.
-* Miglioramenti alla documentazione.
-* Aggiunta la categoria Clip Contents Designer nella finestra Gesti e Tasti
-  di Immissione di NVDA, per assegnare tasti personalizzati a tutti i
-* Risolti problemi che si riscontravano quando si utilizzava l'emulazione
   copia nei browser con la modalità focus attiva.
 
-* Potete assegnare tasti diversi per visualizzare il contenuto testuale
+
   degli appunti come testo puro o come HTML. Le scelte possibili nella
   finestra Impostazioni per il formato di visualizzazione degli appunti sono
-  state modificate di conseguenza, per riflettere le due opzioni disponibili
-
-  per l'HTML.
 
 ## Novità nella versione 12.0
-
-* Risolti problemi che si riscontravano quando si utilizzava la simulazione
-  copia in applicazioni come LibreOffice Writer.
-
 ## Novità nella versione 11.0
 
-* E' ora possibile agiungere testo selezionato con il cursore di controllo
   utilizzando comandi standard di NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9
   non è più utilizzato, per una migliore integrazione con il nuovo comando
-  NVDA+shift+f9.
-
-## Novità nella versione 10.0
 
 * Risolto un bug nella finestra di dialogo utilizzata per mostrare il testo
   degli appunti, quando il titolo contiene caratteri non latini.
@@ -197,7 +155,6 @@ Note:
   in caso di nuova installazione del componente aggiuntivo.
 
 ## Novità nella versione 2.0 ##
-
 
 *	Versione iniziale.
 
