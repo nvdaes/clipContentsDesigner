@@ -19,22 +19,3 @@ content can also be cleared.
 ## प्राथमिकता मेनु ##
 
   MathPlayer is installed.
-
-
-
-
-
-
-
-
-*	If no separator is set, just a single line will be placed between the
-
-*	Added a check box in the settings dialog, for choosing if the separator
-
-## २.० संस्करणमा गरिएका परिवर्तनहरू ##
-
-*	Hindi characters can be used as the separator between added contents.
-
-## १.० मा गरिएका परिवर्तनहरू ##
-
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd

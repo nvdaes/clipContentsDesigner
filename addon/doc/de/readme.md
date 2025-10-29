@@ -32,6 +32,12 @@ gelöscht werden.
   einige HTML-Tags wie h1, h2, li, pre etc.., wählen Sie den Text aus und
   kopieren Sie diesen in die Zwischenablage. Verwenden Sie die Erweiterung,
   um den Text in einer Fenster anzuzeigen.
+
+
+
+
+
+
 * Maximale Anzahl von Zeichen beim Anzeigen von Text in der Zwischenablage
   im Lesemodus: Beachten Sie, dass das Erhöhen dieser Grenze zu Problemen
   führen kann, wenn die Zwischenablage große Textzeichenfolgen enthält. Das
@@ -60,74 +66,8 @@ Anmerkungen:
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
 
   Optionen auszuwählen.
-
-## Änderungen in 12.0
-
-## Änderungen in 11.0
-
-
-
-
-
-
-
-
-
-  NVDA+shift+f9  besser zu integrieren.
-
-
-## Änderungen in 9.0
-
-  Lesemodus anzuzeigen.
-
-* Es wurde eine Option hinzugefügt, um zu wählen, ob Bestätigungen
-  erforderlich sind, wenn die Zwischenablage nicht leer ist, z.B. wenn
-  Dateien oder Ordner kopiert wurden.
-* Benötigt NVDA 2018.4 oder höher.
-
-* Die Einstellungen für die Erweiterung werden in der entsprechenden
-  Kategorie der Einstellungen von NVDA angezeigt.
-* Benötigt NVDA 2018.2 oder höher.
-
-* Die Befehle im Dialog zum Konfigurieren der Funktionen für das Emulieren
-  der Kopier- und Ausschneide-Funktion  werden bei der Installation
-  entfernt, so dass das normale Verhalten von Strg+C und Strg+X
-
-## Änderungen in 6.0
-
-  the Input gestures dialog.
-
-
-
-
-
-*	Added a dialog to configure the Emulate copy and Emulate cut
-
-  the clipboard contents when pressing these keystrokes.
-
-*	Fixed documentation for script_add (Windows+NVDA+c).
-*	Die visuelle Darstellung des Dialogs wurde verbessert und entspricht dem
-  Erscheinungsbild der Dialoge in NVDA.
-
-*	Benötigt NVDA 2016.4 oder höher.
-
-## Änderungen in 4.0 ##
-
-  dass Standardprofile verwendet werden können, um verschiedene Trennlinien
-
-  zu speichern. Es ist nicht erforderlich, die Einstellungen für den Import
-  bei der Neuinstallation zu kopieren.
-
-*	Es kann nun gewählt werden, ob der hinzugefügte Text angehängt oder
-  vorangestellt werden soll, indem Sie das Kontrollkästchen Text vor den
-  verwenden.
-
-## Änderungen in 3.0 ##
-
-*	Braille-Darstellung von MathML-Objekten können bei installiertem
   MathPlayer zur Zwischenablage hinzugefügt werden.
 
-  den angehängten Textsegmenten platziert.
 
 *	Es wurde ein Kontrollkästchen im Einstellungsdialog hinzugefügt, mit dem
   festgelegt wird, ob die Trennlinie beim erneuten Installieren der

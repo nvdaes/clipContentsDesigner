@@ -64,32 +64,7 @@ Poznámky:
   as raw text or formatted in HTML. The Format to show the clipboard text in
 
 
-
-## Zmeny vo verzii 11.0
-
-
-
-
-## Zmeny vo verzii 10.0
-
-* Pridané zobrazenie obsahu schránky v režime prehliadania.
-
-* Pridaná možnosť zobraziť varovanie, ak schránka nie je prázdna, napríklad
-  ak sú v schránke súbory a priečinky.
-* Vyžaduje sa NVDA od verzie 2018.4.
-
-## Zmeny vo verzii 8.0 ##
-
-* Nastavenia doplnku pridané do stromu s nastaveniami NVDA.
-
-* Vyžaduje NVDA od verzie 2018.2.
-
-## Zmeny vo verzii 7.0
-
 * Ak nepovolíte simulovanie kopírovania pri inštalácii, doplnok neupravuje
-  klávesové skratky.
-
-*	Added options to choose if available actions should be performed after
   confirmation.
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
@@ -103,17 +78,14 @@ Poznámky:
 *	Vyžaduje NVDA od verzie 2016.4
 *	Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
 
-
 *	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
 
 ## Zmeny vo verzii 3.0 ##
 
 *	Braillovské znaky pre matematické operátory je takisto možné vkladať do
-  schránky, ak je k dispozícii MathPlayer.
 *	Nastavenia doplnku je možné vyvolať klávesovou skratkou, ktorú si
 *	Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
 
 ## Zmeny vo verzii 2.0 ##
 
-*	Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
 [[!tag dev stable]]

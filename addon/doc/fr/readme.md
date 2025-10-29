@@ -69,78 +69,18 @@ Notes :
 * Correction des gestes pour copier et couper avec le clavier persan, grâce
   à Mohammadhosein Ghezelsofla.
 
-
-
-
-## Changements pour la version 12.0
-
-## Changements pour la version 11.0
-
-* Il est maintenant possible d'ajouter du texte marqué avec le curseur de
-  revue à l'aide de commandes standards de NVDA (NVDA+f9 et
-  NVDA+f10). NVDA+Windows+f9 n'est plus utilisé pour une meilleure
-
-* Correction d'un bogue dans le dialogue présentant le texte du
-
-## Changements pour la version 9.0
-
-
-
-
-
-
-
-
-  presse-papiers n'est pas vide, par exemple si des fichiers ou dossiers
-
-  sont en cours de copie.
-
-* Nécessite NVDA 2018.4 ou ultérieur.
-
-## Changements pour la version 8.0 ##
-
-* Les paramètres de l'extension sont affichés dans la catégorie
-  correspondante au dialogue Paramètres NVDA.
 * Nécessite NVDA 2018.2 ou ultérieur.
 
 ## Changements pour la version 7.0
 
-* Dans le dialogue pour configurer les fonctionnalités Émuler copier et
-  Émuler couper à l'installation, si vous choisissez non, les commandes pour
-  ces fonctionnalités seront supprimées, de sorte que vous pouvez restaurer
-  le comportement normal pour contrôle+c et contrôle+x.
-
-## Changements pour la version 6.0
-
 *	Ajout d'options pour choisir si les actions disponibles doivent être
   effectuées après confirmation.
-*	Ajout des commandes Émuler copier et Émuler couper, qui peuvent être
-  affectées  à partir de la boîte de dialogue Gestes de commandes.
-*	Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler
-  copier et Émuler couper lors de l'installation. Cela permet d'ajouter les
-  commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si
-  vous voulez remplacer le contenu du presse-papiers en appuyant sur ces
-
   combinaisons de touches.
 
 *	Correction de la documentation pour le script_add (Windows+NVDA+c).
 
-## Changements pour la version 5.0 ##
-
-*	La présentation visuelle de la boîte de dialogue a été améliorée, en
-  respectant l'apparence des dialogues présentés dans NVDA.
-
-*	Nécessite NVDA 2016.4 ou ultérieur.
-
 ## Changements pour la version 4.0 ##
 
-*	Les paramètres de l'extension sont gérés à partir de la configuration
-  NVDA, afin que les profils standard puisse être utilisés pour enregistrer
-
-  des séparateurs différents, et les paramètres n'ont pas besoin d'être
-  copiés lors de l'importation pendant la réinstallation.
-
-*	Il est maintenant possible de choisir si l’ajout de texte sera ajouté à la
   fin ou ajouté au début, en utilisant la case à cocher Ajouter du texte
   de Clip Contents Designer.
 

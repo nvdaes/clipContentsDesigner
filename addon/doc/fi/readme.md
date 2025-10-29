@@ -68,33 +68,9 @@ Huomautuksia:
 
 * Voit määrittää eri näppäinkomennot näyttämään leikepöydän tekstisisällön
 
-
-
-
-
-* Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa
-
-
-## Muutokset versiossa 11.0
-* Nyt on mahdollista lisätä tarkastelukohdistimella merkittyä tekstiä
-  tavallisia NVDA-komentoja(NVDA+F9 ja NVDA+F10) käyttäen. Komentoa
-  NVDA+Win+F9 ei enää käytetä paremman uuteen NVDA+Vaihto+F9-komentoon
-  integroinnin takia.
-
-## Muutokset versiossa 10.0
-
-* Korjattu ohjelmavirhe leikepöydän sisältämän tekstin näyttämiseen
-  käytettävässä valintaikkunassa, kun sen nimi sisälsi ei-latinalaisia
-  merkkejä.
-  arabialaista näppäimistöasettelua käytettäessä. Tämän korjasi Abdel, joka
-  on lisätty lisäosan tekijäksi.
-
-## Muutokset versiossa 9.0
-
-* Lisätty mahdollisuus leikepöydän tekstin näyttämiseen selaustilassa.
 * Lisätty asetus, jolla voidaan valita, kysytäänkö vahvistus, jos leikepöytä
   ei ole tyhjä esim. tiedostoja tai kansioita kopioitaessa.
-* Edellyttää NVDA 2018.4:ää tai uudempaa.
+
 
 ## Muutokset versiossa 8.0 ##
 

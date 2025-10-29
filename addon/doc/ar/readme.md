@@ -21,30 +21,6 @@ content can also be cleared.
 * In the dialog to configure the Emulate copy and Emulate cut
   functionalities at installation, if you choose no, the commands for these
 
-
-
-
-
-# Changes for 6.0
-
-* dded options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-* Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
-
-## Changes for 5.0 ##
-
-*	The visual presentation of the dialog has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
-
-## Changes for 4.0 ##
-
-  profiles can be used to save different separators, and it's not needed to
-
-## مستجدات الإصدار 3.0 ##
-
-*	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
 
 ## مستجدات الإصدار 2.0 ##
