@@ -9,7 +9,7 @@ description = "clipContentsDesigner add-on for NVDA"
 maintainers = [
 	{name = "Noelia ruiz Martínez", email = "nrm1977@gmail.com"},
 ]
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.13,<3.14"
 classifiers = [
 	"Development Status :: 5 - Production/Stable",
 	"Intended Audience :: End Users/Desktop",
