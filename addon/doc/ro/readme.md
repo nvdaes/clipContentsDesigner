@@ -69,6 +69,8 @@ afișat în modul de navigare.
   control+x.
 
 ## Modificări în 6.0
+
+
 *	Added options to choose if available actions should be performed after
 
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
@@ -81,8 +83,6 @@ afișat în modul de navigare.
   the clipboard contents when pressing these keystrokes.
 
 *	Fixed documentation for script_add (Windows+NVDA+c).
-
-
 *	Prezentarea vizuală a dialogului a fost îmbunătățită, aderând la aspectul
 
 *	Necesită NVDA 2016.4 sau mai nou.
