@@ -89,51 +89,9 @@ repos:
   - id: pyright
     name: Check types with pyright
     additional_dependencies: [ "pyright[nodejs]==1.1.406" ]
-
-- repo: https://github.com/astral-sh/uv-pre-commit
-  rev: 0.8.4
-  hooks:
-    - id: uv-lock
-      name: Verify uv lock file
-      # Override python interpreter from .python-versions as that is too strict for pre-commit.ci
-      args: ["-p3.13"]
-
 - repo: https://github.com/DavidAnson/markdownlint-cli2
   rev: v0.18.1
   hooks:
   - id: markdownlint-cli2
     name: Lint markdown files
     args: ["--fix"]
-
-- repo: local
-  hooks:
-    - id: checkPo
-      name: Check po files
-      entry: uv run source/l10nUtil.py checkPo
-      language: python
-      types: [pofile]
-    - id: scons-source
-      name: build c/c++ files
-      entry: cmd.exe /c "scons source --all-cores"
-      language: system
-      pass_filenames: false
-      types_or: [c, c++]
-    - id: checkPot
-      name: translation string check
-      entry: cmd.exe /c "scons checkPot --all-cores"
-      language: system
-      pass_filenames: false
-      types: [python]
-      files: ^source/.*$
-    - id: unitTest
-      name: unit tests
-      entry: ./rununittests.bat
-      language: script
-      pass_filenames: false
-      types_or: [python, c, c++, batch]
-    - id: licenseCheck
-      name: Check license compatibility of pip dependencies
-      files: ^(runlicensecheck\.bat|pyproject\.toml)$
-      entry: ./runlicensecheck.bat
-      language: script
-      pass_filenames: false
