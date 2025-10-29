@@ -9,10 +9,11 @@ modo de navegação.
 
 ## Comandos de teclado ##
 
-
-*	NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
-  Braille que representem objetos MathML, ou a cadeia que foi marcada com o
   cursor de exploração, à área de transferência.
+
+
+
+
 *	NVDA+windows+x: limpa o conteúdo da área de transferência.
 *	Não atribuído: Cópias para (ou cortes de) a área de transferência, com a
   possibilidade de ser solicitada uma confirmação prévia.
@@ -23,11 +24,6 @@ modo de navegação.
 *	Não atribuído: Mostra o conteúdo da área de transferência textual como
   texto simples no modo de navegação, ou anuncia se a área de transferência
   está vazia ou tem conteúdo que não pode ser apresentado numa mensagem
-  navegável, por exemplo, se os ficheiros ou pastas foram copiados do
-  Explorador do Windows.
-## Configurações do gestor da área de transferência. ##
-
-Este painel está disponível a partir do menu do NVDA, submenu Preferências,
 diálogo configurações.
 
 Contém os seguintes controlos:
@@ -75,53 +71,39 @@ Notas:
 
 ## Changes for 46.0.0
 
-
-* NVDA will sanitize HTML in browseable messages.
-* Added a button to close browseable messages, in addition to the Escape
   key.
+
 ## Changes for 40.0.0
 
 
-* Added support for Hebrew keyboard.
-
-
-## Changes for 22.0.0
-
-* Added a button to restore defaults in the add-on settings panel.
-* The add-on cannot be run in secure mode.
-
-
-## Changes for 17.0
-
-
-* Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
 
 
-* Reqires NVDA 2022.1 or later.
-
-## Changes for 15.0
-
-* The command to add text to clipboard is again presented in the input
 
   gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
-
 ## Changes for 14.0
+
+
+
+
 
 * Compatible with NVDA 2021.1.
 
+
 ## Changes for 13.0
+
+
+
 
 * Corrigido um problema na disposição visual do painel de configurações,
   graças a Cyrille Bougot.
 * Documentação melhorada.
 * Adicionada uma categoria Clip Content Designer para atribuir comandos de
   entrada a todos os comandos disponíveis para este add-on.
-* Corrigidos bugs ao utilizar cópia emulada em navegadores se o modo de foco
   estiver activo.
 
 * Pode atribuir diferentes comandos para mostrar o conteúdo textual da área
@@ -136,7 +118,6 @@ Notas:
 * Corrigidos bugs ao utilizar cópia emulada em aplicações como o LibreOffice
   Writer.
 
-
 ## Alterações para 11.0
 
 * Agora é possível adicionar texto marcado com o cursor de revisão usando
@@ -144,13 +125,15 @@ Notas:
   utilizado, para uma melhor integração com o novo comando NVDA+shift+f9.
 * Requer NVDA 2019.3 ou posterior.
 
+
+
+
 ## Alterações para 10.0
 
 * Corrigido um erro no diálogo utilizado para mostrar o texto da área de
   transferência, quando o seu título contém caracteres não latinos.
 * Corrigido um erro ao utilizar as funções de corte e cópia emulada com um
   teclado árabe. Isto foi corrigido por Abdel, adicionado como um dos
-  autores do extra.
 
 ## Alterações para a versão 9.0
 
@@ -185,46 +168,39 @@ Notas:
   control+x commands to copy and cut, and be asked if you want to replace
 
   the clipboard contents when pressing these keystrokes.
+
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Alterações para a versão 5.0 ##
 
 *	A apresentação visual do diálogo foi melhorada, coincidindo com a
   aparência dos diálogos mostrados no NVDA.
-*	Requer o NVDA 2016.4 ou posterior.
 
+*	Requer o NVDA 2016.4 ou posterior.
 
 ## Alterações para a versão 4.0 ##
 
 *	As opções do extra são agora geridas directamente pela configuração do
   NVDA, de modo que se pode usar perfis para salvar diferentes separadores e
+
   não é necessário copiar as opções para importá-las quando numa
   reinstalação.
-*	Agora é possível escolher se o texto será colocado depois ou antes do que
   já lá está, usando a caixa de selecção  existente no diálogo de opções do
   gestor de conteúdos da área de transferência.
 
 ## Alterações para a versão 3.0 ##
 
-
 *	As representações braile de objectos MathML podem ser acrescentadas à área
-  de transferência, se o MathPlayer estiver instalado.
 *	Se não for definido qualquer separador, apenas será colocada uma linha
 
   entre os vários fragmentos de texto adicionados.
+
 *	Pode criar-se uma tecla de atalho para abrir o diálogo de opções do gestor
-  do conteúdo de transferência.
 *	Acrescentada uma caixa de selecção ao diálogo de opções, a qual permite
   escolher se o separador de fragmentos deve ser copiado para ser importado
   ao reinstalar o extra.
-
-## Alterações para a versão 2.0 ##
-
-*	Os caracteres hindi podem ser usados como separador entre conteúdos
   acrescentados.
 
 ## Alterações para a versão 1.0 ##
 
 *	Versão inicial.
-
-[[!tag dev stable]]

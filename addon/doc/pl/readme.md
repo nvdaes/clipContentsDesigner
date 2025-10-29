@@ -8,10 +8,11 @@ również wyczyścić i wyświetlić w trybie przeglądania.
 
 ## Skróty klawiszowe ##
 
-
-*	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
-  Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
+
+
+
+
 *	NVDA+windows+x: wyczyść zawartość schowka.
 *	Nieprzypisane: Kopiuje do schowka (lub wycina z niego), z możliwością
   poproszenia o wcześniejsze potwierdzenie.
@@ -22,11 +23,6 @@ również wyczyścić i wyświetlić w trybie przeglądania.
 *	Nieprzypisane: Wyświetla tekstową zawartość schowka jako zwykły tekst w
   trybie przeglądania lub informuje, czy schowek jest pusty lub zawiera
   zawartość, której nie można przedstawić w wiadomości z możliwością
-  przeglądania, na przykład jeśli pliki lub foldery zostały skopiowane z
-  Eksploratora Windows.
-## Ustawienia Projektanta zawartości klipu ##
-
-Ten panel jest dostępny z menu NVDA, podmenu Preferencje, okna dialogowego
 Ustawienia.
 
 Zawiera następujące kontrolki:
@@ -71,53 +67,39 @@ Uwagi:
 
 ## Changes for 46.0.0
 
-
-* NVDA will sanitize HTML in browseable messages.
-* Added a button to close browseable messages, in addition to the Escape
   key.
+
 ## Changes for 40.0.0
 
 
-* Added support for Hebrew keyboard.
-
-
-## Changes for 22.0.0
-
-* Added a button to restore defaults in the add-on settings panel.
-* The add-on cannot be run in secure mode.
-
-
-## Zmiany w wersji 17.0
-
-
-* Kompatybilny z NVDA 2023.1.
 
 ## Zmiany w wersji 16.0
 
 
-* Wymagana wersja NVDA 2022.1 lub nowsza.
-
-## Zmiany w wersji 15.0
-
-* Polecenie dodawania tekstu do schowka jest ponownie wyświetlane w oknie
 
   dialogowym gestów wprowadzania.
 * Naprawiono gesty do kopiowania i cięcia za pomocą perskiej klawiatury,
   dzięki Mohammadhosein Ghezelsofla.
 
-
 ## Zmiany w wersji 14.0
+
+
+
+
 
 * Kompatybilny z NVDA 2021.1.
 
+
 ## Changes for 13.0
+
+
+
 
 * Naprawiono błąd w układzie wizualnym panelu ustawień, dzięki Cyrille
   Bougot.
 * Ulepszona dokumentacja.
 * Dodano kategorię Clip Contents Designer, aby przypisać gesty wprowadzania
   do wszystkich poleceń dostępnych dla tego dodatku.
-* Naprawiono błędy podczas korzystania z emulacji kopii w przeglądarkach,
 
   jeśli tryb koncentracji uwagi jest aktywny.
 * Możesz przypisać różne gesty, aby wyświetlić zawartość tekstową schowka
@@ -131,21 +113,18 @@ Uwagi:
 * Naprawiono błędy podczas korzystania z emulacji kopii w aplikacjach takich
   jak LibreOffice Writer.
 
-
 ## Zmiany w wersji 11.0
 
 * Teraz możliwe jest dodanie tekstu oznaczonego kursorem recenzji za pomocą
   standardowych poleceń NVDA (NVDA + f9 i NVDA + f10). NVDA+windows+f9 nie
   jest już używany, co zapewnia lepszą integrację z nowym poleceniem
   NVDA+shift+f9.
-* Wymaga NVDA 2019.3 lub nowszego.
 
 ## Zmiany w wersji 10.0
 
 * Naprawiono błąd w oknie dialogowym używanym do wyświetlania tekstu
   schowka, gdy jego tytuł zawiera znaki inne niż łacińskie.
 * Naprawiono błąd podczas korzystania z funkcji emulacji wycinania i
-  kopiowania z arabskim układem klawiatury. Zostało to naprawione przez
   Abdela, dodanego jako autor dodatku.
 
 ## Zmiany w wersji 9.0
@@ -179,44 +158,41 @@ Uwagi:
   control+x commands to copy and cut, and be asked if you want to replace
 
   the clipboard contents when pressing these keystrokes.
+
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmiany w wersji 5.0 ##
 
 *	Wizualna prezentacja dialogów została ulepszona, aby była zgodna z
   wyświetlanymi dialogami w NVDA.
-*	Wymaga NVDA 2016.4 lub nowszą wersje.
 
+*	Wymaga NVDA 2016.4 lub nowszą wersje.
 
 ## Zmiany w wersji 4.0 ##
 
 *	Ustawieniami dodatku teraz można zarządzać z samej konfiguracji NVDA, i z
   tego powodu teraz profile konfiguracyjne mogą być użyte do zachowywania
+
   różnych separatorów, a właściwie, teraz staje się niepotrzebnym kopiowanie
   ustawień separatora podczas reinstalacji.
-*	Teraz można wybrać, czy tekst kopiowany ma być dodawany na końcu lub na
   początku, używając pola wyboru Dodaj tekst przed danymi Clip z dialogu
   ustawień projektanta zawartości schowka.
-
 
 ## Zmiany w wersji 3.0 ##
 
 *	Wyświetlony brajl z MathML mogą być dodany do schowka, jeżeli MathPlayer
-
   jest zainstalowany.
+
 *	Jeżeli separator nie jest ustawiony, będzie wstawiona pojedyńcza linia
-  pomiędzy odcinkami dodanego tekstu.
 *	Teraz można przydzielić skrót do otwierania dialogu ustawień Projektanta
   zawartości schowka.
 *	Dodane pole wyboru, dla wybierania czy separator musi być importowany
   podczas reinstalacji dodatku.
 
-## Zmiany w wersji 2.0 ##
+
 
 *	Znaki Dewanagari mogą być używane jako separator dodawanej treści.
 
 ## Zmiany dla 1.0 ##
 
 *	Pierwsze wydanie.
-
-[[!tag dev stable]]

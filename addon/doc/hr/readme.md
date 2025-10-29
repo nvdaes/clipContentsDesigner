@@ -9,10 +9,12 @@ lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
 
 ## Tipkovnički prečaci ##
 
-
-*	NVDA+windows+c: U međuspremnik dodaj označeni tekst, brajične znakove u
-  unikodu koji predstavljaju MathML objekte ili znakovni niz koji je označen
   pomoću preglednog kursora.
+
+
+
+
+
 *	NVDA+windows+x: Obriši sadržaj međuspremnika.
 *	Nije dodijeljeno: Kopira u međuspremnik (ili se reže iz njega), s
   mogućnošću da se prethodno od korisnika traži potvrda.
@@ -21,13 +23,6 @@ lijepljenje. Sadržaj međuspremnika se može i izbrisati te prikazati u modusu
   predstaviti u pregledavajućoj poruci, na primjer ako su datoteke ili mape
   kopirane iz Windows Explorera.
 *	Nije dodijeljeno: Prikazuje tekstualni sadržaj međuspremnika kao običan
-  tekst u modusu čitanja ili najavljuje prazno stanje međuspremnika ili
-  sadržaj koji se ne može predstaviti u pregledavajućoj poruci, na primjer
-  ako su datoteke ili mape kopirane iz Windows Explorer.
-## Postavke dodatka „Upravljanje sadržajem međuspremnika” ##
-
-Ova je ploča dostupna u NVDA izborniku, podizbornik Postavke, dijaloški
-okvir Postavke.
 
 Sadrži sljedeće kontrole:
 
@@ -71,53 +66,40 @@ Napomene:
 
 ## Changes for 46.0.0
 
-
-* NVDA will sanitize HTML in browseable messages.
-* Added a button to close browseable messages, in addition to the Escape
   key.
+
 ## Changes for 40.0.0
 
 
-* Added support for Hebrew keyboard.
 
 
-## Promjene u verziji 22.0.0
-
-* Dodan je gumb za obnavljanje zadanih postavki u ploči postavki dodatka.
-* Dodatak se ne može pokrenuti u sigurnom modusu.
-
-
-## Promjene u verziji 17.0
-
-
-* Kompatibilno s NVDA čitačem 2023.1.
-
-## Promjene u verziji 16.0
-
-
-* Zahtijeva NVDA 2022.1 ili noviju verziju.
-
-## Promjene u verziji 15.0
-
-* Naredba za dodavanje teksta u međuspremnik ponovo se prikazuje u
 
   dijaloškom okviru gesta unosa.
+
 * Ispravljene su geste za kopiranje i rezanje s perzijskom tipkovnicom,
   hvala Mohammadhosein Ghezelsofla.
 
-
 ## Promjene u verziji 14.0
+
+
+
 
 * Kompatibilno s NVDA čitačem 2021.1.
 
+
+
+
 ## Changes for 13.0
+
+
+
+
 
 * Ispravljen je problem s vizualnim izgledom u ploči s postavkama. Hvala
   Cyrille Bougot.
 * Poboljšana dokumentacija.
 * Dodatku „Upravljanje sadržajem međuspremnika” je dodana kategorija za
   dodjelu gesta unosa svim naredbama koje su dostupne za ovaj dodatak.
-* Ispravljene su greške prilikom korištenja emuliranja kopiranja u
   preglednicima ako je modus fokusa aktiviran.
 
 * Mogu se dodijeliti različite geste za prikaz tekstualnog sadržaja
@@ -132,7 +114,6 @@ Napomene:
 * Ispravljene su greške prilikom korištenja emuliranja kopiranja u
   programima poput LibreOffice Writer.
 
-
 ## Promjene u verziji 11.0
 
 * Sada je moguće dodati tekst koji je označen preglednim kursorom, pomoću
@@ -140,13 +121,16 @@ Napomene:
   koristi, radi boljw integracijw s novom naredbom NVDA+šift+f9.
 * Zahtijeva NVDA verziju 2019.3 ili noviju.
 
+
+
+
+
 ## Promjene u verziji 10.0
 
 * Ispravljana je greška u dijaloškom okviru za prikaz teksta međuspremnika,
   kad naslov sadrži ne-latinične znakove.
 * Ispravljena je greška kad se koriste funkcije emuliranja izrezivanja i
   kopiranja s arapskim rasporedom tipkovnice. To je ispravio Abdel, dodan je
-  kao autor dodatka.
 
 ## Promjene u verziji 9.0
 
@@ -179,45 +163,40 @@ Napomene:
   control+x commands to copy and cut, and be asked if you want to replace
 
   the clipboard contents when pressing these keystrokes.
+
 *	Ispravljena je dokumentacija za script_add (Windows+NVDA+c).
 
 ## Promjene u verziji 5.0 ##
 
 *	Vizualni prikaz dijaloških okvira je poboljašn, slično dijaloškim okvirima
   koji su prikazani u programu NVDA.
-*	Zahtijeva NVDA verziju 2016.4 ili noviju.
 
+*	Zahtijeva NVDA verziju 2016.4 ili noviju.
 
 ## Promjene u verziji 4.0 ##
 
+
 *	Postavkama dodatka se upravlja NVDA konfiguracijom, tako da je moguće
+
   koristiti standardne profile za spremanje raznih rastavljača te nije
+
+
+
   potrebno kopirati postavke nakon reinstalacije.
+
 *	Sad je moguće izabrati, hoće li dodani tekst biti dodan ispred ili iza
-  postojećeg teksta, koristeći izborno polje „Dodaj tekst ispred podataka
   međuspremnika” u postavkama dodatka.
 
 ## Promjene u verziji 3.0 ##
 
-
 *	Brajičin prikaz MathML objekata se može dodati u privremenu memoriju, ako
   je MathPlayer instaliran.
-*	Ako nema razdvajača, dodat će se samo jedan redak između dodanih segmenata
 
   teksta.
 *	Moguće je odrediti prečac za otvaranje dijaloškog okvira za postavke
-  dodatka.
-*	U dijaloškom okviru za postavke je dodan potvrdni okvir, kojim se odlučuje
   o tome, treba li razdvajač kopirati za uvoz nakon ponovnog instaliranja
-  dodatka.
 
-## Promjene u verziji 2.0 ##
 
-*	Znakovi devanagari pisma se mogu koristiti kao rastavljači između dodanog
   sadržaja.
-
-## Promjene u verziji 1.0 ##
-
-*	Prva verzija.
 
 [[!tag dev stable]]
