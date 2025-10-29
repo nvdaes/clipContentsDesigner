@@ -66,31 +66,16 @@ Huomautuksia:
 * Lisäosan asetuspaneeliin lisätty painike oletusarvojen palauttamista
 * Lisäosaa ei voi käyttää suojatussa tilassa.
 
-
-
-## Muutokset versiossa 15.0
-
-
-
-* Korjattu kopioinnin ja leikkaamisen näppäinkomennot persiankielisellä
-
-* Yhteensopiva NVDA 2021.1:n kanssa.
-## Muutokset versiossa 13.0
-  Bougotille.
-
-
-* Korjattu bugeja käytettäessä kopioinnin emulointia selaimissa selaustilan
 * Voit määrittää eri näppäinkomennot näyttämään leikepöydän tekstisisällön
 
-  joko raakatekstinä tai muotoiltuna HTML:nä.
 
-## Muutokset versiossa 12.0
+
+
 
 * Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa
-  sovelluksissa kuin LibreOffice Writer.
+
 
 ## Muutokset versiossa 11.0
-
 * Nyt on mahdollista lisätä tarkastelukohdistimella merkittyä tekstiä
   tavallisia NVDA-komentoja(NVDA+F9 ja NVDA+F10) käyttäen. Komentoa
   NVDA+Win+F9 ei enää käytetä paremman uuteen NVDA+Vaihto+F9-komentoon

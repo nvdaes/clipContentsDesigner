@@ -64,16 +64,13 @@ Poznámky:
   as raw text or formatted in HTML. The Format to show the clipboard text in
 
 
-## Changes for 12.0
+
 ## Zmeny vo verzii 11.0
 
 
-  NVDA+F10). Nvda+windows+F9 sa už nepoužíva, pre lepšiu integráciu so
-  skratkou nvda+shift+F9.
+
+
 ## Zmeny vo verzii 10.0
-
-
-## Zmeny vo verzii 9.0
 
 * Pridané zobrazenie obsahu schránky v režime prehliadania.
 
@@ -102,18 +99,12 @@ Poznámky:
 
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
-
 *	Opravené vizuálne zobrazenie dialógov doplnku.
-
 *	Vyžaduje NVDA od verzie 2016.4
-
-
 *	Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
 
-  nanovo importovať nastavenia.
 
 *	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
-  koniec alebo na začiatok obsahu schránky.
 
 ## Zmeny vo verzii 3.0 ##
 
@@ -123,7 +114,6 @@ Poznámky:
 *	Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
 
 ## Zmeny vo verzii 2.0 ##
-
 
 *	Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
 [[!tag dev stable]]

@@ -70,8 +70,8 @@ Notes :
   à Mohammadhosein Ghezelsofla.
 
 
-* Correction d'un problème dans la disposition visuelle du panneau des
-  paramètres, grâce à Cyrille Bougot.
+
+
 ## Changements pour la version 12.0
 
 ## Changements pour la version 11.0
@@ -83,8 +83,18 @@ Notes :
 * Correction d'un bogue dans le dialogue présentant le texte du
 
 ## Changements pour la version 9.0
+
+
+
+
+
+
+
+
   presse-papiers n'est pas vide, par exemple si des fichiers ou dossiers
+
   sont en cours de copie.
+
 * Nécessite NVDA 2018.4 ou ultérieur.
 
 ## Changements pour la version 8.0 ##

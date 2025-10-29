@@ -62,6 +62,10 @@ Uwagi:
   dzięki Mohammadhosein Ghezelsofla.
 
 * Kompatybilny z NVDA 2021.1.
+
+
+
+
 ## Changes for 13.0
 
   jeśli tryb koncentracji uwagi jest aktywny.
@@ -78,9 +82,13 @@ Uwagi:
   ustawień NVDA.
 * Wymaga NVDA 2018.2 lub nowszej.
   functionalities at installation, if you choose no, the commands for these
+
   features will be removed, so that you can restore the normal behavior for
 
+
+
 ## Zmiany w wersji 6.0
+
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
 *	Added a dialog to configure the Emulate copy and Emulate cut
@@ -117,7 +125,8 @@ Uwagi:
 *	Teraz można przydzielić skrót do otwierania dialogu ustawień Projektanta
   zawartości schowka.
 *	Dodane pole wyboru, dla wybierania czy separator musi być importowany
-  podczas reinstalacji dodatku.
+  podczas reinsta
+lacji dodatku.
 
 *	Znaki Dewanagari mogą być używane jako separator dodawanej treści.
 

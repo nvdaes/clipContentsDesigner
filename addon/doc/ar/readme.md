@@ -20,6 +20,11 @@ content can also be cleared.
 
 * In the dialog to configure the Emulate copy and Emulate cut
   functionalities at installation, if you choose no, the commands for these
+
+
+
+
+
 # Changes for 6.0
 
 * dded options to choose if available actions should be performed after confirmation.
@@ -42,12 +47,4 @@ content can also be cleared.
 *	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
 
-*	If no separator is set, just a single line will be placed between the
-  added text segments.
-  بين القطع النصية لاستيراده عند إعادة تثبيت الإضافة
-
-
 ## مستجدات الإصدار 2.0 ##
-
-
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

@@ -22,6 +22,11 @@ afișat în modul de navigare.
 
   clipboard: Allows to set a separator which can be used to find the text
   segments once the entire added text is pasted.
+
+
+
+
+
 * Add text before clip data: It's also possible to choose if the added text
   will be appended or prepended.
 * Select the actions which require previous confirmation: You can choose,
@@ -86,20 +91,10 @@ Note:
 * Requires NVDA 2019.3 or later.
 
 ## Modificări în 10.0
-
-* S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
-* S-a rezolvat o problemă întâmpinată la utilizarea copierii și a tăierii
-
-
   navigare.
 * S-a adăugat o opțiune care vă permite să alegeți dacă vor fi sau nu
 * Necesită NVDA 2018.4 sau mai nou.
 
-
-* Setările suplimentului sunt afișate în categoria corespunzătoare a
-* Necesită NVDA 2018.2 sau mai nou.
-
-## Modificări în 7.0
 
 * În dialogul pentru configurarea copierii și tăierii simulate la instalare,
   dacă alegeți nu, comenzile pentru aceste caracteristici vor fi șterse,
@@ -152,10 +147,6 @@ Note:
   separatorul trebuie să fie copiat pentru a fi immportat când reinstalezi
   add-on-ul.
 
-
 ## Modificări din 2.0 ##
-
 *	Caracterele indiene pot fi folosite ca separator între content-ul adăugat.
-
 *	Versiunea inițială.
-[[!tag dev stable]]

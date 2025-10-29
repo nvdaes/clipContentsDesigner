@@ -12,6 +12,11 @@ modo de navegação.
   cursor de exploração, à área de transferência.
 
   exemplo, se ficheiros ou pastas foram copiados do Explorador do Windows.
+
+
+
+
+
 *	Não atribuído: Mostra o conteúdo da área de transferência textual como
   texto simples no modo de navegação, ou anuncia se a área de transferência
   está vazia ou tem conteúdo que não pode ser apresentado numa mensagem
@@ -68,18 +73,13 @@ Notas:
 
 ## Changes for 16.0
 
+
   gestures dialog.
-  Mohammadhosein Ghezelsofla.
-
-* Compatible with NVDA 2021.1.
-## Changes for 13.0
-
-
 
 * Pode atribuir diferentes comandos para mostrar o conteúdo textual da área
   mostrar o texto da área de transferência no painel de definições foi
   modificado em conformidade, para seleccionar as duas opções disponíveis
-## Alterações para 12.0
+
 
 
 * Agora é possível adicionar texto marcado com o cursor de revisão usando
@@ -112,6 +112,11 @@ Notas:
 ## Alterações para a versão 6.0
 
   the Input gestures dialog.
+
+
+
+
+
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace

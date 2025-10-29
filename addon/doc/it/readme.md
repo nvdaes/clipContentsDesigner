@@ -13,6 +13,11 @@ anche essere cancellato e visualizzato  in Modalità Navigazione.
   NVDA+f10).
 
   testo negli appunti.
+
+
+
+
+
 *	Non assegnato: visualizza il testo presente negli appunti in modalità
   navigazione come testo semplice. In alternativa dice se negli appunti è
   presente contenuto che non è possibile mostrare in modalità navigazione,
@@ -67,19 +72,24 @@ Note:
 
 ## Novità nella versione 16.0
 
+
   finestra di dialogo dei gesti di immissione.
+
   Mohammadhosein Ghezelsofla.
 
-* Compatibile con NVDA 2021.1.
-## Changes for 13.0
 
-  copia nei browser con la modalità focus attiva.
+
+
 
 
   degli appunti come testo puro o come HTML. Le scelte possibili nella
+
   finestra Impostazioni per il formato di visualizzazione degli appunti sono
 
+
+
 ## Novità nella versione 12.0
+
 ## Novità nella versione 11.0
 
   utilizzando comandi standard di NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9

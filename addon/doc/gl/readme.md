@@ -97,6 +97,11 @@ Notas:
 ## Cambios para 9.0
 
   exploración.
+
+
+
+
+
 * Engadida unha opción para elixir se se requerirán confirmacións se o
 * Requírese do NVDA 2018.4 ou posterior.
 

@@ -34,7 +34,3 @@ content can also be cleared.
 
 *	첫 출시판.
 [[!tag dev stable]]
-
-
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

@@ -24,16 +24,6 @@ gelöscht werden.
   Aktionen sind: Text hinzufügen, Zwischenablage löschen, Kopieren emulieren
   und Ausschneiden emulieren.
 
-
-
-* Fordern Sie eine Bestätigung an, bevor Sie die ausgewählten Aktionen
-  ausführen, wenn: Sie können wählen, ob immer Bestätigungen angefordert
-  werden sollen, nur wenn Text in der Zwischenablage enthalten ist oder wenn
-  die Zwischenablage nicht leer ist z. B. wenn Sie eine Datei (kein Text)
-  kopiert haben.
-* Legen Sie fest, wie der Text in der Zwischenablage als HTML im Lesemodus
-  dargestellt wird: Wenn Sie die HTML-Auszeichnungssprache lernen, können
-  Sie vorformatierten Text in HTML oder HTML wie im Internetbrowser
   auswählen, damit Sie eine Vorstellung bekommen, wie Ihr HTML-Code in einem
   Internetbrowser von NVDA dargestellt wird. Der Unterschied zwischen
   vorformatiertem und herkömmlichem HTML besteht darin, dass bei der ersten
@@ -72,14 +62,19 @@ Anmerkungen:
   Optionen auszuwählen.
 
 ## Änderungen in 12.0
+
 ## Änderungen in 11.0
+
+
+
+
+
+
+
+
+
   NVDA+shift+f9  besser zu integrieren.
 
-
-* Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
-  Zeichen enthält.
-  zum Ausschneiden und Kopieren mit einem arabischen Tastaturlayout
-  Erweiterung nun hinzugefügt wurde.
 
 ## Änderungen in 9.0
 
@@ -101,6 +96,11 @@ Anmerkungen:
 ## Änderungen in 6.0
 
   the Input gestures dialog.
+
+
+
+
+
 *	Added a dialog to configure the Emulate copy and Emulate cut
 
   the clipboard contents when pressing these keystrokes.
@@ -131,8 +131,3 @@ Anmerkungen:
 
 *	Es wurde ein Kontrollkästchen im Einstellungsdialog hinzugefügt, mit dem
   festgelegt wird, ob die Trennlinie beim erneuten Installieren der
-
-
-## Änderungen in 1.0 ##
-
-*	Erstveröffentlichung.
