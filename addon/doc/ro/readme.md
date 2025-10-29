@@ -26,9 +26,6 @@ afișat în modul de navigare.
   confirmation. Available actions are: add text, clear clipboard, emulate
   copy and emulate cut.
 
-
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
 *	Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
@@ -71,11 +68,8 @@ afișat în modul de navigare.
   dacă alegeți nu, comenzile pentru aceste caracteristici vor fi șterse,
   control+x.
 
-
 ## Modificări în 6.0
-
 *	Added options to choose if available actions should be performed after
-  confirmation.
 
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
@@ -86,13 +80,10 @@ afișat în modul de navigare.
 
   the clipboard contents when pressing these keystrokes.
 
-
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
-## Modificări în 5.0 ##
 
 *	Prezentarea vizuală a dialogului a fost îmbunătățită, aderând la aspectul
-  dialogurilor afișate în NVDA.
 
 *	Necesită NVDA 2016.4 sau mai nou.
 
