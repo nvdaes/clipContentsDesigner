@@ -70,9 +70,6 @@ afișat în modul de navigare.
 
 ## Modificări în 6.0
 
-
-*	Added options to choose if available actions should be performed after
-
 *	Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
 *	Added a dialog to configure the Emulate copy and Emulate cut
