@@ -9,6 +9,7 @@ you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared.
 
 ## Toetsenbordsneltoetsen ##
+
 *	NVDA+windows+c: Add selected text, Unicode braille characters which
   represent MathML objects, or the string which has been marked with the
   review cursor, to the clipboard.
@@ -21,6 +22,7 @@ NVDA-menu, Opties submenu, Invoerhandelingen koppelen dialoogvenster,
 Leesoverzicht categorie.
 
 ## Menu opties ##
+
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 It's also possible to choose if the added text will be appended or prepended.
 
@@ -34,6 +36,7 @@ Input gestures dialog, Configuration category.
 *	Requires NVDA 2016.4 or later.
 
 ## Changes for 4.0 ##
+
 *	Add-on settings are managed from NVDA configuration, so that standard
   profiles can be used to save different separators, and it's not needed to
   copy the settings for importing at reinstallation.
@@ -42,6 +45,7 @@ Input gestures dialog, Configuration category.
   Contents Designer settings dialog.
 
 ## Changes for 3.0 ##
+
 *	Braille representation of MathML objects can be added to the clipboard if
   MathPlayer is installed.
 *	If no separator is set, just a single line will be placed between the
@@ -52,9 +56,11 @@ Input gestures dialog, Configuration category.
   should be copied to be imported when reinstalling the add-on.
 
 ## Veranderingen in 2.0 ##
+
 *	Hindi characters can be used as the separator between added contents.
 
 ## Veranderingen in 1.0 ##
+
 *	Eerste versie.
 
 [[!tag dev stable]]

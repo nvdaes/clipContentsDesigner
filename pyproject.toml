@@ -1,7 +1,3 @@
-[build-system]
-requires = ["setuptools~=72.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "clipContentsDesigner"
 dynamic = ["version"]
@@ -198,7 +194,6 @@ reportUnknownMemberType = false
 [dependency-groups]
 dev = [
 	"SCons==4.8.1",
-	"setuptools~=72.0",
 ]
 lint = [
 	"ruff==0.8.1",
