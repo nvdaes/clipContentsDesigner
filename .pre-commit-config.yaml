@@ -9,7 +9,7 @@ ci:
   # Can't run licenseCheck as it relies on telemetry,
   # which CI blocks.
   # Pyright does not seem to work in pre-commit CI
-  skip: [checkPo, scons-source, checkPot, unitTest, licenseCheck, pyright]
+  skip: [pyright]
   autoupdate_schedule: monthly
   autoupdate_commit_msg: "Pre-commit auto-update"
   autofix_commit_msg: "Pre-commit auto-fix"
@@ -36,7 +36,7 @@ repos:
   hooks:
     # Prevents commits to certain branches
     - id: no-commit-to-branch
-      args: ["--branch", "master", "--branch", "beta", "--branch", "rc"]
+      args: ["--branch", "main"]
     # Checks that large files have not been added. Default cut-off for "large" files is 500kb.
     - id: check-added-large-files
       # POFiles and TTF fonts can't be made smaller
