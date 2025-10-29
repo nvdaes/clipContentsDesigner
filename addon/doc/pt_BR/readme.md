@@ -8,6 +8,8 @@ conteúdo da área de transferência também pode ser limpo e mostrado no modo
 de navegação.
 
 ## Comandos de teclado ##
+
+
 *	NVDA+windows+c: Acrescenta o texto selecionado, os caracteres braille
   Unicode que representem objetos MathML, ou a sequência (string) que foi
   marcada com o cursor de exploração, à área de transferência.
@@ -23,8 +25,6 @@ de navegação.
   está vazia ou tem conteúdos que não podem ser apresentados em uma mensagem
   navegável, por exemplo, se arquivos ou pastas foram copiados do Windows
   Explorer.
-
-
 ## Configurações do Gestor do Conteúdo de Transferência ##
 
 Este painel está disponível no menu do NVDA, submenu Preferências, diálogo
@@ -74,35 +74,49 @@ Notas:
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
-
-
 ## Mudanças na 40.0.0
+
+
 * Adicionado suporte ao teclado hebraico.
 
+
 ## Mudanças na 22.0.0
+
 * Foi adicionado um botão para restaurar os padrões no painel de
   configurações do complemento.
 * O add-on não pode ser executado no modo seguro.
 
+
 ## Mudanças na 17.0
+
+
 * Compatível com o NVDA 2023.1.
 
 ## Mudanças na 16.0
+
+
 * Requer NVDA 2022.1 ou posterior.
 
 ## Mudanças na 15.0
+
 * O comando para adicionar texto à área de transferência é novamente
+
   apresentado na caixa de diálogo de gestos de entrada.
 * Corrigidos os gestos para copiar e cortar com o teclado persa, graças a
   Mohammadhosein Ghezelsofla.
 
+
 ## Mudanças na 14.0
+
 * Compatível com o NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Corrigido um problema no leiaute visual do painel de configurações, graças
   a Cyrille Bougot.
 * Documentação melhorada.
@@ -111,23 +125,29 @@ Notas:
   complemento.
 * Falhas corrigidas ao usar emular cópia em navegadores se o modo de foco
   estiver ativo.
+
 * Você pode atribuir diferentes gestos para mostrar o conteúdo textual da
   área de transferência como texto bruto ou formatado em HTML. O formato
   para mostrar o texto da área de transferência no painel de configurações
   foi modificado conformemente, para selecionar as duas opções disponíveis
+
   para o formato HTML.
 
 ## Mudanças na 12.0
+
 * Falhas corrigidas ao usar emular cópia em aplicativos como o LibreOffice
   Writer.
 
+
 ## Mudanças na 11.0
+
 * Agora é possível adicionar texto marcado com o cursor de exploração usando
   comandos padrão do NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9 não é mais
   usado, por uma melhor integração com o novo comando NVDA+shift+f9.
 * Requer NVDA 2019.3 ou posterior.
 
 ## Mudanças na 10.0
+
 * Corrigida uma falha no diálogo usado para mostrar o texto da área de
   transferência, quando o título continha caracteres não latinos.
 * Corrigido uma falha ao usar os recursos de emulação de corte e cópia com
@@ -165,6 +185,7 @@ Notas:
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
+
   the clipboard contents when pressing these keystrokes.
 *	Corrigida a documentação do script_add (Windows+NVDA+c).
 
@@ -175,6 +196,8 @@ Notas:
 *	Requer NVDA 2016.4 ou posterior.
 
 ## Mudanças na 4.0 ##
+
+
 *	As configurações do complemento são gerenciadas a partir da configuração
   do NVDA, de modo que os perfis padrão podem ser usados para salvar
   separadores diferentes, e não é necessário copiar as configurações para
@@ -184,9 +207,12 @@ Notas:
   dados, no diálogo de opções do gestor de conteúdo da área de
   transferência.
 
+
 ## Mudanças na 3.0 ##
+
 *	Representações braille de objetos MathML podem ser acrescentadas à área de
   transferência se o MathPlayer estiver instalado.
+
 *	Caso nenhum separador seja configurado, apenas uma linha será colocada
   entre os segmentos de texto acrescentados.
 *	Uma tecla de atalho pode ser atribuída para abrir o diálogo de opções do
@@ -195,11 +221,12 @@ Notas:
   separador deve ser copiado para ser importado ao reinstalar o complemento.
 
 ## Mudanças na 2.0 ##
+
 *	Caracteres hindi podem ser usados como o separador entre conteúdos
   acrescentados.
 
 ## Mudanças na 1.0 ##
+
 *	Versão inicial.
 
 [[!tag dev stable]]
-

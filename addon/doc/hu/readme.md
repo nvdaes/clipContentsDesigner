@@ -7,6 +7,8 @@ szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
 tartalma törölhető, illetve megjeleníthető böngésző módban.
 
 ## Billentyűparancsok ##
+
+
 *	NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
   kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
   reprezentáló karaktereket is.
@@ -21,8 +23,6 @@ tartalma törölhető, illetve megjeleníthető böngésző módban.
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
-
-
 ## Clip Contents Designer settings ##
 
 This panel is available from NVDA's menu, Preferences submenu, Settings
@@ -68,56 +68,76 @@ Megjegyzések:
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
-
-
 ## Changes for 40.0.0
+
+
 * Added support for Hebrew keyboard.
 
+
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
+
 ## Changes for 17.0
+
+
 * Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
+
+
 * Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
+
 * The command to add text to clipboard is again presented in the input
+
   gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
+
 ## Changes for 14.0
+
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all
   commands available for this add-on.
+
 * Fixed bugs when using emulate copy in browsers if focus mode is active.
 * You can assign different gestures to show the clipboard textual contents
   as raw text or formatted in HTML. The Format to show the clipboard text in
   the settings panel has being modified accordingly, to select the two
+
   options available for HTML format.
 
 ## Changes for 12.0
+
 * Fixed bugs when using emulate copy in applications like LibreOffice
   Writer.
 
+
 ## A 11.0 változásai
+
 * Most már hozzáfűzhető az áttekintőkurzorral kijelölt szöveg is az NVDA+F9
   és NVDA+F10 billentyűparancsok használatával. A korábban használt
   NVDA+Windows+F9 parancs már nem használható.
 * Az NVDA 2019.3 vagy újabb kiadására van szükség.
 
 ## A 10.0 változásai
+
 * Hiba elhárítva: ha a vágólap tartalmát megjelenítő párbeszédablak címe nem
   latin betűket tartalmaz
 * Hiba elhárítva: problémát okozott az emulált másolás és kivágás arab
@@ -150,6 +170,7 @@ Megjegyzések:
   the Input gestures dialog.
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
+
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
@@ -159,7 +180,9 @@ Megjegyzések:
 *	Javították a bővítmény párbeszédablakának vizuális megjelenítését.
 *	Az NVDA 2016.4 vagy újabb kiadása szükséges
 
+
 ## A 4.0 változásai ##
+
 *	A bővítmény beállításai az NVDA konfigurációjában kezelhetők, így a
   sztenderd profilokat használhatjuk az elválasztók elmentésére, így a
   beállításokat nem kell újra bemásolni az újratelepítéskor történő
@@ -169,10 +192,13 @@ Megjegyzések:
   jelölőnégyzetet a vágólaptartalom-tervező beállítása párbeszédpanelén.
 
 ## A 3.0 változásai ##
+
+
 *	Ha a MathPlayer telepítve van, a MathMl objektumok braille reprezentációja
   kerül hozzáfűzésre a vágólaphoz.
 *	Ha nincs megadva elválasztó karakter, egy üres sor kerül beszúrásra a két
-  szöveg közé.
+
+  *zöveg közé.
 *	Billentyűparancsot adtak hozzá a Vágólaptartalom-tervező beállítás
   ablakának eléréséhez.
 *	Hozzáadtak egy jelölőnégyzetet, mellyel szabályozható, hogy az elválasztó
@@ -180,11 +206,12 @@ Megjegyzések:
   importáláshoz.
 
 ## A 2.0 változásai ##
+
 *	Hindi karakterek is használhatóak az összefűzött szövegek közötti
   elválasztóként.
 
 ## Az 1.0 változásai ##
-*	- Első kiadás
+
+*	* Első kiadás
 
 [[!tag dev stable]]
-

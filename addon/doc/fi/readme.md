@@ -8,6 +8,8 @@ liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
 näyttää selaustilassa.
 
 ## Näppäinkomennot ##
+
+
 *	NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
   MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
 *	NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
@@ -21,8 +23,6 @@ näyttää selaustilassa.
   selaustilassa tai ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on
   sisältöä, jota ei voida näyttää, esim. Resurssienhallinnasta kopioituja
   tiedostoja tai kansioita.
-
-
 ## Leikepöydän sisällön käsittelijän asetukset ##
 
 Tämä paneeli löytyy kohdasta NVDA-valikko > Mukautukset > Asetukset.
@@ -66,50 +66,69 @@ Huomautuksia:
   vahvistuksen pyytämisen ennen näiden komentojen suorittamista.
 
 ## Muutokset versiossa 46.0.0
+
+
 * NVDA siivoaa selattavien viestien HTML-koodin.
 * Lisätty Esc-näppäimen ohelle painike selattavien viestien sulkemista
   varten.
-
-
 ## Muutokset versiossa 40.0.0
+
+
 * Lisätty tuki hepreankieliselle näppäimistölle.
 
+
 ## Muutokset versiossa 22.0.0
+
 * Lisäosan asetuspaneeliin lisätty painike oletusarvojen palauttamista
   varten.
 * Lisäosaa ei voi käyttää suojatussa tilassa.
 
+
 ## Muutokset versiossa 17.0
+
+
 * Yhteensopiva NVDA 2023.1:n kanssa.
 
 ## Muutokset versiossa 16.0
+
+
 * Edellyttää NVDA 2022.4:ää tai uudempaa.
 
 ## Muutokset versiossa 15.0
+
 * Tekstiä leikepöydälle lisäävä komento näytetään taas
+
   Näppäinkomennot-valintaikkunassa.
 * Korjattu kopioinnin ja leikkaamisen näppäinkomennot persiankielisellä
   näppäimistöllä. Kiitokset Mohammadhosein Ghezelsofla'lle.
 
+
 ## Muutokset versiossa 14.0
+
 * Yhteensopiva NVDA 2021.1:n kanssa.
 
 ## Muutokset versiossa 13.0
+
 * Korjattu ongelma asetuspaneelin visuaalisessa ulkoasussa; kiitos Cyrille
   Bougotille.
 * Dokumentaatiota paranneltu.
 * Lisätty Leikepöydän sisällön käsittelijä -kategoria, josta voidaan
+
   määrittää näppäinkomennot kaikille tämän lisäosan komennoille.
 * Korjattu bugeja käytettäessä kopioinnin emulointia selaimissa selaustilan
   ollessa käytössä.
 * Voit määrittää eri näppäinkomennot näyttämään leikepöydän tekstisisällön
+
   joko raakatekstinä tai muotoiltuna HTML:nä.
 
 ## Muutokset versiossa 12.0
+
 * Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa
   sovelluksissa kuin LibreOffice Writer.
 
+
 ## Muutokset versiossa 11.0
+
 * Nyt on mahdollista lisätä tarkastelukohdistimella merkittyä tekstiä
   tavallisia NVDA-komentoja(NVDA+F9 ja NVDA+F10) käyttäen. Komentoa
   NVDA+Win+F9 ei enää käytetä paremman uuteen NVDA+Vaihto+F9-komentoon
@@ -117,6 +136,7 @@ Huomautuksia:
 * Edellyttää NVDA 2019.3:a tai uudempaa.
 
 ## Muutokset versiossa 10.0
+
 * Korjattu ohjelmavirhe leikepöydän sisältämän tekstin näyttämiseen
   käytettävässä valintaikkunassa, kun sen nimi sisälsi ei-latinalaisia
   merkkejä.
@@ -155,6 +175,7 @@ Huomautuksia:
   leikkaamisen emulointi" -toiminnallisuuksien  määrittämistä varten
   lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin
   (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle ja leikepöydän sisällön
+
   korvaamiselle pyydetään vahvistus.
 *	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
 
@@ -164,7 +185,9 @@ Huomautuksia:
   ikkunoiden ulkoasua.
 *	Edellyttää NVDA:n 2016.4-versiota tai uudempaa.
 
+
 ## Muutokset versiossa 4.0 ##
+
 *	NVDA hallitsee nyt lisäosan asetuksia, jotta profiilien käyttäminen eri
   erottimien tallentamiseen olisi mahdollista, eikä asetusten kopiointia
   tarvita niiden tuomiseksi asennettaessa lisäosaa uudelleen.
@@ -173,9 +196,12 @@ Huomautuksia:
   lisätty teksti leikepöydällä jo olevan tekstin loppuun vai alkuun.
 
 ## Muutokset versiossa 3.0 ##
+
+
 *	MathML-objekteja kuvaavat pistekirjoitusmerkit voidaan lisätä
   leikepöydälle, mikäli MathPlayer on asennettu.
 *	Mikäli erotinta ei ole määritetty, tekstiosuuksien väliin lisätään yksi
+
   tyhjä rivi.
 *	Leikepöydän sisällön käsittelijän asetusvalintaikkunan avaamista varten
   voidaan määrittää pikanäppäin.
@@ -184,11 +210,12 @@ Huomautuksia:
   tuoda asennettaessa lisäosaa uudelleen.
 
 ## Muutokset versiossa 2.0 ##
+
 *	Hindinkielisiä merkkejä voidaan käyttää tekstiosuuksien välisenä
   erottimena.
 
 ## Muutokset versiossa 1.0 ##
+
 *	Ensimmäinen versio.
 
 [[!tag dev stable]]
-

@@ -7,6 +7,8 @@ chcesz połączyć sekcje tekstu gotowe do wklejenia.  Zawartość schowka możn
 również wyczyścić i wyświetlić w trybie przeglądania.
 
 ## Skróty klawiszowe ##
+
+
 *	NVDA+windows+c: dodaje oznaczony tekst, znak brajlowski we formacie
   Unicode przedstawiający obiekty MathML, lub ciąg znaków zaznaczony za
   pomocą kursora przeglądu do schowka.
@@ -22,8 +24,6 @@ również wyczyścić i wyświetlić w trybie przeglądania.
   zawartość, której nie można przedstawić w wiadomości z możliwością
   przeglądania, na przykład jeśli pliki lub foldery zostały skopiowane z
   Eksploratora Windows.
-
-
 ## Ustawienia Projektanta zawartości klipu ##
 
 Ten panel jest dostępny z menu NVDA, podmenu Preferencje, okna dialogowego
@@ -70,51 +70,70 @@ Uwagi:
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
-
-
 ## Changes for 40.0.0
+
+
 * Added support for Hebrew keyboard.
 
+
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
+
 ## Zmiany w wersji 17.0
+
+
 * Kompatybilny z NVDA 2023.1.
 
 ## Zmiany w wersji 16.0
+
+
 * Wymagana wersja NVDA 2022.1 lub nowsza.
 
 ## Zmiany w wersji 15.0
+
 * Polecenie dodawania tekstu do schowka jest ponownie wyświetlane w oknie
+
   dialogowym gestów wprowadzania.
 * Naprawiono gesty do kopiowania i cięcia za pomocą perskiej klawiatury,
   dzięki Mohammadhosein Ghezelsofla.
 
+
 ## Zmiany w wersji 14.0
+
 * Kompatybilny z NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Naprawiono błąd w układzie wizualnym panelu ustawień, dzięki Cyrille
   Bougot.
 * Ulepszona dokumentacja.
 * Dodano kategorię Clip Contents Designer, aby przypisać gesty wprowadzania
   do wszystkich poleceń dostępnych dla tego dodatku.
 * Naprawiono błędy podczas korzystania z emulacji kopii w przeglądarkach,
+
   jeśli tryb koncentracji uwagi jest aktywny.
 * Możesz przypisać różne gesty, aby wyświetlić zawartość tekstową schowka
   jako tekst surowy lub sformatowany w formacie HTML. Format wyświetlania
   tekstu schowka w panelu ustawień został odpowiednio zmodyfikowany, aby
+
   wybrać dwie opcje dostępne dla formatu HTML.
 
 ## Zmiany w wersji 12.0
+
 * Naprawiono błędy podczas korzystania z emulacji kopii w aplikacjach takich
   jak LibreOffice Writer.
 
+
 ## Zmiany w wersji 11.0
+
 * Teraz możliwe jest dodanie tekstu oznaczonego kursorem recenzji za pomocą
   standardowych poleceń NVDA (NVDA + f9 i NVDA + f10). NVDA+windows+f9 nie
   jest już używany, co zapewnia lepszą integrację z nowym poleceniem
@@ -122,6 +141,7 @@ Uwagi:
 * Wymaga NVDA 2019.3 lub nowszego.
 
 ## Zmiany w wersji 10.0
+
 * Naprawiono błąd w oknie dialogowym używanym do wyświetlania tekstu
   schowka, gdy jego tytuł zawiera znaki inne niż łacińskie.
 * Naprawiono błąd podczas korzystania z funkcji emulacji wycinania i
@@ -157,6 +177,7 @@ Uwagi:
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
+
   the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
@@ -166,7 +187,9 @@ Uwagi:
   wyświetlanymi dialogami w NVDA.
 *	Wymaga NVDA 2016.4 lub nowszą wersje.
 
+
 ## Zmiany w wersji 4.0 ##
+
 *	Ustawieniami dodatku teraz można zarządzać z samej konfiguracji NVDA, i z
   tego powodu teraz profile konfiguracyjne mogą być użyte do zachowywania
   różnych separatorów, a właściwie, teraz staje się niepotrzebnym kopiowanie
@@ -175,8 +198,11 @@ Uwagi:
   początku, używając pola wyboru Dodaj tekst przed danymi Clip z dialogu
   ustawień projektanta zawartości schowka.
 
+
 ## Zmiany w wersji 3.0 ##
+
 *	Wyświetlony brajl z MathML mogą być dodany do schowka, jeżeli MathPlayer
+
   jest zainstalowany.
 *	Jeżeli separator nie jest ustawiony, będzie wstawiona pojedyńcza linia
   pomiędzy odcinkami dodanego tekstu.
@@ -186,10 +212,11 @@ Uwagi:
   podczas reinstalacji dodatku.
 
 ## Zmiany w wersji 2.0 ##
+
 *	Znaki Dewanagari mogą być używane jako separator dodawanej treści.
 
 ## Zmiany dla 1.0 ##
+
 *	Pierwsze wydanie.
 
 [[!tag dev stable]]
-

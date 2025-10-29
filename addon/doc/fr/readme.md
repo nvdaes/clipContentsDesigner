@@ -7,6 +7,8 @@ peut être utile lorsque vous souhaitez joindre des portions de texte prêt
 pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 
 ## Commandes clavier ##
+
+
 *	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
@@ -22,8 +24,6 @@ pour le collage. Le contenu du presse-papiers peut aussi être vidé.
   a un contenu qui ne peut pas être présenté dans un message consultable,
   par exemple si des fichiers ou des dossiers ont été copiés à partir de
   l'explorateur Windows.
-
-
 ## Paramètres de Clip Contents Designer ##
 
 Ce panneau est disponible depuis le menu de NVDA, le sous-menu Préférences,
@@ -76,35 +76,49 @@ Notes :
   correspondant à ces frappes.
 
 ## Changements pour la version 46.0.0
+
+
 * NVDA expurgera le HTML dans les messages navigables.
 * Ajout d'un bouton pour fermer les messages navigables, en plus de la
   touche Échap.
-
-
 ## Changements pour la version 40.0.0
+
+
 * Ajout de la prise en charge du clavier hébreu.
 
+
 ## Changements pour la version 22.0.0
+
 * Ajout d'un bouton pour restaurer aux paramètres par défaut dans le panneau
   de paramètres de l'extension.
 * L'extension ne peut pas être exécuté en mode sécurisé.
 
+
 ## Changements pour la version 17.0
+
+
 * Compatible avec NVDA 2023.1.
 
 ## Changements pour la version 16.0
+
+
 * Nécessite NVDA 2022.1 ou ultérieur.
 
 ## Changements pour la version 15.0
+
 * La commande pour ajouter du texte au presse-papiers est à nouveau
+
   présentée dans la boîte de dialogue des gestes de commande.
 * Correction des gestes pour copier et couper avec le clavier persan, grâce
   à Mohammadhosein Ghezelsofla.
 
+
 ## Changements pour la version 14.0
+
 * Compatible avec NVDA 2021.1.
 
 ## Changements pour la version 13.0
+
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
 * Documentation améliorée.
@@ -112,17 +126,22 @@ Notes :
   d'entrée à toutes les commandes disponibles pour cette extension.
 * Correction de bugs lors de l'utilisation de la copie d'émulation dans les
   navigateurs si le mode focus est actif.
+
 * Vous pouvez assigner différents gestes pour afficher le contenu textuel du
   presse-papiers sous forme de texte brut ou formaté en HTML. Le Format pour
   afficher le texte du presse-papiers dans le panneau des paramètres a été
   modifié en conséquence, pour sélectionner les deux options disponibles
+
   pour le format HTML.
 
 ## Changements pour la version 12.0
+
 * Correction de bogues lors de l'utilisation de l'émulation de copie dans
   les applications telles que LibreOffice Writer.
 
+
 ## Changements pour la version 11.0
+
 * Il est maintenant possible d'ajouter du texte marqué avec le curseur de
   revue à l'aide de commandes standards de NVDA (NVDA+f9 et
   NVDA+f10). NVDA+Windows+f9 n'est plus utilisé pour une meilleure
@@ -130,6 +149,7 @@ Notes :
 * Nécessite NVDA 2019.3 ou ultérieur.
 
 ## Changements pour la version 10.0
+
 * Correction d'un bogue dans le dialogue présentant le texte du
   presse-papiers, quand son titre contient des caractères non latins.
 * Correction d'un bogue lors de l'utilisation des fonctionnalités
@@ -168,6 +188,7 @@ Notes :
   copier et Émuler couper lors de l'installation. Cela permet d'ajouter les
   commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si
   vous voulez remplacer le contenu du presse-papiers en appuyant sur ces
+
   combinaisons de touches.
 *	Correction de la documentation pour le script_add (Windows+NVDA+c).
 
@@ -178,6 +199,8 @@ Notes :
 *	Nécessite NVDA 2016.4 ou ultérieur.
 
 ## Changements pour la version 4.0 ##
+
+
 *	Les paramètres de l'extension sont gérés à partir de la configuration
   NVDA, afin que les profils standard puisse être utilisés pour enregistrer
   des séparateurs différents, et les paramètres n'ont pas besoin d'être
@@ -188,9 +211,12 @@ Notes :
   de Clip Contents Designer.
 
 ## Changements pour la version 3.0 ##
+
+
 *	La représentation en braille des objets MathML peut être ajoutée dans le
   presse-papiers si MathPlayer est installé.
 *	Si aucun séparateur n'est définie, juste une seule ligne sera placée entre
+
   les segments du texte ajouté.
 *	Un raccourci peut être assigné pour ouvrir le dialogue paramètres Clip
   Contents Designer.
@@ -199,11 +225,12 @@ Notes :
   réinstallation de l'extension.
 
 ## Changements pour la version 2.0 ##
+
 *	Les caractères Hindous peuvent être utilisés comme séparateur entre les
   contenus concaténés.
 
 ## Changements pour la version 1.0 ##
+
 *	Première version.
 
 [[!tag dev stable]]
-

@@ -8,6 +8,8 @@ Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
 gelöscht werden.
 
 ## Tastenkombinationen ##
+
+
 *	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
   Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem NVDA-Cursor
   markiert wurde, zur Zwischenablage hinzu.
@@ -23,8 +25,6 @@ gelöscht werden.
   Inhalte enthält, die nicht in einer darstellbaren Nachricht angezeigt
   werden können, z. B. wenn Dateien oder Ordner im dem Windows Explorer
   kopiert wurden.
-
-
 ## Einstellungen für den Zwischenablagenverwalter ##
 
 Diese Kategorie finden Sie im NVDA_Menü, unter Optionen und Einstellungen.
@@ -75,35 +75,49 @@ Anmerkungen:
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
-
-
 ## Changes for 40.0.0
+
+
 * Added support for Hebrew keyboard.
 
+
 ## Änderungen in 22.0.0
+
 * Es wurde eine Schaltfläche zum Wiederherstellen der Standard-Einstellungen
   im den Einstellungen der NVDA-Erweiterung hinzugefügt.
 * Die NVDA-Erweiterung läuft nicht im geschützten Modus.
 
+
 ## Änderungen in 17.0
+
+
 * Kompatibel mit NVDA 2023.1.
 
 ## Änderungen in 16.0
+
+
 * NVDA 2022.1 oder neuer wird benötigt.
 
 ## Änderungen in 15.0
+
 * Der Befehl zum Hinzufügen von Text in die Zwischenablage wird wieder im
+
   Dialogfeld für die Tastenbefehle angezeigt.
 * Tastenkombinationen zum Kopieren und Ausschneiden mit persischer Tastatur
   behoben, dank Mohammad Hosein Ghezelsofla.
 
+
 ## Änderungen in 14.0
+
 * Kompatibel mit NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
   Einstellungsfelds behoben.
 * Verbesserte Dokumentation.
@@ -111,17 +125,22 @@ Anmerkungen:
   allen verfügbaren Befehlen Tastenkombinationen zugewiesen werden können.
 * Fehler bei der Verwendung der Emulationskopie im Lesemodus behoben, wenn
   der Fokusmodus aktiv ist.
+
 * Sie können verschiedene Gesten zuweisen, um den Textinhalt der
   Zwischenablage als Rohtext oder in HTML formatiert anzuzeigen. Das Format
   zum Anzeigen des Textes in der Zwischenablage im Einstellungsfeld wurde
   entsprechend geändert, um die beiden für das HTML-Format verfügbaren
+
   Optionen auszuwählen.
 
 ## Änderungen in 12.0
+
 * Fehler bei der Verwendung von Emulationskopien in Anwendungen wie
   LibreOffice Writer behoben.
 
+
 ## Änderungen in 11.0
+
 * Jetzt ist es möglich, Text mit den Standardbefehlen des NVDA-Cursors
   (NVDA+f9 und NVDA+f10) zu markieren und in die Zwischenablage zu
   kopieren. NVDA+Windows+f9 wird nicht mehr verwendet, um dem neuen Befehl
@@ -129,6 +148,7 @@ Anmerkungen:
 * Erfordert NVDA 2019.3 oder höher.
 
 ## Änderungen in 10.0
+
 * Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
   Text der Zwischenablage anzuzeigen, wenn sein Titel nicht-lateinische
   Zeichen enthält.
@@ -168,6 +188,7 @@ Anmerkungen:
 *	Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
+
   the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
@@ -178,6 +199,8 @@ Anmerkungen:
 *	Benötigt NVDA 2016.4 oder höher.
 
 ## Änderungen in 4.0 ##
+
+
 *	Erweiterungseinstellungen werden von der NVDA-Konfiguration verwaltet, so
   dass Standardprofile verwendet werden können, um verschiedene Trennlinien
   zu speichern. Es ist nicht erforderlich, die Einstellungen für den Import
@@ -187,9 +210,12 @@ Anmerkungen:
   Daten der Zwischenablage hinzufügen im Einstellungsdialog der Erweiterung
   verwenden.
 
+
 ## Änderungen in 3.0 ##
+
 *	Braille-Darstellung von MathML-Objekten können bei installiertem
   MathPlayer zur Zwischenablage hinzugefügt werden.
+
 *	Wenn kein Trennzeichen gesetzt ist, wird nur eine einzige Linie zwischen
   den angehängten Textsegmenten platziert.
 *	Sie können ein Tastenkürzel zum Öffnen des Einstellungsdialogs zuweisen.
@@ -198,11 +224,12 @@ Anmerkungen:
   Erweiterung für den Import kopiert werden soll.
 
 ## Änderungen in 2.0 ##
+
 *	Indische Zeichen können nun als Trennzeichen zwischen kopierten Inhalten
   verwendet werden.
 
 ## Änderungen in 1.0 ##
+
 *	Erstveröffentlichung.
 
 [[!tag dev stable]]
-

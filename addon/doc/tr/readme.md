@@ -1,16 +1,17 @@
 # Pano İçerik Düzenleyicisi #
+
 *	Yazarlar: Noelia ve Abdel.
 
 Bu eklenti, panoya metin eklemek için kullanılır ve bu, metin bölümlerini yapıştırmaya hazır bir şekilde birleştirmek istediğinizde yararlı olabilir.
 Pano içeriği ayrıca temizlenebilir ve göz atma modunda gösterilebilir.
 
 ## Klavye komutları ##
+
 *	NVDA+windows+c: Seçilen metni, MathML nesnelerini temsil eden Unicode braille karakterlerini veya inceleme imleciyle işaretlenmiş dizeyi panoya ekler.
 *	NVDA+Windows+X: Pano içeriğini temizler.
-*	 Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme olasılığı ile.
-*	 Atanmamış: Pano metnini tarama modunda HTML olarak gösterir. Pano boşsa ya da Windows Gezgini'nden kopyalanan dosyalar veya klasörler gibi tarama modunda görüntülenemeyen içeriklere sahipse bunu sesli olarak bildirir.
-*	 Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak gösterir. Panonun boş olup olmadığını veya örneğin dosyalar ya da klasörler Windows Gezgini'nden kopyalanmışsa göz atılabilir bir iletide gösterilemeyen içeriğe sahip olup olmadığını bildirir.
-
+* Atanmamış: Panoya kopyalar (veya panodan keser), önceden onay istenme olasılığı ile.
+* Atanmamış: Pano metnini tarama modunda HTML olarak gösterir. Pano boşsa ya da Windows Gezgini'nden kopyalanan dosyalar veya klasörler gibi tarama modunda görüntülenemeyen içeriklere sahipse bunu sesli olarak bildirir.
+* Atanmamış: Metinsel pano içeriğini tarama kipi modunda düz metin olarak gösterir. Panonun boş olup olmadığını veya örneğin dosyalar ya da klasörler Windows Gezgini'nden kopyalanmışsa göz atılabilir bir iletide gösterilemeyen içeriğe sahip olup olmadığını bildirir.
 
 ## Pano İçerik Düzenleyicisi Ayarları ##
 
@@ -32,31 +33,38 @@ Notlar:
 * Kopyalayı taklit et ve kesme komutlarını taklit et, bu özellikler etkinleştirildiğinde, eklentinin kontrol+c ve control+x kontrolünü ele alacağı anlamına gelir. Bu, bu tuş vuruşlarına karşılık gelen eylemleri gerçekleştirmeden önce bir onay istenip verilmeyeceğini seçecektir.
 
 ## 46.0.0 için Değişiklikler
+
 * NVDA, göz atılabilir iletilerdeki HTML'yi sterilize edecektir.
 * Göz atılabilir mesajları kapatmak için Escape tuşuna ek olarak bir düğme eklendi.
 
-
 ## 40.0.0 için Değişiklikler
+
 * İbranice klavye için destek eklendi.
 
 ## 22.0.0 için Değişiklikler
+
 * Eklenti ayarları panelinde varsayılanları geri yüklemek için bir düğme eklendi.
 * Eklenti güvenli modda çalıştırılamaz.
 
 ## 17.0 için Değişiklikler
+
 * NVDA 2023.1 ile uyumlu.
 
 ## 16.0 için Değişiklikler
+
 * NVDA 2022.1 veya sonraki bir sürümü gerektirir.
 
 ## 15.0 için Değişiklikler
+
 * Panoya metin ekleme komutu, girdi hareketleri iletişim kutusuna tekrar eklendi.
 * Mohammadhosein Ghezelsofla sayesinde Farsça klavyeyle kopyalama ve kesme hareketleri düzeltildi.
 
 ## 14.0 için Değişiklikler
+
 * NVDA 2021.1 ile uyumlu.
 
 ## 13.0 için Değişiklikler
+
 * Ayarlar panelinin görsel düzenindeki bir sorun düzeltildi, teşekkürler Cyrille Bougot.
 * Dokümantasyon (yardım dosyaları) geliştirildi.
 * Eklenti için kullanılabilen tüm komutlara girdi hareketleri atamak için bir Pano İçerik Düzenleyicisi kategorisi eklendi.
@@ -64,13 +72,16 @@ Notlar:
 * Pano metin içeriklerini ham metin veya HTML şeklinde biçimlendirilmiş olarak göstermek için farklı hareketler atayabilirsiniz. Ayarlar panelinde pano metnini gösterecek biçim, HTML biçimi için mevcut iki seçeneği seçmek üzere düzenlendi.
 
 ## 12.0 için Değişiklikler
+
 * LibreOffice Writer gibi uygulamalarda Kopyalamayı taklit et kullanırken oluşan hatalar düzeltildi.
 
 ## 11.0 için Değişiklikler
+
 * Artık NVDA'nın standart komutlarını (NVDA+f9 ve NVDA+f10) kullanarak inceleme imleciyle işaretlenmiş metni eklemek mümkündür. Yeni NVDA+shift+f9 komutuyla daha iyi bir entegrasyon için NVDA+windows+f9 artık kullanılmamaktadır.
 * NVDA 2019.3 veya sonraki bir sürümü gerektirir.
 
 ## 10.0 için Değişiklikler
+
 * Başlık latin olmayan karakterler içerdiğinde pano metnini göstermek için kullanılan iletişim kutusundaki bir hata düzeltildi.
 * Arapça klavye düzeniyle Kesmeyi taklit et ve Kopyalamayı taklit et özelliklerini kullanırken oluşan bir hata düzeltildi. Bu, Abdel tarafından düzeltildi, eklenti yazar olarak eklendi.
 
@@ -91,9 +102,9 @@ Notlar:
 
 ## 6.0 için Değişiklikler
 
-*	 Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini seçmek için seçenekler eklendi.
+* Onaydan sonra mevcut eylemlerin gerçekleştirilip gerçekleştirilmeyeceğini seçmek için seçenekler eklendi.
 *	Girdi hareketleri iletişim kutusundan atanabilen Kopyalamayı taklit et ve Kesmeyi taklit et komutları eklendi.
-*	 Yükleme sırasında Kopyalamayı taklit et ve Kesmeyi taklit et işlevlerini yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek için control+c ve control+x komutlarının eklenmesine ve bu tuş vuruşlarına basıldığında pano içeriğini değiştirmek isteyip istemediğinizin sorulmasına olanak tanır.
+* Yükleme sırasında Kopyalamayı taklit et ve Kesmeyi taklit et işlevlerini yapılandırmak için bir iletişim kutusu eklendi. Bu, kopyalamak ve kesmek için control+c ve control+x komutlarının eklenmesine ve bu tuş vuruşlarına basıldığında pano içeriğini değiştirmek isteyip istemediğinizin sorulmasına olanak tanır.
 *	Belgeler script_add (Windows+NVDA+c) için düzeltildi.
 
 ## 5.0 için Değişiklikler ##
@@ -102,17 +113,21 @@ Notlar:
 *	NVDA 2016.4 veya sonraki bir sürümü gerektirir.
 
 ## 4.0 için Değişiklikler ##
+
 *	Eklenti ayarları NVDA konfigürasyonundan yönetilir, böylece farklı ayraçları kaydetmek için standart profiller kullanılabilir ve yeniden kurulum sırasında içe aktarma için ayarların kopyalanması gerekmez.
 *	Artık, Pano İçerik düzenleyicisi ayarları iletişim kutusundaki metni pano verilerinden önce ekle onay kutusunu kullanarak, eklenecek metnin başa mı yoksa sona mı ekleneceğini seçmek mümkündür.
 
 ## 3.0 için Değişiklikler ##
+
 *	MathPlayer kuruluysa, MathML nesnelerinin Braille gösterimi panoya eklenebilir.
 *	Ayraç ayarlanmazsa, eklenen metin bölümleri arasına yalnızca tek bir satır yerleştirilir.
 *	Pano İçerik Düzenleyicisi ayarları iletişim kutusunu açmak için bir kısayol atanabilir.
 *	Eklentiyi yeniden yüklerken içe aktarılmak üzere ayırıcının kopyalanıp kopyalanmayacağını seçmek için ayarlar iletişim kutusuna bir onay kutusu eklendi.
 
 ## 2.0 için Değişiklikler ##
+
 *	Hintçe karakterler, eklenen içerikler arasında ayraç olarak kullanılabilir.
 
 ## 1.0 için Değişiklikler ##
+
 *	İlk sürüm.
