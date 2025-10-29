@@ -39,8 +39,6 @@ repos:
       args: ["--branch", "main"]
     # Checks that large files have not been added. Default cut-off for "large" files is 500kb.
     - id: check-added-large-files
-      # POFiles and TTF fonts can't be made smaller
-      exclude_types: ["pofile", "ttf"]
     # Checks python syntax
     - id: check-ast
     # Checks for filenames that will conflict on case insensitive filesystems (the majority of Windows filesystems, most of the time)
@@ -63,31 +61,10 @@ repos:
     - id: check-toml
     # Validates YAML files.
     - id: check-yaml
-    # Validates XML files.
-    - id: check-xml
     # Ensures that links to lines in files under version control point to a particular commit.
     - id: check-vcs-permalinks
     # Avoids using reserved Windows filenames.
     - id: check-illegal-windows-names
-    # Checks that tests are named test_*.py.
-    - id: name-tests-test
-      args: ["--unittest"]
-      # Exclude Python files under `tests/` that aren't unittest files.
-      # This is a Python verbose regular expression.
-      # See https://docs.python.org/3/library/re.html#re.VERBOSE
-      exclude: |
-        (?x)^tests/(
-          checkPot.py |  # Doesn't use unittest
-          system |  # Uses robot
-          unit/ (
-            # Test helpers
-            textProvider.py |
-            extensionPointTestHelpers.py |
-            objectProvider.py |
-            test_speechManager/speechManagerTestHarness.py
-          )
-        )
-
 - repo: https://github.com/asottile/add-trailing-comma
   rev: v3.2.0
   hooks:
