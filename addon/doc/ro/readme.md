@@ -1,6 +1,6 @@
 # Clip Contents Designer #
 
-*	Autori: Noelia și Abdel.
+* Autori: Noelia și Abdel.
 
 Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
 fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
@@ -8,21 +8,21 @@ a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățat și
 afișat în modul de navigare.
 
 ## Comenzi de taste ##
-*	NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
+
+* NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
   reprezintă obiectele MathML, sau string-ul care a fost marcat cu cursorul
   de vizualizare, pe planșetă.
-*	NVDA+Windows+X: Curăță contentul de pe planșetă.
-*	Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+* NVDA+Windows+X: Curăță contentul de pe planșetă.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
   of being asked for a previous confirmation.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
-
 
 ## Clip Contents Designer settings ##
 
@@ -61,42 +61,49 @@ It contains the following controls:
 
 Note:
 
-*	Confirmations won't be requested when a message box of NVDA is still
+* Confirmations won't be requested when a message box of NVDA is still
   opened. In those cases, actions will be inmediately performed.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
 
-
 ## Changes for 40.0.0
+
 * Added support for Hebrew keyboard.
 
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
+
 * Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
+
 * Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
+
 * The command to add text to clipboard is again presented in the input
   gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
 ## Changes for 14.0
+
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -109,16 +116,19 @@ Note:
   options available for HTML format.
 
 ## Changes for 12.0
+
 * Fixed bugs when using emulate copy in applications like LibreOffice
   Writer.
 
 ## Changes for 11.0
+
 * Now it's possible to add text marked with the review cursor using standard
   commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
   used, for a better integration with the new NVDA+shift+f9 command.
 * Requires NVDA 2019.3 or later.
 
 ## Modificări în 10.0
+
 * S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
   planșetă când titlul său conținea caractere nelatine.
 * S-a rezolvat o problemă întâmpinată la utilizarea copierii și a tăierii
@@ -149,46 +159,49 @@ Note:
 
 ## Modificări în 6.0
 
-*	Added options to choose if available actions should be performed after
+* Added options to choose if available actions should be performed after
   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
+* Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
+* Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+* Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Modificări în 5.0 ##
 
-*	Prezentarea vizuală a dialogului a fost îmbunătățită, aderând la aspectul
+* Prezentarea vizuală a dialogului a fost îmbunătățită, aderând la aspectul
   dialogurilor afișate în NVDA.
-*	Necesită NVDA 2016.4 sau mai nou.
+* Necesită NVDA 2016.4 sau mai nou.
 
 ## Modificări din 4.0 ##
-*	Setările suplimentului sunt gestionate din configurarea NVDA, deci
+
+* Setările suplimentului sunt gestionate din configurarea NVDA, deci
   profilurile implicite pot fi folosite pentru a salva diferite separatoare,
   și nu este nevoie să copiezi setările pentru a le importa la reinstalare.
-*	Acum este posibilă selectarea dacă textul adăugat va fi anexat sau
+* Acum este posibilă selectarea dacă textul adăugat va fi anexat sau
   prefixat, utilizând căsuța Adăugare text din dialogul de setări al Clip
   Contents Designer-ului.
 
 ## Modificări din 3.0 ##
-*	Reprezentarea Braille din obiectele MathML poate fi adăugat pe planșetă
+
+* Reprezentarea Braille din obiectele MathML poate fi adăugat pe planșetă
   dacă MathPlayer este instalat.
-*	Dacă niciun separator nu este setat, o singură linie va fi adăugată între
+* Dacă niciun separator nu este setat, o singură linie va fi adăugată între
   segmentele textului adăugat.
-*	O scurtătură poate fi definită pentru a deschide setările Clip Contents
+* O scurtătură poate fi definită pentru a deschide setările Clip Contents
   Designer-ului.
-*	A fost adăugată o căsuță în dialogul de setări, pentru a selecta dacă
+* A fost adăugată o căsuță în dialogul de setări, pentru a selecta dacă
   separatorul trebuie să fie copiat pentru a fi immportat când reinstalezi
   add-on-ul.
 
 ## Modificări din 2.0 ##
-*	Caracterele indiene pot fi folosite ca separator între content-ul adăugat.
+
+* Caracterele indiene pot fi folosite ca separator între content-ul adăugat.
 
 ## Modificări din 1.0 ##
-*	Versiunea inițială.
+
+* Versiunea inițială.
 
 [[!tag dev stable]]
-
