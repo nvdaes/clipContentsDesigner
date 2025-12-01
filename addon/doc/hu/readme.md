@@ -1,27 +1,27 @@
 # Vágólap tartalomtervező #
 
-*	Készítők: Noelia, Abdel.
+* Készítők: Noelia, Abdel.
 
 A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
 szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
 tartalma törölhető, illetve megjeleníthető böngésző módban.
 
 ## Billentyűparancsok ##
-*	NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
+
+* NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
   kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
   reprezentáló karaktereket is.
-*	NVDA+windows+x: Vágólap tartalom törlése.
-*	Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
+* NVDA+windows+x: Vágólap tartalom törlése.
+* Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
   vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
-
 
 ## Clip Contents Designer settings ##
 
@@ -60,42 +60,49 @@ It contains the following controls:
 
 Megjegyzések:
 
-*	Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
+* Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
   megerősítést a vágólapműveletek előtt, de attól még végrehajtja azokat.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
 
-
 ## Changes for 40.0.0
+
 * Added support for Hebrew keyboard.
 
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
+
 * Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
+
 * Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
+
 * The command to add text to clipboard is again presented in the input
   gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
 ## Changes for 14.0
+
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -108,16 +115,19 @@ Megjegyzések:
   options available for HTML format.
 
 ## Changes for 12.0
+
 * Fixed bugs when using emulate copy in applications like LibreOffice
   Writer.
 
 ## A 11.0 változásai
+
 * Most már hozzáfűzhető az áttekintőkurzorral kijelölt szöveg is az NVDA+F9
   és NVDA+F10 billentyűparancsok használatával. A korábban használt
   NVDA+Windows+F9 parancs már nem használható.
 * Az NVDA 2019.3 vagy újabb kiadására van szükség.
 
 ## A 10.0 változásai
+
 * Hiba elhárítva: ha a vágólap tartalmát megjelenítő párbeszédablak címe nem
   latin betűket tartalmaz
 * Hiba elhárítva: problémát okozott az emulált másolás és kivágás arab
@@ -144,47 +154,50 @@ Megjegyzések:
 
 ## A 6.0 változásai
 
-*	Added options to choose if available actions should be performed after
+* Added options to choose if available actions should be performed after
   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
+* Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
+* Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+* Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Az 5.0 változásai ##
 
-*	Javították a bővítmény párbeszédablakának vizuális megjelenítését.
-*	Az NVDA 2016.4 vagy újabb kiadása szükséges
+* Javították a bővítmény párbeszédablakának vizuális megjelenítését.
+* Az NVDA 2016.4 vagy újabb kiadása szükséges
 
 ## A 4.0 változásai ##
-*	A bővítmény beállításai az NVDA konfigurációjában kezelhetők, így a
+
+* A bővítmény beállításai az NVDA konfigurációjában kezelhetők, így a
   sztenderd profilokat használhatjuk az elválasztók elmentésére, így a
   beállításokat nem kell újra bemásolni az újratelepítéskor történő
   importáláskor.
-*	Most már ki lehet választani, hogy a hozzáadni kívánt szöveget a tartalom
+* Most már ki lehet választani, hogy a hozzáadni kívánt szöveget a tartalom
   elé vagy mögé csatoljuk, ha használjuk a "vágólap tartalma elé"
   jelölőnégyzetet a vágólaptartalom-tervező beállítása párbeszédpanelén.
 
 ## A 3.0 változásai ##
-*	Ha a MathPlayer telepítve van, a MathMl objektumok braille reprezentációja
+
+* Ha a MathPlayer telepítve van, a MathMl objektumok braille reprezentációja
   kerül hozzáfűzésre a vágólaphoz.
-*	Ha nincs megadva elválasztó karakter, egy üres sor kerül beszúrásra a két
+* Ha nincs megadva elválasztó karakter, egy üres sor kerül beszúrásra a két
   szöveg közé.
-*	Billentyűparancsot adtak hozzá a Vágólaptartalom-tervező beállítás
+* Billentyűparancsot adtak hozzá a Vágólaptartalom-tervező beállítás
   ablakának eléréséhez.
-*	Hozzáadtak egy jelölőnégyzetet, mellyel szabályozható, hogy az elválasztó
+* Hozzáadtak egy jelölőnégyzetet, mellyel szabályozható, hogy az elválasztó
   karaktert bemásolja-e a bővítmény a saját beállítások mappájába a későbbi
   importáláshoz.
 
 ## A 2.0 változásai ##
-*	Hindi karakterek is használhatóak az összefűzött szövegek közötti
+
+* Hindi karakterek is használhatóak az összefűzött szövegek közötti
   elválasztóként.
 
 ## Az 1.0 változásai ##
-*	- Első kiadás
+
+* * Első kiadás
 
 [[!tag dev stable]]
-
