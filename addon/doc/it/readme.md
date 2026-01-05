@@ -1,6 +1,6 @@
 # Clip Contents Designer #
 
-*	Autori: Noelia, Abdel.
+* Autori: Noelia, Abdel.
 
 Questo componente aggiuntivo viene utilizzato per aggiungere testo negli
 appunti, operazione utile quando si desidera unire sezioni di testo insieme
@@ -8,23 +8,23 @@ per poi incollarle in un'unica soluzione. Il contenuto degli appunti può
 anche essere cancellato e visualizzato  in Modalità Navigazione.
 
 ## Comandi da tastiera ##
-*	NVDA + Windows + C: Aggiunge agli appunti il testo selezionato, o i
+
+* NVDA + Windows + C: Aggiunge agli appunti il testo selezionato, o i
   caratteri braille unicode che rappresentano oggetti MathMl, o la stringa
   che è stata contrassegnata con il cursore di controllo (comandi NVDA+f9 ed
   NVDA+f10).
-*	NVDA + Windows + x: Cancella il contenuto degli appunti.
-*	Non assegnato: copia o taglia, con possibilità di richiesta di conferma.
-*	Non assegnato: visualizza il testo presente negli appunti in modalità
+* NVDA + Windows + x: Cancella il contenuto degli appunti.
+* Non assegnato: copia o taglia, con possibilità di richiesta di conferma.
+* Non assegnato: visualizza il testo presente negli appunti in modalità
   navigazione in formato html. In alternativa dice se negli appunti è
   presente contenuto che non è possibile mostrare in modalità navigazione,
   come file o cartelle copiati da Windows Explorer, o se non è presente
   testo negli appunti.
-*	Non assegnato: visualizza il testo presente negli appunti in modalità
+* Non assegnato: visualizza il testo presente negli appunti in modalità
   navigazione come testo semplice. In alternativa dice se negli appunti è
   presente contenuto che non è possibile mostrare in modalità navigazione,
   come file o cartelle copiati da Windows Explorer, o se non è presente
   testo negli appunti.
-
 
 ## Impostazioni dell'add-on ##
 
@@ -65,42 +65,49 @@ Essa contiene i seguenti controlli:
 
 Note:
 
-*	Quando è aperta una finestra di NVDA non verrà richiesta alcuna
+* Quando è aperta una finestra di NVDA non verrà richiesta alcuna
   conferma. In questi casi le azioni verranno eseguite immediatamente.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
 
-
 ## Changes for 40.0.0
+
 * Added support for Hebrew keyboard.
 
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
+
 * Compatible with NVDA 2023.1.
 
 ## Novità nella versione 16.0
+
 * Reqires NVDA 2022.1 or later.
 
 ## Novità nella versione 15.0
+
 * Il comando per aggiungere testo agli appunti è nuovamente presente nella
   finestra di dialogo dei gesti di immissione.
 * Risolti i gesti da copiare e tagliare con la tastiera persiana, grazie a
   Mohammadhosein Ghezelsofla.
 
 ## Novità nella versione 14.0
+
 * Compatibile con NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Risolto un problema nella grafica della finestra Impostazioni. Grazie a
   Cyrille Bougot.
 * Miglioramenti alla documentazione.
@@ -116,10 +123,12 @@ Note:
   per l'HTML.
 
 ## Novità nella versione 12.0
+
 * Risolti problemi che si riscontravano quando si utilizzava la simulazione
   copia in applicazioni come LibreOffice Writer.
 
 ## Novità nella versione 11.0
+
 * E' ora possibile agiungere testo selezionato con il cursore di controllo
   utilizzando comandi standard di NVDA (NVDA+f9 e NVDA+f10). NVDA+windows+f9
   non è più utilizzato, per una migliore integrazione con il nuovo comando
@@ -127,6 +136,7 @@ Note:
 * Richiede NVDA 2019.3 o versioni successive.
 
 ## Novità nella versione 10.0
+
 * Risolto un bug nella finestra di dialogo utilizzata per mostrare il testo
   degli appunti, quando il titolo contiene caratteri non latini.
 * Risolto un bug che si verificava quando si utilizzavano le funzioni di
@@ -156,48 +166,51 @@ Note:
 
 ## Novità nella versione 6.0
 
-*	Added options to choose if available actions should be performed after
+* Added options to choose if available actions should be performed after
   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
+* Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
+* Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+* Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Novità nella versione 5.0 ##
 
-*	Migliorata la presentazione visiva della finestra di dialogo, in
+* Migliorata la presentazione visiva della finestra di dialogo, in
   conformità con l'aspetto standard di NVDA.
-*	Richiede NVDA 2016.4 o superiore.
+* Richiede NVDA 2016.4 o superiore.
 
 ## Novità nella versione 4.0 ##
-*	Le impostazioni del componente aggiuntivo sono gestite dalla
+
+* Le impostazioni del componente aggiuntivo sono gestite dalla
   configurazione di NVDA. In questo modo si possono utilizzare i profili di
   configurazione di NVDA per salvare separatori differenti e non c'è bisogno
   di copiare le impostazioni ed importarle in caso di reinstallazione.
-*	Ora è possibile stabilire se il testo aggiunto debba essere accodato o
+* Ora è possibile stabilire se il testo aggiunto debba essere accodato o
   anteposto, attraverso la casella di controllo aggiungi testo prima degli
   appunti, dalla finestra di dialogo impostazioni ClipContents Designer.
 
 ## Novità nella versione 3.0 ##
-*	Se MathPlayer è installato, può essere aggiunta agli appunti una
+
+* Se MathPlayer è installato, può essere aggiunta agli appunti una
   rappresentazione Braille di oggetti MathMl.
-*	Se non è stato impostato alcun separatore, verrà inserita soltanto una
+* Se non è stato impostato alcun separatore, verrà inserita soltanto una
   riga vuota tra i segmenti di testo aggiunti agli appunti.
-*	Può essere assegnato un tasto caldo per aprire la finestra impostazioni di
+* Può essere assegnato un tasto caldo per aprire la finestra impostazioni di
   Clip Contents Designer.
-*	Aggiunta una casella di controllo nella finestra di dialogo, per
+* Aggiunta una casella di controllo nella finestra di dialogo, per
   selezionare se il separatore debba essere copiato per poi essere importato
   in caso di nuova installazione del componente aggiuntivo.
 
 ## Novità nella versione 2.0 ##
-*	Possono essere usati caratteri Hindi come separatori per il testo aggiunto
+
+* Possono essere usati caratteri Hindi come separatori per il testo aggiunto
   aglu appunti.
 
 ## Novità nella versione 1.0 ##
-*	Versione iniziale.
+
+* Versione iniziale.
 
 [[!tag dev stable]]
-

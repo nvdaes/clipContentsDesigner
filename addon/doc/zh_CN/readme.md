@@ -1,22 +1,22 @@
 # 剪辑内容设计器 #
 
-*	作者: Noelia, Abdel。
+* 作者: Noelia, Abdel。
 
 此插件用于向剪贴板添加文本，当您希望将文本部分连接在一起以准备粘贴时，这可能很有用。剪贴板内容也可以清除或者用浏览模式逐字逐句查看。
 
 ## 键盘快捷键 ##
-*	NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
-*	NVDA+windows+x: 清除剪贴板内容.
-*	未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+
+* NVDA+windows+c: 将选定的文本，表示MathML对象的Unicode盲文字符或已使用浏览光标标记的字符串添加到剪贴板.
+* NVDA+windows+x: 清除剪贴板内容.
+* 未分配：复制到剪贴板（或从剪贴板剪切），并跳出确认框。
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
-
 
 ## Clip Contents Designer settings ##
 
@@ -55,41 +55,48 @@ It contains the following controls:
 
 注意:
 
-*	当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作。
-*	Emulate copy and emulate cut commands mean that, when these features are
+* 当NVDA的消息框仍然打开时，将不会请求确认。在这些情况下，将立即执行操作。
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
 
-
 ## Changes for 40.0.0
+
 * Added support for Hebrew keyboard.
 
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
+
 * Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
+
 * Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
+
 * The command to add text to clipboard is again presented in the input
   gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
 ## Changes for 14.0
+
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -102,14 +109,17 @@ It contains the following controls:
   options available for HTML format.
 
 ## 版本 12.0
+
 * 修复了在 LibreOffice Writer 等应用程序中使用模拟复制时的错误。
 
 ## 版本11.0
+
 * 现在可以使用 NVDA （NVDA_f9 和 NVDA_f10） 的标准命令添加带有浏览光标标记的文本。NVDA_windows_f9
   不再使用，以便更好地与新的 NVDA_shift_f9 命令集成。
 * 需要NVDA 2019.3或更高版本。
 
 ## 版本10.0
+
 * 修复了用于显示剪贴板文本的对话框中的错误，当其标题包含非拉丁字符时。
 * 修复阿拉伯语键盘使用剪辑内容设计器的错误。已由Abdel修复，有插件作者添加。
 
@@ -131,36 +141,39 @@ It contains the following controls:
 
 ## 版本6.0
 
-*	Added options to choose if available actions should be performed after
+* Added options to choose if available actions should be performed after
   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
+* Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
+* Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+* Fixed documentation for script_add (Windows+NVDA+c).
 
 ## 版本5.0 ##
 
-*	对话框的视觉呈现得到了增强，并且遵循NVDA中显示的对话框的外观。
-*	需要NVDA 2016.4或更高版本。
+* 对话框的视觉呈现得到了增强，并且遵循NVDA中显示的对话框的外观。
+* 需要NVDA 2016.4或更高版本。
 
 ## 版本4.0 ##
-*	插件设置由NVDA配置管理，因此标准配置文件可用于保存不同的分隔符，并且不需要在重新安装时复制导入设置。
-*	现在，可以使用“剪辑内容设计器”设置对话框中的“添加剪辑前数据”复选框，选择是添加还是添加文本。
+
+* 插件设置由NVDA配置管理，因此标准配置文件可用于保存不同的分隔符，并且不需要在重新安装时复制导入设置。
+* 现在，可以使用“剪辑内容设计器”设置对话框中的“添加剪辑前数据”复选框，选择是添加还是添加文本。
 
 ## 版本3.0 ##
-*	如果安装了MathPlayer，则可以将MathML对象的盲文表示添加到剪贴板。
-*	如果未设置分隔符，则只会在添加的文本段之间放置一行。
-*	可以指定快捷键来打开“剪辑内容设计器”设置对话框。
-*	在设置对话框中添加了一个复选框，用于选择是否应复制分隔符以在重新安装插件时导入。
+
+* 如果安装了MathPlayer，则可以将MathML对象的盲文表示添加到剪贴板。
+* 如果未设置分隔符，则只会在添加的文本段之间放置一行。
+* 可以指定快捷键来打开“剪辑内容设计器”设置对话框。
+* 在设置对话框中添加了一个复选框，用于选择是否应复制分隔符以在重新安装插件时导入。
 
 ## 版本2.0 ##
-*	印地语字符可以用作添加内容之间的分隔符。
+
+* 印地语字符可以用作添加内容之间的分隔符。
 
 ## 版本1.0 ##
-*	发布初始版本。
+
+* 发布初始版本。
 
 [[!tag dev stable]]
-
