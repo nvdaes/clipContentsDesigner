@@ -1,26 +1,26 @@
 # Rozšírená schránka #
 
-*	Autori: Noelia, Abdel.
+* Autori: Noelia, Abdel.
 
 Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
 rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
 schránky a zobraziť obsah schránky v režime prehliadania.
 
 ## Klávesové skratky ##
-*	NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
+
+* NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
   ste označili prezeracím kurzorom. Takto je možné pridať aj znaky unicode,
   MathML.
-*	NVDA+windows+x: vymaže obsah schránky.
-*	Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
-*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+* NVDA+windows+x: vymaže obsah schránky.
+* Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
+* Not assigned: Shows the clipboard text as HTML in browse mode, or
   announces if clipboard is empty or has contents which can't be presented
   in a browseable message, for instance if files or folders are been copied
   from Windows Explorer.
-*	Not assigned: Shows the textual clipboard contents as plain text in browse
+* Not assigned: Shows the textual clipboard contents as plain text in browse
   mode, or announces if clipboard is empty or has contents which can't be
   presented in a browseable message, for instance if files or folders are
   been copied from Windows Explorer.
-
 
 ## Clip Contents Designer settings ##
 
@@ -59,42 +59,49 @@ It contains the following controls:
 
 Poznámky:
 
-*	Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
+* Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
   takomto prípade sa varovanie nezobrazí a akcia sa rovno vykoná.
-*	Emulate copy and emulate cut commands mean that, when these features are
+* Emulate copy and emulate cut commands mean that, when these features are
   enabled, the add-on will take control of control+c and control+x. This
   will allow to select if a confirmation should be requested before
   performing the actions corresponding to these keystrokes.
 
 ## Changes for 46.0.0
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape
   key.
 
-
 ## Changes for 40.0.0
+
 * Added support for Hebrew keyboard.
 
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
+
 * Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
+
 * Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
+
 * The command to add text to clipboard is again presented in the input
   gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to
   Mohammadhosein Ghezelsofla.
 
 ## Changes for 14.0
+
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille
   Bougot.
 * Improved documentation.
@@ -107,10 +114,12 @@ Poznámky:
   options available for HTML format.
 
 ## Changes for 12.0
+
 * Fixed bugs when using emulate copy in applications like LibreOffice
   Writer.
 
 ## Zmeny vo verzii 11.0
+
 * Odteraz je možné do schránky pridať aj reťazce označené štandardnými
   príkazmi na označovanie pomocou prezeracieho kurzora (NVDA+F9,
   NVDA+F10). Nvda+windows+F9 sa už nepoužíva, pre lepšiu integráciu so
@@ -118,6 +127,7 @@ Poznámky:
 * Vyžaduje NVDA od verzie 2019.3.
 
 ## Zmeny vo verzii 10.0
+
 * Opravená chyba, ktorá nastávala pri zobrazení názvu okna so zobrazením
   textu v režime prehliadania, ak boli v názve okna špeciálne znaky.
 * Abdel opravil problémy s kopírovaním na Arabskom rozložení klávesnice.
@@ -141,42 +151,45 @@ Poznámky:
 
 ## Zmeny vo verzii 6.0
 
-*	Added options to choose if available actions should be performed after
+* Added options to choose if available actions should be performed after
   confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
+* Added Emulate copy and Emulate cut commands, which could be assigned from
   the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
+* Added a dialog to configure the Emulate copy and Emulate cut
   functionalities at installation. This allows to add the control+c and
   control+x commands to copy and cut, and be asked if you want to replace
   the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+* Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Zmeny vo verzii 5.0 ##
 
-*	Opravené vizuálne zobrazenie dialógov doplnku.
-*	Vyžaduje NVDA od verzie 2016.4
+* Opravené vizuálne zobrazenie dialógov doplnku.
+* Vyžaduje NVDA od verzie 2016.4
 
 ## Zmeny vo verzii 4.0 ##
-*	Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
+
+* Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
   konfiguračné profily NVDA a nie je potrebné po preinštalovaní doplnku
   nanovo importovať nastavenia.
-*	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
-  koniec alebo na začiatok obsahu schránky. 
+* Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
+  koniec alebo na začiatok obsahu schránky.
 
 ## Zmeny vo verzii 3.0 ##
-*	Braillovské znaky pre matematické operátory je takisto možné vkladať do
+
+* Braillovské znaky pre matematické operátory je takisto možné vkladať do
   schránky, ak je k dispozícii MathPlayer.
-*	Ak nezadáte znaky na oddelenie, použije sa jeden prázdny riadok.
-*	Nastavenia doplnku je možné vyvolať klávesovou skratkou, ktorú si
+* Ak nezadáte znaky na oddelenie, použije sa jeden prázdny riadok.
+* Nastavenia doplnku je možné vyvolať klávesovou skratkou, ktorú si
   nastavíte v dialógu klávesové skratky.
-*	Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
+* Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
   preinštalovaní doplnku.
 
 ## Zmeny vo verzii 2.0 ##
-*	Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
+
+* Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
 
 ## Zmeny vo verzii 1.0 ##
-*	prvé vydanie.
+
+* prvé vydanie.
 
 [[!tag dev stable]]
-
