@@ -2,7 +2,7 @@
 from enum import IntEnum
 
 class Role(IntEnum):
-	MATH: int
+	MATH = ...
 
 class State(IntEnum):
 	pass
