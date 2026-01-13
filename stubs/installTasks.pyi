@@ -1,0 +1,3 @@
+# Stub for installTasks.py
+
+def onInstall() -> None: ...

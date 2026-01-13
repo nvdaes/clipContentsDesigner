@@ -11,7 +11,7 @@ from gui.message import MessageDialog, ReturnCode
 addonHandler.initTranslation()
 
 confspec = {
-	"separator": "string(default=" ")",
+	"separator": 'string(default=" ")',
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
@@ -31,9 +31,9 @@ def onInstall():
 	module = "globalPlugins.clipContentsDesigner"
 	className = "GlobalPlugin"
 	copyGesture = "kb:control+c"
-	copyScriptName = "copy"
+	copyScriptName = "script_copy"
 	cutGesture = "kb:control+x"
-	cutScriptName = "cut"
+	cutScriptName = "script_cut"
 	try:
 		inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)
 		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
@@ -42,9 +42,11 @@ def onInstall():
 	if (
 		MessageDialog.ask(
 			# Translators: label of a dialog.
-			_("""This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,
-		when pressing control+c and control+x. This is named Emulate copy and cut.
-		Do you want to configure Emulate copy and cut now? You may do or change this later."""),
+			_(
+				"This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents, "
+				+ "when pressing control+c and control+x. This is named Emulate copy and cut. "
+				+ "Do you want to configure Emulate copy and cut now? You may do or change this later.",
+			),
 			# Translators: title of a dialog.
 			_("Configure Emulate copy and cut"),
 		)
