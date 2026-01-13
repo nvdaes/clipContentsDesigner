@@ -25,7 +25,7 @@ from logHandler import log
 import locale
 from ui import browseableMessage
 
-addonHandler.initTranslation()  # type: ignore[attr-defined]
+addonHandler.initTranslation()
 
 # Constants
 
@@ -64,7 +64,7 @@ def getBookmark() -> str:
 	return bookmark
 
 
-def getKeyboardLayout():
+def getKeyboardLayout() -> str | None:
 	curWindow = winUser.getForegroundWindow()
 	threadID = winUser.getWindowThreadProcessID(curWindow)[1]
 	klID = winUser.getKeyboardLayout(threadID)

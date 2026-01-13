@@ -8,7 +8,7 @@ import inputCore
 import config
 from gui.message import MessageDialog, ReturnCode
 
-addonHandler.initTranslation()  # type: ignore[attr-defined]
+addonHandler.initTranslation()
 
 confspec = {
 	"separator": 'string(default=" ")',

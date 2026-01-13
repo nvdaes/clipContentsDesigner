@@ -90,25 +90,6 @@ logger-objects = ["logHandler.log"]
 "sconstruct" = ["F821"]
 
 [tool.pyright]
-reportMissingModuleSource = [
-	"wx",
-	"nvda",
-	"nvdaControls",
-	"addonHandler",
-	"guiHelper",
-	"messageDialog",
-	"config",
-	"inputCore",
-	"gui_nvdaControls",
-	"addonSettingsPanel",
-	"buildVars",
-	"config_conf",
-	"configValidationData",
-	"guiHelper_BoxSizerHelper",
-	"inputCore_manager_userGestureMap",
-	"inputCore_manager",
-	"underscore"
-]
 venvPath = ".venv"
 venv = "."
 pythonPlatform = "Windows"
