@@ -8,10 +8,10 @@ import inputCore
 import config
 from gui.message import MessageDialog, ReturnCode
 
-addonHandler.initTranslation()
+addonHandler.initTranslation()  # type: ignore[attr-defined]
 
 confspec = {
-	"separator": "string(default=" ")",
+	"separator": 'string(default=" ")',
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",
@@ -31,20 +31,22 @@ def onInstall():
 	module = "globalPlugins.clipContentsDesigner"
 	className = "GlobalPlugin"
 	copyGesture = "kb:control+c"
-	copyScriptName = "copy"
+	copyScriptName = "script_copy"
 	cutGesture = "kb:control+x"
-	cutScriptName = "cut"
+	cutScriptName = "script_cut"
 	try:
-		inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)
-		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)
+		inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)  # type: ignore[call-arg]
+		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)  # type: ignore[call-arg]
 	except ValueError:
 		pass
 	if (
-		MessageDialog.ask(
+		MessageDialog.ask(  # type: ignore[arg-type]
 			# Translators: label of a dialog.
-			_("""This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,
-		when pressing control+c and control+x. This is named Emulate copy and cut.
-		Do you want to configure Emulate copy and cut now? You may do or change this later."""),
+			_(
+				"This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents, " +
+				"when pressing control+c and control+x. This is named Emulate copy and cut. " +
+				"Do you want to configure Emulate copy and cut now? You may do or change this later."
+			),
 			# Translators: title of a dialog.
 			_("Configure Emulate copy and cut"),
 		)
@@ -55,6 +57,6 @@ def onInstall():
 		config.conf["clipContentsDesigner"]["confirmToCut"] = True
 		config.conf.save()
 		# Adapted from NVDA's core.
-		inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)
-		inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)
-	inputCore.manager.userGestureMap.save()
+		inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)  # type: ignore[call-arg]
+		inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)  # type: ignore[call-arg]
+	inputCore.manager.userGestureMap.save()  # type: ignore[misc]
