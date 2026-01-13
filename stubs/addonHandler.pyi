@@ -1,8 +1,8 @@
 # Expanded stub for addonHandler
-from typing import Any, Dict
+from typing import Any
 
 class Addon:
-	manifest: Dict[str, Any]
+    manifest: dict[str, Any]
 
 def initTranslation() -> None: ...
 def getCodeAddon() -> Addon: ...

@@ -172,7 +172,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
 		return None
-
 	def getTextToAdd(self) -> str | None:
 		newText = self.getSelectedText() or self.getMath()
 		if not newText:
@@ -225,7 +224,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not text:
 			return
 		if (
-			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
+		MessageDialog.confirm(
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to add text to the clipboard"),
 				# Translators: Title of a dialog.
@@ -253,7 +252,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_(
 			# Translators: message presented in input mode.
 			"Retrieves the selected string or the text from the previously set start marker up to "
-			+ "and including the current position of the review cursor, and adds it to the clipboard.",
+			+ "and including the current position of the review cursor, and adds it to the clipboard."
 		),
 		gesture="kb:NVDA+windows+c",
 	)
@@ -266,7 +265,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmClear(self) -> None:
 		if (
-			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
+			MessageDialog.confirm(
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to clear the clipboard"),
 				# Translators: Title of a dialog.
@@ -301,7 +300,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCopy(self) -> None:
 		if (
-			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
+			MessageDialog.confirm(
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to copy to the clipboard"),
 				# Translators: Title of a dialog.
@@ -331,7 +330,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCut(self) -> None:
 		if (
-			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
+			MessageDialog.confirm(
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to cut from the clipboard"),
 				# Translators: Title of a dialog.

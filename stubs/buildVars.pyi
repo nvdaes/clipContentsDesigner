@@ -1,9 +1,11 @@
-from typing import Callable, Dict, List
+
+
+from typing import Callable
 
 _: Callable[[object], str]
-addon_info: Dict[str, object]
-pythonSources: List[str]
-i18nSources: List[str]
-excludedFiles: List[str]
+addon_info: dict[str, object]
+pythonSources: list[str]
+i18nSources: list[str]
+excludedFiles: list[str]
 baseLanguage: str
-markdownExtensions: List[str]
+markdownExtensions: list[str]

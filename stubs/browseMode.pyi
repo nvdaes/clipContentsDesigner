@@ -2,5 +2,5 @@
 from typing import Any
 
 class BrowseModeDocumentTreeInterceptor:
-	passThrough: bool
-	def script_copyToClipboard(__self, __gesture: Any, /) -> None: ...
+    passThrough: bool
+    def script_copyToClipboard(__self, __gesture: Any, /) -> None: ...
