@@ -27,14 +27,14 @@ All `type: ignore` comments in the addon can now be addressed through proper stu
 
 ### 5. Line 136: `with winUser.openClipboard(gui.mainFrame.Handle):  # type: ignore[attr-defined,arg-type]`
 **Reason**: mainFrame.Handle wasn't typed, and openClipboard signature unclear.
-**Resolution**: 
+**Resolution**:
 - Updated `stubs/gui.pyi` to include `Handle: int`
 - Created `stubs/winUser.pyi` with `openClipboard(__handle: int, /)` as context manager.
 **Status**: ✅ RESOLVED - Both Handle attribute and openClipboard properly typed
 
 ### 6. Line 151: `info = obj.makeTextInfo(textInfos.POSITION_SELECTION)  # type: ignore[arg-type]`
 **Reason**: POSITION_SELECTION wasn't properly typed.
-**Resolution**: 
+**Resolution**:
 - Created `stubs/textInfos.pyi` defining `POSITION_SELECTION: str`
 - Created `stubs/api.pyi` with `NVDAObject.makeTextInfo(__self, __position: str, /)`.
 **Status**: ✅ RESOLVED - POSITION_SELECTION typed as str, makeTextInfo accepts str

@@ -5,6 +5,6 @@ from typing import Any
 POSITION_SELECTION: str
 
 class TextInfo:
-    clipboardText: str
-    isCollapsed: bool
-    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
+	clipboardText: str
+	isCollapsed: bool
+	def __init__(self, *args: Any, **kwargs: Any) -> None: ...

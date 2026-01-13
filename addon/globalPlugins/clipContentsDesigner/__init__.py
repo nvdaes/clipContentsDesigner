@@ -172,6 +172,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
 		return None
+
 	def getTextToAdd(self) -> str | None:
 		newText = self.getSelectedText() or self.getMath()
 		if not newText:
@@ -252,7 +253,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_(
 			# Translators: message presented in input mode.
 			"Retrieves the selected string or the text from the previously set start marker up to "
-			+ "and including the current position of the review cursor, and adds it to the clipboard."
+			+ "and including the current position of the review cursor, and adds it to the clipboard.",
 		),
 		gesture="kb:NVDA+windows+c",
 	)

@@ -2,4 +2,4 @@
 from typing import Any
 
 class ConfigValidationData:
-    default: Any
+	default: Any

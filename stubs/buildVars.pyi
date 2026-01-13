@@ -1,5 +1,3 @@
-
-
 from typing import Callable, Dict, List
 
 _: Callable[[object], str]
