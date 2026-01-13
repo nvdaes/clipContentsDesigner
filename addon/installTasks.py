@@ -35,12 +35,12 @@ def onInstall():
 	cutGesture = "kb:control+x"
 	cutScriptName = "script_cut"
 	try:
-		inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)  # type: ignore[call-arg]
-		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)  # type: ignore[call-arg]
+		inputCore.manager.userGestureMap.remove(copyGesture, module, className, copyScriptName)  # type: ignore[reportCallIssue]
+		inputCore.manager.userGestureMap.remove(cutGesture, module, className, cutScriptName)  # type: ignore[reportCallIssue]
 	except ValueError:
 		pass
 	if (
-		MessageDialog.ask(  # type: ignore[arg-type]
+		MessageDialog.ask(  # type: ignore[reportUnknownMemberType]
 			# Translators: label of a dialog.
 			_(
 				"This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents, " +
@@ -57,6 +57,6 @@ def onInstall():
 		config.conf["clipContentsDesigner"]["confirmToCut"] = True
 		config.conf.save()
 		# Adapted from NVDA's core.
-		inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)  # type: ignore[call-arg]
-		inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)  # type: ignore[call-arg]
-	inputCore.manager.userGestureMap.save()  # type: ignore[misc]
+		inputCore.manager.userGestureMap.add(copyGesture, module, className, copyScriptName)  # type: ignore[reportCallIssue]
+		inputCore.manager.userGestureMap.add(cutGesture, module, className, cutScriptName)  # type: ignore[reportCallIssue]
+	inputCore.manager.userGestureMap.save()  # type: ignore[reportCallIssue]

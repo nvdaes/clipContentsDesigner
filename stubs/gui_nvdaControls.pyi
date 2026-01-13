@@ -1,8 +1,8 @@
 # Expanded stub for gui.nvdaControls
-from typing import Any, Sequence
+from typing import Any
 
 class CustomCheckListBox:
-    CheckedItems: Sequence[int]
+    CheckedItems: list[int]
     def __init__(self, *args: Any, **kwargs: Any) -> None: ...
     def IsChecked(self, index: int) -> bool: ...
     def Select(self, index: int) -> None: ...

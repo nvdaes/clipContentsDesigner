@@ -15,7 +15,7 @@ import config
 import core
 import wx  # type: ignore[reportMissingModuleSource]
 import gui
-from gui import guiHelper
+import gui.guiHelper as guiHelper
 from gui.settingsDialogs import SettingsPanel, NVDASettingsDialog
 from gui.message import MessageDialog, ReturnCode
 from keyboardHandler import KeyboardInputGesture
@@ -118,22 +118,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super().__init__()
 		NVDASettingsDialog.categoryClasses.append(AddonSettingsPanel)
 
-	def terminate(self) -> None:  # type: ignore[override]
+	def terminate(self) -> None:  # type: ignore[reportImplicitOverride]
 		NVDASettingsDialog.categoryClasses.remove(AddonSettingsPanel)
 
 	def onSettings(self, evt: object) -> None:
-		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)  # type: ignore[attr-defined]
+		gui.mainFrame.popupSettingsDialog(NVDASettingsDialog, AddonSettingsPanel)
 
 	@script(
 		# Translators: message presented in input mode.
 		description=_("Shows the Clip Contents Designer settings."),
 	)
 	def script_settings(self, gesture: KeyboardInputGesture) -> None:
-		wx.CallAfter(self.onSettings, None)  # type: ignore[arg-type]
+		wx.CallAfter(self.onSettings, None)
 
 	def clearClipboard(self) -> None:
 		try:
-			with winUser.openClipboard(gui.mainFrame.Handle):  # type: ignore[attr-defined,arg-type]
+			with winUser.openClipboard(gui.mainFrame.Handle):
 				winUser.emptyClipboard()
 			# Translators: message presented when the clipboard content has been deleted.
 			ui.message(_("Clipboard cleared"))
@@ -148,12 +148,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
 			obj = treeInterceptor
 		try:
-			info = obj.makeTextInfo(textInfos.POSITION_SELECTION)  # type: ignore[arg-type]
+			info = obj.makeTextInfo(textInfos.POSITION_SELECTION)  # type: ignore[reportAttributeAccessIssue]
 		except (RuntimeError, NotImplementedError):
 			info = None
-		if not info or info.isCollapsed:  # type: ignore[attr-defined]
+		if not info or info.isCollapsed:  # type: ignore[reportUnknownMemberType]
 			return None
-		return info.clipboardText  # type: ignore[attr-defined,return-value]
+		return info.clipboardText  # type: ignore[reportUnknownMemberType,reportUnknownVariableType]
 
 	def getMath(self) -> str | None:
 		import mathPres
@@ -163,13 +163,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			obj = api.getNavigatorObject()
 			if obj.role == controlTypes.Role.MATH:
 				try:
-					mathMl = obj.mathMl  # type: ignore[attr-defined]
+					mathMl = obj.mathMl
 				except (NotImplementedError, LookupError):
 					mathMl = None
 		if not mathMl:
 			return None
 		if mathPres.brailleProvider:
-			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)  # type: ignore[arg-type]
+			text = mathPres.brailleProvider.getBrailleForMathMl(mathMl)
 			return text
 		return None
 	def getTextToAdd(self) -> str | None:
@@ -181,25 +181,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					"_selectThenCopyRange",
 					None,
 				)
-				or not api.getReviewPosition().obj._selectThenCopyRange  # type: ignore[attr-defined]
+				or not api.getReviewPosition().obj._selectThenCopyRange
 			):
 				return
-			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText  # type: ignore[attr-defined]
+			newText = api.getReviewPosition().obj._selectThenCopyRange.clipboardText
 		try:
 			clipData = api.getClipData()
 		except Exception:
 			clipData = None
 		if clipData:
 			if config.conf["clipContentsDesigner"]["addTextBefore"]:
-				text = newText + getBookmark() + clipData  # type: ignore[operator]
+				text = newText + getBookmark() + clipData
 			else:
-				text = clipData + getBookmark() + newText  # type: ignore[operator]
+				text = clipData + getBookmark() + newText
 		else:
-			text = newText  # type: ignore[assignment]
-		return text  # type: ignore[return-value]
+			text = newText
+		return text
 
 	def clipboardHasContent(self) -> bool:
-		with winUser.openClipboard(gui.mainFrame.Handle):  # type: ignore[attr-defined,arg-type]
+		with winUser.openClipboard(gui.mainFrame.Handle):
 			clipFormat = winUser.windll.user32.EnumClipboardFormats(0)
 		if clipFormat:
 			return True
@@ -224,7 +224,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not text:
 			return
 		if (
-			MessageDialog.confirm(  # type: ignore[arg-type]
+			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to add text to the clipboard"),
 				# Translators: Title of a dialog.
@@ -234,10 +234,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		):
 			if api.copyToClip(text):
 				# Translators: message presented when the text has been added to the clipboard.
-				_unused = core.callLater(200, ui.message, _("Added"))  # type: ignore[arg-type]  # noqa: F841
+				_unused = core.callLater(200, ui.message, _("Added"))  # noqa: F841
 			else:
 				# Translators: message presented when the text cannot be added to the clipboard.
-				_unused = core.callLater(200, ui.message, _("Cannot add"))  # type: ignore[arg-type]  # noqa: F841
+				_unused = core.callLater(200, ui.message, _("Cannot add"))  # noqa: F841
 
 	def performAdd(self) -> None:
 		text = self.getTextToAdd()
@@ -258,14 +258,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_add(self, gesture: KeyboardInputGesture) -> None:
 		if config.conf["clipContentsDesigner"]["confirmToAdd"] and self.requiredFormatInClip():
-			wx.CallAfter(self.confirmAdd)  # type: ignore[arg-type]
+			wx.CallAfter(self.confirmAdd)
 		else:
 			self.performAdd()
 
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmClear(self) -> None:
 		if (
-			MessageDialog.confirm(  # type: ignore[arg-type]
+			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to clear the clipboard"),
 				# Translators: Title of a dialog.
@@ -283,24 +283,24 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_clear(self, gesture: KeyboardInputGesture) -> None:
 		if config.conf["clipContentsDesigner"]["confirmToClear"]:
-			wx.CallAfter(self.confirmClear)  # type: ignore[arg-type]
+			wx.CallAfter(self.confirmClear)
 		else:
 			self.clearClipboard()
 
 	def copy(self) -> None:
 		keyName = getKeyForCopy()
-		gesture = KeyboardInputGesture.fromName(keyName)  # type: ignore[arg-type]
+		gesture = KeyboardInputGesture.fromName(keyName)
 		obj = api.getFocusObject()
 		tI = obj.treeInterceptor
 		if isinstance(tI, browseMode.BrowseModeDocumentTreeInterceptor) and not tI.passThrough:
-			tI.script_copyToClipboard(gesture)  # type: ignore[arg-type]
+			tI.script_copyToClipboard(gesture)
 		else:
 			_unused = gesture.send()  # noqa: F841
 
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCopy(self) -> None:
 		if (
-			MessageDialog.confirm(  # type: ignore[arg-type]
+			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to copy to the clipboard"),
 				# Translators: Title of a dialog.
@@ -309,7 +309,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			!= ReturnCode.OK
 		):
 			return
-		_unused = core.callLater(200, self.copy)  # type: ignore[arg-type]  # noqa: F841
+		_unused = core.callLater(200, self.copy)  # noqa: F841
 
 	@script(
 		description=_(
@@ -319,18 +319,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_copy(self, gesture: KeyboardInputGesture) -> None:
 		if config.conf["clipContentsDesigner"]["confirmToCopy"] and self.requiredFormatInClip():
-			wx.CallAfter(self.confirmCopy)  # type: ignore[arg-type]
+			wx.CallAfter(self.confirmCopy)
 		else:
 			self.copy()
 
 	def cut(self) -> None:
 		keyName = getKeyForCut()
-		KeyboardInputGesture.fromName(keyName).send()  # type: ignore[arg-type]
+		KeyboardInputGesture.fromName(keyName).send()
 
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCut(self) -> None:
 		if (
-			MessageDialog.confirm(  # type: ignore[arg-type]
+			MessageDialog.confirm(  # type: ignore[reportUnknownMemberType]
 				# Translators: Label of a dialog.
 				_("Please, confirm if you want to cut from the clipboard"),
 				# Translators: Title of a dialog.
@@ -339,7 +339,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			!= ReturnCode.OK
 		):
 			return
-		_unused = core.callLater(200, self.cut)  # type: ignore[arg-type]  # noqa: F841
+		_unused = core.callLater(200, self.cut)  # noqa: F841
 
 	@script(
 		description=_(
@@ -349,7 +349,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_cut(self, gesture: KeyboardInputGesture) -> None:
 		if config.conf["clipContentsDesigner"]["confirmToCut"] and self.requiredFormatInClip():
-			wx.CallAfter(self.confirmCut)  # type: ignore[arg-type]
+			wx.CallAfter(self.confirmCut)
 		else:
 			self.cut()
 
@@ -442,16 +442,16 @@ class AddonSettingsPanel(SettingsPanel):
 	runOnInstallCheckBox: wx.CheckBox
 	restoreDefaultsButton: wx.Button
 
-	def makeSettings(self, sizer: object) -> None:  # type: ignore[override]
+	def makeSettings(self, sizer: object) -> None:  # type: ignore[reportImplicitOverride]
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=sizer)
 		setSeparatorLabel = _(
 			# Translators: label of a dialog.
 			"Type the string to be used as a &separator between contents added to the clipboard.",
 		)
-		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)  # type: ignore[arg-type]
+		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)  # type: ignore[reportUnknownMemberType]
 		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
 		# Translators: label of a dialog.
-		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))  # type: ignore[arg-type]
+		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))  # type: ignore[reportUnknownMemberType]
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
 		# Translators: label of a dialog.
 		confirmBoxLabel = _("Sele&ct the actions which require previous confirmation")
@@ -479,8 +479,8 @@ class AddonSettingsPanel(SettingsPanel):
 			checkedItems.append(2)
 		if config.conf["clipContentsDesigner"]["confirmToCut"]:
 			checkedItems.append(3)
-		self.confirmList.CheckedItems = checkedItems  # type: ignore[assignment]
-		self.confirmList.Select(0)  # type: ignore[reportUnknownMemberType]
+		self.confirmList.CheckedItems = checkedItems
+		self.confirmList.Select(0)
 		# Translators: label of a dialog.
 		confirmRequirementsLabel = _("&Request confirmation before performing the selected actions when:")
 		requirementChoices = [
@@ -501,7 +501,7 @@ class AddonSettingsPanel(SettingsPanel):
 		)
 		# Translators: label of a dialog.
 		formatLabel = _("&Format to show the clipboard text as HTML in browse mode:")
-		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)  # type: ignore[misc]
+		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)  # type: ignore[reportUnknownMemberType]
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
 		maxLengthLabel = _("&Maximum number of characters when showing clipboard text in browse mode")
@@ -518,7 +518,7 @@ class AddonSettingsPanel(SettingsPanel):
 		)
 		self.runOnInstallCheckBox.SetValue(config.conf["clipContentsDesigner"]["runOnInstall"])
 		# Translators: label of a dialog.
-		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))  # type: ignore[misc]
+		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))  # type: ignore[reportUnknownMemberType]
 		self.restoreDefaultsButton.Bind(wx.EVT_BUTTON, self.onRestoreDefaults)
 
 	def onRestoreDefaults(self, evt: object) -> None:
@@ -528,30 +528,30 @@ class AddonSettingsPanel(SettingsPanel):
 		self.addTextBeforeCheckBox.SetValue(
 			config.conf.getConfigValidation(["clipContentsDesigner", "addTextBefore"]).default,
 		)
-		self.confirmList.CheckedItems = []  # type: ignore[assignment,misc]
+		self.confirmList.CheckedItems = []
 		self.confirmRequirementChoices.SetSelection(
 			config.conf.getConfigValidation(["clipContentsDesigner", "confirmationRequirement"]).default,
 		)
 		self.formatChoices.SetSelection(
 			config.conf.getConfigValidation(["clipContentsDesigner", "browseableTextFormat"]).default,
 		)
-		self.maxLengthEdit.SetValue(  # type: ignore[attr-defined]
+		self.maxLengthEdit.SetValue(
 			config.conf.getConfigValidation(["clipContentsDesigner", "maxLengthForBrowseableText"]).default,
 		)
 		self.runOnInstallCheckBox.SetValue(
 			config.conf.getConfigValidation(["clipContentsDesigner", "runOnInstall"]).default,
 		)
 
-	def onSave(self) -> None:  # type: ignore[override]
+	def onSave(self) -> None:  # type: ignore[reportImplicitOverride]
 		config.conf["clipContentsDesigner"]["separator"] = self.setSeparatorEdit.GetValue()
 		config.conf["clipContentsDesigner"]["addTextBefore"] = self.addTextBeforeCheckBox.GetValue()
-		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmList.IsChecked(0)  # type: ignore[attr-defined]
-		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmList.IsChecked(1)  # type: ignore[attr-defined]
-		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmList.IsChecked(2)  # type: ignore[attr-defined]
-		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmList.IsChecked(3)  # type: ignore[attr-defined]
+		config.conf["clipContentsDesigner"]["confirmToAdd"] = self.confirmList.IsChecked(0)
+		config.conf["clipContentsDesigner"]["confirmToClear"] = self.confirmList.IsChecked(1)
+		config.conf["clipContentsDesigner"]["confirmToCopy"] = self.confirmList.IsChecked(2)
+		config.conf["clipContentsDesigner"]["confirmToCut"] = self.confirmList.IsChecked(3)
 		config.conf["clipContentsDesigner"]["confirmationRequirement"] = (
 			self.confirmRequirementChoices.GetSelection()
 		)
 		config.conf["clipContentsDesigner"]["browseableTextFormat"] = self.formatChoices.GetSelection()
-		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = self.maxLengthEdit.GetValue()  # type: ignore[attr-defined]
+		config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"] = self.maxLengthEdit.GetValue()
 		config.conf["clipContentsDesigner"]["runOnInstall"] = self.runOnInstallCheckBox.GetValue()
