@@ -434,14 +434,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 class AddonSettingsPanel(SettingsPanel):
 	title: str = ADDON_PANEL_TITLE
-	setSeparatorEdit: wx.TextCtrl
-	addTextBeforeCheckBox: wx.CheckBox
-	confirmList: gui.nvdaControls.CustomCheckListBox
-	confirmRequirementChoices: wx.Choice
-	formatChoices: wx.Choice
-	maxLengthEdit: gui.nvdaControls.SelectOnFocusSpinCtrl
-	runOnInstallCheckBox: wx.CheckBox
-	restoreDefaultsButton: wx.Button
+	setSeparatorEdit: wx.TextCtrl  # type: ignore[reportUninitializedInstanceVariable]
+	addTextBeforeCheckBox: wx.CheckBox  # type: ignore[reportUninitializedInstanceVariable]
+	confirmList: gui.nvdaControls.CustomCheckListBox  # type: ignore[reportUninitializedInstanceVariable]
+	confirmRequirementChoices: wx.Choice  # type: ignore[reportUninitializedInstanceVariable]
+	formatChoices: wx.Choice  # type: ignore[reportUninitializedInstanceVariable]
+	maxLengthEdit: gui.nvdaControls.SelectOnFocusSpinCtrl  # type: ignore[reportUninitializedInstanceVariable]
+	runOnInstallCheckBox: wx.CheckBox  # type: ignore[reportUninitializedInstanceVariable]
+	restoreDefaultsButton: wx.Button  # type: ignore[reportUninitializedInstanceVariable]
 
 	def makeSettings(self, sizer: object) -> None:  # type: ignore[reportImplicitOverride]
 		sHelper = guiHelper.BoxSizerHelper(self, sizer=sizer)
@@ -449,10 +449,10 @@ class AddonSettingsPanel(SettingsPanel):
 			# Translators: label of a dialog.
 			"Type the string to be used as a &separator between contents added to the clipboard.",
 		)
-		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)  # type: ignore[reportUnknownMemberType]
+		self.setSeparatorEdit = sHelper.addLabeledControl(setSeparatorLabel, wx.TextCtrl)
 		self.setSeparatorEdit.SetValue(config.conf["clipContentsDesigner"]["separator"])
 		# Translators: label of a dialog.
-		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))  # type: ignore[reportUnknownMemberType]
+		self.addTextBeforeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add text before clip data")))
 		self.addTextBeforeCheckBox.SetValue(config.conf["clipContentsDesigner"]["addTextBefore"])
 		# Translators: label of a dialog.
 		confirmBoxLabel = _("Sele&ct the actions which require previous confirmation")
@@ -466,7 +466,7 @@ class AddonSettingsPanel(SettingsPanel):
 			# Translators: label of a dialog.
 			_("Confirm to emulate cut"),
 		]
-		self.confirmList = sHelper.addLabeledControl(  # type: ignore[reportUnknownMemberType]
+		self.confirmList = sHelper.addLabeledControl(
 			confirmBoxLabel,
 			gui.nvdaControls.CustomCheckListBox,
 			choices=confirmChoices,
@@ -492,7 +492,7 @@ class AddonSettingsPanel(SettingsPanel):
 			# Translators: label of a dialog.
 			_("If the clipboard is not empty"),
 		]
-		self.confirmRequirementChoices = sHelper.addLabeledControl(  # type: ignore[reportUnknownMemberType]
+		self.confirmRequirementChoices = sHelper.addLabeledControl(
 			confirmRequirementsLabel,
 			wx.Choice,
 			choices=requirementChoices,
@@ -502,24 +502,24 @@ class AddonSettingsPanel(SettingsPanel):
 		)
 		# Translators: label of a dialog.
 		formatLabel = _("&Format to show the clipboard text as HTML in browse mode:")
-		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)  # type: ignore[reportUnknownMemberType]
+		self.formatChoices = sHelper.addLabeledControl(formatLabel, wx.Choice, choices=BROWSEABLETEXT_FORMATS)
 		self.formatChoices.SetSelection(config.conf["clipContentsDesigner"]["browseableTextFormat"])
 		# Translators: label of a dialog.
 		maxLengthLabel = _("&Maximum number of characters when showing clipboard text in browse mode")
-		self.maxLengthEdit = sHelper.addLabeledControl(  # type: ignore[reportUnknownMemberType]
+		self.maxLengthEdit = sHelper.addLabeledControl(
 			maxLengthLabel,
 			gui.nvdaControls.SelectOnFocusSpinCtrl,
 			min=1,
 			max=1000000,
 			initial=config.conf["clipContentsDesigner"]["maxLengthForBrowseableText"],
 		)
-		self.runOnInstallCheckBox = sHelper.addItem(  # type: ignore[reportUnknownMemberType]
+		self.runOnInstallCheckBox = sHelper.addItem(
 			# Translators: label of a dialog.
 			wx.CheckBox(self, label=_("Show configuration dialog when &updating")),
 		)
 		self.runOnInstallCheckBox.SetValue(config.conf["clipContentsDesigner"]["runOnInstall"])
 		# Translators: label of a dialog.
-		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))  # type: ignore[reportUnknownMemberType]
+		self.restoreDefaultsButton = sHelper.addItem(wx.Button(self, label=_("Restore defaults")))
 		self.restoreDefaultsButton.Bind(wx.EVT_BUTTON, self.onRestoreDefaults)
 
 	def onRestoreDefaults(self, evt: object) -> None:
