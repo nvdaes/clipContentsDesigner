@@ -1,5 +1,3 @@
-
-
 from typing import Callable
 
 _: Callable[[object], str]
