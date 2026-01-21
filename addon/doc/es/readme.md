@@ -1,6 +1,6 @@
 # Clip Contents Designer #
 
-*	Autores: Noelia, Abdel.
+* Autores: Noelia, Abdel.
 
 Este complemento se utiliza para agregar texto al portapapeles, el cual
 puede ser útil cuando quieras unir secciones de texto listas para pegar
@@ -8,21 +8,21 @@ juntas.  El contenido del portapapeles también puede limpiarse y mostrarse
 en modo exploración.
 
 ## Órdenes de teclado ##
-*	NVDA+windows+c: añade el texto seleccionado, los caracteres braille
+
+* NVDA+windows+c: añade el texto seleccionado, los caracteres braille
   Unicode que representan objetos MathML, o la cadena que se haya marcado
   con el cursor de revisión, al portapapeles.
-*	NVDA+windows+x: Limpia el contenido del portapapeles.
-*	Sin asignar: copia hacia (o desde) el portapapeles, con la posibilidad de
+* NVDA+windows+x: Limpia el contenido del portapapeles.
+* Sin asignar: copia hacia (o desde) el portapapeles, con la posibilidad de
   solicitar una confirmación previa.
-*	Sin asignar: Muestra el texto del portapapeles como HTML en modo
+* Sin asignar: Muestra el texto del portapapeles como HTML en modo
   exploración, o lo anuncia si el portapapeles está vacío o si tiene
   contenidos que no se pueden presentar en un mensaje navegable, por ejemplo
   si se están copiando archivos o carpetas desde el Explorador de Windows.
-*	Sin asignar: Muestra el texto del portapapeles como texto sin formato en
+* Sin asignar: Muestra el texto del portapapeles como texto sin formato en
   modo exploración, o lo anuncia si el portapapeles está vacío o si tiene
   contenidos que no se pueden presentar en un mensaje navegable, por ejemplo
   si se están copiando archivos o carpetas desde el Explorador de Windows.
-
 
 ## Opciones de Clip Contents Designer ##
 
@@ -62,43 +62,50 @@ Contiene los siguientes controles:
 
 Notas:
 
-*	No se solicitarán confirmaciones cuando siga abierto un cuadro de mensaje
+* No se solicitarán confirmaciones cuando siga abierto un cuadro de mensaje
   de NVDA. En esos casos, las acciones se realizarán inmediatamente.
-*	Las órdenes Emular copiar y Emular cortar significan que, cuando estas
+* Las órdenes Emular copiar y Emular cortar significan que, cuando estas
   funciones están activadas, el complemento tomará el control de control+c y
   control+x. Esto permitirá elegir si se debería solicitar una confirmación
   antes de realizar las acciones correspondientes a estos atajos de teclado.
 
 ## Cambios para 46.0.0
+
 * NVDA desinfectará el HTML en los mensajes explorables.
 * Se ha añadido un botón para cerrar los mensajes explorables, además de la
   tecla escape.
 
-
 ## Cambios para 40.0.0
+
 * Se añade soporte para el teclado hebreo.
 
 ## Cambios para 22.0.0
+
 * Se ha añadido un botón para restaurar valores por defecto en el panel de
   opciones del complemento.
 * El complemento no se puede ejecutar en modo seguro.
 
 ## Cambios para 17.0
+
 * Compatible con NVDA 2023.1.
 
 ## Cambios para 16.0
+
 * Requiere NVDA 2022.1 o posterior.
 
 ## Cambios para 15.0
+
 * La orden para añadir texto al portapapeles se presenta de nuevo en el
   diálogo Gestos de entrada.
 * Se corrigen los gestos de copiar y cortar en el teclado persa. Gracias a
   Mohammadhosein Ghezelsofla.
 
 ## Cambios para 14.0
+
 * Compatible con NVDA 2021.1.
 
 ## Cambios para 13.0
+
 * Se ha corregido un problema en la disposición visual del panel de
   opciones, gracias a Cyrille Bougot.
 * Se ha mejorado la documentación.
@@ -113,10 +120,12 @@ Notas:
   el formato HTML.
 
 ## Cambios para 12.0
+
 * Se han corregido fallos al usar Emular copia en aplicaciones como Libre
   Office Writer.
 
 ## Cambios para 11.0
+
 * Ahora es posible añadir texto marcado con el cursor de revisión usando
   órdenes estándar de NVDA (NVDA+f9 y NVDA+f10). Ya no se usa
   NVDA+windows+f9, para mejorar la integración con la nueva orden
@@ -124,6 +133,7 @@ Notas:
 * Se requiere NVDA 2019.3 o posterior.
 
 ## Cambios para 10.0
+
 * Corregido un problema en el diálogo usado para mostrar el texto del
   portapapeles, cuando su título contiene caracteres no latinos.
 * Corregido un problema al usar las funciones de emular cortar y copiar con
@@ -154,48 +164,51 @@ Notas:
 
 ## Cambios para 6.0
 
-*	Se han añadido opciones para elegir si se deberían realizar las acciones
+* Se han añadido opciones para elegir si se deberían realizar las acciones
   disponibles tras una confirmación.
-*	Añadidas órdenes para emular cortar y emular copiar, que se pueden asignar
+* Añadidas órdenes para emular cortar y emular copiar, que se pueden asignar
   desde el diálogo Gestos de entrada.
-*	Añadido un diálogo para configurar las funcionalidades Emular cortar y
+* Añadido un diálogo para configurar las funcionalidades Emular cortar y
   Emular copiar en la instalación. Esto permite añadir las órdenes control+c
   y control+x para copiar y cortar, y preguntar si quieres reemplazar los
   contenidos del portapapeles al pulsar estos atajos de teclado.
-*	Corregida la documentación de script_add (Windows+NVDA+c).
+* Corregida la documentación de script_add (Windows+NVDA+c).
 
 ## Cambios para 5.0 ##
 
-*	La presentación visual del diálogo se ha mejorado, adhiriéndose a la
+* La presentación visual del diálogo se ha mejorado, adhiriéndose a la
   apariencia de los diálogos mostrados por NVDA.
-*	Se requiere de NVDA 2016.4 o posterior.
+* Se requiere de NVDA 2016.4 o posterior.
 
 ## Cambios para 4.0 ##
-*	Ahora las opciones del complemento se gestionan desde la configuración de
+
+* Ahora las opciones del complemento se gestionan desde la configuración de
   NVDA, así que pueden utilizarse perfiles estándar para guardar diferentes
   separadores, y no es necesario copiar las opciones para importarlas en la
   reinstalación.
-*	Ahora es posible elegir si el texto añadido se anexará o se antepondrá,
+* Ahora es posible elegir si el texto añadido se anexará o se antepondrá,
   utilizando la casilla de verificacción Añadir texto antes de clip data
   desde el diálogo de opciones de Clip Contents Designer.
 
 ## Cambios para 3.0 ##
-*	Se puede añadir al portapapeles la representación braille de objetos
+
+* Se puede añadir al portapapeles la representación braille de objetos
   MathML si MathPlayer está instalado.
-*	<Si no se a puesto un separador, se colocará una sola línea entre los
+* <Si no se a puesto un separador, se colocará una sola línea entre los
   segmentos de texto añadido.
-*	Se puede asignar un atajo de teclado para abrir el diálogo de Opciones de
+* Se puede asignar un atajo de teclado para abrir el diálogo de Opciones de
   Clip Contents Designer.
-*	Añadida una casilla de verificación en el diálogho de opciones, para
+* Añadida una casilla de verificación en el diálogho de opciones, para
   elegir si el separador debería copiarse para importarse cuando se
   reinstale el complemento.
 
 ## Cambios para 2.0 ##
-*	Se pueden utilizar caracteres hindi como separador entre contenidos
+
+* Se pueden utilizar caracteres hindi como separador entre contenidos
   añadidos.
 
 ## Cambios para 1.0 ##
-*	Versión inicial.
+
+* Versión inicial.
 
 [[!tag dev stable]]
-

@@ -11,7 +11,7 @@ from gui.message import MessageDialog, ReturnCode
 addonHandler.initTranslation()
 
 confspec = {
-	"separator": "string(default=" ")",
+	"separator": "string(default=)",
 	"addTextBefore": "boolean(default=False)",
 	"confirmToAdd": "boolean(default=False)",
 	"confirmToClear": "boolean(default=False)",

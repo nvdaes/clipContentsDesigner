@@ -1,16 +1,17 @@
 # Clip Contents Designer #
-*	Authors: Noelia, Abdel.
+
+* Authors: Noelia, Abdel.
 
 This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
 The clipboard content can also be cleared an shown in browse mode.
 
 ## Keyboard commands ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
 
+* NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
+* NVDA+windows+x: Clear clipboard contents.
+*  Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+*  Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+*  Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
 
 ## Clip Contents Designer settings ##
 
@@ -29,40 +30,46 @@ It contains the following controls:
 
 Notes:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
+* Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
 * Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
 
-
 ## Changes for 49.0.0
+
 * Added a checkbox to decide if a configuration dialog should be shown when the add-on is updated.
 
-
 ## Changes for 46.0.0
+
 * NVDA will sanitize HTML in browseable messages.
 * Added a button to close browseable messages, in addition to the Escape key.
 
-
 ## Changes for 40.0.0
+
 * Added support for Hebrew keyboard.
 
 ## Changes for 22.0.0
+
 * Added a button to restore defaults in the add-on settings panel.
 * The add-on cannot be run in secure mode.
 
 ## Changes for 17.0
+
 * Compatible with NVDA 2023.1.
 
 ## Changes for 16.0
+
 * Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
+
 * The command to add text to clipboard is again presented in the input gestures dialog.
 * Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.
 
 ## Changes for 14.0
+
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
+
 * Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
 * Improved documentation.
 * Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
@@ -70,13 +77,16 @@ Notes:
 * You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
 
 ## Changes for 12.0
+
 * Fixed bugs when using emulate copy in applications like LibreOffice Writer.
 
 ## Changes for 11.0
+
 * Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
 * Requires NVDA 2019.3 or later.
 
 ## Changes for 10.0
+
 * Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
 * Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
@@ -97,28 +107,32 @@ Notes:
 
 ## Changes for 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*  Added options to choose if available actions should be performed after confirmation.
+* Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+*  Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+* Fixed documentation for script_add (Windows+NVDA+c).
 
 ## Changes for 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+* The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
+* Requires NVDA 2016.4 or later.
 
 ## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
+
+* Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
+* Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
 
 ## Changes for 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings dialog.
-*	Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
+
+* Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
+* If no separator is set, just a single line will be placed between the added text segments.
+* A shortcut can be assigned to open the Clip Contents Designer settings dialog.
+* Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
 
 ## Changes for 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+
+* Hindi characters can be used as the separator between added contents.
 
 ## Changes for 1.0 ##
-*	Initial version.
+
+* Initial version.
