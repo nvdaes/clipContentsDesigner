@@ -1,28 +1,28 @@
 # Clip Contents Designer #
 
-*	Auteurs : Noelia, Abdel.
+* Auteurs : Noelia, Abdel.
 
 Cette extension permet d'ajouter du texte dans le presse-papiers, ce qui
 peut être utile lorsque vous souhaitez joindre des portions de texte prêt
 pour le collage. Le contenu du presse-papiers peut aussi être vidé.
 
 ## Commandes clavier ##
-*	NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
+
+* NVDA+windows+c : Ajoute le texte sélectionné, les caractères braille
   Unicode qui représentent les objets MathML ou la chaîne qui a été marquée
   avec le curseur de revue, dans le presse-papiers.
-*	NVDA+windows+x : Vide le contenu du presse-papiers.
-*	Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
+* NVDA+windows+x : Vide le contenu du presse-papiers.
+* Non assigné : Copier vers (ou couper depuis) le presse-papiers, avec la
   possibilité d'une demande de confirmation préalable.
-*	Non assigné : affiche le texte du presse-papiers au format HTML en mode
+* Non assigné : affiche le texte du presse-papiers au format HTML en mode
   navigation, ou annonce si le presse-papiers est vide ou a un contenu qui
   ne peut pas être présenté dans un message consultable, par exemple si des
   fichiers ou des dossiers ont été copiés à partir de l'Explorateur Windows.
-*	Non assigné : affiche le contenu textuel du presse-papiers sous forme de
+* Non assigné : affiche le contenu textuel du presse-papiers sous forme de
   texte brut en mode navigation, ou annonce si le presse-papiers est vide ou
   a un contenu qui ne peut pas être présenté dans un message consultable,
   par exemple si des fichiers ou des dossiers ont été copiés à partir de
   l'explorateur Windows.
-
 
 ## Paramètres de Clip Contents Designer ##
 
@@ -66,45 +66,52 @@ Il contient les contrôles suivants :
 
 Notes :
 
-*	Les confirmations ne seront pas demandées lorsqu'une boîte de message de
+* Les confirmations ne seront pas demandées lorsqu'une boîte de message de
   NVDA est toujours ouverte. Dans ce cas, les actions seront effectuées
   immédiatement.
-*	Emuler les commandes copier et couper signifie que, lorsque ces
+* Emuler les commandes copier et couper signifie que, lorsque ces
   fonctionnalités sont activées, l'extension prendra le contrôle de
   contrôle+c et contrôle+x. Cela permettra de sélectionner si une
   confirmation doit être demandée avant d'effectuer les actions
   correspondant à ces frappes.
 
 ## Changements pour la version 46.0.0
+
 * NVDA expurgera le HTML dans les messages navigables.
 * Ajout d'un bouton pour fermer les messages navigables, en plus de la
   touche Échap.
 
-
 ## Changements pour la version 40.0.0
+
 * Ajout de la prise en charge du clavier hébreu.
 
 ## Changements pour la version 22.0.0
+
 * Ajout d'un bouton pour restaurer aux paramètres par défaut dans le panneau
   de paramètres de l'extension.
 * L'extension ne peut pas être exécuté en mode sécurisé.
 
 ## Changements pour la version 17.0
+
 * Compatible avec NVDA 2023.1.
 
 ## Changements pour la version 16.0
+
 * Nécessite NVDA 2022.1 ou ultérieur.
 
 ## Changements pour la version 15.0
+
 * La commande pour ajouter du texte au presse-papiers est à nouveau
   présentée dans la boîte de dialogue des gestes de commande.
 * Correction des gestes pour copier et couper avec le clavier persan, grâce
   à Mohammadhosein Ghezelsofla.
 
 ## Changements pour la version 14.0
+
 * Compatible avec NVDA 2021.1.
 
 ## Changements pour la version 13.0
+
 * Correction d'un problème dans la disposition visuelle du panneau des
   paramètres, grâce à Cyrille Bougot.
 * Documentation améliorée.
@@ -119,10 +126,12 @@ Notes :
   pour le format HTML.
 
 ## Changements pour la version 12.0
+
 * Correction de bogues lors de l'utilisation de l'émulation de copie dans
   les applications telles que LibreOffice Writer.
 
 ## Changements pour la version 11.0
+
 * Il est maintenant possible d'ajouter du texte marqué avec le curseur de
   revue à l'aide de commandes standards de NVDA (NVDA+f9 et
   NVDA+f10). NVDA+Windows+f9 n'est plus utilisé pour une meilleure
@@ -130,6 +139,7 @@ Notes :
 * Nécessite NVDA 2019.3 ou ultérieur.
 
 ## Changements pour la version 10.0
+
 * Correction d'un bogue dans le dialogue présentant le texte du
   presse-papiers, quand son titre contient des caractères non latins.
 * Correction d'un bogue lors de l'utilisation des fonctionnalités
@@ -160,50 +170,53 @@ Notes :
 
 ## Changements pour la version 6.0
 
-*	Ajout d'options pour choisir si les actions disponibles doivent être
+* Ajout d'options pour choisir si les actions disponibles doivent être
   effectuées après confirmation.
-*	Ajout des commandes Émuler copier et Émuler couper, qui peuvent être
+* Ajout des commandes Émuler copier et Émuler couper, qui peuvent être
   affectées  à partir de la boîte de dialogue Gestes de commandes.
-*	Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler
+* Ajout d'une boîte de dialogue pour configurer les fonctionnalités Émuler
   copier et Émuler couper lors de l'installation. Cela permet d'ajouter les
   commandes Contrôle+c et Contrôle+x pour copier et couper et de demander si
   vous voulez remplacer le contenu du presse-papiers en appuyant sur ces
   combinaisons de touches.
-*	Correction de la documentation pour le script_add (Windows+NVDA+c).
+* Correction de la documentation pour le script_add (Windows+NVDA+c).
 
 ## Changements pour la version 5.0 ##
 
-*	La présentation visuelle de la boîte de dialogue a été améliorée, en
+* La présentation visuelle de la boîte de dialogue a été améliorée, en
   respectant l'apparence des dialogues présentés dans NVDA.
-*	Nécessite NVDA 2016.4 ou ultérieur.
+* Nécessite NVDA 2016.4 ou ultérieur.
 
 ## Changements pour la version 4.0 ##
-*	Les paramètres de l'extension sont gérés à partir de la configuration
+
+* Les paramètres de l'extension sont gérés à partir de la configuration
   NVDA, afin que les profils standard puisse être utilisés pour enregistrer
   des séparateurs différents, et les paramètres n'ont pas besoin d'être
   copiés lors de l'importation pendant la réinstallation.
-*	Il est maintenant possible de choisir si l’ajout de texte sera ajouté à la
+* Il est maintenant possible de choisir si l’ajout de texte sera ajouté à la
   fin ou ajouté au début, en utilisant la case à cocher Ajouter du texte
   avant l'insertion des données à partir de la boîte de dialogue Paramètres
   de Clip Contents Designer.
 
 ## Changements pour la version 3.0 ##
-*	La représentation en braille des objets MathML peut être ajoutée dans le
+
+* La représentation en braille des objets MathML peut être ajoutée dans le
   presse-papiers si MathPlayer est installé.
-*	Si aucun séparateur n'est définie, juste une seule ligne sera placée entre
+* Si aucun séparateur n'est définie, juste une seule ligne sera placée entre
   les segments du texte ajouté.
-*	Un raccourci peut être assigné pour ouvrir le dialogue paramètres Clip
+* Un raccourci peut être assigné pour ouvrir le dialogue paramètres Clip
   Contents Designer.
-*	Ajouté une case à cocher dans la boîte de dialogue paramètres, afin de
+* Ajouté une case à cocher dans la boîte de dialogue paramètres, afin de
   choisir si le séparateur doit être copié pour être importé lors de la
   réinstallation de l'extension.
 
 ## Changements pour la version 2.0 ##
-*	Les caractères Hindous peuvent être utilisés comme séparateur entre les
+
+* Les caractères Hindous peuvent être utilisés comme séparateur entre les
   contenus concaténés.
 
 ## Changements pour la version 1.0 ##
-*	Première version.
+
+* Première version.
 
 [[!tag dev stable]]
-
