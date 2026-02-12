@@ -1,0 +1,9 @@
+# inputCore stub for NVDA add-on compatibility
+
+class _UserGestureMap:
+	def add(self, gesture: str, module: str, className: str, scriptName: str, /) -> None: ...
+	def remove(self, gesture: str, module: str, className: str, scriptName: str, /) -> None: ...
+	def save(self) -> None: ...
+
+class manager:
+	userGestureMap: _UserGestureMap

@@ -1,0 +1,3 @@
+# Expanded stub for translation function _
+
+def _(x: object) -> str: ...

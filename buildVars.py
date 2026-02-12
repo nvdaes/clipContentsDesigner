@@ -4,10 +4,10 @@ import os.path
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
 # Full getext (please don't change)
-_ = lambda x: x
+_ = lambda x: x  # type: ignore[misc]  # noqa: E731
 
 # Add-on information variables
-addon_info = {
+addon_info = {  # type: ignore[var-annotated]
 	# for previously unpublished addons, please follow the community guidelines at:
 	# https://bitbucket.org/nvdaaddonteam/todo/raw/master/guideLines.txt
 	# add-on Name, internal for nvda

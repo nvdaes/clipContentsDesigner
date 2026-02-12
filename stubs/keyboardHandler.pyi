@@ -1,0 +1,6 @@
+# Stub for keyboardHandler
+
+class KeyboardInputGesture:
+	@staticmethod
+	def fromName(__name: str, /) -> "KeyboardInputGesture": ...
+	def send(self) -> None: ...
