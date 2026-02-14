@@ -23,7 +23,7 @@ from scriptHandler import script
 from logHandler import log
 import locale
 from ui import browseableMessage
-
+from mathPres.MathCAT import MathCAT
 addonHandler.initTranslation()
 
 # Constants
@@ -298,6 +298,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCopy(self):
+		obj = api.getFocusObject()
+		if obj.role == controlTypes.Role.MATH:
+			obj.script_rawdataToClip(None)
+			return
 		if (
 			MessageDialog.confirm(
 				# Translators: Label of a dialog.
