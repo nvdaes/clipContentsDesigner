@@ -192,4 +192,3 @@ Uwagi:
 *	Pierwsze wydanie.
 
 [[!tag dev stable]]
-
