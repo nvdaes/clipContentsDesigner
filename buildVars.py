@@ -26,8 +26,7 @@ addon_info = AddonInfo(
 	addon_version="50.0.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* Compatible with NVDA 2026.1""
-* The confirm copy feature won't be available for mathematical content, to prevent interferences from the confirm dialog."""),
+	addon_changelog=_("""* Fixed translated description."""),
 	# Author(s)
 	addon_author="Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>",
 	# URL for the add-on documentation support
