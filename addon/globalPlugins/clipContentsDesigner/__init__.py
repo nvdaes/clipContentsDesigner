@@ -23,7 +23,6 @@ from scriptHandler import script
 from logHandler import log
 import locale
 from ui import browseableMessage
-from mathPres.MathCAT import MathCAT
 
 addonHandler.initTranslation()
 
