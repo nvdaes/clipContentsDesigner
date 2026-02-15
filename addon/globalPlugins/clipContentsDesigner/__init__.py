@@ -298,6 +298,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@gui.blockAction.when(gui.blockAction.Context.MODAL_DIALOG_OPEN)
 	def confirmCopy(self):
+		obj = api.getFocusObject()
+		if obj.role == controlTypes.Role.MATH:
+			obj.script_rawdataToClip(None)
+			return
 		if (
 			MessageDialog.confirm(
 				# Translators: Label of a dialog.
