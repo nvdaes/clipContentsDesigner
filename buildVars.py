@@ -26,7 +26,7 @@ Current text on the clipboard can be presented in browse mode.
 Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes.
 """),
 	# version
-	addon_version="50.0.0",
+	addon_version="50.1.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
 	addon_changelog=_("""* Compatible with NVDA 2026.1""
