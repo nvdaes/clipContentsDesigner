@@ -161,7 +161,7 @@ Poznámky:
   konfiguračné profily NVDA a nie je potrebné po preinštalovaní doplnku
   nanovo importovať nastavenia.
 *	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
-  koniec alebo na začiatok obsahu schránky. 
+  koniec alebo na začiatok obsahu schránky.
 
 ## Zmeny vo verzii 3.0 ##
 *	Braillovské znaky pre matematické operátory je takisto možné vkladať do
@@ -179,4 +179,3 @@ Poznámky:
 *	prvé vydanie.
 
 [[!tag dev stable]]
-
