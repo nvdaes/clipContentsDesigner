@@ -1,109 +1,208 @@
 # Clip Contents Designer #
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
-*	Download [stable version][1]
-*	Download [development version][2]
 
-This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
-The clipboard content can also be cleared an shown in browse mode.
+*	Autoren: Noelia und Abdel.
 
-## Keyboard commands ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+Diese Erweiterung kann verwendet werden, um Text zur Zwischenablage
+hinzuzufügen. Dies kann beispielsweise beim Zusammenfügen von verschiedenen
+Textabschnitten nützlich sein. Der Inhalt der Zwischenablage kann auch
+gelöscht werden.
+
+## Tastenkombinationen ##
+*	NVDA+Windows+C: Fügt den ausgewählten Text, MathML-Objekte als
+  Unicode-Punktschriftzeichen oder die Zeichenkette, die mit dem NVDA-Cursor
+  markiert wurde, zur Zwischenablage hinzu.
+*	NVDA+Windows+X: Leert die Zwischenablage.
+*	Nicht zugeordnet: Kopieren (oder Ausschneiden) in die Zwischenablage, mit
+  der Möglichkeit, um eine vorherige Bestätigung gebeten zu werden.
+*	Nicht zugewiesen: Zeigt den Text der Zwischenablage im Lesemodus als HTML
+  an oder benachrichtigt, wenn die Zwischenablage leer ist oder Inhalte
+  enthält, die nicht in einer darstellbaren Nachricht angezeigt werden
+  können, z. B. wenn Dateien oder Ordner im Windows Explorer kopiert wurden.
+*	Nicht zugewiesen: Zeigt den Text-Inhalt der Zwischenablage im Lesemodus
+  als einfachen Text an oder gibt aus, ob die Zwischenablage leer ist oder
+  Inhalte enthält, die nicht in einer darstellbaren Nachricht angezeigt
+  werden können, z. B. wenn Dateien oder Ordner im dem Windows Explorer
+  kopiert wurden.
 
 
-## Clip Contents Designer settings ##
+## Einstellungen für den Zwischenablagenverwalter ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
+Diese Kategorie finden Sie im NVDA_Menü, unter Optionen und Einstellungen.
 
-It contains the following controls:
+Folgende Einstellungen sind verfügbar:
 
-* Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can select if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty (for example if you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're learning HTML markup language, you may choose Preformatted text in HTML or HTML as shown in a web browser, to have an idea of how your HTML code will be rendered by NVDA in a browser. The difference between preformatted and conventional HTML is that the first option will preserve consecutive spaces and line breaks, and the second one will compact them.  For example, write some HTML tags like h1, h2, li, pre, etc., select and copy the text to clipboard, and use clipContentsDesigner add-on to show the text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode: Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+* Geben Sie die Zeichenfolge ein, die als Trennzeichen zwischen Inhalten
+  verwendet werden soll, die der Zwischenablage hinzugefügt wurden:
+  Ermöglicht das Festlegen eines Trennzeichens, mit dem die Textsegmente
+  gefunden werden können, sobald der gesamte hinzugefügte Text eingefügt
+  wurde.
+* Text vor Daten der Zwischenablage hinzufügen: Sie können auch auswählen,
+  ob der hinzugefügte Text angehängt oder vorangestellt werden soll.
+* Wählen Sie die Aktionen aus, für die eine vorherige Bestätigung
+  erforderlich ist: Sie können für jede verfügbare Aktion auswählen, ob sie
+  sofort oder nach der Bestätigung ausgeführt werden soll. Verfügbare
+  Aktionen sind: Text hinzufügen, Zwischenablage löschen, Kopieren emulieren
+  und Ausschneiden emulieren.
+* Fordern Sie eine Bestätigung an, bevor Sie die ausgewählten Aktionen
+  ausführen, wenn: Sie können wählen, ob immer Bestätigungen angefordert
+  werden sollen, nur wenn Text in der Zwischenablage enthalten ist oder wenn
+  die Zwischenablage nicht leer ist z. B. wenn Sie eine Datei (kein Text)
+  kopiert haben.
+* Legen Sie fest, wie der Text in der Zwischenablage als HTML im Lesemodus
+  dargestellt wird: Wenn Sie die HTML-Auszeichnungssprache lernen, können
+  Sie vorformatierten Text in HTML oder HTML wie im Internetbrowser
+  auswählen, damit Sie eine Vorstellung bekommen, wie Ihr HTML-Code in einem
+  Internetbrowser von NVDA dargestellt wird. Der Unterschied zwischen
+  vorformatiertem und herkömmlichem HTML besteht darin, dass bei der ersten
+  Option aufeinanderfolgende Leerzeichen und Zeilenumbrüche beibehalten und
+  bei der zweiten Option komprimiert werden. Schreiben Sie beispielsweise
+  einige HTML-Tags wie h1, h2, li, pre etc.., wählen Sie den Text aus und
+  kopieren Sie diesen in die Zwischenablage. Verwenden Sie die Erweiterung,
+  um den Text in einer Fenster anzuzeigen.
+* Maximale Anzahl von Zeichen beim Anzeigen von Text in der Zwischenablage
+  im Lesemodus: Beachten Sie, dass das Erhöhen dieser Grenze zu Problemen
+  führen kann, wenn die Zwischenablage große Textzeichenfolgen enthält. Das
+  Standardlimit beträgt 100000 Zeichen.
+* Restore defaults.
 
-Notes:
+Anmerkungen:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Bestätigungen werden nicht angefordert, wenn ein Meldungsfenster von NVDA
+  geöffnet ist. In diesem Fall werden die Aktionen sofort ausgeführt.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape
+  key.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
+## Änderungen in 22.0.0
+* Es wurde eine Schaltfläche zum Wiederherstellen der Standard-Einstellungen
+  im den Einstellungen der NVDA-Erweiterung hinzugefügt.
+* Die NVDA-Erweiterung läuft nicht im geschützten Modus.
+
+## Änderungen in 17.0
+* Kompatibel mit NVDA 2023.1.
+
+## Änderungen in 16.0
+* NVDA 2022.1 oder neuer wird benötigt.
+
+## Änderungen in 15.0
+* Der Befehl zum Hinzufügen von Text in die Zwischenablage wird wieder im
+  Dialogfeld für die Tastenbefehle angezeigt.
+* Tastenkombinationen zum Kopieren und Ausschneiden mit persischer Tastatur
+  behoben, dank Mohammad Hosein Ghezelsofla.
+
+## Änderungen in 14.0
+* Kompatibel mit NVDA 2021.1.
 
 ## Changes for 13.0
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
+* Dank Cyrille Bougot wurde ein Problem im visuellen Layout des
+  Einstellungsfelds behoben.
+* Verbesserte Dokumentation.
+* Es wurde eine Kategorie "Zwischenablagenverwalter" hinzugefügt, damit
+  allen verfügbaren Befehlen Tastenkombinationen zugewiesen werden können.
+* Fehler bei der Verwendung der Emulationskopie im Lesemodus behoben, wenn
+  der Fokusmodus aktiv ist.
+* Sie können verschiedene Gesten zuweisen, um den Textinhalt der
+  Zwischenablage als Rohtext oder in HTML formatiert anzuzeigen. Das Format
+  zum Anzeigen des Textes in der Zwischenablage im Einstellungsfeld wurde
+  entsprechend geändert, um die beiden für das HTML-Format verfügbaren
+  Optionen auszuwählen.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice Writer.
+## Änderungen in 12.0
+* Fehler bei der Verwendung von Emulationskopien in Anwendungen wie
+  LibreOffice Writer behoben.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Änderungen in 11.0
+* Jetzt ist es möglich, Text mit den Standardbefehlen des NVDA-Cursors
+  (NVDA+f9 und NVDA+f10) zu markieren und in die Zwischenablage zu
+  kopieren. NVDA+Windows+f9 wird nicht mehr verwendet, um dem neuen Befehl
+  NVDA+shift+f9  besser zu integrieren.
+* Erfordert NVDA 2019.3 oder höher.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Änderungen in 10.0
+* Es wurde ein Fehler in dem Dialog behoben, der verwendet wurde, um den
+  Text der Zwischenablage anzuzeigen, wenn sein Titel nicht-lateinische
+  Zeichen enthält.
+* Ein Fehler wurde behoben, der bei der Verwendung der emulierten Funktionen
+  zum Ausschneiden und Kopieren mit einem arabischen Tastaturlayout
+  auftrat. Dies wurde von Abdel behoben, der als zusätzlichen Autor dieser
+  Erweiterung nun hinzugefügt wurde.
 
-## Changes for 9.0
+## Änderungen in 9.0
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* Es wurde die Möglichkeit hinzugefügt, den Text der Zwischenablage im
+  Lesemodus anzuzeigen.
+* Es wurde eine Option hinzugefügt, um zu wählen, ob Bestätigungen
+  erforderlich sind, wenn die Zwischenablage nicht leer ist, z.B. wenn
+  Dateien oder Ordner kopiert wurden.
+* Benötigt NVDA 2018.4 oder höher.
 
-## Changes for 8.0 ##
+## Änderungen in 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA 2017.3][3].
+* Die Einstellungen für die Erweiterung werden in der entsprechenden
+  Kategorie der Einstellungen von NVDA angezeigt.
+* Benötigt NVDA 2018.2 oder höher.
 
-## Changes for 7.0
+## Änderungen in 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.
+* Die Befehle im Dialog zum Konfigurieren der Funktionen für das Emulieren
+  der Kopier- und Ausschneide-Funktion  werden bei der Installation
+  entfernt, so dass das normale Verhalten von Strg+C und Strg+X
+  wiederhergestellt werden kann.
 
-## Changes for 6.0
+## Änderungen in 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
-## Changes for 5.0 ##
+## Änderungen in 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Die visuelle Darstellung des Dialogs wurde verbessert und entspricht dem
+  Erscheinungsbild der Dialoge in NVDA.
+*	Benötigt NVDA 2016.4 oder höher.
 
-## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
+## Änderungen in 4.0 ##
+*	Erweiterungseinstellungen werden von der NVDA-Konfiguration verwaltet, so
+  dass Standardprofile verwendet werden können, um verschiedene Trennlinien
+  zu speichern. Es ist nicht erforderlich, die Einstellungen für den Import
+  bei der Neuinstallation zu kopieren.
+*	Es kann nun gewählt werden, ob der hinzugefügte Text angehängt oder
+  vorangestellt werden soll, indem Sie das Kontrollkästchen Text vor den
+  Daten der Zwischenablage hinzufügen im Einstellungsdialog der Erweiterung
+  verwenden.
 
-## Changes for 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings dialog.
-*	Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
+## Änderungen in 3.0 ##
+*	Braille-Darstellung von MathML-Objekten können bei installiertem
+  MathPlayer zur Zwischenablage hinzugefügt werden.
+*	Wenn kein Trennzeichen gesetzt ist, wird nur eine einzige Linie zwischen
+  den angehängten Textsegmenten platziert.
+*	Sie können ein Tastenkürzel zum Öffnen des Einstellungsdialogs zuweisen.
+*	Es wurde ein Kontrollkästchen im Einstellungsdialog hinzugefügt, mit dem
+  festgelegt wird, ob die Trennlinie beim erneuten Installieren der
+  Erweiterung für den Import kopiert werden soll.
 
-## Changes for 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+## Änderungen in 2.0 ##
+*	Indische Zeichen können nun als Trennzeichen zwischen kopierten Inhalten
+  verwendet werden.
 
-## Changes for 1.0 ##
-*	Initial version.
+## Änderungen in 1.0 ##
+*	Erstveröffentlichung.
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[[!tag dev stable]]
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
-
-[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o
