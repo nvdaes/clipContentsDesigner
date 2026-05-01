@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
-<file id="readme.md" original="https://raw.githubusercontent.com/nvdaes/clipContentsDesigner/8570b5bcb3c8c96557d7fbe8aad6254006700e28/readme.md">
+<file id="readme.md" original="https://raw.githubusercontent.com/nvdaes/clipContentsDesigner/48a63db337a80f4f410050eb09722a0e52963844/readme.md">
 <skeleton>
 # $(ID:bfab70a9-fcd8-4c78-a917-55ccc6326ad3)
 *	$(ID:7b77af2c-5908-47de-aa5f-81f034282626)
@@ -126,7 +126,6 @@ $(ID:03e6d320-4757-4a35-acc0-3b2b8ee2730c)
 
 ## $(ID:4c972a16-d4f1-44ec-a076-62238cba36ed)
 *	$(ID:11f66fab-ee52-45d9-89dc-f6e99c2d5c4b)
-
 </skeleton>
 <unit id="bfab70a9-fcd8-4c78-a917-55ccc6326ad3">
 <notes>
