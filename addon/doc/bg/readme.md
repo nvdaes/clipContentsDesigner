@@ -1,109 +1,204 @@
-# Clip Contents Designer #
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
-*	Download [stable version][1]
-*	Download [development version][2]
+# Дизайнер за съдържанието на клипборда (Clip Contents Designer) #
 
-This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
-The clipboard content can also be cleared an shown in browse mode.
+*	Автори: Noelia, Abdel.
 
-## Keyboard commands ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+Тази добавка служи за добавяне на текст към клипборда, което може да бъде
+полезно когато искате да обедините в едно отделни части от текст, готов за
+поставяне.  Съдържанието на клипборда може и да се изчиства или показва в
+режим на разглеждане.
+
+## Клавиатурни команди ##
+*	NVDA+Windows+C: Добавяне към клипборда на избрания текст, уникод брайлови
+  символи представящи обекти на MathML, или низа маркиран с курсора за
+  преглед.
+*	NVDA+Windows+X: Изчистване на съдържанието на клипборда.
+*	Не е назначено: Копира в (или изрязва от) клипборда, с възможност за
+  запитване за потвърждение.
+*	Не е назначено: Показва текста на клипборда като HTML в режим на
+  разглеждане или съобщава, ако клипбордът е празен или има съдържание,
+  което не може да бъде представено в съобщение за преглед, например ако
+  файлове или папки са копирани от Windows Explorer.
+*	Не е назначено: Показва текста на клипборда в режим на разглеждане или
+  съобщава, ако клипбордът е празен или има съдържание, което не може да
+  бъде представено в съобщение за преглед, например ако файлове или папки са
+  копирани от Windows Explorer.
 
 
-## Clip Contents Designer settings ##
+## Настройки на дизайнера за съдържанието на клипборда ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
+Този панел е достъпен от менюто на NVDA -> подменю "Настройки" -> диалоговия
+прозорец "Настройки".
 
-It contains the following controls:
+Съдържа следните контроли:
 
-* Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can select if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty (for example if you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're learning HTML markup language, you may choose Preformatted text in HTML or HTML as shown in a web browser, to have an idea of how your HTML code will be rendered by NVDA in a browser. The difference between preformatted and conventional HTML is that the first option will preserve consecutive spaces and line breaks, and the second one will compact them.  For example, write some HTML tags like h1, h2, li, pre, etc., select and copy the text to clipboard, and use clipContentsDesigner add-on to show the text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode: Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+* Въвеждане на низа, който да се използва като разделител между
+  съдържанието, добавено в клипборда: Позволява задаването на разделител,
+  който може да се използва за намиране на текстовите сегменти, след като
+  целият добавен текст бъде поставен.
+* Добавяне на текст преди данните на клипборда: Възможно е също така да се
+  избере дали текстът ще бъде добавен преди или след.
+* Избор на действията, които изискват предшестващо потвърждение: Може да се
+  избере за всяко налично действие дали да се извърши незабавно или след
+  потвърждение. Наличните действия са: добавяне на текст, изчистване на
+  клипборда, емулиране на копиране и емулиране на изрязване.
+* Искане на потвърждение, преди да се извършат избраните действия, когато:
+  Може да се избере дали потвържденията ще се изискват винаги, само ако
+  текстът се съдържа в клипборда или ако клипборда не е празен (например при
+  копиране на файл, а не текст).
+* Формат, в който да се извежда текстът на клипборда като HTML в режим на
+  разглеждане: Ако изучавате езика за маркиране HTML, можете да изберете
+  предварително форматиран текст в HTML или HTML, както бива извеждан в уеб
+  браузъра, за да имате представа за това как ще бъде изобразен вашият HTML
+  код от NVDA в браузъра. Разликата между предварително форматиран и
+  конвенционален HTML ев това, че първата опция ще запази последователни
+  интервали и прекъсвания на редове, а втората ще ги уплътни. Например
+  напишете някои HTML тагове като h1, h2, li, pre и т.н., изберете и
+  копирайте текста в клипборда и използвайте добавката "Дизайнер за
+  съдържанието на клипборда", за да покажете текста в съобщение за
+  разглеждане.
+* Максимален брой знаци при показване на текст в клипборда в режим на
+  разглеждане: Моля, имайте предвид, че увеличаването на това ограничение
+  може да създаде проблеми, ако клипбордът съдържа големи текстови
+  низове. Ограничението по подразбиране е 100000 знака.
+* Възстановяване на настройките по подразбиране.
 
-Notes:
+Забележки:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Няма да има запитване за потвърждение, ако в момента има отворен друг
+  диалогов прозорец на NVDA. В тези случаи действията ще бъдат извършвани
+  незабавно.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
 
-## Changes for 15.0
-* The command to add text to clipboard is again presented in the input gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape
+  key.
 
-## Changes for 14.0
-* Compatible with NVDA 2021.1.
+
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
+## Промени във версия 22.0.0
+* Добавен е бутон за възстановяване на настройките по подразбиране в панела
+  с настройки на добавката.
+* Добавката не може да се изпълнява в защитен режим.
+
+## Промени във версия 17.0
+* Добавката е съвместима с NVDA 2023.1.
+
+## Промени във версия 16.0
+* Изисква се NVDA 2022.1 или по-нова версия.
+
+## Промени във версия 15.0
+* Командата за добавяне на текст към клипборда отново е налична в диалоговия
+  прозорец "Жестове на въвеждане".
+* Поправени са жестовете за копиране и изрязване с персийска клавиатурна
+  подредба (благодарение на Mohammadhosein Ghezelsofla).
+
+## Промени във версия 14.0
+* Съвместима с NVDA 2021.1.
 
 ## Changes for 13.0
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
-* Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
-* Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
+* Отстранен проблем с визуалното оформление на панела за настройки
+  (благодарности за това към Cyrille Bougot).
+* Подобрения в документацията.
+* Добавена е категория "Дизайнер за съдържанието на клипборда", за задаване
+  на жестове на въвеждане за всички команди, налични за тази добавка.
+* Отстранени грешки при използване на емулирано копиране в браузърите при
+  активен режим на фокус.
+* Възможност за задаване на различни жестове за извеждане на текстовото
+  съдържание на клипборда като чист текст или форматиран в HTML. Форматът за
+  показване на текста на клипборда в панела за настройки е съответно
+  модифициран, за да може да се изберат двете опции, налични за HTML
+  формата.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice Writer.
+## Промени във версия 12.0
+* Отстранени грешки при използване на емулирано копиране в приложения като
+  LibreOffice Writer.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Промени във версия 11.0
+* Сега е възможно да добавите текст, маркиран с курсора за преглед, като
+  използвате стандартните команди на NVDA (NVDA+F9 и
+  NVDA+F10). NVDA+Windows+F9 вече не се използва, с цел по-добра интеграция
+  с новата команда NVDA+Shift+F9.
+* Изисква се NVDA 2019.3 или по-нова версия.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Промени във версия 10.0
+* Поправена грешка в диалоговия прозорец използван за показване на текста в
+  клипборда, когато заглавието му съдържа букви извън латиницата.
+* Поправена грешка при използване на функциите за емулирано изрязване и
+  копиране при използване на арабска клавиатурна подредба. Това е поправено
+  от Abdel, който е добавен като съавтор на добавката.
 
-## Changes for 9.0
+## Промени във версия 9.0
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* Добавена е възможност за показване на текста на клипборда в режим на
+  разглеждане.
+* Добавена е опция за избор дали ще са необходими потвърждения, ако
+  клипбордът не е празен, например ако са копирани файлове или папки.
+* Изисква NVDA 2018.4 или по-нова.
 
-## Changes for 8.0 ##
+## Промени във версия 8.0 ##
 
-* The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA 2017.3][3].
+* Настройките на добавката се показват в съответната категория на прозореца
+  с настройките на NVDA.
+* Изисква NVDA 2018.2 или по-нова.
 
-## Changes for 7.0
+## Промени във версия 7.0
 
-* In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.
+* При инсталиране, в диалоговия прозорец за конфигуриране на функциите за
+  емулиране на копиране и изрязване, ако изберете "Не", командите за тези
+  функции ще бъдат премахнати, за да можете да възстановите нормалното
+  поведение на Control+C и Control+X.
 
-## Changes for 6.0
+## Промени във версия 6.0
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+*	Добавени са опции за избор дали наличните действия  ще се извършват след
+  потвърждение.
+*	Добавени са команди за емулиране на копирането и изрязването, на които
+  могат да бъдат назначени жестове в екрана за управление на жестовете на
+  NVDA.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
+*	Поправена е документацията за script_add (Windows+NVDA+C).
 
-## Changes for 5.0 ##
+## Промени във версия 5.0 ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Визуалното представяне на прозореца е подобрено, придържайки се към
+  стандарта за изглед на прозорците, извеждани от NVDA.
+*	Изисква NVDA 2016.4 или по-нова.
 
-## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
+## Промени във версия 4.0 ##
+*	Настройките на добавката се управляват от конфигурацията на NVDA, така че
+  стандартните профили може да се използват за запазване на различни
+  разделители. Освен това, отпада необходимостта да копирате настройките за
+  импортиране при преинсталация.
+*	Сега е възможно да изберете дали добавеният текст ще бъде добавен преди
+  или след наличния текст, с помощта на опцията "Добави текста преди данните
+  в клипборда" в диалоговия прозорец за настройка на Clip Contents Designer.
 
-## Changes for 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings dialog.
-*	Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
+## Промени във версия 3.0 ##
+*	Ако е инсталиран MathPlayer, в клипборда могат да се добавят брайлови
+  представяния на обекти на MathML,.
+*	Ако няма зададен разделител, ще бъде поставен един празен ред между
+  добавените текстови сегменти.
+*	Може да бъде зададен бърз клавиш за отваряне на прозореца с настройките на
+  Clip Contents Designer.
+*	В диалоговия прозорец с настройките е добавено поле за отметка за избор
+  дали разделителят да бъде копиран за импортиране при преинсталиране на
+  добавката.
 
-## Changes for 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+## Промени във версия 2.0 ##
+*	Знаци от хинди може да се използват като разделител между добавеното
+  съдържание.
 
-## Changes for 1.0 ##
-*	Initial version.
+## Промени във версия 1.0 ##
+*	Първоначално издание.
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[[!tag dev stable]]
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
-
-[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o
