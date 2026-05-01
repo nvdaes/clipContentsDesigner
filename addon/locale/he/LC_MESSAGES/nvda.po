@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 3.3\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2015-10-23 03:00+1000\n"
+"PO-Revision-Date: 2019-06-20 09:03+0200\n"
+"Last-Translator: shmuel naaman <shmuel_naaman@yahoo.com>\n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"תוסף זה מאפשר לאשר אם אתה רוצה להעתיק ולחתוך, להחליף את תוכן הלוח הגזירים, "
+"בעת לחיצה על control  + C או control + x. זה נקרא לחקות להעתיק ולחתוך, "
+"כברירת מחדל זה עובד רק כאשר הלוח מכיל טקסט. האם ברצונך להגדיר את ההעתקה "
+"לחקות ולחתוך כעת? תוכל לעשות זאת או לשנות זאת במועד מאוחר יותר."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "הגדר את האפשרות להעתיק ולחתוך"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "טקסט מעוצב ב HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML כפי שמוצג בדפדפן אינטרנט"
+
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
+msgstr "טקסט גולמי"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "מציג את תיבת הדו-שיח של הגדרות עורך הזכרון הזמני."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "לוח הגזירים אופס"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "לוח הגזירים לא אופס"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "אנא, אשר אם ברצונך להוסיף טקסט ללוח הגזירים"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "הוספת טקסט ללוח הגזירים"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "הוסף"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "לא ניתן לבצע הוספה"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"מחזיר את המחרוזת או את הטקסט ממיקום סימניית ההתחלה אחורה עד למקום סמן הסריקה "
+"הנוכחי,  ומוסיף את המידע ללוח הזמינים."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "אנא, אשר אם ברצונך למחוק את לוח הגזירים"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "ניקוי לוח הגזירים"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "מוחק את הטקסט שהוסף וכן את התוכן של לוח הגזירים."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "אנא, אשר אם ברצונך להעתיק ללוח הגזירים"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "העתקה ללוח הגזירים"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "עותקים ללוח הגזירים, עם אפשרות של בקשה לאישור קודם"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "אנא, אשר אם ברצונך לחתוך את הלוח הגזירים"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "חיתוך מלוח הגזירים"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "גזירה מלוח הגזירים, עם אפשרות של בקשה לאישור הקודם"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "הצגת טקסט לוח הגזירים במצב גלישה"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "לוח הגזירים אינו ריק, אבל אין טקסט להציג"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "לוח הגזירים ריק"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "טקסט לוח הגזירים ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "הצגת טקסט לוח הגזירים במצב גלישה"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr "נא להקיש את המחרוזת המהווה &הפרדה בין התכנים השונים של לוח הגזירים."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "הו&ספת טקסט לפני תוכן הזכרון הזמני"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "&בחר את הפעולות שדורשות אישור מקדים"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid "Confirm to add text"
+msgstr "&אשר להוספת טקסט"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid "Confirm to clear clipboard"
+msgstr "&אשר למחיקת טקסט"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid "Confirm to emulate copy"
+msgstr "& אשר כדי להפעיל את העתקה"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid "Confirm to emulate cut"
+msgstr "& אשר לאשר לחקות לחתוך"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&אישור הבקשה לפני ביצוע הפעולות שנבחרו כאשר:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "תמיד"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "אם לוח הגזירים מכיל טקסט"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "אם לוח הגזירים אינו ריק"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "&תבנית להצגת טקסט לוח הגזירים במצב דפדוף:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "מספר התווים המקסימלי בעת הצגת טקסט לוח הגזירים במצב גלישה"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "הגדרות עורך הזכרון הזמני"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "תוסף מיועד לעריכת תוכן לוח הגזירים."
+
+#~ msgid "No text to add"
+#~ msgstr "אין טקסט להוספה"
+
+#~ msgid "Start marker set"
+#~ msgstr "קביעת סימניית התחלה"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr "מסמן את מיקום סמן הסריקה כתחילת הטקסט שיתווסף ללוח הגזירים."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "אין טקסט נבחר. לא נקבעה סימניית התחלת"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "סמן ההתחלה חייב להיות ממוקם בתוך אותו אובייקט"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&טקסט בלוח כדי לאשר"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "הגדרות &עורך הזכרון הזמני..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "הגדרות עורך הזכרון הזמני"

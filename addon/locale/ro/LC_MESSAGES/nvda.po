@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 3.4\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2016-02-12 03:00+1000\n"
+"PO-Revision-Date: 2019-06-05 10:06+0300\n"
+"Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Acest suplimemt permite să confirmați dacă vreți să copiați și să tăiați, "
+"înlocuind conținuturile planșetei la apăsarea control+c și control+x. "
+"Aceasta este numită copie sau tăiere simulată, iar în mod implicit "
+"funcționează doar atunci când planșeta conține text. Vreți să configurați "
+"copia sau tăierea simulată? Puteți face asta acum sau mai târziu."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Configurați copia sau tăierea simulată"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Text preformat în HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "Ca și cum HTML ar fi afișat într-un browser web"
+
+#. Translators: Text of the clipboard shown without being formatted.
+#, fuzzy
+msgid "Plain text"
+msgstr "Text brut"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Arată setările Clip Contents Designer."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Planșetă golită"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Planșetă negolită"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Vă rugăm să confirmați dacă vreți să adăugați text pe planșetă"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Se adaugă text pe planșetă"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Adăugat"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Nu se poate adăuga"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Recuperează șirul selectat sau textul de la marcajul de început stabilit "
+"anterior și până la poziția curentă a cursorului de examinare, inclusiv, și "
+"îl adaugă la sfârșit în planșetă."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Vă rugăm să confirmați dacă vreți să curățați planșeta"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Se curăță planșeta"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Șterge textul adăugat și conținutul planșetei."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Vă rugăm să confirmați dacă vreți să copiați pe planșetă"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Se copiază pe planșetă"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Copiază pe planșetă, cu posibilitatea de a fi întrebat pentru o confirmare "
+"anterioară"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Vă rugăm să confirmați dacă vreți să tăiați de pe planșetă"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Se taie de pe planșetă"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Se taie de pe planșetă, cu posibilitatea de a fi întrebat pentru o "
+"confirmare anterioară"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Afișează textul planșetei în modul de navigare"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Planșeta nu este goală, însă nu există niciun text de afișat"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Planșeta este goală"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Text planșetă ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Afișează textul planșetei în modul de navigare"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Tastați șirul de caractere ce va fi folosit ca &separator între "
+"conținuturile adăugate în planșetă."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&Adaugă text înainte de clip data"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "&Selectează acțiunea care necesită o confirmare precedentă"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Confirma&ți pentru a adăuga text"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Confirmați pentru a curăța planșeta"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Confirmați pentru a simula copia"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Confirmați pentru a simula tăierea"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "S&olicită o confirmare înainte de a efectua acțiunile selectate:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Mereu"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Dacă planșeta conține text"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Dacă planșeta nu este goală"
+
+#. Translators: label of a dialog.
+#, fuzzy
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "Format de afișare a textului planșetei în modul de navigare:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"&Număr maxim de caractere la afișarea textului planșetei în modul de navigare"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer (Proiectantul conținutului planșetei)"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Supliment pentru gestionarea textului din planșetă."
+
+#~ msgid "No text to add"
+#~ msgstr "Fără text de adăugat"
+
+#~ msgid "Start marker set"
+#~ msgstr "Marcaj de început stabilit"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Marchează poziția curentă a cursorului de examinare ca începutul textului "
+#~ "ce va fi adăugat în planșetă."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Fără selecție. Niciun marcaj de început stabilit"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr ""
+#~ "Marcatorul de pornire trebuie să se afle în interiorul obiectului curent"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Te&xt pe planșetă pentru confirmare"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "Opțiuni &Clip Contents Designer..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Configurare Clip Contents Designer"

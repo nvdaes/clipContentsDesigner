@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 2.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2015-03-20 03:00+1000\n"
+"PO-Revision-Date: 2023-05-27 15:33+0100\n"
+"Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
+"Language-Team: \n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Ovaj dodatak vam dozvoljava da potvrdite kopiranje i isecanje, kada to menja "
+"sadržaj privremene memorije,\n"
+"\t\tKada pritisnete Ctrl plus C ili Ctrl plus X. Ovo se zove emuliranje "
+"kopiranja i isecanja.\n"
+"\t\tDa li želite ovo sada da podesite? Ovo možete promeniti kasnije."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Podesite emuliranje kopiranja i isecanja"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Formatiran tekst kao HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML način prikaza u Web pretraživačima"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "Običan tekst"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Prikazuje podešavanja dizajnera sadržaja privremene memorije."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Ispražnjena privremena memorija"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Nije ispražnjena privremena memorija"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Molimo, podvrdite da želite da dodate tekst u privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Dodavanje teksta u privremenu memoriju"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Dodato"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Nije moguće dodavanje"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Preuzima izabrani deo ili tekst od prethodno podešenog početnog markera "
+"uključujući i trenutnu poziciju preglednog kursora, zatim ga dodaje u "
+"privremenu memoriju."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Molimo, potvrdite da želite da obrišete privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Brisanje privremene memorije"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Briše dodati tekst i sadržaj privremene memorije."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Molimo, potvrdite da želite da kopirate u privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Kopiranje u privremenu memoriju"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Kopira u privremenu memoriju, uz mogućnost da vas pita za potvrdu"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Molimo, potvrdite da želite da isečete u privremenu memoriju"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Isečeno u privremenu memoriju"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Seče u privremenu memoriju, uz mogućnost potvrde"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Prikazuje tekst privremene memorije kao HTML u režimu pretraživanja"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Privremena memorija nije prazna, ali nema teksta za prikazivanje"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Privremena memorija je prazna"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Tekst privremene memorije ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr ""
+"Prikazuje tekst privremene memorije kao običan tekst u režimu pretraživanja"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Unesi znakove koji će se koristiti kao &separator između sadržaja dodatih u "
+"privremenu memoriju."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&Dodaj tekst pre dela podataka"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Izaberi &radnje koje zahtevaju potvrdu"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Potvrda dodavanja teksta"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Potvrda brisanja privremene memorije"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Potvrda kopiranja"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Potvrda isecanja"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr ""
+"&Zahtevaj potvrdu kada se izvršavaju izabrane radnje u sledećim slučajevima:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Uvek"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Ako privremena memorija sadrži tekst"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Ako privremena memorija nije prazna"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "&Formatiranje teksta za prikazivanje kao HTML u režimu pretraživanja:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"&Maksimalan broj znakova kada se prikazuje tekst u režimu pretraživanja"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "Vrati na podrazumevano"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Dizajner sadržaja privremene memorije"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Dodatak za upravljanje tekstualnog sadržaja privremene memorije"
+
+#~ msgid "No text to add"
+#~ msgstr "Nema teksta za dodavanje"
+
+#~ msgid "Start marker set"
+#~ msgstr "Postavljen početni marker"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Označava trenutnu poziciju preglednog kursora kao početak teksta koji "
+#~ "treba da se doda u privremenu memoriju."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Ništa nije označeno. Nije postavljen početni marker"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Početni marker mora ostati u istom objektu"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Potvrda za &tekst u privremenoj memoriji"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Clip contentsDesigner podešavanja..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Podešavanja za Clip Contents Designer"

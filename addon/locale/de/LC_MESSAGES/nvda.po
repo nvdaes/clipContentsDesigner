@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2024-05-18 06:12+0200\n"
+"Last-Translator: René Linke <rene.linke@hamburg.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Mit dieser NVDA-Erweiterung können Sie bestätigen, dass Sie kopieren und "
+"ausschneiden möchten, und den Inhalt der Zwischenablage ersetzen.\n"
+"\t\\Beim Drücken von Strg+C und Strg+X. Dies wird als \"Kopieren und "
+"Ausschneiden emulieren\" bezeichnet.\n"
+"\t\tMöchten Sie das \"Kopieren und Ausschneiden emulieren\" jetzt "
+"konfigurieren? Sie können dies später ändern."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Einstellungen für Kopieren und Ausschneiden emulieren anpassen"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Vorformatierter Text in HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML wie im Web-Browser"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "Text ohne Formatierungen"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Zeigt die Einstellungen des Zwischenablagenverwalters an."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Zwischenablage geleert"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Zwischenablage nicht geleert"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr ""
+"Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage hinzufügen möchten"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Füge Text zur Zwischenablage hinzu"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Hinzugefügt"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Konnte nichts hinzufügen"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Bezieht die ausgewählte Zeichenfolge oder den Text von der zuvor "
+"festgelegten Startmarkierung bis einschließlich der aktuellen Position des "
+"NVDA-Cursors ein und fügt sie der Zwischenablage hinzu."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Bitte bestätigen Sie, dass Sie die Zwischenablage leeren möchten"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Leere Zwischenablage"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Löscht den Inhalt der Zwischenablage."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr ""
+"Bitte bestätigen Sie, dass sie den Inhalt in die Zwischenablage kopieren "
+"möchten"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Kopiere in Zwischenablage"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Kopiert Inhalt in die Zwischenablage, nachdem ggf. eine Bestätigung erfolgt "
+"ist"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr ""
+"Bitte bestätigen Sie, dass Sie den Inhalt in die zwischenablage ausschneiden "
+"möchten"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Inhalt wird in die Zwischenablage ausgeschnitten"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Schneidet Inhalt in die Zwischenablage aus, nachdem ggf. eine Bestätigung "
+"erfolgt ist"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Zeigt den Text der Zwischenablage als HTML im Lesemodus"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Zwischenablage ist nicht leer, aber es gibt keinen Text zu zeigen"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Zwischenablage ist leer"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Text der Zwischenablage ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Zeigt den Text der Zwischenablage als nur Text im Lesemodus"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Geben Sie die Zeichenfolge ein, die verwendet werden soll, um mehrere "
+"Textfragmente in der Zwischenablage voneinander zu trennen."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "Text an erster Stelle der Daten in der Zwischenablage &hinzufügen"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "&wähle die Aktionen, die eine vorherige Bestätigung erfordern"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Text einfügen bestätigen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Leeren der Zwischenablage bestätigen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Emulieren von kopieren bestätigen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Emulieren von ausschneiden bestätigen"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr ""
+"Vor der Durchführung der ausgewählten Aktionen Bestätigung anfordern, wenn:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Immer"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Wenn die Zwischenablage Text enthält"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Wenn die Zwischenablage nicht leer ist"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr ""
+"& Format, in  dem Text der Zwischenablage als HTML im Lesemodus angezeigt "
+"wird:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"& Maximale Anzahl der Zeichen bei der Anzeige der Zwischenablage im Lesemodus"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "Standard-Einstellungen wiederherstellen"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Zwischenablagenverwalter"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+"Ermöglicht das Zusammenfügen von einzelnen Textfragmenten und das Löschen "
+"des Inhalts der Zwischenablage, dieser kann im Lesemodus angezeigt werden. "
+"Option zur Anforderung einer Bestätigung vor der Durchführung von Aktionen "
+"wie Kopieren, Ausschneiden, Hinzufügen von Text oder Löschen der "
+"Zwischenablage, um versehentliche Änderungen zu vermeiden."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Erweiterung zur Textverwaltung in der Windows-Zwischenablage."
+
+#~ msgid "No text to add"
+#~ msgstr "Kein Text zum Hinzufügen"
+
+#~ msgid "Start marker set"
+#~ msgstr "Startmarke gesetzt"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
+#~ "Anfügen von Text zum Inhalt der Zwischenablage."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&Text in der Zwischenablage bestätigen"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Zwischenablagen-Designer-Einstellungen..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Zwischenablagen-Designer-Einstellungen"

@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2024-08-12 13:48+0500\n"
+"Last-Translator: Ruslan Kolodyazhni <rupelodn@gmail.com>\n"
+"Language-Team: Translators <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Это дополнение позволяет настроить подтверждение для операций копирования и "
+"вырезания, которые заменяют содержимое буфера обмена\n"
+"\t\tпри нажатии Control+C и Control+X. Это называется эмуляцией копирования "
+"и вырезания.\n"
+"\t\tХотите ли вы настроить эмуляцию копирования и вырезания прямо сейчас? Вы "
+"можете сделать данную настройку позже."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Настроить эмуляцию копирования и вырезания"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Предварительно отформатированный текст в HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML, как в web-браузере"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "Простой текст без форматирования"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Показывает диалог настроек Clip Contents Designer."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Буфер обмена очищен"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Буфер обмена не очищен"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Пожалуйста, подтвердите, что вы хотите добавить текст в буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Добавление текста в буфер обмена"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Добавлено"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Невозможно добавить"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Получает выделенную строку или текст от ранее установленного начального "
+"маркера вплоть до текущей позиции просмотрового курсора и добавляет в буфер "
+"обмена."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Пожалуйста, подтвердите, что вы хотите очистить буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Очистка буфера обмена"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Удаляет добавленный текст и содержимое буфера обмена."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr ""
+"Пожалуйста, подтвердите, что вы хотите выполнить копирование в буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Копирование в буфер обмена"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Выполняет копирование в буфер обмена с возможностью предварительного "
+"подтверждения"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr ""
+"Пожалуйста, подтвердите, что вы хотите выполнить вырезание в буфер обмена"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Вырезание в буфер обмена"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Выполняет вырезание в буфер обмена с возможностью предварительного "
+"подтверждения"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Отображает текст буфера обмена как HTML-документ в режиме обзора"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Буфер обмена не пуст, но текста для отображения нет"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Буфер обмена пуст"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Текст буфера обмена ({max}/{current} — {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr ""
+"Отображает текстовое содержимое буфера обмена как простой текст без "
+"форматирования в режиме обзора"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Строка, используемая в качестве &разделителя содержимого, добавляемого в "
+"буфер обмена."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&Добавлять текст в начало буфера обмена"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Выбор &действий, требующих предварительного подтверждения"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Подтверждение добавления текста"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Подтверждение очистки буфера обмена"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Подтверждение эмуляции копирования"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Подтверждение эмуляции вырезания"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Запрос подтверждения перед выполнением выбранных действий:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Всегда"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Если буфер обмена содержит текст"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Если буфер обмена не пуст"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr ""
+"&Формат отображения текста буфера обмена как HTML-документа в режиме обзора:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"&Максимальное число символов при отображении текста буфера обмена в режиме "
+"обзора"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "Восстановить значения по умолчанию"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+"Позволяет объединять отдельные фрагменты текста в буфере обмена и очищать "
+"содержимое буфера обмена. Текущий текст в буфере обмена можно просмотреть в "
+"режиме обзора. Возможность запрашивать подтверждение перед выполнением таких "
+"действий, как копирование, вырезание, добавление текста или очистка буфера "
+"обмена, чтобы избежать случайных изменений."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Дополнение для управления текстом буфера обмена."
+
+#~ msgid "No text to add"
+#~ msgstr "Нет текста для добавления"

@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Pano İçerik Düzenleyicisi\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2024-05-17 19:28+0300\n"
+"Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language-Team: Turkish <cagrid@hotmail.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SearchPath-0: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-1: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-2: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-3: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-4: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-5: AppendText/globalPlugins/clipContentsDesigner\n"
+"X-Poedit-SearchPath-6: clipContentsDesigner/globalPlugins\n"
+"X-Poedit-SearchPath-7: clipContentsDesigner/globalPlugins/"
+"clipContentsDesigner\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Bu eklenti, kontrol+c ya da kontrol+x tuşlarına bastığınızda pano içeriğinin "
+"değiştirilmesiyle ilgili kopyalama ve kesme işlemlerini onaylamanıza olanak "
+"tanır.\n"
+"\tBu, kopyalama ve kesme taklidi olarak adlandırılır, ve varsayılan olarak "
+"panoda metin varsa çalışır.\n"
+"\t\tKopyalama, kesme taklidini şimdi yapılandırmak istiyor musunuz? bunu "
+"daha sonra yapabilir ya da değiştirebilirsiniz."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Kopyalama ve kesme taklidini yapılandır"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "HTML’de önceden biçimlendirilmiş metin"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "Bir web tarayıcısında gösterildiği gibi HTML"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "Düz metin"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Pano İçerik Düzenleme ayarlarını görüntüler."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Pano temizlendi"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Pano temizlenmedi"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Panoya metin ekleme işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Metin panoya ekleniyor"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Eklendi"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Eklenecek metin alınamadı"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Seçili olan metin ya da daha önce başlangıç işareti konan noktayla inceleme "
+"imlecinin mevcut konumu arasındaki metin panoya eklenir."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Panoyu temizleme işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Pano temizleniyor"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Eklenmiş metin ve pano içeriği silinir."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Panoya kopyalama işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Panoya kopyalanıyor"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Önceki metnin yerine eklenmesinin onayının sorulması olasılığıyla, panoya "
+"kopyalar"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Kesme işlemini onaylayın lütfen"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Panodan kesiliyor"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Önceki metnin yerine eklenmesinin onayının sorulması olasılığıyla, panodan "
+"keser"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Pano metnini tarama kipinde HTML olarak gösterir"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Pano boş değil, ancak gösterilecek metin yok"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Pano boş"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Pano metni ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Pano metin içeriğini tarama kipinde düz metin olarak gösterir"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Panoya eklenen metinler arasında &ayraç olarak kullanılacak metni girin."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "Metni panodaki veriden önce ekle"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Önceden onay gerektiren işlemleri se&çin"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Metin eklemek için onay iste"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Panoyu silmek için onay iste"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Kopya taklidi için onay iste"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Kesme taklidi için onay iste"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Seçili işlemleri gerçekleştirmeden önce onay iste:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Her zaman"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Panoda metin varsa"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Pano boş değilse"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "&Pano metnini tarama kipinde göstermeden önce biçimlendir:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "Pano metnini tarama kipinde gösterirken &maksimum karakter sayısı"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "Varsayılanları geri yükle"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Pano İçerik Düzenleyicisi"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+"Panodaki ayrı metin parçalarının birleştirilmesine ve pano içeriğinin "
+"temizlenmesine izin verir. Panodaki geçerli metin, göz atma modunda "
+"sunulabilir. Yanlışlıkla yapılan değişiklikleri önlemek için kopyalama, "
+"kesme, metin ekleme veya panoyu temizleme gibi eylemleri gerçekleştirmeden "
+"önce onay isteme seçeneği."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Panodaki metnin yönetimi için eklenti."
+
+#~ msgid "No text to add"
+#~ msgstr "Eklenecek metin yok"
+
+#~ msgid "Start marker set"
+#~ msgstr "Başlangıç işareti kondu"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Inceleme imlecinin mevcut konumu eklenecek metnin başlangıcı olarak "
+#~ "ayarlanır"
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Seçim yok. Başlangıç noktası belirlenmemiş"
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Başlangıç işareti aynı nesne içinde olmalı"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Onaylanacak panodaki me&tin"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Pano içerik tasarım ayarları..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Pano İçerik Düzenleme ayarları"
+
+#~ msgid ""
+#~ "You have installed the AppendText add-on, probably an old and "
+#~ "incompatible version with this one. Do you want to uninstall the old "
+#~ "version?"
+#~ msgstr ""
+#~ "Pano metin düzenleyicisinin eski ve uyumsuz bir sürümü kurulu. Eski "
+#~ "sürümü kaldırmak istiyor musunuz?"
+
+#~ msgid "Uninstall incompatible add-on"
+#~ msgstr "Uyumsuz eklenti kaldırılıyor"
+
+#~ msgid ""
+#~ "You seem to have previous settings saved for this add-on. Do you want to "
+#~ "import them?"
+#~ msgstr ""
+#~ "Bu eklenti için önceden bir ayarlama yapmış gibi gözüküyorsunuz. İçe "
+#~ "aktarmak ister misiniz?"
+
+#~ msgid "Import ClipContentsDesigner add-on settings"
+#~ msgstr "Pano İçerik Düzenleme eklentisinin ayarlarını içe aktar"
+
+#~ msgid "Appended"
+#~ msgstr "Eklendi"
+
+#~ msgid "&Copy settings"
+#~ msgstr "Ayarları &kopyala"

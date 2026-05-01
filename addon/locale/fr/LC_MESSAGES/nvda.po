@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner-addon version 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-30 13:20+0100\n"
+"PO-Revision-Date: 2024-05-17 17:22+0200\n"
+"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Bookmarks: -1,14,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Cette extension permet de confirmer si vous voulez copier et couper, en "
+"remplaçant le contenu du presse-papiers,\n"
+"\t\ten appuyant sur Contrôle+c et Contrôle+x. Cela s'appelle émuler copier "
+"et couper.\n"
+"\t\tVoulez-vous configurer Émuler copier et couper maintenant ? Vous pouvez "
+"faire cela maintenant ou plus tard."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Configurer Émuler copier et couper"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Texte préformaté en HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML tel qu'affiché dans un navigateur web"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "Texte brut"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Afficher les Paramètres Clip Contents Designer."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Presse-papiers vidé"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Presse-papiers non vidé"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr ""
+"Veuillez confirmer si vous souhaitez ajouter du texte dans le presse-papiers"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Ajouter le texte en cours au presse-papiers"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Ajouté"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Impossible d'ajouter"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Récupérer la chaîne sélectionnée ou le texte depuis le marqueur de début "
+"précédemment défini jusqu'à et y compris la position actuelle du curseur de "
+"revue et l'ajouter au presse-papiers."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Veuillez confirmer si vous souhaitez vider le presse-papiers"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Vidage en cours du presse-papiers"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Supprimer le texte ajouté et le contenu du presse-papiers."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Veuillez confirmer si vous souhaitez copier dans le presse-papiers"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Copier au presse-papiers"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Copier dans le presse-papiers, avec la possibilité de demander une "
+"confirmation préalable"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Veuillez confirmer si vous souhaitez couper à partir du presse-papiers"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Couper à partir du presse-papiers"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Couper à partir du presse-papiers, avec la possibilité de demander une "
+"confirmation préalable"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Affiche le texte du presse-papiers en HTML en mode navigation"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr ""
+"Le presse-papiers n'est pas vide, mais il n'y a pas de texte à afficher"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Le presse-papiers est vide"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Texte du presse-papiers ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Affiche le texte du presse-papiers en texte en mode navigation"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Tapez la chaîne qui sera utilisé comme un &séparateur entre les contenus "
+"ajoutés au presse-papiers."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&Ajouter le texte au début du presse-papiers"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Séle&ctionner les actions qui requièrent une confirmation préalable"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Confirmer pour ajouter du texte"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Confirmer pour vider le presse-papiers"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Confirmer pour émuler copier"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Confirmer pour émuler couper"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Demander une confirmation avant d'exécuter l'action quand :"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Toujours"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Si le presse-papiers contient du texte"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Si le presse-papiers n'est pas vide"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr ""
+"&Formater et afficher le contenu du presse-papiers en HtML en mode "
+"navigation :"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"Nombre &maximum de caractères quand le texte du presse-papiers est présenté "
+"en mode navigation"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "Restaurer aux paramètres par défaut"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+"Permet de joindre des fragments de texte séparés dans le presse-papiers et "
+"d'effacer le contenu du presse-papiers. Le texte actuel dans le presse-"
+"papiers peut être présenté en mode navigation. Possibilité de demander une "
+"confirmation avant d'effectuer des actions telles que copier, couper, "
+"ajouter du texte ou effacer le presse-papiers pour éviter des modifications "
+"accidentelles."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Extension pour gérer le texte du presse-papiers."
+
+#~ msgid "No text to add"
+#~ msgstr "Aucun texte à ajouter"

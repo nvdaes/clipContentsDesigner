@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2024-05-20 23:34+0330\n"
+"Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
+"Language-Team: NVDA Translation <nvda-translations@groups.io>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Bookmarks: -1,-1,-1,-1,-1,-1,-1,28,-1,-1\n"
+
+#. Translators: label of a dialog.
+msgid "This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change this later."
+msgstr "این افزونه به شما امکان میدهد هنگام برش و کپی یا جایگزینی محتوای کلیپ‌برد، با استفاده از ctrl+c و ctrl+x، آن‌را تأیید کنید.\n"
+"\t\tاین کار شبیه‌سازیِ کپی یا شبیه‌سازیِ برش نامیده میشود.\n"
+"\t\tمیخواهید شبیه‌سازیِ کپی و برش را هم‌اکنون تنظیم کنید؟ این کار را بعدا هم میتوانید انجام بدهید."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "پیکربندیِ شبیه‌سازیِ کپی و برش"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "متنِ از‌پیش‌قالب‌بندی‌شده در HTML"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML آنطور که در مرورگر نمایش داده میشود"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "متنِ ساده"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "پنجره‌ی تنظیماتِ طراحِ محتوای کلیپ‌برد را نمایش میدهد."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "کلیپ‌برد پاک شد"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "کلیپ‌برد پاک نشد"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "لطفا تأیید کنید که میخواهید متن را به کلیپ‌برد بیفزایید"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "در حالِ افزودنِ متن به کلیپ‌برد"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "افزوده شد"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "نمیتوانم اضافه کنم"
+
+#. Translators: message presented in input mode.
+msgid "Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard."
+msgstr "رشته یا متنِ انتخاب‌شده را از محلِّ نشانه‌ی آغازِ از‌پیش تعیین‌شده تا موقعیتِ فعلیِ  مکان‌نمای بازبینی بازیابی کرده و به کلیپ‌برد اضافه میکند."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "لطفا تأیید کنید که میخواهید کلیپ‌برد را پاک کنید"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "در حالِ پاک کردنِ کلیپ‌برد"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "متنِ اضافه‌شده و محتوای کلیپ‌برد را پاک میکند."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "لطفا تأیید کنید که میخواهید در کلیپ‌برد کپی کنید"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "در حالِ کپی کردن در کلیپ‌برد"
+
+#. Translators: message presented in input mode.
+msgid "Copies to the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr "در کلیپ‌برد کپی میکند، با امکانِ درخواستِ تأییدِ قبلی"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "لطفا تأیید کنید که میخواهید از کلیپ‌برد بِبُرید"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "در حالِ بریدن از کلیپ‌برد"
+
+#. Translators: message presented in input mode.
+msgid "Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr "از کلیپ‌برد میبُرَد، با امکانِ درخواستِ تأییدِ قبلی"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "متنِ کلیپ‌برد را به شکلِ HTML در حالتِ مرور نمایش میدهد"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "کلیپ‌برد خالی نیست؛ ولی متنی برای نمایش وجود ندارد"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "کلیپ‌برد خالی است"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "متنِ کلیپ‌برد ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "محتوای متنیِ کلیپ‌برد را به شکلِ متنِ ساده در حالتِ مرور نشان می دهد"
+
+#. Translators: label of a dialog.
+msgid "Type the string to be used as a &separator between contents added to the clipboard."
+msgstr "رشته‌ای را که باید به عنوانِ &جداساز میانِ محتواهایی که به کلیپ‌برد اضافه میشوند استفاده شود تایپ کنید."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&افزودنِ متن پیش از داده‌های کلیپ‌برد"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "کاری را که انجامِ آن از قبل نیازمندِ تأیید است انت&خاب کنید"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "تأیید برای افزودنِ متن"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "تأیید برای پاک کردنِ کلیپ‌برد"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "تأیید برای شبیه‌سازیِ کپی"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "تأیید برای شبیه‌سازیِ بریدن"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&درخواستِ تأیید پیش از انجامِ کارِ انتخاب‌شده وقتی که:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "همیشه"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "اگر کلیپ‌برد دارای متن باشد"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "اگر کلیپ‌برد خالی نباشد"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "&قالبِ نمایشِ متنِ کلیپ‌برد به شکلِ HTML در حالتِ مرور:"
+
+#. Translators: label of a dialog.
+msgid "&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "&حداکثرِ تعدادِ نویسه‌ها هنگامِ نمایشِ متنِ کلیپ‌برد در حالتِ مرور"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "برگرداندن به پیشفرض"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "طراحِ محتوای کلیپ‌برد"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."
+msgstr "اجازه می‌دهد تا قطعاتِ جداگانه‌ی متن را در کلیپ‌برد به هم بپیوندید و محتوای کلیپ‌برد را پاک کنید. متنِ موجود در کلیپ‌برد را می‌توان در حالتِ مرور به نمایش دراورد. گزینه‌هایی برای درخواست تایید پیش از اجرای عملیاتی مثلِ کپی، برش، افزودنِ متن یا پاک کردن کلیپ‌برد، برای جلوگیری از تغییراتِ تصادفی."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "افزونه‌ای برای مدیریتِ متنِ داخلِ کلیپ‌برد"
+
+#~ msgid "No text to add"
+#~ msgstr "متنی برای اضافه شدن به کلیپ‌برد موجود نیست"
+
+#~ msgid "Start marker set"
+#~ msgstr "نشانه‌ی آغاز گذاشته شد."
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "موقعیتِ فعلیِ مکان‌نمای بازبینی را به عنوانِ آغازِ متنی که به کلیپ‌برد اضافه "
+#~ "میشود نشانه‌گذاری میکند."
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "چیزی انتخاب نشده‌است. نشانه‌ی آغاز گذاشته نشد."
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "تنظیماتِ طراحِ محتوای &کلیپ‌برد"
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "تنظیماتِ طراحِ محتوای کلیپ‌برد"

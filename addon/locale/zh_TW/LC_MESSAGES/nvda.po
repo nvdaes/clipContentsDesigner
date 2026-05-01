@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nvdaaddons\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2025-08-26 05:17+0000\n"
+"PO-Revision-Date: 2025-08-28 07:26\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: nvdaaddons\n"
+"X-Crowdin-Project-ID: 780748\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: clipContentsDesigner.pot\n"
+"X-Crowdin-File-ID: 256\n"
+
+#. Translators: label of a dialog.
+#: addon/installTasks.py:42
+msgid "This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change this later."
+msgstr "此附加元件可在您按下 control+c 和 control+x 時，讓您確認是否要複製和剪下，以取代剪貼簿的內容。此功能名為模擬複製與剪下。\n"
+"您要現在設定模擬複製與剪下嗎？您也可以稍後再進行或變更此設定。"
+
+#. Translators: title of a dialog.
+#: addon/installTasks.py:46
+msgid "Configure Emulate copy and cut"
+msgstr "設定模擬複製與剪下"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:35
+msgid "Preformatted text in HTML"
+msgstr "HTML 中的預格式化文字"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:37
+msgid "HTML as shown in a web browser"
+msgstr "如網頁瀏覽器中所示的 HTML"
+
+#. Translators: Text of the clipboard shown without being formatted.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:40
+msgid "Plain text"
+msgstr "純文字"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:127
+msgid "Shows the Clip Contents Designer settings."
+msgstr "顯示剪貼簿內容設計師設定。"
+
+#. Translators: message presented when the clipboard content has been deleted.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:137
+msgid "Clipboard cleared"
+msgstr "剪貼簿已清除"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:140
+msgid "Clipboard not cleared"
+msgstr "剪貼簿未清除"
+
+#. Translators: Label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:227
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "請確認是否要將文字加入剪貼簿"
+
+#. Translators: Title of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:229
+msgid "Adding text to clipboard"
+msgstr "將文字加入剪貼簿"
+
+#. Translators: message presented when the text has been added to the clipboard.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:235
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:244
+msgid "Added"
+msgstr "已加入"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:238
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:247
+msgid "Cannot add"
+msgstr "無法加入"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:252
+msgid "Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard."
+msgstr "擷取選取的字串，或從先前設定的起始標記到檢閱游標目前位置 (包含該位置) 的文字，並將其加入剪貼簿。"
+
+#. Translators: Label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:268
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "請確認是否要清除剪貼簿"
+
+#. Translators: Title of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:270
+msgid "Clearing clipboard"
+msgstr "正在清除剪貼簿"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:279
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "刪除已加入的文字及剪貼簿的內容。"
+
+#. Translators: Label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:303
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "請確認是否要複製到剪貼簿"
+
+#. Translators: Title of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:305
+msgid "Copying to clipboard"
+msgstr "正在複製到剪貼簿"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:315
+msgid "Copies to the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr "複製到剪貼簿，可能會被要求提供先前的確認"
+
+#. Translators: Label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:333
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "請確認是否要從剪貼簿中剪下"
+
+#. Translators: Title of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:335
+msgid "Cutting from clipboard"
+msgstr "正在從剪貼簿中剪下"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:345
+msgid "Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr "從剪貼簿中剪下，可能會被要求提供先前的確認"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:356
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "在瀏覽模式中，將剪貼簿文字以 HTML 格式顯示"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:366
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:407
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "剪貼簿非空白，但沒有可顯示的文字"
+
+#. Translators: presented when clipboard is empty.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:369
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:410
+msgid "Clipboard is empty"
+msgstr "剪貼簿是空白的"
+
+#. Translators: title of a browseable message.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:385
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:421
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "剪貼簿文字 ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:397
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "在瀏覽模式中，將剪貼簿的文字內容以純文字格式顯示"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:439
+msgid "Type the string to be used as a &separator between contents added to the clipboard."
+msgstr "輸入要用作剪貼簿中已加入內容之間的分隔符字串(&S)。"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:444
+msgid "&Add text before clip data"
+msgstr "在剪貼資料前加入文字(&A)"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:447
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "選取需要事先確認的動作(&C)"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:450
+msgid "Confirm to add text"
+msgstr "確認加入文字"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:452
+msgid "Confirm to clear clipboard"
+msgstr "確認清除剪貼簿"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:454
+msgid "Confirm to emulate copy"
+msgstr "確認模擬複製"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:456
+msgid "Confirm to emulate cut"
+msgstr "確認模擬剪下"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:475
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "在以下情況執行所選動作前，請求確認(&R)："
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:478
+msgid "Always"
+msgstr "總是"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:480
+msgid "If the clipboard contains text"
+msgstr "若剪貼簿中包含文字"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:482
+msgid "If the clipboard is not empty"
+msgstr "若剪貼簿非空白"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:493
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "在瀏覽模式中將剪貼簿文字以 HTML 顯示的格式(&F)："
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:497
+msgid "&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "在瀏覽模式中顯示剪貼簿文字時的最大字元數(&M)"
+
+#. Translators: label of a dialog.
+#: addon/globalPlugins/clipContentsDesigner/__init__.py:506
+msgid "Restore defaults"
+msgstr "還原預設值"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:17
+msgid "Clip Contents Designer"
+msgstr "剪貼簿內容設計師"
+
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:21
+msgid "Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."
+msgstr "讓您將分散的文字片段合併至剪貼簿，以及清除剪貼簿內容。剪貼簿中的目前文字可以瀏覽模式呈現。提供選項，可在執行複製、剪下、加入文字或清除剪貼簿等動作前請求確認，以避免意外變更。"
+

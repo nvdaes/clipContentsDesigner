@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2024-06-02 17:24+0300\n"
+"Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
+"Language-Team: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"Tämä lisäosa mahdollistaa vahvistuksen pyytämisen kopioinnille (Ctrl+C) ja "
+"leikkaamiselle (Ctrl+X), jolloin\n"
+"\t\tleikepöydän sisältö korvataan. Näitä toimintoja kutsutaan kopioinnin ja "
+"leikkaamisen emuloinniksi,\n"
+"\t\tja oletusarvoisesti ne toimivat vain, kun leikepöydällä on tekstiä. "
+"Haluatko ottaa kopioinnin ja leikkaamisen emuloinnin käyttöön nyt? Voit "
+"muuttaa tätä myöhemmin."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Ota käyttöön kopioinnin ja leikkaamisen emulointi"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Esimuotoiltu HTML-teksti"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML verkkoselaimessa"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "Pelkkä teksti"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Näyttää Leikepöydän sisällön käsittelijän asetukset."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Leikepöytä tyhjennetty"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Leikepöytää ei tyhjennetty"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Vahvista, haluatko lisätä tekstiä leikepöydälle"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Tekstin lisääminen leikepöydälle"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Lisätty"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Ei voi lisätä"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"Hakee valitun merkkijonon tai aiemmin asetetun alkumerkin ja "
+"tarkastelukohdistimen nykyisen kohdan välisen tekstin ja lisää sen "
+"leikepöydälle."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Vahvista, haluatko tyhjentää leikepöydän"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Leikepöydän tyhjentäminen"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Tyhjentää leikepöydän."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Vahvista, haluatko kopioida leikepöydälle"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Leikepöydälle kopioiminen"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Kopioi leikepöydälle sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
+"suorittamiselle"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Vahvista, haluatko leikata leikepöydältä"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Leikepöydältä leikkaaminen"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr ""
+"Leikkaa leikepöydältä sekä pyytää vaihtoehtoisesti vahvistuksen toiminnon "
+"suorittamiselle"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "Näyttää leikepöydällä olevan tekstin HTML-muodossa selaustilassa"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Leikepöytä ei ole tyhjä, mutta näytettävää tekstiä ei ole"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Leikepöytä on tyhjä"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Leikepöydän teksti ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "Näyttää leikepöydällä olevan tekstin pelkkänä tekstinä selaustilassa"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"Kirjoita merkkijono, jota käytetään &erottimena leikepöydälle lisättyjen "
+"tekstiosuuksien välissä."
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&Lisää teksti leikepöydän nykyisen sisällön alkuun"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "Va&litse toiminnot, joiden suorittaminen edellyttää vahvistusta"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Vahvista tekstin lisääminen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Vahvista leikepöydän tyhjentäminen"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Vahvista kopioinnin emulointi"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Vahvista leikkaamisen emulointi"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&Pyydä vahvistus ennen valittujen toimintojen suorittamista:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Aina"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Jos leikepöydällä on tekstiä"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Jos leikepöytä ei ole tyhjä"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr ""
+"&Muotoile leikepöydän teksti näytettäväksi HTML-muodossa selaustilassa:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "&Leikepöydän tekstin merkkien enimmäismäärä selaustilassa"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "Palauta oletukset"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Leikepöydän sisällön käsittelijä"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+"Mahdollistaa erillisten tekstinpätkien liittämisen leikepöydältä ja "
+"leikepöydän sisällön tyhjentämisen. Nykyinen leikepöydällä oleva teksti "
+"voidaan näyttää selaustilassa. Vahinkojen välttämiseksi pyydetään vahvistus "
+"ennen kopiointia, leikkaamista, tekstin lisäämistä tai leikepöydän "
+"tyhjentämistä."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "Lisäosa leikepöydällä olevan tekstin hallintaan."
+
+#~ msgid "No text to add"
+#~ msgstr "Ei lisättävää tekstiä"
+
+#~ msgid "Start marker set"
+#~ msgstr "Alkumerkki asetettu"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "Merkitsee tarkastelukohdistimen nykyisen kohdan leikepöydälle lisättävän "
+#~ "tekstin alkukohdaksi"
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "Ei valintaa. Alkumerkkiä ei ole asetettu."
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "Aloitusmerkin on oltava samassa objektissa"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "Va&hvista leikepöydällä oleva teksti"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Leikepöydän sisällön käsittelijä..."
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Leikepöydän sisällön käsittelijän asetukset"

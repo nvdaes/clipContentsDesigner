@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2025-05-16 02:53-0600\n"
+"Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"이 추가기능은 사용자가 컨트롤+C 혹은 컨트롤+X를 눌러서 복사하기나 잘라내기 "
+"기능으로 클립보드의\n"
+"\t\t내용을 덮어쓸 때 확인을 해줍니다. 이는 모방한 복사하기/잘라내기라고 이"
+"름 붙여졌으며, 기본 설정상\n"
+"\t\t클립보드가 텍스트를 보관하고 있을 때만 동작합니다. 지금 모방한 복사하기/"
+"잘라내기에 대한 설정을\n"
+"\t\t시작하시겠습니까? 나중에 설정할 수도 있습니다."
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "복사 및 잘라내기 모방 기능 설정"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "HTML 형식의 텍스트"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "웹브라우저에서 표현되는 HTML"
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "일반 텍스트"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Clip Contents Designer 설정을 보여줍니다."
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "클립보드 텍스트 삭제됨"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "클립보드 텍스트 삭제 실패"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "클립보드에 텍스트 추가하려면 확인하세요"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "클립보드에 텍스트 추가 설정"
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "추가"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "추가 불가"
+
+#. Translators: message presented in input mode.
+#, fuzzy
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"선택된 문구, 혹은 설정한 시작점부터 리뷰 커서의 현재 위치까지의 문구를\n"
+"\t\t클립보드에 추가합니다."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "클립보드를 초기화하려면 확인하세요"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "클립보드 초기화"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "추가된 문구와 클립보드에 포함된 내용을 삭제합니다."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "클립보드에 복사하려면 확인하세요"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "클립보드에 복사"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "클립보드로 내용을 복사하며, 사용자의 확인을 요구할 수 있습니다."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "클립보드에서 자르려면 확인하세요"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "클립보드에서 자르기"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "클립보드에서 내용을 잘라내며, 사용자의 확인을 요구할 수 있습니다."
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr "브라우즈 모드에서 클립보드에 들어있는 문구를 HTML로 표시합니다."
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "클립보드가 비어있지는 않지만, 표시할 문구가 없습니다."
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "클립보드가 비어 있습니다"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "클립보드 문구 ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "브라우저 모드에서 클립보드에 저장된 내용을 일반 문자로 표시"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr "클립보드에 추가되는 텍스트를 구분하기 위한 문자열 입력(&S)"
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "클립 데이터 앞에 문자 추가(&A)"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "수행 전에 확인이 필요한 기능들을 선택하세요"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "문자를 추가하려면 확인하세요"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "클립보드를 비우려면 확인하세요"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "복사 기능을 모방하려면 확인하세요"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "잘라내기 기능을 모방하려면 확인하세요"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "아래 선택된 기능을 수행하기 전에 먼저 확인합니다. (&R)"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "언제나"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "클립보드가 문자를 포함하고 있는 경우"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "클립보드가 비어있지 않은 경우"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr "브라우즈 모드에서 클립보드에 저장된 내용을 HTML 형식으로 표시(&F)"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"브라우즈 모드에서 클립보드에 저장된 문구를 표시할 때 최대 표시 글자수(&M)"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr ""
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""

@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2024-05-18 10:20+0530\n"
+"Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
+"Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Translators: label of a dialog.
+msgid ""
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
+"cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
+"this later."
+msgstr ""
+"ஏற்கெனவே பிடிப்புப் பலகையில் உரை இருந்து, கட்டுப்பாடு+c, கட்டுப்பாடு+x\n"
+" \t\tவிசைகளைக் கொண்டு உரையைப் பிடிப்புப் பலகைக்குச் சேர்க்க முயலும்பொழுது, அச்செயல்களைச் "
+"செய்ய வேண்டுமா என்று உறுதிச் செய்ய இக்கூட்டுக் கூறு கேட்கும்.\n"
+" \t\tஇவ்வசதியை இப்பொழுதே அமைவடிவமாக்க விரும்புகிறீர்களா? பிறகும் கூட "
+"அமைவடிவமாக்கலாம், அல்லது மாற்றங்களை மேற்கொள்ளலாம். "
+
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "படியெடுக்கும் மற்றும் வெட்டும் செயலை அமைவடிவமாக்குக"
+
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "எச்.டி.எம்.எல்லில் முன்வடிவூட்டப்பட்ட உரை"
+
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "இணைய உலாவியில் காட்டப்படுவது போன்ற எச்.டி.எம்.எல்."
+
+#. Translators: Text of the clipboard shown without being formatted.
+msgid "Plain text"
+msgstr "எளிய உரை"
+
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகளைக் காட்டுகிறது"
+
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "பிடிப்புப்பலகை துடைக்கப்பட்டது"
+
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "பிடிப்புப்பலகை துடைக்கப்படவில்லை"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr ""
+"பிடிப்புப் பலகையில் உரை பின்னிணைக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "பிடிப்புப்பலகையில் உரையைப்  பின்னிணைக்கிறது "
+
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "பின்னிணைக்கப்பட்டது"
+
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "பின்னிணைக்க இயலாது"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
+msgstr ""
+"முன்னதாக துவக்கக் குறியிடப்பட்ட இடத்திலிருந்து தற்போதைய சீராய்வுச் சுட்டியின் நிலை வரை, "
+"சரம், அல்லது உரையை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "பிடிப்புப் பலகை துடைக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "பிடிப்புப் பலகை துடைக்கப்படுகிறது"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்ட உரையையும், உள்ளடக்கங்களையும் அழிக்கிறது."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "பிடிப்புப் பலகைக்கு படியெடுக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "பிடிப்புப் பலகைக்குப் படியெடுக்கிறது"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "பிடிப்புப் பலகைக்கு வெட்டப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "பிடிப்புப் பலகைக்கு வெட்டப்படுகிறது"
+
+#. Translators: message presented in input mode.
+msgid ""
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு வெட்டுகிறது"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard text as HTML in browse mode"
+msgstr ""
+"பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் எஸ்.டி.எம்.எல். வடிவில் காட்டுகிறது"
+
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "வெற்றுப் பிடிப்புப்பலகையல்ல. ஆனால், காட்டப்படுவதற்கு உரையேதுமில்லை."
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "வெற்றுப் பிடிப்புப்பலகை"
+
+#. Translators: title of a browseable message.
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "பிடிப்புப்பலகை உரை ({max}/{current} - {formatForTitle})"
+
+#. Translators: message presented in input mode.
+msgid "Shows the clipboard textual contents as plain text in browse mode"
+msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் எளிய வடிவில் காட்டுகிறது"
+
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr ""
+"பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்டிருக்கும் உரையைப் பிரித்துக் காட்டுவதற்குப் பயன்படுத்தப்பட "
+"வேண்டிய சரத்தை தட்டச்சிடவும். (&S)"
+
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "உரையை பிடிப்புப்பலகையின் உரைக்கு முன்னிணைக்கவும். (&A)"
+
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "முன்கூட்டியே உறுதிப்படுத்தப்பட வேண்டிய செயல்களைத் தெரிவுச் செய்க (&C)"
+
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "உரையைப் பின்னிணைப்பதற்கு முன் உறுதிச் செய்க"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "பிடிப்புப்பலகையை துடைப்பதற்கு முன் உறுதிச் செய்க"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "போன்று படியெடுத்தலை செயலாக்குவதற்கு முன் உறுதிச் செய்க"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "போன்று வெட்டுதலை செயலாக்குவதற்கு முன் உறுதிச் செய்க"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "தெரிவுச் செய்த செயல்களை எப்பொழுது உறுதிப்படுத்த வேண்டும் (&R):"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "எப்பொழுதும்"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "பிடிப்புப்பலகையில் உரை இருக்கும்பொழுது"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "பிடிப்புப்பலகை வெற்றாக இல்லாதபொழுது"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text as HTML in browse mode:"
+msgstr ""
+"பிடிப்புப்பலகை உரையை உலாவு நிலையில் எச்.டி.எம்.எல். வடிவில் காட்டுவதற்கு "
+"அமைவடிவமாக்குக:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr ""
+"பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டப்படும்பொழுது, காட்டப்பட வேண்டிய "
+"வரியுருக்களின் உச்ச எண்ணிக்கை (&M)"
+
+#. Translators: label of a dialog.
+msgid "Restore defaults"
+msgstr "இயல்புநிலைகளை மீட்டமைத்திடுக"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Clip Contents Designer"
+msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர்"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Allows the joining of separate fragments of text on the clipboard and "
+"clearing of clipboard content. Current text on the clipboard can be "
+"presented in browse mode. Option to request confirmation before performing "
+"actions such as copy, cut, add text, or clearing the clipboard to avoid "
+"accidental changes."
+msgstr ""
+"பல்வேறு இடங்களில் பிரிந்துகிடக்கும் உரைகளை ஒன்றுசேர்த்து பிடிப்புப்பலகைக்கு "
+"படியெடுப்பதையும், பிடிப்புப்பலகையில் உள்ள உள்ளடக்கத்தைத் துடைக்கவும் அனுமதிக்கிறது. "
+"பிடிப்புப்பலகையில் இருக்கும் தற்போதைய உரையை உலாவு நிலையிலும் காட்டிடலாம். தற்செயலான "
+"மாற்றங்களைத் தவிர்க்க, படியெடுத்தல், வெட்டுதல், பிடிப்புப்பலகையில் இருக்கும் உள்ளடக்கத்தைத் "
+"துடைத்தல் ஆகிய செயல்களைச் செய்யும்முன், இச்செயல்களை உறுதிசெய்துகொள்ள விருப்பத் தேர்வும் "
+"உள்ளது."
+
+#~ msgid "Add-on for managing clipboard text."
+#~ msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
+
+#~ msgid "No text to add"
+#~ msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
+
+#~ msgid "Start marker set"
+#~ msgstr "துவக்கக் குறி இடப்பட்டது"
+
+#~ msgid ""
+#~ "Marks the current position of the review cursor as the start of text to "
+#~ "be appended to the clipboard."
+#~ msgstr ""
+#~ "சீராய்வுச் சுட்டியின் தற்போதைய நிலையை, பிடிப்புப்பலகையில் பின்னிணைக்க வேண்டிய உரையின் "
+#~ "துவக்கமாகக் குறிக்கிறது. "
+
+#~ msgid "No selection. No start marker set"
+#~ msgstr "தெரிவு ஏதுமில்லை, அல்லது துவக்கம் குறிக்கப்படவில்லை."
+
+#~ msgid "The start marker must reside within the same object"
+#~ msgstr "துவக்கக் குறி அதே பொருளுக்குள் இருக்க வேண்டும்"
+
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "பிடிப்புப்பலகையில் இருக்கும் உறுதிச் செய்யப்பட வேண்டிய உரை (&T)"
+
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "கிளிப் கண்டெண்ட்ஸ் டிசைனர் அமைப்புகள்... (&C)"
+
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகள்"
