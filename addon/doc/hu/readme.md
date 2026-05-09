@@ -1,109 +1,190 @@
-# Clip Contents Designer #
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
-*	Download [stable version][1]
-*	Download [development version][2]
+# Vágólap tartalomtervező #
 
-This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
-The clipboard content can also be cleared an shown in browse mode.
+*	Készítők: Noelia, Abdel.
 
-## Keyboard commands ##
-*	NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
-*	NVDA+windows+x: Clear clipboard contents.
-*	 Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
-*	 Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
-*	 Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+A kiegészítő abban az esetben hasznos, ha több különböző szövegrészt
+szeretnénk összefűzni, majd azt a vágólapról beilleszteni. A vágólap
+tartalma törölhető, illetve megjeleníthető böngésző módban.
+
+## Billentyűparancsok ##
+*	NVDA+windows+c: A vágólap tartalmához fűzi a kijelölt  vagy az áttekintő
+  kurzorral megjelölt szöveget, és az unikód braille MathML objektumot
+  reprezentáló karaktereket is.
+*	NVDA+windows+x: Vágólap tartalom törlése.
+*	Alapértelmezés szerint nincs billentyűparancs hozzárendelve: Másolás a
+  vágólapra vagy kivágás onnan a végrehajtás előtt megerősítés kérésével.
+*	Not assigned: Shows the clipboard text as HTML in browse mode, or
+  announces if clipboard is empty or has contents which can't be presented
+  in a browseable message, for instance if files or folders are been copied
+  from Windows Explorer.
+*	Not assigned: Shows the textual clipboard contents as plain text in browse
+  mode, or announces if clipboard is empty or has contents which can't be
+  presented in a browseable message, for instance if files or folders are
+  been copied from Windows Explorer.
 
 
 ## Clip Contents Designer settings ##
 
-This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
+This panel is available from NVDA's menu, Preferences submenu, Settings
+dialog.
 
 It contains the following controls:
 
-* Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
-* Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
-* Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
-* Request confirmation before performing the selected actions when: You can select if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty (for example if you've copied a file, not text).
-* Format to show the clipboard text as HTML in browse mode: If you're learning HTML markup language, you may choose Preformatted text in HTML or HTML as shown in a web browser, to have an idea of how your HTML code will be rendered by NVDA in a browser. The difference between preformatted and conventional HTML is that the first option will preserve consecutive spaces and line breaks, and the second one will compact them.  For example, write some HTML tags like h1, h2, li, pre, etc., select and copy the text to clipboard, and use clipContentsDesigner add-on to show the text in a browseable message.
-* Maximum number of characters when showing clipboard text in browse mode: Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
+* Type the string to be used as a separator between contents added to the
+  clipboard: Allows to set a separator which can be used to find the text
+  segments once the entire added text is pasted.
+* Add text before clip data: It's also possible to choose if the added text
+  will be appended or prepended.
+* Select the actions which require previous confirmation: You can choose,
+  for each action available, if it should be performed inmediately or after
+  confirmation. Available actions are: add text, clear clipboard, emulate
+  copy and emulate cut.
+* Request confirmation before performing the selected actions when: You can
+  select if confirmations will be requested always, just if text is
+  contained in the clipboard, or if clipboard is not empty (for example if
+  you've copied a file, not text).
+* Format to show the clipboard text as HTML in browse mode: If you're
+  learning HTML markup language, you may choose Preformatted text in HTML or
+  HTML as shown in a web browser, to have an idea of how your HTML code will
+  be rendered by NVDA in a browser. The difference between preformatted and
+  conventional HTML is that the first option will preserve consecutive
+  spaces and line breaks, and the second one will compact them.  For
+  example, write some HTML tags like h1, h2, li, pre, etc., select and copy
+  the text to clipboard, and use clipContentsDesigner add-on to show the
+  text in a browseable message.
+* Maximum number of characters when showing clipboard text in browse mode:
+  Please, be aware that increasing this limit may produce issues if the
+  clipboard contains large strings of text. The default limit is 100000
+  characters.
+* Restore defaults.
 
-Notes:
+Megjegyzések:
 
-*	Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
-* Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
+*	Amikor az NVDA egy másik üzenetablaka is nyitva van a bővítmény nem kér
+  megerősítést a vágólapműveletek előtt, de attól még végrehajtja azokat.
+*	Emulate copy and emulate cut commands mean that, when these features are
+  enabled, the add-on will take control of control+c and control+x. This
+  will allow to select if a confirmation should be requested before
+  performing the actions corresponding to these keystrokes.
+
+## Changes for 46.0.0
+* NVDA will sanitize HTML in browseable messages.
+* Added a button to close browseable messages, in addition to the Escape
+  key.
+
+
+## Changes for 40.0.0
+* Added support for Hebrew keyboard.
+
+## Changes for 22.0.0
+* Added a button to restore defaults in the add-on settings panel.
+* The add-on cannot be run in secure mode.
+
+## Changes for 17.0
+* Compatible with NVDA 2023.1.
+
+## Changes for 16.0
+* Reqires NVDA 2022.1 or later.
 
 ## Changes for 15.0
-* The command to add text to clipboard is again presented in the input gestures dialog.
-* Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.
+* The command to add text to clipboard is again presented in the input
+  gestures dialog.
+* Fixed gestures to copy and cut with Persian keyboard, thanks to
+  Mohammadhosein Ghezelsofla.
 
 ## Changes for 14.0
 * Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
-* Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
+* Fixed an issue in visual layout of the settings panel, thanks to Cyrille
+  Bougot.
 * Improved documentation.
-* Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
+* Added a Clip Contents Designer category to assign input gestures to all
+  commands available for this add-on.
 * Fixed bugs when using emulate copy in browsers if focus mode is active.
-* You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
+* You can assign different gestures to show the clipboard textual contents
+  as raw text or formatted in HTML. The Format to show the clipboard text in
+  the settings panel has being modified accordingly, to select the two
+  options available for HTML format.
 
 ## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice Writer.
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## A 11.0 változásai
+* Most már hozzáfűzhető az áttekintőkurzorral kijelölt szöveg is az NVDA+F9
+  és NVDA+F10 billentyűparancsok használatával. A korábban használt
+  NVDA+Windows+F9 parancs már nem használható.
+* Az NVDA 2019.3 vagy újabb kiadására van szükség.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## A 10.0 változásai
+* Hiba elhárítva: ha a vágólap tartalmát megjelenítő párbeszédablak címe nem
+  latin betűket tartalmaz
+* Hiba elhárítva: problémát okozott az emulált másolás és kivágás arab
+  kiosztású billentyűzeteken
 
-## Changes for 9.0
+## A 9.0 változásai
 
-* Added the possibility of showing the clipboard text in browse mode.
-* Added an option to choose if confirmations will be required if clipboard is not empty, for instance, if files or folders are been copied.
-* Requires NVDA 2018.4 or later.
+* A vágólap tartalma már megjeleníthető böngészőmódban is
+* Megerősítés kérhető olyan esetben, ha a vágólap nem üres, de tartalma nem
+  szöveges, pl. ha egy fájlt vagy mappát másoltunk rá.
+* Az NVDA 2018.4 vagy újabb kiadása szükséges
 
-## Changes for 8.0 ##
+## A 8.0 változásai ##
 
-* The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
-* Requires NVDA 2018.2 or later.
-* If needed, you can download the [last version compatible with NVDA 2017.3][3].
+* A bővítmény beállításai az NVDA beállításai közt jelennek meg külön
+  kategóriában
+* Az NVDA 2018.2 vagy újabb kiadása szükséges
 
-## Changes for 7.0
+## A 7.0 változásai
 
-* In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.
+* Amennyiben a bővítmény telepítése során nem állítja be az emulált másolást
+  és kivágást, akkor nem változik meg a Ctrl+C és Ctrl+X parancsok
+  hagyományos viselkedése.
 
-## Changes for 6.0
+## A 6.0 változásai
 
-*	 Added options to choose if available actions should be performed after confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
-*	 Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+*	Added options to choose if available actions should be performed after
+  confirmation.
+*	Added Emulate copy and Emulate cut commands, which could be assigned from
+  the Input gestures dialog.
+*	Added a dialog to configure the Emulate copy and Emulate cut
+  functionalities at installation. This allows to add the control+c and
+  control+x commands to copy and cut, and be asked if you want to replace
+  the clipboard contents when pressing these keystrokes.
 *	Fixed documentation for script_add (Windows+NVDA+c).
 
-## Changes for 5.0 ##
+## Az 5.0 változásai ##
 
-*	The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
-*	Requires NVDA 2016.4 or later.
+*	Javították a bővítmény párbeszédablakának vizuális megjelenítését.
+*	Az NVDA 2016.4 vagy újabb kiadása szükséges
 
-## Changes for 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
+## A 4.0 változásai ##
+*	A bővítmény beállításai az NVDA konfigurációjában kezelhetők, így a
+  sztenderd profilokat használhatjuk az elválasztók elmentésére, így a
+  beállításokat nem kell újra bemásolni az újratelepítéskor történő
+  importáláskor.
+*	Most már ki lehet választani, hogy a hozzáadni kívánt szöveget a tartalom
+  elé vagy mögé csatoljuk, ha használjuk a "vágólap tartalma elé"
+  jelölőnégyzetet a vágólaptartalom-tervező beállítása párbeszédpanelén.
 
-## Changes for 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
-*	If no separator is set, just a single line will be placed between the added text segments.
-*	A shortcut can be assigned to open the Clip Contents Designer settings dialog.
-*	Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
+## A 3.0 változásai ##
+*	Ha a MathPlayer telepítve van, a MathMl objektumok braille reprezentációja
+  kerül hozzáfűzésre a vágólaphoz.
+*	Ha nincs megadva elválasztó karakter, egy üres sor kerül beszúrásra a két
+  szöveg közé.
+*	Billentyűparancsot adtak hozzá a Vágólaptartalom-tervező beállítás
+  ablakának eléréséhez.
+*	Hozzáadtak egy jelölőnégyzetet, mellyel szabályozható, hogy az elválasztó
+  karaktert bemásolja-e a bővítmény a saját beállítások mappájába a későbbi
+  importáláshoz.
 
-## Changes for 2.0 ##
-*	Hindi characters can be used as the separator between added contents.
+## A 2.0 változásai ##
+*	Hindi karakterek is használhatóak az összefűzött szövegek közötti
+  elválasztóként.
 
-## Changes for 1.0 ##
-*	Initial version.
+## Az 1.0 változásai ##
+*	- Első kiadás
 
-[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[[!tag dev stable]]
 
-[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
-
-[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o
