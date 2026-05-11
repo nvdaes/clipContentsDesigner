@@ -1,0 +1,901 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+<file id="readme.md" original="https://raw.githubusercontent.com/nvdaes/clipContentsDesigner/6362393d61b3cd900763853394851ea67dd48b83/readme.md">
+<skeleton>
+# $(ID:c12117b3-630b-4b08-8d00-e9a3d95e2d7e)
+*	$(ID:03bed719-ffce-49e0-82f1-4da793cb422e)
+
+$(ID:1e7aa539-6515-492c-ad07-19cce58b8ea4)
+$(ID:9873d495-47ff-48b6-bf2b-716ad6b238b7)
+
+## $(ID:40dd1a90-3188-453b-bcad-58743fcd9f88)
+*	$(ID:d5cda5cb-84f8-4b34-aca5-0b2f1487ead9)
+*	$(ID:667962a9-5171-43d5-8d3b-c2af3bc5bded)
+*	 $(ID:7d1d1cad-336f-4edf-8c81-82955de71235)
+*	 $(ID:d8881179-5781-4ec3-8d49-c2af03fb465e)
+*	 $(ID:28e75b0b-f3be-4e5d-86a9-71f0c67e24ea)
+
+
+## $(ID:2f8c212c-1962-44e4-9b1b-88ca4c1de89c)
+
+$(ID:9c9006a7-bc38-47ec-b0cb-46969f90ca82)
+
+$(ID:5dcd9560-ce79-4cd4-895e-b97d0fd27630)
+
+* $(ID:1b986cfc-8bd2-405c-a0e6-f07c69e9298a)
+* $(ID:b8a98b4a-ccad-4358-adcc-cfc9ff6f2bb8)
+* $(ID:d81481b3-856c-414a-b18d-55ac2baaff9d)
+* $(ID:53a54f79-4919-4638-9790-c1a21e433619)
+* $(ID:eaac0281-3df1-477e-aae8-704054d079bb)
+* $(ID:4398306e-add7-4b1a-ac5b-6fbc9c29a35e)
+* $(ID:1e5e9d5e-8630-467b-a850-cbe998e3e7ed)
+* $(ID:a0bce439-565d-483e-bc73-cef66f6d6961)
+
+$(ID:b2a81242-2398-44c7-85e7-fbc7a9936be5)
+
+*	$(ID:95d155d6-7b15-4c74-8ffe-a7bf636f89ae)
+* $(ID:5ce81901-c717-486f-8d40-5bc19d34526e)
+
+
+## $(ID:9cb26b8e-13dd-412e-88fa-e5690ce4d67c)
+* $(ID:5f7428cb-f639-4013-8a53-4e9c172405e1)
+
+
+## $(ID:35042686-ab0b-4223-a844-fb71e3abe390)
+* $(ID:e26e772b-0567-469b-b42f-2b5b7d683aeb)
+* $(ID:ed25011e-e3d5-4f8d-a42f-af8fb6e1019f)
+
+
+## $(ID:4eed0cfd-719e-4d24-9d02-1284d38c3e33)
+* $(ID:76cdd170-acc6-4dcd-8a0a-c14bb383b512)
+
+## $(ID:23a83fca-ca1d-4d86-af94-de98454e813b)
+* $(ID:b640ed11-e9d3-417f-8a40-04b589bcb069)
+* $(ID:0e5c6a0c-25c8-46d3-b412-f98cc6dc07bc)
+
+## $(ID:5a22f331-f83d-4b00-bb72-7aed1993a5a1)
+* $(ID:921968d6-6496-436d-99f4-1ffde030d878)
+
+## $(ID:716fc71d-b1de-45a9-a530-c6a1092e0268)
+* $(ID:6e7350f7-3dbf-494e-9830-0a684365f27f)
+
+## $(ID:dced7ec7-9dd8-40ed-9715-8d096a93a399)
+* $(ID:ff1f349a-1887-4e61-bc55-c1d3e7385c95)
+* $(ID:634ea0d2-92bc-45cd-93ca-d8431f69ce97)
+
+## $(ID:7246f22c-58cb-4b2a-940d-f75b8bd1cfef)
+* $(ID:0719f5e9-4714-406a-a6dc-d10d44ec326d)
+
+## $(ID:8077fc6f-eb59-4781-b7fa-7243d25fa5ea)
+* $(ID:0150c980-2b79-461b-9d9c-7f5aa956aeaa)
+* $(ID:acb1310c-2e17-4802-b85b-5a9bd41e4f60)
+* $(ID:4bda61e2-2d25-45e2-8cfe-dac335a1ec9f)
+* $(ID:cd9dfe17-d466-4ca7-8eb1-72261403e50d)
+* $(ID:b783eb10-bebe-41db-bfff-6ae524f0b026)
+
+## $(ID:9a35c2ab-21e1-4a5e-a75e-05efb1f7dbfa)
+* $(ID:3c170177-267f-4fd9-992c-ef1405251d68)
+
+## $(ID:8a3f37c2-253c-46a3-9c35-3285f610aeb9)
+* $(ID:3ea9258d-0b67-4cd8-85f3-db387a8c4485)
+* $(ID:8831a3c2-6ae5-42e7-a67e-d844dffdcfe7)
+
+## $(ID:e583cfdf-5fbb-47b4-a624-ca98da4a36c4)
+* $(ID:9617ffbc-2d13-45fa-b4b7-9cbe6d3e4043)
+* $(ID:96798ca3-e6d2-46b4-9b6a-4b64109fc3b4)
+
+## $(ID:b068123e-db1c-4575-bb0b-7c28915ce923)
+
+* $(ID:a06e2ff6-ad50-4158-af4d-76fca9bcf7d2)
+* $(ID:2dd600ce-041d-425c-99ff-1ac3ebe23899)
+* $(ID:399062e4-b8d1-4de1-a653-94136ef476f3)
+
+## $(ID:e0daa483-a3d7-46f6-9283-cd979495693b)
+
+* $(ID:ec2a6a6c-95d4-4aa8-9cf5-4f392abdeceb)
+* $(ID:28223ce8-b3b6-4faa-a4a5-ec2c274a5da5)
+
+## $(ID:632c7d69-c2de-4f1a-a1f7-f8e9cf73e793)
+
+* $(ID:ef65a65b-9eba-4d56-bbce-6606ca1e9e2c)
+
+## $(ID:1bec9c5b-b688-4211-b4cf-b755a311eb61)
+
+*	 $(ID:c6c45157-fba5-43ac-9249-74b5240c86e4)
+*	$(ID:470bfdf6-bb72-46a8-aee3-55d8ab897b4d)
+*	 $(ID:429767df-ab2f-4812-879a-6755f7330efa)
+*	$(ID:f9a6c3ea-9fca-4f35-9f7c-6962cf07c39f)
+
+## $(ID:c5293c1f-c6f3-4e55-b08f-f2767b807262)
+
+*	$(ID:8969a4ed-2b14-41e3-8328-93f96f28f53c)
+*	$(ID:45b32b8f-879d-4f75-831f-bbbdb0590b83)
+
+## $(ID:fd06db83-dd2d-4868-812a-623af8f4ab71)
+*	$(ID:8b56c389-20e7-411e-8ebe-40da40565d10)
+*	$(ID:f1aedcea-63aa-4f2f-a750-ecd1cd10e7df)
+
+## $(ID:cee9b5bc-9c4a-42a5-82b8-d409fa2ba7ee)
+*	$(ID:2cff038f-7dd5-4da5-8500-01d44d626fb6)
+*	$(ID:2ef3d462-9523-4068-be08-0bb3b876e556)
+*	$(ID:7af6e622-f70d-4d0a-a893-4c46c1001cee)
+*	$(ID:502195a7-5441-49e4-93af-0525b72faff9)
+
+## $(ID:865b77f1-84e5-437d-a301-1c7bd92050aa)
+*	$(ID:ac08f3a1-5771-4a2b-b9bd-9a4330e4a74b)
+
+## $(ID:bc9c6dbc-a849-46a5-81e3-07b564e5cebd)
+*	$(ID:8a2ecbec-a166-4f28-8d86-6526e8dae5d4)
+
+</skeleton>
+<unit id="c12117b3-630b-4b08-8d00-e9a3d95e2d7e">
+<notes>
+<note appliesTo="source">line: 2</note>
+<note appliesTo="source">prefix: # </note>
+</notes>
+<segment>
+<source>Clip Contents Designer #</source>
+</segment>
+</unit>
+<unit id="03bed719-ffce-49e0-82f1-4da793cb422e">
+<notes>
+<note appliesTo="source">line: 3</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Authors: Noelia, Abdel.</source>
+</segment>
+</unit>
+<unit id="1e7aa539-6515-492c-ad07-19cce58b8ea4">
+<notes>
+<note appliesTo="source">line: 5</note>
+</notes>
+<segment>
+<source>This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.</source>
+</segment>
+</unit>
+<unit id="9873d495-47ff-48b6-bf2b-716ad6b238b7">
+<notes>
+<note appliesTo="source">line: 6</note>
+</notes>
+<segment>
+<source>The clipboard content can also be cleared an shown in browse mode.</source>
+</segment>
+</unit>
+<unit id="40dd1a90-3188-453b-bcad-58743fcd9f88">
+<notes>
+<note appliesTo="source">line: 8</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Keyboard commands ##</source>
+</segment>
+</unit>
+<unit id="d5cda5cb-84f8-4b34-aca5-0b2f1487ead9">
+<notes>
+<note appliesTo="source">line: 9</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.</source>
+</segment>
+</unit>
+<unit id="667962a9-5171-43d5-8d3b-c2af3bc5bded">
+<notes>
+<note appliesTo="source">line: 10</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>NVDA+windows+x: Clear clipboard contents.</source>
+</segment>
+</unit>
+<unit id="7d1d1cad-336f-4edf-8c81-82955de71235">
+<notes>
+<note appliesTo="source">line: 11</note>
+<note appliesTo="source">prefix: *	 </note>
+</notes>
+<segment>
+<source>Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.</source>
+</segment>
+</unit>
+<unit id="d8881179-5781-4ec3-8d49-c2af03fb465e">
+<notes>
+<note appliesTo="source">line: 12</note>
+<note appliesTo="source">prefix: *	 </note>
+</notes>
+<segment>
+<source>Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.</source>
+</segment>
+</unit>
+<unit id="28e75b0b-f3be-4e5d-86a9-71f0c67e24ea">
+<notes>
+<note appliesTo="source">line: 13</note>
+<note appliesTo="source">prefix: *	 </note>
+</notes>
+<segment>
+<source>Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.</source>
+</segment>
+</unit>
+<unit id="2f8c212c-1962-44e4-9b1b-88ca4c1de89c">
+<notes>
+<note appliesTo="source">line: 16</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Clip Contents Designer settings ##</source>
+</segment>
+</unit>
+<unit id="9c9006a7-bc38-47ec-b0cb-46969f90ca82">
+<notes>
+<note appliesTo="source">line: 18</note>
+</notes>
+<segment>
+<source>This panel is available from NVDA's menu, Preferences submenu, Settings dialog.</source>
+</segment>
+</unit>
+<unit id="5dcd9560-ce79-4cd4-895e-b97d0fd27630">
+<notes>
+<note appliesTo="source">line: 20</note>
+</notes>
+<segment>
+<source>It contains the following controls:</source>
+</segment>
+</unit>
+<unit id="1b986cfc-8bd2-405c-a0e6-f07c69e9298a">
+<notes>
+<note appliesTo="source">line: 22</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.</source>
+</segment>
+</unit>
+<unit id="b8a98b4a-ccad-4358-adcc-cfc9ff6f2bb8">
+<notes>
+<note appliesTo="source">line: 23</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add text before clip data: It's also possible to choose if the added text will be appended or prepended.</source>
+</segment>
+</unit>
+<unit id="d81481b3-856c-414a-b18d-55ac2baaff9d">
+<notes>
+<note appliesTo="source">line: 24</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.</source>
+</segment>
+</unit>
+<unit id="53a54f79-4919-4638-9790-c1a21e433619">
+<notes>
+<note appliesTo="source">line: 25</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Request confirmation before performing the selected actions when: You can select if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty (for example if you've copied a file, not text).</source>
+</segment>
+</unit>
+<unit id="eaac0281-3df1-477e-aae8-704054d079bb">
+<notes>
+<note appliesTo="source">line: 26</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Format to show the clipboard text as HTML in browse mode: If you're learning HTML markup language, you may choose Preformatted text in HTML or HTML as shown in a web browser, to have an idea of how your HTML code will be rendered by NVDA in a browser. The difference between preformatted and conventional HTML is that the first option will preserve consecutive spaces and line breaks, and the second one will compact them.  For example, write some HTML tags like h1, h2, li, pre, etc., select and copy the text to clipboard, and use clipContentsDesigner add-on to show the text in a browseable message.</source>
+</segment>
+</unit>
+<unit id="4398306e-add7-4b1a-ac5b-6fbc9c29a35e">
+<notes>
+<note appliesTo="source">line: 27</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Maximum number of characters when showing clipboard text in browse mode: Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.</source>
+</segment>
+</unit>
+<unit id="1e5e9d5e-8630-467b-a850-cbe998e3e7ed">
+<notes>
+<note appliesTo="source">line: 28</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Show configuration dialog when updating: Uncheck this if you don't want to see a dialog to configure emulate copy and cut when updating the add-on.</source>
+</segment>
+</unit>
+<unit id="a0bce439-565d-483e-bc73-cef66f6d6961">
+<notes>
+<note appliesTo="source">line: 29</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Restore defaults.</source>
+</segment>
+</unit>
+<unit id="b2a81242-2398-44c7-85e7-fbc7a9936be5">
+<notes>
+<note appliesTo="source">line: 31</note>
+</notes>
+<segment>
+<source>Notes:</source>
+</segment>
+</unit>
+<unit id="95d155d6-7b15-4c74-8ffe-a7bf636f89ae">
+<notes>
+<note appliesTo="source">line: 33</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.</source>
+</segment>
+</unit>
+<unit id="5ce81901-c717-486f-8d40-5bc19d34526e">
+<notes>
+<note appliesTo="source">line: 34</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.</source>
+</segment>
+</unit>
+<unit id="9cb26b8e-13dd-412e-88fa-e5690ce4d67c">
+<notes>
+<note appliesTo="source">line: 37</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 49.0.0</source>
+</segment>
+</unit>
+<unit id="5f7428cb-f639-4013-8a53-4e9c172405e1">
+<notes>
+<note appliesTo="source">line: 38</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added a checkbox to decide if a configuration dialog should be shown when the add-on is updated.</source>
+</segment>
+</unit>
+<unit id="35042686-ab0b-4223-a844-fb71e3abe390">
+<notes>
+<note appliesTo="source">line: 41</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 46.0.0</source>
+</segment>
+</unit>
+<unit id="e26e772b-0567-469b-b42f-2b5b7d683aeb">
+<notes>
+<note appliesTo="source">line: 42</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA will sanitize HTML in browseable messages.</source>
+</segment>
+</unit>
+<unit id="ed25011e-e3d5-4f8d-a42f-af8fb6e1019f">
+<notes>
+<note appliesTo="source">line: 43</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added a button to close browseable messages, in addition to the Escape key.</source>
+</segment>
+</unit>
+<unit id="4eed0cfd-719e-4d24-9d02-1284d38c3e33">
+<notes>
+<note appliesTo="source">line: 46</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 40.0.0</source>
+</segment>
+</unit>
+<unit id="76cdd170-acc6-4dcd-8a0a-c14bb383b512">
+<notes>
+<note appliesTo="source">line: 47</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added support for Hebrew keyboard.</source>
+</segment>
+</unit>
+<unit id="23a83fca-ca1d-4d86-af94-de98454e813b">
+<notes>
+<note appliesTo="source">line: 49</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 22.0.0</source>
+</segment>
+</unit>
+<unit id="b640ed11-e9d3-417f-8a40-04b589bcb069">
+<notes>
+<note appliesTo="source">line: 50</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added a button to restore defaults in the add-on settings panel.</source>
+</segment>
+</unit>
+<unit id="0e5c6a0c-25c8-46d3-b412-f98cc6dc07bc">
+<notes>
+<note appliesTo="source">line: 51</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The add-on cannot be run in secure mode.</source>
+</segment>
+</unit>
+<unit id="5a22f331-f83d-4b00-bb72-7aed1993a5a1">
+<notes>
+<note appliesTo="source">line: 53</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 17.0</source>
+</segment>
+</unit>
+<unit id="921968d6-6496-436d-99f4-1ffde030d878">
+<notes>
+<note appliesTo="source">line: 54</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Compatible with NVDA 2023.1.</source>
+</segment>
+</unit>
+<unit id="716fc71d-b1de-45a9-a530-c6a1092e0268">
+<notes>
+<note appliesTo="source">line: 56</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 16.0</source>
+</segment>
+</unit>
+<unit id="6e7350f7-3dbf-494e-9830-0a684365f27f">
+<notes>
+<note appliesTo="source">line: 57</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Reqires NVDA 2022.1 or later.</source>
+</segment>
+</unit>
+<unit id="dced7ec7-9dd8-40ed-9715-8d096a93a399">
+<notes>
+<note appliesTo="source">line: 59</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 15.0</source>
+</segment>
+</unit>
+<unit id="ff1f349a-1887-4e61-bc55-c1d3e7385c95">
+<notes>
+<note appliesTo="source">line: 60</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The command to add text to clipboard is again presented in the input gestures dialog.</source>
+</segment>
+</unit>
+<unit id="634ea0d2-92bc-45cd-93ca-d8431f69ce97">
+<notes>
+<note appliesTo="source">line: 61</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.</source>
+</segment>
+</unit>
+<unit id="7246f22c-58cb-4b2a-940d-f75b8bd1cfef">
+<notes>
+<note appliesTo="source">line: 63</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 14.0</source>
+</segment>
+</unit>
+<unit id="0719f5e9-4714-406a-a6dc-d10d44ec326d">
+<notes>
+<note appliesTo="source">line: 64</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Compatible with NVDA 2021.1.</source>
+</segment>
+</unit>
+<unit id="8077fc6f-eb59-4781-b7fa-7243d25fa5ea">
+<notes>
+<note appliesTo="source">line: 66</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 13.0</source>
+</segment>
+</unit>
+<unit id="0150c980-2b79-461b-9d9c-7f5aa956aeaa">
+<notes>
+<note appliesTo="source">line: 67</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.</source>
+</segment>
+</unit>
+<unit id="acb1310c-2e17-4802-b85b-5a9bd41e4f60">
+<notes>
+<note appliesTo="source">line: 68</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Improved documentation.</source>
+</segment>
+</unit>
+<unit id="4bda61e2-2d25-45e2-8cfe-dac335a1ec9f">
+<notes>
+<note appliesTo="source">line: 69</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.</source>
+</segment>
+</unit>
+<unit id="cd9dfe17-d466-4ca7-8eb1-72261403e50d">
+<notes>
+<note appliesTo="source">line: 70</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed bugs when using emulate copy in browsers if focus mode is active.</source>
+</segment>
+</unit>
+<unit id="b783eb10-bebe-41db-bfff-6ae524f0b026">
+<notes>
+<note appliesTo="source">line: 71</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.</source>
+</segment>
+</unit>
+<unit id="9a35c2ab-21e1-4a5e-a75e-05efb1f7dbfa">
+<notes>
+<note appliesTo="source">line: 73</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 12.0</source>
+</segment>
+</unit>
+<unit id="3c170177-267f-4fd9-992c-ef1405251d68">
+<notes>
+<note appliesTo="source">line: 74</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed bugs when using emulate copy in applications like LibreOffice Writer.</source>
+</segment>
+</unit>
+<unit id="8a3f37c2-253c-46a3-9c35-3285f610aeb9">
+<notes>
+<note appliesTo="source">line: 76</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 11.0</source>
+</segment>
+</unit>
+<unit id="3ea9258d-0b67-4cd8-85f3-db387a8c4485">
+<notes>
+<note appliesTo="source">line: 77</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.</source>
+</segment>
+</unit>
+<unit id="8831a3c2-6ae5-42e7-a67e-d844dffdcfe7">
+<notes>
+<note appliesTo="source">line: 78</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Requires NVDA 2019.3 or later.</source>
+</segment>
+</unit>
+<unit id="e583cfdf-5fbb-47b4-a624-ca98da4a36c4">
+<notes>
+<note appliesTo="source">line: 80</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 10.0</source>
+</segment>
+</unit>
+<unit id="9617ffbc-2d13-45fa-b4b7-9cbe6d3e4043">
+<notes>
+<note appliesTo="source">line: 81</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.</source>
+</segment>
+</unit>
+<unit id="96798ca3-e6d2-46b4-9b6a-4b64109fc3b4">
+<notes>
+<note appliesTo="source">line: 82</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.</source>
+</segment>
+</unit>
+<unit id="b068123e-db1c-4575-bb0b-7c28915ce923">
+<notes>
+<note appliesTo="source">line: 84</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 9.0</source>
+</segment>
+</unit>
+<unit id="a06e2ff6-ad50-4158-af4d-76fca9bcf7d2">
+<notes>
+<note appliesTo="source">line: 86</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added the possibility of showing the clipboard text in browse mode.</source>
+</segment>
+</unit>
+<unit id="2dd600ce-041d-425c-99ff-1ac3ebe23899">
+<notes>
+<note appliesTo="source">line: 87</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added an option to choose if confirmations will be required if clipboard is not empty, for instance, if files or folders are been copied.</source>
+</segment>
+</unit>
+<unit id="399062e4-b8d1-4de1-a653-94136ef476f3">
+<notes>
+<note appliesTo="source">line: 88</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Requires NVDA 2018.4 or later.</source>
+</segment>
+</unit>
+<unit id="e0daa483-a3d7-46f6-9283-cd979495693b">
+<notes>
+<note appliesTo="source">line: 90</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 8.0 ##</source>
+</segment>
+</unit>
+<unit id="ec2a6a6c-95d4-4aa8-9cf5-4f392abdeceb">
+<notes>
+<note appliesTo="source">line: 92</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The add-on settings are shown in the corresponding category of the NVDA Settings dialog.</source>
+</segment>
+</unit>
+<unit id="28223ce8-b3b6-4faa-a4a5-ec2c274a5da5">
+<notes>
+<note appliesTo="source">line: 93</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Requires NVDA 2018.2 or later.</source>
+</segment>
+</unit>
+<unit id="632c7d69-c2de-4f1a-a1f7-f8e9cf73e793">
+<notes>
+<note appliesTo="source">line: 95</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 7.0</source>
+</segment>
+</unit>
+<unit id="ef65a65b-9eba-4d56-bbce-6606ca1e9e2c">
+<notes>
+<note appliesTo="source">line: 97</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.</source>
+</segment>
+</unit>
+<unit id="1bec9c5b-b688-4211-b4cf-b755a311eb61">
+<notes>
+<note appliesTo="source">line: 99</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 6.0</source>
+</segment>
+</unit>
+<unit id="c6c45157-fba5-43ac-9249-74b5240c86e4">
+<notes>
+<note appliesTo="source">line: 101</note>
+<note appliesTo="source">prefix: *	 </note>
+</notes>
+<segment>
+<source>Added options to choose if available actions should be performed after confirmation.</source>
+</segment>
+</unit>
+<unit id="470bfdf6-bb72-46a8-aee3-55d8ab897b4d">
+<notes>
+<note appliesTo="source">line: 102</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.</source>
+</segment>
+</unit>
+<unit id="429767df-ab2f-4812-879a-6755f7330efa">
+<notes>
+<note appliesTo="source">line: 103</note>
+<note appliesTo="source">prefix: *	 </note>
+</notes>
+<segment>
+<source>Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.</source>
+</segment>
+</unit>
+<unit id="f9a6c3ea-9fca-4f35-9f7c-6962cf07c39f">
+<notes>
+<note appliesTo="source">line: 104</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Fixed documentation for script_add (Windows+NVDA+c).</source>
+</segment>
+</unit>
+<unit id="c5293c1f-c6f3-4e55-b08f-f2767b807262">
+<notes>
+<note appliesTo="source">line: 106</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 5.0 ##</source>
+</segment>
+</unit>
+<unit id="8969a4ed-2b14-41e3-8328-93f96f28f53c">
+<notes>
+<note appliesTo="source">line: 108</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.</source>
+</segment>
+</unit>
+<unit id="45b32b8f-879d-4f75-831f-bbbdb0590b83">
+<notes>
+<note appliesTo="source">line: 109</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Requires NVDA 2016.4 or later.</source>
+</segment>
+</unit>
+<unit id="fd06db83-dd2d-4868-812a-623af8f4ab71">
+<notes>
+<note appliesTo="source">line: 111</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 4.0 ##</source>
+</segment>
+</unit>
+<unit id="8b56c389-20e7-411e-8ebe-40da40565d10">
+<notes>
+<note appliesTo="source">line: 112</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.</source>
+</segment>
+</unit>
+<unit id="f1aedcea-63aa-4f2f-a750-ecd1cd10e7df">
+<notes>
+<note appliesTo="source">line: 113</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.</source>
+</segment>
+</unit>
+<unit id="cee9b5bc-9c4a-42a5-82b8-d409fa2ba7ee">
+<notes>
+<note appliesTo="source">line: 115</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 3.0 ##</source>
+</segment>
+</unit>
+<unit id="2cff038f-7dd5-4da5-8500-01d44d626fb6">
+<notes>
+<note appliesTo="source">line: 116</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.</source>
+</segment>
+</unit>
+<unit id="2ef3d462-9523-4068-be08-0bb3b876e556">
+<notes>
+<note appliesTo="source">line: 117</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>If no separator is set, just a single line will be placed between the added text segments.</source>
+</segment>
+</unit>
+<unit id="7af6e622-f70d-4d0a-a893-4c46c1001cee">
+<notes>
+<note appliesTo="source">line: 118</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>A shortcut can be assigned to open the Clip Contents Designer settings dialog.</source>
+</segment>
+</unit>
+<unit id="502195a7-5441-49e4-93af-0525b72faff9">
+<notes>
+<note appliesTo="source">line: 119</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.</source>
+</segment>
+</unit>
+<unit id="865b77f1-84e5-437d-a301-1c7bd92050aa">
+<notes>
+<note appliesTo="source">line: 121</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 2.0 ##</source>
+</segment>
+</unit>
+<unit id="ac08f3a1-5771-4a2b-b9bd-9a4330e4a74b">
+<notes>
+<note appliesTo="source">line: 122</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Hindi characters can be used as the separator between added contents.</source>
+</segment>
+</unit>
+<unit id="bc9c6dbc-a849-46a5-81e3-07b564e5cebd">
+<notes>
+<note appliesTo="source">line: 124</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 1.0 ##</source>
+</segment>
+</unit>
+<unit id="8a2ecbec-a166-4f28-8d86-6526e8dae5d4">
+<notes>
+<note appliesTo="source">line: 125</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Initial version.</source>
+</segment>
+</unit>
+</file>
+</xliff>
