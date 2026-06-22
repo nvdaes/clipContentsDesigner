@@ -1,198 +1,118 @@
-# Udklipsdesigner (Clip Contents Designer) #
+# Clip Contents Designer
 
-*	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
+- Authors: Noelia, Abdel.
+- NVDA compatibility: 2019.3 or later
+- Download [stable version][1]
+- Download [development version][2]
 
-Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
-kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
-indsætning. Udklipsholderens indhold kan også ryddes og vises i
-gennemsynstilstand.
+This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
+The clipboard content can also be cleared an shown in browse mode.
 
-## Tastaturkommandoer ##
-*	NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
-  MathML-objekter, eller den tekststreng, som er blevet markeret med
-  læsemarkøren, til udklipsholderen.
-*	NVDA+Windows+x: Ryd udklipsholderen.
-*	Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
-  mulighed for at blive bedt om en bekræftelse.
-*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som
-  HTML-indhold. Du vil få besked, hvis udklipsholderen er tom eller hvis
-  indholdet ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være,
-  hvis du har kopiere filer fra Stifinder.
-*	Ikke tildelt: Viser teksten i udklipsholderen i gennemgynstilstand som rå
-  tekst. Du vil få besked, hvis udklipsholderen er tom eller hvis indholdet
-  ikke kan vises i gennemsynstilstand. Dette kan eksempelvis være, hvis du
-  har kopiere filer fra Stifinder.
+## Keyboard commands
 
+- NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
+- NVDA+windows+x: Clear clipboard contents.
+- Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+- Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+- Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
 
-## Indstillinger for Udklipsdesigner ##
+## Clip Contents Designer settings
 
-Ovennævnte kommando kan ændres fra NVDAs menu, under "Opsætning".
+This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
 
-Den indeholder følgende kontroller:
+It contains the following controls:
 
-* Indtast den streng, der skal bruges som separator mellem indhold tilføjet
-  til udklipsholderen: Gør det muligt at indstille en separator, som kan
-  bruges til at finde tekstsegmenterne, når hele den tilføjede tekst er
-  indsat.
-* Tilføj tekst før klipdata: Det er også muligt at vælge, om den tilføjede
-  tekst skal tilføjes foran eller bagefter tekst, der allerede befinder sig
-  ved markøren.
-* Vælg de handlinger, der kræver tidligere bekræftelse: Du kan for hver
-  tilgængelig handling vælge, om den skal udføres med det samme eller efter
-  bekræftelse. Tilgængelige handlinger er: tilføj tekst, ryd
-  udklipsholderen, emuler kopi og emuler klip.
-* Anmod om bekræftelse, før du udfører de valgte handlinger, når: Du kan
-  vælge, om der altid skal anmodes om bekræftelser, hvis der kun er tekst i
-  udklipsholderen, eller hvis udklipsholderen ikke er tom (f.eks. Hvis du
-  har kopieret en fil, ikke tekst).
-* Formatér og vis udklipsholderteksten som HTML i gennemsynstilstand: Hvis
-  du er ved at lære HTML, kan du vælge Forformateret tekst i HTML eller HTML
-  som vist i en webbrowser for at få en idé om, hvordan din HTML -kode vil
-  blive gengivet af NVDA i en browser. Forskellen mellem forformateret og
-  konventionel HTML er, at den første mulighed bevarer fortløbende mellemrum
-  og linjeskift, og den anden komprimerer dem. Skriv f.eks. Nogle HTML-tags
-  som h1, h2, li, pre osv., Vælg og kopier teksten til udklipsholderen, og
-  brug tilføjelsen til at vise teksten i en meddelelse, der kan gennemses.
-* Maksimalt antal tegn, når udklipsholdertekst vises i gennemsynstilstand:
-  Vær opmærksom på, at forhøjelse af denne grænse kan give problemer, hvis
-  udklipsholderen indeholder store tekststrenge. Standardgrænsen er 100000
-  tegn.
-* Restore defaults.
+- Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+- Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
+- Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
+- Request confirmation before performing the selected actions when: You can select if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty (for example if you've copied a file, not text).
+- Format to show the clipboard text as HTML in browse mode: If you're learning HTML markup language, you may choose Preformatted text in HTML or HTML as shown in a web browser, to have an idea of how your HTML code will be rendered by NVDA in a browser. The difference between preformatted and conventional HTML is that the first option will preserve consecutive spaces and line breaks, and the second one will compact them.  For example, write some HTML tags like h1, h2, li, pre, etc., select and copy the text to clipboard, and use clipContentsDesigner add-on to show the text in a browseable message.
+- Maximum number of characters when showing clipboard text in browse mode: Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
-Bemærkninger:
+Notes:
 
-*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
-  stadig er åben. I disse situationer vil handlingen straks udføres.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+- Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
+- Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
 
-## Changes for 46.0.0
-* NVDA will sanitize HTML in browseable messages.
-* Added a button to close browseable messages, in addition to the Escape
-  key.
+## Changes for 15.0
 
+- The command to add text to clipboard is again presented in the input gestures dialog.
+- Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.
 
-## Changes for 40.0.0
-* Added support for Hebrew keyboard.
+## Changes for 14.0
 
-## Changes for 22.0.0
-* Added a button to restore defaults in the add-on settings panel.
-* The add-on cannot be run in secure mode.
-
-## Changes for 17.0
-* Compatible with NVDA 2023.1.
-
-## Ændringer for 16.0
-* Reqires NVDA 2022.1 or later.
-
-## Ændringer for 15.0
-* Kommandoen til at tilføje tekst til udklipsholder vises igen i
-  dialogboksen til håndtering af kommandoer.
-* Rettede kommandoer til at kopiere og klippe med persisk tastatur, takket
-  være Mohammadhosein Ghezelsofla.
-
-## Ændringer for 14.0
-* Kompatibel med NVDA 2021.1.
+- Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
-* Rettet et problem i det visuelle layout for indstillingspanelet takket
-  være Cyrille Bougot.
-* Forbedret dokumentationen.
-* Tilføjede en Udklipsdesigner-kategori for at tildele inputbevægelser til
-  alle kommandoer, der er tilgængelige for denne tilføjelse.
-* Rettede fejl ved brug af "Emuler kopi" i browsere, hvis fokustilstand er
-  aktiv.
-* Du kan tildele forskellige kommandoer til visning af udklipsholderens
-  tekstlige indhold. Indholdet kan vises som rå tekst eller formateret i
-  HTML. Formatet til visning af udklipsholderteksten i indstillingspanelet
-  er blevet ændret i overensstemmelse hermed, så du kan vælge de to mulige
-  indstillinger.
 
-## Ændringer for 12.0
-* Rettede fejl ved brug af "Emuler kopi" i applikationer som LibreOffice
-  Writer.
+- Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
+- Improved documentation.
+- Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
+- Fixed bugs when using emulate copy in browsers if focus mode is active.
+- You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
 
-## Ændringer i 11.0
-* Nu er det muligt at tilføje tekst markeret med læsemarkøren ved hjælp af
-  standardkommandoer for NVDA (NVDA+f9 og NVDA+f10). NVDA+windows+f9 bruges
-  ikke længere til, således tilføjelsen fungerer i overensstemmelse med
-  NVDA+Shift+F9.
-* Kræver NVDA 2019.3 eller nyere.
+## Changes for 12.0
 
-## Ændringer i 10.0
-* Rettet en fejl i den dialog, der blev brugt til at vise teksten i
-  udklipsholderen, når dens titel indeholdte ikke-latinske tegn.
-* Rettet en fejl ved brug af emuleringen af klip/kopier og
-  kopieringsfunktioner med et arabisk tastaturlayout. Dette er rettet af
-  Abdel, nu tilføjet som en forfatter.
+- Fixed bugs when using emulate copy in applications like LibreOffice Writer.
 
-## Ændringer for 9.0
+## Changes for 11.0
 
-* Tilføjet mulighed for at vise udklipsholderens aktuelle tekstindhold i
-  gennemsynstilstand.
-* Tilføjet en mulighed for at vælge, om der skal kræves bekræftelse, hvis
-  udklipsholderen ikke er tom, hvis der f.eks. Er kopieret filer eller
-  mapper.
-* Kræver NVDA 2018.4 eller nyere.
+- Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
+- Requires NVDA 2019.3 or later.
 
-## Ændringer i 8.0 ##
+## Changes for 10.0
 
-* Tilføjelsens indstillinger vises i den tilsvarende kategori NVDA
-  indstillinger i dialogboksen.
-* Kræver NVDA 2018.2 eller nyere.
+- Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
+- Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
-## Ændringer i7.0
+## Changes for 9.0
 
-* Hvis du vælger "nej" i dialogen, hvor du kan konfigurere funktionaliteten
-  til at emulere kopi og klip under installationen, vil kommandoerne for
-  disse funktioner blive deaktiveret. Dette gendanner den sædvanlige adfærd
-  for Ctrl+C og Ctrl+X.
+- Added the possibility of showing the clipboard text in browse mode.
+- Added an option to choose if confirmations will be required if clipboard is not empty, for instance, if files or folders are been copied.
+- Requires NVDA 2018.4 or later.
 
-## Ændringer i 6.0
+## Changes for 8.0
 
-*	Added options to choose if available actions should be performed after
-  confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
-  the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation. This allows to add the control+c and
-  control+x commands to copy and cut, and be asked if you want to replace
-  the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+- The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
+- Requires NVDA 2018.2 or later.
+- If needed, you can download the [last version compatible with NVDA 2017.3][3].
 
-## ændringer i 5.0 ##
+## Changes for 7.0
 
-*	Dialogens visuelle præsentation er blevet forbedret og overholder
-  udseendet af de dialoger, der vises i NVDA.
-*	Kræver NVDA 2016.4 eller nyere.
+- In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.
 
-## Ændringer i 4.0 ##
-*	Tilføjelsesindstillinger administreres fra NVDA-konfiguration, så
-  standardprofiler kan bruges til at gemme forskellige separatorer, og det
-  er ikke nødvendigt at kopiere indstillingerne til import ved
-  geninstallation.
-*	Nu er det muligt at vælge, om den tilføjede tekst vil blive tilføjet til
-  begyndelsen eller slutningen, ved at markere checkboksen "Tilføj tekst før
-  data i udklipsholder" i dialogen Indstillinger for udklipsdesigner.
+## Changes for 6.0
 
-## ændringer i 3.0 ##
-*	Punktskriftrepræsentation af MathML-objekter kan tilføjes til
-  udklipsholderen, hvis MathPlayer er installeret.
-*	Hvis der ikke er indstillet nogen separator, vil der blot blive indsat en
-  enkelt linje mellem de tilføjede tekstsegmenter.
-*	Der kan knyttes en genvejstast til at åbne dialogen Indstillinger for
-  Udklipsdesigner.
-*	Tilføjede en checkboks i dialogen Indstillinger til at vælge, om
-  separatoren skal kopieres, så den kan importeres, når
-  tilføjelsesprogrammet bliver geninstalleret.
+- Added options to choose if available actions should be performed after confirmation.
+- Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+- Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+- Fixed documentation for script_add (Windows+NVDA+c).
 
-## ændringer i 2.0 ##
-*	Hindi-tegn kan nu bruges som separator mellem tilføjet indhold.
+## Changes for 5.0
 
-## ændringer i 1.0 ##
-*	Første version.
+- The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
+- Requires NVDA 2016.4 or later.
 
-[[!tag dev stable]]
+## Changes for 4.0
 
+- Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
+- Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
+
+## Changes for 3.0
+
+- Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
+- If no separator is set, just a single line will be placed between the added text segments.
+- A shortcut can be assigned to open the Clip Contents Designer settings dialog.
+- Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
+
+## Changes for 2.0
+
+- Hindi characters can be used as the separator between added contents.
+
+## Changes for 1.0
+
+- Initial version.
+
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o

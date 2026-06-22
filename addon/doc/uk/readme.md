@@ -1,194 +1,118 @@
-# Clip Contents Designer #
+# Clip Contents Designer
 
-*	Автори: Noelia, Abdel.
+- Authors: Noelia, Abdel.
+- NVDA compatibility: 2019.3 or later
+- Download [stable version][1]
+- Download [development version][2]
 
-Цей додаток використовується для додавання тексту в буфер обміну, що може
-бути корисним, коли ви хочете з'єднати частини тексту для того, щоб вставити
-їх разом.  Вміст буфера обміну також може бути очищено або показано в режимі
-огляду.
+This add-on is used to add text to the clipboard, which can be useful when you want to join sections of text together ready for pasting.
+The clipboard content can also be cleared an shown in browse mode.
 
-## Клавіатурні команди ##
-*	NVDA+windows+c: Додати виділений текст, символи Брайля Юнікоду, що
-  представляють об'єкти MathML, або рядок, позначений переглядовим курсором,
-  в буфер обміну.
-*	NVDA+windows+x: очищення вмісту буфера обміну.
-*	Не призначено: Копіює (або вирізає) в буфер обміну з можливістю запиту
-  попереднього підтвердження.
-*	Не призначено: Показує текст буфера обміну у вигляді HTML у режимі огляду,
-  або повідомляє, якщо буфер обміну порожній або має вміст, який не може
-  бути представлений у вигляді повідомлення для перегляду, наприклад, якщо
-  файли або папки були скопійовані з провідника Windows.
-*	Не призначено: Показує текстовий вміст буфера обміну як звичайний текст у
-  режимі огляду або повідомляє, що буфер обміну порожній або містить вміст,
-  який не може бути представлений у повідомленні для перегляду, наприклад,
-  якщо файли або папки скопійовано з Провідника Windows.
+## Keyboard commands
 
+- NVDA+windows+c: Add selected text, Unicode braille characters which represent MathML objects, or the string which has been marked with the review cursor, to the clipboard.
+- NVDA+windows+x: Clear clipboard contents.
+- Not assigned: Copies to (or cuts from) the clipboard, with the possibility of being asked for a previous confirmation.
+- Not assigned: Shows the clipboard text as HTML in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
+- Not assigned: Shows the textual clipboard contents as plain text in browse mode, or announces if clipboard is empty or has contents which can't be presented in a browseable message, for instance if files or folders are been copied from Windows Explorer.
 
-## Налаштування  Clip Contents Designer ##
+## Clip Contents Designer settings
 
-Ця панель доступна в меню NVDA, підменю «Параметри», діалог «Налаштування».
+This panel is available from NVDA's menu, Preferences submenu, Settings dialog.
 
-Вона містить такі елементи керування:
+It contains the following controls:
 
-* Введіть текст, який буде використовуватися як роздільник між вмістом,
-  доданим до буфера обміну: Дозволяє встановити роздільник, який можна
-  використовувати для пошуку сегментів тексту після того, як весь доданий
-  текст буде вставлено.
-* Додавати текст на початок буфера обміну: Ви також можете вибрати, чи буде
-  текст додано або доповнено.
-* Вибір дій, що вимагають попереднього підтвердження: Ви можете вибрати для
-  кожної доступної дії, чи виконувати її негайно чи після
-  підтвердження. Доступні дії: додати текст, очистити буфер обміну,
-  емулювати копіювання та емулювати вирізання.
-* Вибір дій, що вимагають попереднього підтвердження: ви можете вибрати, чи
-  запитуватимуться підтвердження завжди, лише якщо текст міститься в буфері
-  обміну, або якщо буфер обміну не порожній (наприклад, якщо ви скопіювали
-  файл, а не текст).
-* Формат для показу тексту буфера обміну як HTML у режимі огляду: Якщо ви
-  вивчаєте мову розмітки HTML, ви можете вибрати Попередньо відформатований
-  текст у HTML або HTML, як показано у веб-переглядачі, щоб мати уявлення
-  про те, як буде показано ваш HTML-код у браузері. Різниця між попередньо
-  відформатованим і звичайним HTML полягає в тому, що перший варіант збереже
-  послідовні пробіли та розриви рядків, а другий — стисне їх. Наприклад,
-  напишіть деякі теги HTML, як-от h1, h2, li, pre тощо, виділіть та
-  скопіюйте текст у буфер обміну та скористайтеся додатком
-  clipContentsDesigner, щоб відобразити текст у повідомленні, доступному для
-  перегляду.
-* Максимальна кількість символів під час показу тексту буфера обміну в
-  режимі огляду: Майте на увазі, що збільшення цього обмеження може
-  призвести до проблем, якщо буфер обміну містить великі рядки
-  тексту. Початкове обмеження  становить 100000 символів.
-* Restore defaults.
+- Type the string to be used as a separator between contents added to the clipboard: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+- Add text before clip data: It's also possible to choose if the added text will be appended or prepended.
+- Select the actions which require previous confirmation: You can choose, for each action available, if it should be performed inmediately or after confirmation. Available actions are: add text, clear clipboard, emulate copy and emulate cut.
+- Request confirmation before performing the selected actions when: You can select if confirmations will be requested always, just if text is contained in the clipboard, or if clipboard is not empty (for example if you've copied a file, not text).
+- Format to show the clipboard text as HTML in browse mode: If you're learning HTML markup language, you may choose Preformatted text in HTML or HTML as shown in a web browser, to have an idea of how your HTML code will be rendered by NVDA in a browser. The difference between preformatted and conventional HTML is that the first option will preserve consecutive spaces and line breaks, and the second one will compact them.  For example, write some HTML tags like h1, h2, li, pre, etc., select and copy the text to clipboard, and use clipContentsDesigner add-on to show the text in a browseable message.
+- Maximum number of characters when showing clipboard text in browse mode: Please, be aware that increasing this limit may produce issues if the clipboard contains large strings of text. The default limit is 100000 characters.
 
-Примітки:
+Notes:
 
-*	Підтвердження не запитуватиметься, якщо вікно повідомлень NVDA все ще
-  відкрито. У цих випадках дії будуть виконані негайно.
-*	Emulate copy and emulate cut commands mean that, when these features are
-  enabled, the add-on will take control of control+c and control+x. This
-  will allow to select if a confirmation should be requested before
-  performing the actions corresponding to these keystrokes.
+- Confirmations won't be requested when a message box of NVDA is still opened. In those cases, actions will be inmediately performed.
+- Emulate copy and emulate cut commands mean that, when these features are enabled, the add-on will take control of control+c and control+x. This will allow to select if a confirmation should be requested before performing the actions corresponding to these keystrokes.
 
-## Changes for 46.0.0
-* NVDA will sanitize HTML in browseable messages.
-* Added a button to close browseable messages, in addition to the Escape
-  key.
+## Changes for 15.0
 
+- The command to add text to clipboard is again presented in the input gestures dialog.
+- Fixed gestures to copy and cut with Persian keyboard, thanks to Mohammadhosein Ghezelsofla.
 
-## Changes for 40.0.0
-* Added support for Hebrew keyboard.
+## Changes for 14.0
 
-## Зміни у версії 22.00
-* На панелі налаштувань додатка додано кнопку для відновлення початкових
-  налаштувань.
-* Додаток не можна запускати в захищеному режимі.
-
-## Зміни у версії 17.0
-* Сумісний із NVDA 2023.1.
-
-## Зміни у версії 16.0
-* Потребує NVDA 2022.1 чи новішу.
-
-## Зміни у версії 15.0
-* Команда для додавання тексту в буфер обміну знову представлена в
-  діалоговому вікні жестів вводу.
-* Завдяки Mohammadhosein Ghezelsofla виправлені жести для копіювання й
-  вирізання у перській клавіатурі.
-
-## Зміни у версії 14.0
-* Сумісний із NVDA 2021.1.
+- Compatible with NVDA 2021.1.
 
 ## Changes for 13.0
-* Завдяки Cyrille Bougot виправлено проблему з візуальним розташуванням
-  панелі налаштувань.
-* Поліпшено документацію.
-* Додано категорію Clip Contents Designer для призначення жестів вводу всім
-  командам, доступним для цього додатка.
-* Виправлено помилки під час використання емуляції копіювання в браузерах,
-  якщо активний режим фокусу.
-* Ви можете призначити різні жести для показу текстового вмісту буфера
-  обміну у вигляді необробленого тексту чи відформатованого в HTML. Формат
-  показу тексту буфера обміну в панелі налаштувань було змінено відповідним
-  чином, щоб обрати два варіанти, доступних для формату HTML.
 
-## Зміни у версії 12.0
-* Виправлено помилки під час використання емуляції копіювання в таких
-  програмах, як LibreOffice Writer.
+- Fixed an issue in visual layout of the settings panel, thanks to Cyrille Bougot.
+- Improved documentation.
+- Added a Clip Contents Designer category to assign input gestures to all commands available for this add-on.
+- Fixed bugs when using emulate copy in browsers if focus mode is active.
+- You can assign different gestures to show the clipboard textual contents as raw text or formatted in HTML. The Format to show the clipboard text in the settings panel has being modified accordingly, to select the two options available for HTML format.
 
-## Зміни у версії 11.0
-* Тепер можна додавати текст, позначений переглядовим курсором, за допомогою
-  стандартних команд NVDA (NVDA+f9 і NVDA+f10). NVDA+windows+f9 більше не
-  використовується для кращої інтеграції з новою командою NVDA+shift+f9.
-* Потребує NVDA 2019.3 або новішу.
+## Changes for 12.0
 
-## Зміни у версії 10.0
-* Виправлено помилку в діалозі, що використовується для відображення тексту
-  буфера обміну, коли його заголовок містить нелатинські символи.
-* Виправлено помилку під час використання функцій емуляції вирізання та
-  копіювання з арабською розкладкою клавіатури. Це виправив Abdel, тепер він
-  є співавтором додатка.
+- Fixed bugs when using emulate copy in applications like LibreOffice Writer.
 
-## Зміни у версії 9.0
+## Changes for 11.0
 
-* Додано можливість відображення тексту буфера обміну в режимі огляду.
-* Додано можливість вибрати, чи будуть потрібні підтвердження, якщо буфер
-  обміну не порожній, наприклад, якщо у нього скопійовано файли або папки.
-* Потребує NVDA 2018.4 або новішу.
+- Now it's possible to add text marked with the review cursor using standard commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer used, for a better integration with the new NVDA+shift+f9 command.
+- Requires NVDA 2019.3 or later.
 
-## Зміни у версії 8.0 ##
+## Changes for 10.0
 
-* Налаштування додатка тепер показані у відповідній категорії діалогу
-  налаштувань NVDA.
-* Потребує NVDA 2018.2 або новішу.
+- Fixed a bug in the dialog used to show the clipboard text, when its title contains non latin characters.
+- Fixed a bug when using the emulate cut and copy features with an Arabic keyboard layout. This has been fixed by Abdel, added as an add-on author.
 
-## Зміни у версії 7.0
+## Changes for 9.0
 
-* Якщо під час встановлення додатка у діалозі для налаштування функцій
-  «Емуляція копіювання» та «Емуляція вирізання» ви оберете «ні», то команди
-  для цих функцій буде видалено, щоб ви могли відновити нормальну поведінку
-  для control+c і control+x.
+- Added the possibility of showing the clipboard text in browse mode.
+- Added an option to choose if confirmations will be required if clipboard is not empty, for instance, if files or folders are been copied.
+- Requires NVDA 2018.4 or later.
 
-## Зміни у версії 6.0
+## Changes for 8.0
 
-*	Added options to choose if available actions should be performed after
-  confirmation.
-*	Added Emulate copy and Emulate cut commands, which could be assigned from
-  the Input gestures dialog.
-*	Added a dialog to configure the Emulate copy and Emulate cut
-  functionalities at installation. This allows to add the control+c and
-  control+x commands to copy and cut, and be asked if you want to replace
-  the clipboard contents when pressing these keystrokes.
-*	Fixed documentation for script_add (Windows+NVDA+c).
+- The add-on settings are shown in the corresponding category of the NVDA Settings dialog.
+- Requires NVDA 2018.2 or later.
+- If needed, you can download the [last version compatible with NVDA 2017.3][3].
 
-## Зміни у версії 5.0 ##
+## Changes for 7.0
 
-*	Візуальне представлення діалогу було поліпшено, дотримуючись зовнішнього
-  вигляду діалогів, показаних в NVDA.
-*	Потребує версію NVDA 2016.4 або новішу.
+- In the dialog to configure the Emulate copy and Emulate cut functionalities at installation, if you choose no, the commands for these features will be removed, so that you can restore the normal behavior for control+c and control+x.
 
-## Зміни у версії 4.0 ##
-*	Налаштування додатків керуються з конфігурації NVDA, тому стандартні
-  профілі можна використовувати для збереження різних роздільників, і не
-  потрібно копіювати налаштування для імпорту під час перевстановлення.
-*	Тепер можна вибрати, чи буде доданий текст на початку чи в кінці,
-  використовуючи прапорець «Додати текст на початок буфера обміну» в діалозі
-  налаштувань Clip Contents Designer.
+## Changes for 6.0
 
-## Зміни у версії 3.0 ##
-*	Відображення об’єктів MathML шрифтом Брайля можна додати до буфера обміну,
-  якщо встановлено MathPlayer.
-*	Якщо роздільник не встановлено, між доданими текстовими сегментами буде
-  розміщено лише один рядок.
-*	Можна призначити комбінацію клавіш для відкриття діалогу налаштувань Clip
-  Contents Designer.
-*	Додано прапорець у діалозі налаштувань, щоб вибрати, чи потрібно
-  скопіювати роздільник для імпортування під час перевстановлення додатка.
+- Added options to choose if available actions should be performed after confirmation.
+- Added Emulate copy and Emulate cut commands, which could be assigned from the Input gestures dialog.
+- Added a dialog to configure the Emulate copy and Emulate cut functionalities at installation. This allows to add the control+c and control+x commands to copy and cut, and be asked if you want to replace the clipboard contents when pressing these keystrokes.
+- Fixed documentation for script_add (Windows+NVDA+c).
 
-## Зміни у версії 2.0 ##
-*	Символи гінді можна використовувати як роздільник між доданим вмістом.
+## Changes for 5.0
 
-## Зміни у версії 1.0 ##
-*	Перша версія.
+- The visual presentation of the dialog has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
+- Requires NVDA 2016.4 or later.
 
-[[!tag dev stable]]
+## Changes for 4.0
 
+- Add-on settings are managed from NVDA configuration, so that standard profiles can be used to save different separators, and it's not needed to copy the settings for importing at reinstallation.
+- Now it's possible to choose if the added text will be appended or prepended, using the Add text before clip data check box from the Clip Contents Designer settings dialog.
+
+## Changes for 3.0
+
+- Braille representation of MathML objects can be added to the clipboard if MathPlayer is installed.
+- If no separator is set, just a single line will be placed between the added text segments.
+- A shortcut can be assigned to open the Clip Contents Designer settings dialog.
+- Added a check box in the settings dialog, for choosing if the separator should be copied to be imported when reinstalling the add-on.
+
+## Changes for 2.0
+
+- Hindi characters can be used as the separator between added contents.
+
+## Changes for 1.0
+
+- Initial version.
+
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev
+[3]: http://addons.nvda-project.org/files/get.php?file=ccd-o
