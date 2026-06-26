@@ -1,265 +1,244 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 6.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2023-06-09 10:30+0200\n"
-"Last-Translator: Juan C. Buño <oprisniki@gmail.com>\n"
-"Language-Team: NVDA add-ons translation team <oprisniki@gmail.com>\n"
-"Language: gl\n"
+"Project-Id-Version: nvdaaddons\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-04-05 03:12+0000\n"
+"PO-Revision-Date: 2026-04-06 01:44\n"
+"Last-Translator: \n"
+"Language-Team: Galician\n"
+"Language: gl_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Crowdin-Project: nvdaaddons\n"
+"X-Crowdin-Project-ID: 780748\n"
+"X-Crowdin-Language: gl\n"
+"X-Crowdin-File: clipContentsDesigner.pot\n"
+"X-Crowdin-File-ID: 256\n"
 
 #. Translators: label of a dialog.
-msgid ""
-"This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents,\n"
-"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
-"cut.\n"
-"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
-"this later."
+#: addon\installTasks.py:42
+msgid "This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change this later."
 msgstr ""
-"Este complemento permite confirmar se queres copiar e curtar, reemprazando "
-"os contidos do portapapeis,\n"
-"\t\tao se premer control+c e control+x. Isto chámase emular copiar e "
-"cortar.\n"
-"\t\tQueres configurar Emular copiar e cortar agora? Podes facelo agora ou "
-"cambialo máis tarde."
 
 #. Translators: title of a dialog.
+#: addon\installTasks.py:46
 msgid "Configure Emulate copy and cut"
-msgstr "Configurar Emular copiar e curtar"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:34
 msgid "Preformatted text in HTML"
-msgstr "Texto preformatado en HTML"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:36
 msgid "HTML as shown in a web browser"
-msgstr "HTML como se mostraría nun navegador web"
+msgstr ""
 
 #. Translators: Text of the clipboard shown without being formatted.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:39
 msgid "Plain text"
-msgstr "Texto plano"
+msgstr ""
 
 #. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:121
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Amosa a configuración de Clip Contents Designer."
+msgstr ""
 
 #. Translators: message presented when the clipboard content has been deleted.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:131
 msgid "Clipboard cleared"
-msgstr "Portapapeis limpado"
+msgstr ""
 
 #. Translators: message presented when the clipboard content cannot be deleted.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:134
 msgid "Clipboard not cleared"
-msgstr "Portapapeis non limpado"
+msgstr ""
+
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:175
+msgid "No text to add"
+msgstr ""
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:217
 msgid "Please, confirm if you want to add text to the clipboard"
-msgstr "Por favor, confirma se queres engadir texto ao portapapeis"
+msgstr ""
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:219
 msgid "Adding text to clipboard"
-msgstr "Engadindo texto ao portapapeis"
+msgstr ""
 
 #. Translators: message presented when the text has been added to the clipboard.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:224
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:233
 msgid "Added"
-msgstr "Engadido"
+msgstr ""
 
 #. Translators: message presented when the text cannot be added to the clipboard.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:227
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:236
 msgid "Cannot add"
-msgstr "Non se puido engadir"
+msgstr ""
 
 #. Translators: message presented in input mode.
-msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:241
+msgid "Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard."
 msgstr ""
-"Recupera a cadea seleccionada ou o texto dende a marca de comezo previamente "
-"colocada ata e incluíndo a posición actual do cursor de revisión, e engádeo "
-"ao portapapeis."
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:258
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Por favor, confirma se queres limpar o portapapeis"
+msgstr ""
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:260
 msgid "Clearing clipboard"
-msgstr "Limpando o portapapeis"
+msgstr ""
 
 #. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:268
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Borra o texto engadido e o contido do portapapeis ."
+msgstr ""
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:293
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "Por favor, confirma se queres copiar ao portapapeis"
+msgstr ""
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:295
 msgid "Copying to clipboard"
-msgstr "Copiando ao portapapeis"
+msgstr ""
 
 #. Translators: message presented in input mode.
-msgid ""
-"Copies to the clipboard, with the possibility of being asked for a previous "
-"confirmation"
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:306
+msgid "Copies to the clipboard, with the possibility of being asked for a previous confirmation"
 msgstr ""
-"Copia ao portapapeis, coa posibilidade de que se che pregunte por unha "
-"confirmación anterior"
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:324
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Por favor, confirma se queres curtar dende o portapapeis"
+msgstr ""
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:326
 msgid "Cutting from clipboard"
-msgstr "Curtando dende o portapapeis"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Cuts from the clipboard, with the possibility of being asked for a previous "
-"confirmation"
 msgstr ""
-"Curta dende o portapapeis, coa posibilidade de que se che pregunte por unha "
-"confirmación anterior"
 
 #. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:334
+msgid "Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr ""
+
+#. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:347
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Amosa o texto do portapapeis como HTML en modo exploración"
+msgstr ""
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:357
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:393
 msgid "Clipboard is not empty, but there is no text to show"
-msgstr "O portapapeis non está baleiro, mais non hai texto que mostrar"
+msgstr ""
 
 #. Translators: presented when clipboard is empty.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:360
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:396
 msgid "Clipboard is empty"
-msgstr "O portapapeis está baleiro"
+msgstr ""
 
 #. Translators: title of a browseable message.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:377
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:408
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "Texto do portapapeis ({max}/{current} - {formatForTitle})"
+msgstr ""
 
 #. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:383
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Amosa o texto do portapapeis como texto plano en modo exploración"
-
-#. Translators: label of a dialog.
-msgid ""
-"Type the string to be used as a &separator between contents added to the "
-"clipboard."
 msgstr ""
-"Teclea a cadea para se utilizar como un &separador entre os contidos "
-"engadidos ao portapapeis."
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:420
+msgid "Type the string to be used as a &separator between contents added to the clipboard."
+msgstr ""
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:427
 msgid "&Add text before clip data"
-msgstr "&Engadir texto despois de clip data"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:430
 msgid "Sele&ct the actions which require previous confirmation"
-msgstr "Sele&cciona as accións que requerirán confirmación previa"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:433
 msgid "Confirm to add text"
-msgstr "Confirmar engadir texto"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:435
 msgid "Confirm to clear clipboard"
-msgstr "Confirmar limpar portapapeis"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:437
 msgid "Confirm to emulate copy"
-msgstr "Confirmar emular copiar"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:439
 msgid "Confirm to emulate cut"
-msgstr "Confirmar emular cortar"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:456
 msgid "&Request confirmation before performing the selected actions when:"
 msgstr ""
-"Solicitar confi&rmación antes de realizar as accións seleccionadas cando:"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:459
 msgid "Always"
-msgstr "Sempre"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:461
 msgid "If the clipboard contains text"
-msgstr "Se o portapapeis contén texto"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:463
 msgid "If the clipboard is not empty"
-msgstr "Se o portapapeis non está baleiro"
+msgstr ""
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:470
 msgid "&Format to show the clipboard text as HTML in browse mode:"
 msgstr ""
-"&Formato para amosar o texto do portapapeis como HTML en modo exploración:"
 
 #. Translators: label of a dialog.
-msgid ""
-"&Maximum number of characters when showing clipboard text in browse mode"
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:474
+msgid "&Maximum number of characters when showing clipboard text in browse mode"
 msgstr ""
-"Número &máximo de caracteres ao amosar o texto do portapapeis en modo "
-"exploración"
-
-#. Translators: label of a dialog.
-msgid "Restore defaults"
-msgstr "Restaurar predeterminadas"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:17
 msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgstr ""
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Allows the joining of separate fragments of text on the clipboard and "
-"clearing of clipboard content. Current text on the clipboard can be "
-"presented in browse mode. Option to request confirmation before performing "
-"actions such as copy, cut, add text, or clearing the clipboard to avoid "
-"accidental changes."
+#: buildVars.py:20
+msgid "Add-on for managing clipboard text."
 msgstr ""
 
-#~ msgid "Add-on for managing clipboard text."
-#~ msgstr "Complemento para administrar o texto do portapapeis."
-
-#~ msgid "No text to add"
-#~ msgstr "Non hai texto para engadir"
-
-#~ msgid "Start marker set"
-#~ msgstr "Colocar marca de comezo"
-
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Marca a posición actual do cursor de revisión como o comezo do texto para "
-#~ "se anexar ó portapapeis."
-
-#~ msgid "No selection. No start marker set"
-#~ msgstr "Non hai selección. Non se colocou marca de comezo"
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "A marca de comezo debe residir dentro do mesmo obxecto"
-
-#~ msgid "&Text in clipboard to confirm"
-#~ msgstr "&Texto en portapapeis a confirmar"
-
-#~ msgid "&Clip Contents Designer settings..."
-#~ msgstr "Opcións do&Clip Contents Designer..."
-
-#~ msgid "Clip Contents Designer settings"
-#~ msgstr "Opcións do Clip Contents Designer"
