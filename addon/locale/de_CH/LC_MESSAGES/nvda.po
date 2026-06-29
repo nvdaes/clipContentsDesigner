@@ -1,275 +1,256 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 1.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2019-05-18 21:39+0200\n"
-"Last-Translator: Robert Hänggi <aarjay.robert@gmail.com>\n"
-"Language-Team: \n"
+"Project-Id-Version: nvdaaddons\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-05-04 00:30+0000\n"
+"PO-Revision-Date: 2026-06-21 05:35\n"
+"Last-Translator: \n"
+"Language-Team: German, Switzerland\n"
 "Language: de_CH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nvdaaddons\n"
+"X-Crowdin-Project-ID: 780748\n"
+"X-Crowdin-Language: de-CH\n"
+"X-Crowdin-File: clipContentsDesigner.pot\n"
+"X-Crowdin-File-ID: 256\n"
 
 #. Translators: label of a dialog.
-#, fuzzy
-msgid ""
-"This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents,\n"
-"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
-"cut.\n"
-"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
-"this later."
+#: addon\installTasks.py:45
+msgid "This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,\n"
+"\t\twhen pressing control+c and control+x. This is named Emulate copy and cut.\n"
+"\t\tDo you want to configure Emulate copy and cut now? You may do or change this later."
 msgstr ""
-"Mit dieser Erweiterung erhalten Sie eine Meldung, womit Sie bestätigen "
-"können, ob Sie den Inhalt aus der Zwischenablage durch einen neuen Inhalt "
-"ersetzen möchten. Dies kommt vor, wenn sie etwas mit strg+c kopieren bzw. "
-"mit strg+x ausschneiden und danach einen anderen inhalt kopieren bzw. "
-"ausschneiden, bevor der frühere inhalt mit strg + v eingefügt wurde. Dies "
-"heisst \"Kopieren und Ausschneiden emulieren\" und funktioniert "
-"standardmässig nur, wenn die Zwischenablage Text enthält. Möchten Sie "
-"Kopieren und Ausschneiden emulieren jetzt konfigurieren? Sie können die "
-"Einstellungen auch zu einem späteren Zeitpunkt anpassen."
 
 #. Translators: title of a dialog.
+#: addon\installTasks.py:49
 msgid "Configure Emulate copy and cut"
 msgstr "Einstellungen für Kopieren und Ausschneiden emulieren anpassen"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:35
 msgid "Preformatted text in HTML"
 msgstr "Vorformatierter Text in HTML"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:37
 msgid "HTML as shown in a web browser"
 msgstr "HTML wie im Internetbrowser"
 
 #. Translators: Text of the clipboard shown without being formatted.
-#, fuzzy
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:40
 msgid "Plain text"
-msgstr "Roher Text"
+msgstr ""
 
 #. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:128
 msgid "Shows the Clip Contents Designer settings."
 msgstr "Zeigt die Einstellungen des Clip Contents Designers an."
 
 #. Translators: message presented when the clipboard content has been deleted.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:138
 msgid "Clipboard cleared"
 msgstr "Zwischenablage geleert"
 
 #. Translators: message presented when the clipboard content cannot be deleted.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:141
 msgid "Clipboard not cleared"
 msgstr "Zwischenablage ist nicht leer"
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:228
 msgid "Please, confirm if you want to add text to the clipboard"
-msgstr ""
-"Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage hinzufügen möchten"
+msgstr "Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage hinzufügen möchten"
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:230
 msgid "Adding text to clipboard"
 msgstr "Text wird zur Zwischenablage hinzugefügt"
 
 #. Translators: message presented when the text has been added to the clipboard.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:236
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:245
 msgid "Added"
 msgstr "Hinzugefügt"
 
 #. Translators: message presented when the text cannot be added to the clipboard.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:239
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:248
 msgid "Cannot add"
 msgstr "Text konnte nicht hinzugefügt werden."
 
 #. Translators: message presented in input mode.
-#, fuzzy
-msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"adds it to the clipboard."
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:253
+msgid "Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard."
 msgstr ""
-"Fügt den Text zwischen der zuvor gesetzten Startmarke und der aktuellen "
-"Position des NVDA-Cursors in die Zwischenablage."
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:269
 msgid "Please, confirm if you want to clear the clipboard"
 msgstr "Bitte bestätigen Sie, dass Sie die Zwischenablage leeren möchten."
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:271
 msgid "Clearing clipboard"
 msgstr "Der Inhalt aus der Zwischenablage wird entfernt"
 
 #. Translators: message presented in input mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:280
 msgid "Deletes the added text and the content of the clipboard."
 msgstr "Löscht den Inhalt der Zwischenablage."
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:308
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr ""
-"Bitte bestätigen Sie, dass sie den Inhalt in die Zwischenablage kopieren "
-"möchten"
+msgstr "Bitte bestätigen Sie, dass sie den Inhalt in die Zwischenablage kopieren möchten"
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:310
 msgid "Copying to clipboard"
 msgstr "Der Inhalt wird in die Zwischenablage kopiert"
 
 #. Translators: message presented in input mode.
-msgid ""
-"Copies to the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr ""
-"Kopiert Inhalt in die Zwischenablage, nachdem ggf. eine Bestätigung erfolgt "
-"ist"
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:320
+msgid "Copies to the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr "Kopiert Inhalt in die Zwischenablage, nachdem ggf. eine Bestätigung erfolgt ist"
 
 #. Translators: Label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:338
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr ""
-"Bitte bestätigen Sie, dass Sie den Inhalt aus der zwischenablage "
-"ausschneiden möchten"
+msgstr "Bitte bestätigen Sie, dass Sie den Inhalt aus der zwischenablage ausschneiden möchten"
 
 #. Translators: Title of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:340
 msgid "Cutting from clipboard"
 msgstr "Inhalt wird aus der Zwischenablage ausgeschnitten"
 
 #. Translators: message presented in input mode.
-msgid ""
-"Cuts from the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr ""
-"Schneidet Inhalt aus der Zwischenablage aus, nachdem ggf. eine Bestätigung "
-"erfolgt ist"
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:350
+msgid "Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
+msgstr "Schneidet Inhalt aus der Zwischenablage aus, nachdem ggf. eine Bestätigung erfolgt ist"
 
 #. Translators: message presented in input mode.
-#, fuzzy
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:361
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
+msgstr ""
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:371
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:412
 msgid "Clipboard is not empty, but there is no text to show"
 msgstr "Zwischenablage ist nicht leer, aber es gibt keinen Text zu zeigen"
 
 #. Translators: presented when clipboard is empty.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:374
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:415
 msgid "Clipboard is empty"
 msgstr "Zwischenablage ist leer"
 
 #. Translators: title of a browseable message.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:390
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:426
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
 msgstr "Text der Zwischenablage ({max}/{current} - {formatForTitle})"
 
 #. Translators: message presented in input mode.
-#, fuzzy
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:402
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
-
-#. Translators: label of a dialog.
-msgid ""
-"Type the string to be used as a &separator between contents added to the "
-"clipboard."
 msgstr ""
-"Geben Sie die Zeichenfolge ein, die verwendet werden soll, um mehrere "
-"Textfragmente in der Zwischenablage voneinander zu trennen."
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:444
+msgid "Type the string to be used as a &separator between contents added to the clipboard."
+msgstr "Geben Sie die Zeichenfolge ein, die verwendet werden soll, um mehrere Textfragmente in der Zwischenablage voneinander zu trennen."
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:449
 msgid "&Add text before clip data"
 msgstr "Text an erster Stelle der Daten in der Zwischenablage &hinzufügen"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:452
 msgid "Sele&ct the actions which require previous confirmation"
 msgstr "&wähle die Aktionen, die eine vorherige Bestätigung erfordern"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:455
 msgid "Confirm to add text"
 msgstr "Text einfügen bestätigen"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:457
 msgid "Confirm to clear clipboard"
 msgstr "Leeren der Zwischenablage bestätigen"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:459
 msgid "Confirm to emulate copy"
 msgstr "Emulieren von kopieren bestätigen"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:461
 msgid "Confirm to emulate cut"
 msgstr "emulieren von ausschneiden bestätigen"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:480
 msgid "&Request confirmation before performing the selected actions when:"
-msgstr ""
-"Vor der Durchführung der ausgewählten Aktionen Bestätigung anfordern, wenn:"
+msgstr "Vor der Durchführung der ausgewählten Aktionen Bestätigung anfordern, wenn:"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:483
 msgid "Always"
 msgstr "Immer"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:485
 msgid "If the clipboard contains text"
 msgstr "Wenn die Zwischenablage Text enthält"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:487
 msgid "If the clipboard is not empty"
 msgstr "Wenn die Zwischenablage nicht leer ist"
 
 #. Translators: label of a dialog.
-#, fuzzy
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:498
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "& Format, um den Text der Zwischenablage im Browsermodus anzuzeigen:"
-
-#. Translators: label of a dialog.
-msgid ""
-"&Maximum number of characters when showing clipboard text in browse mode"
 msgstr ""
-"& Maximale Anzahl der Zeichen bei der Anzeige der Zwischenablage im Lesemodus"
 
 #. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:502
+msgid "&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "& Maximale Anzahl der Zeichen bei der Anzeige der Zwischenablage im Lesemodus"
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:512
+msgid "Show configuration dialog when &updating"
+msgstr ""
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:516
 msgid "Restore defaults"
 msgstr ""
 
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
 msgid "Clip Contents Designer"
 msgstr "Designer für den  Inhalt der Zwischenablage"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Allows the joining of separate fragments of text on the clipboard and "
-"clearing of clipboard content. Current text on the clipboard can be "
-"presented in browse mode. Option to request confirmation before performing "
-"actions such as copy, cut, add text, or clearing the clipboard to avoid "
-"accidental changes."
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
+msgid "Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."
 msgstr ""
 
-#~ msgid "Add-on for managing clipboard text."
-#~ msgstr "Erweiterung zum Umgang mit der Windows-Zwischenablage."
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:29
+msgid "* Compatible with NVDA 2026.1."
+msgstr ""
 
-#~ msgid "No text to add"
-#~ msgstr "Kein Text zum Anfügen vorhanden."
-
-#~ msgid "Start marker set"
-#~ msgstr "Startmarke gesetzt"
-
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
-#~ "Anfügen von Text zum Inhalt der Zwischenablage."
-
-#~ msgid "No selection. No start marker set"
-#~ msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
-
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
-
-#~ msgid "&Text in clipboard to confirm"
-#~ msgstr "&Text in der Zwischenablage bestätigen"
-
-#~ msgid "&Clip Contents Designer settings..."
-#~ msgstr "&Zwischenablagen-Designer-Einstellungen..."
-
-#~ msgid "Clip Contents Designer settings"
-#~ msgstr "Zwischenablagen-Designer-Einstellungen"
