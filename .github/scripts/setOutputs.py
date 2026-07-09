@@ -1,5 +1,4 @@
-# setOutputs.py
-# Copyright (C) 2025 NV Access Limited, Noelia Ruiz Martínez
+# Copyright (C) 2025-2026 NV Access Limited, Noelia Ruiz Martínez
 # This file is covered by the GNU General Public License.
 # See the file COPYING for more details.
 

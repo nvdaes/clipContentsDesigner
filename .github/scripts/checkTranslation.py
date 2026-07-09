@@ -1,4 +1,3 @@
-# checkTranslation.py
 # Copyright (C) 2026 NV Access Limited, Abdel
 # This file is covered by the GNU General Public License.
 # See the file COPYING for more details.
@@ -101,7 +100,7 @@ def getScoreFromApi(fileNameToSearch: str, langId: str) -> float:
 				# Also handles underscore to dash conversion for Crowdin compatibility
 				if langApi.lower().startswith(langId.lower().replace("_", "-")):
 					progress = float(item["data"]["translationProgress"])
-					return progress / 100
+					return progress
 
 			# Check pagination total.
 			total = resp["pagination"]["totalCount"]
@@ -139,9 +138,6 @@ def main():
 	else:
 		# Default to poScore for .po and other localization files.
 		print(f"poScore={score}")
-
-	# Exit with success (0) if there is at least 50% translated content.
-	sys.exit(0 if score > 0.5 else 1)
 
 
 if __name__ == "__main__":

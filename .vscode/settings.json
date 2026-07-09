@@ -1,37 +1,16 @@
 {
     "editor.accessibilitySupport": "on",
-    "ruff.enable": true,
-    "python.defaultInterpreterPath": "${workspaceFolder}/../nvda/.venv/Scripts/python.exe",
     "python.autoComplete.extraPaths": [
-        "addon",
-        "${workspaceFolder}/../nvda/source",
-        "${workspaceFolder}/../nvda/miscDeps/python"
+        "../nvda/source",
+        "../nvda/miscDeps/python"
     ],
-    "python.analysis.extraPaths": [
-        "addon",
-        "${workspaceFolder}/../nvda/source",
-        "${workspaceFolder}/../nvda/miscDeps/python"
-    ],
-    "python.analysis.stubPath": "${workspaceFolder}/.vscode/typings",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "files.eol": "\n",
     "editor.insertSpaces": false,
-    "python.testing.unittestArgs": [
-        "-v",
-        "-s",
-        "tests.unit",
-        "-p",
-        "test_*.py"
+    "python.analysis.stubPath": "${workspaceFolder}/.vscode/typings",
+    "python.analysis.extraPaths": [
+        "../nvda/source",
+        "../nvda/miscDeps/python"
     ],
-    "autoDocstring.docstringFormat": "sphinx-notypes",
-    "python.testing.pytestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.unittestEnabled": true,
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.importFormat": "relative"
-    }
-        
+    "python.defaultInterpreterPath": "${workspaceFolder}/../nvda/.venv/scripts/python.exe"
+}
