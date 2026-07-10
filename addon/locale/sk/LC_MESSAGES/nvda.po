@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-07-09 14:55+0000\n"
-"PO-Revision-Date: 2026-07-09 14:58\n"
+"POT-Creation-Date: 2026-04-05 03:12+0000\n"
+"PO-Revision-Date: 2026-04-06 01:48\n"
 "Last-Translator: \n"
 "Language-Team: Slovak\n"
 "Language: sk_SK\n"
@@ -18,241 +18,227 @@ msgstr ""
 "X-Crowdin-File-ID: 256\n"
 
 #. Translators: label of a dialog.
-#: addon\installTasks.py:45
+#: addon\installTasks.py:42
 msgid "This add-on allows to confirm if you want to copy and cut, replacing the clipboard contents,\n"
 "\t\twhen pressing control+c and control+x. This is named Emulate copy and cut.\n"
 "\t\tDo you want to configure Emulate copy and cut now? You may do or change this later."
-msgstr "Môžete si nastaviť varovanie, ktoré sa objaví, pred vystrihnutím alebo skopírovaním nového textu do schránky.\n"
-"\t\tTakto nestratíte dôležitý obsah, ktorý už v schránke máte.\n"
-"\t\tChcete aktivovať toto varovanie? Nastavenie je možné neskôr zmeniť."
+msgstr ""
 
 #. Translators: title of a dialog.
-#: addon\installTasks.py:49
+#: addon\installTasks.py:46
 msgid "Configure Emulate copy and cut"
-msgstr "Varovania pri práci so schránkou"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:35
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:34
 msgid "Preformatted text in HTML"
-msgstr "Formátovaný html text"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:37
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:36
 msgid "HTML as shown in a web browser"
-msgstr "HTML zobrazené vo webovom prehliadači"
+msgstr ""
 
 #. Translators: Text of the clipboard shown without being formatted.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:40
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:39
 msgid "Plain text"
-msgstr "Čistý text"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:128
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:121
 msgid "Shows the Clip Contents Designer settings."
-msgstr "Zobrazí nastavenia pokročilej schránky."
+msgstr ""
 
 #. Translators: message presented when the clipboard content has been deleted.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:138
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:131
 msgid "Clipboard cleared"
-msgstr "Schránka je prázdna"
+msgstr ""
 
 #. Translators: message presented when the clipboard content cannot be deleted.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:141
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:134
 msgid "Clipboard not cleared"
-msgstr "obsach schránky sa nepodarilo odstrániť"
+msgstr ""
+
+#. Translators: message presented when it's not possible to add text, since no text has been selected.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:175
+msgid "No text to add"
+msgstr ""
 
 #. Translators: Label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:228
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:217
 msgid "Please, confirm if you want to add text to the clipboard"
-msgstr "Naozaj chcete pridať text do schránky?"
+msgstr ""
 
 #. Translators: Title of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:230
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:219
 msgid "Adding text to clipboard"
-msgstr "Pridanie textu"
+msgstr ""
 
 #. Translators: message presented when the text has been added to the clipboard.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:236
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:245
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:224
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:233
 msgid "Added"
-msgstr "Pridané"
+msgstr ""
 
 #. Translators: message presented when the text cannot be added to the clipboard.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:239
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:248
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:227
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:236
 msgid "Cannot add"
-msgstr "Nie je možné pripojiť"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:253
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:241
 msgid "Retrieves the selected string or the text from the previously set start marker up to and including the current position of the review cursor, and adds it to the clipboard."
 msgstr ""
 
 #. Translators: Label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:269
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:258
 msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Naozaj chcete vymazať obsah schránky?"
+msgstr ""
 
 #. Translators: Title of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:271
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:260
 msgid "Clearing clipboard"
-msgstr "Vymazanie schránky"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:280
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:268
 msgid "Deletes the added text and the content of the clipboard."
-msgstr "Vymaže obsah schránky."
+msgstr ""
 
 #. Translators: Label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:308
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:293
 msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "Naozaj chcete kopírovať?"
+msgstr ""
 
 #. Translators: Title of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:310
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:295
 msgid "Copying to clipboard"
-msgstr "Kopírovanie"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:320
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:306
 msgid "Copies to the clipboard, with the possibility of being asked for a previous confirmation"
-msgstr "Skopíruje do schránky s možnosťou varovania"
+msgstr ""
 
 #. Translators: Label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:338
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:324
 msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Naozaj chcete vystrihnúť?"
+msgstr ""
 
 #. Translators: Title of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:340
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:326
 msgid "Cutting from clipboard"
-msgstr "Vystrihnutie"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:350
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:334
 msgid "Cuts from the clipboard, with the possibility of being asked for a previous confirmation"
-msgstr "Vystrihne do schránky s možnosťou varovania"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:361
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:347
 msgid "Shows the clipboard text as HTML in browse mode"
-msgstr "Zobrazí formátovaný text schránky v režime prehliadania"
+msgstr ""
 
 #. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:371
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:412
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:357
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:393
 msgid "Clipboard is not empty, but there is no text to show"
-msgstr "Schránka nie je prázdna, ale nie je možné zobraziť text"
+msgstr ""
 
 #. Translators: presented when clipboard is empty.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:374
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:415
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:360
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:396
 msgid "Clipboard is empty"
-msgstr "Schránka je prázdna"
+msgstr ""
 
 #. Translators: title of a browseable message.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:390
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:426
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:377
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:408
 #, python-brace-format
 msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "Text v schránke ({max}/{current} - {formatForTitle})"
+msgstr ""
 
 #. Translators: message presented in input mode.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:402
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:383
 msgid "Shows the clipboard textual contents as plain text in browse mode"
-msgstr "Zobrazí neformátovaný text schránky v režime prehliadania"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:444
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:420
 msgid "Type the string to be used as a &separator between contents added to the clipboard."
-msgstr "Zadajte reťazec, ktorým sa budú oddeľovať jednotlivé ča&sti textu v schránke."
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:449
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:427
 msgid "&Add text before clip data"
-msgstr "& Pridať reťazec pred textom"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:452
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:430
 msgid "Sele&ct the actions which require previous confirmation"
-msgstr "Vyber&te akcie, ktoré vyžadujú varovanie"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:455
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:433
 msgid "Confirm to add text"
-msgstr "pridanie textu"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:457
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:435
 msgid "Confirm to clear clipboard"
-msgstr "Vymazanie schránky"
+msgstr ""
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:437
+msgid "Confirm to emulate copy"
+msgstr ""
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:439
+msgid "Confirm to emulate cut"
+msgstr ""
+
+#. Translators: label of a dialog.
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:456
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr ""
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\clipContentsDesigner\__init__.py:459
-msgid "Confirm to emulate copy"
-msgstr "Kopírovať"
+msgid "Always"
+msgstr ""
 
 #. Translators: label of a dialog.
 #: addon\globalPlugins\clipContentsDesigner\__init__.py:461
-msgid "Confirm to emulate cut"
-msgstr "Vystrihnúť"
-
-#. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:480
-msgid "&Request confirmation before performing the selected actions when:"
-msgstr "Va&rovať keď:"
-
-#. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:483
-msgid "Always"
-msgstr "Vždy"
-
-#. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:485
 msgid "If the clipboard contains text"
-msgstr "Ak je v schránke text"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:487
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:463
 msgid "If the clipboard is not empty"
-msgstr "Ak schránka nie je prázdna"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:498
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:470
 msgid "&Format to show the clipboard text as HTML in browse mode:"
-msgstr "Zobraziť schránku vo formáte:"
+msgstr ""
 
 #. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:502
+#: addon\globalPlugins\clipContentsDesigner\__init__.py:474
 msgid "&Maximum number of characters when showing clipboard text in browse mode"
-msgstr "&Maximálny počet znakov pri zobrazení textu schránky v režime prehliadania"
-
-#. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:512
-msgid "Show configuration dialog when &updating"
 msgstr ""
 
-#. Translators: label of a dialog.
-#: addon\globalPlugins\clipContentsDesigner\__init__.py:516
-msgid "Restore defaults"
-msgstr ""
-
-#. Add-on summary/title, usually the user visible name of the add-on
-#. Translators: Summary/title for this add-on
-#. to be shown on installation and add-on information found in add-on store
-#: buildVars.py:20
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:17
 msgid "Clip Contents Designer"
-msgstr "Rozšírená schránka"
+msgstr ""
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-on store
-#: buildVars.py:23
-msgid "Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."
-msgstr ""
-
-#. Brief changelog for this version
-#. Translators: what's new content for the add-on version to be shown in the add-on store
-#: buildVars.py:28
-msgid "* Compatible with NVDA 2026.2."
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:20
+msgid "Add-on for managing clipboard text."
 msgstr ""
 
