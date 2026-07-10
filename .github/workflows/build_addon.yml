@@ -18,11 +18,16 @@ jobs:
     # Do not modify this repo name with your own one! (should remain the template)
     if: github.repository != 'nvaccess/addonTemplate'
 
+    permissions:
+      contents: write
+
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v7
+      with:
+        ref: ${{ github.head_ref || github.ref_name }}
     - name: Install uv
       uses: astral-sh/setup-uv@v7
       with:
@@ -40,13 +45,20 @@ jobs:
           --all-files
           --skip pyright
     - name: If code checks failed, commit changes
-      if: steps.codeChecks.outcome == 'failure'
+      if: always() && steps.codeChecks.outcome == 'failure'
       run: |
+        if git diff --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add .
-        git commit -m "Apply code checks fixes"
-        git push
+        git add -A
+        git commit -m "Apply code checks fixes" || {
+          echo "Nothing to commit, continuing"
+          exit 0
+        }
+        git push || echo "Push failed (likely token/permissions), continuing"
     - name: building addon
       run: uv run scons && uv run scons pot
 
