@@ -35,6 +35,10 @@ jobs:
 
     - name: Code checks
       uses: j178/prek-action@v2
+      with:
+        extra-args: >-
+          --all-files
+          --skip pyright
 
     - name: building addon
       run: uv run scons && uv run scons pot

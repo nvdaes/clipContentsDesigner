@@ -3,20 +3,12 @@
 #:schema https://www.schemastore.org/prek.json
 
 ci = {
-    skip = ["pyright"],
     autoupdate_schedule = "monthly",
     autoupdate_commit_msg = "Pre-commit auto-update",
     autofix_commit_msg = "Pre-commit auto-fix",
     submodules = true
   }
 default_language_version = { python = "python3.13" }
-
-[[repos]]
-repo = "https://github.com/pre-commit-ci/pre-commit-ci-config"
-rev = "v1.6.1"
-hooks = [
-  { id = "check-pre-commit-ci-config" }
-]
 
 [[repos]]
 repo = "meta"
