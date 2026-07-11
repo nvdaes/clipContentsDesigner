@@ -54,7 +54,7 @@ jobs:
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
         git add -A
-        git commit -m "Apply code checks fixes [skip ci]"" || {
+        git commit -m "Apply code checks fixes [skip ci]" || {
           echo "Nothing to commit, continuing"
           exit 0
         }
