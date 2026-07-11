@@ -16,7 +16,7 @@ jobs:
   build:
     # Building the add-on template as an add-on does not make sense (and fails).
     # Do not modify this repo name with your own one! (should remain the template)
-    if: github.repository != 'nvaccess/addonTemplate' && github.event.head_commit.committer.email != 'github-actions@github.com'
+    if: github.repository != 'nvaccess/addonTemplate' && $GITHUB_ACTOR != 'github-actions[bot]'
 
     permissions:
       contents: write
@@ -52,7 +52,7 @@ jobs:
         git config user.email "github-actions@github.com"
         git add -A
         git commit -m "Apply code checks fixes"
-        git push || true
+        git push 
     - name: building addon
       run: uv run scons && uv run scons pot
 
