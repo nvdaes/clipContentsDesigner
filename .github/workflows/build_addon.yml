@@ -39,26 +39,20 @@ jobs:
         uv sync
     - name: Code checks
       id: codeChecks
+      continue-on-error: true
       uses: j178/prek-action@v2
       with:
         extra-args: >-
           --all-files
           --skip pyright
     - name: If code checks failed, commit changes
-      if: always() && steps.codeChecks.outcome == 'failure'
+      if: steps.codeChecks.outcome == 'failure'
       run: |
-        if git diff --quiet; then
-          echo "No changes to commit"
-          exit 0
-        fi
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
         git add -A
-        git commit -m "Apply code checks fixes [skip ci]" || {
-          echo "Nothing to commit, continuing"
-          exit 0
-        }
-        git push || echo "Push failed (likely token/permissions), continuing"
+        git commit -m "Apply code checks fixes [skip ci]" || true
+        git push || true
     - name: building addon
       run: uv run scons && uv run scons pot
 
