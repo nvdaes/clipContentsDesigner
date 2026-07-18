@@ -13,31 +13,31 @@ from site_scons.site_tools.NVDATool.utils import _
 # Add-on information variables
 addon_info = AddonInfo(
 	# add-on Name/identifier, internal for NVDA
-	addon_name="clipContentsDesigner",
+	addon_name='clipContentsDesigner',
 	# Add-on summary/title, usually the user visible name of the add-on
 	# Translators: Summary/title for this add-on
 	# to be shown on installation and add-on information found in add-on store
-	addon_summary=_("""Clip Contents Designer"""),
+	addon_summary=_('Clip Contents Designer'),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
-	addon_description=_("""Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes."""),
+	addon_description=_('Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes.'),
 	# version
-	addon_version="51.1.0",
+	addon_version='51.1.0',
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* Compatible with NVDA 2026.2."""),
+	addon_changelog=_('* Compatible with NVDA 2026.2.'),
 	# Author(s)
-	addon_author="Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>",
+	addon_author='Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>',
 	# URL for the add-on documentation support
-	addon_url="https://github.com/nvdaes/clipContentsDesigner",
+	addon_url='https://github.com/nvdaes/clipContentsDesigner',
 	# URL for the add-on repository where the source code can be found
 	addon_sourceURL=None,
 	# Documentation file name
-	addon_docFileName="readme.html",
+	addon_docFileName='readme.html',
 	# Minimum NVDA version supported (e.g. "2019.3.0", minor version is optional)
-	addon_minimumNVDAVersion="2026.1",
+	addon_minimumNVDAVersion='2026.1',
 	# Last NVDA version supported/tested (e.g. "2024.4.0", ideally more recent than minimum version)
-	addon_lastTestedNVDAVersion="2026.2",
+	addon_lastTestedNVDAVersion='2026.2',
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!
