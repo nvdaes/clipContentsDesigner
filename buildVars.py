@@ -22,10 +22,10 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_('Allows the joining of separate fragments of text on the clipboard and clearing of clipboard content. Current text on the clipboard can be presented in browse mode. Option to request confirmation before performing actions such as copy, cut, add text, or clearing the clipboard to avoid accidental changes.'),
 	# version
-	addon_version="52.0.0",
+	addon_version="52.0.1",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_('* Updates to translations.'),
+	addon_changelog=_('* Fix a bug, happens when trying to display clipboard text in browseable message, and clipboard is empty or has no textual content.'),
 	# Author(s)
 	addon_author='Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>',
 	# URL for the add-on documentation support
