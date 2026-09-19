@@ -15,6 +15,7 @@ import config
 import core
 import wx
 import gui
+from ctypes import windll
 from gui import guiHelper
 from gui.settingsDialogs import SettingsPanel, NVDASettingsDialog
 from gui.message import MessageDialog, ReturnCode
@@ -199,7 +200,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def clipboardHasContent(self):
 		with winUser.openClipboard(gui.mainFrame.Handle):
-			clipFormat = winUser.windll.user32.EnumClipboardFormats(0)
+			clipFormat = windll.user32.EnumClipboardFormats(0)
 		if clipFormat:
 			return True
 		return False
