@@ -25,7 +25,7 @@ addon_info = AddonInfo(
 	addon_version="52.0.1",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_('* Fix a bug, happens when trying to display clipboard text in browseable message, and clipboard is empty or has no textual content.'),
+	addon_changelog=_('* Restored ability to check the clipboard content.'),
 	# Author(s)
 	addon_author='Noelia <nrm1977@gmail.com>, Abdel <abdelkrim.bensaid@gmail.com>',
 	# URL for the add-on documentation support
